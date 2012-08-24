@@ -1,0 +1,4278 @@
+# FPDoc Content File
+:link tree
+#lazutils index.html
+ LazUtilsStrConsts lazutilsstrconsts/index.html
+  rsModified lazutilsstrconsts/index-1.html#rsmodified
+  sInvalidCharSet lazutilsstrconsts/index-1.html#sinvalidcharset
+  rsSize lazutilsstrconsts/index-1.html#rssize
+ LUResStrings luresstrings/index.html
+  ctsFileDoesNotExist luresstrings/index-1.html#ctsfiledoesnotexist
+  ctsFileIsNotExecutable luresstrings/index-1.html#ctsfileisnotexecutable
+ lazutf8sysutils lazutf8sysutils/index.html
+  NowUTC lazutf8sysutils/nowutc.html
+  GetTickCount64 lazutf8sysutils/gettickcount64.html
+ LazMethodList lazmethodlist/index.html
+  TMethodList lazmethodlist/tmethodlist.html
+   Destroy lazmethodlist/tmethodlist.destroy.html
+   Count lazmethodlist/tmethodlist.count.html
+   NextDownIndex lazmethodlist/tmethodlist.nextdownindex.html
+   IndexOf lazmethodlist/tmethodlist.indexof.html
+   Delete lazmethodlist/tmethodlist.delete.html
+   Remove lazmethodlist/tmethodlist.remove.html
+   Add lazmethodlist/tmethodlist.add.html
+   Insert lazmethodlist/tmethodlist.insert.html
+   Move lazmethodlist/tmethodlist.move.html
+   RemoveAllMethodsOfObject lazmethodlist/tmethodlist.removeallmethodsofobject.html
+   CallNotifyEvents lazmethodlist/tmethodlist.callnotifyevents.html
+   Items lazmethodlist/tmethodlist.items.html
+ AvgLvlTree avglvltree/index.html
+  TObjectSortCompare avglvltree/tobjectsortcompare.html
+  TAvgLvlTreeNodeClass avglvltree/tavglvltreenodeclass.html
+  PAvgLvlTreeNode avglvltree/pavglvltreenode.html
+  TAvgLvlTreeClass avglvltree/tavglvltreeclass.html
+  PAvgLvlTree avglvltree/pavglvltree.html
+  TPointerToPointerItem avglvltree/tpointertopointeritem.html
+  PPointerToPointerItem avglvltree/ppointertopointeritem.html
+  TStringMapItem avglvltree/tstringmapitem.html
+  PStringMapItem avglvltree/pstringmapitem.html
+  TStringToStringItem avglvltree/tstringtostringitem.html
+  PStringToStringItem avglvltree/pstringtostringitem.html
+  TStringToPointerItem avglvltree/tstringtopointeritem.html
+  PStringToPointerItem avglvltree/pstringtopointeritem.html
+  TAvgLvlTreeNode avglvltree/tavglvltreenode.html
+   Parent avglvltree/tavglvltreenode.parent.html
+   Left avglvltree/tavglvltreenode.left.html
+   Right avglvltree/tavglvltreenode.right.html
+   Balance avglvltree/tavglvltreenode.balance.html
+   Data avglvltree/tavglvltreenode.data.html
+   Successor avglvltree/tavglvltreenode.successor.html
+   Precessor avglvltree/tavglvltreenode.precessor.html
+   TreeDepth avglvltree/tavglvltreenode.treedepth.html
+   ConsistencyCheck avglvltree/tavglvltreenode.consistencycheck.html
+   GetCount avglvltree/tavglvltreenode.getcount.html
+  TAvgLvlTreeNodeEnumerator avglvltree/tavglvltreenodeenumerator.html
+   FCurrent avglvltree/tavglvltreenodeenumerator.fcurrent.html
+   FLowToHigh avglvltree/tavglvltreenodeenumerator.flowtohigh.html
+   FTree avglvltree/tavglvltreenodeenumerator.ftree.html
+   Create avglvltree/tavglvltreenodeenumerator.create.html
+   MoveNext avglvltree/tavglvltreenodeenumerator.movenext.html
+   Current avglvltree/tavglvltreenodeenumerator.current.html
+   LowToHigh avglvltree/tavglvltreenodeenumerator.lowtohigh.html
+  TAvgLvlTree avglvltree/tavglvltree.html
+   fRoot avglvltree/tavglvltree.froot.html
+   FCount avglvltree/tavglvltree.fcount.html
+   FNodeClass avglvltree/tavglvltree.fnodeclass.html
+   FOnCompare avglvltree/tavglvltree.foncompare.html
+   FOnObjectCompare avglvltree/tavglvltree.fonobjectcompare.html
+   BalanceAfterInsert avglvltree/tavglvltree.balanceafterinsert.html
+   BalanceAfterDelete avglvltree/tavglvltree.balanceafterdelete.html
+   DeletingNode avglvltree/tavglvltree.deletingnode.html
+   FindInsertPos avglvltree/tavglvltree.findinsertpos.html
+   Init avglvltree/tavglvltree.init.html
+   NodeAdded avglvltree/tavglvltree.nodeadded.html
+   RotateLeft avglvltree/tavglvltree.rotateleft.html
+   RotateRight avglvltree/tavglvltree.rotateright.html
+   SwitchPositionWithSuccessor avglvltree/tavglvltree.switchpositionwithsuccessor.html
+   SetOnCompare avglvltree/tavglvltree.setoncompare.html
+   SetOnObjectCompare avglvltree/tavglvltree.setonobjectcompare.html
+   SetCompares avglvltree/tavglvltree.setcompares.html
+   Create avglvltree/tavglvltree.create.html
+   CreateObjectCompare avglvltree/tavglvltree.createobjectcompare.html
+   Destroy avglvltree/tavglvltree.destroy.html
+   OnCompare avglvltree/tavglvltree.oncompare.html
+   OnObjectCompare avglvltree/tavglvltree.onobjectcompare.html
+   NodeClass avglvltree/tavglvltree.nodeclass.html
+   Add avglvltree/tavglvltree.add.html
+   Delete avglvltree/tavglvltree.delete.html
+   Remove avglvltree/tavglvltree.remove.html
+   RemovePointer avglvltree/tavglvltree.removepointer.html
+   MoveDataLeftMost avglvltree/tavglvltree.movedataleftmost.html
+   MoveDataRightMost avglvltree/tavglvltree.movedatarightmost.html
+   Clear avglvltree/tavglvltree.clear.html
+   FreeAndClear avglvltree/tavglvltree.freeandclear.html
+   FreeAndDelete avglvltree/tavglvltree.freeanddelete.html
+   Root avglvltree/tavglvltree.root.html
+   Count avglvltree/tavglvltree.count.html
+   Compare avglvltree/tavglvltree.compare.html
+   Find avglvltree/tavglvltree.find.html
+   FindKey avglvltree/tavglvltree.findkey.html
+   FindNearestKey avglvltree/tavglvltree.findnearestkey.html
+   FindSuccessor avglvltree/tavglvltree.findsuccessor.html
+   FindPrecessor avglvltree/tavglvltree.findprecessor.html
+   FindLowest avglvltree/tavglvltree.findlowest.html
+   FindHighest avglvltree/tavglvltree.findhighest.html
+   FindNearest avglvltree/tavglvltree.findnearest.html
+   FindPointer avglvltree/tavglvltree.findpointer.html
+   FindLeftMost avglvltree/tavglvltree.findleftmost.html
+   FindRightMost avglvltree/tavglvltree.findrightmost.html
+   FindLeftMostKey avglvltree/tavglvltree.findleftmostkey.html
+   FindRightMostKey avglvltree/tavglvltree.findrightmostkey.html
+   FindLeftMostSameKey avglvltree/tavglvltree.findleftmostsamekey.html
+   FindRightMostSameKey avglvltree/tavglvltree.findrightmostsamekey.html
+   GetEnumerator avglvltree/tavglvltree.getenumerator.html
+   GetEnumeratorHighToLow avglvltree/tavglvltree.getenumeratorhightolow.html
+   ConsistencyCheck avglvltree/tavglvltree.consistencycheck.html
+   WriteReportToStream avglvltree/tavglvltree.writereporttostream.html
+   NodeToReportStr avglvltree/tavglvltree.nodetoreportstr.html
+   ReportAsString avglvltree/tavglvltree.reportasstring.html
+  TIndexedAVLTreeNode avglvltree/tindexedavltreenode.html
+   LeftCount avglvltree/tindexedavltreenode.leftcount.html
+  TIndexedAVLTree avglvltree/tindexedavltree.html
+   fLastIndex avglvltree/tindexedavltree.flastindex.html
+   fLastNode avglvltree/tindexedavltree.flastnode.html
+   DeletingNode avglvltree/tindexedavltree.deletingnode.html
+   Init avglvltree/tindexedavltree.init.html
+   NodeAdded avglvltree/tindexedavltree.nodeadded.html
+   RotateLeft avglvltree/tindexedavltree.rotateleft.html
+   RotateRight avglvltree/tindexedavltree.rotateright.html
+   SwitchPositionWithSuccessor avglvltree/tindexedavltree.switchpositionwithsuccessor.html
+   GetNodeAtIndex avglvltree/tindexedavltree.getnodeatindex.html
+   Items avglvltree/tindexedavltree.items.html
+   ConsistencyCheck avglvltree/tavglvltree.consistencycheck.html
+   NodeToReportStr avglvltree/tindexedavltree.nodetoreportstr.html
+  TPointerToPointerTree avglvltree/tpointertopointertree.html
+   Create avglvltree/tpointertopointertree.create.html
+   Destroy avglvltree/tpointertopointertree.destroy.html
+   Clear avglvltree/tpointertopointertree.clear.html
+   Remove avglvltree/tpointertopointertree.remove.html
+   Contains avglvltree/tpointertopointertree.contains.html
+   GetFirst avglvltree/tpointertopointertree.getfirst.html
+   GetLast avglvltree/tpointertopointertree.getlast.html
+   GetNext avglvltree/tpointertopointertree.getnext.html
+   GetPrev avglvltree/tpointertopointertree.getprev.html
+   Count avglvltree/tpointertopointertree.count.html
+   Values avglvltree/tpointertopointertree.values.html
+   Tree avglvltree/tpointertopointertree.tree.html
+  TCustomStringMapEnumerator avglvltree/tcustomstringmapenumerator.html
+   FTree avglvltree/tcustomstringmapenumerator.ftree.html
+   FCurrent avglvltree/tcustomstringmapenumerator.fcurrent.html
+   Create avglvltree/tcustomstringmapenumerator.create.html
+   MoveNext avglvltree/tcustomstringmapenumerator.movenext.html
+  TCustomStringMap avglvltree/tcustomstringmap.html
+   DisposeItem avglvltree/tcustomstringmap.disposeitem.html
+   ItemsAreEqual avglvltree/tcustomstringmap.itemsareequal.html
+   CreateCopy avglvltree/tcustomstringmap.createcopy.html
+   Create avglvltree/tcustomstringmap.create.html
+   Destroy avglvltree/tcustomstringmap.destroy.html
+   Clear avglvltree/tcustomstringmap.clear.html
+   Contains avglvltree/tcustomstringmap.contains.html
+   GetNames avglvltree/tcustomstringmap.getnames.html
+   Remove avglvltree/tcustomstringmap.remove.html
+   CaseSensitive avglvltree/tcustomstringmap.casesensitive.html
+   Tree avglvltree/tcustomstringmap.tree.html
+   FindNode avglvltree/tcustomstringmap.findnode.html
+   Count avglvltree/tcustomstringmap.count.html
+   Equals avglvltree/tcustomstringmap.equals.html
+   Assign avglvltree/tcustomstringmap.assign.html
+   CompareItemsFunc avglvltree/tcustomstringmap.compareitemsfunc.html
+   CompareKeyItemFunc avglvltree/tcustomstringmap.comparekeyitemfunc.html
+   SetCompareFuncs avglvltree/tcustomstringmap.setcomparefuncs.html
+  TStringMapEnumerator avglvltree/tstringmapenumerator.html
+   Current avglvltree/tstringmapenumerator.current.html
+  TStringMap avglvltree/tstringmap.html
+   Add avglvltree/tstringmap.add.html
+   GetEnumerator avglvltree/tstringmap.getenumerator.html
+   Values avglvltree/tstringmap.values.html
+  TStringToStringTreeEnumerator avglvltree/tstringtostringtreeenumerator.html
+   Current avglvltree/tstringtostringtreeenumerator.current.html
+  TStringToStringTree avglvltree/tstringtostringtree.html
+   DisposeItem avglvltree/tstringtostringtree.disposeitem.html
+   ItemsAreEqual avglvltree/tstringtostringtree.itemsareequal.html
+   CreateCopy avglvltree/tstringtostringtree.createcopy.html
+   GetNode avglvltree/tstringtostringtree.getnode.html
+   GetString avglvltree/tstringtostringtree.getstring.html
+   Add avglvltree/tstringtostringtree.add.html
+   AddNameValues avglvltree/tstringtostringtree.addnamevalues.html
+   AddValues avglvltree/tstringtostringtree.addvalues.html
+   AddNames avglvltree/tstringtostringtree.addnames.html
+   Delete avglvltree/tstringtostringtree.delete.html
+   Values avglvltree/tstringtostringtree.values.html
+   AsText avglvltree/tstringtostringtree.astext.html
+   Assign avglvltree/tstringtostringtree.assign.html
+   GetEnumerator avglvltree/tstringtostringtree.getenumerator.html
+   GetFirst avglvltree/tstringtostringtree.getfirst.html
+   GetLast avglvltree/tstringtostringtree.getlast.html
+   GetNext avglvltree/tstringtostringtree.getnext.html
+   GetPrev avglvltree/tstringtostringtree.getprev.html
+  TStringToPointerTreeEnumerator avglvltree/tstringtopointertreeenumerator.html
+   Current avglvltree/tstringtopointertreeenumerator.current.html
+  TStringToPointerTree avglvltree/tstringtopointertree.html
+   DisposeItem avglvltree/tstringtopointertree.disposeitem.html
+   ItemsAreEqual avglvltree/tstringtopointertree.itemsareequal.html
+   CreateCopy avglvltree/tstringtopointertree.createcopy.html
+   GetData avglvltree/tstringtopointertree.getdata.html
+   Values avglvltree/tstringtopointertree.values.html
+   GetEnumerator avglvltree/tstringtopointertree.getenumerator.html
+   FreeValues avglvltree/tstringtopointertree.freevalues.html
+  ComparePointerToPointerItems avglvltree/comparepointertopointeritems.html
+  ComparePointerWithPtrToPtrItem avglvltree/comparepointerwithptrtoptritem.html
+  CompareStringToStringItems avglvltree/comparestringtostringitems.html
+  CompareAnsiStringWithStrToStrItem avglvltree/compareansistringwithstrtostritem.html
+  CompareStringToStringItemsI avglvltree/comparestringtostringitemsi.html
+  CompareAnsiStringWithStrToStrItemI avglvltree/compareansistringwithstrtostritemi.html
+ LazUTF8 lazutf8/index.html
+  TUTF8TrimFlag lazutf8/tutf8trimflag.html
+  TUTF8TrimFlags lazutf8/tutf8trimflags.html
+  TConvertResult lazutf8/tconvertresult.html
+  TConvertOption lazutf8/tconvertoption.html
+  TConvertOptions lazutf8/tconvertoptions.html
+  NeedRTLAnsi lazutf8/needrtlansi.html
+  SetNeedRTLAnsi lazutf8/setneedrtlansi.html
+  UTF8ToSys lazutf8/utf8tosys.html
+  SysToUTF8 lazutf8/systoutf8.html
+  UTF8CharacterLength lazutf8/utf8characterlength.html
+  UTF8Length lazutf8/utf8length.html
+  UTF8CharacterToUnicode lazutf8/utf8charactertounicode.html
+  UnicodeToUTF8 lazutf8/unicodetoutf8.html
+  UnicodeToUTF8SkipErrors lazutf8/unicodetoutf8skiperrors.html
+  UnicodeToUTF8Inline lazutf8/unicodetoutf8inline.html
+  UTF8ToDoubleByteString lazutf8/utf8todoublebytestring.html
+  UTF8ToDoubleByte lazutf8/utf8todoublebyte.html
+  UTF8FindNearestCharStart lazutf8/utf8findnearestcharstart.html
+  UTF8CharStart lazutf8/utf8charstart.html
+  UTF8CharToByteIndex lazutf8/utf8chartobyteindex.html
+  UTF8FixBroken lazutf8/utf8fixbroken.html
+  UTF8CharacterStrictLength lazutf8/utf8characterstrictlength.html
+  UTF8CStringToUTF8String lazutf8/utf8cstringtoutf8string.html
+  UTF8Pos lazutf8/utf8pos.html
+  UTF8PosP lazutf8/utf8posp.html
+  UTF8Copy lazutf8/utf8copy.html
+  UTF8Delete lazutf8/utf8delete.html
+  UTF8Insert lazutf8/utf8insert.html
+  UTF8LowerCase lazutf8/utf8lowercase.html
+  UTF8UpperCase lazutf8/utf8uppercase.html
+  FindInvalidUTF8Character lazutf8/findinvalidutf8character.html
+  ValidUTF8String lazutf8/validutf8string.html
+  UTF8Trim lazutf8/utf8trim.html
+  AssignUTF8ListToAnsi lazutf8/assignutf8listtoansi.html
+  UTF8CompareStr lazutf8/utf8comparestr.html
+  UTF8CompareText lazutf8/utf8comparetext.html
+  CompareStrListUTF8LowerCase lazutf8/comparestrlistutf8lowercase.html
+  ConvertUTF8ToUTF16 lazutf8/convertutf8toutf16.html
+  ConvertUTF16ToUTF8 lazutf8/convertutf16toutf8.html
+  UTF8ToUTF16 lazutf8/utf8toutf16.html
+  UTF16ToUTF8 lazutf8/utf16toutf8.html
+  LazGetLanguageIDs lazutf8/lazgetlanguageids.html
+  LazGetShortLanguageID lazutf8/lazgetshortlanguageid.html
+  FPUpChars lazutf8/fpupchars.html
+ lazutf16 lazutf16/index.html
+  UTF16CharacterLength lazutf16/utf16characterlength.html
+  UTF16Length lazutf16/utf16length.html
+  UTF16CharacterToUnicode lazutf16/utf16charactertounicode.html
+  UnicodeToUTF16 lazutf16/unicodetoutf16.html
+  UnicodeLowercase lazutf16/unicodelowercase.html
+  UTF8LowerCaseViaTables lazutf16/utf8lowercaseviatables.html
+ Masks masks/index.html
+  TMaskCharType masks/tmaskchartype.html
+  TCharSet masks/tcharset.html
+  PCharSet masks/pcharset.html
+  TMaskChar masks/tmaskchar.html
+  TMaskString masks/tmaskstring.html
+  TMask masks/tmask.html
+   Create masks/tmask.create.html
+   Destroy masks/tmask.destroy.html
+   Matches masks/tmask.matches.html
+  TParseStringList masks/tparsestringlist.html
+   Create masks/tparsestringlist.create.html
+  TMaskList masks/tmasklist.html
+   Create masks/tmasklist.create.html
+   Destroy masks/tmasklist.destroy.html
+   Matches masks/tmasklist.matches.html
+   Count masks/tmasklist.count.html
+   Items masks/tmasklist.items.html
+  MatchesMask masks/matchesmask.html
+  MatchesMaskList masks/matchesmasklist.html
+ FileUtil fileutil/index.html
+  UTF8FileHeader fileutil/utf8fileheader.html
+  FilenamesCaseSensitive fileutil/filenamescasesensitive.html
+  FilenamesLiteral fileutil/filenamesliteral.html
+  PascalFileExt fileutil/pascalfileext.html
+  AllDirectoryEntriesMask fileutil/alldirectoryentriesmask.html
+  TSearchFileInPathFlag fileutil/tsearchfileinpathflag.html
+  TSearchFileInPathFlags fileutil/tsearchfileinpathflags.html
+  TFileFoundEvent fileutil/tfilefoundevent.html
+  TDirectoryFoundEvent fileutil/tdirectoryfoundevent.html
+  TFileIterator fileutil/tfileiterator.html
+   Stop fileutil/tfileiterator.stop.html
+   IsDirectory fileutil/tfileiterator.isdirectory.html
+   FileName fileutil/tfileiterator.filename.html
+   FileInfo fileutil/tfileiterator.fileinfo.html
+   Level fileutil/tfileiterator.level.html
+   Path fileutil/tfileiterator.path.html
+   Searching fileutil/tfileiterator.searching.html
+  TFileSearcher fileutil/tfilesearcher.html
+   DoDirectoryEnter fileutil/tfilesearcher.dodirectoryenter.html
+   DoDirectoryFound fileutil/tfilesearcher.dodirectoryfound.html
+   DoFileFound fileutil/tfilesearcher.dofilefound.html
+   Create fileutil/tfilesearcher.create.html
+   Search fileutil/tfilesearcher.search.html
+   OnDirectoryFound fileutil/tfilesearcher.ondirectoryfound.html
+   OnFileFound fileutil/tfilesearcher.onfilefound.html
+  CompareFilenames fileutil/comparefilenames.html
+  CompareFilenamesIgnoreCase fileutil/comparefilenamesignorecase.html
+  FilenameIsAbsolute fileutil/filenameisabsolute.html
+  FilenameIsWinAbsolute fileutil/filenameiswinabsolute.html
+  FilenameIsUnixAbsolute fileutil/filenameisunixabsolute.html
+  CheckIfFileIsExecutable fileutil/checkiffileisexecutable.html
+  CheckIfFileIsSymlink fileutil/checkiffileissymlink.html
+  FileIsReadable fileutil/fileisreadable.html
+  FileIsWritable fileutil/fileiswritable.html
+  FileIsText fileutil/fileistext.html
+  FileIsExecutable fileutil/fileisexecutable.html
+  FileIsSymlink fileutil/fileissymlink.html
+  FileSize fileutil/filesize.html
+  GetFileDescription fileutil/getfiledescription.html
+  ReadAllLinks fileutil/readalllinks.html
+  TryReadAllLinks fileutil/tryreadalllinks.html
+  DirPathExists fileutil/dirpathexists.html
+  ForceDirectory fileutil/forcedirectory.html
+  DeleteDirectory fileutil/deletedirectory.html
+  ProgramDirectory fileutil/programdirectory.html
+  DirectoryIsWritable fileutil/directoryiswritable.html
+  ExtractFileNameOnly fileutil/extractfilenameonly.html
+  ExtractFileNameWithoutExt fileutil/extractfilenamewithoutext.html
+  CompareFileExt fileutil/comparefileext.html
+  FilenameIsPascalUnit fileutil/filenameispascalunit.html
+  AppendPathDelim fileutil/appendpathdelim.html
+  ChompPathDelim fileutil/chomppathdelim.html
+  TrimFilename fileutil/trimfilename.html
+  CleanAndExpandFilename fileutil/cleanandexpandfilename.html
+  CleanAndExpandDirectory fileutil/cleanandexpanddirectory.html
+  CreateAbsoluteSearchPath fileutil/createabsolutesearchpath.html
+  CreateRelativePath fileutil/createrelativepath.html
+  CreateAbsolutePath fileutil/createabsolutepath.html
+  FileIsInPath fileutil/fileisinpath.html
+  FileIsInDirectory fileutil/fileisindirectory.html
+  GetAllFilesMask fileutil/getallfilesmask.html
+  GetExeExt fileutil/getexeext.html
+  SearchFileInPath fileutil/searchfileinpath.html
+  SearchAllFilesInPath fileutil/searchallfilesinpath.html
+  FindDiskFilename fileutil/finddiskfilename.html
+  FindDiskFileCaseInsensitive fileutil/finddiskfilecaseinsensitive.html
+  FindDefaultExecutablePath fileutil/finddefaultexecutablepath.html
+  FindAllFiles fileutil/findallfiles.html
+  FindAllDirectories fileutil/findalldirectories.html
+  ReadFileToString fileutil/readfiletostring.html
+  CopyFile fileutil/copyfile.html
+  GetTempFilename fileutil/gettempfilename.html
+  NeedRTLAnsi fileutil/needrtlansi.html
+  SetNeedRTLAnsi fileutil/setneedrtlansi.html
+  UTF8ToSys fileutil/utf8tosys.html
+  SysToUTF8 fileutil/systoutf8.html
+  ConsoleToUTF8 fileutil/consoletoutf8.html
+  UTF8ToConsole fileutil/utf8toconsole.html
+  FileExistsUTF8 fileutil/fileexistsutf8.html
+  FileAgeUTF8 fileutil/fileageutf8.html
+  DirectoryExistsUTF8 fileutil/directoryexistsutf8.html
+  ExpandFileNameUTF8 fileutil/expandfilenameutf8.html
+  ExpandUNCFileNameUTF8 fileutil/expanduncfilenameutf8.html
+  ExtractShortPathNameUTF8 fileutil/extractshortpathnameutf8.html
+  FindFirstUTF8 fileutil/findfirstutf8.html
+  FindNextUTF8 fileutil/findnextutf8.html
+  FindCloseUTF8 fileutil/findcloseutf8.html
+  FileSetDateUTF8 fileutil/filesetdateutf8.html
+  FileGetAttrUTF8 fileutil/filegetattrutf8.html
+  FileSetAttrUTF8 fileutil/filesetattrutf8.html
+  DeleteFileUTF8 fileutil/deletefileutf8.html
+  RenameFileUTF8 fileutil/renamefileutf8.html
+  FileSearchUTF8 fileutil/filesearchutf8.html
+  FileIsReadOnlyUTF8 fileutil/fileisreadonlyutf8.html
+  GetCurrentDirUTF8 fileutil/getcurrentdirutf8.html
+  SetCurrentDirUTF8 fileutil/setcurrentdirutf8.html
+  CreateDirUTF8 fileutil/createdirutf8.html
+  RemoveDirUTF8 fileutil/removedirutf8.html
+  ForceDirectoriesUTF8 fileutil/forcedirectoriesutf8.html
+  FileOpenUTF8 fileutil/fileopenutf8.html
+  FileCreateUTF8 fileutil/filecreateutf8.html
+  ParamStrUTF8 fileutil/paramstrutf8.html
+  GetEnvironmentStringUTF8 fileutil/getenvironmentstringutf8.html
+  GetEnvironmentVariableUTF8 fileutil/getenvironmentvariableutf8.html
+  GetAppConfigDirUTF8 fileutil/getappconfigdirutf8.html
+  GetAppConfigFileUTF8 fileutil/getappconfigfileutf8.html
+  SysErrorMessageUTF8 fileutil/syserrormessageutf8.html
+ lazutf8classes lazutf8classes/index.html
+  TFileStreamUTF8 lazutf8classes/tfilestreamutf8.html
+   Create lazutf8classes/tfilestreamutf8.create.html
+   Destroy lazutf8classes/tfilestreamutf8.destroy.html
+   FileName lazutf8classes/tfilestreamutf8.filename.html
+  TStringListUTF8 lazutf8classes/tstringlistutf8.html
+   DoCompareText lazutf8classes/tstringlistutf8.docomparetext.html
+   LoadFromFile lazutf8classes/tstringlistutf8.loadfromfile.html
+   SaveToFile lazutf8classes/tstringlistutf8.savetofile.html
+  LoadStringsFromFileUTF8 lazutf8classes/loadstringsfromfileutf8.html
+  SaveStringsToFileUTF8 lazutf8classes/savestringstofileutf8.html
+ LConvEncoding lconvencoding/index.html
+  EncodingUTF8 lconvencoding/encodingutf8.html
+  EncodingAnsi lconvencoding/encodingansi.html
+  EncodingUTF8BOM lconvencoding/encodingutf8bom.html
+  EncodingUCS2LE lconvencoding/encodingucs2le.html
+  EncodingUCS2BE lconvencoding/encodingucs2be.html
+  UTF8BOM lconvencoding/utf8bom.html
+  UTF16BEBOM lconvencoding/utf16bebom.html
+  UTF16LEBOM lconvencoding/utf16lebom.html
+  UTF32BEBOM lconvencoding/utf32bebom.html
+  UTF32LEBOM lconvencoding/utf32lebom.html
+  TConvertEncodingFunction lconvencoding/tconvertencodingfunction.html
+  TCharToUTF8Table lconvencoding/tchartoutf8table.html
+  TUnicodeToCharID lconvencoding/tunicodetocharid.html
+  GuessEncoding lconvencoding/guessencoding.html
+  ConvertEncoding lconvencoding/convertencoding.html
+  GetDefaultTextEncoding lconvencoding/getdefaulttextencoding.html
+  GetConsoleTextEncoding lconvencoding/getconsoletextencoding.html
+  NormalizeEncoding lconvencoding/normalizeencoding.html
+  UTF8BOMToUTF8 lconvencoding/utf8bomtoutf8.html
+  ISO_8859_1ToUTF8 lconvencoding/iso_8859_1toutf8.html
+  ISO_8859_2ToUTF8 lconvencoding/iso_8859_2toutf8.html
+  CP1250ToUTF8 lconvencoding/cp1250toutf8.html
+  CP1251ToUTF8 lconvencoding/cp1251toutf8.html
+  CP1252ToUTF8 lconvencoding/cp1252toutf8.html
+  CP1253ToUTF8 lconvencoding/cp1253toutf8.html
+  CP1254ToUTF8 lconvencoding/cp1254toutf8.html
+  CP1255ToUTF8 lconvencoding/cp1255toutf8.html
+  CP1256ToUTF8 lconvencoding/cp1256toutf8.html
+  CP1257ToUTF8 lconvencoding/cp1257toutf8.html
+  CP1258ToUTF8 lconvencoding/cp1258toutf8.html
+  CP437ToUTF8 lconvencoding/cp437toutf8.html
+  CP850ToUTF8 lconvencoding/cp850toutf8.html
+  CP852ToUTF8 lconvencoding/cp852toutf8.html
+  CP866ToUTF8 lconvencoding/cp866toutf8.html
+  CP874ToUTF8 lconvencoding/cp874toutf8.html
+  KOI8ToUTF8 lconvencoding/koi8toutf8.html
+  SingleByteToUTF8 lconvencoding/singlebytetoutf8.html
+  UCS2LEToUTF8 lconvencoding/ucs2letoutf8.html
+  UCS2BEToUTF8 lconvencoding/ucs2betoutf8.html
+  UTF8ToUTF8BOM lconvencoding/utf8toutf8bom.html
+  UTF8ToISO_8859_1 lconvencoding/utf8toiso_8859_1.html
+  UTF8ToISO_8859_2 lconvencoding/utf8toiso_8859_2.html
+  UTF8ToCP1250 lconvencoding/utf8tocp1250.html
+  UTF8ToCP1251 lconvencoding/utf8tocp1251.html
+  UTF8ToCP1252 lconvencoding/utf8tocp1252.html
+  UTF8ToCP1253 lconvencoding/utf8tocp1253.html
+  UTF8ToCP1254 lconvencoding/utf8tocp1254.html
+  UTF8ToCP1255 lconvencoding/utf8tocp1255.html
+  UTF8ToCP1256 lconvencoding/utf8tocp1256.html
+  UTF8ToCP1257 lconvencoding/utf8tocp1257.html
+  UTF8ToCP1258 lconvencoding/utf8tocp1258.html
+  UTF8ToCP437 lconvencoding/utf8tocp437.html
+  UTF8ToCP850 lconvencoding/utf8tocp850.html
+  UTF8ToCP852 lconvencoding/utf8tocp852.html
+  UTF8ToCP866 lconvencoding/utf8tocp866.html
+  UTF8ToCP874 lconvencoding/utf8tocp874.html
+  UTF8ToKOI8 lconvencoding/utf8tokoi8.html
+  UTF8ToSingleByte lconvencoding/utf8tosinglebyte.html
+  UTF8ToUCS2LE lconvencoding/utf8toucs2le.html
+  UTF8ToUCS2BE lconvencoding/utf8toucs2be.html
+  CP936ToUTF8 lconvencoding/cp936toutf8.html
+  CP950ToUTF8 lconvencoding/cp950toutf8.html
+  CP949ToUTF8 lconvencoding/cp949toutf8.html
+  CP932ToUTF8 lconvencoding/cp932toutf8.html
+  SingleByteToUTF8Ex lconvencoding/singlebytetoutf8ex.html
+  UTF8ToCP936 lconvencoding/utf8tocp936.html
+  UTF8ToCP950 lconvencoding/utf8tocp950.html
+  UTF8ToCP949 lconvencoding/utf8tocp949.html
+  UTF8ToCP932 lconvencoding/utf8tocp932.html
+  UTF8ToSingleByteEx lconvencoding/utf8tosinglebyteex.html
+  GetSupportedEncodings lconvencoding/getsupportedencodings.html
+  ConvertAnsiToUTF8 lconvencoding/convertansitoutf8.html
+  ConvertUTF8ToAnsi lconvencoding/convertutf8toansi.html
+ paswstring paswstring/index.html
+  SetPasWidestringManager paswstring/setpaswidestringmanager.html
+ LazLogger lazlogger/index.html
+  PLazLoggerLogGroup lazlogger/plazloggerloggroup.html
+  TLazLoggerFileHandle lazlogger/tlazloggerfilehandle.html
+   Create lazlogger/tlazloggerfilehandle.create.html
+   Destroy lazlogger/tlazloggerfilehandle.destroy.html
+   OpenFile lazlogger/tlazloggerfilehandle.openfile.html
+   CloseFile lazlogger/tlazloggerfilehandle.closefile.html
+   WriteToFile lazlogger/tlazloggerfilehandle.writetofile.html
+   WriteLnToFile lazlogger/tlazloggerfilehandle.writelntofile.html
+   LogName lazlogger/tlazloggerfilehandle.logname.html
+   UseStdOut lazlogger/tlazloggerfilehandle.usestdout.html
+   CloseLogFileBetweenWrites lazlogger/tlazloggerfilehandle.closelogfilebetweenwrites.html
+   WriteTarget lazlogger/tlazloggerfilehandle.writetarget.html
+   ActiveLogText lazlogger/tlazloggerfilehandle.activelogtext.html
+  TLazLoggerFile lazlogger/tlazloggerfile.html
+   DoInit lazlogger/tlazloggerfile.doinit.html
+   DoFinsh lazlogger/tlazloggerfile.dofinsh.html
+   IncreaseIndent lazlogger/tlazloggerfile.increaseindent.html
+   DecreaseIndent lazlogger/tlazloggerfile.decreaseindent.html
+   IndentChanged lazlogger/tlazloggerfile.indentchanged.html
+   CreateIndent lazlogger/tlazloggerfile.createindent.html
+   DoDbgOut lazlogger/tlazloggerfile.dodbgout.html
+   DoDebugLn lazlogger/tlazloggerfile.dodebugln.html
+   DoDebuglnStack lazlogger/tlazloggerfile.dodebuglnstack.html
+   FileHandle lazlogger/tlazloggerfile.filehandle.html
+   Create 
+   Destroy lazlogger/tlazloggerfile.destroy.html
+   Assign 
+   ParamForLogFileName lazlogger/tlazloggerfile.paramforlogfilename.html
+   EnvironmentForLogFileName lazlogger/tlazloggerfile.environmentforlogfilename.html
+   OnDebugLn lazlogger/tlazloggerfile.ondebugln.html
+   OnDbgOut lazlogger/tlazloggerfile.ondbgout.html
+   LogName lazlogger/tlazloggerfile.logname.html
+   UseStdOut lazlogger/tlazloggerfile.usestdout.html
+   CloseLogFileBetweenWrites lazlogger/tlazloggerfile.closelogfilebetweenwrites.html
+  DebuglnStack lazlogger/debuglnstack.html
+  DbgOut lazlogger/dbgout.html
+  DebugLn lazlogger/debugln.html
+  DebugLnEnter lazlogger/debuglnenter.html
+  DebugLnExit lazlogger/debuglnexit.html
+  DbgS lazlogger/dbgs.html
+  DbgSJoin lazlogger/dbgsjoin.html
+  DbgSName lazlogger/dbgsname.html
+  dbgObjMem lazlogger/dbgobjmem.html
+  dbghex lazlogger/dbghex.html
+  dbgMemRange lazlogger/dbgmemrange.html
+  dbgMemStream lazlogger/dbgmemstream.html
+  DbgStr lazlogger/dbgstr.html
+  DbgWideStr lazlogger/dbgwidestr.html
+  ConvertLineEndings lazlogger/convertlineendings.html
+  ReplaceSubstring lazlogger/replacesubstring.html
+  GetDebugLogger lazlogger/getdebuglogger.html
+  SetDebugLogger lazlogger/setdebuglogger.html
+ LazLoggerBase lazloggerbase/index.html
+  TLazLoggerLogGroupFlag lazloggerbase/tlazloggerloggroupflag.html
+  TLazLoggerLogGroupFlags lazloggerbase/tlazloggerloggroupflags.html
+  TLazLoggerLogGroup lazloggerbase/tlazloggerloggroup.html
+  PLazLoggerLogGroup lazloggerbase/plazloggerloggroup.html
+  TLazLoggerWriteTarget lazloggerbase/tlazloggerwritetarget.html
+  TLazLoggerWriteEvent lazloggerbase/tlazloggerwriteevent.html
+  TLazLoggerWidgetSetWriteEvent lazloggerbase/tlazloggerwidgetsetwriteevent.html
+  TLazDebugLoggerCreator lazloggerbase/tlazdebugloggercreator.html
+  TLazLoggerLogGroupList lazloggerbase/tlazloggerloggrouplist.html
+   Add lazloggerbase/tlazloggerloggrouplist.add.html
+   FindOrAdd lazloggerbase/tlazloggerloggrouplist.findoradd.html
+   Remove lazloggerbase/tlazloggerloggrouplist.remove.html
+   Create lazloggerbase/tlazloggerloggrouplist.create.html
+   Destroy lazloggerbase/tlazloggerloggrouplist.destroy.html
+   Assign lazloggerbase/tlazloggerloggrouplist.assign.html
+   IndexOf lazloggerbase/tlazloggerloggrouplist.indexof.html
+   Find lazloggerbase/tlazloggerloggrouplist.find.html
+   Count lazloggerbase/tlazloggerloggrouplist.count.html
+   Item lazloggerbase/tlazloggerloggrouplist.item.html
+  TLazLogger lazloggerbase/tlazlogger.html
+   DoInit lazloggerbase/tlazlogger.doinit.html
+   DoFinsh lazloggerbase/tlazlogger.dofinsh.html
+   IncreaseIndent lazloggerbase/tlazlogger.increaseindent.html
+   DecreaseIndent lazloggerbase/tlazlogger.decreaseindent.html
+   IndentChanged lazloggerbase/tlazlogger.indentchanged.html
+   DoDbgOut lazloggerbase/tlazlogger.dodbgout.html
+   DoDebugLn lazloggerbase/tlazlogger.dodebugln.html
+   DoDebuglnStack lazloggerbase/tlazlogger.dodebuglnstack.html
+   ArgsToString lazloggerbase/tlazlogger.argstostring.html
+   IsInitialized lazloggerbase/tlazlogger.isinitialized.html
+   Create lazloggerbase/tlazlogger.create.html
+   Destroy lazloggerbase/tlazlogger.destroy.html
+   Assign lazloggerbase/tlazlogger.assign.html
+   Init lazloggerbase/tlazlogger.init.html
+   Finish lazloggerbase/tlazlogger.finish.html
+   NestLvlIndent lazloggerbase/tlazlogger.nestlvlindent.html
+   MaxNestPrefixLen lazloggerbase/tlazlogger.maxnestprefixlen.html
+   RegisterLogGroup lazloggerbase/tlazlogger.registerloggroup.html
+   FindOrRegisterLogGroup lazloggerbase/tlazlogger.findorregisterloggroup.html
+   LogGroupList lazloggerbase/tlazlogger.loggrouplist.html
+   UseGlobalLogGroupList lazloggerbase/tlazlogger.usegloballoggrouplist.html
+   DebuglnStack lazloggerbase/tlazlogger.debuglnstack.html
+   DbgOut lazloggerbase/tlazlogger.dbgout.html
+   DebugLn lazloggerbase/tlazlogger.debugln.html
+   DebugLnEnter lazloggerbase/tlazlogger.debuglnenter.html
+   DebugLnExit lazloggerbase/tlazlogger.debuglnexit.html
+  TLazLoggerWithGroupParam lazloggerbase/tlazloggerwithgroupparam.html
+   Create lazloggerbase/tlazloggerwithgroupparam.create.html
+   Assign lazloggerbase/tlazloggerwithgroupparam.assign.html
+   RegisterLogGroup lazloggerbase/tlazloggerwithgroupparam.registerloggroup.html
+   FindOrRegisterLogGroup lazloggerbase/tlazloggerwithgroupparam.findorregisterloggroup.html
+   ParamForEnabledLogGroups lazloggerbase/tlazloggerwithgroupparam.paramforenabledloggroups.html
+  TLazLoggerNoOutput lazloggerbase/tlazloggernooutput.html
+  DebuglnStack lazloggerbase/debuglnstack.html
+  DbgOut lazloggerbase/dbgout.html
+  DebugLn lazloggerbase/debugln.html
+  DebugLnEnter lazloggerbase/debuglnenter.html
+  DebugLnExit lazloggerbase/debuglnexit.html
+  DbgS lazloggerbase/dbgs.html
+  DbgSJoin lazloggerbase/dbgsjoin.html
+  DbgSName lazloggerbase/dbgsname.html
+  dbgObjMem lazloggerbase/dbgobjmem.html
+  dbghex lazloggerbase/dbghex.html
+  dbgMemRange lazloggerbase/dbgmemrange.html
+  dbgMemStream lazloggerbase/dbgmemstream.html
+  ConvertLineEndings lazloggerbase/convertlineendings.html
+  GetParamByNameCount lazloggerbase/getparambynamecount.html
+  GetParamByName lazloggerbase/getparambyname.html
+  GetDebugLoggerGroups lazloggerbase/getdebugloggergroups.html
+  SetDebugLoggerGroups lazloggerbase/setdebugloggergroups.html
+  GetDebugLogger lazloggerbase/getdebuglogger.html
+  GetExistingDebugLogger lazloggerbase/getexistingdebuglogger.html
+  SetDebugLogger lazloggerbase/setdebuglogger.html
+  RecreateDebugLogger lazloggerbase/recreatedebuglogger.html
+  LazDebugLoggerCreator lazloggerbase/lazdebugloggercreator.html
+  OnWidgetSetDebugLn lazloggerbase/onwidgetsetdebugln.html
+  OnWidgetSetDbgOut lazloggerbase/onwidgetsetdbgout.html
+ LazClasses lazclasses/index.html
+  TFreeNotifyingObject lazclasses/tfreenotifyingobject.html
+   Create lazclasses/tfreenotifyingobject.create.html
+   Destroy lazclasses/tfreenotifyingobject.destroy.html
+   AddFreeeNotification lazclasses/tfreenotifyingobject.addfreeenotification.html
+   RemoveFreeeNotification lazclasses/tfreenotifyingobject.removefreeenotification.html
+  TRefCountedObject lazclasses/trefcountedobject.html
+   DoFree lazclasses/trefcountedobject.dofree.html
+   RefCount lazclasses/trefcountedobject.refcount.html
+   Create lazclasses/trefcountedobject.create.html
+   Destroy lazclasses/trefcountedobject.destroy.html
+   AddReference lazclasses/trefcountedobject.addreference.html
+   ReleaseReference lazclasses/trefcountedobject.releasereference.html
+  TRefCntObjList lazclasses/trefcntobjlist.html
+   Notify lazclasses/trefcntobjlist.notify.html
+  ReleaseRefAndNil lazclasses/releaserefandnil.html
+ LazDbgLog lazdbglog/index.html
+  MemSizeString lazdbglog/memsizestring.html
+  MemSizeFPList lazdbglog/memsizefplist.html
+  GetStringRefCount lazdbglog/getstringrefcount.html
+ LazFileUtils lazfileutils/index.html
+  TInvalidateFileStateCacheEvent lazfileutils/tinvalidatefilestatecacheevent.html
+  CompareFilenames lazfileutils/comparefilenames.html
+  CompareFilenamesIgnoreCase lazfileutils/comparefilenamesignorecase.html
+  CompareFileExt lazfileutils/comparefileext.html
+  CompareFilenameStarts lazfileutils/comparefilenamestarts.html
+  DirPathExists lazfileutils/dirpathexists.html
+  DirectoryIsWritable lazfileutils/directoryiswritable.html
+  ExtractFileNameOnly lazfileutils/extractfilenameonly.html
+  FilenameIsAbsolute lazfileutils/filenameisabsolute.html
+  FilenameIsWinAbsolute lazfileutils/filenameiswinabsolute.html
+  FilenameIsUnixAbsolute lazfileutils/filenameisunixabsolute.html
+  ForceDirectory lazfileutils/forcedirectory.html
+  CheckIfFileIsExecutable lazfileutils/checkiffileisexecutable.html
+  FileIsExecutable lazfileutils/fileisexecutable.html
+  FileIsReadable lazfileutils/fileisreadable.html
+  FileIsWritable lazfileutils/fileiswritable.html
+  FileIsText lazfileutils/fileistext.html
+  FilenameIsTrimmed lazfileutils/filenameistrimmed.html
+  TrimFilename lazfileutils/trimfilename.html
+  CleanAndExpandFilename lazfileutils/cleanandexpandfilename.html
+  CleanAndExpandDirectory lazfileutils/cleanandexpanddirectory.html
+  TrimAndExpandFilename lazfileutils/trimandexpandfilename.html
+  TrimAndExpandDirectory lazfileutils/trimandexpanddirectory.html
+  CreateRelativePath lazfileutils/createrelativepath.html
+  FileIsInPath lazfileutils/fileisinpath.html
+  AppendPathDelim lazfileutils/appendpathdelim.html
+  ChompPathDelim lazfileutils/chomppathdelim.html
+  CreateAbsoluteSearchPath lazfileutils/createabsolutesearchpath.html
+  CreateRelativeSearchPath lazfileutils/createrelativesearchpath.html
+  MinimizeSearchPath lazfileutils/minimizesearchpath.html
+  FindPathInSearchPath lazfileutils/findpathinsearchpath.html
+  FileExistsUTF8 lazfileutils/fileexistsutf8.html
+  FileAgeUTF8 lazfileutils/fileageutf8.html
+  DirectoryExistsUTF8 lazfileutils/directoryexistsutf8.html
+  ExpandFileNameUTF8 lazfileutils/expandfilenameutf8.html
+  FindFirstUTF8 lazfileutils/findfirstutf8.html
+  FindNextUTF8 lazfileutils/findnextutf8.html
+  FindCloseUTF8 lazfileutils/findcloseutf8.html
+  FileSetDateUTF8 lazfileutils/filesetdateutf8.html
+  FileGetAttrUTF8 lazfileutils/filegetattrutf8.html
+  FileSetAttrUTF8 lazfileutils/filesetattrutf8.html
+  DeleteFileUTF8 lazfileutils/deletefileutf8.html
+  RenameFileUTF8 lazfileutils/renamefileutf8.html
+  FileSearchUTF8 lazfileutils/filesearchutf8.html
+  FileIsReadOnlyUTF8 lazfileutils/fileisreadonlyutf8.html
+  GetCurrentDirUTF8 lazfileutils/getcurrentdirutf8.html
+  SetCurrentDirUTF8 lazfileutils/setcurrentdirutf8.html
+  CreateDirUTF8 lazfileutils/createdirutf8.html
+  RemoveDirUTF8 lazfileutils/removedirutf8.html
+  ForceDirectoriesUTF8 lazfileutils/forcedirectoriesutf8.html
+  IsUNCPath lazfileutils/isuncpath.html
+  ExtractUNCVolume lazfileutils/extractuncvolume.html
+  InvalidateFileStateCache lazfileutils/invalidatefilestatecache.html
+  OnInvalidateFileStateCache lazfileutils/oninvalidatefilestatecache.html
+ LazFileCache lazfilecache/index.html
+  LUInvalidChangeStamp lazfilecache/luinvalidchangestamp.html
+  LUInvalidChangeStamp64 lazfilecache/luinvalidchangestamp64.html
+  TFileStateCacheItemFlag lazfilecache/tfilestatecacheitemflag.html
+  TFileStateCacheItemFlags lazfilecache/tfilestatecacheitemflags.html
+  TOnChangeFileStateTimeStamp lazfilecache/tonchangefilestatetimestamp.html
+  TOnFileExistsCached lazfilecache/tonfileexistscached.html
+  TOnFileAgeCached lazfilecache/tonfileagecached.html
+  TFileStateCacheItem lazfilecache/tfilestatecacheitem.html
+   Create lazfilecache/tfilestatecacheitem.create.html
+   CalcMemSize lazfilecache/tfilestatecacheitem.calcmemsize.html
+   Filename lazfilecache/tfilestatecacheitem.filename.html
+   Flags lazfilecache/tfilestatecacheitem.flags.html
+   TestedFlags lazfilecache/tfilestatecacheitem.testedflags.html
+   TimeStamp lazfilecache/tfilestatecacheitem.timestamp.html
+   Age lazfilecache/tfilestatecacheitem.age.html
+  TFileStateCache lazfilecache/tfilestatecache.html
+   Create lazfilecache/tfilestatecache.create.html
+   Destroy lazfilecache/tfilestatecache.destroy.html
+   Lock lazfilecache/tfilestatecache.lock.html
+   Unlock lazfilecache/tfilestatecache.unlock.html
+   Locked lazfilecache/tfilestatecache.locked.html
+   IncreaseTimeStamp lazfilecache/tfilestatecache.increasetimestamp.html
+   FileExistsCached lazfilecache/tfilestatecache.fileexistscached.html
+   DirPathExistsCached lazfilecache/tfilestatecache.dirpathexistscached.html
+   DirectoryIsWritableCached lazfilecache/tfilestatecache.directoryiswritablecached.html
+   FileIsExecutableCached lazfilecache/tfilestatecache.fileisexecutablecached.html
+   FileIsReadableCached lazfilecache/tfilestatecache.fileisreadablecached.html
+   FileIsWritableCached lazfilecache/tfilestatecache.fileiswritablecached.html
+   FileIsTextCached lazfilecache/tfilestatecache.fileistextcached.html
+   FileAgeCached lazfilecache/tfilestatecache.fileagecached.html
+   FindFile lazfilecache/tfilestatecache.findfile.html
+   Check lazfilecache/tfilestatecache.check.html
+   AddChangeTimeStampHandler lazfilecache/tfilestatecache.addchangetimestamphandler.html
+   RemoveChangeTimeStampHandler lazfilecache/tfilestatecache.removechangetimestamphandler.html
+   CalcMemSize lazfilecache/tfilestatecache.calcmemsize.html
+   TimeStamp lazfilecache/tfilestatecache.timestamp.html
+  FileExistsCached lazfilecache/fileexistscached.html
+  DirPathExistsCached lazfilecache/dirpathexistscached.html
+  DirectoryIsWritableCached lazfilecache/directoryiswritablecached.html
+  FileIsExecutableCached lazfilecache/fileisexecutablecached.html
+  FileIsReadableCached lazfilecache/fileisreadablecached.html
+  FileIsWritableCached lazfilecache/fileiswritablecached.html
+  FileIsTextCached lazfilecache/fileistextcached.html
+  FileAgeCached lazfilecache/fileagecached.html
+  InvalidateFileStateCache lazfilecache/invalidatefilestatecache.html
+  CompareFileStateItems lazfilecache/comparefilestateitems.html
+  CompareFilenameWithFileStateCacheItem lazfilecache/comparefilenamewithfilestatecacheitem.html
+  LUIncreaseChangeStamp lazfilecache/luincreasechangestamp.html
+  LUIncreaseChangeStamp64 lazfilecache/luincreasechangestamp64.html
+  FileStateCache lazfilecache/filestatecache.html
+  OnFileExistsCached lazfilecache/onfileexistscached.html
+  OnFileAgeCached lazfilecache/onfileagecached.html
+ LazUtils lazutils/index.html
+ laz2_DOM laz2_dom/index.html
+  INDEX_SIZE_ERR laz2_dom/index_size_err.html
+  DOMSTRING_SIZE_ERR laz2_dom/domstring_size_err.html
+  HIERARCHY_REQUEST_ERR laz2_dom/hierarchy_request_err.html
+  WRONG_DOCUMENT_ERR laz2_dom/wrong_document_err.html
+  INVALID_CHARACTER_ERR laz2_dom/invalid_character_err.html
+  NO_DATA_ALLOWED_ERR laz2_dom/no_data_allowed_err.html
+  NO_MODIFICATION_ALLOWED_ERR laz2_dom/no_modification_allowed_err.html
+  NOT_FOUND_ERR laz2_dom/not_found_err.html
+  NOT_SUPPORTED_ERR laz2_dom/not_supported_err.html
+  INUSE_ATTRIBUTE_ERR laz2_dom/inuse_attribute_err.html
+  INVALID_STATE_ERR laz2_dom/invalid_state_err.html
+  SYNTAX_ERR laz2_dom/syntax_err.html
+  INVALID_MODIFICATION_ERR laz2_dom/invalid_modification_err.html
+  NAMESPACE_ERR laz2_dom/namespace_err.html
+  INVALID_ACCESS_ERR laz2_dom/invalid_access_err.html
+  ELEMENT_NODE laz2_dom/element_node.html
+  ATTRIBUTE_NODE laz2_dom/attribute_node.html
+  TEXT_NODE laz2_dom/text_node.html
+  CDATA_SECTION_NODE laz2_dom/cdata_section_node.html
+  ENTITY_REFERENCE_NODE laz2_dom/entity_reference_node.html
+  ENTITY_NODE laz2_dom/entity_node.html
+  PROCESSING_INSTRUCTION_NODE laz2_dom/processing_instruction_node.html
+  COMMENT_NODE laz2_dom/comment_node.html
+  DOCUMENT_NODE laz2_dom/document_node.html
+  DOCUMENT_TYPE_NODE laz2_dom/document_type_node.html
+  DOCUMENT_FRAGMENT_NODE laz2_dom/document_fragment_node.html
+  NOTATION_NODE laz2_dom/notation_node.html
+  stduri_xml laz2_dom/stduri_xml.html
+  stduri_xmlns laz2_dom/stduri_xmlns.html
+  PNodePoolArray laz2_dom/pnodepoolarray.html
+  TNodePoolArray laz2_dom/tnodepoolarray.html
+  TSetOfChar laz2_dom/tsetofchar.html
+  DOMString laz2_dom/domstring.html
+  DOMPChar laz2_dom/dompchar.html
+  DOMChar laz2_dom/domchar.html
+  PDOMString laz2_dom/pdomstring.html
+  TNodeFlagEnum laz2_dom/tnodeflagenum.html
+  TNodeFlags laz2_dom/tnodeflags.html
+  TDOMNodeClass laz2_dom/tdomnodeclass.html
+  TFilterResult laz2_dom/tfilterresult.html
+  TNamespaces laz2_dom/tnamespaces.html
+  TNamespaceInfo laz2_dom/tnamespaceinfo.html
+  TAttrDataType laz2_dom/tattrdatatype.html
+  TAttrDefault laz2_dom/tattrdefault.html
+  PExtent laz2_dom/pextent.html
+  TExtent laz2_dom/textent.html
+  EDOMError laz2_dom/edomerror.html
+   Code laz2_dom/edomerror.code.html
+   Create laz2_dom/edomerror.create.html
+  EDOMIndexSize laz2_dom/edomindexsize.html
+   Create laz2_dom/edomindexsize.create.html
+  EDOMHierarchyRequest laz2_dom/edomhierarchyrequest.html
+   Create laz2_dom/edomhierarchyrequest.create.html
+  EDOMWrongDocument laz2_dom/edomwrongdocument.html
+   Create laz2_dom/edomwrongdocument.create.html
+  EDOMNotFound laz2_dom/edomnotfound.html
+   Create laz2_dom/edomnotfound.create.html
+  EDOMNotSupported laz2_dom/edomnotsupported.html
+   Create laz2_dom/edomnotsupported.create.html
+  EDOMInUseAttribute laz2_dom/edominuseattribute.html
+   Create laz2_dom/edominuseattribute.create.html
+  EDOMInvalidState laz2_dom/edominvalidstate.html
+   Create laz2_dom/edominvalidstate.create.html
+  EDOMSyntax laz2_dom/edomsyntax.html
+   Create laz2_dom/edomsyntax.create.html
+  EDOMInvalidModification laz2_dom/edominvalidmodification.html
+   Create laz2_dom/edominvalidmodification.create.html
+  EDOMNamespace laz2_dom/edomnamespace.html
+   Create laz2_dom/edomnamespace.create.html
+  EDOMInvalidAccess laz2_dom/edominvalidaccess.html
+   Create laz2_dom/edominvalidaccess.create.html
+  TDOMNodeEnumerator laz2_dom/tdomnodeenumerator.html
+   Create laz2_dom/tdomnodeenumerator.create.html
+   MoveNext laz2_dom/tdomnodeenumerator.movenext.html
+   Current laz2_dom/tdomnodeenumerator.current.html
+  TDOMNodeAllChildEnumerator laz2_dom/tdomnodeallchildenumerator.html
+   Create laz2_dom/tdomnodeallchildenumerator.create.html
+   MoveNext laz2_dom/tdomnodeallchildenumerator.movenext.html
+   Current laz2_dom/tdomnodeallchildenumerator.current.html
+   GetEnumerator laz2_dom/tdomnodeallchildenumerator.getenumerator.html
+  TDOMNode laz2_dom/tdomnode.html
+   FPool laz2_dom/tdomnode.fpool.html
+   FFlags laz2_dom/tdomnode.fflags.html
+   FParentNode laz2_dom/tdomnode.fparentnode.html
+   FPreviousSibling laz2_dom/tdomnode.fprevioussibling.html
+   FNextSibling laz2_dom/tdomnode.fnextsibling.html
+   FOwnerDocument laz2_dom/tdomnode.fownerdocument.html
+   GetNodeName laz2_dom/tdomnode.getnodename.html
+   GetNodeValue laz2_dom/tdomnode.getnodevalue.html
+   SetNodeValue laz2_dom/tdomnode.setnodevalue.html
+   GetFirstChild laz2_dom/tdomnode.getfirstchild.html
+   GetLastChild laz2_dom/tdomnode.getlastchild.html
+   GetAttributes laz2_dom/tdomnode.getattributes.html
+   GetRevision laz2_dom/tdomnode.getrevision.html
+   GetNodeType laz2_dom/tdomnode.getnodetype.html
+   GetTextContent laz2_dom/tdomnode.gettextcontent.html
+   SetTextContent laz2_dom/tdomnode.settextcontent.html
+   GetLocalName laz2_dom/tdomnode.getlocalname.html
+   GetNamespaceURI laz2_dom/tdomnode.getnamespaceuri.html
+   GetPrefix laz2_dom/tdomnode.getprefix.html
+   SetPrefix laz2_dom/tdomnode.setprefix.html
+   GetOwnerDocument laz2_dom/tdomnode.getownerdocument.html
+   GetBaseURI laz2_dom/tdomnode.getbaseuri.html
+   SetReadOnly laz2_dom/tdomnode.setreadonly.html
+   Changing laz2_dom/tdomnode.changing.html
+   Create laz2_dom/tdomnode.create.html
+   Destroy laz2_dom/tdomnode.destroy.html
+   FreeInstance laz2_dom/tdomnode.freeinstance.html
+   GetChildNodes laz2_dom/tdomnode.getchildnodes.html
+   GetChildCount laz2_dom/tdomnode.getchildcount.html
+   NodeName laz2_dom/tdomnode.nodename.html
+   NodeValue laz2_dom/tdomnode.nodevalue.html
+   NodeType laz2_dom/tdomnode.nodetype.html
+   ParentNode laz2_dom/tdomnode.parentnode.html
+   FirstChild laz2_dom/tdomnode.firstchild.html
+   LastChild laz2_dom/tdomnode.lastchild.html
+   ChildNodes laz2_dom/tdomnode.childnodes.html
+   PreviousSibling laz2_dom/tdomnode.previoussibling.html
+   NextSibling laz2_dom/tdomnode.nextsibling.html
+   Attributes laz2_dom/tdomnode.attributes.html
+   OwnerDocument laz2_dom/tdomnode.ownerdocument.html
+   GetEnumerator laz2_dom/tdomnode.getenumerator.html
+   GetEnumeratorAllChildren laz2_dom/tdomnode.getenumeratorallchildren.html
+   GetNextNode laz2_dom/tdomnode.getnextnode.html
+   GetNextNodeSkipChildren laz2_dom/tdomnode.getnextnodeskipchildren.html
+   GetPreviousNode laz2_dom/tdomnode.getpreviousnode.html
+   GetLastLeaf laz2_dom/tdomnode.getlastleaf.html
+   GetLevel laz2_dom/tdomnode.getlevel.html
+   InsertBefore laz2_dom/tdomnode.insertbefore.html
+   ReplaceChild laz2_dom/tdomnode.replacechild.html
+   DetachChild laz2_dom/tdomnode.detachchild.html
+   RemoveChild laz2_dom/tdomnode.removechild.html
+   AppendChild laz2_dom/tdomnode.appendchild.html
+   HasChildNodes laz2_dom/tdomnode.haschildnodes.html
+   CloneNode laz2_dom/tdomnode.clonenode.html
+   IsSupported laz2_dom/tdomnode.issupported.html
+   HasAttributes laz2_dom/tdomnode.hasattributes.html
+   Normalize laz2_dom/tdomnode.normalize.html
+   NamespaceURI laz2_dom/tdomnode.namespaceuri.html
+   LocalName laz2_dom/tdomnode.localname.html
+   Prefix laz2_dom/tdomnode.prefix.html
+   TextContent laz2_dom/tdomnode.textcontent.html
+   LookupPrefix laz2_dom/tdomnode.lookupprefix.html
+   LookupNamespaceURI laz2_dom/tdomnode.lookupnamespaceuri.html
+   IsDefaultNamespace laz2_dom/tdomnode.isdefaultnamespace.html
+   baseURI laz2_dom/tdomnode.baseuri.html
+   FindNode laz2_dom/tdomnode.findnode.html
+   CompareName laz2_dom/tdomnode.comparename.html
+   Flags laz2_dom/tdomnode.flags.html
+  TDOMNode_WithChildren laz2_dom/tdomnode_withchildren.html
+   FFirstChild laz2_dom/tdomnode_withchildren.ffirstchild.html
+   FLastChild laz2_dom/tdomnode_withchildren.flastchild.html
+   FChildNodes laz2_dom/tdomnode_withchildren.fchildnodes.html
+   GetFirstChild laz2_dom/tdomnode_withchildren.getfirstchild.html
+   GetLastChild laz2_dom/tdomnode_withchildren.getlastchild.html
+   CloneChildren laz2_dom/tdomnode_withchildren.clonechildren.html
+   FreeChildren laz2_dom/tdomnode_withchildren.freechildren.html
+   GetTextContent laz2_dom/tdomnode_withchildren.gettextcontent.html
+   SetTextContent laz2_dom/tdomnode_withchildren.settextcontent.html
+   Destroy laz2_dom/tdomnode_withchildren.destroy.html
+   InsertBefore laz2_dom/tdomnode_withchildren.insertbefore.html
+   ReplaceChild laz2_dom/tdomnode_withchildren.replacechild.html
+   DetachChild laz2_dom/tdomnode_withchildren.detachchild.html
+   HasChildNodes laz2_dom/tdomnode_withchildren.haschildnodes.html
+   GetChildCount laz2_dom/tdomnode_withchildren.getchildcount.html
+   FindNode laz2_dom/tdomnode_withchildren.findnode.html
+   InternalAppend laz2_dom/tdomnode_withchildren.internalappend.html
+  TDOMNodeList laz2_dom/tdomnodelist.html
+   FNode laz2_dom/tdomnodelist.fnode.html
+   FRevision laz2_dom/tdomnodelist.frevision.html
+   FList laz2_dom/tdomnodelist.flist.html
+   GetCount laz2_dom/tdomnodelist.getcount.html
+   GetItem laz2_dom/tdomnodelist.getitem.html
+   NodeFilter laz2_dom/tdomnodelist.nodefilter.html
+   BuildList laz2_dom/tdomnodelist.buildlist.html
+   Create laz2_dom/tdomnodelist.create.html
+   Destroy laz2_dom/tdomnodelist.destroy.html
+   Item laz2_dom/tdomnodelist.item.html
+   Count laz2_dom/tdomnodelist.count.html
+   Length laz2_dom/tdomnodelist.length.html
+  TDOMElementList laz2_dom/tdomelementlist.html
+   filter laz2_dom/tdomelementlist.filter.html
+   FNSIndexFilter laz2_dom/tdomelementlist.fnsindexfilter.html
+   localNameFilter laz2_dom/tdomelementlist.localnamefilter.html
+   FMatchNS laz2_dom/tdomelementlist.fmatchns.html
+   FMatchAnyNS laz2_dom/tdomelementlist.fmatchanyns.html
+   UseFilter laz2_dom/tdomelementlist.usefilter.html
+   NodeFilter laz2_dom/tdomelementlist.nodefilter.html
+   Create laz2_dom/tdomelementlist.create.html
+  TDOMNamedNodeMap laz2_dom/tdomnamednodemap.html
+   FOwner laz2_dom/tdomnamednodemap.fowner.html
+   FNodeType laz2_dom/tdomnamednodemap.fnodetype.html
+   FSortedList laz2_dom/tdomnamednodemap.fsortedlist.html
+   FPosList laz2_dom/tdomnamednodemap.fposlist.html
+   GetPosItem laz2_dom/tdomnamednodemap.getpositem.html
+   GetSortedItem laz2_dom/tdomnamednodemap.getsorteditem.html
+   GetLength laz2_dom/tdomnamednodemap.getlength.html
+   FindSorted laz2_dom/tdomnamednodemap.findsorted.html
+   DeleteSorted laz2_dom/tdomnamednodemap.deletesorted.html
+   RestoreDefault laz2_dom/tdomnamednodemap.restoredefault.html
+   InternalRemove laz2_dom/tdomnamednodemap.internalremove.html
+   ValidateInsert laz2_dom/tdomnamednodemap.validateinsert.html
+   Create laz2_dom/tdomnamednodemap.create.html
+   Destroy laz2_dom/tdomnamednodemap.destroy.html
+   GetNamedItem laz2_dom/tdomnamednodemap.getnameditem.html
+   SetNamedItem laz2_dom/tdomnamednodemap.setnameditem.html
+   RemoveNamedItem laz2_dom/tdomnamednodemap.removenameditem.html
+   getNamedItemNS laz2_dom/tdomnamednodemap.getnameditemns.html
+   setNamedItemNS laz2_dom/tdomnamednodemap.setnameditemns.html
+   removeNamedItemNS laz2_dom/tdomnamednodemap.removenameditemns.html
+   Item laz2_dom/tdomnamednodemap.item.html
+   SortedItem laz2_dom/tdomnamednodemap.sorteditem.html
+   Length laz2_dom/tdomnamednodemap.length.html
+  TDOMCharacterData laz2_dom/tdomcharacterdata.html
+   GetLength laz2_dom/tdomcharacterdata.getlength.html
+   GetNodeValue laz2_dom/tdomcharacterdata.getnodevalue.html
+   SetNodeValue laz2_dom/tdomcharacterdata.setnodevalue.html
+   Data laz2_dom/tdomcharacterdata.data.html
+   Length laz2_dom/tdomcharacterdata.length.html
+   SubstringData laz2_dom/tdomcharacterdata.substringdata.html
+   AppendData laz2_dom/tdomcharacterdata.appenddata.html
+   InsertData laz2_dom/tdomcharacterdata.insertdata.html
+   DeleteData laz2_dom/tdomcharacterdata.deletedata.html
+   ReplaceData laz2_dom/tdomcharacterdata.replacedata.html
+  TDOMImplementation laz2_dom/tdomimplementation.html
+   HasFeature laz2_dom/tdomimplementation.hasfeature.html
+   CreateDocumentType laz2_dom/tdomimplementation.createdocumenttype.html
+   CreateDocument laz2_dom/tdomimplementation.createdocument.html
+  TDOMDocumentFragment laz2_dom/tdomdocumentfragment.html
+   GetNodeType laz2_dom/tdomdocumentfragment.getnodetype.html
+   GetNodeName laz2_dom/tdomdocumentfragment.getnodename.html
+   CloneNode laz2_dom/tdomdocumentfragment.clonenode.html
+  TDOMDocument laz2_dom/tdomdocument.html
+   FIDList laz2_dom/tdomdocument.fidlist.html
+   FRevision laz2_dom/tdomdocument.frevision.html
+   FXML11 laz2_dom/tdomdocument.fxml11.html
+   FImplementation laz2_dom/tdomdocument.fimplementation.html
+   FNamespaces laz2_dom/tdomdocument.fnamespaces.html
+   FNames laz2_dom/tdomdocument.fnames.html
+   FEmptyNode laz2_dom/tdomdocument.femptynode.html
+   FNodeLists laz2_dom/tdomdocument.fnodelists.html
+   FMaxPoolSize laz2_dom/tdomdocument.fmaxpoolsize.html
+   FPools laz2_dom/tdomdocument.fpools.html
+   FDocumentURI laz2_dom/tdomdocument.fdocumenturi.html
+   GetDocumentElement laz2_dom/tdomdocument.getdocumentelement.html
+   GetDocType laz2_dom/tdomdocument.getdoctype.html
+   GetNodeType laz2_dom/tdomdocument.getnodetype.html
+   GetNodeName laz2_dom/tdomdocument.getnodename.html
+   GetTextContent laz2_dom/tdomdocument.gettextcontent.html
+   GetOwnerDocument laz2_dom/tdomdocument.getownerdocument.html
+   SetTextContent laz2_dom/tdomdocument.settextcontent.html
+   RemoveID laz2_dom/tdomdocument.removeid.html
+   GetChildNodeList laz2_dom/tdomdocument.getchildnodelist.html
+   GetElementList laz2_dom/tdomdocument.getelementlist.html
+   NodeListDestroyed laz2_dom/tdomdocument.nodelistdestroyed.html
+   Alloc laz2_dom/tdomdocument.alloc.html
+   IndexOfNS laz2_dom/tdomdocument.indexofns.html
+   InsertBefore laz2_dom/tdomdocument.insertbefore.html
+   ReplaceChild laz2_dom/tdomdocument.replacechild.html
+   DocType laz2_dom/tdomdocument.doctype.html
+   Impl laz2_dom/tdomdocument.impl.html
+   DocumentElement laz2_dom/tdomdocument.documentelement.html
+   CreateElement laz2_dom/tdomdocument.createelement.html
+   CreateElementBuf laz2_dom/tdomdocument.createelementbuf.html
+   CreateDocumentFragment laz2_dom/tdomdocument.createdocumentfragment.html
+   CreateTextNode laz2_dom/tdomdocument.createtextnode.html
+   CreateTextNodeBuf laz2_dom/tdomdocument.createtextnodebuf.html
+   CreateComment laz2_dom/tdomdocument.createcomment.html
+   CreateCommentBuf laz2_dom/tdomdocument.createcommentbuf.html
+   CreateCDATASection laz2_dom/tdomdocument.createcdatasection.html
+   CreateProcessingInstruction laz2_dom/tdomdocument.createprocessinginstruction.html
+   CreateAttribute laz2_dom/tdomdocument.createattribute.html
+   CreateAttributeBuf laz2_dom/tdomdocument.createattributebuf.html
+   CreateAttributeDef laz2_dom/tdomdocument.createattributedef.html
+   CreateEntityReference laz2_dom/tdomdocument.createentityreference.html
+   GetElementsByTagName laz2_dom/tdomdocument.getelementsbytagname.html
+   ImportNode laz2_dom/tdomdocument.importnode.html
+   CreateElementNS laz2_dom/tdomdocument.createelementns.html
+   CreateAttributeNS laz2_dom/tdomdocument.createattributens.html
+   GetElementsByTagNameNS laz2_dom/tdomdocument.getelementsbytagnamens.html
+   GetElementById laz2_dom/tdomdocument.getelementbyid.html
+   documentURI laz2_dom/tdomdocument.documenturi.html
+   Create laz2_dom/tdomdocument.create.html
+   Destroy laz2_dom/tdomdocument.destroy.html
+   AddID laz2_dom/tdomdocument.addid.html
+   Names laz2_dom/tdomdocument.names.html
+  TXMLDocument laz2_dom/txmldocument.html
+   Encoding laz2_dom/txmldocument.encoding.html
+   StylesheetType laz2_dom/txmldocument.stylesheettype.html
+   StylesheetHRef laz2_dom/txmldocument.stylesheethref.html
+   CreateCDATASection laz2_dom/txmldocument.createcdatasection.html
+   CreateProcessingInstruction laz2_dom/txmldocument.createprocessinginstruction.html
+   CreateEntityReference laz2_dom/txmldocument.createentityreference.html
+   XMLVersion laz2_dom/txmldocument.xmlversion.html
+  TDOMNode_NS laz2_dom/tdomnode_ns.html
+   FNSI laz2_dom/tdomnode_ns.fnsi.html
+   GetNodeName laz2_dom/tdomnode_ns.getnodename.html
+   GetLocalName laz2_dom/tdomnode_ns.getlocalname.html
+   GetNamespaceURI laz2_dom/tdomnode_ns.getnamespaceuri.html
+   GetPrefix laz2_dom/tdomnode_ns.getprefix.html
+   SetPrefix laz2_dom/tdomnode_ns.setprefix.html
+   SetNSI laz2_dom/tdomnode_ns.setnsi.html
+   CompareName laz2_dom/tdomnode_ns.comparename.html
+   NSI laz2_dom/tdomnode_ns.nsi.html
+  TDOMAttr laz2_dom/tdomattr.html
+   FOwnerElement laz2_dom/tdomattr.fownerelement.html
+   FDataType laz2_dom/tdomattr.fdatatype.html
+   GetNodeValue laz2_dom/tdomattr.getnodevalue.html
+   GetNodeType laz2_dom/tdomattr.getnodetype.html
+   GetSpecified laz2_dom/tdomattr.getspecified.html
+   GetIsID laz2_dom/tdomattr.getisid.html
+   SetNodeValue laz2_dom/tdomattr.setnodevalue.html
+   Destroy laz2_dom/tdomattr.destroy.html
+   CloneNode laz2_dom/tdomattr.clonenode.html
+   Name laz2_dom/tdomattr.name.html
+   Specified laz2_dom/tdomattr.specified.html
+   Value laz2_dom/tdomattr.value.html
+   OwnerElement laz2_dom/tdomattr.ownerelement.html
+   IsID laz2_dom/tdomattr.isid.html
+   DataType laz2_dom/tdomattr.datatype.html
+  TDOMElement laz2_dom/tdomelement.html
+   FAttributes laz2_dom/tdomelement.fattributes.html
+   GetNodeType laz2_dom/tdomelement.getnodetype.html
+   GetAttributes laz2_dom/tdomelement.getattributes.html
+   AttachDefaultAttrs laz2_dom/tdomelement.attachdefaultattrs.html
+   InternalLookupPrefix laz2_dom/tdomelement.internallookupprefix.html
+   RestoreDefaultAttr laz2_dom/tdomelement.restoredefaultattr.html
+   Destroy laz2_dom/tdomelement.destroy.html
+   CloneNode laz2_dom/tdomelement.clonenode.html
+   IsEmpty laz2_dom/tdomelement.isempty.html
+   Normalize laz2_dom/tdomelement.normalize.html
+   TagName laz2_dom/tdomelement.tagname.html
+   GetAttribute laz2_dom/tdomelement.getattribute.html
+   SetAttribute laz2_dom/tdomelement.setattribute.html
+   RemoveAttribute laz2_dom/tdomelement.removeattribute.html
+   GetAttributeNode laz2_dom/tdomelement.getattributenode.html
+   SetAttributeNode laz2_dom/tdomelement.setattributenode.html
+   RemoveAttributeNode laz2_dom/tdomelement.removeattributenode.html
+   GetElementsByTagName laz2_dom/tdomelement.getelementsbytagname.html
+   GetAttributeNS laz2_dom/tdomelement.getattributens.html
+   SetAttributeNS laz2_dom/tdomelement.setattributens.html
+   RemoveAttributeNS laz2_dom/tdomelement.removeattributens.html
+   GetAttributeNodeNS laz2_dom/tdomelement.getattributenodens.html
+   SetAttributeNodeNS laz2_dom/tdomelement.setattributenodens.html
+   GetElementsByTagNameNS laz2_dom/tdomelement.getelementsbytagnamens.html
+   hasAttribute laz2_dom/tdomelement.hasattribute.html
+   hasAttributeNS laz2_dom/tdomelement.hasattributens.html
+   HasAttributes laz2_dom/tdomelement.hasattributes.html
+   AttribStrings laz2_dom/tdomelement.attribstrings.html
+  TDOMText laz2_dom/tdomtext.html
+   GetNodeType laz2_dom/tdomtext.getnodetype.html
+   GetNodeName laz2_dom/tdomtext.getnodename.html
+   SetNodeValue laz2_dom/tdomtext.setnodevalue.html
+   CloneNode laz2_dom/tdomtext.clonenode.html
+   SplitText laz2_dom/tdomtext.splittext.html
+   IsElementContentWhitespace laz2_dom/tdomtext.iselementcontentwhitespace.html
+  TDOMComment laz2_dom/tdomcomment.html
+   GetNodeType laz2_dom/tdomcomment.getnodetype.html
+   GetNodeName laz2_dom/tdomcomment.getnodename.html
+   CloneNode laz2_dom/tdomcomment.clonenode.html
+  TDOMCDATASection laz2_dom/tdomcdatasection.html
+   GetNodeType laz2_dom/tdomcdatasection.getnodetype.html
+   GetNodeName laz2_dom/tdomcdatasection.getnodename.html
+   CloneNode laz2_dom/tdomcdatasection.clonenode.html
+  TDOMDocumentType laz2_dom/tdomdocumenttype.html
+   FName laz2_dom/tdomdocumenttype.fname.html
+   FPublicID laz2_dom/tdomdocumenttype.fpublicid.html
+   FSystemID laz2_dom/tdomdocumenttype.fsystemid.html
+   FInternalSubset laz2_dom/tdomdocumenttype.finternalsubset.html
+   FEntities laz2_dom/tdomdocumenttype.fentities.html
+   FNotations laz2_dom/tdomdocumenttype.fnotations.html
+   GetEntities laz2_dom/tdomdocumenttype.getentities.html
+   GetNotations laz2_dom/tdomdocumenttype.getnotations.html
+   GetNodeType laz2_dom/tdomdocumenttype.getnodetype.html
+   GetNodeName laz2_dom/tdomdocumenttype.getnodename.html
+   Destroy laz2_dom/tdomdocumenttype.destroy.html
+   Name laz2_dom/tdomdocumenttype.name.html
+   Entities laz2_dom/tdomdocumenttype.entities.html
+   Notations laz2_dom/tdomdocumenttype.notations.html
+   PublicID laz2_dom/tdomdocumenttype.publicid.html
+   SystemID laz2_dom/tdomdocumenttype.systemid.html
+   InternalSubset laz2_dom/tdomdocumenttype.internalsubset.html
+  TDOMNotation laz2_dom/tdomnotation.html
+   FName laz2_dom/tdomnotation.fname.html
+   FPublicID laz2_dom/tdomnotation.fpublicid.html
+   FSystemID laz2_dom/tdomnotation.fsystemid.html
+   GetNodeType laz2_dom/tdomnotation.getnodetype.html
+   GetNodeName laz2_dom/tdomnotation.getnodename.html
+   CloneNode laz2_dom/tdomnotation.clonenode.html
+   PublicID laz2_dom/tdomnotation.publicid.html
+   SystemID laz2_dom/tdomnotation.systemid.html
+  TDOMEntity laz2_dom/tdomentity.html
+   FName laz2_dom/tdomentity.fname.html
+   FPublicID laz2_dom/tdomentity.fpublicid.html
+   FSystemID laz2_dom/tdomentity.fsystemid.html
+   FNotationName laz2_dom/tdomentity.fnotationname.html
+   GetNodeType laz2_dom/tdomentity.getnodetype.html
+   GetNodeName laz2_dom/tdomentity.getnodename.html
+   CloneNode laz2_dom/tdomentity.clonenode.html
+   PublicID laz2_dom/tdomentity.publicid.html
+   SystemID laz2_dom/tdomentity.systemid.html
+   NotationName laz2_dom/tdomentity.notationname.html
+  TDOMEntityReference laz2_dom/tdomentityreference.html
+   FName laz2_dom/tdomentityreference.fname.html
+   GetNodeType laz2_dom/tdomentityreference.getnodetype.html
+   GetNodeName laz2_dom/tdomentityreference.getnodename.html
+   CloneNode laz2_dom/tdomentityreference.clonenode.html
+  TDOMProcessingInstruction laz2_dom/tdomprocessinginstruction.html
+   GetNodeType laz2_dom/tdomprocessinginstruction.getnodetype.html
+   GetNodeName laz2_dom/tdomprocessinginstruction.getnodename.html
+   GetNodeValue laz2_dom/tdomprocessinginstruction.getnodevalue.html
+   SetNodeValue laz2_dom/tdomprocessinginstruction.setnodevalue.html
+   CloneNode laz2_dom/tdomprocessinginstruction.clonenode.html
+   Target laz2_dom/tdomprocessinginstruction.target.html
+   Data laz2_dom/tdomprocessinginstruction.data.html
+  TDOMAttrDef laz2_dom/tdomattrdef.html
+   FExternallyDeclared laz2_dom/tdomattrdef.fexternallydeclared.html
+   FDefault laz2_dom/tdomattrdef.fdefault.html
+   FTag laz2_dom/tdomattrdef.ftag.html
+   FEnumeration laz2_dom/tdomattrdef.fenumeration.html
+   AddEnumToken laz2_dom/tdomattrdef.addenumtoken.html
+   HasEnumToken laz2_dom/tdomattrdef.hasenumtoken.html
+   CloneNode laz2_dom/tdomattrdef.clonenode.html
+   Default laz2_dom/tdomattrdef.default.html
+   ExternallyDeclared laz2_dom/tdomattrdef.externallydeclared.html
+   Tag laz2_dom/tdomattrdef.tag.html
+  TNodePool laz2_dom/tnodepool.html
+   Create laz2_dom/tnodepool.create.html
+   Destroy laz2_dom/tnodepool.destroy.html
+   AllocNode laz2_dom/tnodepool.allocnode.html
+   FreeNode laz2_dom/tnodepool.freenode.html
+  StrToXMLValue laz2_dom/strtoxmlvalue.html
+  XMLValueToStr laz2_dom/xmlvaluetostr.html
+  EncodeLesserAndGreaterThan laz2_dom/encodelesserandgreaterthan.html
+ laz2_xmlutils laz2_xmlutils/index.html
+  ns_ASCII laz2_xmlutils/ns_ascii.html
+  ns_0200 laz2_xmlutils/ns_0200.html
+  ns_0300 laz2_xmlutils/ns_0300.html
+  ns_0400 laz2_xmlutils/ns_0400.html
+  ns_0500 laz2_xmlutils/ns_0500.html
+  ns_0600 laz2_xmlutils/ns_0600.html
+  ns_0900 laz2_xmlutils/ns_0900.html
+  ns_0A00 laz2_xmlutils/ns_0a00.html
+  ns_0B00 laz2_xmlutils/ns_0b00.html
+  ns_0C00 laz2_xmlutils/ns_0c00.html
+  ns_0D00 laz2_xmlutils/ns_0d00.html
+  ns_0E00 laz2_xmlutils/ns_0e00.html
+  ns_0F00 laz2_xmlutils/ns_0f00.html
+  ns_3000 laz2_xmlutils/ns_3000.html
+  namingBitmap laz2_xmlutils/namingbitmap.html
+  Xml11HighPages laz2_xmlutils/xml11highpages.html
+  NamePages laz2_xmlutils/namepages.html
+  TXMLUtilString laz2_xmlutils/txmlutilstring.html
+  TXMLUtilChar laz2_xmlutils/txmlutilchar.html
+  PXMLUtilChar laz2_xmlutils/pxmlutilchar.html
+  PXMLUtilString laz2_xmlutils/pxmlutilstring.html
+  PPHashItem laz2_xmlutils/pphashitem.html
+  PHashItem laz2_xmlutils/phashitem.html
+  THashItem laz2_xmlutils/thashitem.html
+  THashItemArray laz2_xmlutils/thashitemarray.html
+  PHashItemArray laz2_xmlutils/phashitemarray.html
+  THashForEach laz2_xmlutils/thashforeach.html
+  TExpHashEntry laz2_xmlutils/texphashentry.html
+  TExpHashEntryArray laz2_xmlutils/texphashentryarray.html
+  PExpHashEntryArray laz2_xmlutils/pexphashentryarray.html
+  TAttributeAction laz2_xmlutils/tattributeaction.html
+  TSetOfByte laz2_xmlutils/tsetofbyte.html
+  THashTable laz2_xmlutils/thashtable.html
+   Create laz2_xmlutils/thashtable.create.html
+   Destroy laz2_xmlutils/thashtable.destroy.html
+   Clear laz2_xmlutils/thashtable.clear.html
+   Find laz2_xmlutils/thashtable.find.html
+   FindOrAdd laz2_xmlutils/thashtable.findoradd.html
+   Get laz2_xmlutils/thashtable.get.html
+   Remove laz2_xmlutils/thashtable.remove.html
+   RemoveData laz2_xmlutils/thashtable.removedata.html
+   ForEach laz2_xmlutils/thashtable.foreach.html
+   Count laz2_xmlutils/thashtable.count.html
+  TDblHashArray laz2_xmlutils/tdblhasharray.html
+   Init laz2_xmlutils/tdblhasharray.init.html
+   Locate laz2_xmlutils/tdblhasharray.locate.html
+   Destroy laz2_xmlutils/tdblhasharray.destroy.html
+  TBinding laz2_xmlutils/tbinding.html
+   uri laz2_xmlutils/tbinding.uri.html
+   next laz2_xmlutils/tbinding.next.html
+   prevPrefixBinding laz2_xmlutils/tbinding.prevprefixbinding.html
+   Prefix laz2_xmlutils/tbinding.prefix.html
+  TNSSupport laz2_xmlutils/tnssupport.html
+   Create laz2_xmlutils/tnssupport.create.html
+   Destroy laz2_xmlutils/tnssupport.destroy.html
+   DefineBinding laz2_xmlutils/tnssupport.definebinding.html
+   CheckAttribute laz2_xmlutils/tnssupport.checkattribute.html
+   IsPrefixBound laz2_xmlutils/tnssupport.isprefixbound.html
+   GetPrefix laz2_xmlutils/tnssupport.getprefix.html
+   BindPrefix laz2_xmlutils/tnssupport.bindprefix.html
+   DefaultNSBinding laz2_xmlutils/tnssupport.defaultnsbinding.html
+   StartElement laz2_xmlutils/tnssupport.startelement.html
+   EndElement laz2_xmlutils/tnssupport.endelement.html
+  IsXmlName laz2_xmlutils/isxmlname.html
+  IsXmlNames laz2_xmlutils/isxmlnames.html
+  IsXmlNmToken laz2_xmlutils/isxmlnmtoken.html
+  IsXmlNmTokens laz2_xmlutils/isxmlnmtokens.html
+  IsValidXmlEncoding laz2_xmlutils/isvalidxmlencoding.html
+  Xml11NamePages laz2_xmlutils/xml11namepages.html
+  NormalizeSpaces laz2_xmlutils/normalizespaces.html
+  IsXmlWhiteSpace laz2_xmlutils/isxmlwhitespace.html
+  Hash laz2_xmlutils/hash.html
+  WStrLIComp laz2_xmlutils/wstrlicomp.html
+ Laz2_XMLCfg laz2_xmlcfg/index.html
+  TXMLConfig laz2_xmlcfg/txmlconfig.html
+   doc laz2_xmlcfg/txmlconfig.doc.html
+   FModified laz2_xmlcfg/txmlconfig.fmodified.html
+   fDoNotLoadFromFile laz2_xmlcfg/txmlconfig.fdonotloadfromfile.html
+   fAutoLoadFromSource laz2_xmlcfg/txmlconfig.fautoloadfromsource.html
+   fPathCache laz2_xmlcfg/txmlconfig.fpathcache.html
+   fPathNodeCache laz2_xmlcfg/txmlconfig.fpathnodecache.html
+   Loaded laz2_xmlcfg/txmlconfig.loaded.html
+   ExtendedToStr laz2_xmlcfg/txmlconfig.extendedtostr.html
+   StrToExtended laz2_xmlcfg/txmlconfig.strtoextended.html
+   ReadXMLFile laz2_xmlcfg/txmlconfig.readxmlfile.html
+   WriteXMLFile laz2_xmlcfg/txmlconfig.writexmlfile.html
+   FreeDoc laz2_xmlcfg/txmlconfig.freedoc.html
+   SetPathNodeCache laz2_xmlcfg/txmlconfig.setpathnodecache.html
+   GetPathNodeCache laz2_xmlcfg/txmlconfig.getpathnodecache.html
+   InvalidateCacheTilEnd laz2_xmlcfg/txmlconfig.invalidatecachetilend.html
+   InternalFindNode laz2_xmlcfg/txmlconfig.internalfindnode.html
+   InternalCleanNode laz2_xmlcfg/txmlconfig.internalcleannode.html
+   Create laz2_xmlcfg/txmlconfig.create.html
+   CreateClean laz2_xmlcfg/txmlconfig.createclean.html
+   CreateWithSource laz2_xmlcfg/txmlconfig.createwithsource.html
+   Destroy laz2_xmlcfg/txmlconfig.destroy.html
+   Clear laz2_xmlcfg/txmlconfig.clear.html
+   Flush laz2_xmlcfg/txmlconfig.flush.html
+   ReadFromStream laz2_xmlcfg/txmlconfig.readfromstream.html
+   WriteToStream laz2_xmlcfg/txmlconfig.writetostream.html
+   GetValue laz2_xmlcfg/txmlconfig.getvalue.html
+   GetExtendedValue laz2_xmlcfg/txmlconfig.getextendedvalue.html
+   SetValue laz2_xmlcfg/txmlconfig.setvalue.html
+   SetDeleteValue laz2_xmlcfg/txmlconfig.setdeletevalue.html
+   SetExtendedValue laz2_xmlcfg/txmlconfig.setextendedvalue.html
+   SetDeleteExtendedValue laz2_xmlcfg/txmlconfig.setdeleteextendedvalue.html
+   DeletePath laz2_xmlcfg/txmlconfig.deletepath.html
+   DeleteValue laz2_xmlcfg/txmlconfig.deletevalue.html
+   FindNode laz2_xmlcfg/txmlconfig.findnode.html
+   HasPath laz2_xmlcfg/txmlconfig.haspath.html
+   HasChildPaths laz2_xmlcfg/txmlconfig.haschildpaths.html
+   Modified laz2_xmlcfg/txmlconfig.modified.html
+   InvalidatePathCache laz2_xmlcfg/txmlconfig.invalidatepathcache.html
+   Filename laz2_xmlcfg/txmlconfig.filename.html
+   Document laz2_xmlcfg/txmlconfig.document.html
+   ReadFlags laz2_xmlcfg/txmlconfig.readflags.html
+   WriteFlags laz2_xmlcfg/txmlconfig.writeflags.html
+  TRttiXMLConfig laz2_xmlcfg/trttixmlconfig.html
+   WriteProperty laz2_xmlcfg/trttixmlconfig.writeproperty.html
+   ReadProperty laz2_xmlcfg/trttixmlconfig.readproperty.html
+   WriteObject laz2_xmlcfg/trttixmlconfig.writeobject.html
+   ReadObject laz2_xmlcfg/trttixmlconfig.readobject.html
+ laz2_XMLRead laz2_xmlread/index.html
+  TErrorSeverity laz2_xmlread/terrorseverity.html
+  TXMLReaderFlag laz2_xmlread/txmlreaderflag.html
+  TXMLReaderFlags laz2_xmlread/txmlreaderflags.html
+  TXMLContextAction laz2_xmlread/txmlcontextaction.html
+  TXMLErrorEvent laz2_xmlread/txmlerrorevent.html
+  TDecoder laz2_xmlread/tdecoder.html
+  TGetDecoderProc laz2_xmlread/tgetdecoderproc.html
+  EXMLReadError laz2_xmlread/exmlreaderror.html
+   Severity laz2_xmlread/exmlreaderror.severity.html
+   ErrorMessage laz2_xmlread/exmlreaderror.errormessage.html
+   Line laz2_xmlread/exmlreaderror.line.html
+   LinePos laz2_xmlread/exmlreaderror.linepos.html
+   LineCol laz2_xmlread/exmlreaderror.linecol.html
+  TDOMParseOptions laz2_xmlread/tdomparseoptions.html
+   Validate laz2_xmlread/tdomparseoptions.validate.html
+   PreserveWhitespace laz2_xmlread/tdomparseoptions.preservewhitespace.html
+   ExpandEntities laz2_xmlread/tdomparseoptions.expandentities.html
+   IgnoreComments laz2_xmlread/tdomparseoptions.ignorecomments.html
+   CDSectionsAsText laz2_xmlread/tdomparseoptions.cdsectionsastext.html
+   ResolveExternals laz2_xmlread/tdomparseoptions.resolveexternals.html
+   Namespaces laz2_xmlread/tdomparseoptions.namespaces.html
+   DisallowDoctype laz2_xmlread/tdomparseoptions.disallowdoctype.html
+   MaxChars laz2_xmlread/tdomparseoptions.maxchars.html
+   CanonicalForm laz2_xmlread/tdomparseoptions.canonicalform.html
+  TXMLInputSource laz2_xmlread/txmlinputsource.html
+   Create laz2_xmlread/txmlinputsource.create.html
+   Stream laz2_xmlread/txmlinputsource.stream.html
+   StringData laz2_xmlread/txmlinputsource.stringdata.html
+   BaseURI laz2_xmlread/txmlinputsource.baseuri.html
+   SystemID laz2_xmlread/txmlinputsource.systemid.html
+   PublicID laz2_xmlread/txmlinputsource.publicid.html
+  TDOMParser laz2_xmlread/tdomparser.html
+   Create laz2_xmlread/tdomparser.create.html
+   Destroy laz2_xmlread/tdomparser.destroy.html
+   Parse laz2_xmlread/tdomparser.parse.html
+   ParseUri laz2_xmlread/tdomparser.parseuri.html
+   ParseWithContext laz2_xmlread/tdomparser.parsewithcontext.html
+   Options laz2_xmlread/tdomparser.options.html
+   OnError laz2_xmlread/tdomparser.onerror.html
+  ReadXMLFile laz2_xmlread/readxmlfile.html
+  ReadXMLFragment laz2_xmlread/readxmlfragment.html
+  ReadDTDFile laz2_xmlread/readdtdfile.html
+  RegisterDecoder laz2_xmlread/registerdecoder.html
+ laz2_XMLWrite laz2_xmlwrite/index.html
+  TXMLWriterFlag laz2_xmlwrite/txmlwriterflag.html
+  TXMLWriterFlags laz2_xmlwrite/txmlwriterflags.html
+  WriteXMLFile laz2_xmlwrite/writexmlfile.html
+  WriteXML laz2_xmlwrite/writexml.html
+ Laz_DOM laz_dom/index.html
+  INDEX_SIZE_ERR laz_dom/index_size_err.html
+  DOMSTRING_SIZE_ERR laz_dom/domstring_size_err.html
+  HIERARCHY_REQUEST_ERR laz_dom/hierarchy_request_err.html
+  WRONG_DOCUMENT_ERR laz_dom/wrong_document_err.html
+  INVALID_CHARACTER_ERR laz_dom/invalid_character_err.html
+  NO_DATA_ALLOWED_ERR laz_dom/no_data_allowed_err.html
+  NO_MODIFICATION_ALLOWED_ERR laz_dom/no_modification_allowed_err.html
+  NOT_FOUND_ERR laz_dom/not_found_err.html
+  NOT_SUPPORTED_ERR laz_dom/not_supported_err.html
+  INUSE_ATTRIBUTE_ERR laz_dom/inuse_attribute_err.html
+  INVALID_STATE_ERR laz_dom/invalid_state_err.html
+  SYNTAX_ERR laz_dom/syntax_err.html
+  INVALID_MODIFICATION_ERR laz_dom/invalid_modification_err.html
+  NAMESPACE_ERR laz_dom/namespace_err.html
+  INVALID_ACCESS_ERR laz_dom/invalid_access_err.html
+  ELEMENT_NODE laz_dom/element_node.html
+  ATTRIBUTE_NODE laz_dom/attribute_node.html
+  TEXT_NODE laz_dom/text_node.html
+  CDATA_SECTION_NODE laz_dom/cdata_section_node.html
+  ENTITY_REFERENCE_NODE laz_dom/entity_reference_node.html
+  ENTITY_NODE laz_dom/entity_node.html
+  PROCESSING_INSTRUCTION_NODE laz_dom/processing_instruction_node.html
+  COMMENT_NODE laz_dom/comment_node.html
+  DOCUMENT_NODE laz_dom/document_node.html
+  DOCUMENT_TYPE_NODE laz_dom/document_type_node.html
+  DOCUMENT_FRAGMENT_NODE laz_dom/document_fragment_node.html
+  NOTATION_NODE laz_dom/notation_node.html
+  DOMString laz_dom/domstring.html
+  DOMPChar laz_dom/dompchar.html
+  EDOMError laz_dom/edomerror.html
+   Code laz_dom/edomerror.code.html
+   Create laz_dom/edomerror.create.html
+  EDOMIndexSize laz_dom/edomindexsize.html
+   Create laz_dom/edomindexsize.create.html
+  EDOMHierarchyRequest laz_dom/edomhierarchyrequest.html
+   Create laz_dom/edomhierarchyrequest.create.html
+  EDOMWrongDocument laz_dom/edomwrongdocument.html
+   Create laz_dom/edomwrongdocument.create.html
+  EDOMNotFound laz_dom/edomnotfound.html
+   Create laz_dom/edomnotfound.create.html
+  EDOMNotSupported laz_dom/edomnotsupported.html
+   Create laz_dom/edomnotsupported.create.html
+  EDOMInUseAttribute laz_dom/edominuseattribute.html
+   Create laz_dom/edominuseattribute.create.html
+  EDOMInvalidState laz_dom/edominvalidstate.html
+   Create laz_dom/edominvalidstate.create.html
+  EDOMSyntax laz_dom/edomsyntax.html
+   Create laz_dom/edomsyntax.create.html
+  EDOMInvalidModification laz_dom/edominvalidmodification.html
+   Create laz_dom/edominvalidmodification.create.html
+  EDOMNamespace laz_dom/edomnamespace.html
+   Create laz_dom/edomnamespace.create.html
+  EDOMInvalidAccess laz_dom/edominvalidaccess.html
+   Create laz_dom/edominvalidaccess.create.html
+  TRefClass laz_dom/trefclass.html
+   RefCounter laz_dom/trefclass.refcounter.html
+   Create laz_dom/trefclass.create.html
+   AddRef laz_dom/trefclass.addref.html
+   Release laz_dom/trefclass.release.html
+  TDOMNode laz_dom/tdomnode.html
+   FNodeName laz_dom/tdomnode.fnodename.html
+   FNodeValue laz_dom/tdomnode.fnodevalue.html
+   FNodeType laz_dom/tdomnode.fnodetype.html
+   FParentNode laz_dom/tdomnode.fparentnode.html
+   FPreviousSibling laz_dom/tdomnode.fprevioussibling.html
+   FNextSibling laz_dom/tdomnode.fnextsibling.html
+   FOwnerDocument laz_dom/tdomnode.fownerdocument.html
+   GetNodeValue laz_dom/tdomnode.getnodevalue.html
+   SetNodeValue laz_dom/tdomnode.setnodevalue.html
+   GetFirstChild laz_dom/tdomnode.getfirstchild.html
+   GetLastChild laz_dom/tdomnode.getlastchild.html
+   GetAttributes laz_dom/tdomnode.getattributes.html
+   Create laz_dom/tdomnode.create.html
+   GetChildNodes laz_dom/tdomnode.getchildnodes.html
+   NodeName laz_dom/tdomnode.nodename.html
+   NodeValue laz_dom/tdomnode.nodevalue.html
+   NodeType laz_dom/tdomnode.nodetype.html
+   ParentNode laz_dom/tdomnode.parentnode.html
+   FirstChild laz_dom/tdomnode.firstchild.html
+   LastChild laz_dom/tdomnode.lastchild.html
+   ChildNodes laz_dom/tdomnode.childnodes.html
+   PreviousSibling laz_dom/tdomnode.previoussibling.html
+   NextSibling laz_dom/tdomnode.nextsibling.html
+   Attributes laz_dom/tdomnode.attributes.html
+   OwnerDocument laz_dom/tdomnode.ownerdocument.html
+   InsertBefore laz_dom/tdomnode.insertbefore.html
+   ReplaceChild laz_dom/tdomnode.replacechild.html
+   RemoveChild laz_dom/tdomnode.removechild.html
+   AppendChild laz_dom/tdomnode.appendchild.html
+   HasChildNodes laz_dom/tdomnode.haschildnodes.html
+   CloneNode laz_dom/tdomnode.clonenode.html
+   IsEmpty laz_dom/tdomnode.isempty.html
+   FindNode laz_dom/tdomnode.findnode.html
+  TDOMNode_WithChildren laz_dom/tdomnode_withchildren.html
+   FFirstChild laz_dom/tdomnode_withchildren.ffirstchild.html
+   FLastChild laz_dom/tdomnode_withchildren.flastchild.html
+   FChildNodeTree laz_dom/tdomnode_withchildren.fchildnodetree.html
+   GetFirstChild laz_dom/tdomnode_withchildren.getfirstchild.html
+   GetLastChild laz_dom/tdomnode_withchildren.getlastchild.html
+   CloneChildren laz_dom/tdomnode_withchildren.clonechildren.html
+   AddToChildNodeTree laz_dom/tdomnode_withchildren.addtochildnodetree.html
+   RemoveFromChildNodeTree laz_dom/tdomnode_withchildren.removefromchildnodetree.html
+   Destroy laz_dom/tdomnode_withchildren.destroy.html
+   InsertBefore laz_dom/tdomnode_withchildren.insertbefore.html
+   ReplaceChild laz_dom/tdomnode_withchildren.replacechild.html
+   RemoveChild laz_dom/tdomnode_withchildren.removechild.html
+   AppendChild laz_dom/tdomnode_withchildren.appendchild.html
+   HasChildNodes laz_dom/tdomnode_withchildren.haschildnodes.html
+   FindNode laz_dom/tdomnode_withchildren.findnode.html
+  TDOMNodeList laz_dom/tdomnodelist.html
+   node laz_dom/tdomnodelist.node.html
+   filter laz_dom/tdomnodelist.filter.html
+   UseFilter laz_dom/tdomnodelist.usefilter.html
+   GetCount laz_dom/tdomnodelist.getcount.html
+   GetItem laz_dom/tdomnodelist.getitem.html
+   Create laz_dom/tdomnodelist.create.html
+   Item laz_dom/tdomnodelist.item.html
+   Count laz_dom/tdomnodelist.count.html
+  TDOMNamedNodeMap laz_dom/tdomnamednodemap.html
+   OwnerDocument laz_dom/tdomnamednodemap.ownerdocument.html
+   GetItem laz_dom/tdomnamednodemap.getitem.html
+   SetItem laz_dom/tdomnamednodemap.setitem.html
+   GetLength laz_dom/tdomnamednodemap.getlength.html
+   Create laz_dom/tdomnamednodemap.create.html
+   GetNamedItem laz_dom/tdomnamednodemap.getnameditem.html
+   SetNamedItem laz_dom/tdomnamednodemap.setnameditem.html
+   RemoveNamedItem laz_dom/tdomnamednodemap.removenameditem.html
+   Item laz_dom/tdomnamednodemap.item.html
+   Length laz_dom/tdomnamednodemap.length.html
+  TDOMCharacterData laz_dom/tdomcharacterdata.html
+   GetLength laz_dom/tdomcharacterdata.getlength.html
+   Data laz_dom/tdomcharacterdata.data.html
+   Length laz_dom/tdomcharacterdata.length.html
+   SubstringData laz_dom/tdomcharacterdata.substringdata.html
+   AppendData laz_dom/tdomcharacterdata.appenddata.html
+   InsertData laz_dom/tdomcharacterdata.insertdata.html
+   DeleteData laz_dom/tdomcharacterdata.deletedata.html
+   ReplaceData laz_dom/tdomcharacterdata.replacedata.html
+  TDOMImplementation laz_dom/tdomimplementation.html
+   HasFeature laz_dom/tdomimplementation.hasfeature.html
+   CreateDocumentType laz_dom/tdomimplementation.createdocumenttype.html
+   CreateDocument laz_dom/tdomimplementation.createdocument.html
+  TDOMDocumentFragment laz_dom/tdomdocumentfragment.html
+   Create laz_dom/tdomdocumentfragment.create.html
+  TDOMDocument laz_dom/tdomdocument.html
+   FDocType laz_dom/tdomdocument.fdoctype.html
+   FImplementation laz_dom/tdomdocument.fimplementation.html
+   GetDocumentElement laz_dom/tdomdocument.getdocumentelement.html
+   DocType laz_dom/tdomdocument.doctype.html
+   Impl laz_dom/tdomdocument.impl.html
+   DocumentElement laz_dom/tdomdocument.documentelement.html
+   CreateElement laz_dom/tdomdocument.createelement.html
+   CreateDocumentFragment laz_dom/tdomdocument.createdocumentfragment.html
+   CreateTextNode laz_dom/tdomdocument.createtextnode.html
+   CreateComment laz_dom/tdomdocument.createcomment.html
+   CreateCDATASection laz_dom/tdomdocument.createcdatasection.html
+   CreateProcessingInstruction laz_dom/tdomdocument.createprocessinginstruction.html
+   CreateAttribute laz_dom/tdomdocument.createattribute.html
+   CreateEntityReference laz_dom/tdomdocument.createentityreference.html
+   GetElementsByTagName laz_dom/tdomdocument.getelementsbytagname.html
+   Create laz_dom/tdomdocument.create.html
+   CreateEntity laz_dom/tdomdocument.createentity.html
+  TXMLDocument laz_dom/txmldocument.html
+   XMLVersion laz_dom/txmldocument.xmlversion.html
+   Encoding laz_dom/txmldocument.encoding.html
+   StylesheetType laz_dom/txmldocument.stylesheettype.html
+   StylesheetHRef laz_dom/txmldocument.stylesheethref.html
+   CreateCDATASection laz_dom/txmldocument.createcdatasection.html
+   CreateProcessingInstruction laz_dom/txmldocument.createprocessinginstruction.html
+   CreateEntityReference laz_dom/txmldocument.createentityreference.html
+  TDOMAttr laz_dom/tdomattr.html
+   FSpecified laz_dom/tdomattr.fspecified.html
+   AttrOwner laz_dom/tdomattr.attrowner.html
+   GetNodeValue laz_dom/tdomattr.getnodevalue.html
+   SetNodeValue laz_dom/tdomattr.setnodevalue.html
+   Create laz_dom/tdomattr.create.html
+   CloneNode laz_dom/tdomattr.clonenode.html
+   Name laz_dom/tdomattr.name.html
+   Specified laz_dom/tdomattr.specified.html
+   Value laz_dom/tdomattr.value.html
+  TDOMElement laz_dom/tdomelement.html
+   GetAttributes laz_dom/tdomelement.getattributes.html
+   Create laz_dom/tdomelement.create.html
+   Destroy laz_dom/tdomelement.destroy.html
+   CloneNode laz_dom/tdomelement.clonenode.html
+   TagName laz_dom/tdomelement.tagname.html
+   GetAttribute laz_dom/tdomelement.getattribute.html
+   SetAttribute laz_dom/tdomelement.setattribute.html
+   RemoveAttribute laz_dom/tdomelement.removeattribute.html
+   GetAttributeNode laz_dom/tdomelement.getattributenode.html
+   SetAttributeNode laz_dom/tdomelement.setattributenode.html
+   RemoveAttributeNode laz_dom/tdomelement.removeattributenode.html
+   GetElementsByTagName laz_dom/tdomelement.getelementsbytagname.html
+   IsEmpty laz_dom/tdomelement.isempty.html
+   Normalize laz_dom/tdomelement.normalize.html
+   AttribStrings laz_dom/tdomelement.attribstrings.html
+  TDOMText laz_dom/tdomtext.html
+   Create laz_dom/tdomtext.create.html
+   CloneNode laz_dom/tdomtext.clonenode.html
+   SplitText laz_dom/tdomtext.splittext.html
+  TDOMComment laz_dom/tdomcomment.html
+   Create laz_dom/tdomcomment.create.html
+   CloneNode laz_dom/tdomcomment.clonenode.html
+  TDOMCDATASection laz_dom/tdomcdatasection.html
+   Create laz_dom/tdomcdatasection.create.html
+   CloneNode laz_dom/tdomcdatasection.clonenode.html
+  TDOMDocumentType laz_dom/tdomdocumenttype.html
+   FEntities laz_dom/tdomdocumenttype.fentities.html
+   FNotations laz_dom/tdomdocumenttype.fnotations.html
+   Create laz_dom/tdomdocumenttype.create.html
+   CloneNode laz_dom/tdomdocumenttype.clonenode.html
+   Name laz_dom/tdomdocumenttype.name.html
+   Entities laz_dom/tdomdocumenttype.entities.html
+   Notations laz_dom/tdomdocumenttype.notations.html
+  TDOMNotation laz_dom/tdomnotation.html
+   FPublicID laz_dom/tdomnotation.fpublicid.html
+   FSystemID laz_dom/tdomnotation.fsystemid.html
+   Create laz_dom/tdomnotation.create.html
+   CloneNode laz_dom/tdomnotation.clonenode.html
+   PublicID laz_dom/tdomnotation.publicid.html
+   SystemID laz_dom/tdomnotation.systemid.html
+  TDOMEntity laz_dom/tdomentity.html
+   FPublicID laz_dom/tdomentity.fpublicid.html
+   FSystemID laz_dom/tdomentity.fsystemid.html
+   FNotationName laz_dom/tdomentity.fnotationname.html
+   Create laz_dom/tdomentity.create.html
+   PublicID laz_dom/tdomentity.publicid.html
+   SystemID laz_dom/tdomentity.systemid.html
+   NotationName laz_dom/tdomentity.notationname.html
+  TDOMEntityReference laz_dom/tdomentityreference.html
+   Create laz_dom/tdomentityreference.create.html
+  TDOMProcessingInstruction laz_dom/tdomprocessinginstruction.html
+   Create laz_dom/tdomprocessinginstruction.create.html
+   Target laz_dom/tdomprocessinginstruction.target.html
+   Data laz_dom/tdomprocessinginstruction.data.html
+ Laz_XMLCfg laz_xmlcfg/index.html
+  TXMLConfig laz_xmlcfg/txmlconfig.html
+   doc laz_xmlcfg/txmlconfig.doc.html
+   FModified laz_xmlcfg/txmlconfig.fmodified.html
+   fDoNotLoadFromFile laz_xmlcfg/txmlconfig.fdonotloadfromfile.html
+   fAutoLoadFromSource laz_xmlcfg/txmlconfig.fautoloadfromsource.html
+   fPathCache laz_xmlcfg/txmlconfig.fpathcache.html
+   fPathNodeCache laz_xmlcfg/txmlconfig.fpathnodecache.html
+   Loaded laz_xmlcfg/txmlconfig.loaded.html
+   ExtendedToStr laz_xmlcfg/txmlconfig.extendedtostr.html
+   StrToExtended laz_xmlcfg/txmlconfig.strtoextended.html
+   ReadXMLFile laz_xmlcfg/txmlconfig.readxmlfile.html
+   WriteXMLFile laz_xmlcfg/txmlconfig.writexmlfile.html
+   FreeDoc laz_xmlcfg/txmlconfig.freedoc.html
+   SetPathNodeCache laz_xmlcfg/txmlconfig.setpathnodecache.html
+   GetPathNodeCache laz_xmlcfg/txmlconfig.getpathnodecache.html
+   InvalidateCacheTilEnd laz_xmlcfg/txmlconfig.invalidatecachetilend.html
+   InternalFindNode laz_xmlcfg/txmlconfig.internalfindnode.html
+   InternalCleanNode laz_xmlcfg/txmlconfig.internalcleannode.html
+   Create laz_xmlcfg/txmlconfig.create.html
+   CreateClean laz_xmlcfg/txmlconfig.createclean.html
+   CreateWithSource laz_xmlcfg/txmlconfig.createwithsource.html
+   Destroy laz_xmlcfg/txmlconfig.destroy.html
+   Clear laz_xmlcfg/txmlconfig.clear.html
+   Flush laz_xmlcfg/txmlconfig.flush.html
+   ReadFromStream laz_xmlcfg/txmlconfig.readfromstream.html
+   WriteToStream laz_xmlcfg/txmlconfig.writetostream.html
+   GetValue laz_xmlcfg/txmlconfig.getvalue.html
+   GetExtendedValue laz_xmlcfg/txmlconfig.getextendedvalue.html
+   SetValue laz_xmlcfg/txmlconfig.setvalue.html
+   SetDeleteValue laz_xmlcfg/txmlconfig.setdeletevalue.html
+   SetExtendedValue laz_xmlcfg/txmlconfig.setextendedvalue.html
+   SetDeleteExtendedValue laz_xmlcfg/txmlconfig.setdeleteextendedvalue.html
+   DeletePath laz_xmlcfg/txmlconfig.deletepath.html
+   DeleteValue laz_xmlcfg/txmlconfig.deletevalue.html
+   FindNode laz_xmlcfg/txmlconfig.findnode.html
+   HasPath laz_xmlcfg/txmlconfig.haspath.html
+   HasChildPaths laz_xmlcfg/txmlconfig.haschildpaths.html
+   Modified laz_xmlcfg/txmlconfig.modified.html
+   InvalidatePathCache laz_xmlcfg/txmlconfig.invalidatepathcache.html
+   Filename laz_xmlcfg/txmlconfig.filename.html
+   Document laz_xmlcfg/txmlconfig.document.html
+   ReadFlags laz_xmlcfg/txmlconfig.readflags.html
+   WriteFlags laz_xmlcfg/txmlconfig.writeflags.html
+  TRttiXMLConfig laz_xmlcfg/trttixmlconfig.html
+   WriteProperty laz_xmlcfg/trttixmlconfig.writeproperty.html
+   ReadProperty laz_xmlcfg/trttixmlconfig.readproperty.html
+   WriteObject laz_xmlcfg/trttixmlconfig.writeobject.html
+   ReadObject laz_xmlcfg/trttixmlconfig.readobject.html
+ Laz_XMLRead laz_xmlread/index.html
+  EXMLReadError laz_xmlread/exmlreaderror.html
+   Position laz_xmlread/exmlreaderror.position.html
+   LineCol laz_xmlread/exmlreaderror.linecol.html
+   Descr laz_xmlread/exmlreaderror.descr.html
+  ReadXMLFile laz_xmlread/readxmlfile.html
+  ReadXMLFragment laz_xmlread/readxmlfragment.html
+  ReadDTDFile laz_xmlread/readdtdfile.html
+ Laz_XMLStreaming laz_xmlstreaming/index.html
+  TXMLObjectWriterStackElType laz_xmlstreaming/txmlobjectwriterstackeltype.html
+  TXMLObjectWriterClass laz_xmlstreaming/txmlobjectwriterclass.html
+  TXMLObjectReaderClass laz_xmlstreaming/txmlobjectreaderclass.html
+  TXMLObjectWriterStackEl laz_xmlstreaming/txmlobjectwriterstackel.html
+   Element laz_xmlstreaming/txmlobjectwriterstackel.element.html
+   Parent laz_xmlstreaming/txmlobjectwriterstackel.parent.html
+   ElemType laz_xmlstreaming/txmlobjectwriterstackel.elemtype.html
+   PropertyName laz_xmlstreaming/txmlobjectwriterstackel.propertyname.html
+  TXMLObjectWriter laz_xmlstreaming/txmlobjectwriter.html
+   Create laz_xmlstreaming/txmlobjectwriter.create.html
+   BeginCollection laz_xmlstreaming/txmlobjectwriter.begincollection.html
+   BeginComponent laz_xmlstreaming/txmlobjectwriter.begincomponent.html
+   BeginList laz_xmlstreaming/txmlobjectwriter.beginlist.html
+   EndList laz_xmlstreaming/txmlobjectwriter.endlist.html
+   BeginProperty laz_xmlstreaming/txmlobjectwriter.beginproperty.html
+   EndProperty laz_xmlstreaming/txmlobjectwriter.endproperty.html
+   WriteBinary laz_xmlstreaming/txmlobjectwriter.writebinary.html
+   WriteBoolean laz_xmlstreaming/txmlobjectwriter.writeboolean.html
+   WriteFloat laz_xmlstreaming/txmlobjectwriter.writefloat.html
+   WriteSingle laz_xmlstreaming/txmlobjectwriter.writesingle.html
+   WriteCurrency laz_xmlstreaming/txmlobjectwriter.writecurrency.html
+   WriteDate laz_xmlstreaming/txmlobjectwriter.writedate.html
+   WriteIdent laz_xmlstreaming/txmlobjectwriter.writeident.html
+   WriteInteger laz_xmlstreaming/txmlobjectwriter.writeinteger.html
+   WriteMethodName laz_xmlstreaming/txmlobjectwriter.writemethodname.html
+   WriteSet laz_xmlstreaming/txmlobjectwriter.writeset.html
+   WriteString laz_xmlstreaming/txmlobjectwriter.writestring.html
+   WriteWideString laz_xmlstreaming/txmlobjectwriter.writewidestring.html
+   WriteUInt64 laz_xmlstreaming/txmlobjectwriter.writeuint64.html
+   WriteUnicodeString laz_xmlstreaming/txmlobjectwriter.writeunicodestring.html
+   WriteVariant laz_xmlstreaming/txmlobjectwriter.writevariant.html
+   Write laz_xmlstreaming/txmlobjectwriter.write.html
+   Doc laz_xmlstreaming/txmlobjectwriter.doc.html
+  TXMLObjectReader laz_xmlstreaming/txmlobjectreader.html
+   Create laz_xmlstreaming/txmlobjectreader.create.html
+   Destroy laz_xmlstreaming/txmlobjectreader.destroy.html
+   GetRootClassName laz_xmlstreaming/txmlobjectreader.getrootclassname.html
+   NextValue laz_xmlstreaming/txmlobjectreader.nextvalue.html
+   ReadValue laz_xmlstreaming/txmlobjectreader.readvalue.html
+   BeginRootComponent laz_xmlstreaming/txmlobjectreader.beginrootcomponent.html
+   BeginComponent laz_xmlstreaming/txmlobjectreader.begincomponent.html
+   BeginProperty laz_xmlstreaming/txmlobjectreader.beginproperty.html
+   ReadBinary laz_xmlstreaming/txmlobjectreader.readbinary.html
+   ReadFloat laz_xmlstreaming/txmlobjectreader.readfloat.html
+   ReadSingle laz_xmlstreaming/txmlobjectreader.readsingle.html
+   ReadCurrency laz_xmlstreaming/txmlobjectreader.readcurrency.html
+   ReadDate laz_xmlstreaming/txmlobjectreader.readdate.html
+   ReadIdent laz_xmlstreaming/txmlobjectreader.readident.html
+   ReadInt8 laz_xmlstreaming/txmlobjectreader.readint8.html
+   ReadInt16 laz_xmlstreaming/txmlobjectreader.readint16.html
+   ReadInt32 laz_xmlstreaming/txmlobjectreader.readint32.html
+   ReadInt64 laz_xmlstreaming/txmlobjectreader.readint64.html
+   ReadSet laz_xmlstreaming/txmlobjectreader.readset.html
+   ReadStr laz_xmlstreaming/txmlobjectreader.readstr.html
+   ReadString laz_xmlstreaming/txmlobjectreader.readstring.html
+   ReadWideString laz_xmlstreaming/txmlobjectreader.readwidestring.html
+   ReadUnicodeString laz_xmlstreaming/txmlobjectreader.readunicodestring.html
+   SkipComponent laz_xmlstreaming/txmlobjectreader.skipcomponent.html
+   SkipValue laz_xmlstreaming/txmlobjectreader.skipvalue.html
+   Read laz_xmlstreaming/txmlobjectreader.read.html
+   Doc laz_xmlstreaming/txmlobjectreader.doc.html
+   Element laz_xmlstreaming/txmlobjectreader.element.html
+   ElementPosition laz_xmlstreaming/txmlobjectreader.elementposition.html
+  WriteComponentToXMLStream laz_xmlstreaming/writecomponenttoxmlstream.html
+ Laz_XMLWrite laz_xmlwrite/index.html
+  WriteXMLFile laz_xmlwrite/writexmlfile.html
+  WriteXML laz_xmlwrite/writexml.html
+ LazFreeType lazfreetype/index.html
+  TT_Load_Scale_Glyph lazfreetype/tt_load_scale_glyph.html
+  TT_Load_Hint_Glyph lazfreetype/tt_load_hint_glyph.html
+  TT_Load_Debug lazfreetype/tt_load_debug.html
+  TT_Load_Default lazfreetype/tt_load_default.html
+  TT_Init_FreeType lazfreetype/tt_init_freetype.html
+  TT_Done_FreeType lazfreetype/tt_done_freetype.html
+  TT_Set_Raster_Palette lazfreetype/tt_set_raster_palette.html
+  TT_Open_Face lazfreetype/tt_open_face.html
+  TT_Open_Collection lazfreetype/tt_open_collection.html
+  TT_Get_Face_Properties lazfreetype/tt_get_face_properties.html
+  TT_Set_Face_Pointer lazfreetype/tt_set_face_pointer.html
+  TT_Get_Face_Pointer lazfreetype/tt_get_face_pointer.html
+  TT_Close_Face lazfreetype/tt_close_face.html
+  TT_New_Instance lazfreetype/tt_new_instance.html
+  TT_Set_Instance_Resolutions lazfreetype/tt_set_instance_resolutions.html
+  TT_Set_Instance_PointSize lazfreetype/tt_set_instance_pointsize.html
+  TT_Set_Instance_CharSize lazfreetype/tt_set_instance_charsize.html
+  TT_Set_Instance_CharSizes lazfreetype/tt_set_instance_charsizes.html
+  TT_Set_Instance_PixelSizes lazfreetype/tt_set_instance_pixelsizes.html
+  TT_Set_Instance_Transforms lazfreetype/tt_set_instance_transforms.html
+  TT_Get_Instance_Metrics lazfreetype/tt_get_instance_metrics.html
+  TT_Set_Instance_Pointer lazfreetype/tt_set_instance_pointer.html
+  TT_Get_Instance_Pointer lazfreetype/tt_get_instance_pointer.html
+  TT_Done_Instance lazfreetype/tt_done_instance.html
+  TT_New_Glyph lazfreetype/tt_new_glyph.html
+  TT_Done_Glyph lazfreetype/tt_done_glyph.html
+  TT_Load_Glyph lazfreetype/tt_load_glyph.html
+  TT_Get_Glyph_Outline lazfreetype/tt_get_glyph_outline.html
+  TT_Get_Glyph_Metrics lazfreetype/tt_get_glyph_metrics.html
+  TT_Get_Glyph_Big_Metrics lazfreetype/tt_get_glyph_big_metrics.html
+  TT_Get_Glyph_Bitmap lazfreetype/tt_get_glyph_bitmap.html
+  TT_Get_Glyph_Pixmap lazfreetype/tt_get_glyph_pixmap.html
+  TT_Get_Glyph_Pixmap_HQ lazfreetype/tt_get_glyph_pixmap_hq.html
+  TT_Render_Directly_Glyph_Gray lazfreetype/tt_render_directly_glyph_gray.html
+  TT_Render_Directly_Glyph_HQ lazfreetype/tt_render_directly_glyph_hq.html
+  TT_Translate_Outline lazfreetype/tt_translate_outline.html
+  TT_Transform_Outline lazfreetype/tt_transform_outline.html
+  TT_Transform_Vector lazfreetype/tt_transform_vector.html
+  TT_Get_Outline_Bitmap lazfreetype/tt_get_outline_bitmap.html
+  TT_Get_Outline_Pixmap lazfreetype/tt_get_outline_pixmap.html
+  TT_Get_Outline_Pixmap_HQ lazfreetype/tt_get_outline_pixmap_hq.html
+  TT_Render_Directly_Outline_Gray lazfreetype/tt_render_directly_outline_gray.html
+  TT_Render_Directly_Outline_HQ lazfreetype/tt_render_directly_outline_hq.html
+  TT_Get_Outline_BBox lazfreetype/tt_get_outline_bbox.html
+  TT_New_Outline lazfreetype/tt_new_outline.html
+  TT_Copy_Outline lazfreetype/tt_copy_outline.html
+  TT_Clone_Outline lazfreetype/tt_clone_outline.html
+  TT_Done_Outline lazfreetype/tt_done_outline.html
+  TT_Get_CharMap_Count lazfreetype/tt_get_charmap_count.html
+  TT_Get_CharMap_ID lazfreetype/tt_get_charmap_id.html
+  TT_Get_CharMap lazfreetype/tt_get_charmap.html
+  TT_Char_Index lazfreetype/tt_char_index.html
+  TT_Get_Name_Count lazfreetype/tt_get_name_count.html
+  TT_Get_Name_ID lazfreetype/tt_get_name_id.html
+  TT_Get_Name_String lazfreetype/tt_get_name_string.html
+  TT_Get_Font_Data lazfreetype/tt_get_font_data.html
+ TTTypes tttypes/index.html
+  TT_Flag_On_Curve tttypes/tt_flag_on_curve.html
+  TT_Flow_Down tttypes/tt_flow_down.html
+  TT_Flow_Up tttypes/tt_flow_up.html
+  TT_Err_Ok tttypes/tt_err_ok.html
+  TT_Err_Invalid_Face_Handle tttypes/tt_err_invalid_face_handle.html
+  TT_Err_Invalid_Instance_Handle tttypes/tt_err_invalid_instance_handle.html
+  TT_Err_Invalid_Glyph_Handle tttypes/tt_err_invalid_glyph_handle.html
+  TT_Err_Invalid_CharMap_Handle tttypes/tt_err_invalid_charmap_handle.html
+  TT_Err_Invalid_Result_Address tttypes/tt_err_invalid_result_address.html
+  TT_Err_Invalid_Glyph_Index tttypes/tt_err_invalid_glyph_index.html
+  TT_Err_Invalid_Argument tttypes/tt_err_invalid_argument.html
+  TT_Err_Could_Not_Open_File tttypes/tt_err_could_not_open_file.html
+  TT_Err_File_Is_Not_Collection tttypes/tt_err_file_is_not_collection.html
+  TT_Err_Table_Missing tttypes/tt_err_table_missing.html
+  TT_Err_Invalid_Horiz_Metrics tttypes/tt_err_invalid_horiz_metrics.html
+  TT_Err_Invalid_Vert_Metrics tttypes/tt_err_invalid_vert_metrics.html
+  TT_Err_Invalid_CharMap_Format tttypes/tt_err_invalid_charmap_format.html
+  TT_Err_Invalid_File_Format tttypes/tt_err_invalid_file_format.html
+  TT_Err_File_Error tttypes/tt_err_file_error.html
+  TT_Err_Invalid_Engine tttypes/tt_err_invalid_engine.html
+  TT_Err_Too_Many_Extensions tttypes/tt_err_too_many_extensions.html
+  TT_Err_Extensions_Unsupported tttypes/tt_err_extensions_unsupported.html
+  TT_Err_Invalid_Extension_Id tttypes/tt_err_invalid_extension_id.html
+  TT_Err_No_Vertical_Data tttypes/tt_err_no_vertical_data.html
+  TT_Err_Max_Profile_Missing tttypes/tt_err_max_profile_missing.html
+  TT_Err_Header_Table_Missing tttypes/tt_err_header_table_missing.html
+  TT_Err_Horiz_Header_Missing tttypes/tt_err_horiz_header_missing.html
+  TT_Err_Locations_Missing tttypes/tt_err_locations_missing.html
+  TT_Err_Name_Table_Missing tttypes/tt_err_name_table_missing.html
+  TT_Err_CMap_Table_Missing tttypes/tt_err_cmap_table_missing.html
+  TT_Err_Hmtx_Table_Missing tttypes/tt_err_hmtx_table_missing.html
+  TT_Err_OS2_Table_Missing tttypes/tt_err_os2_table_missing.html
+  TT_Err_Post_Table_Missing tttypes/tt_err_post_table_missing.html
+  TT_Err_Out_Of_Memory tttypes/tt_err_out_of_memory.html
+  TT_Err_Invalid_File_Offset tttypes/tt_err_invalid_file_offset.html
+  TT_Err_Invalid_File_Read tttypes/tt_err_invalid_file_read.html
+  TT_Err_Invalid_Frame_Access tttypes/tt_err_invalid_frame_access.html
+  TT_Err_Too_Many_Points tttypes/tt_err_too_many_points.html
+  TT_Err_Too_Many_Contours tttypes/tt_err_too_many_contours.html
+  TT_Err_Invalid_Composite tttypes/tt_err_invalid_composite.html
+  TT_Err_Too_Many_Ins tttypes/tt_err_too_many_ins.html
+  TT_Err_Invalid_Opcode tttypes/tt_err_invalid_opcode.html
+  TT_Err_Too_Few_Arguments tttypes/tt_err_too_few_arguments.html
+  TT_Err_Stack_Overflow tttypes/tt_err_stack_overflow.html
+  TT_Err_Code_Overflow tttypes/tt_err_code_overflow.html
+  TT_Err_Bad_Argument tttypes/tt_err_bad_argument.html
+  TT_Err_Divide_By_Zero tttypes/tt_err_divide_by_zero.html
+  TT_Err_Storage_Overflow tttypes/tt_err_storage_overflow.html
+  TT_Err_Cvt_Overflow tttypes/tt_err_cvt_overflow.html
+  TT_Err_Invalid_Reference tttypes/tt_err_invalid_reference.html
+  TT_Err_Invalid_Distance tttypes/tt_err_invalid_distance.html
+  TT_Err_Interpolate_Twilight tttypes/tt_err_interpolate_twilight.html
+  TT_Err_Debug_Opcode tttypes/tt_err_debug_opcode.html
+  TT_Err_ENDF_In_Exec_Stream tttypes/tt_err_endf_in_exec_stream.html
+  TT_Err_Out_Of_CodeRanges tttypes/tt_err_out_of_coderanges.html
+  TT_Err_Nested_DEFs tttypes/tt_err_nested_defs.html
+  TT_Err_Invalid_CodeRange tttypes/tt_err_invalid_coderange.html
+  TT_Err_Invalid_Displacement tttypes/tt_err_invalid_displacement.html
+  TT_Err_Execution_Too_Long tttypes/tt_err_execution_too_long.html
+  TT_Err_Too_Many_FuncDefs tttypes/tt_err_too_many_funcdefs.html
+  TT_Err_Too_Many_InsDefs tttypes/tt_err_too_many_insdefs.html
+  TT_Err_Nested_Frame_Access tttypes/tt_err_nested_frame_access.html
+  TT_Err_Invalid_Cache_List tttypes/tt_err_invalid_cache_list.html
+  TT_Err_Could_Not_Find_Context tttypes/tt_err_could_not_find_context.html
+  TT_Err_UNlisted_Object tttypes/tt_err_unlisted_object.html
+  TT_Err_Raster_Pool_Overflow tttypes/tt_err_raster_pool_overflow.html
+  TT_Err_Raster_Negative_Height tttypes/tt_err_raster_negative_height.html
+  TT_Err_Invalid_Value tttypes/tt_err_invalid_value.html
+  TT_Err_Raster_Not_Initialised tttypes/tt_err_raster_not_initialised.html
+  Success tttypes/success.html
+  Failure tttypes/failure.html
+  TError tttypes/terror.html
+  TT_Int tttypes/tt_int.html
+  TT_Long tttypes/tt_long.html
+  TT_ULong tttypes/tt_ulong.html
+  TT_Short tttypes/tt_short.html
+  TT_UShort tttypes/tt_ushort.html
+  TT_Fixed tttypes/tt_fixed.html
+  TT_FWord tttypes/tt_fword.html
+  TT_UFWord tttypes/tt_ufword.html
+  TT_F2Dot14 tttypes/tt_f2dot14.html
+  TT_F26Dot6 tttypes/tt_f26dot6.html
+  TT_Pos tttypes/tt_pos.html
+  TT_UnitVector tttypes/tt_unitvector.html
+  TT_Vector tttypes/tt_vector.html
+  TT_Matrix tttypes/tt_matrix.html
+  TT_BBox tttypes/tt_bbox.html
+  TT_Error tttypes/tt_error.html
+  TT_Points_Table tttypes/tt_points_table.html
+  TT_Points tttypes/tt_points.html
+  TT_Coordinates tttypes/tt_coordinates.html
+  TT_PCoordinates tttypes/tt_pcoordinates.html
+  TT_TouchTable tttypes/tt_touchtable.html
+  TT_PTouchTable tttypes/tt_ptouchtable.html
+  TT_ConStarts tttypes/tt_constarts.html
+  TT_PConStarts tttypes/tt_pconstarts.html
+  TT_Outline tttypes/tt_outline.html
+  TT_Glyph_Metrics tttypes/tt_glyph_metrics.html
+  TT_Big_Glyph_Metrics tttypes/tt_big_glyph_metrics.html
+  TDirectRenderingFunction tttypes/tdirectrenderingfunction.html
+  TT_Instance_Metrics tttypes/tt_instance_metrics.html
+  TT_Raster_Map tttypes/tt_raster_map.html
+  TT_Header tttypes/tt_header.html
+  TT_Horizontal_Header tttypes/tt_horizontal_header.html
+  TT_Vertical_Header tttypes/tt_vertical_header.html
+  TT_OS2 tttypes/tt_os2.html
+  TT_Postscript tttypes/tt_postscript.html
+  TT_Face_Properties tttypes/tt_face_properties.html
+  TT_Stream tttypes/tt_stream.html
+  TT_Face tttypes/tt_face.html
+  TT_Instance tttypes/tt_instance.html
+  TT_Glyph tttypes/tt_glyph.html
+  TT_CharMap tttypes/tt_charmap.html
+  TT_Gray_Palette tttypes/tt_gray_palette.html
+  PTT_Gray_Palette tttypes/ptt_gray_palette.html
+  UShort tttypes/ushort.html
+  Short tttypes/short.html
+  Long tttypes/long.html
+  ULong tttypes/ulong.html
+  Int tttypes/int.html
+  TByteArray tttypes/tbytearray.html
+  PByte tttypes/pbyte.html
+  TShortArray tttypes/tshortarray.html
+  PShort tttypes/pshort.html
+  TUShortArray tttypes/tushortarray.html
+  PUShort tttypes/pushort.html
+  TStorage tttypes/tstorage.html
+  PStorage tttypes/pstorage.html
+  PLong tttypes/plong.html
+  PULong tttypes/pulong.html
+  TCoordinates tttypes/tcoordinates.html
+  PCoordinates tttypes/pcoordinates.html
+  PTouchTable tttypes/ptouchtable.html
+  TVecRecord tttypes/tvecrecord.html
+  TFreeTypeCustomRasterizer tttypes/tfreetypecustomrasterizer.html
+   Render_Glyph tttypes/tfreetypecustomrasterizer.render_glyph.html
+   Render_Gray_Glyph tttypes/tfreetypecustomrasterizer.render_gray_glyph.html
+   Render_Gray_Glyph_HQ tttypes/tfreetypecustomrasterizer.render_gray_glyph_hq.html
+   Render_Directly_Gray_Glyph tttypes/tfreetypecustomrasterizer.render_directly_gray_glyph.html
+   Render_Directly_Gray_Glyph_HQ tttypes/tfreetypecustomrasterizer.render_directly_gray_glyph_hq.html
+   Set_Raster_Palette tttypes/tfreetypecustomrasterizer.set_raster_palette.html
+ TTCache ttcache/index.html
+  PList_Element ttcache/plist_element.html
+  TList_Element ttcache/tlist_element.html
+  TSingle_List ttcache/tsingle_list.html
+  TConstructor ttcache/tconstructor.html
+  TDestructor ttcache/tdestructor.html
+  PCache_Class ttcache/pcache_class.html
+  TCache_Class ttcache/tcache_class.html
+  PCache ttcache/pcache.html
+  TCache ttcache/tcache.html
+  Cache_Create ttcache/cache_create.html
+  Cache_Destroy ttcache/cache_destroy.html
+  Cache_New ttcache/cache_new.html
+  Cache_Done ttcache/cache_done.html
+  Element_New ttcache/element_new.html
+  Element_Done ttcache/element_done.html
+  TTCache_Init ttcache/ttcache_init.html
+  TTCache_Done ttcache/ttcache_done.html
+ TTCalc ttcalc/index.html
+  Int16 ttcalc/int16.html
+  Word16 ttcalc/word16.html
+  Int32 ttcalc/int32.html
+  Word32 ttcalc/word32.html
+  MulDiv ttcalc/muldiv.html
+  MulDiv_Round ttcalc/muldiv_round.html
+  MulTo64 ttcalc/multo64.html
+  Div64by32 ttcalc/div64by32.html
+  Order64 ttcalc/order64.html
+  Order32 ttcalc/order32.html
+  Sqrt32 ttcalc/sqrt32.html
+  Sqrt64 ttcalc/sqrt64.html
+ TTCMap ttcmap/index.html
+  TCMap0 ttcmap/tcmap0.html
+  TCMap2SubHeader ttcmap/tcmap2subheader.html
+  TCMap2SubHeaders ttcmap/tcmap2subheaders.html
+  PCMap2SubHeaders ttcmap/pcmap2subheaders.html
+  TCMap2 ttcmap/tcmap2.html
+  TCMap4Segment ttcmap/tcmap4segment.html
+  TCMap4Segments ttcmap/tcmap4segments.html
+  PCMap4Segments ttcmap/pcmap4segments.html
+  TCMap4 ttcmap/tcmap4.html
+  TCMap6 ttcmap/tcmap6.html
+  PCMapTable ttcmap/pcmaptable.html
+  TCMapTable ttcmap/tcmaptable.html
+  TCMapTables ttcmap/tcmaptables.html
+  PCMapTables ttcmap/pcmaptables.html
+  CharMap_Load ttcmap/charmap_load.html
+  CharMap_Free ttcmap/charmap_free.html
+  CharMap_Index ttcmap/charmap_index.html
+ TTDebug ttdebug/index.html
+ TTObjs ttobjs/index.html
+  Default_GraphicsState ttobjs/default_graphicsstate.html
+  MaxCodeRanges ttobjs/maxcoderanges.html
+  TT_CodeRange_Font ttobjs/tt_coderange_font.html
+  TT_CodeRange_Cvt ttobjs/tt_coderange_cvt.html
+  TT_CodeRange_Glyph ttobjs/tt_coderange_glyph.html
+  CvtFlag_None ttobjs/cvtflag_none.html
+  CvtFlag_X ttobjs/cvtflag_x.html
+  CvtFlag_Y ttobjs/cvtflag_y.html
+  CvtFlag_Both ttobjs/cvtflag_both.html
+  PGraphicsState ttobjs/pgraphicsstate.html
+  TGraphicsState ttobjs/tgraphicsstate.html
+  TCodeRange ttobjs/tcoderange.html
+  PCodeRange ttobjs/pcoderange.html
+  TCodeRangeTable ttobjs/tcoderangetable.html
+  PDefRecord ttobjs/pdefrecord.html
+  TDefRecord ttobjs/tdefrecord.html
+  PDefArray ttobjs/pdefarray.html
+  TDefArray ttobjs/tdefarray.html
+  TCallRecord ttobjs/tcallrecord.html
+  TCallStack ttobjs/tcallstack.html
+  PCallStack ttobjs/pcallstack.html
+  PGlyph_Zone ttobjs/pglyph_zone.html
+  TGlyph_Zone ttobjs/tglyph_zone.html
+  TRound_Function ttobjs/tround_function.html
+  TMove_Function ttobjs/tmove_function.html
+  TProject_Function ttobjs/tproject_function.html
+  TFunc_Get_CVT ttobjs/tfunc_get_cvt.html
+  TFunc_Set_CVT ttobjs/tfunc_set_cvt.html
+  PGlyph_Transform ttobjs/pglyph_transform.html
+  TGlyph_Transform ttobjs/tglyph_transform.html
+  PSubglyph_Record ttobjs/psubglyph_record.html
+  TSubglyph_Record ttobjs/tsubglyph_record.html
+  TSubglyph_Stack ttobjs/tsubglyph_stack.html
+  PSubglyph_Stack ttobjs/psubglyph_stack.html
+  TIns_Metrics ttobjs/tins_metrics.html
+  PFace ttobjs/pface.html
+  PInstance ttobjs/pinstance.html
+  PExec_Context ttobjs/pexec_context.html
+ TTError tterror/index.html
+  Err_Ras_None tterror/err_ras_none.html
+  Err_Ras_NotIni tterror/err_ras_notini.html
+  Err_Ras_Overflow tterror/err_ras_overflow.html
+  Err_Ras_Neg_H tterror/err_ras_neg_h.html
+  Err_Ras_Invalid tterror/err_ras_invalid.html
+  Err_Ras_Invalid_Contours tterror/err_ras_invalid_contours.html
+  Check_Error tterror/check_error.html
+  Panic1 tterror/panic1.html
+  Trace1 tterror/trace1.html
+  error tterror/error.html
+ TTTables tttables/index.html
+  Gasp_GridFit tttables/gasp_gridfit.html
+  Gasp_DoGray tttables/gasp_dogray.html
+  PTTCHeader tttables/pttcheader.html
+  TTTCHeader tttables/tttcheader.html
+  PTableDir tttables/ptabledir.html
+  TTableDir tttables/ttabledir.html
+  TTableDirEntry tttables/ttabledirentry.html
+  TTableDirEntries tttables/ttabledirentries.html
+  PTableDirEntries tttables/ptabledirentries.html
+  TCMapDir tttables/tcmapdir.html
+  TCMapDirEntry tttables/tcmapdirentry.html
+  TCMapDirEntries tttables/tcmapdirentries.html
+  PCMapDirEntries tttables/pcmapdirentries.html
+  TMaxProfile tttables/tmaxprofile.html
+  TGaspRange tttables/tgasprange.html
+  TGaspRanges tttables/tgaspranges.html
+  PGaspRanges tttables/pgaspranges.html
+  TGasp tttables/tgasp.html
+  TLongMetrics tttables/tlongmetrics.html
+  TTableLongMetrics tttables/ttablelongmetrics.html
+  PTableLongMetrics tttables/ptablelongmetrics.html
+  TShortMetrics tttables/tshortmetrics.html
+  TTableShortMetrics tttables/ttableshortmetrics.html
+  PTableShortMetrics tttables/ptableshortmetrics.html
+  TName_Record tttables/tname_record.html
+  PName_Record tttables/pname_record.html
+  TName_Records tttables/tname_records.html
+  PName_Records tttables/pname_records.html
+  PName_Table tttables/pname_table.html
+  TName_Table tttables/tname_table.html
+  PHdmx_Record tttables/phdmx_record.html
+  THdmx_Record tttables/thdmx_record.html
+  THdmx_Records tttables/thdmx_records.html
+  PHdmx_Records tttables/phdmx_records.html
+  THdmx tttables/thdmx.html
+ EasyLazFreeType easylazfreetype/index.html
+  FreeTypeInformationStr easylazfreetype/freetypeinformationstr.html
+  TGlyphRenderQuality easylazfreetype/tglyphrenderquality.html
+  ArrayOfSingle easylazfreetype/arrayofsingle.html
+  TCharPosition easylazfreetype/tcharposition.html
+  ArrayOfCharPosition easylazfreetype/arrayofcharposition.html
+  TFreeTypeAlignment easylazfreetype/tfreetypealignment.html
+  TFreeTypeAlignments easylazfreetype/tfreetypealignments.html
+  TFreeTypeInformation easylazfreetype/tfreetypeinformation.html
+  TFreeTypeStyle easylazfreetype/tfreetypestyle.html
+  TFreeTypeStyles easylazfreetype/tfreetypestyles.html
+  ArrayOfString easylazfreetype/arrayofstring.html
+  TCustomFontCollectionItem easylazfreetype/tcustomfontcollectionitem.html
+   GetBold easylazfreetype/tcustomfontcollectionitem.getbold.html
+   GetInformation easylazfreetype/tcustomfontcollectionitem.getinformation.html
+   GetItalic easylazfreetype/tcustomfontcollectionitem.getitalic.html
+   GetStyleCount easylazfreetype/tcustomfontcollectionitem.getstylecount.html
+   GetStyles easylazfreetype/tcustomfontcollectionitem.getstyles.html
+   GetFilename easylazfreetype/tcustomfontcollectionitem.getfilename.html
+   GetVersionNumber easylazfreetype/tcustomfontcollectionitem.getversionnumber.html
+   GetStyle easylazfreetype/tcustomfontcollectionitem.getstyle.html
+   HasStyle easylazfreetype/tcustomfontcollectionitem.hasstyle.html
+   CreateFont easylazfreetype/tcustomfontcollectionitem.createfont.html
+   QueryFace easylazfreetype/tcustomfontcollectionitem.queryface.html
+   ReleaseFace easylazfreetype/tcustomfontcollectionitem.releaseface.html
+   Styles easylazfreetype/tcustomfontcollectionitem.styles.html
+   Italic easylazfreetype/tcustomfontcollectionitem.italic.html
+   Bold easylazfreetype/tcustomfontcollectionitem.bold.html
+   Filename easylazfreetype/tcustomfontcollectionitem.filename.html
+   Information easylazfreetype/tcustomfontcollectionitem.information.html
+   VersionNumber easylazfreetype/tcustomfontcollectionitem.versionnumber.html
+   Style easylazfreetype/tcustomfontcollectionitem.style.html
+   StyleCount easylazfreetype/tcustomfontcollectionitem.stylecount.html
+  IFreeTypeFontEnumerator easylazfreetype/ifreetypefontenumerator.html
+   MoveNext easylazfreetype/ifreetypefontenumerator.movenext.html
+   GetCurrent easylazfreetype/ifreetypefontenumerator.getcurrent.html
+   Current easylazfreetype/ifreetypefontenumerator.current.html
+  TCustomFamilyCollectionItem easylazfreetype/tcustomfamilycollectionitem.html
+   GetFontByIndex easylazfreetype/tcustomfamilycollectionitem.getfontbyindex.html
+   GetStyle easylazfreetype/tcustomfamilycollectionitem.getstyle.html
+   GetStyles easylazfreetype/tcustomfamilycollectionitem.getstyles.html
+   GetFamilyName easylazfreetype/tcustomfamilycollectionitem.getfamilyname.html
+   GetFontCount easylazfreetype/tcustomfamilycollectionitem.getfontcount.html
+   GetStyleCount easylazfreetype/tcustomfamilycollectionitem.getstylecount.html
+   GetFont easylazfreetype/tcustomfamilycollectionitem.getfont.html
+   GetFontIndex easylazfreetype/tcustomfamilycollectionitem.getfontindex.html
+   HasStyle easylazfreetype/tcustomfamilycollectionitem.hasstyle.html
+   FamilyName easylazfreetype/tcustomfamilycollectionitem.familyname.html
+   Font easylazfreetype/tcustomfamilycollectionitem.font.html
+   FontCount easylazfreetype/tcustomfamilycollectionitem.fontcount.html
+   Style easylazfreetype/tcustomfamilycollectionitem.style.html
+   StyleCount easylazfreetype/tcustomfamilycollectionitem.stylecount.html
+   Styles easylazfreetype/tcustomfamilycollectionitem.styles.html
+  IFreeTypeFamilyEnumerator easylazfreetype/ifreetypefamilyenumerator.html
+   MoveNext easylazfreetype/ifreetypefamilyenumerator.movenext.html
+   GetCurrent easylazfreetype/ifreetypefamilyenumerator.getcurrent.html
+   Current easylazfreetype/ifreetypefamilyenumerator.current.html
+  TCustomFreeTypeFontCollection easylazfreetype/tcustomfreetypefontcollection.html
+   GetFont easylazfreetype/tcustomfreetypefontcollection.getfont.html
+   GetFamily easylazfreetype/tcustomfreetypefontcollection.getfamily.html
+   GetFamilyCount easylazfreetype/tcustomfreetypefontcollection.getfamilycount.html
+   GetFontCount easylazfreetype/tcustomfreetypefontcollection.getfontcount.html
+   Create easylazfreetype/tcustomfreetypefontcollection.create.html
+   Clear easylazfreetype/tcustomfreetypefontcollection.clear.html
+   BeginUpdate easylazfreetype/tcustomfreetypefontcollection.beginupdate.html
+   AddFolder easylazfreetype/tcustomfreetypefontcollection.addfolder.html
+   AddFile easylazfreetype/tcustomfreetypefontcollection.addfile.html
+   EndUpdate easylazfreetype/tcustomfreetypefontcollection.endupdate.html
+   FontFileEnumerator easylazfreetype/tcustomfreetypefontcollection.fontfileenumerator.html
+   FamilyEnumerator easylazfreetype/tcustomfreetypefontcollection.familyenumerator.html
+   FontFileCount easylazfreetype/tcustomfreetypefontcollection.fontfilecount.html
+   FontFile easylazfreetype/tcustomfreetypefontcollection.fontfile.html
+   FamilyCount easylazfreetype/tcustomfreetypefontcollection.familycount.html
+   Family easylazfreetype/tcustomfreetypefontcollection.family.html
+  TFreeTypeRenderableFont easylazfreetype/tfreetyperenderablefont.html
+   GetClearType easylazfreetype/tfreetyperenderablefont.getcleartype.html
+   SetClearType easylazfreetype/tfreetyperenderablefont.setcleartype.html
+   GetLineFullHeight easylazfreetype/tfreetyperenderablefont.getlinefullheight.html
+   GetAscent easylazfreetype/tfreetyperenderablefont.getascent.html
+   GetDescent easylazfreetype/tfreetyperenderablefont.getdescent.html
+   GetLineSpacing easylazfreetype/tfreetyperenderablefont.getlinespacing.html
+   TextWidth easylazfreetype/tfreetyperenderablefont.textwidth.html
+   TextHeight easylazfreetype/tfreetyperenderablefont.textheight.html
+   GetTextSize easylazfreetype/tfreetyperenderablefont.gettextsize.html
+   RenderText easylazfreetype/tfreetyperenderablefont.rendertext.html
+   ClearType easylazfreetype/tfreetyperenderablefont.cleartype.html
+   Ascent easylazfreetype/tfreetyperenderablefont.ascent.html
+   Descent easylazfreetype/tfreetyperenderablefont.descent.html
+   LineSpacing easylazfreetype/tfreetyperenderablefont.linespacing.html
+   LineFullHeight easylazfreetype/tfreetyperenderablefont.linefullheight.html
+  TFreeTypeDrawer easylazfreetype/tfreetypedrawer.html
+   DrawText easylazfreetype/tfreetypedrawer.drawtext.html
+  TFreeTypeFont easylazfreetype/tfreetypefont.html
+   FFace easylazfreetype/tfreetypefont.fface.html
+   FFaceItem easylazfreetype/tfreetypefont.ffaceitem.html
+   FFaceLoaded easylazfreetype/tfreetypefont.ffaceloaded.html
+   FInstance easylazfreetype/tfreetypefont.finstance.html
+   FInstanceCreated easylazfreetype/tfreetypefont.finstancecreated.html
+   FGlyphTable easylazfreetype/tfreetypefont.fglyphtable.html
+   FCharMap easylazfreetype/tfreetypefont.fcharmap.html
+   FCharmapOk easylazfreetype/tfreetypefont.fcharmapok.html
+   FAscentValue easylazfreetype/tfreetypefont.fascentvalue.html
+   FDescentValue easylazfreetype/tfreetypefont.fdescentvalue.html
+   FLineGapValue easylazfreetype/tfreetypefont.flinegapvalue.html
+   FLargeLineGapValue easylazfreetype/tfreetypefont.flargelinegapvalue.html
+   GetClearType easylazfreetype/tfreetypefont.getcleartype.html
+   SetClearType easylazfreetype/tfreetypefont.setcleartype.html
+   GetLineFullHeight easylazfreetype/tfreetypefont.getlinefullheight.html
+   GetAscent easylazfreetype/tfreetypefont.getascent.html
+   GetDescent easylazfreetype/tfreetypefont.getdescent.html
+   GetLineSpacing easylazfreetype/tfreetypefont.getlinespacing.html
+   FetchNames easylazfreetype/tfreetypefont.fetchnames.html
+   GetCollection easylazfreetype/tfreetypefont.getcollection.html
+   Quality easylazfreetype/tfreetypefont.quality.html
+   SmallLinePadding easylazfreetype/tfreetypefont.smalllinepadding.html
+   Create easylazfreetype/tfreetypefont.create.html
+   Destroy easylazfreetype/tfreetypefont.destroy.html
+   RenderText easylazfreetype/tfreetypefont.rendertext.html
+   TextWidth easylazfreetype/tfreetypefont.textwidth.html
+   TextHeight easylazfreetype/tfreetypefont.textheight.html
+   CharsWidth easylazfreetype/tfreetypefont.charswidth.html
+   CharsPosition easylazfreetype/tfreetypefont.charsposition.html
+   Name easylazfreetype/tfreetypefont.name.html
+   DPI easylazfreetype/tfreetypefont.dpi.html
+   SizeInPoints easylazfreetype/tfreetypefont.sizeinpoints.html
+   SizeInPixels easylazfreetype/tfreetypefont.sizeinpixels.html
+   Glyph easylazfreetype/tfreetypefont.glyph.html
+   GlyphCount easylazfreetype/tfreetypefont.glyphcount.html
+   CharIndex easylazfreetype/tfreetypefont.charindex.html
+   Hinted easylazfreetype/tfreetypefont.hinted.html
+   WidthFactor easylazfreetype/tfreetypefont.widthfactor.html
+   LineFullHeight easylazfreetype/tfreetypefont.linefullheight.html
+   Information easylazfreetype/tfreetypefont.information.html
+   VersionNumber easylazfreetype/tfreetypefont.versionnumber.html
+   Family easylazfreetype/tfreetypefont.family.html
+   Collection easylazfreetype/tfreetypefont.collection.html
+   StyleAsString easylazfreetype/tfreetypefont.styleasstring.html
+   Style easylazfreetype/tfreetypefont.style.html
+  TFreeTypeGlyph easylazfreetype/tfreetypeglyph.html
+   Create easylazfreetype/tfreetypeglyph.create.html
+   RenderDirectly easylazfreetype/tfreetypeglyph.renderdirectly.html
+   Destroy easylazfreetype/tfreetypeglyph.destroy.html
+   Loaded easylazfreetype/tfreetypeglyph.loaded.html
+   Data easylazfreetype/tfreetypeglyph.data.html
+   Index easylazfreetype/tfreetypeglyph.index.html
+   Bounds easylazfreetype/tfreetypeglyph.bounds.html
+   BoundsWithOffset easylazfreetype/tfreetypeglyph.boundswithoffset.html
+   Advance easylazfreetype/tfreetypeglyph.advance.html
+  TFreeTypeRasterMap easylazfreetype/tfreetyperastermap.html
+   map easylazfreetype/tfreetyperastermap.map.html
+   FRasterizer easylazfreetype/tfreetyperastermap.frasterizer.html
+   GetHeight easylazfreetype/tfreetyperastermap.getheight.html
+   GetWidth easylazfreetype/tfreetyperastermap.getwidth.html
+   GetScanLine easylazfreetype/tfreetyperastermap.getscanline.html
+   Init easylazfreetype/tfreetyperastermap.init.html
+   Create easylazfreetype/tfreetyperastermap.create.html
+   Clear easylazfreetype/tfreetyperastermap.clear.html
+   Fill easylazfreetype/tfreetyperastermap.fill.html
+   RenderGlyph easylazfreetype/tfreetyperastermap.renderglyph.html
+   ScanMoveTo easylazfreetype/tfreetyperastermap.scanmoveto.html
+   Destroy easylazfreetype/tfreetyperastermap.destroy.html
+   Width easylazfreetype/tfreetyperastermap.width.html
+   Height easylazfreetype/tfreetyperastermap.height.html
+   ScanLine easylazfreetype/tfreetyperastermap.scanline.html
+  TFreeTypeMonochromeMap easylazfreetype/tfreetypemonochromemap.html
+   Init easylazfreetype/tfreetypemonochromemap.init.html
+   RenderGlyph easylazfreetype/tfreetypemonochromemap.renderglyph.html
+   ScanMoveTo easylazfreetype/tfreetypemonochromemap.scanmoveto.html
+   ScanNextPixel easylazfreetype/tfreetypemonochromemap.scannextpixel.html
+   GetPixel easylazfreetype/tfreetypemonochromemap.getpixel.html
+   SetPixel easylazfreetype/tfreetypemonochromemap.setpixel.html
+   GetPixelsInRect easylazfreetype/tfreetypemonochromemap.getpixelsinrect.html
+   GetPixelsInHorizline easylazfreetype/tfreetypemonochromemap.getpixelsinhorizline.html
+   TogglePixel easylazfreetype/tfreetypemonochromemap.togglepixel.html
+  TFreeTypeGrayscaleMap easylazfreetype/tfreetypegrayscalemap.html
+   Init easylazfreetype/tfreetypegrayscalemap.init.html
+   RenderQuality easylazfreetype/tfreetypegrayscalemap.renderquality.html
+   RenderGlyph easylazfreetype/tfreetypegrayscalemap.renderglyph.html
+   ScanMoveTo easylazfreetype/tfreetypegrayscalemap.scanmoveto.html
+   ScanNextPixel easylazfreetype/tfreetypegrayscalemap.scannextpixel.html
+   GetPixel easylazfreetype/tfreetypegrayscalemap.getpixel.html
+   SetPixel easylazfreetype/tfreetypegrayscalemap.setpixel.html
+   XorPixel easylazfreetype/tfreetypegrayscalemap.xorpixel.html
+  StylesToArray easylazfreetype/stylestoarray.html
+  FontCollection easylazfreetype/fontcollection.html
+ TTRASTER ttraster/index.html
+  Function_Sweep_Init ttraster/function_sweep_init.html
+  Function_Sweep_Span ttraster/function_sweep_span.html
+  Function_Sweep_Step ttraster/function_sweep_step.html
+  TFreeTypeRasterizer ttraster/tfreetyperasterizer.html
+   Render_Glyph ttraster/tfreetyperasterizer.render_glyph.html
+   Render_Gray_Glyph ttraster/tfreetyperasterizer.render_gray_glyph.html
+   Render_Gray_Glyph_HQ ttraster/tfreetyperasterizer.render_gray_glyph_hq.html
+   Render_Directly_Gray_Glyph ttraster/tfreetyperasterizer.render_directly_gray_glyph.html
+   Render_Directly_Gray_Glyph_HQ ttraster/tfreetyperasterizer.render_directly_gray_glyph_hq.html
+   Set_Raster_Palette ttraster/tfreetyperasterizer.set_raster_palette.html
+   Create ttraster/tfreetyperasterizer.create.html
+   Destroy ttraster/tfreetyperasterizer.destroy.html
+  IncludeFullGrainMin ttraster/includefullgrainmin.html
+  IncludeFullGrainMax ttraster/includefullgrainmax.html
+  TTRaster_Init ttraster/ttraster_init.html
+  TTRaster_Done ttraster/ttraster_done.html
+  TTGetDefaultRasterizer ttraster/ttgetdefaultrasterizer.html
+ TTProfile ttprofile/index.html
+  PoolMaxCapacity ttprofile/poolmaxcapacity.html
+  PoolIdleCapacity ttprofile/poolidlecapacity.html
+  TCurveDirection ttprofile/tcurvedirection.html
+  TPoint ttprofile/tpoint.html
+  TBezierStack ttprofile/tbezierstack.html
+  PBezierStack ttprofile/pbezierstack.html
+  TRenderPool ttprofile/trenderpool.html
+   Precision ttprofile/trenderpool.precision.html
+   PrecisionHalf ttprofile/trenderpool.precisionhalf.html
+   BezierPrecision ttprofile/trenderpool.bezierprecision.html
+   BoundsMinY ttprofile/trenderpool.boundsminy.html
+   BoundsMaxY ttprofile/trenderpool.boundsmaxy.html
+   scaleShift ttprofile/trenderpool.scaleshift.html
+   Bezier_Down ttprofile/trenderpool.bezier_down.html
+   Bezier_State ttprofile/trenderpool.bezier_state.html
+   Bezier_To ttprofile/trenderpool.bezier_to.html
+   Bezier_Up ttprofile/trenderpool.bezier_up.html
+   CEILING ttprofile/trenderpool.ceiling.html
+   DecomposeCurve ttprofile/trenderpool.decomposecurve.html
+   FLOOR ttprofile/trenderpool.floor.html
+   FRAC ttprofile/trenderpool.frac.html
+   GetCapacity ttprofile/trenderpool.getcapacity.html
+   Line_Down ttprofile/trenderpool.line_down.html
+   Line_To ttprofile/trenderpool.line_to.html
+   Line_Up ttprofile/trenderpool.line_up.html
+   Move_To ttprofile/trenderpool.move_to.html
+   PushBezier ttprofile/trenderpool.pushbezier.html
+   SCALED ttprofile/trenderpool.scaled.html
+   Split_Bezier ttprofile/trenderpool.split_bezier.html
+   TRUNC ttprofile/trenderpool.trunc.html
+   RequireCapacity ttprofile/trenderpool.requirecapacity.html
+   PushValue ttprofile/trenderpool.pushvalue.html
+   Capacity ttprofile/trenderpool.capacity.html
+   Joint ttprofile/trenderpool.joint.html
+   Fresh ttprofile/trenderpool.fresh.html
+   cProfile ttprofile/trenderpool.cprofile.html
+   ProfileColl ttprofile/trenderpool.profilecoll.html
+   LastX ttprofile/trenderpool.lastx.html
+   LastY ttprofile/trenderpool.lasty.html
+   CurveDir ttprofile/trenderpool.curvedir.html
+   Arcs ttprofile/trenderpool.arcs.html
+   CurArc ttprofile/trenderpool.curarc.html
+   data ttprofile/trenderpool.data.html
+   position ttprofile/trenderpool.position.html
+   Create ttprofile/trenderpool.create.html
+   Destroy ttprofile/trenderpool.destroy.html
+   SetPrecision ttprofile/trenderpool.setprecision.html
+   SetBounds ttprofile/trenderpool.setbounds.html
+   SetScaleShift ttprofile/trenderpool.setscaleshift.html
+   Clear ttprofile/trenderpool.clear.html
+   ReduceCapacity ttprofile/trenderpool.reducecapacity.html
+   Convert_Glyph ttprofile/trenderpool.convert_glyph.html
+  TProfile ttprofile/tprofile.html
+   Pool ttprofile/tprofile.pool.html
+   Flow ttprofile/tprofile.flow.html
+   Height ttprofile/tprofile.height.html
+   Start ttprofile/tprofile.start.html
+   Offset ttprofile/tprofile.offset.html
+   X ttprofile/tprofile.x.html
+   nextInContour ttprofile/tprofile.nextincontour.html
+   nextInColl ttprofile/tprofile.nextincoll.html
+   nextInList ttprofile/tprofile.nextinlist.html
+   prevInList ttprofile/tprofile.previnlist.html
+   Create ttprofile/tprofile.create.html
+  TProfileCollection ttprofile/tprofilecollection.html
+   Remove_Profile ttprofile/tprofilecollection.remove_profile.html
+   Pool ttprofile/tprofilecollection.pool.html
+   prevProfile ttprofile/tprofilecollection.prevprofile.html
+   fProfile ttprofile/tprofilecollection.fprofile.html
+   gProfile ttprofile/tprofilecollection.gprofile.html
+   nProfs ttprofile/tprofilecollection.nprofs.html
+   Create ttprofile/tprofilecollection.create.html
+   Clear ttprofile/tprofilecollection.clear.html
+   New_Profile ttprofile/tprofilecollection.new_profile.html
+   End_Profile ttprofile/tprofilecollection.end_profile.html
+   Destroy ttprofile/tprofilecollection.destroy.html
+  ProfileList_Init ttprofile/profilelist_init.html
+  ProfileList_InsertFirstElement ttprofile/profilelist_insertfirstelement.html
+  ProfileList_AppendToList ttprofile/profilelist_appendtolist.html
+  ProfileList_Remove ttprofile/profilelist_remove.html
+  ProfileList_SortByX ttprofile/profilelist_sortbyx.html
+  ProfileList_SortByStart ttprofile/profilelist_sortbystart.html
+  ProfileList_Count ttprofile/profilelist_count.html
+  ProfileList_Split ttprofile/profilelist_split.html
+ LazFreeTypeFontCollection lazfreetypefontcollection/index.html
+  TFontCollectionItem lazfreetypefontcollection/tfontcollectionitem.html
+   GetFilename lazfreetypefontcollection/tfontcollectionitem.getfilename.html
+   GetBold lazfreetypefontcollection/tfontcollectionitem.getbold.html
+   GetInformation lazfreetypefontcollection/tfontcollectionitem.getinformation.html
+   GetItalic lazfreetypefontcollection/tfontcollectionitem.getitalic.html
+   GetStyleCount lazfreetypefontcollection/tfontcollectionitem.getstylecount.html
+   GetStyles lazfreetypefontcollection/tfontcollectionitem.getstyles.html
+   GetStyle lazfreetypefontcollection/tfontcollectionitem.getstyle.html
+   GetVersionNumber lazfreetypefontcollection/tfontcollectionitem.getversionnumber.html
+   Create lazfreetypefontcollection/tfontcollectionitem.create.html
+   Destroy lazfreetypefontcollection/tfontcollectionitem.destroy.html
+   HasStyle lazfreetypefontcollection/tfontcollectionitem.hasstyle.html
+   Information lazfreetypefontcollection/tfontcollectionitem.information.html
+   VersionNumber lazfreetypefontcollection/tfontcollectionitem.versionnumber.html
+   CreateFont lazfreetypefontcollection/tfontcollectionitem.createfont.html
+   QueryFace lazfreetypefontcollection/tfontcollectionitem.queryface.html
+   ReleaseFace lazfreetypefontcollection/tfontcollectionitem.releaseface.html
+   UsePostscriptStyle lazfreetypefontcollection/tfontcollectionitem.usepostscriptstyle.html
+  TFamilyCollectionItem lazfreetypefontcollection/tfamilycollectionitem.html
+   GetFontByIndex lazfreetypefontcollection/tfamilycollectionitem.getfontbyindex.html
+   GetFontByStyles lazfreetypefontcollection/tfamilycollectionitem.getfontbystyles.html
+   GetFontIndexByStyles lazfreetypefontcollection/tfamilycollectionitem.getfontindexbystyles.html
+   GetStyle lazfreetypefontcollection/tfamilycollectionitem.getstyle.html
+   AddStyle lazfreetypefontcollection/tfamilycollectionitem.addstyle.html
+   GetStyles lazfreetypefontcollection/tfamilycollectionitem.getstyles.html
+   GetFamilyName lazfreetypefontcollection/tfamilycollectionitem.getfamilyname.html
+   GetFontCount lazfreetypefontcollection/tfamilycollectionitem.getfontcount.html
+   GetStyleCount lazfreetypefontcollection/tfamilycollectionitem.getstylecount.html
+   Create lazfreetypefontcollection/tfamilycollectionitem.create.html
+   AddFont lazfreetypefontcollection/tfamilycollectionitem.addfont.html
+   GetFont lazfreetypefontcollection/tfamilycollectionitem.getfont.html
+   GetFontIndex lazfreetypefontcollection/tfamilycollectionitem.getfontindex.html
+   HasStyle lazfreetypefontcollection/tfamilycollectionitem.hasstyle.html
+  TFreeTypeFontCollection lazfreetypefontcollection/tfreetypefontcollection.html
+   GetFont lazfreetypefontcollection/tfreetypefontcollection.getfont.html
+   GetFamily lazfreetypefontcollection/tfreetypefontcollection.getfamily.html
+   GetFamilyCount lazfreetypefontcollection/tfreetypefontcollection.getfamilycount.html
+   GetFontCount lazfreetypefontcollection/tfreetypefontcollection.getfontcount.html
+   Create lazfreetypefontcollection/tfreetypefontcollection.create.html
+   Clear lazfreetypefontcollection/tfreetypefontcollection.clear.html
+   BeginUpdate lazfreetypefontcollection/tfreetypefontcollection.beginupdate.html
+   AddFolder lazfreetypefontcollection/tfreetypefontcollection.addfolder.html
+   AddFile lazfreetypefontcollection/tfreetypefontcollection.addfile.html
+   EndUpdate lazfreetypefontcollection/tfreetypefontcollection.endupdate.html
+   Destroy lazfreetypefontcollection/tfreetypefontcollection.destroy.html
+   FontFileEnumerator lazfreetypefontcollection/tfreetypefontcollection.fontfileenumerator.html
+   FamilyEnumerator lazfreetypefontcollection/tfreetypefontcollection.familyenumerator.html
+ LazLoggerDummy lazloggerdummy/index.html
+  TLazLoggerLogGroupFlag lazloggerdummy/tlazloggerloggroupflag.html
+  TLazLoggerLogGroupFlags lazloggerdummy/tlazloggerloggroupflags.html
+  TLazLoggerLogGroup lazloggerdummy/tlazloggerloggroup.html
+  PLazLoggerLogGroup lazloggerdummy/plazloggerloggroup.html
+  TLazLoggerWriteEvent lazloggerdummy/tlazloggerwriteevent.html
+  TLazDebugLoggerCreator lazloggerdummy/tlazdebugloggercreator.html
+  TLazLoggerLogGroupList lazloggerdummy/tlazloggerloggrouplist.html
+   Assign lazloggerdummy/tlazloggerloggrouplist.assign.html
+   IndexOf lazloggerdummy/tlazloggerloggrouplist.indexof.html
+   Find lazloggerdummy/tlazloggerloggrouplist.find.html
+   Count lazloggerdummy/tlazloggerloggrouplist.count.html
+   Item lazloggerdummy/tlazloggerloggrouplist.item.html
+  TLazLogger lazloggerdummy/tlazlogger.html
+   Assign lazloggerdummy/tlazlogger.assign.html
+   Init lazloggerdummy/tlazlogger.init.html
+   Finish lazloggerdummy/tlazlogger.finish.html
+   NestLvlIndent lazloggerdummy/tlazlogger.nestlvlindent.html
+   MaxNestPrefixLen lazloggerdummy/tlazlogger.maxnestprefixlen.html
+   RegisterLogGroup lazloggerdummy/tlazlogger.registerloggroup.html
+   FindOrRegisterLogGroup lazloggerdummy/tlazlogger.findorregisterloggroup.html
+   LogGroupList lazloggerdummy/tlazlogger.loggrouplist.html
+   UseGlobalLogGroupList lazloggerdummy/tlazlogger.usegloballoggrouplist.html
+   DebuglnStack lazloggerdummy/tlazlogger.debuglnstack.html
+   DbgOut lazloggerdummy/tlazlogger.dbgout.html
+   DebugLn lazloggerdummy/tlazlogger.debugln.html
+   DebugLnEnter lazloggerdummy/tlazlogger.debuglnenter.html
+   DebugLnExit lazloggerdummy/tlazlogger.debuglnexit.html
+  DebuglnStack lazloggerdummy/debuglnstack.html
+  DbgOut lazloggerdummy/dbgout.html
+  DebugLn lazloggerdummy/debugln.html
+  DebugLnEnter lazloggerdummy/debuglnenter.html
+  DebugLnExit lazloggerdummy/debuglnexit.html
+  DbgS lazloggerdummy/dbgs.html
+  DbgSJoin lazloggerdummy/dbgsjoin.html
+  DbgSName lazloggerdummy/dbgsname.html
+  dbgObjMem lazloggerdummy/dbgobjmem.html
+  dbghex lazloggerdummy/dbghex.html
+  dbgMemRange lazloggerdummy/dbgmemrange.html
+  dbgMemStream lazloggerdummy/dbgmemstream.html
+  GetDebugLoggerGroups lazloggerdummy/getdebugloggergroups.html
+  SetDebugLoggerGroups lazloggerdummy/setdebugloggergroups.html
+  GetDebugLogger lazloggerdummy/getdebuglogger.html
+  GetExistingDebugLogger lazloggerdummy/getexistingdebuglogger.html
+  SetDebugLogger lazloggerdummy/setdebuglogger.html
+  RecreateDebugLogger lazloggerdummy/recreatedebuglogger.html
+  LazDebugLoggerCreator lazloggerdummy/lazdebugloggercreator.html
+  OnWidgetSetDebugLn lazloggerdummy/onwidgetsetdebugln.html
+  OnWidgetSetDbgOut lazloggerdummy/onwidgetsetdbgout.html
+ TTFile ttfile/index.html
+  TTFile_Init ttfile/ttfile_init.html
+  TTFile_Done ttfile/ttfile_done.html
+  TT_Open_Stream ttfile/tt_open_stream.html
+  TT_Close_Stream ttfile/tt_close_stream.html
+  TT_Use_Stream ttfile/tt_use_stream.html
+  TT_Flush_Stream ttfile/tt_flush_stream.html
+  TT_Done_Stream ttfile/tt_done_stream.html
+  TT_Read_File ttfile/tt_read_file.html
+  TT_Seek_File ttfile/tt_seek_file.html
+  TT_Skip_File ttfile/tt_skip_file.html
+  TT_Read_At_File ttfile/tt_read_at_file.html
+  TT_File_Size ttfile/tt_file_size.html
+  TT_File_Pos ttfile/tt_file_pos.html
+  TT_Stream_Size ttfile/tt_stream_size.html
+  TT_Access_Frame ttfile/tt_access_frame.html
+  TT_Check_And_Access_Frame ttfile/tt_check_and_access_frame.html
+  TT_Forget_Frame ttfile/tt_forget_frame.html
+  GET_Byte ttfile/get_byte.html
+  GET_Char ttfile/get_char.html
+  GET_Short ttfile/get_short.html
+  GET_UShort ttfile/get_ushort.html
+  GET_Long ttfile/get_long.html
+  GET_ULong ttfile/get_ulong.html
+  GET_Tag4 ttfile/get_tag4.html
+ TTGLoad ttgload/index.html
+  Load_TrueType_Glyph ttgload/load_truetype_glyph.html
+  TT_Get_Metrics ttgload/tt_get_metrics.html
+  Get_Advance_Widths ttgload/get_advance_widths.html
+ TTInterp ttinterp/index.html
+  Run_Ins ttinterp/run_ins.html
+ TTLoad ttload/index.html
+  LookUp_TrueType_Table ttload/lookup_truetype_table.html
+  Load_TrueType_Directory ttload/load_truetype_directory.html
+  Load_TrueType_MaxProfile ttload/load_truetype_maxprofile.html
+  Load_TrueType_Header ttload/load_truetype_header.html
+  Load_TrueType_Locations ttload/load_truetype_locations.html
+  Load_TrueType_CVT ttload/load_truetype_cvt.html
+  Load_TrueType_CMap ttload/load_truetype_cmap.html
+  Load_TrueType_Gasp ttload/load_truetype_gasp.html
+  Load_TrueType_Names ttload/load_truetype_names.html
+  Load_TrueType_Programs ttload/load_truetype_programs.html
+  Load_trueType_Postscript ttload/load_truetype_postscript.html
+  Load_TrueType_OS2 ttload/load_truetype_os2.html
+  Load_TrueType_HDMX ttload/load_truetype_hdmx.html
+  Load_TrueType_Metrics_Header ttload/load_truetype_metrics_header.html
+  Load_TrueType_Any ttload/load_truetype_any.html
+ TTMemory ttmemory/index.html
+  Font_Pool_Allocated ttmemory/font_pool_allocated.html
+  TMarkRecord ttmemory/tmarkrecord.html
+  Alloc ttmemory/alloc.html
+  Free ttmemory/free.html
+  TTMemory_Init ttmemory/ttmemory_init.html
+  TTMemory_Done ttmemory/ttmemory_done.html
+
+:classes
+#lazutils.LazMethodList.TMethodList #rtl.System.TObject
+1VFItems
+1VFCount
+1MGetItems
+1MSetItems
+3MDestroy
+3MCount
+3MNextDownIndex
+3MIndexOf
+3MDelete
+3MRemove
+0MAdd
+3MInsert
+3MMove
+3MRemoveAllMethodsOfObject
+3MCallNotifyEvents
+3PItems rw
+#lazutils.AvgLvlTree.TAvgLvlTreeNode #rtl.System.TObject
+3VParent
+3VLeft
+3VRight
+3VBalance
+3VData
+3MSuccessor
+3MPrecessor
+3MTreeDepth
+3MConsistencyCheck
+3MGetCount
+#lazutils.AvgLvlTree.TAvgLvlTreeNodeEnumerator #rtl.System.TObject
+2VFCurrent
+2VFLowToHigh
+2VFTree
+3MCreate
+3MMoveNext
+3PCurrent r
+3PLowToHigh r
+#lazutils.AvgLvlTree.TAvgLvlTree #rtl.System.TObject
+2VfRoot
+2VFCount
+2VFNodeClass
+2VFOnCompare
+2VFOnObjectCompare
+2MBalanceAfterInsert
+2MBalanceAfterDelete
+2MDeletingNode
+2MFindInsertPos
+2MInit
+2MNodeAdded
+2MRotateLeft
+2MRotateRight
+2MSwitchPositionWithSuccessor
+2MSetOnCompare
+2MSetOnObjectCompare
+2MSetCompares
+0MCreate
+3MCreateObjectCompare
+3MDestroy
+3POnCompare rw
+3POnObjectCompare rw
+3PNodeClass rw
+0MAdd
+3MDelete
+3MRemove
+3MRemovePointer
+3MMoveDataLeftMost
+3MMoveDataRightMost
+3MClear
+3MFreeAndClear
+3MFreeAndDelete
+3PRoot r
+3PCount r
+3MCompare
+3MFind
+3MFindKey
+3MFindNearestKey
+3MFindSuccessor
+3MFindPrecessor
+3MFindLowest
+3MFindHighest
+3MFindNearest
+3MFindPointer
+3MFindLeftMost
+3MFindRightMost
+3MFindLeftMostKey
+3MFindRightMostKey
+3MFindLeftMostSameKey
+3MFindRightMostSameKey
+3MGetEnumerator
+3MGetEnumeratorHighToLow
+3MConsistencyCheck
+3MWriteReportToStream
+3MNodeToReportStr
+3MReportAsString
+#lazutils.AvgLvlTree.TIndexedAVLTreeNode #lazutils.AvgLvlTree.TAvgLvlTreeNode
+3VLeftCount
+#lazutils.AvgLvlTree.TIndexedAVLTree #lazutils.AvgLvlTree.TAvgLvlTree
+1MGetItems
+2VfLastIndex
+2VfLastNode
+2MDeletingNode
+2MInit
+2MNodeAdded
+2MRotateLeft
+2MRotateRight
+2MSwitchPositionWithSuccessor
+3MGetNodeAtIndex
+3PItems r
+3MConsistencyCheck
+3MNodeToReportStr
+#lazutils.AvgLvlTree.TPointerToPointerTree #rtl.System.TObject
+1VFItems
+1MGetCount
+1MGetValues
+1MSetValues
+1MFindNode
+1MGetNode
+3MCreate
+3MDestroy
+3MClear
+3MRemove
+3MContains
+3MGetFirst
+3MGetLast
+3MGetNext
+3MGetPrev
+3PCount r
+3PValues rw
+3PTree r
+#lazutils.AvgLvlTree.TCustomStringMapEnumerator #rtl.System.TObject
+2VFTree
+2VFCurrent
+3MCreate
+3MMoveNext
+#lazutils.AvgLvlTree.TCustomStringMap #rtl.System.TObject
+1VFCompareKeyItemFunc
+1VFTree
+1VFCaseSensitive
+1MGetCompareItemsFunc
+2MDisposeItem
+2MItemsAreEqual
+2MCreateCopy
+0MCreate
+3MDestroy
+3MClear
+3MContains
+3MGetNames
+3MRemove
+3PCaseSensitive r
+3PTree r
+3MFindNode
+3MCount
+3MEquals
+3MAssign
+3PCompareItemsFunc r
+3PCompareKeyItemFunc r
+3MSetCompareFuncs
+#lazutils.AvgLvlTree.TStringMapEnumerator #lazutils.AvgLvlTree.TCustomStringMapEnumerator
+1MGetCurrent
+3PCurrent r
+#lazutils.AvgLvlTree.TStringMap #lazutils.AvgLvlTree.TCustomStringMap
+1MGetValues
+1MSetValues
+3MAdd
+3MGetEnumerator
+3PValues rw
+#lazutils.AvgLvlTree.TStringToStringTreeEnumerator #lazutils.AvgLvlTree.TCustomStringMapEnumerator
+1MGetCurrent
+3PCurrent r
+#lazutils.AvgLvlTree.TStringToStringTree #lazutils.AvgLvlTree.TCustomStringMap
+1MGetValues
+1MSetValues
+2MDisposeItem
+2MItemsAreEqual
+2MCreateCopy
+2MGetNode
+3MGetString
+0MAdd
+3MAddNameValues
+3MAddValues
+3MAddNames
+3MDelete
+3PValues rw
+3MAsText
+3MAssign
+3MGetEnumerator
+3MGetFirst
+3MGetLast
+3MGetNext
+3MGetPrev
+#lazutils.AvgLvlTree.TStringToPointerTreeEnumerator #lazutils.AvgLvlTree.TCustomStringMapEnumerator
+1MGetCurrent
+3PCurrent r
+#lazutils.AvgLvlTree.TStringToPointerTree #lazutils.AvgLvlTree.TCustomStringMap
+1VFFreeValues
+1MGetValues
+1MSetValues
+2MDisposeItem
+2MItemsAreEqual
+2MCreateCopy
+3MGetData
+3PValues rw
+3MGetEnumerator
+3PFreeValues rw
+#lazutils.Masks.TMask #rtl.System.TObject
+1VFMask
+3MCreate
+3MDestroy
+3MMatches
+#lazutils.Masks.TParseStringList #rtl.Classes.TStringList
+3MCreate
+#lazutils.Masks.TMaskList #rtl.System.TObject
+1VFMasks
+1MGetCount
+1MGetItem
+3MCreate
+3MDestroy
+3MMatches
+3PCount r
+3PItems r
+#lazutils.FileUtil.TFileIterator #rtl.System.TObject
+1VFPath
+1VFLevel
+1VFFileInfo
+1VFSearching
+1MGetFileName
+3MStop
+3MIsDirectory
+3PFileName r
+3PFileInfo r
+3PLevel r
+3PPath r
+3PSearching r
+#lazutils.FileUtil.TFileSearcher #lazutils.FileUtil.TFileIterator
+1VFOnFileFound
+1VFOnDirectoryFound
+1MRaiseSearchingError
+2MDoDirectoryEnter
+2MDoDirectoryFound
+2MDoFileFound
+3MCreate
+3MSearch
+3POnDirectoryFound rw
+3POnFileFound rw
+#lazutils.lazutf8classes.TFileStreamUTF8 #rtl.Classes.THandleStream
+1VFFileName
+0MCreate
+3MDestroy
+3PFileName r
+#lazutils.lazutf8classes.TStringListUTF8 #rtl.Classes.TStringList
+2MDoCompareText
+3MLoadFromFile
+3MSaveToFile
+#lazutils.LazLogger.TLazLoggerFileHandle #rtl.System.TObject
+1VFActiveLogText
+1VFCloseLogFileBetweenWrites
+1VFLogName
+1VFLogText
+1VFLogTextInUse
+1VFLogTextFailed
+1VFUseStdOut
+1MDoOpenFile
+1MDoCloseFile
+1MGetWriteTarget
+1MSetCloseLogFileBetweenWrites
+1MSetLogName
+3MCreate
+3MDestroy
+3MOpenFile
+3MCloseFile
+3MWriteToFile
+3MWriteLnToFile
+3PLogName rw
+3PUseStdOut rw
+3PCloseLogFileBetweenWrites rw
+3PWriteTarget r
+3PActiveLogText r
+#lazutils.LazLogger.TLazLoggerFile #lazutils.LazLoggerBase.TLazLoggerWithGroupParam
+1VFFileHandle
+1VFOnDbgOut
+1VFOnDebugLn
+1VFEnvironmentForLogFileName
+1VFParamForLogFileName
+1VFGetLogFileNameDone
+1VFDebugNestLvl
+1VFDebugIndent
+1VFDebugNestAtBOL
+1MGetFileHandle
+1MSetEnvironmentForLogFileName
+1MSetFileHandle
+1MSetParamForLogFileName
+1MGetLogFileName
+1MGetCloseLogFileBetweenWrites
+1MGetLogName
+1MGetUseStdOut
+1MSetCloseLogFileBetweenWrites
+1MSetLogName
+1MSetUseStdOut
+2MDoInit
+2MDoFinsh
+0MIncreaseIndent
+0MDecreaseIndent
+2MIndentChanged
+2MCreateIndent
+2MDoDbgOut
+2MDoDebugLn
+2MDoDebuglnStack
+2PFileHandle rw
+3MCreate
+3MDestroy
+3MAssign
+3PParamForLogFileName rw
+3PEnvironmentForLogFileName rw
+3POnDebugLn rw
+3POnDbgOut rw
+3PLogName rw
+3PUseStdOut rw
+3PCloseLogFileBetweenWrites rw
+#lazutils.LazLoggerBase.TLazLoggerLogGroupList #lazutils.LazClasses.TRefCountedObject
+1VFList
+1MClear
+1MGetItem
+1MNewItem
+2MAdd
+2MFindOrAdd
+0MRemove
+3MCreate
+3MDestroy
+3MAssign
+0MIndexOf
+3MFind
+3MCount
+3PItem r
+#lazutils.LazLoggerBase.TLazLogger #lazutils.LazClasses.TRefCountedObject
+1VFIsInitialized
+1VFMaxNestPrefixLen
+1VFNestLvlIndent
+1VFLogGroupList
+1VFUseGlobalLogGroupList
+1MSetMaxNestPrefixLen
+1MSetNestLvlIndent
+1MGetLogGroupList
+1MSetUseGlobalLogGroupList
+2MDoInit
+2MDoFinsh
+0MIncreaseIndent
+0MDecreaseIndent
+2MIndentChanged
+2MDoDbgOut
+2MDoDebugLn
+2MDoDebuglnStack
+2MArgsToString
+2PIsInitialized r
+3MCreate
+3MDestroy
+3MAssign
+3MInit
+3MFinish
+3PNestLvlIndent rw
+3PMaxNestPrefixLen rw
+0MRegisterLogGroup
+0MFindOrRegisterLogGroup
+3PLogGroupList r
+3PUseGlobalLogGroupList rw
+0MDebuglnStack
+0MDbgOut
+0MDebugLn
+0MDebugLnEnter
+0MDebugLnExit
+#lazutils.LazLoggerBase.TLazLoggerWithGroupParam #lazutils.LazLoggerBase.TLazLogger
+1VFLogAllDefaultDisabled
+1VFLogDefaultEnabled
+1VFLogParamParsed
+1VFParamForEnabledLogGroups
+1MSetParamForEnabledLogGroups
+1MParseParamForEnabledLogGroups
+3MCreate
+3MAssign
+0MRegisterLogGroup
+0MFindOrRegisterLogGroup
+3PParamForEnabledLogGroups rw
+#lazutils.LazLoggerBase.TLazLoggerNoOutput #lazutils.LazLoggerBase.TLazLogger
+#lazutils.LazClasses.TFreeNotifyingObject #rtl.System.TObject
+1VFFreeNotificationList
+3MCreate
+3MDestroy
+3MAddFreeeNotification
+3MRemoveFreeeNotification
+#lazutils.LazClasses.TRefCountedObject #lazutils.LazClasses.TFreeNotifyingObject
+1VFRefCount
+2MDoFree
+2PRefCount r
+3MCreate
+3MDestroy
+3MAddReference
+3MReleaseReference
+#lazutils.LazClasses.TRefCntObjList #rtl.Classes.TList
+2MNotify
+#lazutils.LazFileCache.TFileStateCacheItem #rtl.System.TObject
+1VFAge
+1VFFilename
+1VFFlags
+1VFTestedFlags
+1VFTimeStamp
+3MCreate
+3MCalcMemSize
+3PFilename r
+3PFlags r
+3PTestedFlags r
+3PTimeStamp r
+3PAge r
+#lazutils.LazFileCache.TFileStateCache #rtl.System.TObject
+1VFFiles
+1VFTimeStamp
+1VFLockCount
+1VFChangeTimeStampHandler
+1MSetFlag
+3MCreate
+3MDestroy
+3MLock
+3MUnlock
+3MLocked
+3MIncreaseTimeStamp
+3MFileExistsCached
+3MDirPathExistsCached
+3MDirectoryIsWritableCached
+3MFileIsExecutableCached
+3MFileIsReadableCached
+3MFileIsWritableCached
+3MFileIsTextCached
+3MFileAgeCached
+3MFindFile
+3MCheck
+3MAddChangeTimeStampHandler
+3MRemoveChangeTimeStampHandler
+3MCalcMemSize
+3PTimeStamp r
+#lazutils.laz2_DOM.EDOMError #rtl.sysutils.Exception
+3VCode
+3MCreate
+#lazutils.laz2_DOM.EDOMIndexSize #lazutils.laz2_DOM.EDOMError
+3MCreate
+#lazutils.laz2_DOM.EDOMHierarchyRequest #lazutils.laz2_DOM.EDOMError
+3MCreate
+#lazutils.laz2_DOM.EDOMWrongDocument #lazutils.laz2_DOM.EDOMError
+3MCreate
+#lazutils.laz2_DOM.EDOMNotFound #lazutils.laz2_DOM.EDOMError
+3MCreate
+#lazutils.laz2_DOM.EDOMNotSupported #lazutils.laz2_DOM.EDOMError
+3MCreate
+#lazutils.laz2_DOM.EDOMInUseAttribute #lazutils.laz2_DOM.EDOMError
+3MCreate
+#lazutils.laz2_DOM.EDOMInvalidState #lazutils.laz2_DOM.EDOMError
+3MCreate
+#lazutils.laz2_DOM.EDOMSyntax #lazutils.laz2_DOM.EDOMError
+3MCreate
+#lazutils.laz2_DOM.EDOMInvalidModification #lazutils.laz2_DOM.EDOMError
+3MCreate
+#lazutils.laz2_DOM.EDOMNamespace #lazutils.laz2_DOM.EDOMError
+3MCreate
+#lazutils.laz2_DOM.EDOMInvalidAccess #lazutils.laz2_DOM.EDOMError
+3MCreate
+#lazutils.laz2_DOM.TDOMNodeEnumerator #rtl.System.TObject
+1VFNode
+1VFCurrent
+3MCreate
+3MMoveNext
+3PCurrent r
+#lazutils.laz2_DOM.TDOMNodeAllChildEnumerator #rtl.System.TObject
+1VFNode
+1VFCurrent
+1VFEnd
+3MCreate
+3MMoveNext
+3PCurrent r
+3MGetEnumerator
+#lazutils.laz2_DOM.TDOMNode #rtl.System.TObject
+2VFPool
+2VFFlags
+2VFParentNode
+2VFPreviousSibling
+2VFNextSibling
+2VFOwnerDocument
+2MGetNodeName
+2MGetNodeValue
+2MSetNodeValue
+2MGetFirstChild
+2MGetLastChild
+2MGetAttributes
+2MGetRevision
+2MGetNodeType
+2MGetTextContent
+2MSetTextContent
+2MGetLocalName
+2MGetNamespaceURI
+2MGetPrefix
+2MSetPrefix
+2MGetOwnerDocument
+2MGetBaseURI
+2MSetReadOnly
+2MChanging
+3MCreate
+3MDestroy
+3MFreeInstance
+3MGetChildNodes
+3MGetChildCount
+3PNodeName r
+3PNodeValue rw
+3PNodeType r
+3PParentNode r
+3PFirstChild r
+3PLastChild r
+3PChildNodes r
+3PPreviousSibling r
+3PNextSibling r
+3PAttributes r
+3POwnerDocument r
+3MGetEnumerator
+3MGetEnumeratorAllChildren
+3MGetNextNode
+3MGetNextNodeSkipChildren
+3MGetPreviousNode
+3MGetLastLeaf
+3MGetLevel
+3MInsertBefore
+3MReplaceChild
+3MDetachChild
+3MRemoveChild
+3MAppendChild
+3MHasChildNodes
+0MCloneNode
+3MIsSupported
+3MHasAttributes
+3MNormalize
+3PNamespaceURI r
+3PLocalName r
+3PPrefix rw
+3PTextContent rw
+3MLookupPrefix
+3MLookupNamespaceURI
+3MIsDefaultNamespace
+3PbaseURI r
+3MFindNode
+3MCompareName
+3PFlags r
+#lazutils.laz2_DOM.TDOMNode_WithChildren #lazutils.laz2_DOM.TDOMNode
+2VFFirstChild
+2VFLastChild
+2VFChildNodes
+2MGetFirstChild
+2MGetLastChild
+2MCloneChildren
+2MFreeChildren
+2MGetTextContent
+2MSetTextContent
+3MDestroy
+3MInsertBefore
+3MReplaceChild
+3MDetachChild
+3MHasChildNodes
+3MGetChildCount
+3MFindNode
+3MInternalAppend
+#lazutils.laz2_DOM.TDOMNodeList #rtl.System.TObject
+2VFNode
+2VFRevision
+2VFList
+2MGetCount
+2MGetItem
+2MNodeFilter
+2MBuildList
+3MCreate
+3MDestroy
+3PItem r
+3PCount r
+3PLength r
+#lazutils.laz2_DOM.TDOMElementList #lazutils.laz2_DOM.TDOMNodeList
+2Vfilter
+2VFNSIndexFilter
+2VlocalNameFilter
+2VFMatchNS
+2VFMatchAnyNS
+2VUseFilter
+2MNodeFilter
+0MCreate
+#lazutils.laz2_DOM.TDOMNamedNodeMap #rtl.System.TObject
+2VFOwner
+2VFNodeType
+2VFSortedList
+2VFPosList
+2MGetPosItem
+2MGetSortedItem
+2MGetLength
+2MFindSorted
+2MDeleteSorted
+2MRestoreDefault
+2MInternalRemove
+2MValidateInsert
+3MCreate
+3MDestroy
+3MGetNamedItem
+3MSetNamedItem
+3MRemoveNamedItem
+3MgetNamedItemNS
+3MsetNamedItemNS
+3MremoveNamedItemNS
+3PItem r
+3PSortedItem r
+3PLength r
+#lazutils.laz2_DOM.TDOMCharacterData #lazutils.laz2_DOM.TDOMNode
+1VFNodeValue
+2MGetLength
+2MGetNodeValue
+2MSetNodeValue
+3PData rw
+3PLength r
+3MSubstringData
+3MAppendData
+3MInsertData
+3MDeleteData
+3MReplaceData
+#lazutils.laz2_DOM.TDOMImplementation #rtl.System.TObject
+3MHasFeature
+3MCreateDocumentType
+3MCreateDocument
+#lazutils.laz2_DOM.TDOMDocumentFragment #lazutils.laz2_DOM.TDOMNode_WithChildren
+2MGetNodeType
+2MGetNodeName
+3MCloneNode
+#lazutils.laz2_DOM.TDOMDocument #lazutils.laz2_DOM.TDOMNode_WithChildren
+2VFIDList
+2VFRevision
+2VFXML11
+2VFImplementation
+2VFNamespaces
+2VFNames
+2VFEmptyNode
+2VFNodeLists
+2VFMaxPoolSize
+2VFPools
+2VFDocumentURI
+2MGetDocumentElement
+2MGetDocType
+2MGetNodeType
+2MGetNodeName
+2MGetTextContent
+2MGetOwnerDocument
+2MSetTextContent
+2MRemoveID
+2MGetChildNodeList
+2MGetElementList
+2MNodeListDestroyed
+2MAlloc
+3MIndexOfNS
+3MInsertBefore
+3MReplaceChild
+3PDocType r
+3PImpl r
+3PDocumentElement r
+3MCreateElement
+3MCreateElementBuf
+3MCreateDocumentFragment
+3MCreateTextNode
+3MCreateTextNodeBuf
+3MCreateComment
+3MCreateCommentBuf
+3MCreateCDATASection
+3MCreateProcessingInstruction
+3MCreateAttribute
+3MCreateAttributeBuf
+3MCreateAttributeDef
+3MCreateEntityReference
+3MGetElementsByTagName
+3MImportNode
+3MCreateElementNS
+3MCreateAttributeNS
+3MGetElementsByTagNameNS
+3MGetElementById
+3PdocumentURI rw
+3MCreate
+3MDestroy
+3MAddID
+3PNames r
+#lazutils.laz2_DOM.TXMLDocument #lazutils.laz2_DOM.TDOMDocument
+1VFXMLVersion
+1MSetXMLVersion
+3VEncoding
+3VStylesheetType
+3VStylesheetHRef
+3MCreateCDATASection
+3MCreateProcessingInstruction
+3MCreateEntityReference
+3PXMLVersion rw
+#lazutils.laz2_DOM.TDOMNode_NS #lazutils.laz2_DOM.TDOMNode_WithChildren
+2VFNSI
+2MGetNodeName
+2MGetLocalName
+2MGetNamespaceURI
+2MGetPrefix
+2MSetPrefix
+3MSetNSI
+3MCompareName
+3PNSI r
+#lazutils.laz2_DOM.TDOMAttr #lazutils.laz2_DOM.TDOMNode_NS
+2VFOwnerElement
+2VFDataType
+2MGetNodeValue
+2MGetNodeType
+2MGetSpecified
+2MGetIsID
+2MSetNodeValue
+3MDestroy
+3MCloneNode
+3PName r
+3PSpecified r
+3PValue rw
+3POwnerElement r
+3PIsID r
+3PDataType rw
+#lazutils.laz2_DOM.TDOMElement #lazutils.laz2_DOM.TDOMNode_NS
+2VFAttributes
+2MGetNodeType
+2MGetAttributes
+2MAttachDefaultAttrs
+2MInternalLookupPrefix
+2MRestoreDefaultAttr
+3MDestroy
+3MCloneNode
+3MIsEmpty
+3MNormalize
+3PTagName r
+3MGetAttribute
+3MSetAttribute
+3MRemoveAttribute
+3MGetAttributeNode
+3MSetAttributeNode
+3MRemoveAttributeNode
+3MGetElementsByTagName
+3MGetAttributeNS
+3MSetAttributeNS
+3MRemoveAttributeNS
+3MGetAttributeNodeNS
+3MSetAttributeNodeNS
+3MGetElementsByTagNameNS
+3MhasAttribute
+3MhasAttributeNS
+3MHasAttributes
+3PAttribStrings rw
+#lazutils.laz2_DOM.TDOMText #lazutils.laz2_DOM.TDOMCharacterData
+2MGetNodeType
+2MGetNodeName
+2MSetNodeValue
+3MCloneNode
+3MSplitText
+3MIsElementContentWhitespace
+#lazutils.laz2_DOM.TDOMComment #lazutils.laz2_DOM.TDOMCharacterData
+2MGetNodeType
+2MGetNodeName
+3MCloneNode
+#lazutils.laz2_DOM.TDOMCDATASection #lazutils.laz2_DOM.TDOMText
+2MGetNodeType
+2MGetNodeName
+3MCloneNode
+#lazutils.laz2_DOM.TDOMDocumentType #lazutils.laz2_DOM.TDOMNode
+2VFName
+2VFPublicID
+2VFSystemID
+2VFInternalSubset
+2VFEntities
+2VFNotations
+2MGetEntities
+2MGetNotations
+2MGetNodeType
+2MGetNodeName
+3MDestroy
+3PName r
+3PEntities r
+3PNotations r
+3PPublicID r
+3PSystemID r
+3PInternalSubset r
+#lazutils.laz2_DOM.TDOMNotation #lazutils.laz2_DOM.TDOMNode
+2VFName
+2VFPublicID
+2VFSystemID
+2MGetNodeType
+2MGetNodeName
+3MCloneNode
+3PPublicID r
+3PSystemID r
+#lazutils.laz2_DOM.TDOMEntity #lazutils.laz2_DOM.TDOMNode_WithChildren
+2VFName
+2VFPublicID
+2VFSystemID
+2VFNotationName
+2MGetNodeType
+2MGetNodeName
+3MCloneNode
+3PPublicID r
+3PSystemID r
+3PNotationName r
+#lazutils.laz2_DOM.TDOMEntityReference #lazutils.laz2_DOM.TDOMNode_WithChildren
+2VFName
+2MGetNodeType
+2MGetNodeName
+3MCloneNode
+#lazutils.laz2_DOM.TDOMProcessingInstruction #lazutils.laz2_DOM.TDOMNode
+1VFTarget
+1VFNodeValue
+2MGetNodeType
+2MGetNodeName
+2MGetNodeValue
+2MSetNodeValue
+3MCloneNode
+3PTarget r
+3PData rw
+#lazutils.laz2_DOM.TDOMAttrDef #lazutils.laz2_DOM.TDOMAttr
+2VFExternallyDeclared
+2VFDefault
+2VFTag
+2VFEnumeration
+3MAddEnumToken
+3MHasEnumToken
+3MCloneNode
+3PDefault rw
+3PExternallyDeclared rw
+3PTag rw
+#lazutils.laz2_DOM.TNodePool #rtl.System.TObject
+1VFCurrExtent
+1VFCurrExtentSize
+1VFElementSize
+1VFCurrBlock
+1VFFirstFree
+1MAddExtent
+3MCreate
+3MDestroy
+3MAllocNode
+3MFreeNode
+#lazutils.laz2_xmlutils.THashTable #rtl.System.TObject
+1VFCount
+1VFBucketCount
+1VFBucket
+1VFOwnsObjects
+1MLookup
+1MResize
+3MCreate
+3MDestroy
+3MClear
+3MFind
+0MFindOrAdd
+3MGet
+3MRemove
+3MRemoveData
+3MForEach
+3PCount r
+#lazutils.laz2_xmlutils.TDblHashArray #rtl.System.TObject
+1VFSizeLog
+1VFRevision
+1VFData
+3MInit
+3MLocate
+3MDestroy
+#lazutils.laz2_xmlutils.TBinding #rtl.System.TObject
+3Vuri
+3Vnext
+3VprevPrefixBinding
+3VPrefix
+#lazutils.laz2_xmlutils.TNSSupport #rtl.System.TObject
+1VFNesting
+1VFPrefixSeqNo
+1VFFreeBindings
+1VFBindings
+1VFBindingStack
+1VFPrefixes
+1VFDefaultPrefix
+3MCreate
+3MDestroy
+3MDefineBinding
+3MCheckAttribute
+3MIsPrefixBound
+3MGetPrefix
+3MBindPrefix
+3MDefaultNSBinding
+3MStartElement
+3MEndElement
+#lazutils.Laz2_XMLCfg.TXMLConfig #rtl.Classes.TComponent
+1VFFilename
+1VFReadFlags
+1VFWriteFlags
+1MSetFilename
+2Vdoc
+2VFModified
+2VfDoNotLoadFromFile
+2VfAutoLoadFromSource
+2VfPathCache
+2VfPathNodeCache
+2MLoaded
+2MExtendedToStr
+2MStrToExtended
+2MReadXMLFile
+2MWriteXMLFile
+2MFreeDoc
+2MSetPathNodeCache
+2MGetPathNodeCache
+2MInvalidateCacheTilEnd
+2MInternalFindNode
+2MInternalCleanNode
+0MCreate
+3MCreateClean
+3MCreateWithSource
+3MDestroy
+3MClear
+3MFlush
+3MReadFromStream
+3MWriteToStream
+0MGetValue
+3MGetExtendedValue
+0MSetValue
+0MSetDeleteValue
+3MSetExtendedValue
+3MSetDeleteExtendedValue
+3MDeletePath
+3MDeleteValue
+3MFindNode
+3MHasPath
+3MHasChildPaths
+3PModified rw
+3MInvalidatePathCache
+4PFilename rw
+4PDocument r
+4PReadFlags rw
+4PWriteFlags rw
+#lazutils.Laz2_XMLCfg.TRttiXMLConfig #lazutils.Laz2_XMLCfg.TXMLConfig
+2MWriteProperty
+2MReadProperty
+3MWriteObject
+3MReadObject
+#lazutils.laz2_XMLRead.EXMLReadError #rtl.sysutils.Exception
+1VFSeverity
+1VFErrorMessage
+1VFLine
+1VFLinePos
+3PSeverity r
+3PErrorMessage r
+3PLine r
+3PLinePos r
+3MLineCol
+#lazutils.laz2_XMLRead.TDOMParseOptions #rtl.System.TObject
+1VFValidate
+1VFPreserveWhitespace
+1VFExpandEntities
+1VFIgnoreComments
+1VFCDSectionsAsText
+1VFResolveExternals
+1VFNamespaces
+1VFDisallowDoctype
+1VFCanonical
+1VFMaxChars
+1MGetCanonical
+1MSetCanonical
+3PValidate rw
+3PPreserveWhitespace rw
+3PExpandEntities rw
+3PIgnoreComments rw
+3PCDSectionsAsText rw
+3PResolveExternals rw
+3PNamespaces rw
+3PDisallowDoctype rw
+3PMaxChars rw
+3PCanonicalForm rw
+#lazutils.laz2_XMLRead.TXMLInputSource #rtl.System.TObject
+1VFStream
+1VFStringData
+1VFBaseURI
+1VFSystemID
+1VFPublicID
+0MCreate
+3PStream r
+3PStringData r
+3PBaseURI rw
+3PSystemID rw
+3PPublicID rw
+#lazutils.laz2_XMLRead.TDOMParser #rtl.System.TObject
+1VFOptions
+1VFOnError
+3MCreate
+3MDestroy
+3MParse
+3MParseUri
+3MParseWithContext
+3POptions r
+3POnError rw
+#lazutils.Laz_DOM.EDOMError #rtl.sysutils.Exception
+3VCode
+3MCreate
+#lazutils.Laz_DOM.EDOMIndexSize #lazutils.Laz_DOM.EDOMError
+3MCreate
+#lazutils.Laz_DOM.EDOMHierarchyRequest #lazutils.Laz_DOM.EDOMError
+3MCreate
+#lazutils.Laz_DOM.EDOMWrongDocument #lazutils.Laz_DOM.EDOMError
+3MCreate
+#lazutils.Laz_DOM.EDOMNotFound #lazutils.Laz_DOM.EDOMError
+3MCreate
+#lazutils.Laz_DOM.EDOMNotSupported #lazutils.Laz_DOM.EDOMError
+3MCreate
+#lazutils.Laz_DOM.EDOMInUseAttribute #lazutils.Laz_DOM.EDOMError
+3MCreate
+#lazutils.Laz_DOM.EDOMInvalidState #lazutils.Laz_DOM.EDOMError
+3MCreate
+#lazutils.Laz_DOM.EDOMSyntax #lazutils.Laz_DOM.EDOMError
+3MCreate
+#lazutils.Laz_DOM.EDOMInvalidModification #lazutils.Laz_DOM.EDOMError
+3MCreate
+#lazutils.Laz_DOM.EDOMNamespace #lazutils.Laz_DOM.EDOMError
+3MCreate
+#lazutils.Laz_DOM.EDOMInvalidAccess #lazutils.Laz_DOM.EDOMError
+3MCreate
+#lazutils.Laz_DOM.TRefClass #rtl.System.TObject
+2VRefCounter
+3MCreate
+3MAddRef
+3MRelease
+#lazutils.Laz_DOM.TDOMNode #rtl.System.TObject
+2VFNodeName
+2VFNodeValue
+2VFNodeType
+2VFParentNode
+2VFPreviousSibling
+2VFNextSibling
+2VFOwnerDocument
+2MGetNodeValue
+2MSetNodeValue
+2MGetFirstChild
+2MGetLastChild
+2MGetAttributes
+3MCreate
+3MGetChildNodes
+3PNodeName r
+3PNodeValue rw
+3PNodeType r
+3PParentNode r
+3PFirstChild r
+3PLastChild r
+3PChildNodes r
+3PPreviousSibling r
+3PNextSibling r
+3PAttributes r
+3POwnerDocument r
+3MInsertBefore
+3MReplaceChild
+3MRemoveChild
+3MAppendChild
+3MHasChildNodes
+0MCloneNode
+3MIsEmpty
+3MFindNode
+#lazutils.Laz_DOM.TDOMNode_WithChildren #lazutils.Laz_DOM.TDOMNode
+2VFFirstChild
+2VFLastChild
+2VFChildNodeTree
+2MGetFirstChild
+2MGetLastChild
+2MCloneChildren
+2MAddToChildNodeTree
+2MRemoveFromChildNodeTree
+3MDestroy
+3MInsertBefore
+3MReplaceChild
+3MRemoveChild
+3MAppendChild
+3MHasChildNodes
+3MFindNode
+#lazutils.Laz_DOM.TDOMNodeList #lazutils.Laz_DOM.TRefClass
+2Vnode
+2Vfilter
+2VUseFilter
+2MGetCount
+2MGetItem
+3MCreate
+3PItem r
+3PCount r
+#lazutils.Laz_DOM.TDOMNamedNodeMap #rtl.Classes.TFPList
+2VOwnerDocument
+2MGetItem
+2MSetItem
+2MGetLength
+3MCreate
+3MGetNamedItem
+3MSetNamedItem
+3MRemoveNamedItem
+3PItem rw
+3PLength r
+#lazutils.Laz_DOM.TDOMCharacterData #lazutils.Laz_DOM.TDOMNode
+2MGetLength
+3PData r
+3PLength r
+3MSubstringData
+3MAppendData
+3MInsertData
+3MDeleteData
+3MReplaceData
+#lazutils.Laz_DOM.TDOMImplementation #rtl.System.TObject
+3MHasFeature
+3MCreateDocumentType
+3MCreateDocument
+#lazutils.Laz_DOM.TDOMDocumentFragment #lazutils.Laz_DOM.TDOMNode_WithChildren
+3MCreate
+#lazutils.Laz_DOM.TDOMDocument #lazutils.Laz_DOM.TDOMNode_WithChildren
+2VFDocType
+2VFImplementation
+2MGetDocumentElement
+3PDocType r
+3PImpl r
+3PDocumentElement r
+3MCreateElement
+3MCreateDocumentFragment
+3MCreateTextNode
+3MCreateComment
+3MCreateCDATASection
+3MCreateProcessingInstruction
+3MCreateAttribute
+3MCreateEntityReference
+3MGetElementsByTagName
+3MCreate
+3MCreateEntity
+#lazutils.Laz_DOM.TXMLDocument #lazutils.Laz_DOM.TDOMDocument
+3VXMLVersion
+3VEncoding
+3VStylesheetType
+3VStylesheetHRef
+3MCreateCDATASection
+3MCreateProcessingInstruction
+3MCreateEntityReference
+#lazutils.Laz_DOM.TDOMAttr #lazutils.Laz_DOM.TDOMNode_WithChildren
+2VFSpecified
+2VAttrOwner
+2MGetNodeValue
+2MSetNodeValue
+3MCreate
+3MCloneNode
+3PName r
+3PSpecified r
+3PValue rw
+#lazutils.Laz_DOM.TDOMElement #lazutils.Laz_DOM.TDOMNode_WithChildren
+1VFAttributes
+2MGetAttributes
+3MCreate
+3MDestroy
+3MCloneNode
+3PTagName r
+3MGetAttribute
+3MSetAttribute
+3MRemoveAttribute
+3MGetAttributeNode
+3MSetAttributeNode
+3MRemoveAttributeNode
+3MGetElementsByTagName
+3MIsEmpty
+3MNormalize
+3PAttribStrings rw
+#lazutils.Laz_DOM.TDOMText #lazutils.Laz_DOM.TDOMCharacterData
+3MCreate
+3MCloneNode
+3MSplitText
+#lazutils.Laz_DOM.TDOMComment #lazutils.Laz_DOM.TDOMCharacterData
+3MCreate
+3MCloneNode
+#lazutils.Laz_DOM.TDOMCDATASection #lazutils.Laz_DOM.TDOMText
+3MCreate
+3MCloneNode
+#lazutils.Laz_DOM.TDOMDocumentType #lazutils.Laz_DOM.TDOMNode
+2VFEntities
+2VFNotations
+3MCreate
+3MCloneNode
+3PName r
+3PEntities r
+3PNotations r
+#lazutils.Laz_DOM.TDOMNotation #lazutils.Laz_DOM.TDOMNode
+2VFPublicID
+2VFSystemID
+3MCreate
+3MCloneNode
+3PPublicID r
+3PSystemID r
+#lazutils.Laz_DOM.TDOMEntity #lazutils.Laz_DOM.TDOMNode_WithChildren
+2VFPublicID
+2VFSystemID
+2VFNotationName
+3MCreate
+3PPublicID r
+3PSystemID r
+3PNotationName r
+#lazutils.Laz_DOM.TDOMEntityReference #lazutils.Laz_DOM.TDOMNode_WithChildren
+3MCreate
+#lazutils.Laz_DOM.TDOMProcessingInstruction #lazutils.Laz_DOM.TDOMNode
+3MCreate
+3PTarget r
+3PData r
+#lazutils.Laz_XMLCfg.TXMLConfig #rtl.Classes.TComponent
+1VFFilename
+1VFReadFlags
+1VFWriteFlags
+1MSetFilename
+2Vdoc
+2VFModified
+2VfDoNotLoadFromFile
+2VfAutoLoadFromSource
+2VfPathCache
+2VfPathNodeCache
+2MLoaded
+2MExtendedToStr
+2MStrToExtended
+2MReadXMLFile
+2MWriteXMLFile
+2MFreeDoc
+2MSetPathNodeCache
+2MGetPathNodeCache
+2MInvalidateCacheTilEnd
+2MInternalFindNode
+2MInternalCleanNode
+0MCreate
+3MCreateClean
+3MCreateWithSource
+3MDestroy
+3MClear
+3MFlush
+3MReadFromStream
+3MWriteToStream
+0MGetValue
+3MGetExtendedValue
+0MSetValue
+0MSetDeleteValue
+3MSetExtendedValue
+3MSetDeleteExtendedValue
+3MDeletePath
+3MDeleteValue
+3MFindNode
+3MHasPath
+3MHasChildPaths
+3PModified rw
+3MInvalidatePathCache
+4PFilename rw
+4PDocument r
+4PReadFlags rw
+4PWriteFlags rw
+#lazutils.Laz_XMLCfg.TRttiXMLConfig #lazutils.Laz_XMLCfg.TXMLConfig
+2MWriteProperty
+2MReadProperty
+3MWriteObject
+3MReadObject
+#lazutils.Laz_XMLRead.EXMLReadError #rtl.sysutils.Exception
+3VPosition
+3VLineCol
+3VDescr
+#lazutils.Laz_XMLStreaming.TXMLObjectWriterStackEl #rtl.System.TObject
+3VElement
+3VParent
+3VElemType
+3VPropertyName
+#lazutils.Laz_XMLStreaming.TXMLObjectWriter #rtl.Classes.TAbstractObjectWriter
+1VFDoc
+1VFRootEl
+1VFStack
+1VStackEl
+1MStackPush
+1MStackPop
+1MGetPropertyElement
+3MCreate
+3MBeginCollection
+3MBeginComponent
+3MBeginList
+3MEndList
+3MBeginProperty
+3MEndProperty
+3MWriteBinary
+3MWriteBoolean
+3MWriteFloat
+3MWriteSingle
+3MWriteCurrency
+3MWriteDate
+3MWriteIdent
+3MWriteInteger
+3MWriteMethodName
+3MWriteSet
+3MWriteString
+3MWriteWideString
+3MWriteUInt64
+3MWriteUnicodeString
+3MWriteVariant
+3MWrite
+3PDoc r
+#lazutils.Laz_XMLStreaming.TXMLObjectReader #rtl.Classes.TAbstractObjectReader
+1VFDoc
+1VFElement
+1VFElementPosition
+1VFRootEl
+1MReadNextValue
+3MCreate
+3MDestroy
+3MGetRootClassName
+3MNextValue
+3MReadValue
+3MBeginRootComponent
+3MBeginComponent
+3MBeginProperty
+3MReadBinary
+3MReadFloat
+3MReadSingle
+3MReadCurrency
+3MReadDate
+3MReadIdent
+3MReadInt8
+3MReadInt16
+3MReadInt32
+3MReadInt64
+3MReadSet
+3MReadStr
+3MReadString
+3MReadWideString
+3MReadUnicodeString
+3MSkipComponent
+3MSkipValue
+3MRead
+3PDoc r
+3PElement r
+3PElementPosition r
+#lazutils.TTTypes.TFreeTypeCustomRasterizer #rtl.System.TObject
+0MRender_Glyph
+0MRender_Gray_Glyph
+0MRender_Gray_Glyph_HQ
+0MRender_Directly_Gray_Glyph
+0MRender_Directly_Gray_Glyph_HQ
+0MSet_Raster_Palette
+#lazutils.EasyLazFreeType.TCustomFontCollectionItem #rtl.System.TObject
+2MGetBold
+2MGetInformation
+2MGetItalic
+2MGetStyleCount
+2MGetStyles
+2MGetFilename
+2MGetVersionNumber
+2MGetStyle
+3MHasStyle
+3MCreateFont
+3MQueryFace
+3MReleaseFace
+3PStyles r
+3PItalic r
+3PBold r
+3PFilename r
+3PInformation r
+3PVersionNumber r
+3PStyle r
+3PStyleCount r
+#lazutils.EasyLazFreeType.IFreeTypeFontEnumerator #rtl.System.IUnknown
+0MMoveNext
+0MGetCurrent
+0PCurrent r
+#lazutils.EasyLazFreeType.TCustomFamilyCollectionItem #rtl.System.TObject
+2MGetFontByIndex
+2MGetStyle
+2MGetStyles
+2MGetFamilyName
+2MGetFontCount
+2MGetStyleCount
+0MGetFont
+0MGetFontIndex
+3MHasStyle
+3PFamilyName r
+3PFont r
+3PFontCount r
+3PStyle r
+3PStyleCount r
+3PStyles r
+#lazutils.EasyLazFreeType.IFreeTypeFamilyEnumerator #rtl.System.IUnknown
+0MMoveNext
+0MGetCurrent
+0PCurrent r
+#lazutils.EasyLazFreeType.TCustomFreeTypeFontCollection #rtl.System.TObject
+2MGetFont
+2MGetFamily
+2MGetFamilyCount
+2MGetFontCount
+3MCreate
+3MClear
+3MBeginUpdate
+3MAddFolder
+3MAddFile
+3MEndUpdate
+3MFontFileEnumerator
+3MFamilyEnumerator
+3PFontFileCount r
+3PFontFile r
+3PFamilyCount r
+3PFamily r
+#lazutils.EasyLazFreeType.TFreeTypeRenderableFont #rtl.System.TObject
+2MGetClearType
+2MSetClearType
+2MGetLineFullHeight
+2MGetAscent
+2MGetDescent
+2MGetLineSpacing
+3MTextWidth
+3MTextHeight
+3MGetTextSize
+3MRenderText
+3PClearType rw
+3PAscent r
+3PDescent r
+3PLineSpacing r
+3PLineFullHeight r
+#lazutils.EasyLazFreeType.TFreeTypeDrawer #rtl.System.TObject
+0MDrawText
+#lazutils.EasyLazFreeType.TFreeTypeFont #lazutils.EasyLazFreeType.TFreeTypeRenderableFont
+1VFName
+1VFPointSize
+1VFHinted
+1VFStyleStr
+1VFWidthFactor
+1VFClearType
+1VFNamesArray
+1VFCollection
+1MFindGlyphNode
+1MGetCharIndex
+1MGetDPI
+1MGetFamily
+1MGetFreeTypeStyles
+1MGetGlyph
+1MGetGlyphCount
+1MGetInformation
+1MGetPixelSize
+1MGetVersionNumber
+1MSetDPI
+1MSetFreeTypeStyles
+1MSetHinted
+1MSetLineFullHeight
+1MSetStyleAsString
+1MUpdateFace
+1MSetName
+1MDiscardFace
+1MDiscardInstance
+1MSetPixelSize
+1MSetPointSize
+1MLoadGlyphInto
+1MSetWidthFactor
+1MUpdateInstance
+1MUpdateSizeInPoints
+1MUpdateMetrics
+1MUpdateCharmap
+2VFFace
+2VFFaceItem
+2VFFaceLoaded
+2VFInstance
+2VFInstanceCreated
+2VFGlyphTable
+2VFCharMap
+2VFCharmapOk
+2VFAscentValue
+2VFDescentValue
+2VFLineGapValue
+2VFLargeLineGapValue
+2MGetClearType
+2MSetClearType
+2MGetLineFullHeight
+2MGetAscent
+2MGetDescent
+2MGetLineSpacing
+2MFetchNames
+2MGetCollection
+3VQuality
+3VSmallLinePadding
+3MCreate
+3MDestroy
+3MRenderText
+3MTextWidth
+3MTextHeight
+3MCharsWidth
+0MCharsPosition
+3PName rw
+3PDPI rw
+3PSizeInPoints rw
+3PSizeInPixels rw
+3PGlyph r
+3PGlyphCount r
+3PCharIndex r
+3PHinted rw
+3PWidthFactor rw
+3PLineFullHeight rw
+3PInformation r
+3PVersionNumber r
+3PFamily r
+3PCollection rw
+3PStyleAsString rw
+3PStyle rw
+#lazutils.EasyLazFreeType.TFreeTypeGlyph #rtl.System.TObject
+1VFLoaded
+1VFGlyphData
+1VFIndex
+1MGetAdvance
+1MGetBounds
+1MGetBoundsWithOffset
+3MCreate
+0MRenderDirectly
+3MDestroy
+3PLoaded r
+3PData r
+3PIndex r
+3PBounds r
+3PBoundsWithOffset r
+3PAdvance r
+#lazutils.EasyLazFreeType.TFreeTypeRasterMap #rtl.System.TObject
+2Vmap
+2VFRasterizer
+2MGetHeight
+2MGetWidth
+2MGetScanLine
+2MInit
+0MCreate
+3MClear
+3MFill
+3MRenderGlyph
+3MScanMoveTo
+3MDestroy
+3PWidth r
+3PHeight r
+3PScanLine r
+#lazutils.EasyLazFreeType.TFreeTypeMonochromeMap #lazutils.EasyLazFreeType.TFreeTypeRasterMap
+1VScanPtrStart
+1VScanPtrCur
+1VScanBit
+1VScanX
+1MGetPixelsInHorizlineNoBoundsChecking
+2MInit
+3MRenderGlyph
+3MScanMoveTo
+3MScanNextPixel
+3MGetPixel
+3MSetPixel
+3MGetPixelsInRect
+3MGetPixelsInHorizline
+3MTogglePixel
+#lazutils.EasyLazFreeType.TFreeTypeGrayscaleMap #lazutils.EasyLazFreeType.TFreeTypeRasterMap
+1VScanPtrStart
+1VScanX
+2MInit
+3VRenderQuality
+3MRenderGlyph
+3MScanMoveTo
+3MScanNextPixel
+3MGetPixel
+3MSetPixel
+3MXorPixel
+#lazutils.TTRASTER.TFreeTypeRasterizer #lazutils.TTTypes.TFreeTypeCustomRasterizer
+1VPrecision_Bits
+1VPrecision
+1VPrecision_Half
+1VPrecision_Step
+1VPrecision_Shift
+1VPrecision_Mask
+1VPrecision_Jitter
+1VPool
+1VCible
+1VBWidth
+1VBCible
+1VGCible
+1VTraceBOfs
+1VTraceBIncr
+1VTraceGOfs
+1VTraceGIncr
+1Vgray_min_x
+1Vgray_max_x
+1VProc_Sweep_Init
+1VProc_Sweep_Span
+1VProc_Sweep_Drop
+1VProc_Sweep_Step
+1VProc_Sweep_Direct
+1VDirect_X
+1VDirect_Y
+1VDirect_TX
+1VPoints
+1VFlags
+1VOuts
+1VnContours
+1VDropOutControl
+1VGrays
+1VBGray_Data
+1VBGray_Incr
+1VBGray_End
+1VBGray_Capacity
+1VSecond_Pass
+1MBGray_NeedCapacity
+1MDraw_Sweep
+1MHorizontal_Gray_Sweep_Drop
+1MHorizontal_Gray_Sweep_Span
+1MHorizontal_Sweep_Drop
+1MHorizontal_Sweep_Init
+1MHorizontal_Sweep_Span
+1MHorizontal_Sweep_Step
+1MProcessCoordinate
+1MRaster_Object_Init
+1MRaster_Object_Done
+1MRender_Single_Pass
+1MSet_High_Precision
+1MSet_Second_Pass
+1MVertical_Gray_Sweep_Init
+1MVertical_Gray_Sweep_Init_Direct
+1MVertical_Gray_Sweep_Init_Direct_HQ
+1MVertical_Gray_Sweep_Init_HQ
+1MVertical_Gray_Sweep_Step
+1MVertical_Gray_Sweep_Step_Direct
+1MVertical_Gray_Sweep_Step_Direct_HQ
+1MVertical_Gray_Sweep_Step_HQ
+1MVertical_Sweep_Drop
+1MVertical_Sweep_Init
+1MVertical_Sweep_Span
+1MVertical_Sweep_Step
+3MRender_Glyph
+3MRender_Gray_Glyph
+3MRender_Gray_Glyph_HQ
+3MRender_Directly_Gray_Glyph
+3MRender_Directly_Gray_Glyph_HQ
+3MSet_Raster_Palette
+3MCreate
+3MDestroy
+#lazutils.TTProfile.TRenderPool #rtl.System.TObject
+2VPrecision
+2VPrecisionHalf
+2VBezierPrecision
+2VBoundsMinY
+2VBoundsMaxY
+2VscaleShift
+2MBezier_Down
+2MBezier_State
+2MBezier_To
+2MBezier_Up
+2MCEILING
+2MDecomposeCurve
+2MFLOOR
+2MFRAC
+2MGetCapacity
+2MLine_Down
+2MLine_To
+2MLine_Up
+2MMove_To
+2MPushBezier
+2MSCALED
+2MSplit_Bezier
+2MTRUNC
+2MRequireCapacity
+2MPushValue
+2PCapacity r
+3VJoint
+3VFresh
+3VcProfile
+3VProfileColl
+3VLastX
+3VLastY
+3VCurveDir
+3VArcs
+3VCurArc
+3Vdata
+3Vposition
+3MCreate
+3MDestroy
+3MSetPrecision
+3MSetBounds
+3MSetScaleShift
+3MClear
+3MReduceCapacity
+3MConvert_Glyph
+#lazutils.TTProfile.TProfile #rtl.System.TObject
+0VPool
+0VFlow
+0VHeight
+0VStart
+0VOffset
+0VX
+0VnextInContour
+0VnextInColl
+0VnextInList
+0VprevInList
+0MCreate
+#lazutils.TTProfile.TProfileCollection #rtl.System.TObject
+2MRemove_Profile
+3VPool
+3VprevProfile
+3VfProfile
+3VgProfile
+3VnProfs
+3MCreate
+3MClear
+3MNew_Profile
+3MEnd_Profile
+3MDestroy
+#lazutils.LazFreeTypeFontCollection.TFontCollectionItem #lazutils.EasyLazFreeType.TCustomFontCollectionItem
+1VFFilename
+1VFInformation
+1VFVersionNumber
+1VFStyleList
+1VFFace
+1VFFaceUsage
+1VFUsePostscriptStyle
+1MUpdateStyles
+1MSetInformation
+1MSetUsePostscriptStyle
+2MGetFilename
+2MGetBold
+2MGetInformation
+2MGetItalic
+2MGetStyleCount
+2MGetStyles
+2MGetStyle
+2MGetVersionNumber
+3MCreate
+3MDestroy
+3MHasStyle
+3PInformation rw
+3PVersionNumber rw
+3MCreateFont
+3MQueryFace
+3MReleaseFace
+3PUsePostscriptStyle rw
+#lazutils.LazFreeTypeFontCollection.TFamilyCollectionItem #lazutils.EasyLazFreeType.TCustomFamilyCollectionItem
+1VFFamilyName
+1VFFonts
+1VFFontCount
+1VFStyles
+1VFStyleCount
+1VFUsePostscriptStyle
+2MGetFontByIndex
+2MGetFontByStyles
+2MGetFontIndexByStyles
+2MGetStyle
+2MAddStyle
+2MGetStyles
+2MGetFamilyName
+2MGetFontCount
+2MGetStyleCount
+3MCreate
+3MAddFont
+0MGetFont
+0MGetFontIndex
+3MHasStyle
+#lazutils.LazFreeTypeFontCollection.TFreeTypeFontCollection #lazutils.EasyLazFreeType.TCustomFreeTypeFontCollection
+1VFFontList
+1VFTempFont
+1VFUpdateCount
+1VFFamilyList
+1MAddFamily
+1MFindFamily
+1MFindFont
+1MCompareFontFileName
+1MCompareFamilyName
+2MGetFont
+2MGetFamily
+2MGetFamilyCount
+2MGetFontCount
+3MCreate
+3MClear
+3MBeginUpdate
+3MAddFolder
+3MAddFile
+3MEndUpdate
+3MDestroy
+3MFontFileEnumerator
+3MFamilyEnumerator
+#lazutils.LazLoggerDummy.TLazLoggerLogGroupList #lazutils.LazClasses.TRefCountedObject
+1MGetItem
+3MAssign
+0MIndexOf
+3MFind
+3MCount
+3PItem r
+#lazutils.LazLoggerDummy.TLazLogger #lazutils.LazClasses.TRefCountedObject
+1VFMaxNestPrefixLen
+1VFNestLvlIndent
+1VFUseGlobalLogGroupList
+1MGetLogGroupList
+1MSetMaxNestPrefixLen
+1MSetNestLvlIndent
+1MSetUseGlobalLogGroupList
+3MAssign
+3MInit
+3MFinish
+3PNestLvlIndent rw
+3PMaxNestPrefixLen rw
+0MRegisterLogGroup
+0MFindOrRegisterLogGroup
+3PLogGroupList r
+3PUseGlobalLogGroupList rw
+0MDebuglnStack
+0MDbgOut
+0MDebugLn
+0MDebugLnEnter
+0MDebugLnExit
