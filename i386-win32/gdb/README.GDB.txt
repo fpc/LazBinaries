@@ -1,8 +1,47 @@
-The files in this directory are for distribution with Lazarus (IDE fro FreePacal)
+The files in this directory are for distribution with Lazarus (IDE for FreePacal)
 
-This directory contains a copy of GDB and required libraries. 
-All files are from http://www.mingw.org/ ( http://sourceforge.net/projects/mingw/ )
+This folder contains GDB version 7.7.1 for windows 32 bit.
 
-GDB is distributed under the GPL, a copy of wich can be found in the main directory of the Lazarus distribution.
+From the gdb source files:
+>>>>>>>>>>>>>>>>
+   Copyright (C) 2002-2015 Free Software Foundation, Inc.
 
-For sources and additional info, please visit the pages listed above.
+   This file is part of GDB.
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>
+<<<<<<<<<<<<<<<<
+
+See the file "copying.gdb" for details. Or download the sources as specified below and read the included copyright notes.
+
+This gdb is linked with other libraries included (or redistributed by) in the mingw distribution. See the mingw project for copyright and licenses.
+
+
+The source for this build of gdb can be downloaded using GIT 
+  git clone git://sourceware.org/git/binutils-gdb.git TARGETDIR
+  cd TARGETDIR
+  git checkout gdb-7.7.1-release
+  
+Other downloads, including archives can be found at http://www.gnu.org/software/gdb/download/
+  
+To build the exe a full install of mingw ( http://www.mingw.org/ ) is needed.
+  make distclean
+  ./configure --enable-static=yes --build=mingw32 --with-expat
+  make LDFLAGS=-static
+  strip gdb.exe
+  strip gdbserver.exe
+  
+Note that gettext-18.3.2-1 may not work. Revert to a previous version, e.g.:
+  mingw-get remove gettext
+  mingw-get install gettext=18.3.1-1
+
