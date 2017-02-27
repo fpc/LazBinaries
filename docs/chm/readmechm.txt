@@ -6,9 +6,6 @@ textmode IDE.  This archive also contains the .xct and .kwd files that are
 needed for crosslinking this archive with other CHM files. These files are
 not required for viewing (but are only about 1% of the total size)
 
-This CHM snapshot was build on 2012-08-01 by using fpdoc from trunk to
-compile the docs for fixes2_6 and the lazarusrc1 tag.
-
 How to install the CHMs in Lazarus
 ------------------------------------
 
@@ -32,7 +29,7 @@ The helpconfiguration is stored, with paths in fp.ini, and might look like
 this:
 
 [Help]
-Files="/fpc/fpcdocs/toc.chm;/fpc/fpcdocs/fcl.chm;/fpc/fpcdocs/ref.chm;/fpc/fpcdocs/rtl.chm;/fpc/fpcdocs/prog.chm;/fpc/fpcdocs/user.chm"
+Files="/fpc/fpcdocs/toc.chm;/fpc/fpcdocs/fcl.chm;/fpc/fpcdocs/ref.chm;/fpc/fpcdocs/rtl.chm;/fpc/fpcdocs/prog.chm;/fpc/fpcdocs/user.chm;/fpc/fpcdocs/fclres.chm"
 
 Troubleshooting
 --------------
@@ -50,18 +47,13 @@ What is CHM?
 
 CHM is an archive format specially made for HTML based help by Microsoft. It
 is also known as HTMLHELP, but note that HTMLHELP2 (and in the future 3) are
-not related.  HTMLHELP2 and 3 were only distributed with Visual Studio, not
-with client OSes.  Vista does have an own helpfile system (Help for
-Applications I believe, possibly HTMLHELP2 derived), but it is not used a
-lot yet.
-
-Besides being an archive format optimized to quickly extract a
+not related.  Besides being an archive format optimized to quickly extract a
 single file, there is also a TOC, an Index and fulltext search dictionaries
 in each CHM. 
 
 The html in a CHM is basically unmodified except for links from one chm file
 to the other, these use a ms-its://file.chm/path/to/htmlfile.html like URL
-syntax.
+syntax. Some extra tables with references might be generated.
 
 The format is sometimes related to security problems, but as far as I have
 been able to verify, this is more an Internet Explorer viewer application
@@ -91,11 +83,10 @@ reproduce it with his latest builds anymore.
 kchmviewer versions (even as new as in Fedora 13) seem to have problems with
 links that don't have a leading / either ( ? ). I reported it to kchmviewer,
 but the maintainer said it was a problem of QT (and indeed, switching
-khtmlpart resolves it). In Fedora 17, kchmviewer can't seem to load external
-links.
+khtmlpart resolves it)
 
 Gnochm is extremely slow with the larger files, and development seems to
-have stalled. In my Fedora 17 it is no longer available.
+have stalled.
 
 xCHM in the recent version seems to work fine and reasonably fast. (lcl.chm
 in a few secs).  However its TOC system is not a tree, and some versions

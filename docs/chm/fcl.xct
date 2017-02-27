@@ -59,8 +59,10 @@
    Output process/tprocess.output.html
    Stderr process/tprocess.stderr.html
    ExitStatus process/tprocess.exitstatus.html
+   ExitCode process/tprocess.exitcode.html
    InheritHandles process/tprocess.inherithandles.html
    OnForkEvent process/tprocess.onforkevent.html
+   PipeBufferSize process/tprocess.pipebuffersize.html
    Active process/tprocess.active.html
    ApplicationName process/tprocess.applicationname.html
    CommandLine process/tprocess.commandline.html
@@ -131,9 +133,12 @@
   THTCustomNodeClass contnrs/thtcustomnodeclass.html
   THTNode contnrs/thtnode.html
   TDataIteratorMethod contnrs/tdataiteratormethod.html
+  TDataIteratorCallBack contnrs/tdataiteratorcallback.html
   TIteratorMethod contnrs/titeratormethod.html
   TStringIteratorMethod contnrs/tstringiteratormethod.html
+  TStringIteratorCallback contnrs/tstringiteratorcallback.html
   TObjectIteratorMethod contnrs/tobjectiteratormethod.html
+  TObjectIteratorCallback contnrs/tobjectiteratorcallback.html
   TBucketItem contnrs/tbucketitem.html
   TBucketItemArray contnrs/tbucketitemarray.html
   TBucket contnrs/tbucket.html
@@ -168,7 +173,7 @@
    Items contnrs/tfpobjectlist.items.html
    List contnrs/tfpobjectlist.list.html
   TObjectList contnrs/tobjectlist.html
-   create contnrs/tobjectlist.create.html
+   Create contnrs/tobjectlist.create.html
    Add contnrs/tobjectlist.add.html
    Extract contnrs/tobjectlist.extract.html
    Remove contnrs/tobjectlist.remove.html
@@ -302,11 +307,13 @@
   THTDataNode contnrs/thtdatanode.html
    Data contnrs/thtdatanode.data.html
   TFPDataHashTable contnrs/tfpdatahashtable.html
+   Iterate contnrs/tfpdatahashtable.iterate.html
    Add contnrs/tfpdatahashtable.add.html
    Items contnrs/tfpdatahashtable.items.html
   THTStringNode contnrs/thtstringnode.html
    Data contnrs/thtstringnode.data.html
   TFPStringHashTable contnrs/tfpstringhashtable.html
+   Iterate contnrs/tfpstringhashtable.iterate.html
    Add contnrs/tfpstringhashtable.add.html
    Items contnrs/tfpstringhashtable.items.html
   THTObjectNode contnrs/thtobjectnode.html
@@ -316,6 +323,7 @@
   TFPObjectHashTable contnrs/tfpobjecthashtable.html
    Create contnrs/tfpobjecthashtable.create.html
    CreateWith contnrs/tfpobjecthashtable.createwith.html
+   Iterate contnrs/tfpobjecthashtable.iterate.html
    Add contnrs/tfpobjecthashtable.add.html
    Items contnrs/tfpobjecthashtable.items.html
    OwnsObjects contnrs/tfpobjecthashtable.ownsobjects.html
@@ -350,12 +358,14 @@
    write zstream/tcompressionstream.write.html
    flush zstream/tcompressionstream.flush.html
    get_compressionrate zstream/tcompressionstream.get_compressionrate.html
+   OnProgress zstream/tcompressionstream.onprogress.html
   Tdecompressionstream zstream/tdecompressionstream.html
    create zstream/tdecompressionstream.create.html
    destroy zstream/tdecompressionstream.destroy.html
    read zstream/tdecompressionstream.read.html
-   seek zstream/tdecompressionstream.seek.html
+   Seek zstream/tdecompressionstream.seek.html
    get_compressionrate zstream/tdecompressionstream.get_compressionrate.html
+   OnProgress zstream/tdecompressionstream.onprogress.html
   TGZFileStream zstream/tgzfilestream.html
    create zstream/tgzfilestream.create.html
    read zstream/tgzfilestream.read.html
@@ -413,7 +423,6 @@
  base64 base64/index.html
   TBase64DecodingMode base64/tbase64decodingmode.html
   TBase64EncodingStream base64/tbase64encodingstream.html
-   Create base64/tbase64encodingstream.create.html
    Destroy base64/tbase64encodingstream.destroy.html
    Flush base64/tbase64encodingstream.flush.html
    Write base64/tbase64encodingstream.write.html
@@ -498,6 +507,9 @@
   WriteDebugMessageToStream dbugmsg/writedebugmessagetostream.html
   DebugMessageName dbugmsg/debugmessagename.html
  streamex streamex/index.html
+  MIN_BUFFER_SIZE streamex/min_buffer_size.html
+  BUFFER_SIZE streamex/buffer_size.html
+  FILE_RIGHTS streamex/file_rights.html
   TBidirBinaryObjectReader streamex/tbidirbinaryobjectreader.html
    Position streamex/tbidirbinaryobjectreader.position.html
   TBidirBinaryObjectWriter streamex/tbidirbinaryobjectwriter.html
@@ -514,6 +526,59 @@
    WriteStr streamex/tdelphiwriter.writestr.html
    WriteValue streamex/tdelphiwriter.writevalue.html
    Position streamex/tdelphiwriter.position.html
+  TTextReader streamex/ttextreader.html
+   Create streamex/ttextreader.create.html
+   Reset streamex/ttextreader.reset.html
+   Close streamex/ttextreader.close.html
+   IsEof streamex/ttextreader.iseof.html
+   ReadLine streamex/ttextreader.readline.html
+   Eof streamex/ttextreader.eof.html
+  TStreamReader streamex/tstreamreader.html
+   Create streamex/tstreamreader.create.html
+   Destroy streamex/tstreamreader.destroy.html
+   Reset streamex/tstreamreader.reset.html
+   Close streamex/tstreamreader.close.html
+   IsEof streamex/tstreamreader.iseof.html
+   ReadLine streamex/tstreamreader.readline.html
+   BaseStream streamex/tstreamreader.basestream.html
+   OwnsStream streamex/tstreamreader.ownsstream.html
+  TStringReader streamex/tstringreader.html
+   Create streamex/tstringreader.create.html
+   Destroy streamex/tstringreader.destroy.html
+   Reset streamex/tstringreader.reset.html
+   Close streamex/tstringreader.close.html
+   IsEof streamex/tstringreader.iseof.html
+   ReadLine streamex/tstringreader.readline.html
+  TFileReader streamex/tfilereader.html
+   Create streamex/tfilereader.create.html
+   Destroy streamex/tfilereader.destroy.html
+   Reset streamex/tfilereader.reset.html
+   Close streamex/tfilereader.close.html
+   IsEof streamex/tfilereader.iseof.html
+   ReadLine streamex/tfilereader.readline.html
+  TWindowedStream streamex/twindowedstream.html
+   Create streamex/twindowedstream.create.html
+   Destroy streamex/twindowedstream.destroy.html
+   Read streamex/twindowedstream.read.html
+   Write streamex/twindowedstream.write.html
+   Seek streamex/twindowedstream.seek.html
+  TStreamHelper streamex/tstreamhelper.html
+   ReadWordLE streamex/tstreamhelper.readwordle.html
+   ReadDWordLE streamex/tstreamhelper.readdwordle.html
+   ReadQWordLE streamex/tstreamhelper.readqwordle.html
+   WriteWordLE streamex/tstreamhelper.writewordle.html
+   WriteDWordLE streamex/tstreamhelper.writedwordle.html
+   WriteQWordLE streamex/tstreamhelper.writeqwordle.html
+   ReadWordBE streamex/tstreamhelper.readwordbe.html
+   ReadDWordBE streamex/tstreamhelper.readdwordbe.html
+   ReadQWordBE streamex/tstreamhelper.readqwordbe.html
+   WriteWordBE streamex/tstreamhelper.writewordbe.html
+   WriteDWordBE streamex/tstreamhelper.writedwordbe.html
+   WriteQWordBE streamex/tstreamhelper.writeqwordbe.html
+   ReadSingle streamex/tstreamhelper.readsingle.html
+   ReadDouble streamex/tstreamhelper.readdouble.html
+   WriteSingle streamex/tstreamhelper.writesingle.html
+   WriteDouble streamex/tstreamhelper.writedouble.html
  inicol inicol/index.html
   KeyCount inicol/keycount.html
   SGlobal inicol/sglobal.html
@@ -545,8 +610,20 @@
    NamedItems inicol/tnamedinicollection.nameditems.html
   EIniCol inicol/einicol.html
  IniFiles inifiles/index.html
+  TIniFileOption inifiles/tinifileoption.html
+  TIniFileOptions inifiles/tinifileoptions.html
+  TSectionValuesOption inifiles/tsectionvaluesoption.html
+  TSectionValuesOptions inifiles/tsectionvaluesoptions.html
+  TStringHash inifiles/tstringhash.html
+   Create inifiles/tstringhash.create.html
+   Destroy inifiles/tstringhash.destroy.html
+   Add inifiles/tstringhash.add.html
+   Clear inifiles/tstringhash.clear.html
+   Modify inifiles/tstringhash.modify.html
+   Remove inifiles/tstringhash.remove.html
+   ValueOf inifiles/tstringhash.valueof.html
+   AddReplacesExisting inifiles/tstringhash.addreplacesexisting.html
   THashedStringList inifiles/thashedstringlist.html
-   Create inifiles/thashedstringlist.create.html
    Destroy inifiles/thashedstringlist.destroy.html
    IndexOf inifiles/thashedstringlist.indexof.html
    IndexOfName inifiles/thashedstringlist.indexofname.html
@@ -569,6 +646,7 @@
    Clear inifiles/tinifilesectionlist.clear.html
    Items inifiles/tinifilesectionlist.items.html
   TCustomIniFile inifiles/tcustominifile.html
+   FormatSettings inifiles/tcustominifile.formatsettings.html
    Create inifiles/tcustominifile.create.html
    Destroy inifiles/tcustominifile.destroy.html
    SectionExists inifiles/tcustominifile.sectionexists.html
@@ -576,6 +654,8 @@
    WriteString inifiles/tcustominifile.writestring.html
    ReadInteger inifiles/tcustominifile.readinteger.html
    WriteInteger inifiles/tcustominifile.writeinteger.html
+   ReadInt64 inifiles/tcustominifile.readint64.html
+   WriteInt64 inifiles/tcustominifile.writeint64.html
    ReadBool inifiles/tcustominifile.readbool.html
    WriteBool inifiles/tcustominifile.writebool.html
    ReadDate inifiles/tcustominifile.readdate.html
@@ -596,9 +676,11 @@
    UpdateFile inifiles/tcustominifile.updatefile.html
    ValueExists inifiles/tcustominifile.valueexists.html
    FileName inifiles/tcustominifile.filename.html
+   Options inifiles/tcustominifile.options.html
    EscapeLineFeeds inifiles/tcustominifile.escapelinefeeds.html
    CaseSensitive inifiles/tcustominifile.casesensitive.html
    StripQuotes inifiles/tcustominifile.stripquotes.html
+   FormatSettingsActive inifiles/tcustominifile.formatsettingsactive.html
   TIniFile inifiles/tinifile.html
    Create inifiles/tinifile.create.html
    Destroy inifiles/tinifile.destroy.html
@@ -730,6 +812,7 @@
   TSimpleEvent syncobjs/tsimpleevent.html
    Create syncobjs/tsimpleevent.create.html
  CustApp custapp/index.html
+  TStringArray custapp/tstringarray.html
   TExceptionEvent custapp/texceptionevent.html
   TEventLogTypes custapp/teventlogtypes.html
   TCustomApplication custapp/tcustomapplication.html
@@ -742,8 +825,10 @@
    Terminate custapp/tcustomapplication.terminate.html
    FindOptionIndex custapp/tcustomapplication.findoptionindex.html
    GetOptionValue custapp/tcustomapplication.getoptionvalue.html
+   GetOptionValues custapp/tcustomapplication.getoptionvalues.html
    HasOption custapp/tcustomapplication.hasoption.html
    CheckOptions custapp/tcustomapplication.checkoptions.html
+   GetNonOptions custapp/tcustomapplication.getnonoptions.html
    GetEnvironmentList custapp/tcustomapplication.getenvironmentlist.html
    Log custapp/tcustomapplication.log.html
    ExeName custapp/tcustomapplication.exename.html
@@ -759,7 +844,11 @@
    OptionChar custapp/tcustomapplication.optionchar.html
    CaseSensitiveOptions custapp/tcustomapplication.casesensitiveoptions.html
    StopOnException custapp/tcustomapplication.stoponexception.html
+   ExceptionExitCode custapp/tcustomapplication.exceptionexitcode.html
    EventLogFilter custapp/tcustomapplication.eventlogfilter.html
+   SingleInstance custapp/tcustomapplication.singleinstance.html
+   SingleInstanceClass custapp/tcustomapplication.singleinstanceclass.html
+   SingleInstanceEnabled custapp/tcustomapplication.singleinstanceenabled.html
   CustomApplication custapp/customapplication.html
  BlowFish blowfish/index.html
   BFRounds blowfish/bfrounds.html
@@ -788,12 +877,29 @@
   SErrActive simpleipc/index-1.html#serractive
   SErrInActive simpleipc/index-1.html#serrinactive
   MsgVersion simpleipc/msgversion.html
+  DefaultThreadTimeOut simpleipc/defaultthreadtimeout.html
   mtUnknown simpleipc/mtunknown.html
   mtString simpleipc/mtstring.html
+  TIPCMessageOverflowAction simpleipc/tipcmessageoverflowaction.html
   TMessageType simpleipc/tmessagetype.html
   TMsgHeader simpleipc/tmsgheader.html
   TIPCServerCommClass simpleipc/tipcservercommclass.html
+  TMessageQueueEvent simpleipc/tmessagequeueevent.html
   TIPCClientCommClass simpleipc/tipcclientcommclass.html
+  TIPCServerMsg simpleipc/tipcservermsg.html
+   Create simpleipc/tipcservermsg.create.html
+   Destroy simpleipc/tipcservermsg.destroy.html
+   Stream simpleipc/tipcservermsg.stream.html
+   MsgType simpleipc/tipcservermsg.msgtype.html
+  TIPCServerMsgQueue simpleipc/tipcservermsgqueue.html
+   Create simpleipc/tipcservermsgqueue.create.html
+   Destroy simpleipc/tipcservermsgqueue.destroy.html
+   Clear simpleipc/tipcservermsgqueue.clear.html
+   Push simpleipc/tipcservermsgqueue.push.html
+   Pop simpleipc/tipcservermsgqueue.pop.html
+   Count simpleipc/tipcservermsgqueue.count.html
+   MaxCount simpleipc/tipcservermsgqueue.maxcount.html
+   MaxAction simpleipc/tipcservermsgqueue.maxaction.html
   TIPCServerComm simpleipc/tipcservercomm.html
    Create simpleipc/tipcservercomm.create.html
    Owner simpleipc/tipcservercomm.owner.html
@@ -811,13 +917,19 @@
    StartServer simpleipc/tsimpleipcserver.startserver.html
    StopServer simpleipc/tsimpleipcserver.stopserver.html
    PeekMessage simpleipc/tsimpleipcserver.peekmessage.html
+   ReadMessage simpleipc/tsimpleipcserver.readmessage.html
    StringMessage simpleipc/tsimpleipcserver.stringmessage.html
    GetMessageData simpleipc/tsimpleipcserver.getmessagedata.html
    MsgType simpleipc/tsimpleipcserver.msgtype.html
    MsgData simpleipc/tsimpleipcserver.msgdata.html
    InstanceID simpleipc/tsimpleipcserver.instanceid.html
+   ThreadTimeOut simpleipc/tsimpleipcserver.threadtimeout.html
    Global simpleipc/tsimpleipcserver.global.html
    OnMessage simpleipc/tsimpleipcserver.onmessage.html
+   OnMessageQueued simpleipc/tsimpleipcserver.onmessagequeued.html
+   OnMessageError simpleipc/tsimpleipcserver.onmessageerror.html
+   MaxQueue simpleipc/tsimpleipcserver.maxqueue.html
+   MaxAction simpleipc/tsimpleipcserver.maxaction.html
   TIPCClientComm simpleipc/tipcclientcomm.html
    Create simpleipc/tipcclientcomm.create.html
    Owner simpleipc/tipcclientcomm.owner.html
@@ -836,6 +948,8 @@
    SendStringMessageFmt simpleipc/tsimpleipcclient.sendstringmessagefmt.html
    ServerInstance simpleipc/tsimpleipcclient.serverinstance.html
   EIPCError simpleipc/eipcerror.html
+  DefaultIPCMessageOverflowAction simpleipc/defaultipcmessageoverflowaction.html
+  DefaultIPCMessageQueueLimit simpleipc/defaultipcmessagequeuelimit.html
   DefaultIPCServerClass simpleipc/defaultipcserverclass.html
   DefaultIPCClientClass simpleipc/defaultipcclientclass.html
  rttiutils rttiutils/index.html
@@ -843,6 +957,8 @@
   TReadStrEvent rttiutils/treadstrevent.html
   TWriteStrEvent rttiutils/twritestrevent.html
   TEraseSectEvent rttiutils/terasesectevent.html
+  TPropStorageOption rttiutils/tpropstorageoption.html
+  TPropStorageOptions rttiutils/tpropstorageoptions.html
   TFindComponentEvent rttiutils/tfindcomponentevent.html
   TPropInfoList rttiutils/tpropinfolist.html
    Create rttiutils/tpropinfolist.create.html
@@ -860,6 +976,7 @@
    LoadProperties rttiutils/tpropsstorage.loadproperties.html
    LoadObjectsProps rttiutils/tpropsstorage.loadobjectsprops.html
    StoreObjectsProps rttiutils/tpropsstorage.storeobjectsprops.html
+   Options rttiutils/tpropsstorage.options.html
    AObject rttiutils/tpropsstorage.aobject.html
    Prefix rttiutils/tpropsstorage.prefix.html
    Section rttiutils/tpropsstorage.section.html
@@ -974,6 +1091,7 @@
   TGuiLoopEvent daemonapp/tguiloopevent.html
   TCustomDaemonApplicationClass daemonapp/tcustomdaemonapplicationclass.html
   TCustomDaemon daemonapp/tcustomdaemon.html
+   CheckControlMessages daemonapp/tcustomdaemon.checkcontrolmessages.html
    LogMessage daemonapp/tcustomdaemon.logmessage.html
    ReportStatus daemonapp/tcustomdaemon.reportstatus.html
    Definition daemonapp/tcustomdaemon.definition.html
@@ -993,8 +1111,8 @@
    BeforeUnInstall daemonapp/tdaemon.beforeuninstall.html
    AfterUnInstall daemonapp/tdaemon.afteruninstall.html
    OnControlCode daemonapp/tdaemon.oncontrolcode.html
-   Definition daemonapp/index.html
-   Status daemonapp/index.html
+   Definition 
+   Status 
   TDaemonController daemonapp/tdaemoncontroller.html
    Create daemonapp/tdaemoncontroller.create.html
    Destroy daemonapp/tdaemoncontroller.destroy.html
@@ -1009,7 +1127,7 @@
   TDependency daemonapp/tdependency.html
    Name daemonapp/tdependency.name.html
    IsGroup daemonapp/tdependency.isgroup.html
-   Assign ms-its:rtl.chm::/classes/tpersistent.assign.html
+   Assign ../rtl/classes/tpersistent.assign.html
   TDependencies daemonapp/tdependencies.html
    Create daemonapp/tdependencies.create.html
    Items daemonapp/tdependencies.items.html
@@ -1072,6 +1190,7 @@
    InterrogateDaemon daemonapp/tdaemonthread.interrogatedaemon.html
    Daemon daemonapp/tdaemonthread.daemon.html
   TCustomDaemonApplication daemonapp/tcustomdaemonapplication.html
+   Create custapp/tcustomapplication.create.html
    Destroy daemonapp/tcustomdaemonapplication.destroy.html
    ShowException daemonapp/tcustomdaemonapplication.showexception.html
    CreateDaemon daemonapp/tcustomdaemonapplication.createdaemon.html
@@ -1086,6 +1205,7 @@
    GUIMainLoop daemonapp/tcustomdaemonapplication.guimainloop.html
    GuiHandle daemonapp/tcustomdaemonapplication.guihandle.html
    RunMode daemonapp/tcustomdaemonapplication.runmode.html
+   AutoRegisterMessageFile daemonapp/tcustomdaemonapplication.autoregistermessagefile.html
   TDaemonApplication daemonapp/tdaemonapplication.html
   EDaemon daemonapp/edaemon.html
   Application daemonapp/application.html
@@ -1161,7 +1281,7 @@
    Write ascii85/tascii85encoderstream.write.html
    Width ascii85/tascii85encoderstream.width.html
    Boundary ascii85/tascii85encoderstream.boundary.html
- fpTimer fptimer/index.html
+ fptimer fptimer/index.html
   TFPTimerDriverClass fptimer/tfptimerdriverclass.html
   TFPCustomTimer fptimer/tfpcustomtimer.html
    Create fptimer/tfpcustomtimer.create.html
@@ -1171,12 +1291,16 @@
   TFPTimer fptimer/tfptimer.html
    Enabled fptimer/tfptimer.enabled.html
    Interval fptimer/tfptimer.interval.html
+   UseTimerThread fptimer/tfptimer.usetimerthread.html
    OnTimer fptimer/tfptimer.ontimer.html
+   OnStartTimer fptimer/tfptimer.onstarttimer.html
+   OnStopTimer fptimer/tfptimer.onstoptimer.html
   TFPTimerDriver fptimer/tfptimerdriver.html
    Create fptimer/tfptimerdriver.create.html
    StartTimer fptimer/tfptimerdriver.starttimer.html
    StopTimer fptimer/tfptimerdriver.stoptimer.html
    Timer fptimer/tfptimerdriver.timer.html
+   TimerStarted fptimer/tfptimerdriver.timerstarted.html
   DefaultTimerDriverClass fptimer/defaulttimerdriverclass.html
  db db/index.html
   dsMaxBufferCount db/dsmaxbuffercount.html
@@ -1188,6 +1312,7 @@
   DefaultFieldClasses db/defaultfieldclasses.html
   dsEditModes db/dseditmodes.html
   dsWriteModes db/dswritemodes.html
+  ftBlobTypes db/ftblobtypes.html
   LargeInt db/largeint.html
   PLargeInt db/plargeint.html
   TStringFieldBuffer db/tstringfieldbuffer.html
@@ -1207,6 +1332,8 @@
   TDateTimeRec db/tdatetimerec.html
   TFieldAttribute db/tfieldattribute.html
   TFieldAttributes db/tfieldattributes.html
+  TFieldDefClass db/tfielddefclass.html
+  TFieldDefsClass db/tfielddefsclass.html
   TFieldKind db/tfieldkind.html
   TFieldKinds db/tfieldkinds.html
   TFieldNotifyEvent db/tfieldnotifyevent.html
@@ -1220,12 +1347,14 @@
   TBlobType db/tblobtype.html
   TIndexOption db/tindexoption.html
   TIndexOptions db/tindexoptions.html
+  TFieldsClass db/tfieldsclass.html
   TBlobData db/tblobdata.html
   TParamBinding db/tparambinding.html
   TParamType db/tparamtype.html
   TParamTypes db/tparamtypes.html
   TParamStyle db/tparamstyle.html
-  TBookmark db/tbookmark.html
+  TParamClass db/tparamclass.html
+  TBookMark db/tbookmark.html
   TBookmarkStr db/tbookmarkstr.html
   PBookmarkFlag db/pbookmarkflag.html
   TBookmarkFlag db/tbookmarkflag.html
@@ -1353,6 +1482,7 @@
    Value db/tfield.value.html
    OldValue db/tfield.oldvalue.html
    LookupList db/tfield.lookuplist.html
+   FieldDef db/tfield.fielddef.html
    Alignment db/tfield.alignment.html
    CustomConstraint db/tfield.customconstraint.html
    ConstraintErrorMessage db/tfield.constrainterrormessage.html
@@ -1455,7 +1585,7 @@
    MinValue db/tbcdfield.minvalue.html
    Size db/tbcdfield.size.html
   TFMTBCDField db/tfmtbcdfield.html
-   Create db/tnumericfield.create.html
+   Create db/tfmtbcdfield.create.html
    CheckRange db/tfmtbcdfield.checkrange.html
    Value db/tfmtbcdfield.value.html
    Precision db/tfmtbcdfield.precision.html
@@ -1522,7 +1652,7 @@
    Create db/tfieldsenumerator.create.html
    MoveNext db/tfieldsenumerator.movenext.html
    Current db/tfieldsenumerator.current.html
-  Tfields db/tfields.html
+  TFields db/tfields.html
    Create db/tfields.create.html
    Destroy db/tfields.destroy.html
    Add db/tfields.add.html
@@ -1553,8 +1683,10 @@
    LoadFromStream db/tparam.loadfromstream.html
    SetBlobData db/tparam.setblobdata.html
    SetData db/tparam.setdata.html
+   AsBCD db/tparam.asbcd.html
    AsBlob db/tparam.asblob.html
    AsBoolean db/tparam.asboolean.html
+   AsBytes db/tparam.asbytes.html
    AsCurrency db/tparam.ascurrency.html
    AsDate db/tparam.asdate.html
    AsDateTime db/tparam.asdatetime.html
@@ -1572,7 +1704,6 @@
    IsNull db/tparam.isnull.html
    NativeStr db/tparam.nativestr.html
    Text db/tparam.text.html
-   Value db/tparam.value.html
    AsWideString db/tparam.aswidestring.html
    DataType db/tparam.datatype.html
    Name db/tparam.name.html
@@ -1580,6 +1711,11 @@
    ParamType db/tparam.paramtype.html
    Precision db/tparam.precision.html
    Size db/tparam.size.html
+   Value db/tparam.value.html
+  TParamsEnumerator db/tparamsenumerator.html
+   Create db/tparamsenumerator.create.html
+   MoveNext db/tparamsenumerator.movenext.html
+   Current db/tparamsenumerator.current.html
   TParams db/tparams.html
    Create db/tparams.create.html
    AddParam db/tparams.addparam.html
@@ -1588,6 +1724,7 @@
    FindParam db/tparams.findparam.html
    GetParamList db/tparams.getparamlist.html
    IsEqual db/tparams.isequal.html
+   GetEnumerator db/tparams.getenumerator.html
    ParamByName db/tparams.parambyname.html
    ParseSQL db/tparams.parsesql.html
    RemoveParam db/tparams.removeparam.html
@@ -1719,6 +1856,10 @@
    OnFilterRecord db/tdataset.onfilterrecord.html
    OnNewRecord db/tdataset.onnewrecord.html
    OnPostError db/tdataset.onposterror.html
+  TDataSetEnumerator db/tdatasetenumerator.html
+   Create db/tdatasetenumerator.create.html
+   MoveNext db/tdatasetenumerator.movenext.html
+   Current db/tdatasetenumerator.current.html
   TDataLink db/tdatalink.html
    Create db/tdatalink.create.html
    Destroy db/tdatalink.destroy.html
@@ -1746,6 +1887,11 @@
    Fields db/tmasterdatalink.fields.html
    OnMasterChange db/tmasterdatalink.onmasterchange.html
    OnMasterDisable db/tmasterdatalink.onmasterdisable.html
+  TMasterParamsDataLink db/tmasterparamsdatalink.html
+   Create db/tmasterparamsdatalink.create.html
+   RefreshParamNames db/tmasterparamsdatalink.refreshparamnames.html
+   CopyParamsFromMaster db/tmasterparamsdatalink.copyparamsfrommaster.html
+   Params db/tmasterparamsdatalink.params.html
   TDataSource db/tdatasource.html
    Create db/tdatasource.create.html
    Destroy db/tdatasource.destroy.html
@@ -1764,7 +1910,7 @@
    Transaction db/tdbdataset.transaction.html
   TDBTransaction db/tdbtransaction.html
    Create db/tdbtransaction.create.html
-   destroy db/tdbtransaction.destroy.html
+   Destroy db/tdbtransaction.destroy.html
    CloseDataSets db/tdbtransaction.closedatasets.html
    DataBase db/tdbtransaction.database.html
    Active db/tdbtransaction.active.html
@@ -1795,12 +1941,7 @@
    DatabaseName db/tdatabase.databasename.html
    KeepConnection db/tdatabase.keepconnection.html
    Params db/tdatabase.params.html
-   Connected db/index.html
-  TMasterParamsDataLink db/tmasterparamsdatalink.html
-   Create db/tmasterparamsdatalink.create.html
-   RefreshParamNames db/tmasterparamsdatalink.refreshparamnames.html
-   CopyParamsFromMaster db/tmasterparamsdatalink.copyparamsfrommaster.html
-   Params db/tmasterparamsdatalink.params.html
+   Connected 
   DatabaseError db/databaseerror.html
   DatabaseErrorFmt db/databaseerrorfmt.html
   ExtractFieldName db/extractfieldname.html
@@ -1809,21 +1950,443 @@
   DisposeMem db/disposemem.html
   BuffersEqual db/buffersequal.html
   SkipComments db/skipcomments.html
+  enumerator(TDataSet):TDataSetEnumerator db/.op-enumerator-tdataset-datasetenumerator.html
+  LoginDialogExProc db/logindialogexproc.html
+ zipper zipper/index.html
+  END_OF_CENTRAL_DIR_SIGNATURE zipper/end_of_central_dir_signature.html
+  ZIP64_END_OF_CENTRAL_DIR_SIGNATURE zipper/zip64_end_of_central_dir_signature.html
+  ZIP64_END_OF_CENTRAL_DIR_LOCATOR_SIGNATURE zipper/zip64_end_of_central_dir_locator_signature.html
+  LOCAL_FILE_HEADER_SIGNATURE zipper/local_file_header_signature.html
+  CENTRAL_FILE_HEADER_SIGNATURE zipper/central_file_header_signature.html
+  ZIP64_HEADER_ID zipper/zip64_header_id.html
+  OS_FAT zipper/os_fat.html
+  OS_UNIX zipper/os_unix.html
+  OS_OS2 zipper/os_os2.html
+  OS_NTFS zipper/os_ntfs.html
+  OS_VFAT zipper/os_vfat.html
+  OS_OSX zipper/os_osx.html
+  UNIX_MASK zipper/unix_mask.html
+  UNIX_FIFO zipper/unix_fifo.html
+  UNIX_CHAR zipper/unix_char.html
+  UNIX_DIR zipper/unix_dir.html
+  UNIX_BLK zipper/unix_blk.html
+  UNIX_FILE zipper/unix_file.html
+  UNIX_LINK zipper/unix_link.html
+  UNIX_SOCK zipper/unix_sock.html
+  UNIX_RUSR zipper/unix_rusr.html
+  UNIX_WUSR zipper/unix_wusr.html
+  UNIX_XUSR zipper/unix_xusr.html
+  UNIX_RGRP zipper/unix_rgrp.html
+  UNIX_WGRP zipper/unix_wgrp.html
+  UNIX_XGRP zipper/unix_xgrp.html
+  UNIX_ROTH zipper/unix_roth.html
+  UNIX_WOTH zipper/unix_woth.html
+  UNIX_XOTH zipper/unix_xoth.html
+  UNIX_DEFAULT zipper/unix_default.html
+  Crc_32_Tab zipper/crc_32_tab.html
+  TABLESIZE zipper/tablesize.html
+  FIRSTENTRY zipper/firstentry.html
+  Local_File_Header_Type zipper/local_file_header_type.html
+  Extensible_Data_Field_Header_Type zipper/extensible_data_field_header_type.html
+  Zip64_Extended_Info_Field_Type zipper/zip64_extended_info_field_type.html
+  Central_File_Header_Type zipper/central_file_header_type.html
+  End_of_Central_Dir_Type zipper/end_of_central_dir_type.html
+  Zip64_End_of_Central_Dir_type zipper/zip64_end_of_central_dir_type.html
+  Zip64_End_of_Central_Dir_Locator_type zipper/zip64_end_of_central_dir_locator_type.html
+  TProgressEvent zipper/tprogressevent.html
+  TOnEndOfFileEvent zipper/tonendoffileevent.html
+  TOnStartFileEvent zipper/tonstartfileevent.html
+  CodeRec zipper/coderec.html
+  CodeArray zipper/codearray.html
+  TablePtr zipper/tableptr.html
+  FreeListPtr zipper/freelistptr.html
+  FreeListArray zipper/freelistarray.html
+  BufPtr zipper/bufptr.html
+  TOnCustomStreamEvent zipper/toncustomstreamevent.html
+  TCustomInputStreamEvent zipper/tcustominputstreamevent.html
+  TCompressor zipper/tcompressor.html
+   Create zipper/tcompressor.create.html
+   Compress zipper/tcompressor.compress.html
+   ZipID zipper/tcompressor.zipid.html
+   ZipVersionReqd zipper/tcompressor.zipversionreqd.html
+   ZipBitFlag zipper/tcompressor.zipbitflag.html
+   BufferSize zipper/tcompressor.buffersize.html
+   OnPercent zipper/tcompressor.onpercent.html
+   OnProgress zipper/tcompressor.onprogress.html
+   Crc32Val zipper/tcompressor.crc32val.html
+  TDeCompressor zipper/tdecompressor.html
+   Create zipper/tdecompressor.create.html
+   DeCompress zipper/tdecompressor.decompress.html
+   ZipID zipper/tdecompressor.zipid.html
+   BufferSize zipper/tdecompressor.buffersize.html
+   OnPercent zipper/tdecompressor.onpercent.html
+   OnProgress zipper/tdecompressor.onprogress.html
+   Crc32Val zipper/tdecompressor.crc32val.html
+  TShrinker zipper/tshrinker.html
+   Create zipper/tcompressor.create.html
+   Destroy zipper/tshrinker.destroy.html
+   Compress zipper/tcompressor.compress.html
+   ZipID zipper/tcompressor.zipid.html
+   ZipVersionReqd zipper/tshrinker.zipversionreqd.html
+   ZipBitFlag zipper/tshrinker.zipbitflag.html
+  TDeflater zipper/tdeflater.html
+   Create zipper/tcompressor.create.html
+   Compress zipper/tcompressor.compress.html
+   ZipID zipper/tcompressor.zipid.html
+   ZipVersionReqd zipper/tdeflater.zipversionreqd.html
+   ZipBitFlag zipper/tdeflater.zipbitflag.html
+   CompressionLevel zipper/tdeflater.compressionlevel.html
+  TInflater zipper/tinflater.html
+   Create zipper/tdecompressor.create.html
+   DeCompress zipper/tdecompressor.decompress.html
+   ZipID zipper/tdecompressor.zipid.html
+  TZipFileEntry zipper/tzipfileentry.html
+   Create zipper/tzipfileentry.create.html
+   IsDirectory zipper/tzipfileentry.isdirectory.html
+   IsLink zipper/tzipfileentry.islink.html
+   Assign zipper/tzipfileentry.assign.html
+   Stream zipper/tzipfileentry.stream.html
+   ArchiveFileName zipper/tzipfileentry.archivefilename.html
+   DiskFileName zipper/tzipfileentry.diskfilename.html
+   Size zipper/tzipfileentry.size.html
+   DateTime zipper/tzipfileentry.datetime.html
+   OS zipper/tzipfileentry.os.html
+   Attributes zipper/tzipfileentry.attributes.html
+   CompressionLevel zipper/tzipfileentry.compressionlevel.html
+  TZipFileEntries zipper/tzipfileentries.html
+   AddFileEntry zipper/tzipfileentries.addfileentry.html
+   AddFileEntries zipper/tzipfileentries.addfileentries.html
+   Entries zipper/tzipfileentries.entries.html
+  TZipper zipper/tzipper.html
+   Create zipper/tzipper.create.html
+   Destroy zipper/tzipper.destroy.html
+   ZipAllFiles zipper/tzipper.zipallfiles.html
+   SaveToFile zipper/tzipper.savetofile.html
+   SaveToStream zipper/tzipper.savetostream.html
+   ZipFiles zipper/tzipper.zipfiles.html
+   Clear zipper/tzipper.clear.html
+   BufferSize zipper/tzipper.buffersize.html
+   OnPercent zipper/tzipper.onpercent.html
+   OnProgress zipper/tzipper.onprogress.html
+   OnStartFile zipper/tzipper.onstartfile.html
+   OnEndFile zipper/tzipper.onendfile.html
+   FileName zipper/tzipper.filename.html
+   FileComment zipper/tzipper.filecomment.html
+   Files zipper/tzipper.files.html
+   InMemSize zipper/tzipper.inmemsize.html
+   Entries zipper/tzipper.entries.html
+  TFullZipFileEntry zipper/tfullzipfileentry.html
+   BitFlags zipper/tfullzipfileentry.bitflags.html
+   CompressMethod zipper/tfullzipfileentry.compressmethod.html
+   CompressedSize zipper/tfullzipfileentry.compressedsize.html
+   CRC32 zipper/tfullzipfileentry.crc32.html
+  TFullZipFileEntries zipper/tfullzipfileentries.html
+   FullEntries zipper/tfullzipfileentries.fullentries.html
+  TUnZipper zipper/tunzipper.html
+   Create zipper/tunzipper.create.html
+   Destroy zipper/tunzipper.destroy.html
+   UnZipAllFiles zipper/tunzipper.unzipallfiles.html
+   UnZipFiles zipper/tunzipper.unzipfiles.html
+   Clear zipper/tunzipper.clear.html
+   Examine zipper/tunzipper.examine.html
+   BufferSize zipper/tunzipper.buffersize.html
+   OnOpenInputStream zipper/tunzipper.onopeninputstream.html
+   OnCloseInputStream zipper/tunzipper.oncloseinputstream.html
+   OnCreateStream zipper/tunzipper.oncreatestream.html
+   OnDoneStream zipper/tunzipper.ondonestream.html
+   OnPercent zipper/tunzipper.onpercent.html
+   OnProgress zipper/tunzipper.onprogress.html
+   OnStartFile zipper/tunzipper.onstartfile.html
+   OnEndFile zipper/tunzipper.onendfile.html
+   FileName zipper/tunzipper.filename.html
+   OutputPath zipper/tunzipper.outputpath.html
+   FileComment zipper/tunzipper.filecomment.html
+   Files zipper/tunzipper.files.html
+   Entries zipper/tunzipper.entries.html
+  EZipError zipper/eziperror.html
+ sqldb sqldb/index.html
+  UsingSQLDB sqldb/usingsqldb.html
+  UniversalConnectors sqldb/universalconnectors.html
+  RetrievingSchemaInformation sqldb/retrievingschemainformation.html
+  UpdateSQLs sqldb/updatesqls.html
+  UsingParams sqldb/usingparams.html
+  StatementTokens sqldb/statementtokens.html
+  TSchemaObjectNames sqldb/tschemaobjectnames.html
+  SingleQuotes sqldb/singlequotes.html
+  DoubleQuotes sqldb/doublequotes.html
+  LogAllEvents sqldb/logallevents.html
+  LogAllEventsExtra sqldb/logalleventsextra.html
+  stNoSchema sqldb/stnoschema.html
+  stTables sqldb/sttables.html
+  stSysTables sqldb/stsystables.html
+  stProcedures sqldb/stprocedures.html
+  stColumns sqldb/stcolumns.html
+  stProcedureParams sqldb/stprocedureparams.html
+  stIndexes sqldb/stindexes.html
+  stPackages sqldb/stpackages.html
+  stSchemata sqldb/stschemata.html
+  stSequences sqldb/stsequences.html
+  stUnknown sqldb/stunknown.html
+  stSelect sqldb/stselect.html
+  stInsert sqldb/stinsert.html
+  stUpdate sqldb/stupdate.html
+  stDelete sqldb/stdelete.html
+  stDDL sqldb/stddl.html
+  stGetSegment sqldb/stgetsegment.html
+  stPutSegment sqldb/stputsegment.html
+  stExecProcedure sqldb/stexecprocedure.html
+  stStartTrans sqldb/ststarttrans.html
+  stCommit sqldb/stcommit.html
+  stRollback sqldb/strollback.html
+  stSelectForUpd sqldb/stselectforupd.html
+  detCustom sqldb/detcustom.html
+  detPrepare sqldb/detprepare.html
+  detExecute sqldb/detexecute.html
+  detFetch sqldb/detfetch.html
+  detCommit sqldb/detcommit.html
+  detRollBack sqldb/detrollback.html
+  detParamValue sqldb/detparamvalue.html
+  detActualSQL sqldb/detactualsql.html
+  DefaultSQLFormatSettings sqldb/defaultsqlformatsettings.html
+  TSchemaType sqldb/tschematype.html
+  TStatementType sqldb/tstatementtype.html
+  TDBEventType sqldb/tdbeventtype.html
+  TDBEventTypes sqldb/tdbeventtypes.html
+  TQuoteChars sqldb/tquotechars.html
+  TRowsCount sqldb/trowscount.html
+  TSQLStatementInfo sqldb/tsqlstatementinfo.html
+  TDBLogNotifyEvent sqldb/tdblognotifyevent.html
+  TConnOption sqldb/tconnoption.html
+  TConnOptions sqldb/tconnoptions.html
+  TSQLConnectionOption sqldb/tsqlconnectionoption.html
+  TSQLConnectionOptions sqldb/tsqlconnectionoptions.html
+  TConnInfoType sqldb/tconninfotype.html
+  TCommitRollbackAction sqldb/tcommitrollbackaction.html
+  TSQLTransactionOption sqldb/tsqltransactionoption.html
+  TSQLTransactionOptions sqldb/tsqltransactionoptions.html
+  TSQLSequenceApplyEvent sqldb/tsqlsequenceapplyevent.html
+  TSQLQueryOption sqldb/tsqlqueryoption.html
+  TSQLQueryOptions sqldb/tsqlqueryoptions.html
+  TSQLConnectionClass sqldb/tsqlconnectionclass.html
+  TLibraryLoadFunction sqldb/tlibraryloadfunction.html
+  TLibraryUnLoadFunction sqldb/tlibraryunloadfunction.html
+  TConnectionDefClass sqldb/tconnectiondefclass.html
+  TSQLHandle sqldb/tsqlhandle.html
+  TSQLCursor sqldb/tsqlcursor.html
+   FPrepared sqldb/tsqlcursor.fprepared.html
+   FSelectable sqldb/tsqlcursor.fselectable.html
+   FInitFieldDef sqldb/tsqlcursor.finitfielddef.html
+   FStatementType sqldb/tsqlcursor.fstatementtype.html
+   FSchemaType sqldb/tsqlcursor.fschematype.html
+  ESQLDatabaseError sqldb/esqldatabaseerror.html
+   ErrorCode sqldb/esqldatabaseerror.errorcode.html
+   SQLState sqldb/esqldatabaseerror.sqlstate.html
+   CreateFmt sqldb/esqldatabaseerror.createfmt.html
+  TSQLDBFieldDef sqldb/tsqldbfielddef.html
+   SQLDBData sqldb/tsqldbfielddef.sqldbdata.html
+  TSQLDBFieldDefs sqldb/tsqldbfielddefs.html
+  TSQLDBParam sqldb/tsqldbparam.html
+   FieldDef sqldb/tsqldbparam.fielddef.html
+   SQLDBData sqldb/tsqldbparam.sqldbdata.html
+  TSQLDBParams sqldb/tsqldbparams.html
+  TServerIndexDefs sqldb/tserverindexdefs.html
+   Create sqldb/tserverindexdefs.create.html
+   Update sqldb/tserverindexdefs.update.html
+  TSQLConnection sqldb/tsqlconnection.html
+   Handle sqldb/tsqlconnection.handle.html
+   FieldNameQuoteChars sqldb/tsqlconnection.fieldnamequotechars.html
+   Create sqldb/tsqlconnection.create.html
+   Destroy sqldb/tsqlconnection.destroy.html
+   StartTransaction sqldb/tsqlconnection.starttransaction.html
+   EndTransaction sqldb/tsqlconnection.endtransaction.html
+   ExecuteDirect sqldb/tsqlconnection.executedirect.html
+   GetObjectNames sqldb/tsqlconnection.getobjectnames.html
+   GetTableNames sqldb/tsqlconnection.gettablenames.html
+   GetProcedureNames sqldb/tsqlconnection.getprocedurenames.html
+   GetFieldNames sqldb/tsqlconnection.getfieldnames.html
+   GetSchemaNames sqldb/tsqlconnection.getschemanames.html
+   GetSequenceNames sqldb/tsqlconnection.getsequencenames.html
+   GetConnectionInfo sqldb/tsqlconnection.getconnectioninfo.html
+   GetStatementInfo sqldb/tsqlconnection.getstatementinfo.html
+   CreateDB sqldb/tsqlconnection.createdb.html
+   DropDB sqldb/tsqlconnection.dropdb.html
+   GetNextValue sqldb/tsqlconnection.getnextvalue.html
+   ConnOptions sqldb/tsqlconnection.connoptions.html
+   Password sqldb/tsqlconnection.password.html
+   Transaction sqldb/tsqlconnection.transaction.html
+   UserName sqldb/tsqlconnection.username.html
+   CharSet sqldb/tsqlconnection.charset.html
+   HostName sqldb/tsqlconnection.hostname.html
+   OnLog sqldb/tsqlconnection.onlog.html
+   LogEvents sqldb/tsqlconnection.logevents.html
+   Options sqldb/tsqlconnection.options.html
+   Role sqldb/tsqlconnection.role.html
+   Connected sqldb/tsqlconnection.connected.html
+   DatabaseName sqldb/tsqlconnection.databasename.html
+   KeepConnection sqldb/tsqlconnection.keepconnection.html
+   LoginPrompt sqldb/tsqlconnection.loginprompt.html
+   Params sqldb/tsqlconnection.params.html
+   OnLogin sqldb/tsqlconnection.onlogin.html
+  TSQLTransaction sqldb/tsqltransaction.html
+   Create sqldb/tsqltransaction.create.html
+   Destroy sqldb/tsqltransaction.destroy.html
+   Commit sqldb/tsqltransaction.commit.html
+   CommitRetaining sqldb/tsqltransaction.commitretaining.html
+   Rollback sqldb/tsqltransaction.rollback.html
+   RollbackRetaining sqldb/tsqltransaction.rollbackretaining.html
+   StartTransaction sqldb/tsqltransaction.starttransaction.html
+   EndTransaction sqldb/tsqltransaction.endtransaction.html
+   Handle sqldb/tsqltransaction.handle.html
+   SQLConnection sqldb/tsqltransaction.sqlconnection.html
+   Action sqldb/tsqltransaction.action.html
+   Database sqldb/tsqltransaction.database.html
+   Params sqldb/tsqltransaction.params.html
+   Options sqldb/tsqltransaction.options.html
+  TCustomSQLStatement sqldb/tcustomsqlstatement.html
+   Create sqldb/tcustomsqlstatement.create.html
+   Destroy sqldb/tcustomsqlstatement.destroy.html
+   Prepare sqldb/tcustomsqlstatement.prepare.html
+   Execute sqldb/tcustomsqlstatement.execute.html
+   Unprepare sqldb/tcustomsqlstatement.unprepare.html
+   ParamByName sqldb/tcustomsqlstatement.parambyname.html
+   RowsAffected sqldb/tcustomsqlstatement.rowsaffected.html
+   Prepared sqldb/tcustomsqlstatement.prepared.html
+  TSQLStatement sqldb/tsqlstatement.html
+   Database sqldb/tsqlstatement.database.html
+   DataSource sqldb/tsqlstatement.datasource.html
+   ParamCheck sqldb/tsqlstatement.paramcheck.html
+   Params sqldb/tsqlstatement.params.html
+   ParseSQL sqldb/tsqlstatement.parsesql.html
+   SQL sqldb/tsqlstatement.sql.html
+   Transaction sqldb/tsqlstatement.transaction.html
+  TSQLSequence sqldb/tsqlsequence.html
+   Create sqldb/tsqlsequence.create.html
+   Assign sqldb/tsqlsequence.assign.html
+   Apply sqldb/tsqlsequence.apply.html
+   GetNextValue sqldb/tsqlsequence.getnextvalue.html
+   FieldName sqldb/tsqlsequence.fieldname.html
+   SequenceName sqldb/tsqlsequence.sequencename.html
+   IncrementBy sqldb/tsqlsequence.incrementby.html
+   ApplyEvent sqldb/tsqlsequence.applyevent.html
+  TCustomSQLQuery sqldb/tcustomsqlquery.html
+   Create sqldb/tcustomsqlquery.create.html
+   Destroy sqldb/tcustomsqlquery.destroy.html
+   Prepare sqldb/tcustomsqlquery.prepare.html
+   UnPrepare sqldb/tcustomsqlquery.unprepare.html
+   ExecSQL sqldb/tcustomsqlquery.execsql.html
+   SetSchemaInfo sqldb/tcustomsqlquery.setschemainfo.html
+   RowsAffected sqldb/tcustomsqlquery.rowsaffected.html
+   ParamByName sqldb/tcustomsqlquery.parambyname.html
+   Prepared sqldb/tcustomsqlquery.prepared.html
+   SQLConnection sqldb/tcustomsqlquery.sqlconnection.html
+   SQLTransaction sqldb/tcustomsqlquery.sqltransaction.html
+   ApplyUpdates sqldb/tcustomsqlquery.applyupdates.html
+   Post sqldb/tcustomsqlquery.post.html
+   Delete sqldb/tcustomsqlquery.delete.html
+  TSQLQuery sqldb/tsqlquery.html
+   SchemaType sqldb/tsqlquery.schematype.html
+   StatementType sqldb/tsqlquery.statementtype.html
+   MaxIndexesCount sqldb/tsqlquery.maxindexescount.html
+   Database sqldb/tsqlquery.database.html
+   Transaction sqldb/tsqlquery.transaction.html
+   SQL sqldb/tsqlquery.sql.html
+   InsertSQL sqldb/tsqlquery.insertsql.html
+   UpdateSQL sqldb/tsqlquery.updatesql.html
+   DeleteSQL sqldb/tsqlquery.deletesql.html
+   RefreshSQL sqldb/tsqlquery.refreshsql.html
+   Options sqldb/tsqlquery.options.html
+   Params sqldb/tsqlquery.params.html
+   ParamCheck sqldb/tsqlquery.paramcheck.html
+   ParseSQL sqldb/tsqlquery.parsesql.html
+   UpdateMode sqldb/tsqlquery.updatemode.html
+   UsePrimaryKeyAsKey sqldb/tsqlquery.useprimarykeyaskey.html
+   DataSource sqldb/tsqlquery.datasource.html
+   Sequence sqldb/tsqlquery.sequence.html
+   ServerFilter sqldb/tsqlquery.serverfilter.html
+   ServerFiltered sqldb/tsqlquery.serverfiltered.html
+   ServerIndexDefs sqldb/tsqlquery.serverindexdefs.html
+   FieldDefs db/tdataset.fielddefs.html
+   Active db/tdataset.active.html
+   AutoCalcFields db/tdataset.autocalcfields.html
+   Filter db/tdataset.filter.html
+   Filtered db/tdataset.filtered.html
+   AfterCancel db/tdataset.aftercancel.html
+   AfterClose db/tdataset.afterclose.html
+   AfterDelete db/tdataset.afterdelete.html
+   AfterEdit db/tdataset.afteredit.html
+   AfterInsert db/tdataset.afterinsert.html
+   AfterOpen db/tdataset.afteropen.html
+   AfterPost db/tdataset.afterpost.html
+   AfterScroll db/tdataset.afterscroll.html
+   BeforeCancel db/tdataset.beforecancel.html
+   BeforeClose db/tdataset.beforeclose.html
+   BeforeDelete db/tdataset.beforedelete.html
+   BeforeEdit db/tdataset.beforeedit.html
+   BeforeInsert db/tdataset.beforeinsert.html
+   BeforeOpen db/tdataset.beforeopen.html
+   BeforePost db/tdataset.beforepost.html
+   BeforeScroll db/tdataset.beforescroll.html
+   OnCalcFields db/tdataset.oncalcfields.html
+   OnDeleteError db/tdataset.ondeleteerror.html
+   OnEditError db/tdataset.onediterror.html
+   OnFilterRecord db/tdataset.onfilterrecord.html
+   OnNewRecord db/tdataset.onnewrecord.html
+   OnPostError db/tdataset.onposterror.html
+   ReadOnly 
+   IndexDefs 
+  TSQLScript sqldb/tsqlscript.html
+   Create sqldb/tsqlscript.create.html
+   Destroy sqldb/tsqlscript.destroy.html
+   Execute sqldb/tsqlscript.execute.html
+   ExecuteScript sqldb/tsqlscript.executescript.html
+   DataBase sqldb/tsqlscript.database.html
+   Transaction sqldb/tsqlscript.transaction.html
+   OnDirective sqldb/tsqlscript.ondirective.html
+   UseDollarString sqldb/tsqlscript.usedollarstring.html
+   DollarStrings sqldb/tsqlscript.dollarstrings.html
+   Directives sqldb/tsqlscript.directives.html
+   Defines sqldb/tsqlscript.defines.html
+   Script sqldb/tsqlscript.script.html
+   Terminator sqldb/tsqlscript.terminator.html
+   CommentsinSQL sqldb/tsqlscript.commentsinsql.html
+   UseSetTerm sqldb/tsqlscript.usesetterm.html
+   UseCommit sqldb/tsqlscript.usecommit.html
+   UseDefines sqldb/tsqlscript.usedefines.html
+   OnException sqldb/tsqlscript.onexception.html
+  TSQLConnector sqldb/tsqlconnector.html
+   ConnectorType sqldb/tsqlconnector.connectortype.html
+  TConnectionDef sqldb/tconnectiondef.html
+   TypeName sqldb/tconnectiondef.typename.html
+   ConnectionClass sqldb/tconnectiondef.connectionclass.html
+   Description sqldb/tconnectiondef.description.html
+   DefaultLibraryName sqldb/tconnectiondef.defaultlibraryname.html
+   LoadFunction sqldb/tconnectiondef.loadfunction.html
+   UnLoadFunction sqldb/tconnectiondef.unloadfunction.html
+   LoadedLibraryName sqldb/tconnectiondef.loadedlibraryname.html
+   ApplyParams sqldb/tconnectiondef.applyparams.html
+  RegisterConnection sqldb/registerconnection.html
+  UnRegisterConnection sqldb/unregisterconnection.html
+  GetConnectionDef sqldb/getconnectiondef.html
+  GetConnectionList sqldb/getconnectionlist.html
+  GlobalDBLogHook sqldb/globaldbloghook.html
  IBConnection ibconnection/index.html
   DEFDIALECT ibconnection/defdialect.html
   MAXBLOBSEGMENTSIZE ibconnection/maxblobsegmentsize.html
+  TDatabaseInfo ibconnection/tdatabaseinfo.html
   EIBDatabaseError ibconnection/eibdatabaseerror.html
    GDSErrorCode ibconnection/eibdatabaseerror.gdserrorcode.html
   TIBCursor ibconnection/tibcursor.html
   TIBTrans ibconnection/tibtrans.html
   TIBConnection ibconnection/tibconnection.html
    Create ibconnection/tibconnection.create.html
+   GetConnectionInfo sqldb/tsqlconnection.getconnectioninfo.html
    CreateDB ibconnection/tibconnection.createdb.html
    DropDB ibconnection/tibconnection.dropdb.html
    BlobSegmentSize ibconnection/tibconnection.blobsegmentsize.html
-   GetDBDialect ibconnection/tibconnection.getdbdialect.html
+   ODSMajorVersion ibconnection/tibconnection.odsmajorversion.html
    DatabaseName ibconnection/tibconnection.databasename.html
    Dialect ibconnection/tibconnection.dialect.html
+   CheckTransactionParams ibconnection/tibconnection.checktransactionparams.html
    KeepConnection ibconnection/tibconnection.keepconnection.html
    LoginPrompt ibconnection/tibconnection.loginprompt.html
    Params ibconnection/tibconnection.params.html
@@ -1832,35 +2395,215 @@
    TypeName ibconnection/tibconnectiondef.typename.html
    ConnectionClass ibconnection/tibconnectiondef.connectionclass.html
    Description ibconnection/tibconnectiondef.description.html
+   DefaultLibraryName sqldb/tconnectiondef.defaultlibraryname.html
+   LoadFunction sqldb/tconnectiondef.loadfunction.html
+   UnLoadFunction sqldb/tconnectiondef.unloadfunction.html
+   LoadedLibraryName sqldb/tconnectiondef.loadedlibraryname.html
  mssqlconn mssqlconn/index.html
+  TServerInfo mssqlconn/tserverinfo.html
   TClientCharset mssqlconn/tclientcharset.html
   TMSSQLConnection mssqlconn/tmssqlconnection.html
-   Create mssqlconn/tmssqlconnection.create.html
+   Create sqldb/tsqlconnection.create.html
+   GetConnectionInfo sqldb/tsqlconnection.getconnectioninfo.html
+   CreateDB sqldb/tsqlconnection.createdb.html
+   DropDB sqldb/tsqlconnection.dropdb.html
    Password mssqlconn/tmssqlconnection.password.html
-   Transaction mssqlconn/tmssqlconnection.transaction.html
+   Transaction sqldb/tsqlconnection.transaction.html
    UserName mssqlconn/tmssqlconnection.username.html
    CharSet mssqlconn/tmssqlconnection.charset.html
    HostName mssqlconn/tmssqlconnection.hostname.html
-   Connected mssqlconn/tmssqlconnection.connected.html
-   Role mssqlconn/tmssqlconnection.role.html
+   Connected sqldb/tsqlconnection.connected.html
+   Role sqldb/tsqlconnection.role.html
    DatabaseName mssqlconn/tmssqlconnection.databasename.html
-   KeepConnection mssqlconn/tmssqlconnection.keepconnection.html
-   LoginPrompt mssqlconn/tmssqlconnection.loginprompt.html
+   KeepConnection sqldb/tsqlconnection.keepconnection.html
+   LoginPrompt sqldb/tsqlconnection.loginprompt.html
    Params mssqlconn/tmssqlconnection.params.html
-   OnLogin mssqlconn/tmssqlconnection.onlogin.html
+   OnLogin sqldb/tsqlconnection.onlogin.html
   TSybaseConnection mssqlconn/tsybaseconnection.html
    Create mssqlconn/tsybaseconnection.create.html
   EMSSQLDatabaseError mssqlconn/emssqldatabaseerror.html
    DBErrorCode mssqlconn/emssqldatabaseerror.dberrorcode.html
   TMSSQLConnectionDef mssqlconn/tmssqlconnectiondef.html
-   TypeName mssqlconn/tmssqlconnectiondef.typename.html
-   ConnectionClass mssqlconn/tmssqlconnectiondef.connectionclass.html
-   Description mssqlconn/tmssqlconnectiondef.description.html
+   TypeName sqldb/tconnectiondef.typename.html
+   ConnectionClass sqldb/tconnectiondef.connectionclass.html
+   Description sqldb/tconnectiondef.description.html
+   DefaultLibraryName sqldb/tconnectiondef.defaultlibraryname.html
+   LoadFunction sqldb/tconnectiondef.loadfunction.html
+   UnLoadFunction sqldb/tconnectiondef.unloadfunction.html
+   LoadedLibraryName sqldb/tconnectiondef.loadedlibraryname.html
   TSybaseConnectionDef mssqlconn/tsybaseconnectiondef.html
    TypeName mssqlconn/tsybaseconnectiondef.typename.html
    ConnectionClass mssqlconn/tsybaseconnectiondef.connectionclass.html
    Description mssqlconn/tsybaseconnectiondef.description.html
   DBLibLibraryName mssqlconn/dbliblibraryname.html
+ fpjson fpjson/index.html
+  DefaultIndentSize fpjson/defaultindentsize.html
+  DefaultFormat fpjson/defaultformat.html
+  AsJSONFormat fpjson/asjsonformat.html
+  AsCompressedJSON fpjson/ascompressedjson.html
+  AsCompactJSON fpjson/ascompactjson.html
+  ValueJSONTypes fpjson/valuejsontypes.html
+  ActualValueJSONTypes fpjson/actualvaluejsontypes.html
+  StructuredJSONTypes fpjson/structuredjsontypes.html
+  TJSONtype fpjson/tjsontype.html
+  TJSONInstanceType fpjson/tjsoninstancetype.html
+  TJSONFloat fpjson/tjsonfloat.html
+  TJSONStringType fpjson/tjsonstringtype.html
+  TJSONUnicodeStringType fpjson/tjsonunicodestringtype.html
+  TJSONCharType fpjson/tjsonchartype.html
+  PJSONCharType fpjson/pjsonchartype.html
+  TFormatOption fpjson/tformatoption.html
+  TFormatOptions fpjson/tformatoptions.html
+  TJSONEnum fpjson/tjsonenum.html
+  TJSONDataClass fpjson/tjsondataclass.html
+  TJSONNumberType fpjson/tjsonnumbertype.html
+  TJSONFloatNumberClass fpjson/tjsonfloatnumberclass.html
+  TJSONIntegerNumberClass fpjson/tjsonintegernumberclass.html
+  TJSONInt64NumberClass fpjson/tjsonint64numberclass.html
+  TJSONQWordNumberClass fpjson/tjsonqwordnumberclass.html
+  TJSONStringClass fpjson/tjsonstringclass.html
+  TJSONBooleanClass fpjson/tjsonbooleanclass.html
+  TJSONNullClass fpjson/tjsonnullclass.html
+  TJSONArrayIterator fpjson/tjsonarrayiterator.html
+  TJSONArrayClass fpjson/tjsonarrayclass.html
+  TJSONObjectIterator fpjson/tjsonobjectiterator.html
+  TJSONObjectClass fpjson/tjsonobjectclass.html
+  TJSONParserHandler fpjson/tjsonparserhandler.html
+  TBaseJSONEnumerator fpjson/tbasejsonenumerator.html
+   GetCurrent fpjson/tbasejsonenumerator.getcurrent.html
+   MoveNext fpjson/tbasejsonenumerator.movenext.html
+   Current fpjson/tbasejsonenumerator.current.html
+  TJSONData fpjson/tjsondata.html
+   JSONType fpjson/tjsondata.jsontype.html
+   CompressedJSON fpjson/tjsondata.compressedjson.html
+   Create fpjson/tjsondata.create.html
+   Clear fpjson/tjsondata.clear.html
+   DumpJSON fpjson/tjsondata.dumpjson.html
+   GetEnumerator fpjson/tjsondata.getenumerator.html
+   FindPath fpjson/tjsondata.findpath.html
+   GetPath fpjson/tjsondata.getpath.html
+   Clone fpjson/tjsondata.clone.html
+   FormatJSON fpjson/tjsondata.formatjson.html
+   Count fpjson/tjsondata.count.html
+   Items fpjson/tjsondata.items.html
+   Value fpjson/tjsondata.value.html
+   AsString fpjson/tjsondata.asstring.html
+   AsUnicodeString fpjson/tjsondata.asunicodestring.html
+   AsFloat fpjson/tjsondata.asfloat.html
+   AsInteger fpjson/tjsondata.asinteger.html
+   AsInt64 fpjson/tjsondata.asint64.html
+   AsQWord fpjson/tjsondata.asqword.html
+   AsBoolean fpjson/tjsondata.asboolean.html
+   IsNull fpjson/tjsondata.isnull.html
+   AsJSON fpjson/tjsondata.asjson.html
+  TJSONNumber fpjson/tjsonnumber.html
+   JSONType fpjson/tjsonnumber.jsontype.html
+   NumberType fpjson/tjsonnumber.numbertype.html
+  TJSONFloatNumber fpjson/tjsonfloatnumber.html
+   Create fpjson/tjsonfloatnumber.create.html
+   NumberType fpjson/tjsonfloatnumber.numbertype.html
+   Clear fpjson/tjsonfloatnumber.clear.html
+   Clone fpjson/tjsonfloatnumber.clone.html
+  TJSONIntegerNumber fpjson/tjsonintegernumber.html
+   Create fpjson/tjsonintegernumber.create.html
+   NumberType fpjson/tjsonintegernumber.numbertype.html
+   Clear fpjson/tjsonintegernumber.clear.html
+   Clone fpjson/tjsonintegernumber.clone.html
+  TJSONInt64Number fpjson/tjsonint64number.html
+   Create fpjson/tjsonint64number.create.html
+   NumberType fpjson/tjsonint64number.numbertype.html
+   Clear fpjson/tjsonint64number.clear.html
+   Clone fpjson/tjsonint64number.clone.html
+  TJSONQWordNumber fpjson/tjsonqwordnumber.html
+   Create fpjson/tjsonqwordnumber.create.html
+   NumberType fpjson/tjsonqwordnumber.numbertype.html
+   Clear fpjson/tjsonqwordnumber.clear.html
+   Clone fpjson/tjsonqwordnumber.clone.html
+  TJSONString fpjson/tjsonstring.html
+   Create fpjson/tjsonstring.create.html
+   JSONType fpjson/tjsonstring.jsontype.html
+   Clear fpjson/tjsonstring.clear.html
+   Clone fpjson/tjsonstring.clone.html
+  TJSONBoolean fpjson/tjsonboolean.html
+   Create fpjson/tjsonboolean.create.html
+   JSONType fpjson/tjsonboolean.jsontype.html
+   Clear fpjson/tjsonboolean.clear.html
+   Clone fpjson/tjsonboolean.clone.html
+  TJSONNull fpjson/tjsonnull.html
+   JSONType fpjson/tjsonnull.jsontype.html
+   Clear fpjson/tjsonnull.clear.html
+   Clone fpjson/tjsonnull.clone.html
+  TJSONArray fpjson/tjsonarray.html
+   Create fpjson/tjsonarray.create.html
+   Destroy fpjson/tjsonarray.destroy.html
+   JSONType fpjson/tjsonarray.jsontype.html
+   Clone fpjson/tjsonarray.clone.html
+   Iterate fpjson/tjsonarray.iterate.html
+   IndexOf fpjson/tjsonarray.indexof.html
+   GetEnumerator fpjson/tjsonarray.getenumerator.html
+   Clear fpjson/tjsonarray.clear.html
+   Add fpjson/tjsonarray.add.html
+   Delete fpjson/tjsonarray.delete.html
+   Exchange fpjson/tjsonarray.exchange.html
+   Extract fpjson/tjsonarray.extract.html
+   Insert fpjson/tjsonarray.insert.html
+   Move fpjson/tjsonarray.move.html
+   Remove fpjson/tjsonarray.remove.html
+   Sort fpjson/tjsonarray.sort.html
+   Items fpjson/tjsonarray.items.html
+   Types fpjson/tjsonarray.types.html
+   Nulls fpjson/tjsonarray.nulls.html
+   Integers fpjson/tjsonarray.integers.html
+   Int64s fpjson/tjsonarray.int64s.html
+   QWords fpjson/tjsonarray.qwords.html
+   Strings fpjson/tjsonarray.strings.html
+   UnicodeStrings fpjson/tjsonarray.unicodestrings.html
+   Floats fpjson/tjsonarray.floats.html
+   Booleans fpjson/tjsonarray.booleans.html
+   Arrays fpjson/tjsonarray.arrays.html
+   Objects fpjson/tjsonarray.objects.html
+  TJSONObject fpjson/tjsonobject.html
+   Create fpjson/tjsonobject.create.html
+   Destroy fpjson/tjsonobject.destroy.html
+   JSONType fpjson/tjsonobject.jsontype.html
+   UnquotedMemberNames fpjson/tjsonobject.unquotedmembernames.html
+   Clone fpjson/tjsonobject.clone.html
+   GetEnumerator fpjson/tjsonobject.getenumerator.html
+   Iterate fpjson/tjsonobject.iterate.html
+   IndexOf fpjson/tjsonobject.indexof.html
+   IndexOfName fpjson/tjsonobject.indexofname.html
+   Find fpjson/tjsonobject.find.html
+   Get fpjson/tjsonobject.get.html
+   Clear fpjson/tjsonobject.clear.html
+   Add fpjson/tjsonobject.add.html
+   Delete fpjson/tjsonobject.delete.html
+   Remove fpjson/tjsonobject.remove.html
+   Extract fpjson/tjsonobject.extract.html
+   Names fpjson/tjsonobject.names.html
+   Elements fpjson/tjsonobject.elements.html
+   Types fpjson/tjsonobject.types.html
+   Nulls fpjson/tjsonobject.nulls.html
+   Floats fpjson/tjsonobject.floats.html
+   Integers fpjson/tjsonobject.integers.html
+   Int64s fpjson/tjsonobject.int64s.html
+   QWords fpjson/tjsonobject.qwords.html
+   Strings fpjson/tjsonobject.strings.html
+   UnicodeStrings fpjson/tjsonobject.unicodestrings.html
+   Booleans fpjson/tjsonobject.booleans.html
+   Arrays fpjson/tjsonobject.arrays.html
+   Objects fpjson/tjsonobject.objects.html
+  EJSON fpjson/ejson.html
+  SetJSONInstanceType fpjson/setjsoninstancetype.html
+  GetJSONInstanceType fpjson/getjsoninstancetype.html
+  StringToJSONString fpjson/stringtojsonstring.html
+  JSONStringToString fpjson/jsonstringtostring.html
+  JSONTypeName fpjson/jsontypename.html
+  CreateJSON fpjson/createjson.html
+  CreateJSONArray fpjson/createjsonarray.html
+  CreateJSONObject fpjson/createjsonobject.html
+  GetJSON fpjson/getjson.html
+  SetJSONParserHandler fpjson/setjsonparserhandler.html
+  GetJSONParserHandler fpjson/getjsonparserhandler.html
 
 :classes
 #fcl.iostream.EIOStreamError #rtl.Classes.EStreamError
@@ -1920,8 +2663,10 @@
 1VdwYcountChars
 1Vdwy
 1VFXTermProgram
+1VFPipeBufferSize
 1MFreeStreams
 1MGetExitStatus
+1MGetExitCode
 1MGetRunning
 1MGetWindowRect
 1MSetCommandLine
@@ -1969,8 +2714,10 @@
 3POutput r
 3PStderr r
 3PExitStatus r
+3PExitCode r
 3PInheritHandles rw
 3POnForkEvent rw
+4PPipeBufferSize rw
 4PActive rw
 4PApplicationName rw
 4PCommandLine rw
@@ -2003,7 +2750,7 @@
 2MSetItem
 2MSetCapacity
 2MGetCapacity
-0MCreate
+3MCreate
 3MDestroy
 3MClear
 3MAdd
@@ -2021,18 +2768,18 @@
 3MAssign
 3MPack
 3MSort
-0MForEachCall
+3MForEachCall
 3PCapacity rw
 3PCount rw
 3POwnsObjects rw
 3PItems rw
 3PList r
 #fcl.contnrs.TObjectList #rtl.Classes.TList
-1Vffreeobjects
+1VFFreeObjects
 2MNotify
 2MGetItem
 2MSetItem
-0Mcreate
+3MCreate
 3MAdd
 3MExtract
 3MRemove
@@ -2134,7 +2881,7 @@
 3MRemove
 3MPack
 3MShowStatistics
-0MForEachCall
+3MForEachCall
 3PCapacity rw
 3PCount rw
 3PItems rw
@@ -2182,7 +2929,7 @@
 3MFindInstanceOf
 3MPack
 3MShowStatistics
-0MForEachCall
+3MForEachCall
 3PCapacity rw
 3PCount rw
 3POwnsObjects rw
@@ -2195,7 +2942,6 @@
 3PKey r
 #fcl.contnrs.TFPCustomHashTable #rtl.System.TObject
 1VFHashTable
-1VFHashTableSize
 1VFHashFunction
 1VFCount
 1MGetDensity
@@ -2206,6 +2952,7 @@
 1MGetLoadFactor
 1MGetAVGChainLen
 1MGetMaxChainLength
+2VFHashTableSize
 2MChain
 2MCreateNewNode
 2MAddNode
@@ -2235,22 +2982,28 @@
 1VFData
 3PData rw
 #fcl.contnrs.TFPDataHashTable #fcl.contnrs.TFPCustomHashTable
+1VFIteratorCallBack
+1MCallbackIterator
 2MCreateNewNode
 2MAddNode
 2MSetData
 2MGetData
 2MForEachCall
+3MIterate
 3MAdd
 3PItems rw
 #fcl.contnrs.THTStringNode #fcl.contnrs.THTCustomNode
 1VFData
 3PData rw
 #fcl.contnrs.TFPStringHashTable #fcl.contnrs.TFPCustomHashTable
+1VFIteratorCallBack
+1MCallbackIterator
 2MCreateNewNode
 2MAddNode
 2MSetData
 2MGetData
 2MForEachCall
+3MIterate
 3MAdd
 3PItems rw
 #fcl.contnrs.THTObjectNode #fcl.contnrs.THTCustomNode
@@ -2260,6 +3013,8 @@
 3MDestroy
 #fcl.contnrs.TFPObjectHashTable #fcl.contnrs.TFPCustomHashTable
 1VFOwnsObjects
+1VFIteratorCallBack
+1MCallbackIterator
 2MCreateNewNode
 2MAddNode
 2MSetData
@@ -2267,9 +3022,10 @@
 2MForEachCall
 3MCreate
 3MCreateWith
+3MIterate
 3MAdd
 3PItems rw
-3POwnsObjects rw
+3POwnsObjects r
 #fcl.contnrs.EDuplicate #rtl.sysutils.Exception
 #fcl.contnrs.EKeyNotFound #rtl.sysutils.Exception
 #fcl.contnrs.TCustomBucketList #rtl.System.TObject
@@ -2292,7 +3048,7 @@
 3MAssign
 3MExists
 3MFind
-0MForEach
+3MForEach
 3MRemove
 3PData rw
 #fcl.contnrs.TBucketList #fcl.contnrs.TCustomBucketList
@@ -2321,6 +3077,7 @@
 3Mwrite
 3Mflush
 3Mget_compressionrate
+3POnProgress
 #fcl.zstream.Tdecompressionstream #fcl.zstream.Tcustomzlibstream
 2Vraw_read
 2Vcompressed_read
@@ -2330,8 +3087,9 @@
 3Mcreate
 3Mdestroy
 3Mread
-3Mseek
+3MSeek
 3Mget_compressionrate
+3POnProgress
 #fcl.zstream.TGZFileStream #rtl.Classes.TStream
 2VFgzfile
 2VFfilemode
@@ -2377,7 +3135,7 @@
 2MBufferError
 2MFillBuffer
 2MFlushBuffer
-0MCreate
+3MCreate
 3MDestroy
 3PBuffer r
 3PCapacity rw
@@ -2395,7 +3153,6 @@
 2VBytesWritten
 2VBuf
 2VBufSize
-3MCreate
 3MDestroy
 3MFlush
 3MWrite
@@ -2411,7 +3168,7 @@
 2VBuf
 2VBufPos
 2VFEOF
-0MCreate
+3MCreate
 3MReset
 3MRead
 3MSeek
@@ -2426,9 +3183,9 @@
 2VTranslTable
 2VOrigStrings
 2VTranslStrings
-0MCreate
+3MCreate
 3MDestroy
-0MTranslate
+3MTranslate
 #fcl.gettext.EMOFileError #rtl.sysutils.Exception
 #fcl.ezcgi.ECGIException #rtl.sysutils.Exception
 #fcl.ezcgi.TEZcgi #rtl.System.TObject
@@ -2529,6 +3286,73 @@
 3MWriteStr
 3MWriteValue
 3PPosition rw
+#fcl.streamex.TTextReader #rtl.System.TObject
+3MCreate
+3MReset
+3MClose
+3MIsEof
+3MReadLine
+3PEof r
+#fcl.streamex.TStreamReader #fcl.streamex.TTextReader
+1VFBufferRead
+1VFBufferPosition
+1VFOwnsStream
+1VFStream
+1VFBuffer
+1MFillBuffer
+3MCreate
+3MDestroy
+3MReset
+3MClose
+3MIsEof
+3MReadLine
+3PBaseStream r
+3POwnsStream rw
+#fcl.streamex.TStringReader #fcl.streamex.TTextReader
+1VFReader
+3MCreate
+3MDestroy
+3MReset
+3MClose
+3MIsEof
+3MReadLine
+#fcl.streamex.TFileReader #fcl.streamex.TTextReader
+1VFReader
+3MCreate
+3MDestroy
+3MReset
+3MClose
+3MIsEof
+3MReadLine
+#fcl.streamex.TWindowedStream #rtl.Classes.TOwnerStream
+1VfStart
+1VfFrontier
+1VfStartingPositionHere
+1VfPositionHere
+2MGetSize
+2MSetSize
+3MCreate
+3MDestroy
+3MRead
+3MWrite
+3MSeek
+#fcl.streamex.TStreamHelper 
+0MReadWordLE
+0MReadDWordLE
+0MReadQWordLE
+0MWriteWordLE
+0MWriteDWordLE
+0MWriteQWordLE
+0MReadWordBE
+0MReadDWordBE
+0MReadQWordBE
+0MWriteWordBE
+0MWriteDWordBE
+0MWriteQWordBE
+0MReadSingle
+0MReadDouble
+0MWriteSingle
+0MWriteDouble
 #fcl.inicol.TIniCollectionItem #rtl.Classes.TCollectionItem
 2MGetSectionName
 2MSetSectionName
@@ -2570,6 +3394,17 @@
 3MFindByUserData
 3PNamedItems rw
 #fcl.inicol.EIniCol #rtl.sysutils.Exception
+#fcl.IniFiles.TStringHash #rtl.System.TObject
+1VFAddReplacesExisting
+1VFHashList
+3MCreate
+3MDestroy
+3MAdd
+3MClear
+3MModify
+3MRemove
+3MValueOf
+3PAddReplacesExisting rw
 #fcl.IniFiles.THashedStringList #rtl.Classes.TStringList
 1VFValueHash
 1VFNameHash
@@ -2578,7 +3413,6 @@
 1MUpdateValueHash
 1MUpdateNameHash
 2MChanged
-3MCreate
 3MDestroy
 3MIndexOf
 3MIndexOfName
@@ -2610,10 +3444,12 @@
 3PItems r
 #fcl.IniFiles.TCustomIniFile #rtl.System.TObject
 1VFFileName
+1VFOptions
 1VFSectionList
-1VFEscapeLineFeeds
-1VFCaseSensitive
-1VFStripQuotes
+1MGetOption
+1MSetOption
+1MSetOptions
+3VFormatSettings
 3MCreate
 3MDestroy
 3MSectionExists
@@ -2621,6 +3457,8 @@
 3MWriteString
 3MReadInteger
 3MWriteInteger
+3MReadInt64
+3MWriteInt64
 3MReadBool
 3MWriteBool
 3MReadDate
@@ -2641,20 +3479,23 @@
 3MUpdateFile
 3MValueExists
 3PFileName r
+3POptions rw
 3PEscapeLineFeeds r
 3PCaseSensitive rw
 3PStripQuotes rw
+3PFormatSettingsActive rw
 #fcl.IniFiles.TIniFile #fcl.IniFiles.TCustomIniFile
 1VFStream
 1VFCacheUpdates
 1VFDirty
+1VFBOM
 1MFillSectionList
 1MDeleteSection
 1MMaybeDeleteSection
 1MSetCacheUpdates
 2MMaybeUpdateFile
 2PDirty r
-0MCreate
+3MCreate
 3MDestroy
 3MReadString
 3MWriteString
@@ -2781,11 +3622,11 @@
 3MUnRegisterMessageFile
 3MPause
 3MResume
-0MLog
-0MWarning
-0MError
-0MDebug
-0MInfo
+3MLog
+3MWarning
+3MError
+3MDebug
+3MInfo
 4PAppendContent rw
 4PIdentification rw
 4PLogType rw
@@ -2832,16 +3673,23 @@
 #fcl.CustApp.TCustomApplication #rtl.Classes.TComponent
 1VFEventLogFilter
 1VFOnException
+1VFSingleInstance
+1VFSingleInstanceClass
+1VFSingleInstanceEnabled
 1VFTerminated
 1VFHelpFile
 1VFTitle
 1VFOptionChar
 1VFCaseSensitiveOptions
 1VFStopOnException
+1VFExceptionExitCode
 1MGetEnvironmentVar
 1MGetExeName
 1MGetLocation
+1MGetSingleInstance
+1MSetSingleInstanceClass
 1MGetTitle
+2MGetOptionAtIndex
 2MSetTitle
 2MGetConsoleApplication
 2MDoRun
@@ -2856,10 +3704,12 @@
 3MShowException
 3MTerminate
 3MFindOptionIndex
-0MGetOptionValue
-0MHasOption
-0MCheckOptions
-0MGetEnvironmentList
+3MGetOptionValue
+3MGetOptionValues
+3MHasOption
+3MCheckOptions
+3MGetNonOptions
+3MGetEnvironmentList
 3MLog
 3PExeName r
 3PHelpFile rw
@@ -2874,7 +3724,11 @@
 3POptionChar rw
 3PCaseSensitiveOptions rw
 3PStopOnException rw
+3PExceptionExitCode rw
 3PEventLogFilter rw
+3PSingleInstance r
+3PSingleInstanceClass rw
+3PSingleInstanceEnabled rw
 #fcl.BlowFish.TBlowFish #rtl.System.TObject
 1VPBox
 1VSBox
@@ -2890,7 +3744,7 @@
 1VFPos
 2MGetPosition
 2MInvalidSeek
-0MCreate
+3MCreate
 3MDestroy
 3PBlowFish r
 #fcl.BlowFish.TBlowFishEncryptStream #fcl.BlowFish.TBlowFishStream
@@ -2901,12 +3755,33 @@
 #fcl.BlowFish.TBlowFishDeCryptStream #fcl.BlowFish.TBlowFishStream
 3MRead
 3MSeek
+#fcl.simpleipc.TIPCServerMsg #rtl.System.TObject
+6VFStream
+6VFMsgType
+3MCreate
+3MDestroy
+3PStream r
+3PMsgType rw
+#fcl.simpleipc.TIPCServerMsgQueue #rtl.System.TObject
+6VFList
+6VFMaxCount
+6VFMaxAction
+6MGetCount
+6MDeleteAndFree
+6MPrepareToPush
+3MCreate
+3MDestroy
+3MClear
+3MPush
+3MPop
+3PCount r
+3PMaxCount rw
+3PMaxAction rw
 #fcl.simpleipc.TIPCServerComm #rtl.System.TObject
 1VFOwner
 2MGetInstanceID
 2MDoError
-2MSetMsgType
-2MMsgData
+2MPushMessage
 3MCreate
 3POwner r
 3MStartServer
@@ -2925,34 +3800,59 @@
 2MCheckActive
 2MActivate
 2MDeactivate
+2MLoaded
 2PBusy r
 4PActive rw
 4PServerID rw
 #fcl.simpleipc.TSimpleIPCServer #fcl.simpleipc.TSimpleIPC
+1VFOnMessageError
+1VFOnMessageQueued
+1VFQueue
 1VFGlobal
 1VFOnMessage
 1VFMsgType
 1VFMsgData
+1VFThreadTimeOut
+1VFThread
+1VFLock
+1VFErrMsg
+1MDoMessageQueued
+1MDoMessageError
 1MGetInstanceID
+1MGetMaxAction
+1MGetMaxQueue
 1MGetStringMessage
 1MSetGlobal
+1MSetMaxAction
+1MSetMaxQueue
 2VFIPCComm
+2MStartThread
+2MStopThread
 2MCommClass
+2MPushMessage
+2MPopMessage
 2MActivate
 2MDeactivate
-2MReadMessage
+2PQueue r
+2PThread r
 3MCreate
 3MDestroy
 3MStartServer
 3MStopServer
 3MPeekMessage
+3MReadMessage
 3PStringMessage r
 3MGetMessageData
 3PMsgType r
 3PMsgData r
 3PInstanceID r
+4PThreadTimeOut rw
 4PGlobal rw
 4POnMessage rw
+4POnMessageQueued rw
+4POnMessageError rw
+4PMaxQueue rw
+4PMaxAction rw
 #fcl.simpleipc.TIPCClientComm #rtl.System.TObject
 1VFOwner
 2MDoError
@@ -2975,8 +3875,8 @@
 3MDisconnect
 3MServerRunning
 3MSendMessage
-0MSendStringMessage
-0MSendStringMessageFmt
+3MSendStringMessage
+3MSendStringMessageFmt
 3PServerInstance rw
 #fcl.simpleipc.EIPCError #rtl.sysutils.Exception
 #fcl.rttiutils.TPropInfoList #rtl.System.TObject
@@ -2997,6 +3897,7 @@
 1VFOwner
 1VFPrefix
 1VFSection
+1VFOptions
 1VFOnReadString
 1VFOnWriteString
 1VFOnEraseSection
@@ -3039,6 +3940,7 @@
 3MLoadProperties
 3MLoadObjectsProps
 3MStoreObjectsProps
+3POptions rw
 3PAObject rw
 3PPrefix rw
 3PSection rw
@@ -3086,7 +3988,7 @@
 3MFindRightMostKey
 3MFindLeftMostSameKey
 3MFindRightMostSameKey
-0MAdd
+3MAdd
 3MDelete
 3MRemove
 3MRemovePointer
@@ -3101,7 +4003,7 @@
 3MWriteReportToStream
 3MReportAsString
 3MSetNodeManager
-0MCreate
+3MCreate
 3MDestroy
 3MGetEnumerator
 #fcl.AVL_Tree.TAVLTreeNodeMemManager #fcl.AVL_Tree.TBaseAVLTreeNodeManager
@@ -3137,6 +4039,7 @@
 2MInstall
 2MUnInstall
 2MHandleCustomCode
+3MCheckControlMessages
 3MLogMessage
 3MReportStatus
 3PDefinition r
@@ -3193,7 +4096,7 @@
 3PDaemon r
 3PParams r
 3PLastStatus r
-3PCheckPoint
+3PCheckPoint r
 #fcl.daemonapp.TDependency #rtl.Classes.TCollectionItem
 1VFName
 1VFIsGroup
@@ -3324,6 +4227,7 @@
 1VFRunMode
 1VFSysData
 1VFControllerCount
+1VFAutoRegisterMessageFile
 1MBindDaemonDefs
 1MInstallRun
 1MSysInstallDaemon
@@ -3346,6 +4250,7 @@
 2MDoRun
 2MDoLog
 2PSysData rw
+3MCreate
 3MDestroy
 3MShowException
 3MCreateDaemon
@@ -3360,17 +4265,18 @@
 3PGUIMainLoop rw
 3PGuiHandle rw
 3PRunMode r
+3PAutoRegisterMessageFile rw
 #fcl.daemonapp.TDaemonApplication #fcl.daemonapp.TCustomDaemonApplication
 #fcl.daemonapp.EDaemon #rtl.sysutils.Exception
 #fcl.libtar.TTarArchive #rtl.System.TObject
 2VFStream
 2VFOwnsStream
 2VFBytesToGo
-0MCreate
+3MCreate
 3MDestroy
 3MReset
 3MFindNext
-0MReadFile
+3MReadFile
 3MGetFilePos
 3MSetFilePos
 #fcl.libtar.TTarWriter #rtl.System.TObject
@@ -3385,7 +4291,7 @@
 2VFMode
 2VFMagic
 2MCreateEmpty
-0MCreate
+3MCreate
 3MDestroy
 3MAddFile
 3MAddStream
@@ -3431,7 +4337,7 @@
 2MGetPosition
 3MDestroy
 3MRead
-0MSeek
+3MSeek
 #fcl.ascii85.TASCII85EncoderStream #rtl.Classes.TOwnerStream
 1VFPos
 1VFTuple
@@ -3446,34 +4352,46 @@
 3MWrite
 3PWidth r
 3PBoundary r
-#fcl.fpTimer.TFPCustomTimer #rtl.Classes.TComponent
-1VFInterval
+#fcl.fptimer.TFPCustomTimer #rtl.Classes.TComponent
 1VFDriver
+1VFOnStartTimer
+1VFOnStopTimer
 1VFOnTimer
-1VFContinue
-1VFRunning
+1VFInterval
+1VFActive
 1VFEnabled
+1VFUseTimerThread
 1MSetEnabled
-2PContinue rw
-2MTimer
+1MSetInterval
+2PActive rw
 2MCreateTimerDriver
+2MTimer
 3MCreate
 3MDestroy
 3MStartTimer
 3MStopTimer
 2PEnabled rw
 2PInterval rw
+2PUseTimerThread rw
 2POnTimer rw
-#fcl.fpTimer.TFPTimer #fcl.fpTimer.TFPCustomTimer
+2POnStartTimer rw
+2POnStopTimer rw
+#fcl.fptimer.TFPTimer #fcl.fptimer.TFPCustomTimer
 4PEnabled
 4PInterval
+4PUseTimerThread
 4POnTimer
-#fcl.fpTimer.TFPTimerDriver #rtl.System.TObject
+4POnStartTimer
+4POnStopTimer
+#fcl.fptimer.TFPTimerDriver #rtl.System.TObject
 2VFTimer
+2VFTimerStarted
+2MSetInterval
 3MCreate
 3MStartTimer
 3MStopTimer
 3PTimer r
+3PTimerStarted r
 #fcl.db.EDatabaseError #rtl.sysutils.Exception
 #fcl.db.EUpdateError #fcl.db.EDatabaseError
 1VFContext
@@ -3516,7 +4434,7 @@
 1MSetPrecision
 1MSetSize
 1MSetRequired
-0MCreate
+3MCreate
 3MDestroy
 3MAssign
 3MCreateField
@@ -3532,8 +4450,9 @@
 1VFHiddenFields
 1MGetItem
 1MSetItem
+2MFieldDefClass
 3MCreate
-0MAdd
+3MAdd
 3MAddFieldDef
 3MAssign
 3MFind
@@ -3562,6 +4481,7 @@
 1VFDisplayLabel
 1VFDisplayWidth
 1VFEditMask
+1VFFieldDef
 1VFFieldKind
 1VFFieldName
 1VFFieldNo
@@ -3602,13 +4522,15 @@
 1MSetLookup
 1MSetReadOnly
 1MSetVisible
-1MIsDisplayStored
+1MIsDisplayLabelStored
+1MIsDisplayWidthStored
 1MGetLookupList
 1MCalcLookupValue
 2MAccessError
 2MCheckInactive
 2MCheckTypeSize
 2MChange
+2MBind
 2MDataChanged
 2MFreeBuffers
 2MGetAsBCD
@@ -3646,7 +4568,7 @@
 2MSetAsFloat
 2MSetAsLongint
 2MSetAsInteger
-2MSetAsLargeint
+2MSetAsLargeInt
 2MSetAsVariant
 2MSetAsString
 2MSetAsWideString
@@ -3663,11 +4585,11 @@
 3MAssignValue
 3MClear
 3MFocusControl
-0MGetData
+3MGetData
 3MIsBlob
 3MIsValidChar
 3MRefreshLookupList
-0MSetData
+3MSetData
 3MSetFieldType
 3MValidate
 3PAsBCD rw
@@ -3701,16 +4623,17 @@
 3POffset r
 3PSize rw
 3PText rw
-3PValidChars r
+3PValidChars rw
 3PValue rw
 3POldValue r
 3PLookupList r
+3PFieldDef r
 4PAlignment rw
 4PCustomConstraint rw
 4PConstraintErrorMessage rw
 4PDefaultExpression rw
 4PDisplayLabel rws
-4PDisplayWidth rw
+4PDisplayWidth rws
 4PFieldKind rw
 4PFieldName rw
 4PHasConstraints r
@@ -3737,7 +4660,8 @@
 2MGetAsBoolean
 2MGetAsDateTime
 2MGetAsFloat
-2MGetAsLongint
+2MGetAsInteger
+2MGetAsLargeInt
 2MGetAsString
 2MGetAsVariant
 2MGetDataSize
@@ -3747,7 +4671,8 @@
 2MSetAsBoolean
 2MSetAsDateTime
 2MSetAsFloat
-2MSetAsLongint
+2MSetAsInteger
+2MSetAsLargeInt
 2MSetAsString
 2MSetVarValue
 3MCreate
@@ -3787,22 +4712,22 @@
 1VFMinValue
 1VFMaxValue
 1VFMinRange
-1VFMAxRange
+1VFMaxRange
 1MSetMinValue
 1MSetMaxValue
 2MGetAsFloat
-2MGetAsLongint
+2MGetAsInteger
 2MGetAsString
 2MGetAsVariant
 2MGetDataSize
 2MGetText
 2MGetValue
 2MSetAsFloat
-2MSetAsLongint
+2MSetAsInteger
 2MSetAsString
 2MSetVarValue
-2MGetAsLargeint
-2MSetAsLargeint
+2MGetAsLargeInt
+2MSetAsLargeInt
 3MCreate
 3MCheckRange
 3PValue rw
@@ -3813,20 +4738,20 @@
 1VFMinValue
 1VFMaxValue
 1VFMinRange
-1VFMAxRange
+1VFMaxRange
 1MSetMinValue
 1MSetMaxValue
 2MGetAsFloat
-2MGetAsLongint
-2MGetAsLargeint
+2MGetAsInteger
+2MGetAsLargeInt
 2MGetAsString
 2MGetAsVariant
 2MGetDataSize
 2MGetText
 2MGetValue
 2MSetAsFloat
-2MSetAsLongint
-2MSetAsLargeint
+2MSetAsInteger
+2MSetAsLargeInt
 2MSetAsString
 2MSetVarValue
 3MCreate
@@ -3841,7 +4766,7 @@
 2MGetDataSize
 3MCreate
 #fcl.db.TAutoIncField #fcl.db.TLongintField
-2MSetAsLongInt
+2MSetAsInteger
 3MCreate
 #fcl.db.TFloatField #fcl.db.TNumericField
 1VFCurrency
@@ -3850,14 +4775,18 @@
 1VFPrecision
 1MSetCurrency
 1MSetPrecision
+2MGetAsBCD
 2MGetAsFloat
-2MGetAsLongint
+2MGetAsLargeInt
+2MGetAsInteger
 2MGetAsVariant
 2MGetAsString
 2MGetDataSize
 2MGetText
+2MSetAsBCD
 2MSetAsFloat
-2MSetAsLongint
+2MSetAsLargeInt
+2MSetAsInteger
 2MSetAsString
 2MSetVarValue
 3MCreate
@@ -3915,6 +4844,7 @@
 2MGetAsString
 2MGetAsVariant
 2MGetText
+2MGetValue
 2MSetAsBytes
 2MSetAsString
 2MSetText
@@ -3933,17 +4863,19 @@
 1VFPrecision
 1VFCurrency
 2MCheckTypeSize
+2MGetAsBCD
 2MGetAsCurrency
 2MGetAsFloat
-2MGetAsLongint
+2MGetAsInteger
 2MGetAsString
 2MGetValue
 2MGetAsVariant
 2MGetDataSize
 2MGetDefaultWidth
 2MGetText
+2MSetAsBCD
 2MSetAsFloat
-2MSetAsLongint
+2MSetAsInteger
 2MSetAsString
 2MSetAsCurrency
 2MSetVarValue
@@ -3968,7 +4900,8 @@
 2MGetAsBCD
 2MGetAsCurrency
 2MGetAsFloat
-2MGetAsLongint
+2MGetAsLargeInt
+2MGetAsInteger
 2MGetAsString
 2MGetAsVariant
 2MGetDataSize
@@ -3976,7 +4909,8 @@
 2MGetText
 2MSetAsBCD
 2MSetAsFloat
-2MSetAsLongint
+2MSetAsLargeInt
+2MSetAsInteger
 2MSetAsString
 2MSetAsCurrency
 2MSetVarValue
@@ -3989,20 +4923,23 @@
 4PMinValue rw
 4PSize
 #fcl.db.TBlobField #fcl.db.TField
-1VFBlobType
 1VFModified
 1VFTransliterate
 1MGetBlobStream
+1MGetBlobType
+1MSetBlobType
 2MFreeBuffers
+2MGetAsBytes
 2MGetAsString
 2MGetAsVariant
+2MGetAsWideString
 2MGetBlobSize
 2MGetIsNull
 2MGetText
+2MSetAsBytes
 2MSetAsString
 2MSetText
 2MSetVarValue
-2MGetAsWideString
 2MSetAsWideString
 3MCreate
 3MClear
@@ -4070,12 +5007,12 @@
 2MSetDescFields
 2MSetExpression
 3MCreate
-3PExpression rw
-3PFields rw
-3PCaseInsFields rw
-3PDescFields rw
-3POptions rw
-3PSource rw
+4PExpression rw
+4PFields rw
+4PCaseInsFields rw
+4PDescFields rw
+4POptions rw
+4PSource rw
 #fcl.db.TIndexDefs #fcl.db.TDefCollection
 1MGetItem
 1MSetItem
@@ -4111,11 +5048,12 @@
 3MCreate
 3MMoveNext
 3PCurrent r
-#fcl.db.Tfields #rtl.System.TObject
+#fcl.db.TFields #rtl.System.TObject
 1VFDataset
 1VFFieldList
 1VFOnChange
 1VFValidFieldKinds
+2MClearFieldDefs
 2MChanged
 2MCheckfieldKind
 2MGetCount
@@ -4155,6 +5093,7 @@
 2MAssignParam
 2MAssignTo
 2MGetAsBoolean
+2MGetAsBytes
 2MGetAsCurrency
 2MGetAsDateTime
 2MGetAsFloat
@@ -4167,8 +5106,10 @@
 2MGetDisplayName
 2MGetIsNull
 2MIsEqual
+2MSetAsBCD
 2MSetAsBlob
 2MSetAsBoolean
+2MSetAsBytes
 2MSetAsCurrency
 2MSetAsDate
 2MSetAsDateTime
@@ -4186,7 +5127,7 @@
 2MSetText
 2MGetAsWideString
 2MSetAsWideString
-0MCreate
+3MCreate
 3MAssign
 3MAssignField
 3MAssignToField
@@ -4199,8 +5140,10 @@
 3MLoadFromStream
 3MSetBlobData
 3MSetData
+3PAsBCD rw
 3PAsBlob rw
 3PAsBoolean rw
+3PAsBytes rw
 3PAsCurrency rw
 3PAsDate rw
 3PAsDateTime rw
@@ -4218,7 +5161,6 @@
 3PIsNull r
 3PNativeStr rw
 3PText rw
-3PValue rws
 3PAsWideString rw
 4PDataType rw
 4PName rw
@@ -4226,6 +5168,14 @@
 4PParamType rw
 4PPrecision rw
 4PSize rw
+4PValue rws
+#fcl.db.TParamsEnumerator #rtl.System.TObject
+1VFPosition
+1VFParams
+1MGetCurrent
+3MCreate
+3MMoveNext
+3PCurrent r
 #fcl.db.TParams #rtl.Classes.TCollection
 1VFOwner
 1MGetItem
@@ -4235,15 +5185,17 @@
 2MAssignTo
 2MGetDataSet
 2MGetOwner
-0MCreate
+2MParamClass
+3MCreate
 3MAddParam
 3MAssignValues
 3MCreateParam
 3MFindParam
 3MGetParamList
 3MIsEqual
+3MGetEnumerator
 3MParamByName
-0MParseSQL
+3MParseSQL
 3MRemoveParam
 3MCopyParamValuesFromDataset
 3PDataset r
@@ -4427,7 +5379,7 @@
 2MSetRecNo
 2MSetState
 2MSetTempState
-2MTempbuffer
+2MTempBuffer
 2MUpdateIndexDefs
 2PActiveRecord r
 2PCurrentRecord r
@@ -4457,6 +5409,8 @@
 2MSetBookmarkFlag
 2MSetBookmarkData
 2MSetUniDirectional
+2MFieldDefsClass
+2MFieldsClass
 2MGetRecord
 2MInternalClose
 2MInternalOpen
@@ -4486,8 +5440,8 @@
 3MCreate
 3MDestroy
 3MActiveBuffer
-0MGetFieldData
-0MSetFieldData
+3MGetFieldData
+3MSetFieldData
 3MAppend
 3MAppendRecord
 3MBookmarkValid
@@ -4584,6 +5538,13 @@
 3POnFilterRecord rw
 3POnNewRecord rw
 3POnPostError rw
+#fcl.db.TDataSetEnumerator #rtl.System.TObject
+1VFDataSet
+1VFBOF
+1MGetCurrent
+3MCreate
+3MMoveNext
+3PCurrent r
 #fcl.db.TDataLink #rtl.Classes.TPersistent
 1VFFirstRecord
 1VFBufferCount
@@ -4661,6 +5622,15 @@
 3PFields r
 3POnMasterChange rw
 3POnMasterDisable rw
+#fcl.db.TMasterParamsDataLink #fcl.db.TMasterDataLink
+1VFParams
+1MSetParams
+2MDoMasterDisable
+2MDoMasterChange
+3MCreate
+3MRefreshParamNames
+3MCopyParamsFromMaster
+3PParams rw
 #fcl.db.TDataSource #rtl.Classes.TComponent
 1VFDataSet
 1VFDataLinks
@@ -4711,18 +5681,23 @@
 1MUnRegisterDataset
 1MRemoveDataSets
 1MSetActive
+2MAllowClose
 2MSetDatabase
 2MCloseTrans
-2MopenTrans
+2MOpenTrans
 2MCheckDatabase
 2MCheckActive
 2MCheckInactive
+2MCommit
+2MCommitRetaining
+2MRollback
+2MRollbackRetaining
 2MEndTransaction
 2MStartTransaction
 2MInternalHandleException
 2MLoaded
 3MCreate
-3Mdestroy
+3MDestroy
 3MCloseDataSets
 3PDataBase rw
 4PActive rw
@@ -4731,6 +5706,7 @@
 1VFAfterDisconnect
 1VFBeforeConnect
 1VFBeforeDisconnect
+1VFForcedClose
 1VFLoginPrompt
 1VFOnLogin
 1VFStreamedConnected
@@ -4738,15 +5714,19 @@
 1MSetAfterDisconnect
 1MSetBeforeConnect
 1MSetBeforeDisconnect
+2MDoLoginPrompt
 2MDoConnect
 2MDoDisconnect
 2MGetConnected
 2MGetDataset
 2MGetDataSetCount
+2MGetLoginParams
 2MInternalHandleException
 2MLoaded
 2MSetConnected
-2PStreamedconnected rw
+2MSetLoginParams
+2PForcedClose rw
+2PStreamedConnected rw
 3MClose
 3MDestroy
 3MOpen
@@ -4801,37 +5781,770 @@
 4PDatabaseName rw
 4PKeepConnection rw
 4PParams rw
-#fcl.db.TMasterParamsDataLink #fcl.db.TMasterDataLink
-1VFParams
-1MSetParams
-2MDoMasterDisable
-2MDoMasterChange
+#fcl.zipper.TCompressor #rtl.System.TObject
+2VFInFile
+2VFOutFile
+2VFCrc32Val
+2VFBufferSize
+2VFOnPercent
+2VFOnProgress
+2MUpdC32
 3MCreate
-3MRefreshParamNames
-3MCopyParamsFromMaster
-3PParams rw
-#fcl.IBConnection.EIBDatabaseError #fcl.db.EDatabaseError
-3VGDSErrorCode
-#fcl.IBConnection.TIBCursor TSQLCursor
+3MCompress
+3MZipID
+3MZipVersionReqd
+3MZipBitFlag
+3PBufferSize r
+3POnPercent rw
+3POnProgress rw
+3PCrc32Val rw
+#fcl.zipper.TDeCompressor #rtl.System.TObject
+2VFInFile
+2VFOutFile
+2VFCrc32Val
+2VFBufferSize
+2VFOnPercent
+2VFOnProgress
+2MUpdC32
+3MCreate
+3MDeCompress
+3MZipID
+3PBufferSize r
+3POnPercent rw
+3POnProgress rw
+3PCrc32Val rw
+#fcl.zipper.TShrinker #fcl.zipper.TCompressor
+1VFBufSize
+1VMaxInBufIdx
+1VInputEof
+1VCodeTable
+1VFreeList
+1VNextFree
+1VClearList
+1VCodeSize
+1VMaxCode
+1VInBufIdx
+1VOutBufIdx
+1VInBuf
+1VOutBuf
+1VFirstCh
+1VTableFull
+1VSaveByte
+1VBitsUsed
+1VBytesIn
+1VBytesOut
+1VFOnBytes
+1MFillInputBuffer
+1MWriteOutputBuffer
+1MFlushOutput
+1MPutChar
+1MPutCode
+1MInitializeCodeTable
+1MPrune
+1MClear_Table
+1MTable_Add
+1MTable_Lookup
+1MShrink
+1MProcessLine
+1MDoOnProgress
+3MCreate
+3MDestroy
+3MCompress
+3MZipID
+3MZipVersionReqd
+3MZipBitFlag
+#fcl.zipper.TDeflater #fcl.zipper.TCompressor
+1VFCompressionLevel
+3MCreate
+3MCompress
+3MZipID
+3MZipVersionReqd
+3MZipBitFlag
+3PCompressionLevel rw
+#fcl.zipper.TInflater #fcl.zipper.TDeCompressor
+3MCreate
+3MDeCompress
+3MZipID
+#fcl.zipper.TZipFileEntry #rtl.Classes.TCollectionItem
+1VFArchiveFileName
+1VFAttributes
+1VFDateTime
+1VFDiskFileName
+1VFHeaderPos
+1VFNeedsZip64
+1VFOS
+1VFSize
+1VFStream
+1VFCompressionLevel
+1MGetArchiveFileName
+1MSetArchiveFileName
+1MSetDiskFileName
+2PHdrPos rw
+2PNeedsZip64 rw
+3MCreate
+3MIsDirectory
+3MIsLink
+3MAssign
+3PStream rw
+4PArchiveFileName rw
+4PDiskFileName rw
+4PSize rw
+4PDateTime rw
+4POS rw
+4PAttributes rw
+4PCompressionLevel rw
+#fcl.zipper.TZipFileEntries #rtl.Classes.TCollection
+1MGetZ
+1MSetZ
+3MAddFileEntry
+3MAddFileEntries
+3PEntries rw
+#fcl.zipper.TZipper #rtl.System.TObject
+1VFEntries
+1VFZipping
+1VFBufSize
+1VFFileName
+1VFFileComment
+1VFFiles
+1VFInMemSize
+1VFZipFileNeedsZip64
+1VFOutStream
+1VFInFile
+1VLocalHdr
+1VLocalZip64ExtHdr
+1VLocalZip64Fld
+1VCentralHdr
+1VEndHdr
+1VFOnPercent
+1VFOnProgress
+1VFOnEndOfFile
+1VFOnStartFile
+1MCheckEntries
+1MSetEntries
+2MCloseInput
+2MStartZipFile
+2MUpdateZipHeader
+2MBuildZipDirectory
+2MDoEndOfFile
+2MZipOneFile
+2MOpenInput
+2MGetFileInfo
+2MSetBufSize
+2MSetFileName
+2MCreateCompressor
+2PNeedsZip64 rw
+3MCreate
+3MDestroy
+3MZipAllFiles
+3MSaveToFile
+3MSaveToStream
+3MZipFiles
+3MClear
+3PBufferSize rw
+3POnPercent rw
+3POnProgress rw
+3POnStartFile rw
+3POnEndFile rw
+3PFileName rw
+3PFileComment rw
+3PFiles r
+3PInMemSize rw
+3PEntries rw
+#fcl.zipper.TFullZipFileEntry #fcl.zipper.TZipFileEntry
+1VFBitFlags
+1VFCompressedSize
+1VFCompressMethod
+1VFCRC32
+3PBitFlags r
+3PCompressMethod r
+3PCompressedSize r
+3PCRC32 rw
+#fcl.zipper.TFullZipFileEntries #fcl.zipper.TZipFileEntries
+1MGetFZ
+1MSetFZ
+3PFullEntries rw
+#fcl.zipper.TUnZipper #rtl.System.TObject
+1VFOnCloseInputStream
+1VFOnCreateStream
+1VFOnDoneStream
+1VFOnOpenInputStream
+1VFUnZipping
+1VFBufSize
+1VFFileName
+1VFOutputPath
+1VFFileComment
+1VFEntries
+1VFFiles
+1VFZipStream
+1VLocalHdr
+1VLocalZip64Fld
+1VCentralHdr
+1VFOnPercent
+1VFOnProgress
+1VFOnEndOfFile
+1VFOnStartFile
+2MOpenInput
+2MCloseOutput
+2MCloseInput
+2MFindEndHeaders
+2MReadZipDirectory
+2MReadZipHeader
+2MDoEndOfFile
+2MUnZipOneFile
+2MOpenOutput
+2MSetBufSize
+2MSetFileName
+2MSetOutputPath
+2MCreateDeCompressor
+3MCreate
+3MDestroy
+3MUnZipAllFiles
+3MUnZipFiles
+3MClear
+3MExamine
+3PBufferSize rw
+3POnOpenInputStream rw
+3POnCloseInputStream rw
+3POnCreateStream rw
+3POnDoneStream rw
+3POnPercent rw
+3POnProgress rw
+3POnStartFile rw
+3POnEndFile rw
+3PFileName rw
+3POutputPath rw
+3PFileComment r
+3PFiles r
+3PEntries r
+#fcl.zipper.EZipError #rtl.sysutils.Exception
+#fcl.sqldb.TSQLHandle #rtl.System.TObject
+#fcl.sqldb.TSQLCursor #fcl.sqldb.TSQLHandle
+3VFPrepared
+3VFSelectable
+3VFInitFieldDef
+3VFStatementType
+3VFSchemaType
+#fcl.sqldb.ESQLDatabaseError #fcl.db.EDatabaseError
+3VErrorCode
+3VSQLState
+3MCreateFmt
+#fcl.sqldb.TSQLDBFieldDef #fcl.db.TFieldDef
+1VFData
+3PSQLDBData rw
+#fcl.sqldb.TSQLDBFieldDefs #fcl.db.TFieldDefs
+2MFieldDefClass
+#fcl.sqldb.TSQLDBParam #fcl.db.TParam
+1VFFieldDef
+1VFData
+3PFieldDef rw
+3PSQLDBData rw
+#fcl.sqldb.TSQLDBParams #fcl.db.TParams
+2MParamClass
+#fcl.sqldb.TServerIndexDefs #fcl.db.TIndexDefs
+3MCreate
+3MUpdate
+#fcl.sqldb.TSQLConnection #fcl.db.TDatabase
+1VFFieldNameQuoteChars
+1VFOptions
+1VFPassword
+1VFTransaction
+1VFUserName
+1VFHostName
+1VFCharSet
+1VFRole
+1VFStatements
+1VFLogEvents
+1VFOnLog
+1MGetPort
+1MSetOptions
+1MSetPort
+1MAttemptCommit
+1MAttemptRollBack
+2VFConnOptions
+2VFSQLFormatSettings
+2MAddFieldToUpdateWherePart
+2MConstructInsertSQL
+2MConstructUpdateSQL
+2MConstructDeleteSQL
+2MConstructRefreshSQL
+2MInitialiseUpdateStatement
+2MApplyFieldUpdate
+2MApplyRecUpdate
+2MRefreshLastInsertID
+2MGetDBInfo
+2MSetTransaction
+2MDoInternalConnect
+2MDoInternalDisconnect
+2MGetAsSQLText
+2MGetHandle
+2MLogEvent
+2MLogParams
+2MLog
+2MRegisterStatement
+2MUnRegisterStatement
+2MAllocateCursorHandle
+2MDeAllocateCursorHandle
+2MStrToStatementType
+2MPrepareStatement
+2MUnPrepareStatement
+2MExecute
+2MRowsAffected
+2MFetch
+2MAddFieldDefs
+2MLoadField
+2MLoadBlobIntoBuffer
+2MFreeFldBuffers
+2MAllocateTransactionHandle
+2MGetTransactionHandle
+2MCommit
+2MRollBack
+2MStartImplicitTransaction
+2MStartDBTransaction
+2MCommitRetaining
+2MRollBackRetaining
+2MUpdateIndexDefs
+2MGetSchemaInfoSQL
+2MGetNextValueSQL
+2MMaybeConnect
+2PStatements r
+2PPort rw
+3PHandle r
+3PFieldNameQuoteChars rw
+3MCreate
+3MDestroy
+3MStartTransaction
+3MEndTransaction
+3MExecuteDirect
+3MGetObjectNames
+3MGetTableNames
+3MGetProcedureNames
+3MGetFieldNames
+3MGetSchemaNames
+3MGetSequenceNames
+3MGetConnectionInfo
+3MGetStatementInfo
+3MCreateDB
+3MDropDB
+3MGetNextValue
+3PConnOptions r
+4PPassword rw
+4PTransaction rw
+4PUserName rw
+4PCharSet rw
+4PHostName rw
+4POnLog rw
+4PLogEvents rw
+4POptions rw
+4PRole rw
+4PConnected
+4PDatabaseName
+4PKeepConnection
+4PLoginPrompt
+4PParams
+4POnLogin
+#fcl.sqldb.TSQLTransaction #fcl.db.TDBTransaction
+1VFOptions
+1VFTrans
+1VFAction
+1VFParams
+1MGetSQLConnection
+1MSetOptions
+1MSetParams
+1MSetSQLConnection
+2MMaybeStartTransaction
+2MAllowClose
+2MGetHandle
+2MSetDatabase
+2MLogEvent
+2MLog
+3MCreate
+3MDestroy
+3MCommit
+3MCommitRetaining
+3MRollback
+3MRollbackRetaining
+3MStartTransaction
+3MEndTransaction
+3PHandle r
+3PSQLConnection rw
+4PAction rw
+4PDatabase
+4PParams rw
+4POptions rw
+#fcl.sqldb.TCustomSQLStatement #rtl.Classes.TComponent
+1VFCursor
+1VFDatabase
+1VFParamCheck
+1VFParams
+1VFSQL
+1VFOrigSQL
+1VFServerSQL
+1VFTransaction
+1VFParseSQL
+1VFDataLink
+1VFRowsAffected
+1MSetDatabase
+1MSetParams
+1MSetSQL
+1MSetTransaction
+1MGetPrepared
+2MCreateDataLink
+2MOnChangeSQL
+2MGetDataSource
+2MSetDataSource
+2MCopyParamsFromMaster
+2MAllocateCursor
+2MDeAllocateCursor
+2MGetSchemaType
+2MGetSchemaObjectName
+2MGetSchemaPattern
+2MIsSelectable
+2MGetStatementInfo
+2MDoExecute
+2MDoPrepare
+2MDoUnPrepare
+2MCreateParams
+2MLogEvent
+2MLog
+2MNotification
+2PCursor r
+2PDatabase rw
+2PTransaction rw
+2PSQL rw
+2PParams rw
+2PDataSource rw
+2PParseSQL rw
+2PParamCheck rw
+3MCreate
+3MDestroy
+3MPrepare
+3MExecute
+3MUnprepare
+3MParamByName
+3MRowsAffected
+3PPrepared r
+#fcl.sqldb.TSQLStatement #fcl.sqldb.TCustomSQLStatement
+4PDatabase
+4PDataSource
+4PParamCheck
+4PParams
+4PParseSQL
+4PSQL
+4PTransaction
+#fcl.sqldb.TSQLSequence #rtl.Classes.TPersistent
+1VFQuery
+1VFFieldName
+1VFSequenceName
+1VFIncrementBy
+1VFApplyEvent
+3MCreate
+3MAssign
+3MApply
+3MGetNextValue
+4PFieldName rw
+4PSequenceName rw
+4PIncrementBy rw
+4PApplyEvent rw
+#fcl.sqldb.TCustomSQLQuery TCustomBufDataset
+1VFOptions
+1VFSchemaType
+1VFUpdateable
+1VFTableName
+1VFStatement
+1VFInsertSQL
+1VFUpdateSQL
+1VFDeleteSQL
+1VFRefreshSQL
+1VFIsEOF
+1VFLoadingFieldDefs
+1VFUpdateMode
+1VFusePrimaryKeyAsKey
+1VFWhereStartPos
+1VFWhereStopPos
+1VFServerFilterText
+1VFServerFiltered
+1VFServerIndexDefs
+1VFSchemaObjectName
+1VFSchemaPattern
+1VFInsertQry
+1VFUpdateQry
+1VFDeleteQry
+1VFSequence
+1MFreeFldBuffers
+1MGetParamCheck
+1MGetParams
+1MGetParseSQL
+1MGetServerIndexDefs
+1MGetSQL
+1MGetSQLConnection
+1MGetSQLTransaction
+1MGetStatementType
+1MNeedLastInsertID
+1MSetOptions
+1MSetParamCheck
+1MSetSQLConnection
+1MSetSQLTransaction
+1MSetInsertSQL
+1MSetUpdateSQL
+1MSetDeleteSQL
+1MSetRefreshSQL
+1MSetParams
+1MSetParseSQL
+1MSetSQL
+1MSetUsePrimaryKeyAsKey
+1MSetUpdateMode
+1MOnChangeModifySQL
+1MExecute
+1MApplyFilter
+1MAddFilter
+2MRefreshLastInsertID
+2MNeedRefreshRecord
+2MRefreshRecord
+2MApplyReturningResult
+2MCursor
+2MLogEvent
+2MLog
+2MFetch
+2MLoadField
+2MLoadBlobIntoBuffer
+2MApplyRecUpdate
+2MSetPacketRecords
+2MUpdateServerIndexDefs
+2MSetDatabase
+2MSetTransaction
+2MInternalAddRecord
+2MInternalClose
+2MInternalInitFieldDefs
+2MInternalOpen
+2MInternalRefresh
+2MGetCanModify
+2MIsPrepared
+2MSetActive
+2MSetServerFiltered
+2MSetServerFilterText
+2MGetDataSource
+2MSetDataSource
+2MBeforeRefreshOpenCursor
+2MSetReadOnly
+2MNotification
+2MDoOnNewRecord
+2MDoBeforePost
+2MFieldDefsClass
+2MPSGetUpdateException
+2MPSGetTableName
+2PTableName rw
+3MCreate
+3MDestroy
+3MPrepare
+3MUnPrepare
+3MExecSQL
+3MSetSchemaInfo
+3MRowsAffected
+3MParamByName
+3PPrepared r
+3PSQLConnection rw
+3PSQLTransaction rw
+3MApplyUpdates
+3MPost
+3MDelete
+2PActive
+2PFilter
+2PFiltered
+2PBeforeOpen
+2PAfterOpen
+2PBeforeClose
+2PAfterClose
+2PBeforeInsert
+2PAfterInsert
+2PBeforeEdit
+2PAfterEdit
+2PBeforePost
+2PAfterPost
+2PBeforeCancel
+2PAfterCancel
+2PBeforeDelete
+2PAfterDelete
+2PBeforeScroll
+2PAfterScroll
+2POnCalcFields
+2POnDeleteError
+2POnEditError
+2POnFilterRecord
+2POnNewRecord
+2POnPostError
+2PAutoCalcFields
+2PDatabase
+2PTransaction
+2PSchemaType r
+2PSQL rw
+2PInsertSQL rw
+2PUpdateSQL rw
+2PDeleteSQL rw
+2PRefreshSQL rw
+2POptions rw
+2PParams rw
+2PParamCheck rw
+2PParseSQL rw
+2PUpdateMode rw
+2PUsePrimaryKeyAsKey rw
+2PStatementType r
+2PDataSource rw
+2PSequence rw
+2PServerFilter rw
+2PServerFiltered rw
+2PServerIndexDefs r
+#fcl.sqldb.TSQLQuery #fcl.sqldb.TCustomSQLQuery
+3PSchemaType
+3PStatementType
+4PMaxIndexesCount
+4PFieldDefs
+4PActive
+4PAutoCalcFields
+4PFilter
+4PFiltered
+4PAfterCancel
+4PAfterClose
+4PAfterDelete
+4PAfterEdit
+4PAfterInsert
+4PAfterOpen
+4PAfterPost
+4PAfterScroll
+4PBeforeCancel
+4PBeforeClose
+4PBeforeDelete
+4PBeforeEdit
+4PBeforeInsert
+4PBeforeOpen
+4PBeforePost
+4PBeforeScroll
+4POnCalcFields
+4POnDeleteError
+4POnEditError
+4POnFilterRecord
+4POnNewRecord
+4POnPostError
+4PDatabase
+4PTransaction
+4PReadOnly
+4PSQL
+4PInsertSQL
+4PUpdateSQL
+4PDeleteSQL
+4PRefreshSQL
+4PIndexDefs
+4POptions
+4PParams
+4PParamCheck
+4PParseSQL
+4PUpdateMode
+4PUsePrimaryKeyAsKey
+4PDataSource
+4PSequence
+4PServerFilter
+4PServerFiltered
+4PServerIndexDefs
+#fcl.sqldb.TSQLScript TCustomSQLscript
+1VFOnDirective
+1VFQuery
+1VFDatabase
+1VFTransaction
+2MExecuteStatement
+2MExecuteDirective
+2MExecuteCommit
+2MSetDatabase
+2MSetTransaction
+2MCheckDatabase
+3MCreate
+3MDestroy
+3MExecute
+3MExecuteScript
+4PDataBase rw
+4PTransaction rw
+4POnDirective rw
+4PUseDollarString
+4PDollarStrings
+4PDirectives
+4PDefines
+4PScript
+4PTerminator
+4PCommentsinSQL
+4PUseSetTerm
+4PUseCommit
+4PUseDefines
+4POnException
+#fcl.sqldb.TSQLConnector #fcl.sqldb.TSQLConnection
+1VFProxy
+1VFConnectorType
+1MSetConnectorType
+2MSetTransaction
+2MDoInternalConnect
+2MDoInternalDisconnect
+2MCheckProxy
+2MCreateProxy
+2MFreeProxy
+2MStrToStatementType
+2MGetAsSQLText
+2MGetHandle
+2MAllocateCursorHandle
+2MDeAllocateCursorHandle
+2MAllocateTransactionHandle
+2MPrepareStatement
+2MExecute
+2MRowsAffected
+2MFetch
+2MAddFieldDefs
+2MUnPrepareStatement
+2MLoadField
+2MLoadBlobIntoBuffer
+2MFreeFldBuffers
+2MGetTransactionHandle
+2MCommit
+2MRollBack
+2MStartDBTransaction
+2MCommitRetaining
+2MRollBackRetaining
+2MUpdateIndexDefs
+2MGetSchemaInfoSQL
+2PProxy r
+4PConnectorType rw
+#fcl.sqldb.TConnectionDef #rtl.Classes.TPersistent
+0MTypeName
+0MConnectionClass
+0MDescription
+0MDefaultLibraryName
+0MLoadFunction
+0MUnLoadFunction
+0MLoadedLibraryName
+0MApplyParams
+#fcl.IBConnection.EIBDatabaseError #fcl.sqldb.ESQLDatabaseError
+3PGDSErrorCode r
+#fcl.IBConnection.TIBCursor #fcl.sqldb.TSQLCursor
 2VStatus
 2VStatement
 2VSQLDA
 2Vin_SQLDA
 2VParamBinding
 2VFieldBinding
-#fcl.IBConnection.TIBTrans TSQLHandle
+#fcl.IBConnection.TIBTrans #fcl.sqldb.TSQLHandle
 2VTransactionHandle
 2VTPB
 2VStatus
-#fcl.IBConnection.TIBConnection TSQLConnection
+#fcl.IBConnection.TIBConnection #fcl.sqldb.TSQLConnection
+1VFCheckTransactionParams
 1VFSQLDatabaseHandle
 1VFStatus
+1VFDatabaseInfo
 1VFDialect
-1VFDBDialect
-1VFBLobSegmentSize
+1VFBlobSegmentSize
 1MConnectFB
-1MGetDialect
 1MAllocSQLDA
+1MGetDatabaseInfo
+1MInterpretTransactionParam
+1MResetDatabaseInfo
+1MGetDialect
+1MGetODSMajorVersion
+1MParseServerVersion
 1MTranslateFldType
 1MGetDateTime
 1MSetDateTime
@@ -4855,39 +6568,48 @@
 2MAddFieldDefs
 2MFetch
 2MLoadField
-2MGetBlobSize
 2MGetTransactionHandle
 2MCommit
 2MRollBack
-2MStartdbTransaction
+2MStartDBTransaction
 2MCommitRetaining
 2MRollBackRetaining
 2MUpdateIndexDefs
-2MGetSchemaInfoSQL
 2MLoadBlobIntoBuffer
 2MRowsAffected
+2MGetSchemaInfoSQL
+2MGetNextValueSQL
 3MCreate
+3MGetConnectionInfo
 3MCreateDB
 3MDropDB
 3PBlobSegmentSize rw
-3MGetDBDialect
+3PODSMajorVersion r
 4PDatabaseName
 4PDialect rws
+4PCheckTransactionParams rw
 4PKeepConnection
 4PLoginPrompt
 4PParams
 4POnLogin
-#fcl.IBConnection.TIBConnectionDef TConnectionDef
+#fcl.IBConnection.TIBConnectionDef #fcl.sqldb.TConnectionDef
 0MTypeName
 0MConnectionClass
 0MDescription
-#fcl.mssqlconn.TMSSQLConnection TSQLConnection
+0MDefaultLibraryName
+0MLoadFunction
+0MUnLoadFunction
+0MLoadedLibraryName
+#fcl.mssqlconn.TMSSQLConnection #fcl.sqldb.TSQLConnection
 1VFDBLogin
 1VFDBProc
 1VFtds
 1VFstatus
+1VFServerInfo
 1MCheckError
-1MDBExecute
+1MExecute
+1MExecuteDirectSQL
+1MGetParameters
 1MTranslateFldType
 1MClientCharset
 1MAutoCommit
@@ -4899,17 +6621,17 @@
 2MAllocateCursorHandle
 2MDeAllocateCursorHandle
 2MAllocateTransactionHandle
-2MStrToStatementType
-2MPrepareStatement
-2MUnPrepareStatement
 2MGetTransactionHandle
 2MStartDBTransaction
 2MCommit
 2MRollback
 2MCommitRetaining
 2MRollbackRetaining
-2MExecute
+2MStrToStatementType
+2MPrepareStatement
+2MUnPrepareStatement
 2MRowsAffected
+2MRefreshLastInsertID
 2MAddFieldDefs
 2MFetch
 2MLoadField
@@ -4918,6 +6640,9 @@
 2MUpdateIndexDefs
 2MGetSchemaInfoSQL
 3MCreate
+3MGetConnectionInfo
+3MCreateDB
+3MDropDB
 4PPassword
 4PTransaction
 4PUserName
@@ -4932,13 +6657,385 @@
 4POnLogin
 #fcl.mssqlconn.TSybaseConnection #fcl.mssqlconn.TMSSQLConnection
 3MCreate
-#fcl.mssqlconn.EMSSQLDatabaseError #fcl.db.EDatabaseError
-3VDBErrorCode
-#fcl.mssqlconn.TMSSQLConnectionDef TConnectionDef
+#fcl.mssqlconn.EMSSQLDatabaseError #fcl.sqldb.ESQLDatabaseError
+3PDBErrorCode r
+#fcl.mssqlconn.TMSSQLConnectionDef #fcl.sqldb.TConnectionDef
 0MTypeName
 0MConnectionClass
 0MDescription
-#fcl.mssqlconn.TSybaseConnectionDef TConnectionDef
+0MDefaultLibraryName
+0MLoadFunction
+0MUnLoadFunction
+0MLoadedLibraryName
+#fcl.mssqlconn.TSybaseConnectionDef #fcl.mssqlconn.TMSSQLConnectionDef
 0MTypeName
 0MConnectionClass
 0MDescription
+#fcl.fpjson.TBaseJSONEnumerator #rtl.System.TObject
+3MGetCurrent
+3MMoveNext
+3PCurrent r
+#fcl.fpjson.TJSONData #rtl.System.TObject
+1MElementSeps
+1VFCompressedJSON
+1VFElementSep
+1MDetermineElementSeparators
+1MGetCompressedJSON
+1MSetCompressedJSON
+2MDoError
+2MDoFindPath
+2MGetAsBoolean
+2MGetAsFloat
+2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MGetIsNull
+2MSetAsBoolean
+2MSetAsFloat
+2MSetAsInteger
+2MSetAsInt64
+2MSetAsQword
+2MGetAsJSON
+2MGetAsString
+2MSetAsString
+2MGetAsUnicodeString
+2MSetAsUnicodeString
+2MGetValue
+2MSetValue
+2MGetItem
+2MSetItem
+2MDoFormatJSON
+2MGetCount
+3MJSONType
+3PCompressedJSON rw
+3MCreate
+3MClear
+3MDumpJSON
+3MGetEnumerator
+3MFindPath
+3MGetPath
+3MClone
+3MFormatJSON
+3PCount r
+3PItems rw
+3PValue rw
+3PAsString rw
+3PAsUnicodeString rw
+3PAsFloat rw
+3PAsInteger rw
+3PAsInt64 rw
+3PAsQWord rw
+3PAsBoolean rw
+3PIsNull r
+3PAsJSON r
+#fcl.fpjson.TJSONNumber #fcl.fpjson.TJSONData
+3MJSONType
+3MNumberType
+#fcl.fpjson.TJSONFloatNumber #fcl.fpjson.TJSONNumber
+1VFValue
+2MGetAsBoolean
+2MGetAsFloat
+2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsBoolean
+2MSetAsFloat
+2MSetAsInteger
+2MSetAsInt64
+2MSetAsQword
+2MGetAsJSON
+2MGetAsString
+2MSetAsString
+2MGetValue
+2MSetValue
+3MCreate
+3MNumberType
+3MClear
+3MClone
+#fcl.fpjson.TJSONIntegerNumber #fcl.fpjson.TJSONNumber
+1VFValue
+2MGetAsBoolean
+2MGetAsFloat
+2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsBoolean
+2MSetAsFloat
+2MSetAsInteger
+2MSetAsInt64
+2MSetAsQword
+2MGetAsJSON
+2MGetAsString
+2MSetAsString
+2MGetValue
+2MSetValue
+3MCreate
+3MNumberType
+3MClear
+3MClone
+#fcl.fpjson.TJSONInt64Number #fcl.fpjson.TJSONNumber
+1VFValue
+2MGetAsBoolean
+2MGetAsFloat
+2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsBoolean
+2MSetAsFloat
+2MSetAsInteger
+2MSetAsInt64
+2MSetAsQword
+2MGetAsJSON
+2MGetAsString
+2MSetAsString
+2MGetValue
+2MSetValue
+3MCreate
+3MNumberType
+3MClear
+3MClone
+#fcl.fpjson.TJSONQWordNumber #fcl.fpjson.TJSONNumber
+1VFValue
+2MGetAsBoolean
+2MGetAsFloat
+2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsBoolean
+2MSetAsFloat
+2MSetAsInteger
+2MSetAsInt64
+2MSetAsQword
+2MGetAsJSON
+2MGetAsString
+2MSetAsString
+2MGetValue
+2MSetValue
+3MCreate
+3MNumberType
+3MClear
+3MClone
+#fcl.fpjson.TJSONString #fcl.fpjson.TJSONData
+1VFValue
+2MGetValue
+2MSetValue
+2MGetAsBoolean
+2MGetAsFloat
+2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsBoolean
+2MSetAsFloat
+2MSetAsInteger
+2MSetAsInt64
+2MSetAsQword
+2MGetAsJSON
+2MGetAsString
+2MSetAsString
+3MCreate
+3MJSONType
+3MClear
+3MClone
+#fcl.fpjson.TJSONBoolean #fcl.fpjson.TJSONData
+1VFValue
+2MGetValue
+2MSetValue
+2MGetAsBoolean
+2MGetAsFloat
+2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsBoolean
+2MSetAsFloat
+2MSetAsInteger
+2MSetAsInt64
+2MSetAsQword
+2MGetAsJSON
+2MGetAsString
+2MSetAsString
+3MCreate
+3MJSONType
+3MClear
+3MClone
+#fcl.fpjson.TJSONNull #fcl.fpjson.TJSONData
+2MConverterror
+2MGetAsBoolean
+2MGetAsFloat
+2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MGetIsNull
+2MSetAsBoolean
+2MSetAsFloat
+2MSetAsInteger
+2MSetAsInt64
+2MSetAsQword
+2MGetAsJSON
+2MGetAsString
+2MSetAsString
+2MGetValue
+2MSetValue
+3MJSONType
+3MClear
+3MClone
+#fcl.fpjson.TJSONArray #fcl.fpjson.TJSONData
+1VFList
+1MGetArrays
+1MGetBooleans
+1MGetFloats
+1MGetIntegers
+1MGetInt64s
+1MGetNulls
+1MGetObjects
+1MGetQWords
+1MGetStrings
+1MGetUnicodeStrings
+1MGetTypes
+1MSetArrays
+1MSetBooleans
+1MSetFloats
+1MSetIntegers
+1MSetInt64s
+1MSetObjects
+1MSetQWords
+1MSetStrings
+1MSetUnicodeStrings
+2MDoFindPath
+2MConverterror
+2MGetAsBoolean
+2MGetAsFloat
+2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsBoolean
+2MSetAsFloat
+2MSetAsInteger
+2MSetAsInt64
+2MSetAsQword
+2MGetAsJSON
+2MGetAsString
+2MSetAsString
+2MGetValue
+2MSetValue
+2MGetCount
+2MGetItem
+2MSetItem
+2MDoFormatJSON
+3MCreate
+3MDestroy
+3MJSONType
+3MClone
+3MIterate
+3MIndexOf
+3MGetEnumerator
+3MClear
+3MAdd
+3MDelete
+3MExchange
+3MExtract
+3MInsert
+3MMove
+3MRemove
+3MSort
+3PItems
+3PTypes r
+3PNulls r
+3PIntegers rw
+3PInt64s rw
+3PQWords rw
+3PStrings rw
+3PUnicodeStrings rw
+3PFloats rw
+3PBooleans rw
+3PArrays rw
+3PObjects rw
+#fcl.fpjson.TJSONObject #fcl.fpjson.TJSONData
+1MElementStart
+1MSpacedQuoted
+1MUnSpacedQuoted
+1MObjStartSeps
+1MObjEndSeps
+1VFUnquotedMemberNames
+1VFObjStartSep
+1VFObjEndSep
+1VFElementEnd
+1VFElementStart
+1MDetermineElementQuotes
+1VFHash
+1MGetArrays
+1MGetBooleans
+1MGetElements
+1MGetFloats
+1MGetIntegers
+1MGetInt64s
+1MGetIsNull
+1MGetNameOf
+1MGetObjects
+1MGetQWords
+1MGetStrings
+1MGetUnicodeStrings
+1MGetTypes
+1MSetArrays
+1MSetBooleans
+1MSetElements
+1MSetFloats
+1MSetIntegers
+1MSetInt64s
+1MSetIsNull
+1MSetObjects
+1MSetQWords
+1MSetStrings
+1MSetUnicodeStrings
+1MGetUnquotedMemberNames
+1MSetUnquotedMemberNames
+2MDoFindPath
+2MConverterror
+2MGetAsBoolean
+2MGetAsFloat
+2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsBoolean
+2MSetAsFloat
+2MSetAsInteger
+2MSetAsInt64
+2MSetAsQword
+2MGetAsJSON
+2MGetAsString
+2MSetAsString
+2MGetValue
+2MSetValue
+2MGetCount
+2MGetItem
+2MSetItem
+2MDoFormatJSON
+3MCreate
+3MDestroy
+3MJSONType
+3PUnquotedMemberNames rw
+3MClone
+3MGetEnumerator
+3MIterate
+3MIndexOf
+3MIndexOfName
+3MFind
+3MGet
+3MClear
+3MAdd
+3MDelete
+3MRemove
+3MExtract
+3PNames r
+3PElements rw
+3PTypes r
+3PNulls rw
+3PFloats rw
+3PIntegers rw
+3PInt64s rw
+3PQWords rw
+3PStrings rw
+3PUnicodeStrings rw
+3PBooleans rw
+3PArrays rw
+3PObjects rw
+#fcl.fpjson.EJSON #rtl.sysutils.Exception
