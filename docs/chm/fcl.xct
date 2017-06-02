@@ -1952,6 +1952,19 @@
   SkipComments db/skipcomments.html
   enumerator(TDataSet):TDataSetEnumerator db/.op-enumerator-tdataset-datasetenumerator.html
   LoginDialogExProc db/logindialogexproc.html
+ sqltypes sqltypes/index.html
+  TSchemaType sqltypes/tschematype.html
+  TStatementType sqltypes/tstatementtype.html
+  TDBEventType sqltypes/tdbeventtype.html
+  TDBEventTypes sqltypes/tdbeventtypes.html
+  TQuoteChars sqltypes/tquotechars.html
+  TSqlObjectIdenfier sqltypes/tsqlobjectidenfier.html
+   Create sqltypes/tsqlobjectidenfier.create.html
+   SchemaName sqltypes/tsqlobjectidenfier.schemaname.html
+   ObjectName sqltypes/tsqlobjectidenfier.objectname.html
+  TSqlObjectIdentifierList sqltypes/tsqlobjectidentifierlist.html
+   AddIdentifier sqltypes/tsqlobjectidentifierlist.addidentifier.html
+   Identifiers sqltypes/tsqlobjectidentifierlist.identifiers.html
  zipper zipper/index.html
   END_OF_CENTRAL_DIR_SIGNATURE zipper/end_of_central_dir_signature.html
   ZIP64_END_OF_CENTRAL_DIR_SIGNATURE zipper/zip64_end_of_central_dir_signature.html
@@ -5781,6 +5794,17 @@
 4PDatabaseName rw
 4PKeepConnection rw
 4PParams rw
+#fcl.sqltypes.TSqlObjectIdenfier #rtl.Classes.TCollectionItem
+1VFObjectName
+1VFSchemaName
+3MCreate
+3PSchemaName rw
+3PObjectName rw
+#fcl.sqltypes.TSqlObjectIdentifierList #rtl.Classes.TCollection
+1MGetIdentifier
+1MSetIdentifier
+3MAddIdentifier
+3PIdentifiers rw
 #fcl.zipper.TCompressor #rtl.System.TObject
 2VFInFile
 2VFOutFile
