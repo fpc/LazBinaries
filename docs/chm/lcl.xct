@@ -7723,6 +7723,8 @@
    ScaleFontTo96 controls/tcontrol.scalefontto96.html
    ScaleScreenToFont controls/tcontrol.scalescreentofont.html
    ScaleFontToScreen controls/tcontrol.scalefonttoscreen.html
+   Scale96ToScreen controls/tcontrol.scale96toscreen.html
+   ScaleScreenTo96 controls/tcontrol.scalescreento96.html
    AdjustSize controls/tcontrol.adjustsize.html
    AutoSizePhases controls/tcontrol.autosizephases.html
    AutoSizeDelayed controls/tcontrol.autosizedelayed.html
@@ -7973,6 +7975,7 @@
    CalculatePreferredSize controls/twincontrol.calculatepreferredsize.html
    GetPreferredSizeClientFrame controls/twincontrol.getpreferredsizeclientframe.html
    GetChildren controls/twincontrol.getchildren.html
+   GetTabStop controls/twincontrol.gettabstop.html
    ChildClassAllowed controls/twincontrol.childclassallowed.html
    PaintControls controls/twincontrol.paintcontrols.html
    PaintHandler controls/twincontrol.painthandler.html
@@ -8162,6 +8165,7 @@
    IsClientWidthStored 
    DoConstraintsChange 
    DoAllAutoSize 
+   SetTabStop 
    ChangeScale 
    SetDockManager 
    DoFloatMsg 
@@ -8941,7 +8945,6 @@
    DrawItem stdctrls/tcustomlistbox.drawitem.html
    DoAutoAdjustLayout stdctrls/tcustomlistbox.doautoadjustlayout.html
    SendItemIndex stdctrls/tcustomlistbox.senditemindex.html
-   WMGetDlgCode stdctrls/tcustomlistbox.wmgetdlgcode.html
    Create stdctrls/tcustomlistbox.create.html
    Destroy stdctrls/tcustomlistbox.destroy.html
    AddItem stdctrls/tcustomlistbox.additem.html
@@ -13134,7 +13137,6 @@
    DialogChar controls/tcontrol.dialogchar.html
    ShowControl controls/twincontrol.showcontrol.html
    Notification controls/tcontrol.notification.html
-   TabStop controls/twincontrol.tabstop.html
   TTabSheet comctrls/ttabsheet.html
    Create comctrls/ttabsheet.create.html
    Destroy comctrls/ttabsheet.destroy.html
@@ -13330,6 +13332,7 @@
    Change comctrls/tcustomtabcontrol.change.html
    CreateWnd 
    DestroyHandle comctrls/ttabcontrol.destroyhandle.html
+   GetTabOrderList comctrls/ttabcontrol.gettaborderlist.html
    Notification 
    SetDragMode comctrls/ttabcontrol.setdragmode.html
    SetTabIndex comctrls/ttabcontrol.settabindex.html
@@ -13809,8 +13812,6 @@
    OnAssociateChangeBounds comctrls/tcustomupdown.onassociatechangebounds.html
    OnAssociateChangeEnabled comctrls/tcustomupdown.onassociatechangeenabled.html
    OnAssociateChangeVisible comctrls/tcustomupdown.onassociatechangevisible.html
-   DoMouseWheelDown comctrls/tcustomupdown.domousewheeldown.html
-   DoMouseWheelUp comctrls/tcustomupdown.domousewheelup.html
    DoSetBounds comctrls/tcustomupdown.dosetbounds.html
    SetEnabled comctrls/tcustomupdown.setenabled.html
    GetControlClassDefaultSize comctrls/tcustomupdown.getcontrolclassdefaultsize.html
@@ -15997,6 +15998,7 @@
    Visible controls/tcontrol.visible.html
   Register calendar/register.html
  DBGrids dbgrids/index.html
+  DEFINDICATORCOLWIDTH dbgrids/defindicatorcolwidth.html
   TDBGridOption dbgrids/tdbgridoption.html
   TDbGridOptions dbgrids/tdbgridoptions.html
   TDbGridExtraOption dbgrids/tdbgridextraoption.html
@@ -16339,10 +16341,11 @@
   DEFIMAGEPADDING grids/defimagepadding.html
   DEFAUTOADJPADDING grids/defautoadjpadding.html
   soAll grids/soall.html
-  constRubberSpace grids/construbberspace.html
-  constCellPadding grids/constcellpadding.html
   DefaultGridOptions grids/defaultgridoptions.html
   DefaultGridOptions2 grids/defaultgridoptions2.html
+  constRubberSpace grids/construbberspace.html
+  constCellPadding grids/constcellpadding.html
+  constColRowBorderTolerance grids/constcolrowbordertolerance.html
   TGridOption grids/tgridoption.html
   TGridOptions grids/tgridoptions.html
   TGridOption2 grids/tgridoption2.html
@@ -16811,8 +16814,6 @@
    GridWidth grids/tcustomgrid.gridwidth.html
    HeaderHotZones grids/tcustomgrid.headerhotzones.html
    HeaderPushZones grids/tcustomgrid.headerpushzones.html
-   ImageIndexSortAsc grids/tcustomgrid.imageindexsortasc.html
-   ImageIndexSortDesc grids/tcustomgrid.imageindexsortdesc.html
    TabAdvance grids/tcustomgrid.tabadvance.html
    TitleImageList grids/tcustomgrid.titleimagelist.html
    InplaceEditor grids/tcustomgrid.inplaceeditor.html
@@ -17077,8 +17078,6 @@
    Constraints 
    HeaderHotZones grids/tdrawgrid.headerhotzones.html
    HeaderPushZones grids/tdrawgrid.headerpushzones.html
-   ImageIndexSortAsc grids/tdrawgrid.imageindexsortasc.html
-   ImageIndexSortDesc grids/tdrawgrid.imageindexsortdesc.html
    MouseWheelOption grids/tdrawgrid.mousewheeloption.html
    Options2 grids/tdrawgrid.options2.html
    RangeSelectMode grids/tdrawgrid.rangeselectmode.html
@@ -17242,8 +17241,6 @@
    Font grids/tstringgrid.font.html
    HeaderHotZones grids/tstringgrid.headerhotzones.html
    HeaderPushZones grids/tstringgrid.headerpushzones.html
-   ImageIndexSortAsc grids/tstringgrid.imageindexsortasc.html
-   ImageIndexSortDesc grids/tstringgrid.imageindexsortdesc.html
    MouseWheelOption grids/tstringgrid.mousewheeloption.html
    Options2 grids/tstringgrid.options2.html
    ParentBiDiMode grids/tstringgrid.parentbidimode.html
@@ -17352,6 +17349,9 @@
   GetWorkingCanvas grids/getworkingcanvas.html
   FreeWorkingCanvas grids/freeworkingcanvas.html
   Register grids/register.html
+  varRubberSpace grids/varrubberspace.html
+  varCellpadding grids/varcellpadding.html
+  varColRowBorderTolerance grids/varcolrowbordertolerance.html
  DefaultTranslator defaulttranslator/index.html
  LCLTranslator lcltranslator/index.html
   TUpdateTranslator lcltranslator/tupdatetranslator.html
@@ -19141,6 +19141,7 @@
    Spacing 
    OnButtonClick editbtn/tcustomeditbutton.onbuttonclick.html
    Create editbtn/tcustomeditbutton.create.html
+   GetTabOrderList editbtn/tcustomeditbutton.gettaborderlist.html
    Destroy controls/twincontrol.destroy.html
   TEditButton editbtn/teditbutton.html
    AutoSelected editbtn/teditbutton.autoselected.html
@@ -19720,7 +19721,6 @@
   TGEEdit groupededit/tgeedit.html
    PerformTab groupededit/tgeedit.performtab.html
   TCustomAbstractGroupedEdit groupededit/tcustomabstractgroupededit.html
-   DoAutoAdjustLayout groupededit/tcustomabstractgroupededit.doautoadjustlayout.html
    CalculatePreferredSize groupededit/tcustomabstractgroupededit.calculatepreferredsize.html
    CreateBuddy groupededit/tcustomabstractgroupededit.createbuddy.html
    CreateEditor groupededit/tcustomabstractgroupededit.createeditor.html
@@ -19770,12 +19770,14 @@
    EditCanModify groupededit/tcustomabstractgroupededit.editcanmodify.html
    GetSel groupededit/tcustomabstractgroupededit.getsel.html
    GetSpacing groupededit/tcustomabstractgroupededit.getspacing.html
+   GetTabStop groupededit/tcustomabstractgroupededit.gettabstop.html
    SetSel groupededit/tcustomabstractgroupededit.setsel.html
    Loaded groupededit/tcustomabstractgroupededit.loaded.html
    Reset groupededit/tcustomabstractgroupededit.reset.html
    SetAutoSize groupededit/tcustomabstractgroupededit.setautosize.html
    SetColor groupededit/tcustomabstractgroupededit.setcolor.html
    SetCursor groupededit/tcustomabstractgroupededit.setcursor.html
+   SetTabStop groupededit/tcustomabstractgroupededit.settabstop.html
    ShouldAutoAdjust groupededit/tcustomabstractgroupededit.shouldautoadjust.html
    AutoSelect groupededit/tcustomabstractgroupededit.autoselect.html
    AutoSelected groupededit/tcustomabstractgroupededit.autoselected.html
@@ -24476,6 +24478,8 @@
 3MScaleFontTo96
 3MScaleScreenToFont
 3MScaleFontToScreen
+3MScale96ToScreen
+3MScaleScreenTo96
 3MAdjustSize
 3MAutoSizePhases
 3MAutoSizeDelayed
@@ -24749,7 +24753,6 @@
 1MSetBorderWidth
 1MSetParentWindow
 1MSetTabOrder
-1MSetTabStop
 1MSetUseDockManager
 1MUpdateTabOrder
 1MInsert
@@ -24784,12 +24787,14 @@
 2MCalculatePreferredSize
 2MGetPreferredSizeClientFrame
 2MGetChildren
+2MGetTabStop
 2MChildClassAllowed
 2MPaintControls
 2MPaintHandler
 2MPaintWindow
 2MCreateBrush
 2MScaleControls
+2MSetTabStop
 2MChangeScale
 2MCMBiDiModeChanged
 2MCMBorderChanged
@@ -25928,7 +25933,6 @@
 2MDoAutoAdjustLayout
 2MDoSelectionChange
 2MSendItemIndex
-2MWMGetDlgCode
 3MCreate
 3MDestroy
 3MAddItem
@@ -30725,7 +30729,6 @@
 3PTabHeight rw
 3PTabPosition rw
 3PTabWidth rw
-4PTabStop
 #lcl.ComCtrls.TTabSheet #lcl.ComCtrls.TCustomPage
 1MGetPageControl
 1MGetTabIndex
@@ -30974,6 +30977,7 @@
 2MChange
 2MCreateWnd
 2MDestroyHandle
+2MGetTabOrderList
 2MNotification
 2MSetDragMode
 2MSetTabIndex
@@ -31015,7 +31019,7 @@
 4PTabHeight rw
 4PTabIndex rw
 4PTabs rw
-4PTabStop rw
+4PTabStop
 4PTabWidth rw
 4PAlign
 4PAnchors
@@ -31711,8 +31715,6 @@
 2MOnAssociateChangeBounds
 2MOnAssociateChangeEnabled
 2MOnAssociateChangeVisible
-2MDoMouseWheelDown
-2MDoMouseWheelUp
 2MDoSetBounds
 2MSetEnabled
 2MGetControlClassDefaultSize
@@ -32699,6 +32701,7 @@
 1VFExpandSignSize
 1VFThemeExpandSignSize
 1VFDefItemHeight
+1VFDefItemSpace
 1VFDragImage
 1VFDragNode
 1VFIndent
@@ -35860,8 +35863,6 @@
 2PGridWidth r
 2PHeaderHotZones rw
 2PHeaderPushZones rw
-2PImageIndexSortAsc rw
-2PImageIndexSortDesc rw
 2PTabAdvance rw
 2PTitleImageList rw
 2PInplaceEditor r
@@ -36140,8 +36141,6 @@
 4PGridLineWidth
 4PHeaderHotZones
 4PHeaderPushZones
-4PImageIndexSortAsc
-4PImageIndexSortDesc
 4PMouseWheelOption
 4POptions
 4POptions2
@@ -36327,8 +36326,6 @@
 4PGridLineWidth
 4PHeaderHotZones
 4PHeaderPushZones
-4PImageIndexSortAsc
-4PImageIndexSortDesc
 4PMouseWheelOption
 4POptions
 4POptions2
@@ -38415,6 +38412,7 @@
 2POnButtonClick rw
 3MCreate
 3MDestroy
+3MGetTabOrderList
 #lcl.EditBtn.TEditButton #lcl.EditBtn.TCustomEditButton
 3PAutoSelected
 3PButton
@@ -39120,7 +39118,6 @@
 1MGetSelLength
 1MGetSelStart
 1MGetSelText
-1MGetTabStop
 1MGetTextHint
 1MGetTextHintFontColor
 1MGetTextHintFontStyle
@@ -39168,9 +39165,7 @@
 1MSetSelStart
 1MSetSelText
 1MSetSpacing
-1MSetTabStop
 1MSetTextHint
-2MDoAutoAdjustLayout
 2MCalculatePreferredSize
 2MCreateBuddy
 2MCreateEditor
@@ -39220,12 +39215,14 @@
 2MEditCanModify
 2MGetSel
 2MGetSpacing
+2MGetTabStop
 2MSetSel
 2MLoaded
 2MReset
 2MSetAutoSize
 2MSetColor
 2MSetCursor
+2MSetTabStop
 2MShouldAutoAdjust
 2PAutoSelect rw
 2PAutoSelected rw
