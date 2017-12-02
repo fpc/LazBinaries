@@ -151,6 +151,8 @@
   fpc_in_mmx_pcmpgtb system/fpc_in_mmx_pcmpgtb.html
   fpc_in_mmx_pcmpgtw system/fpc_in_mmx_pcmpgtw.html
   fpc_in_mmx_pcmpgtd system/fpc_in_mmx_pcmpgtd.html
+  Default8087CW system/default8087cw.html
+  DefaultMXCSR system/defaultmxcsr.html
   float_flag_invalid system/float_flag_invalid.html
   float_flag_denormal system/float_flag_denormal.html
   float_flag_divbyzero system/float_flag_divbyzero.html
@@ -282,27 +284,6 @@
   RT_ANIICON system/rt_aniicon.html
   RT_HTML system/rt_html.html
   RT_MANIFEST system/rt_manifest.html
-  LineEnding system/lineending.html
-  LFNSupport system/lfnsupport.html
-  DirectorySeparator system/directoryseparator.html
-  DriveSeparator system/driveseparator.html
-  ExtensionSeparator system/extensionseparator.html
-  PathSeparator system/pathseparator.html
-  AllowDirectorySeparators system/allowdirectoryseparators.html
-  AllowDriveSeparators system/allowdriveseparators.html
-  maxExitCode system/maxexitcode.html
-  MaxPathLen system/maxpathlen.html
-  AllFilesMask system/allfilesmask.html
-  UnusedHandle system/unusedhandle.html
-  StdInputHandle system/stdinputhandle.html
-  StdOutputHandle system/stdoutputhandle.html
-  StdErrorHandle system/stderrorhandle.html
-  FileNameCaseSensitive system/filenamecasesensitive.html
-  FileNameCasePreserving system/filenamecasepreserving.html
-  CtrlZMarksEOF system/ctrlzmarkseof.html
-  sLineBreak system/slinebreak.html
-  DefaultTextLineBreakStyle system/defaulttextlinebreakstyle.html
-  UnixGetModuleByAddrHook system/unixgetmodulebyaddrhook.html
   DWord system/dword.html
   Cardinal system/cardinal.html
   Integer system/integer.html
@@ -490,6 +471,7 @@
   pinterfaceentry system/pinterfaceentry.html
   tinterfaceentry system/tinterfaceentry.html
   tinterfacetable system/tinterfacetable.html
+  PMethod system/pmethod.html
   TMethod system/tmethod.html
   IInterface system/iinterface.html
   TInterfacedClass system/tinterfacedclass.html
@@ -703,6 +685,12 @@
   BsfQWord system/bsfqword.html
   BsrQWord system/bsrqword.html
   PopCnt system/popcnt.html
+  Set8087CW system/set8087cw.html
+  Get8087CW system/get8087cw.html
+  SetMXCSR system/setmxcsr.html
+  GetMXCSR system/getmxcsr.html
+  SetSSECSR system/setssecsr.html
+  GetSSECSR system/getssecsr.html
   float_raise system/float_raise.html
   pi system/pi.html
   sqrt system/sqrt.html
@@ -819,6 +807,11 @@
   InterLockedExchange system/interlockedexchange.html
   InterLockedExchangeAdd system/interlockedexchangeadd.html
   InterlockedCompareExchange system/interlockedcompareexchange.html
+  InterLockedIncrement64 system/interlockedincrement64.html
+  InterLockedDecrement64 system/interlockeddecrement64.html
+  InterLockedExchange64 system/interlockedexchange64.html
+  InterLockedExchangeAdd64 system/interlockedexchangeadd64.html
+  InterlockedCompareExchange64 system/interlockedcompareexchange64.html
   Error system/error.html
   ParamCount system/paramcount.html
   ParamStr system/paramstr.html
@@ -1086,23 +1079,6 @@
   Str system/str.html
   Succ system/succ.html
   Val system/val.html
-  Write system/write.html
-  WriteLn system/writeln.html
-  Copy system/copy.html
-  SetLength system/setlength.html
-  Length system/length.html
-  WriteStr system/writestr.html
-  ReadStr system/readstr.html
-  Pack system/pack.html
-  UnPack system/unpack.html
-  Slice system/slice.html
-  TypeInfo system/typeinfo.html
-  Fail system/fail.html
-  TypeOf system/typeof.html
-  Initialize system/initialize.html
-  Finalize system/finalize.html
-  Default system/default.html
-  get_cmdline system/get_cmdline.html
   ExitCode system/exitcode.html
   RandSeed system/randseed.html
   IsLibrary system/islibrary.html
@@ -1130,9 +1106,6 @@
   widestringmanager system/widestringmanager.html
   DispCallByIDProc system/dispcallbyidproc.html
   ReturnNilIfGrowHeapFails system/returnnilifgrowheapfails.html
-  mem system/mem.html
-  memw system/memw.html
-  meml system/meml.html
  objpas objpas/index.html
   MaxInt objpas/maxint.html
   Integer objpas/integer.html
@@ -1558,6 +1531,8 @@
   TTerminateProc sysutils/tterminateproc.html
   TFileRec sysutils/tfilerec.html
   TTextRec sysutils/ttextrec.html
+  TUnicodeCharArray sysutils/tunicodechararray.html
+  TFilenameCaseMatch sysutils/tfilenamecasematch.html
   TUnicodeSearchRec sysutils/tunicodesearchrec.html
   TRawbyteSearchRec sysutils/trawbytesearchrec.html
   TSearchRec sysutils/tsearchrec.html
@@ -1637,9 +1612,73 @@
   EFileNotFoundException sysutils/efilenotfoundexception.html
   EPathNotFoundException sysutils/epathnotfoundexception.html
   ENoConstructException sysutils/enoconstructexception.html
+  EEncodingError sysutils/eencodingerror.html
+  TEncoding sysutils/tencoding.html
+   FreeEncodings sysutils/tencoding.freeencodings.html
+   Clone sysutils/tencoding.clone.html
+   Convert sysutils/tencoding.convert.html
+   IsStandardEncoding sysutils/tencoding.isstandardencoding.html
+   GetBufferEncoding sysutils/tencoding.getbufferencoding.html
+   GetEncoding sysutils/tencoding.getencoding.html
+   GetMaxByteCount sysutils/tencoding.getmaxbytecount.html
+   GetMaxCharCount sysutils/tencoding.getmaxcharcount.html
+   GetPreamble sysutils/tencoding.getpreamble.html
+   GetString sysutils/tencoding.getstring.html
+   CodePage sysutils/tencoding.codepage.html
+   EncodingName sysutils/tencoding.encodingname.html
+   IsSingleByte sysutils/tencoding.issinglebyte.html
+   ANSI sysutils/tencoding.ansi.html
+   ASCII sysutils/tencoding.ascii.html
+   BigEndianUnicode sysutils/tencoding.bigendianunicode.html
+   Default sysutils/tencoding.default.html
+   Unicode sysutils/tencoding.unicode.html
+   UTF7 sysutils/tencoding.utf7.html
+   UTF8 sysutils/tencoding.utf8.html
+  TMBCSEncoding sysutils/tmbcsencoding.html
+   Create sysutils/tmbcsencoding.create.html
+   Clone sysutils/tencoding.clone.html
+   GetMaxByteCount sysutils/tencoding.getmaxbytecount.html
+   GetMaxCharCount sysutils/tencoding.getmaxcharcount.html
+   GetPreamble sysutils/tencoding.getpreamble.html
+  TUTF7Encoding sysutils/tutf7encoding.html
+   Create sysutils/tutf7encoding.create.html
+   Clone sysutils/tencoding.clone.html
+   GetMaxByteCount sysutils/tencoding.getmaxbytecount.html
+   GetMaxCharCount sysutils/tencoding.getmaxcharcount.html
+  TUTF8Encoding sysutils/tutf8encoding.html
+   Create sysutils/tutf8encoding.create.html
+   Clone sysutils/tencoding.clone.html
+   GetMaxByteCount sysutils/tencoding.getmaxbytecount.html
+   GetMaxCharCount sysutils/tencoding.getmaxcharcount.html
+   GetPreamble sysutils/tencoding.getpreamble.html
+  TUnicodeEncoding sysutils/tunicodeencoding.html
+   Create sysutils/tunicodeencoding.create.html
+   Clone sysutils/tencoding.clone.html
+   GetMaxByteCount sysutils/tencoding.getmaxbytecount.html
+   GetMaxCharCount sysutils/tencoding.getmaxcharcount.html
+   GetPreamble sysutils/tencoding.getpreamble.html
+  TBigEndianUnicodeEncoding sysutils/tbigendianunicodeencoding.html
+   Clone sysutils/tencoding.clone.html
+   GetPreamble sysutils/tencoding.getpreamble.html
   IReadWriteSync sysutils/ireadwritesync.html
+   BeginRead sysutils/ireadwritesync.beginread.html
+   EndRead sysutils/ireadwritesync.endread.html
+   BeginWrite sysutils/ireadwritesync.beginwrite.html
+   EndWrite sysutils/ireadwritesync.endwrite.html
   TSimpleRWSync sysutils/tsimplerwsync.html
+   Create sysutils/tsimplerwsync.create.html
+   Destroy sysutils/tsimplerwsync.destroy.html
+   Beginwrite sysutils/tsimplerwsync.beginwrite.html
+   Endwrite sysutils/tsimplerwsync.endwrite.html
+   Beginread sysutils/tsimplerwsync.beginread.html
+   Endread sysutils/tsimplerwsync.endread.html
   TMultiReadExclusiveWriteSynchronizer sysutils/tmultireadexclusivewritesynchronizer.html
+   Create sysutils/tmultireadexclusivewritesynchronizer.create.html
+   Destroy sysutils/tmultireadexclusivewritesynchronizer.destroy.html
+   Beginwrite sysutils/tmultireadexclusivewritesynchronizer.beginwrite.html
+   Endwrite sysutils/tmultireadexclusivewritesynchronizer.endwrite.html
+   Beginread sysutils/tmultireadexclusivewritesynchronizer.beginread.html
+   Endread sysutils/tmultireadexclusivewritesynchronizer.endread.html
   TGuidHelper sysutils/tguidhelper.html
    Create sysutils/tguidhelper.create.html
    NewGuid sysutils/tguidhelper.newguid.html
@@ -1704,6 +1743,91 @@
    TrimStart sysutils/tstringhelper.trimstart.html
    Chars sysutils/tstringhelper.chars.html
    Length sysutils/tstringhelper.length.html
+  TSingleHelper sysutils/tsinglehelper.html
+   GetB sysutils/tsinglehelper.getb.html
+   GetW sysutils/tsinglehelper.getw.html
+   GetE sysutils/tsinglehelper.gete.html
+   GetF sysutils/tsinglehelper.getf.html
+   GetS sysutils/tsinglehelper.gets.html
+   SetB sysutils/tsinglehelper.setb.html
+   SetW sysutils/tsinglehelper.setw.html
+   SetE sysutils/tsinglehelper.sete.html
+   SetF sysutils/tsinglehelper.setf.html
+   SetS sysutils/tsinglehelper.sets.html
+   Epsilon sysutils/tsinglehelper.epsilon.html
+   MaxValue sysutils/tsinglehelper.maxvalue.html
+   MinValue sysutils/tsinglehelper.minvalue.html
+   PositiveInfinity sysutils/tsinglehelper.positiveinfinity.html
+   NegativeInfinity sysutils/tsinglehelper.negativeinfinity.html
+   NaN sysutils/tsinglehelper.nan.html
+   IsNan sysutils/tsinglehelper.isnan.html
+   IsInfinity sysutils/tsinglehelper.isinfinity.html
+   IsNegativeInfinity sysutils/tsinglehelper.isnegativeinfinity.html
+   IsPositiveInfinity sysutils/tsinglehelper.ispositiveinfinity.html
+   Parse sysutils/tsinglehelper.parse.html
+   Size sysutils/tsinglehelper.size.html
+   ToString sysutils/tsinglehelper.tostring.html
+   TryParse sysutils/tsinglehelper.tryparse.html
+   BuildUp sysutils/tsinglehelper.buildup.html
+   Exponent sysutils/tsinglehelper.exponent.html
+   Fraction sysutils/tsinglehelper.fraction.html
+   Mantissa sysutils/tsinglehelper.mantissa.html
+   SpecialType sysutils/tsinglehelper.specialtype.html
+   Bytes sysutils/tsinglehelper.bytes.html
+   Words sysutils/tsinglehelper.words.html
+   Sign sysutils/tsinglehelper.sign.html
+   Exp sysutils/tsinglehelper.exp.html
+   Frac sysutils/tsinglehelper.frac.html
+  TDoubleHelper sysutils/tdoublehelper.html
+   Epsilon sysutils/tdoublehelper.epsilon.html
+   MaxValue sysutils/tdoublehelper.maxvalue.html
+   MinValue sysutils/tdoublehelper.minvalue.html
+   PositiveInfinity sysutils/tdoublehelper.positiveinfinity.html
+   NegativeInfinity sysutils/tdoublehelper.negativeinfinity.html
+   NaN sysutils/tdoublehelper.nan.html
+   IsInfinity sysutils/tdoublehelper.isinfinity.html
+   IsNan sysutils/tdoublehelper.isnan.html
+   IsNegativeInfinity sysutils/tdoublehelper.isnegativeinfinity.html
+   IsPositiveInfinity sysutils/tdoublehelper.ispositiveinfinity.html
+   Parse sysutils/tdoublehelper.parse.html
+   Size sysutils/tdoublehelper.size.html
+   ToString sysutils/tdoublehelper.tostring.html
+   TryParse sysutils/tdoublehelper.tryparse.html
+   BuildUp sysutils/tdoublehelper.buildup.html
+   Exponent sysutils/tdoublehelper.exponent.html
+   Fraction sysutils/tdoublehelper.fraction.html
+   Mantissa sysutils/tdoublehelper.mantissa.html
+   SpecialType sysutils/tdoublehelper.specialtype.html
+   Bytes sysutils/tdoublehelper.bytes.html
+   Words sysutils/tdoublehelper.words.html
+   Sign sysutils/tdoublehelper.sign.html
+   Exp sysutils/tdoublehelper.exp.html
+   Frac sysutils/tdoublehelper.frac.html
+  TExtendedHelper sysutils/textendedhelper.html
+   Epsilon sysutils/textendedhelper.epsilon.html
+   MaxValue sysutils/textendedhelper.maxvalue.html
+   MinValue sysutils/textendedhelper.minvalue.html
+   PositiveInfinity sysutils/textendedhelper.positiveinfinity.html
+   NegativeInfinity sysutils/textendedhelper.negativeinfinity.html
+   NaN sysutils/textendedhelper.nan.html
+   ToString sysutils/textendedhelper.tostring.html
+   Parse sysutils/textendedhelper.parse.html
+   TryParse sysutils/textendedhelper.tryparse.html
+   IsNan sysutils/textendedhelper.isnan.html
+   IsInfinity sysutils/textendedhelper.isinfinity.html
+   IsNegativeInfinity sysutils/textendedhelper.isnegativeinfinity.html
+   IsPositiveInfinity sysutils/textendedhelper.ispositiveinfinity.html
+   Size sysutils/textendedhelper.size.html
+   BuildUp sysutils/textendedhelper.buildup.html
+   Exponent sysutils/textendedhelper.exponent.html
+   Fraction sysutils/textendedhelper.fraction.html
+   Mantissa sysutils/textendedhelper.mantissa.html
+   SpecialType sysutils/textendedhelper.specialtype.html
+   Bytes sysutils/textendedhelper.bytes.html
+   Words sysutils/textendedhelper.words.html
+   Sign sysutils/textendedhelper.sign.html
+   Exp sysutils/textendedhelper.exp.html
+   Frac sysutils/textendedhelper.frac.html
   TByteHelper sysutils/tbytehelper.html
    MaxValue sysutils/tbytehelper.maxvalue.html
    MinValue sysutils/tbytehelper.minvalue.html
@@ -2022,9 +2146,9 @@
   strcomp sysutils/strcomp.html
   strlcomp sysutils/strlcomp.html
   stricomp sysutils/stricomp.html
-  strmove sysutils/strmove.html
+  StrMove sysutils/strmove.html
   strlcat sysutils/strlcat.html
-  strscan sysutils/strscan.html
+  StrScan sysutils/strscan.html
   strrscan sysutils/strrscan.html
   strlower sysutils/strlower.html
   strupper sysutils/strupper.html
@@ -2060,6 +2184,21 @@
   WideFormatBuf sysutils/wideformatbuf.html
   WideFmtStr sysutils/widefmtstr.html
   WideStringReplace sysutils/widestringreplace.html
+  UnicodeUpperCase sysutils/unicodeuppercase.html
+  UnicodeLowerCase sysutils/unicodelowercase.html
+  UnicodeCompareStr sysutils/unicodecomparestr.html
+  UnicodeSameStr sysutils/unicodesamestr.html
+  UnicodeCompareText sysutils/unicodecomparetext.html
+  UnicodeSameText sysutils/unicodesametext.html
+  UnicodeFormat sysutils/unicodeformat.html
+  UnicodeFormatBuf sysutils/unicodeformatbuf.html
+  UnicodeFmtStr sysutils/unicodefmtstr.html
+  WideStrAlloc sysutils/widestralloc.html
+  StringOf sysutils/stringof.html
+  WideBytesOf sysutils/widebytesof.html
+  WideStringOf sysutils/widestringof.html
+  ByteLength sysutils/bytelength.html
+  UnicodeStringReplace sysutils/unicodestringreplace.html
   ChangeFileExt sysutils/changefileext.html
   ExtractFilePath sysutils/extractfilepath.html
   ExtractFileDrive sysutils/extractfiledrive.html
@@ -2101,6 +2240,7 @@
   FileRead sysutils/fileread.html
   FileWrite sysutils/filewrite.html
   FileSeek sysutils/fileseek.html
+  FileFlush sysutils/fileflush.html
   FileClose sysutils/fileclose.html
   FileTruncate sysutils/filetruncate.html
   FileGetDate sysutils/filegetdate.html
@@ -2262,6 +2402,18 @@
   MAP_EXECUTABLE linux/map_executable.html
   MAP_LOCKED linux/map_locked.html
   MAP_NORESERVE linux/map_noreserve.html
+  MODIFY_LDT_CONTENTS_DATA linux/modify_ldt_contents_data.html
+  MODIFY_LDT_CONTENTS_STACK linux/modify_ldt_contents_stack.html
+  MODIFY_LDT_CONTENTS_CODE linux/modify_ldt_contents_code.html
+  UD_SEG_32BIT linux/ud_seg_32bit.html
+  UD_CONTENTS_DATA linux/ud_contents_data.html
+  UD_CONTENTS_STACK linux/ud_contents_stack.html
+  UD_CONTENTS_CODE linux/ud_contents_code.html
+  UD_READ_EXEC_ONLY linux/ud_read_exec_only.html
+  UD_LIMIT_IN_PAGES linux/ud_limit_in_pages.html
+  UD_SEG_NOT_PRESENT linux/ud_seg_not_present.html
+  UD_USEABLE linux/ud_useable.html
+  UD_LM linux/ud_lm.html
   CAP_CHOWN linux/cap_chown.html
   CAP_DAC_OVERRIDE linux/cap_dac_override.html
   CAP_DAC_READ_SEARCH linux/cap_dac_read_search.html
@@ -2341,6 +2493,9 @@
   TSysInfo linux/tsysinfo.html
   PSysInfo linux/psysinfo.html
   TCloneFunc linux/tclonefunc.html
+  user_desc linux/user_desc.html
+  TUser_Desc linux/tuser_desc.html
+  PUser_Desc linux/puser_desc.html
   EPoll_Data linux/epoll_data.html
   TEPoll_Data linux/tepoll_data.html
   PEPoll_Data linux/pepoll_data.html
@@ -2358,6 +2513,7 @@
   futex linux/futex.html
   futex_op linux/futex_op.html
   clone linux/clone.html
+  modify_ldt linux/modify_ldt.html
   sched_yield linux/sched_yield.html
   epoll_create linux/epoll_create.html
   epoll_ctl linux/epoll_ctl.html
@@ -2559,6 +2715,7 @@
   O_DIRECT baseunix/o_direct.html
   O_DIRECTORY baseunix/o_directory.html
   O_NOFOLLOW baseunix/o_nofollow.html
+  O_LARGEFILE baseunix/o_largefile.html
   S_IRUSR baseunix/s_irusr.html
   S_IWUSR baseunix/s_iwusr.html
   S_IXUSR baseunix/s_ixusr.html
@@ -4377,59 +4534,14 @@
   IPC_CREAT ipc/ipc_creat.html
   IPC_EXCL ipc/ipc_excl.html
   IPC_NOWAIT ipc/ipc_nowait.html
+  IPC_PRIVATE ipc/ipc_private.html
   IPC_RMID ipc/ipc_rmid.html
   IPC_SET ipc/ipc_set.html
   IPC_STAT ipc/ipc_stat.html
   IPC_INFO ipc/ipc_info.html
-  SHM_R ipc/shm_r.html
-  SHM_W ipc/shm_w.html
-  SHM_RDONLY ipc/shm_rdonly.html
-  SHM_RND ipc/shm_rnd.html
-  SHM_LOCK ipc/shm_lock.html
-  SHM_UNLOCK ipc/shm_unlock.html
-  MSG_NOERROR ipc/msg_noerror.html
-  SEM_UNDO ipc/sem_undo.html
-  SEM_A ipc/sem_a.html
-  SEM_R ipc/sem_r.html
   TKey ipc/tkey.html
   key_t ipc/key_t.html
   PIPC_Perm ipc/pipc_perm.html
-  TIPC_Perm ipc/tipc_perm.html
-  PShmid_DS ipc/pshmid_ds.html
-  PSHMinfo ipc/pshminfo.html
-  TSHMinfo ipc/tshminfo.html
-  msglen_t ipc/msglen_t.html
-  msgqnum_t ipc/msgqnum_t.html
-  PMSG ipc/pmsg.html
-  TMSG ipc/tmsg.html
-  PMSQid_ds ipc/pmsqid_ds.html
-  TMSQid_ds ipc/tmsqid_ds.html
-  PMSGbuf ipc/pmsgbuf.html
-  TMSGbuf ipc/tmsgbuf.html
-  PMSGinfo ipc/pmsginfo.html
-  TMSGinfo ipc/tmsginfo.html
-  PSEM ipc/psem.html
-  TSEM ipc/tsem.html
-  PSEMid_ds ipc/psemid_ds.html
-  TSEMid_ds ipc/tsemid_ds.html
-  PSEMbuf ipc/psembuf.html
-  TSEMbuf ipc/tsembuf.html
-  PSEMinfo ipc/pseminfo.html
-  TSEMinfo ipc/tseminfo.html
-  PSEMun ipc/psemun.html
-  TSEMun ipc/tsemun.html
-  ftok ipc/ftok.html
-  shmget ipc/shmget.html
-  shmat ipc/shmat.html
-  shmdt ipc/shmdt.html
-  shmctl ipc/shmctl.html
-  msgget ipc/msgget.html
-  msgsnd ipc/msgsnd.html
-  msgrcv ipc/msgrcv.html
-  msgctl ipc/msgctl.html
-  semget ipc/semget.html
-  semop ipc/semop.html
-  semctl ipc/semctl.html
  printer printer/index.html
   IsLstAvailable printer/islstavailable.html
   InitPrinter printer/initprinter.html
@@ -5935,6 +6047,7 @@
    BeforeDestruction classes/tdatamodule.beforedestruction.html
    DesignOffset classes/tdatamodule.designoffset.html
    DesignSize classes/tdatamodule.designsize.html
+   DesignPPI classes/tdatamodule.designppi.html
    OnCreate classes/tdatamodule.oncreate.html
    OnDestroy classes/tdatamodule.ondestroy.html
    OldCreateOrder classes/tdatamodule.oldcreateorder.html
@@ -6766,11 +6879,13 @@
   ReadDebugLink exeinfo/readdebuglink.html
   GetModuleByAddr exeinfo/getmodulebyaddr.html
  lineinfo lineinfo/index.html
+  CodePointer lineinfo/codepointer.html
   GetLineInfo lineinfo/getlineinfo.html
   StabBackTraceStr lineinfo/stabbacktracestr.html
   CloseStabs lineinfo/closestabs.html
   AllowReuseOfLineInfoData lineinfo/allowreuseoflineinfodata.html
  lnfodwrf lnfodwrf/index.html
+  CodePointer lnfodwrf/codepointer.html
   GetLineInfo lnfodwrf/getlineinfo.html
   DwarfBackTraceStr lnfodwrf/dwarfbacktracestr.html
   CloseDwarf lnfodwrf/closedwarf.html
@@ -6837,26 +6952,6 @@
   coff_t ctypes/coff_t.html
   clongdouble ctypes/clongdouble.html
   Pclongdouble ctypes/pclongdouble.html
-  assign(clongdouble):Double ctypes/.op-assign-clongdouble-ouble.html
-  assign(Double):clongdouble ctypes/.op-assign-double-longdouble.html
-  add(Double,clongdouble):Double ctypes/.op-add-double-longdouble-ouble.html
-  add(clongdouble,Double):Double ctypes/.op-add-clongdouble-ouble-ouble.html
-  subtract(Double,clongdouble):Double ctypes/.op-subtract-double-longdouble-ouble.html
-  subtract(clongdouble,Double):Double ctypes/.op-subtract-clongdouble-ouble-ouble.html
-  multiply(Double,clongdouble):Double ctypes/.op-multiply-double-longdouble-ouble.html
-  multiply(clongdouble,Double):Double ctypes/.op-multiply-clongdouble-ouble-ouble.html
-  divide(Double,clongdouble):Double ctypes/.op-divide-double-longdouble-ouble.html
-  divide(clongdouble,Double):Double ctypes/.op-divide-clongdouble-ouble-ouble.html
-  equal(Double,clongdouble):Boolean ctypes/.op-equal-double-longdouble-oolean.html
-  equal(clongdouble,Double):Boolean ctypes/.op-equal-clongdouble-ouble-oolean.html
-  lessthan(Double,clongdouble):Boolean ctypes/.op-lessthan-double-longdouble-oolean.html
-  lessthan(clongdouble,Double):Boolean ctypes/.op-lessthan-clongdouble-ouble-oolean.html
-  greaterthan(Double,clongdouble):Boolean ctypes/.op-greaterthan-double-longdouble-oolean.html
-  greaterthan(clongdouble,Double):Boolean ctypes/.op-greaterthan-clongdouble-ouble-oolean.html
-  greaterthanorequal(Double,clongdouble):Boolean ctypes/.op-greaterthanorequal-double-longdouble-oolean.html
-  greaterthanorequal(clongdouble,Double):Boolean ctypes/.op-greaterthanorequal-clongdouble-ouble-oolean.html
-  lessthanorequal(Double,clongdouble):Boolean ctypes/.op-lessthanorequal-double-longdouble-oolean.html
-  lessthanorequal(clongdouble,Double):Boolean ctypes/.op-lessthanorequal-clongdouble-ouble-oolean.html
  fpwidestring fpwidestring/index.html
   SetActiveCollation fpwidestring/setactivecollation.html
   GetActiveCollation fpwidestring/getactivecollation.html
@@ -7045,6 +7140,7 @@
    MoveNext fgl/tfpglistenumerator.movenext.html
    Current fgl/tfpglistenumerator.current.html
   TFPGList fgl/tfpglist.html
+   TFPGListEnumeratorSpec fgl/tfpglist.tfpglistenumeratorspec.html
    Create fgl/tfpglist.create.html
    Add fgl/tfpglist.add.html
    Extract fgl/tfpglist.extract.html
@@ -7164,50 +7260,6 @@
   TUnicodeCategorySet character/tunicodecategoryset.html
   TCharacterOption character/tcharacteroption.html
   TCharacterOptions character/tcharacteroptions.html
-  TCharacter character/tcharacter.html
-   Create character/tcharacter.create.html
-   ConvertFromUtf32 character/tcharacter.convertfromutf32.html
-   ConvertToUtf32 character/tcharacter.converttoutf32.html
-   GetNumericValue character/tcharacter.getnumericvalue.html
-   GetUnicodeCategory character/tcharacter.getunicodecategory.html
-   IsControl character/tcharacter.iscontrol.html
-   IsDigit character/tcharacter.isdigit.html
-   IsSurrogate character/tcharacter.issurrogate.html
-   IsHighSurrogate character/tcharacter.ishighsurrogate.html
-   IsLowSurrogate character/tcharacter.islowsurrogate.html
-   IsSurrogatePair character/tcharacter.issurrogatepair.html
-   IsLetter character/tcharacter.isletter.html
-   IsLetterOrDigit character/tcharacter.isletterordigit.html
-   IsLower character/tcharacter.islower.html
-   IsNumber character/tcharacter.isnumber.html
-   IsPunctuation character/tcharacter.ispunctuation.html
-   IsSeparator character/tcharacter.isseparator.html
-   IsSymbol character/tcharacter.issymbol.html
-   IsUpper character/tcharacter.isupper.html
-   IsWhiteSpace character/tcharacter.iswhitespace.html
-   ToLower character/tcharacter.tolower.html
-   ToUpper character/tcharacter.toupper.html
-  ConvertFromUtf32 character/convertfromutf32.html
-  ConvertToUtf32 character/converttoutf32.html
-  GetNumericValue character/getnumericvalue.html
-  GetUnicodeCategory character/getunicodecategory.html
-  IsControl character/iscontrol.html
-  IsDigit character/isdigit.html
-  IsSurrogate character/issurrogate.html
-  IsHighSurrogate character/ishighsurrogate.html
-  IsLowSurrogate character/islowsurrogate.html
-  IsSurrogatePair character/issurrogatepair.html
-  IsLetter character/isletter.html
-  IsLetterOrDigit character/isletterordigit.html
-  IsLower character/islower.html
-  IsNumber character/isnumber.html
-  IsPunctuation character/ispunctuation.html
-  IsSeparator character/isseparator.html
-  IsSymbol character/issymbol.html
-  IsUpper character/isupper.html
-  IsWhiteSpace character/iswhitespace.html
-  ToLower character/tolower.html
-  ToUpper character/toupper.html
  charset charset/index.html
   BINARY_MAPPING_FILE_EXT charset/binary_mapping_file_ext.html
   tunicodechar charset/tunicodechar.html
@@ -7466,9 +7518,117 @@
 #rtl.sysutils.EFileNotFoundException #rtl.sysutils.Exception
 #rtl.sysutils.EPathNotFoundException #rtl.sysutils.Exception
 #rtl.sysutils.ENoConstructException #rtl.sysutils.Exception
+#rtl.sysutils.EEncodingError #rtl.sysutils.Exception
+#rtl.sysutils.TEncoding #rtl.System.TObject
+6MTStandardEncoding
+6VFStandardEncodings
+6MGetANSI
+6MGetASCII
+6MGetBigEndianUnicode
+6MGetDefault
+6MGetUnicode
+6MGetUTF7
+6MGetUTF8
+6MCreate
+6MDestroy
+7VFIsSingleByte
+7VFMaxCharSize
+7MGetByteCount
+7MGetBytes
+7MGetCharCount
+7MGetChars
+7MGetCodePage
+7MGetEncodingName
+3MFreeEncodings
+3MClone
+3MConvert
+3MIsStandardEncoding
+3MGetBufferEncoding
+3MGetEncoding
+3MGetMaxByteCount
+3MGetMaxCharCount
+3MGetPreamble
+3MGetString
+3PCodePage r
+3PEncodingName r
+3PIsSingleByte r
+3PANSI r
+3PASCII r
+3PBigEndianUnicode r
+3PDefault r
+3PUnicode r
+3PUTF7 r
+3PUTF8 r
+#rtl.sysutils.TMBCSEncoding #rtl.sysutils.TEncoding
+6VFCodePage
+6VFMBToWCharFlags
+6VFWCharToMBFlags
+7MGetByteCount
+7MGetBytes
+7MGetCharCount
+7MGetChars
+7MGetCodePage
+7MGetEncodingName
+3MCreate
+3MClone
+3MGetMaxByteCount
+3MGetMaxCharCount
+3MGetPreamble
+#rtl.sysutils.TUTF7Encoding #rtl.sysutils.TMBCSEncoding
+3MCreate
+3MClone
+3MGetMaxByteCount
+3MGetMaxCharCount
+#rtl.sysutils.TUTF8Encoding #rtl.sysutils.TUTF7Encoding
+3MCreate
+3MClone
+3MGetMaxByteCount
+3MGetMaxCharCount
+3MGetPreamble
+#rtl.sysutils.TUnicodeEncoding #rtl.sysutils.TEncoding
+7MGetByteCount
+7MGetBytes
+7MGetCharCount
+7MGetChars
+7MGetCodePage
+7MGetEncodingName
+3MCreate
+3MClone
+3MGetMaxByteCount
+3MGetMaxCharCount
+3MGetPreamble
+#rtl.sysutils.TBigEndianUnicodeEncoding #rtl.sysutils.TUnicodeEncoding
+7MGetBytes
+7MGetChars
+7MGetCodePage
+7MGetEncodingName
+3MClone
+3MGetPreamble
 #rtl.sysutils.IReadWriteSync #rtl.System.IUnknown
+0MBeginRead
+0MEndRead
+0MBeginWrite
+0MEndWrite
 #rtl.sysutils.TSimpleRWSync #rtl.System.TInterfacedObject,#rtl.sysutils.IReadWriteSync
+1Vcrit
+3MCreate
+3MDestroy
+3MBeginwrite
+3MEndwrite
+3MBeginread
+3MEndread
 #rtl.sysutils.TMultiReadExclusiveWriteSynchronizer #rtl.System.TInterfacedObject,#rtl.sysutils.IReadWriteSync
+1Vfreaderqueue
+1Vfwritelock
+1Vfwaitingwriterlock
+1Vfreadercount
+1Vfwritelocked
+3MCreate
+3MDestroy
+3MBeginwrite
+3MEndwrite
+3MBeginread
+3MEndread
 #rtl.sysutils.TGuidHelper 
 0MCreate
 0MNewGuid
@@ -7535,6 +7695,111 @@
 3MTrimStart
 3PChars r
 3PLength r
+#rtl.sysutils.TSingleHelper 
+0MGetB
+0MGetW
+0MGetE
+0MGetF
+0MGetS
+0MSetB
+0MSetW
+0MSetE
+0MSetF
+0MSetS
+3MEpsilon
+3MMaxValue
+3MMinValue
+3MPositiveInfinity
+3MNegativeInfinity
+3MNaN
+3MIsNan
+3MIsInfinity
+3MIsNegativeInfinity
+3MIsPositiveInfinity
+3MParse
+3MSize
+3MToString
+3MTryParse
+3MBuildUp
+3MExponent
+3MFraction
+3MMantissa
+3MSpecialType
+3PBytes rw
+3PWords rw
+3PSign rw
+3PExp rw
+3PFrac rw
+#rtl.sysutils.TDoubleHelper 
+1MGetB
+1MGetW
+1MGetE
+1MGetF
+1MGetS
+1MSetB
+1MSetW
+1MSetE
+1MSetF
+1MSetS
+3MEpsilon
+3MMaxValue
+3MMinValue
+3MPositiveInfinity
+3MNegativeInfinity
+3MNaN
+3MIsInfinity
+3MIsNan
+3MIsNegativeInfinity
+3MIsPositiveInfinity
+3MParse
+3MSize
+3MToString
+3MTryParse
+3MBuildUp
+3MExponent
+3MFraction
+3MMantissa
+3MSpecialType
+3PBytes rw
+3PWords rw
+3PSign rw
+3PExp rw
+3PFrac rw
+#rtl.sysutils.TExtendedHelper 
+1MGetB
+1MGetW
+1MGetE
+1MGetF
+1MGetS
+1MSetB
+1MSetW
+1MSetE
+1MSetF
+1MSetS
+3MEpsilon
+3MMaxValue
+3MMinValue
+3MPositiveInfinity
+3MNegativeInfinity
+3MNaN
+3MToString
+3MParse
+3MTryParse
+3MIsNan
+3MIsInfinity
+3MIsNegativeInfinity
+3MIsPositiveInfinity
+3MSize
+3MBuildUp
+3MExponent
+3MFraction
+3MMantissa
+3MSpecialType
+3PBytes rw
+3PWords rw
+3PSign rw
+3PExp rw
+3PFrac rw
 #rtl.sysutils.TByteHelper 
 3MMaxValue
 3MMinValue
@@ -9025,9 +9290,12 @@
 #rtl.Classes.TDataModule #rtl.Classes.TComponent
 1VFDPos
 1VFDSize
+1VFDPPI
 1VFOnCreate
 1VFOnDestroy
 1VFOldOrder
+1MReadP
+1MWriteP
 1MReadT
 1MWriteT
 1MReadL
@@ -9049,6 +9317,7 @@
 3MBeforeDestruction
 3PDesignOffset rw
 3PDesignSize rw
+3PDesignPPI rw
 4POnCreate rw
 4POnDestroy rw
 4POldCreateOrder rw
@@ -9245,6 +9514,7 @@
 2MSetLast
 2MGetFirst
 2MSetFirst
+2MCheckIndex
 3MCreate
 3MDestroy
 3MAdd
@@ -9280,7 +9550,6 @@
 1MTTypeList
 1MPTypeList
 1MPT
-1MTFPGListEnumeratorSpec
 2VFOnCompare
 2MCopyItem
 2MDeref
@@ -9292,6 +9561,7 @@
 2MSetLast
 2MGetFirst
 2MSetFirst
+3MTFPGListEnumeratorSpec
 3MCreate
 3MAdd
 3MExtract
@@ -9524,27 +9794,3 @@
 3POnCompare rw
 3POnKeyCompare rw
 3POnDataCompare rw
-#rtl.character.TCharacter #rtl.System.TObject
-1MTestCategory
-3MCreate
-3MConvertFromUtf32
-3MConvertToUtf32
-3MGetNumericValue
-3MGetUnicodeCategory
-3MIsControl
-3MIsDigit
-3MIsSurrogate
-3MIsHighSurrogate
-3MIsLowSurrogate
-3MIsSurrogatePair
-3MIsLetter
-3MIsLetterOrDigit
-3MIsLower
-3MIsNumber
-3MIsPunctuation
-3MIsSeparator
-3MIsSymbol
-3MIsUpper
-3MIsWhiteSpace
-3MToLower
-3MToUpper
