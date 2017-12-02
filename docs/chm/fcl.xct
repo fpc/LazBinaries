@@ -530,6 +530,7 @@
    Create streamex/ttextreader.create.html
    Reset streamex/ttextreader.reset.html
    Close streamex/ttextreader.close.html
+   IsEof streamex/ttextreader.iseof.html
    ReadLine streamex/ttextreader.readline.html
    Eof streamex/ttextreader.eof.html
   TStreamReader streamex/tstreamreader.html
@@ -537,6 +538,7 @@
    Destroy streamex/tstreamreader.destroy.html
    Reset streamex/tstreamreader.reset.html
    Close streamex/tstreamreader.close.html
+   IsEof streamex/tstreamreader.iseof.html
    ReadLine streamex/tstreamreader.readline.html
    BaseStream streamex/tstreamreader.basestream.html
    OwnsStream streamex/tstreamreader.ownsstream.html
@@ -545,12 +547,14 @@
    Destroy streamex/tstringreader.destroy.html
    Reset streamex/tstringreader.reset.html
    Close streamex/tstringreader.close.html
+   IsEof streamex/tstringreader.iseof.html
    ReadLine streamex/tstringreader.readline.html
   TFileReader streamex/tfilereader.html
    Create streamex/tfilereader.create.html
    Destroy streamex/tfilereader.destroy.html
    Reset streamex/tfilereader.reset.html
    Close streamex/tfilereader.close.html
+   IsEof streamex/tfilereader.iseof.html
    ReadLine streamex/tfilereader.readline.html
   TWindowedStream streamex/twindowedstream.html
    Create streamex/twindowedstream.create.html
@@ -783,9 +787,6 @@
   TEventHandle syncobjs/teventhandle.html
   TWaitResult syncobjs/twaitresult.html
   TEvent syncobjs/tevent.html
-  ESyncObjectException syncobjs/esyncobjectexception.html
-  ELockException syncobjs/elockexception.html
-  ELockRecursionException syncobjs/elockrecursionexception.html
   TSynchroObject syncobjs/tsynchroobject.html
    Acquire syncobjs/tsynchroobject.acquire.html
    Release syncobjs/tsynchroobject.release.html
@@ -2299,8 +2300,6 @@
    SchemaType sqldb/tsqlquery.schematype.html
    StatementType sqldb/tsqlquery.statementtype.html
    MaxIndexesCount sqldb/tsqlquery.maxindexescount.html
-   AfterRefresh sqldb/tsqlquery.afterrefresh.html
-   BeforeRefresh sqldb/tsqlquery.beforerefresh.html
    Database sqldb/tsqlquery.database.html
    Transaction sqldb/tsqlquery.transaction.html
    SQL sqldb/tsqlquery.sql.html
@@ -2534,7 +2533,6 @@
    Clear fpjson/tjsonqwordnumber.clear.html
    Clone fpjson/tjsonqwordnumber.clone.html
   TJSONString fpjson/tjsonstring.html
-   StrictEscaping fpjson/tjsonstring.strictescaping.html
    Create fpjson/tjsonstring.create.html
    JSONType fpjson/tjsonstring.jsontype.html
    Clear fpjson/tjsonstring.clear.html
@@ -3302,43 +3300,42 @@
 3MWriteValue
 3PPosition rw
 #fcl.streamex.TTextReader #rtl.System.TObject
-2MIsEof
 3MCreate
 3MReset
 3MClose
+3MIsEof
 3MReadLine
 3PEof r
 #fcl.streamex.TStreamReader #fcl.streamex.TTextReader
 1VFBufferRead
 1VFBufferPosition
-1VFClosed
 1VFOwnsStream
 1VFStream
 1VFBuffer
 1MFillBuffer
-2MIsEof
 3MCreate
 3MDestroy
 3MReset
 3MClose
+3MIsEof
 3MReadLine
 3PBaseStream r
 3POwnsStream rw
 #fcl.streamex.TStringReader #fcl.streamex.TTextReader
 1VFReader
-2MIsEof
 3MCreate
 3MDestroy
 3MReset
 3MClose
+3MIsEof
 3MReadLine
 #fcl.streamex.TFileReader #fcl.streamex.TTextReader
 1VFReader
-2MIsEof
 3MCreate
 3MDestroy
 3MReset
 3MClose
+3MIsEof
 3MReadLine
 #fcl.streamex.TWindowedStream #rtl.Classes.TOwnerStream
 1VfStart
@@ -3658,9 +3655,6 @@
 4POnGetCustomEvent rw
 4PPaused rw
 #fcl.eventlog.ELogError #rtl.sysutils.Exception
-#fcl.syncobjs.ESyncObjectException #rtl.sysutils.Exception
-#fcl.syncobjs.ELockException #fcl.syncobjs.ESyncObjectException
-#fcl.syncobjs.ELockRecursionException #fcl.syncobjs.ESyncObjectException
 #fcl.syncobjs.TSynchroObject #rtl.System.TObject
 0MAcquire
 0MRelease
@@ -6394,8 +6388,6 @@
 2PAfterCancel
 2PBeforeDelete
 2PAfterDelete
-2PBeforeRefresh
-2PAfterRefresh
 2PBeforeScroll
 2PAfterScroll
 2POnCalcFields
@@ -6441,7 +6433,6 @@
 4PAfterInsert
 4PAfterOpen
 4PAfterPost
-4PAfterRefresh
 4PAfterScroll
 4PBeforeCancel
 4PBeforeClose
@@ -6450,7 +6441,6 @@
 4PBeforeInsert
 4PBeforeOpen
 4PBeforePost
-4PBeforeRefresh
 4PBeforeScroll
 4POnCalcFields
 4POnDeleteError
@@ -6866,7 +6856,6 @@
 2MGetAsJSON
 2MGetAsString
 2MSetAsString
-3VStrictEscaping
 3MCreate
 3MJSONType
 3MClear
