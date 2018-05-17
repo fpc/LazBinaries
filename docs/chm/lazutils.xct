@@ -247,10 +247,13 @@
   GetEnvironmentStringUTF8 lazutf8/getenvironmentstringutf8.html
   GetEnvironmentVariableUTF8 lazutf8/getenvironmentvariableutf8.html
   SysErrorMessageUTF8 lazutf8/syserrormessageutf8.html
+  UTF8CodepointSize lazutf8/utf8codepointsize.html
   UTF8CharacterLength lazutf8/utf8characterlength.html
+  UTF8CodepointSizeFast lazutf8/utf8codepointsizefast.html
   UTF8CharacterLengthFast lazutf8/utf8characterlengthfast.html
   UTF8Length lazutf8/utf8length.html
   UTF8LengthFast lazutf8/utf8lengthfast.html
+  UTF8CodepointToUnicode lazutf8/utf8codepointtounicode.html
   UTF8CharacterToUnicode lazutf8/utf8charactertounicode.html
   UnicodeToUTF8 lazutf8/unicodetoutf8.html
   UnicodeToUTF8SkipErrors lazutf8/unicodetoutf8skiperrors.html
@@ -259,9 +262,12 @@
   UTF8ToDoubleByte lazutf8/utf8todoublebyte.html
   UTF8FindNearestCharStart lazutf8/utf8findnearestcharstart.html
   Utf8TryFindCodepointStart lazutf8/utf8tryfindcodepointstart.html
+  UTF8CodepointStart lazutf8/utf8codepointstart.html
   UTF8CharStart lazutf8/utf8charstart.html
+  UTF8CodepointToByteIndex lazutf8/utf8codepointtobyteindex.html
   UTF8CharToByteIndex lazutf8/utf8chartobyteindex.html
   UTF8FixBroken lazutf8/utf8fixbroken.html
+  UTF8CodepointStrictSize lazutf8/utf8codepointstrictsize.html
   UTF8CharacterStrictLength lazutf8/utf8characterstrictlength.html
   UTF8CStringToUTF8String lazutf8/utf8cstringtoutf8string.html
   UTF8Pos lazutf8/utf8pos.html
@@ -275,6 +281,8 @@
   UTF8UpperCase lazutf8/utf8uppercase.html
   UTF8UpperString lazutf8/utf8upperstring.html
   UTF8SwapCase lazutf8/utf8swapcase.html
+  UTF8ProperCase lazutf8/utf8propercase.html
+  FindInvalidUTF8Codepoint lazutf8/findinvalidutf8codepoint.html
   FindInvalidUTF8Character lazutf8/findinvalidutf8character.html
   UTF8StringOfChar lazutf8/utf8stringofchar.html
   UTF8AddChar lazutf8/utf8addchar.html
@@ -288,13 +296,11 @@
   UTF8StartsText lazutf8/utf8startstext.html
   UTF8EndsText lazutf8/utf8endstext.html
   UTF8ReverseString lazutf8/utf8reversestring.html
-  UTF8RPosByReverse lazutf8/utf8rposbyreverse.html
   UTF8RPos lazutf8/utf8rpos.html
   UTF8WrapText lazutf8/utf8wraptext.html
   ValidUTF8String lazutf8/validutf8string.html
   Utf8EscapeControlChars lazutf8/utf8escapecontrolchars.html
   UTF8Trim lazutf8/utf8trim.html
-  AssignUTF8ListToAnsi lazutf8/assignutf8listtoansi.html
   UTF8CompareStr lazutf8/utf8comparestr.html
   UTF8CompareStrP lazutf8/utf8comparestrp.html
   UTF8CompareText lazutf8/utf8comparetext.html
@@ -2191,7 +2197,6 @@
   DbgWideStr lazlogger/dbgwidestr.html
   DumpExceptionBackTrace lazlogger/dumpexceptionbacktrace.html
   ConvertLineEndings lazlogger/convertlineendings.html
-  ReplaceSubstring lazlogger/replacesubstring.html
   GetDebugLogger lazlogger/getdebuglogger.html
   SetDebugLogger lazlogger/setdebuglogger.html
  Laz_DOM laz_dom/index.html
@@ -2918,7 +2923,6 @@
    OnChange textstrings/ttextstrings.onchange.html
    OnChanging textstrings/ttextstrings.onchanging.html
  Translations translations/index.html
-  tgHasDup translations/tghasdup.html
   sFuzzyFlag translations/sfuzzyflag.html
   sBadFormatFlag translations/sbadformatflag.html
   TStringsType translations/tstringstype.html
@@ -2933,13 +2937,13 @@
    Flags translations/tpofileitem.flags.html
    PreviousID translations/tpofileitem.previousid.html
    Context translations/tpofileitem.context.html
+   Duplicate translations/tpofileitem.duplicate.html
    Create translations/tpofileitem.create.html
    ModifyFlag translations/tpofileitem.modifyflag.html
    Identifier translations/tpofileitem.identifier.html
   TPOFile translations/tpofile.html
    FItems translations/tpofile.fitems.html
    FIdentifierLowToItem translations/tpofile.fidentifierlowtoitem.html
-   FIdentLowVarToItem translations/tpofile.fidentlowvartoitem.html
    FOriginalToItem translations/tpofile.foriginaltoitem.html
    FCharSet translations/tpofile.fcharset.html
    FHeader translations/tpofile.fheader.html
@@ -2947,15 +2951,11 @@
    FTag translations/tpofile.ftag.html
    FModified translations/tpofile.fmodified.html
    FHelperList translations/tpofile.fhelperlist.html
-   FModuleList translations/tpofile.fmodulelist.html
    FPoName translations/tpofile.fponame.html
    FNrTranslated translations/tpofile.fnrtranslated.html
    FNrUntranslated translations/tpofile.fnruntranslated.html
    FNrFuzzy translations/tpofile.fnrfuzzy.html
    FNrErrors translations/tpofile.fnrerrors.html
-   FFormatChecked translations/tpofile.fformatchecked.html
-   RemoveTaggedItems translations/tpofile.removetaggeditems.html
-   RemoveUntaggedModules translations/tpofile.removeuntaggedmodules.html
    Remove translations/tpofile.remove.html
    UpdateCounters translations/tpofile.updatecounters.html
    GetCount translations/tpofile.getcount.html
@@ -2964,7 +2964,6 @@
    ReadPOText translations/tpofile.readpotext.html
    Create translations/tpofile.create.html
    Destroy translations/tpofile.destroy.html
-   Add translations/tpofile.add.html
    Translate translations/tpofile.translate.html
    CharSet translations/tpofile.charset.html
    Report translations/tpofile.report.html
@@ -2973,10 +2972,10 @@
    SaveToStrings translations/tpofile.savetostrings.html
    SaveToFile translations/tpofile.savetofile.html
    UpdateItem translations/tpofile.updateitem.html
+   FillItem translations/tpofile.fillitem.html
    UpdateTranslation translations/tpofile.updatetranslation.html
-   ClearModuleList translations/tpofile.clearmodulelist.html
-   AddToModuleList translations/tpofile.addtomodulelist.html
    UntagAll translations/tpofile.untagall.html
+   RemoveTaggedItems translations/tpofile.removetaggeditems.html
    RemoveIdentifier translations/tpofile.removeidentifier.html
    RemoveOriginal translations/tpofile.removeoriginal.html
    RemoveIdentifiers translations/tpofile.removeidentifiers.html
@@ -2984,7 +2983,6 @@
    Tag translations/tpofile.tag.html
    Modified translations/tpofile.modified.html
    Items translations/tpofile.items.html
-   CheckFormatArguments translations/tpofile.checkformatarguments.html
    CleanUp translations/tpofile.cleanup.html
    PoName translations/tpofile.poname.html
    PoRename translations/tpofile.porename.html
@@ -2994,14 +2992,13 @@
    NrErrors translations/tpofile.nrerrors.html
    FindPoItem translations/tpofile.findpoitem.html
    OriginalToItem translations/tpofile.originaltoitem.html
-   OriginalList translations/tpofile.originallist.html
    PoItems translations/tpofile.poitems.html
    Count translations/tpofile.count.html
    Header translations/tpofile.header.html
-   FormatChecked translations/tpofile.formatchecked.html
   EPOFileError translations/epofileerror.html
    ResFileName translations/epofileerror.resfilename.html
    POFileName translations/epofileerror.pofilename.html
+  FindAllTranslatedPoFiles translations/findalltranslatedpofiles.html
   TranslateUnitResourceStrings translations/translateunitresourcestrings.html
   TranslateResourceStrings translations/translateresourcestrings.html
   UTF8ToSystemCharSet translations/utf8tosystemcharset.html
@@ -5058,6 +5055,7 @@
 1VFLogTextInUse
 1VFLogTextFailed
 1VFUseStdOut
+1VFWriteToFileLock
 1MDoOpenFile
 1MDoCloseFile
 1MGetWriteTarget
@@ -5807,13 +5805,14 @@
 3VFlags
 3VPreviousID
 3VContext
+3VDuplicate
 3MCreate
 3MModifyFlag
 3PIdentifier r
 #lazutils.Translations.TPOFile #rtl.System.TObject
+1VFAllowChangeFuzzyFlag
 2VFItems
 2VFIdentifierLowToItem
-2VFIdentLowVarToItem
 2VFOriginalToItem
 2VFCharSet
 2VFHeader
@@ -5821,15 +5820,11 @@
 2VFTag
 2VFModified
 2VFHelperList
-2VFModuleList
 2VFPoName
 2VFNrTranslated
 2VFNrUntranslated
 2VFNrFuzzy
 2VFNrErrors
-2VFFormatChecked
-2MRemoveTaggedItems
-2MRemoveUntaggedModules
 2MRemove
 2MUpdateCounters
 2MGetCount
@@ -5838,7 +5833,6 @@
 2MReadPOText
 3MCreate
 3MDestroy
-3MAdd
 3MTranslate
 3PCharSet r
 3MReport
@@ -5847,10 +5841,10 @@
 3MSaveToStrings
 3MSaveToFile
 3MUpdateItem
+3MFillItem
 3MUpdateTranslation
-3MClearModuleList
-3MAddToModuleList
 3MUntagAll
+3MRemoveTaggedItems
 3MRemoveIdentifier
 3MRemoveOriginal
 3MRemoveIdentifiers
@@ -5858,7 +5852,6 @@
 3PTag rw
 3PModified r
 3PItems r
-3MCheckFormatArguments
 3MCleanUp
 3PPoName r
 3PPoRename w
@@ -5868,11 +5861,9 @@
 3PNrErrors r
 3MFindPoItem
 3MOriginalToItem
-3POriginalList r
 3PPoItems r
 3PCount r
 3PHeader r
-3PFormatChecked r
 #lazutils.Translations.EPOFileError #rtl.sysutils.Exception
 3VResFileName
 3VPOFileName
