@@ -10,11 +10,10 @@ How to install the CHMs in Lazarus
 ------------------------------------
 
 - Install the chmhelp package
-- Copy the chm, xct, or kwd files to docs/chm in the Lazarus directory.
+- Copy the chms to docs/html in the Lazarus directory.
 
 Note that Lazarus does not load ref.* at this moment, so (CHM) help
 on keywords does not work yet.
-Note that toc.chm is not loaded by the LHelp CHM viewer at the present time.
 
 How to install the CHMs into the textmode IDE.
 -------------------------------------
