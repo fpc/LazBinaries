@@ -107,9 +107,7 @@
    GetString avglvltree/tstringtostringtree.getstring.html
    Add avglvltree/tstringtostringtree.add.html
    AddNameValues avglvltree/tstringtostringtree.addnamevalues.html
-   AddValues avglvltree/tstringtostringtree.addvalues.html
    AddNames avglvltree/tstringtostringtree.addnames.html
-   Delete avglvltree/tstringtostringtree.delete.html
    Values avglvltree/tstringtostringtree.values.html
    GetNodeData avglvltree/tstringtostringtree.getnodedata.html
    AsText avglvltree/tstringtostringtree.astext.html
@@ -147,6 +145,8 @@
   CompareFilenameToStringItemsI avglvltree/comparefilenametostringitemsi.html
   CompareFilenameAndFilenameToStringTreeItemI avglvltree/comparefilenameandfilenametostringtreeitemi.html
  LazFileUtils lazfileutils/index.html
+  PathDelimSwitchToDelim lazfileutils/pathdelimswitchtodelim.html
+  TPathDelimSwitch lazfileutils/tpathdelimswitch.html
   TPhysicalFilenameOnError lazfileutils/tphysicalfilenameonerror.html
   TInvalidateFileStateCacheEvent lazfileutils/tinvalidatefilestatecacheevent.html
   CompareFilenames lazfileutils/comparefilenames.html
@@ -157,6 +157,7 @@
   DirPathExists lazfileutils/dirpathexists.html
   DirectoryIsWritable lazfileutils/directoryiswritable.html
   ExtractFileNameOnly lazfileutils/extractfilenameonly.html
+  ExtractFileNameWithoutExt lazfileutils/extractfilenamewithoutext.html
   FilenameIsAbsolute lazfileutils/filenameisabsolute.html
   FilenameIsWinAbsolute lazfileutils/filenameiswinabsolute.html
   FilenameIsUnixAbsolute lazfileutils/filenameisunixabsolute.html
@@ -172,17 +173,21 @@
   FilenameIsTrimmed lazfileutils/filenameistrimmed.html
   TrimFilename lazfileutils/trimfilename.html
   ResolveDots lazfileutils/resolvedots.html
-  ForcePathDelims lazfileutils/forcepathdelims.html
-  GetForcedPathDelims lazfileutils/getforcedpathdelims.html
   CleanAndExpandFilename lazfileutils/cleanandexpandfilename.html
   CleanAndExpandDirectory lazfileutils/cleanandexpanddirectory.html
   TrimAndExpandFilename lazfileutils/trimandexpandfilename.html
   TrimAndExpandDirectory lazfileutils/trimandexpanddirectory.html
+  CreateAbsolutePath lazfileutils/createabsolutepath.html
   TryCreateRelativePath lazfileutils/trycreaterelativepath.html
   CreateRelativePath lazfileutils/createrelativepath.html
   FileIsInPath lazfileutils/fileisinpath.html
+  ForcePathDelims lazfileutils/forcepathdelims.html
+  GetForcedPathDelims lazfileutils/getforcedpathdelims.html
   AppendPathDelim lazfileutils/appendpathdelim.html
   ChompPathDelim lazfileutils/chomppathdelim.html
+  SwitchPathDelims lazfileutils/switchpathdelims.html
+  CheckPathDelim lazfileutils/checkpathdelim.html
+  IsCurrentPathDelim lazfileutils/iscurrentpathdelim.html
   CreateAbsoluteSearchPath lazfileutils/createabsolutesearchpath.html
   CreateRelativeSearchPath lazfileutils/createrelativesearchpath.html
   MinimizeSearchPath lazfileutils/minimizesearchpath.html
@@ -215,7 +220,6 @@
   GetShellLinkTarget lazfileutils/getshelllinktarget.html
   DbgSFileAttr lazfileutils/dbgsfileattr.html
   GetPhysicalFilename lazfileutils/getphysicalfilename.html
-  GetUnixPhysicalFilename lazfileutils/getunixphysicalfilename.html
   GetAppConfigDirUTF8 lazfileutils/getappconfigdirutf8.html
   GetAppConfigFileUTF8 lazfileutils/getappconfigfileutf8.html
   GetTempFileNameUTF8 lazfileutils/gettempfilenameutf8.html
@@ -225,6 +229,8 @@
   SplitCmdLineParams lazfileutils/splitcmdlineparams.html
   StrToCmdLineParam lazfileutils/strtocmdlineparam.html
   MergeCmdLineParams lazfileutils/mergecmdlineparams.html
+  SplitCmdLine lazfileutils/splitcmdline.html
+  PrepareCmdLineOption lazfileutils/preparecmdlineoption.html
   InvalidateFileStateCache lazfileutils/invalidatefilestatecache.html
   OnInvalidateFileStateCache lazfileutils/oninvalidatefilestatecache.html
  LazUTF8 lazutf8/index.html
@@ -250,7 +256,6 @@
   UTF8CodepointSize lazutf8/utf8codepointsize.html
   UTF8CharacterLength lazutf8/utf8characterlength.html
   UTF8CodepointSizeFast lazutf8/utf8codepointsizefast.html
-  UTF8CharacterLengthFast lazutf8/utf8characterlengthfast.html
   UTF8Length lazutf8/utf8length.html
   UTF8LengthFast lazutf8/utf8lengthfast.html
   UTF8CodepointToUnicode lazutf8/utf8codepointtounicode.html
@@ -298,7 +303,6 @@
   UTF8ReverseString lazutf8/utf8reversestring.html
   UTF8RPos lazutf8/utf8rpos.html
   UTF8WrapText lazutf8/utf8wraptext.html
-  ValidUTF8String lazutf8/validutf8string.html
   Utf8EscapeControlChars lazutf8/utf8escapecontrolchars.html
   UTF8Trim lazutf8/utf8trim.html
   UTF8CompareStr lazutf8/utf8comparestr.html
@@ -334,6 +338,8 @@
   lrsCanNotExecute lazutilsstrconsts/index-1.html#lrscannotexecute
   lrsListMustBeEmpty lazutilsstrconsts/index-1.html#lrslistmustbeempty
   lrsListIndexExceedsBounds lazutilsstrconsts/index-1.html#lrslistindexexceedsbounds
+  lrsERRORInCode lazutilsstrconsts/index-1.html#lrserrorincode
+  lrsCreatingGdbCatchableError lazutilsstrconsts/index-1.html#lrscreatinggdbcatchableerror
   lrsNodeSet lazutilsstrconsts/index-1.html#lrsnodeset
   lrsBoolean lazutilsstrconsts/index-1.html#lrsboolean
   lrsNumber lazutilsstrconsts/index-1.html#lrsnumber
@@ -484,6 +490,7 @@
    DebugLn lazloggerbase/tlazlogger.debugln.html
    DebugLnEnter lazloggerbase/tlazlogger.debuglnenter.html
    DebugLnExit lazloggerbase/tlazlogger.debuglnexit.html
+   DumpExceptionBackTrace lazloggerbase/tlazlogger.dumpexceptionbacktrace.html
   TLazLoggerWithGroupParam lazloggerbase/tlazloggerwithgroupparam.html
    Create lazloggerbase/tlazloggerwithgroupparam.create.html
    Assign lazloggerbase/tlazloggerwithgroupparam.assign.html
@@ -503,7 +510,7 @@
   dbghex lazloggerbase/dbghex.html
   dbgMemRange lazloggerbase/dbgmemrange.html
   dbgMemStream lazloggerbase/dbgmemstream.html
-  ConvertLineEndings lazloggerbase/convertlineendings.html
+  DumpExceptionBackTrace lazloggerbase/dumpexceptionbacktrace.html
   GetParamByNameCount lazloggerbase/getparambynamecount.html
   GetParamByName lazloggerbase/getparambyname.html
   GetDebugLoggerGroups lazloggerbase/getdebugloggergroups.html
@@ -512,14 +519,15 @@
   GetExistingDebugLogger lazloggerbase/getexistingdebuglogger.html
   SetDebugLogger lazloggerbase/setdebuglogger.html
   RecreateDebugLogger lazloggerbase/recreatedebuglogger.html
+  DbgStr lazloggerbase/dbgstr.html
+  DbgWideStr lazloggerbase/dbgwidestr.html
+  DumpStack lazloggerbase/dumpstack.html
   LazDebugLoggerCreator lazloggerbase/lazdebugloggercreator.html
   OnWidgetSetDebugLn lazloggerbase/onwidgetsetdebugln.html
   OnWidgetSetDbgOut lazloggerbase/onwidgetsetdbgout.html
  LazClasses lazclasses/index.html
   TFreeNotifyingObject lazclasses/tfreenotifyingobject.html
    Destroy lazclasses/tfreenotifyingobject.destroy.html
-   AddFreeeNotification lazclasses/tfreenotifyingobject.addfreeenotification.html
-   RemoveFreeeNotification lazclasses/tfreenotifyingobject.removefreeenotification.html
    AddFreeNotification lazclasses/tfreenotifyingobject.addfreenotification.html
    RemoveFreeNotification lazclasses/tfreenotifyingobject.removefreenotification.html
   TRefCountedObject lazclasses/trefcountedobject.html
@@ -552,6 +560,7 @@
    GetEnumerator lazmethodlist/tmethodlist.getenumerator.html
    Items lazmethodlist/tmethodlist.items.html
    AllowDuplicates lazmethodlist/tmethodlist.allowduplicates.html
+  CompareMethods lazmethodlist/comparemethods.html
  DynQueue dynqueue/index.html
   TDynamicQueueItem dynqueue/tdynamicqueueitem.html
   PDynamicQueueItem dynqueue/pdynamicqueueitem.html
@@ -1162,14 +1171,15 @@
   ExtractShortPathNameUTF8 fileutil/extractshortpathnameutf8.html
   DeleteDirectory fileutil/deletedirectory.html
   ProgramDirectory fileutil/programdirectory.html
+  ProgramDirectoryWithBundle fileutil/programdirectorywithbundle.html
   ExpandUNCFileNameUTF8 fileutil/expanduncfilenameutf8.html
   FileSize fileutil/filesize.html
-  ExtractFileNameWithoutExt fileutil/extractfilenamewithoutext.html
   FilenameIsPascalUnit fileutil/filenameispascalunit.html
-  CreateAbsoluteSearchPath fileutil/createabsolutesearchpath.html
-  CreateAbsolutePath fileutil/createabsolutepath.html
   FileIsInPath fileutil/fileisinpath.html
   FileIsInDirectory fileutil/fileisindirectory.html
+  ExtractFileNameWithoutExt fileutil/extractfilenamewithoutext.html
+  CreateAbsoluteSearchPath fileutil/createabsolutesearchpath.html
+  CreateAbsolutePath fileutil/createabsolutepath.html
   GetAllFilesMask fileutil/getallfilesmask.html
   GetExeExt fileutil/getexeext.html
   ReadFileToString fileutil/readfiletostring.html
@@ -1247,6 +1257,7 @@
   stduri_xmlns laz2_dom/stduri_xmlns.html
   PNodePoolArray laz2_dom/pnodepoolarray.html
   TNodePoolArray laz2_dom/tnodepoolarray.html
+  TFPList laz2_dom/tfplist.html
   TSetOfChar laz2_dom/tsetofchar.html
   DOMString laz2_dom/domstring.html
   DOMPChar laz2_dom/dompchar.html
@@ -1672,6 +1683,8 @@
   TXMLUtilChar laz2_xmlutils/txmlutilchar.html
   PXMLUtilChar laz2_xmlutils/pxmlutilchar.html
   PXMLUtilString laz2_xmlutils/pxmlutilstring.html
+  PtrInt laz2_xmlutils/ptrint.html
+  TFPList laz2_xmlutils/tfplist.html
   PPHashItem laz2_xmlutils/pphashitem.html
   PHashItem laz2_xmlutils/phashitem.html
   THashItem laz2_xmlutils/thashitem.html
@@ -1879,15 +1892,15 @@
   RegisterDecoder laz2_xmlread/registerdecoder.html
  LazUTF8Classes lazutf8classes/index.html
   TFileStreamUTF8 lazutf8classes/tfilestreamutf8.html
-   Create lazutf8classes/tfilestreamutf8.create.html
-   FileName lazutf8classes/tfilestreamutf8.filename.html
+   Create ms-its:rtl.chm::/classes/tfilestream.create.html
+   FileName ms-its:rtl.chm::/classes/tfilestream.filename.html
   TStringListUTF8 lazutf8classes/tstringlistutf8.html
    DoCompareText lazutf8classes/tstringlistutf8.docomparetext.html
-   LoadFromFile lazutf8classes/tstringlistutf8.loadfromfile.html
-   SaveToFile lazutf8classes/tstringlistutf8.savetofile.html
+   LoadFromFile 
+   SaveToFile 
   TMemoryStreamUTF8 lazutf8classes/tmemorystreamutf8.html
-   LoadFromFile lazutf8classes/tmemorystreamutf8.loadfromfile.html
-   SaveToFile lazutf8classes/tmemorystreamutf8.savetofile.html
+   LoadFromFile ms-its:rtl.chm::/classes/tmemorystream.loadfromfile.html
+   SaveToFile 
   LoadStringsFromFileUTF8 lazutf8classes/loadstringsfromfileutf8.html
   SaveStringsToFileUTF8 lazutf8classes/savestringstofileutf8.html
   CompareStringListItemsUTF8LowerCase lazutf8classes/comparestringlistitemsutf8lowercase.html
@@ -1897,12 +1910,11 @@
   WriteXMLFile laz2_xmlwrite/writexmlfile.html
   WriteXML laz2_xmlwrite/writexml.html
  LazUtilities lazutilities/index.html
+  FreeThenNil lazutilities/freethennil.html
   ComparePointers lazutilities/comparepointers.html
-  MergeSort lazutilities/mergesort.html
-  GetNextDelimitedItem lazutilities/getnextdelimiteditem.html
-  HasDelimitedItem lazutilities/hasdelimiteditem.html
-  FindNextDelimitedItem lazutilities/findnextdelimiteditem.html
-  MergeWithDelimiter lazutilities/mergewithdelimiter.html
+  CompareBoolean lazutilities/compareboolean.html
+  MergeSortWithLen lazutilities/mergesortwithlen.html
+  ConsoleVerbosity lazutilities/consoleverbosity.html
  laz2_xpath laz2_xpath/index.html
   TXPathToken laz2_xpath/txpathtoken.html
   TXPathKeyword laz2_xpath/txpathkeyword.html
@@ -2082,9 +2094,6 @@
    TotalItemsPopped lazcollections/tlazthreadedqueue.totalitemspopped.html
    TotalItemsPushed lazcollections/tlazthreadedqueue.totalitemspushed.html
    ShutDown lazcollections/tlazthreadedqueue.shutdown.html
- LazUTF8SysUtils lazutf8sysutils/index.html
-  NowUTC lazutf8sysutils/nowutc.html
-  GetTickCount64 lazutf8sysutils/gettickcount64.html
  LazConfigStorage lazconfigstorage/index.html
   ConfigMemStorageFormatVersion lazconfigstorage/configmemstorageformatversion.html
   TConfigStorageClass lazconfigstorage/tconfigstorageclass.html
@@ -2140,65 +2149,6 @@
   CompareConfigMemStorageNames lazconfigstorage/compareconfigmemstoragenames.html
   CompareConfigMemStorageNodes lazconfigstorage/compareconfigmemstoragenodes.html
   ComparePCharWithConfigMemStorageNode lazconfigstorage/comparepcharwithconfigmemstoragenode.html
- LazLogger lazlogger/index.html
-  PLazLoggerLogGroup lazlogger/plazloggerloggroup.html
-  TLazLoggerFileHandle lazlogger/tlazloggerfilehandle.html
-   Create lazlogger/tlazloggerfilehandle.create.html
-   Destroy lazlogger/tlazloggerfilehandle.destroy.html
-   OpenFile lazlogger/tlazloggerfilehandle.openfile.html
-   CloseFile lazlogger/tlazloggerfilehandle.closefile.html
-   WriteToFile lazlogger/tlazloggerfilehandle.writetofile.html
-   WriteLnToFile lazlogger/tlazloggerfilehandle.writelntofile.html
-   LogName lazlogger/tlazloggerfilehandle.logname.html
-   UseStdOut lazlogger/tlazloggerfilehandle.usestdout.html
-   CloseLogFileBetweenWrites lazlogger/tlazloggerfilehandle.closelogfilebetweenwrites.html
-   WriteTarget lazlogger/tlazloggerfilehandle.writetarget.html
-   ActiveLogText lazlogger/tlazloggerfilehandle.activelogtext.html
-  TLazLoggerFile lazlogger/tlazloggerfile.html
-   DoInit lazlogger/tlazloggerfile.doinit.html
-   DoFinsh lazlogger/tlazloggerfile.dofinsh.html
-   IncreaseIndent lazlogger/tlazloggerfile.increaseindent.html
-   DecreaseIndent lazlogger/tlazloggerfile.decreaseindent.html
-   IndentChanged lazlogger/tlazloggerfile.indentchanged.html
-   CreateIndent lazlogger/tlazloggerfile.createindent.html
-   GetBlockHandler lazlogger/tlazloggerfile.getblockhandler.html
-   ClearAllBlockHandler lazlogger/tlazloggerfile.clearallblockhandler.html
-   DoDbgOut lazlogger/tlazloggerfile.dodbgout.html
-   DoDebugLn lazlogger/tlazloggerfile.dodebugln.html
-   DoDebuglnStack lazlogger/tlazloggerfile.dodebuglnstack.html
-   FileHandle lazlogger/tlazloggerfile.filehandle.html
-   Create lazloggerbase/tlazloggerwithgroupparam.create.html
-   Destroy lazlogger/tlazloggerfile.destroy.html
-   Assign lazloggerbase/tlazloggerwithgroupparam.assign.html
-   CurrentIndentLevel lazlogger/tlazloggerfile.currentindentlevel.html
-   ParamForLogFileName lazlogger/tlazloggerfile.paramforlogfilename.html
-   EnvironmentForLogFileName lazlogger/tlazloggerfile.environmentforlogfilename.html
-   OnDebugLn lazlogger/tlazloggerfile.ondebugln.html
-   OnDbgOut lazlogger/tlazloggerfile.ondbgout.html
-   AddBlockHandler lazlogger/tlazloggerfile.addblockhandler.html
-   RemoveBlockHandler lazlogger/tlazloggerfile.removeblockhandler.html
-   BlockHandlerCount lazlogger/tlazloggerfile.blockhandlercount.html
-   LogName lazlogger/tlazloggerfile.logname.html
-   UseStdOut lazlogger/tlazloggerfile.usestdout.html
-   CloseLogFileBetweenWrites lazlogger/tlazloggerfile.closelogfilebetweenwrites.html
-  DebuglnStack lazlogger/debuglnstack.html
-  DbgOut lazlogger/dbgout.html
-  DebugLn lazlogger/debugln.html
-  DebugLnEnter lazlogger/debuglnenter.html
-  DebugLnExit lazlogger/debuglnexit.html
-  DbgS lazlogger/dbgs.html
-  DbgSJoin lazlogger/dbgsjoin.html
-  DbgSName lazlogger/dbgsname.html
-  dbgObjMem lazlogger/dbgobjmem.html
-  dbghex lazlogger/dbghex.html
-  dbgMemRange lazlogger/dbgmemrange.html
-  dbgMemStream lazlogger/dbgmemstream.html
-  DbgStr lazlogger/dbgstr.html
-  DbgWideStr lazlogger/dbgwidestr.html
-  DumpExceptionBackTrace lazlogger/dumpexceptionbacktrace.html
-  ConvertLineEndings lazlogger/convertlineendings.html
-  GetDebugLogger lazlogger/getdebuglogger.html
-  SetDebugLogger lazlogger/setdebuglogger.html
  Laz_DOM laz_dom/index.html
   TDOMImplementation laz_dom/tdomimplementation.html
   TDOMDocumentFragment laz_dom/tdomdocumentfragment.html
@@ -2319,6 +2269,7 @@
    DrawHorizLine lazfreetypefpimagedrawer/tfpimagefreetypedrawer.drawhorizline.html
    FillPixels lazfreetypefpimagedrawer/tfpimagefreetypedrawer.fillpixels.html
    DrawText lazfreetypefpimagedrawer/tfpimagefreetypedrawer.drawtext.html
+   DrawGlyph lazfreetypefpimagedrawer/tfpimagefreetypedrawer.drawglyph.html
    Destroy lazfreetypefpimagedrawer/tfpimagefreetypedrawer.destroy.html
    Image lazfreetypefpimagedrawer/tfpimagefreetypedrawer.image.html
   TFPMemoryImageWithScanline lazfreetypefpimagedrawer/tfpmemoryimagewithscanline.html
@@ -2354,12 +2305,15 @@
  LazListClasses lazlistclasses/index.html
   TLazStorageMemShrinkProc lazlistclasses/tlazstoragememshrinkproc.html
   TLazStorageMemGrowProc lazlistclasses/tlazstoragememgrowproc.html
-  TLazPagedListMemParent lazlistclasses/tlazpagedlistmemparent.html
+  TLazPagedListObjParent lazlistclasses/tlazpagedlistobjparent.html
   TLazListClassesItemSize lazlistclasses/tlazlistclassesitemsize.html
    ItemSize lazlistclasses/tlazlistclassesitemsize.itemsize.html
   TLazListClassesVarItemSize lazlistclasses/tlazlistclassesvaritemsize.html
    ItemSize lazlistclasses/tlazlistclassesvaritemsize.itemsize.html
   TLazListClassesInternalMem lazlistclasses/tlazlistclassesinternalmem.html
+   TMemRecord lazlistclasses/tlazlistclassesinternalmem.tmemrecord.html
+   PMemRecord lazlistclasses/tlazlistclassesinternalmem.pmemrecord.html
+   CapacityFast lazlistclasses/tlazlistclassesinternalmem.capacityfast.html
    Init lazlistclasses/tlazlistclassesinternalmem.init.html
    Alloc lazlistclasses/tlazlistclassesinternalmem.alloc.html
    Free lazlistclasses/tlazlistclassesinternalmem.free.html
@@ -2368,114 +2322,137 @@
    Count lazlistclasses/tlazlistclassesinternalmem.count.html
    DataPointer lazlistclasses/tlazlistclassesinternalmem.datapointer.html
    FirstItemPointer lazlistclasses/tlazlistclassesinternalmem.firstitempointer.html
-  TLazDualCapacityListMemBase lazlistclasses/tlazdualcapacitylistmembase.html
-   GrowCapacity lazlistclasses/tlazdualcapacitylistmembase.growcapacity.html
-   ShrinkCapacity lazlistclasses/tlazdualcapacitylistmembase.shrinkcapacity.html
-   SetCapacityEx lazlistclasses/tlazdualcapacitylistmembase.setcapacityex.html
-   InsertRowsEx lazlistclasses/tlazdualcapacitylistmembase.insertrowsex.html
-   DeleteRowsEx lazlistclasses/tlazdualcapacitylistmembase.deleterowsex.html
-   Create lazlistclasses/tlazdualcapacitylistmembase.create.html
-   Destroy lazlistclasses/tlazdualcapacitylistmembase.destroy.html
-   InsertRows lazlistclasses/tlazdualcapacitylistmembase.insertrows.html
-   DeleteRows lazlistclasses/tlazdualcapacitylistmembase.deleterows.html
-   SwapEntries lazlistclasses/tlazdualcapacitylistmembase.swapentries.html
-   DebugDump lazlistclasses/tlazdualcapacitylistmembase.debugdump.html
-   Capacity lazlistclasses/tlazdualcapacitylistmembase.capacity.html
-   Count lazlistclasses/tlazdualcapacitylistmembase.count.html
-   ItemPointer lazlistclasses/tlazdualcapacitylistmembase.itempointer.html
-  TLazDualCapacityListMem lazlistclasses/tlazdualcapacitylistmem.html
-   Create lazlistclasses/tlazdualcapacitylistmem.create.html
-  TLazGenDualCapacityListMem lazlistclasses/tlazgendualcapacitylistmem.html
-   FList lazlistclasses/tlazgendualcapacitylistmem.flist.html
-   InsertRowsEx lazlistclasses/tlazgendualcapacitylistmem.insertrowsex.html
-   DeleteRowsEx lazlistclasses/tlazgendualcapacitylistmem.deleterowsex.html
-   Create lazlistclasses/tlazgendualcapacitylistmem.create.html
-   Destroy lazlistclasses/tlazgendualcapacitylistmem.destroy.html
-   InsertRows lazlistclasses/tlazgendualcapacitylistmem.insertrows.html
-   DeleteRows lazlistclasses/tlazgendualcapacitylistmem.deleterows.html
-   IndexOf lazlistclasses/tlazgendualcapacitylistmem.indexof.html
-   Capacity lazlistclasses/tlazgendualcapacitylistmem.capacity.html
-   Count lazlistclasses/tlazgendualcapacitylistmem.count.html
-   ItemPointer lazlistclasses/tlazgendualcapacitylistmem.itempointer.html
-  TLazRoundBufferListMemBase lazlistclasses/tlazroundbufferlistmembase.html
-   GrowCapacity lazlistclasses/tlazroundbufferlistmembase.growcapacity.html
-   ShrinkCapacity lazlistclasses/tlazroundbufferlistmembase.shrinkcapacity.html
-   SetCapacityEx lazlistclasses/tlazroundbufferlistmembase.setcapacityex.html
-   InsertRowsEx lazlistclasses/tlazroundbufferlistmembase.insertrowsex.html
-   DeleteRowsEx lazlistclasses/tlazroundbufferlistmembase.deleterowsex.html
-   Create lazlistclasses/tlazroundbufferlistmembase.create.html
-   Destroy lazlistclasses/tlazroundbufferlistmembase.destroy.html
-   InsertRows lazlistclasses/tlazroundbufferlistmembase.insertrows.html
-   DeleteRows lazlistclasses/tlazroundbufferlistmembase.deleterows.html
-   SwapEntries lazlistclasses/tlazroundbufferlistmembase.swapentries.html
-   DebugDump lazlistclasses/tlazroundbufferlistmembase.debugdump.html
-   Capacity lazlistclasses/tlazroundbufferlistmembase.capacity.html
-   Count lazlistclasses/tlazroundbufferlistmembase.count.html
-   ItemPointer lazlistclasses/tlazroundbufferlistmembase.itempointer.html
-  TLazRoundBufferListMem lazlistclasses/tlazroundbufferlistmem.html
-   Create lazlistclasses/tlazroundbufferlistmem.create.html
-  TLazGenRoundBufferListMem lazlistclasses/tlazgenroundbufferlistmem.html
-   FList lazlistclasses/tlazgenroundbufferlistmem.flist.html
-   InsertRowsEx lazlistclasses/tlazgenroundbufferlistmem.insertrowsex.html
-   DeleteRowsEx lazlistclasses/tlazgenroundbufferlistmem.deleterowsex.html
-   Create lazlistclasses/tlazgenroundbufferlistmem.create.html
-   Destroy lazlistclasses/tlazgenroundbufferlistmem.destroy.html
-   InsertRows lazlistclasses/tlazgenroundbufferlistmem.insertrows.html
-   DeleteRows lazlistclasses/tlazgenroundbufferlistmem.deleterows.html
-   IndexOf lazlistclasses/tlazgenroundbufferlistmem.indexof.html
-   Capacity lazlistclasses/tlazgenroundbufferlistmem.capacity.html
-   Count lazlistclasses/tlazgenroundbufferlistmem.count.html
-   ItemPointer lazlistclasses/tlazgenroundbufferlistmem.itempointer.html
+   FirstItemIndex lazlistclasses/tlazlistclassesinternalmem.firstitemindex.html
+  TLazShiftBufferListObjBase lazlistclasses/tlazshiftbufferlistobjbase.html
+   GrowCapacity lazlistclasses/tlazshiftbufferlistobjbase.growcapacity.html
+   ShrinkCapacity lazlistclasses/tlazshiftbufferlistobjbase.shrinkcapacity.html
+   SetCapacityEx lazlistclasses/tlazshiftbufferlistobjbase.setcapacityex.html
+   InsertRowsEx lazlistclasses/tlazshiftbufferlistobjbase.insertrowsex.html
+   DeleteRowsEx lazlistclasses/tlazshiftbufferlistobjbase.deleterowsex.html
+   ItemPointerFast lazlistclasses/tlazshiftbufferlistobjbase.itempointerfast.html
+   Create lazlistclasses/tlazshiftbufferlistobjbase.create.html
+   Destroy lazlistclasses/tlazshiftbufferlistobjbase.destroy.html
+   InsertRows lazlistclasses/tlazshiftbufferlistobjbase.insertrows.html
+   DeleteRows lazlistclasses/tlazshiftbufferlistobjbase.deleterows.html
+   MoveRows lazlistclasses/tlazshiftbufferlistobjbase.moverows.html
+   SwapEntries lazlistclasses/tlazshiftbufferlistobjbase.swapentries.html
+   DebugDump lazlistclasses/tlazshiftbufferlistobjbase.debugdump.html
+   Capacity lazlistclasses/tlazshiftbufferlistobjbase.capacity.html
+   Count lazlistclasses/tlazshiftbufferlistobjbase.count.html
+   ItemPointer lazlistclasses/tlazshiftbufferlistobjbase.itempointer.html
+  TLazShiftBufferListObj lazlistclasses/tlazshiftbufferlistobj.html
+   Create lazlistclasses/tlazshiftbufferlistobj.create.html
+  TLazShiftBufferListObjGen lazlistclasses/tlazshiftbufferlistobjgen.html
+   InsertRowsEx lazlistclasses/tlazshiftbufferlistobjgen.insertrowsex.html
+   DeleteRowsEx lazlistclasses/tlazshiftbufferlistobjgen.deleterowsex.html
+   ItemPointerFast lazlistclasses/tlazshiftbufferlistobjgen.itempointerfast.html
+   Create lazlistclasses/tlazshiftbufferlistobjgen.create.html
+   Destroy lazlistclasses/tlazshiftbufferlistobjgen.destroy.html
+   InsertRows lazlistclasses/tlazshiftbufferlistobjgen.insertrows.html
+   DeleteRows lazlistclasses/tlazshiftbufferlistobjgen.deleterows.html
+   MoveRows lazlistclasses/tlazshiftbufferlistobjgen.moverows.html
+   SwapEntries lazlistclasses/tlazshiftbufferlistobjgen.swapentries.html
+   DebugDump lazlistclasses/tlazshiftbufferlistobjgen.debugdump.html
+   Capacity lazlistclasses/tlazshiftbufferlistobjgen.capacity.html
+   Count lazlistclasses/tlazshiftbufferlistobjgen.count.html
+   ItemPointer lazlistclasses/tlazshiftbufferlistobjgen.itempointer.html
+   IndexOf lazlistclasses/tlazshiftbufferlistobjgen.indexof.html
+   Items lazlistclasses/tlazshiftbufferlistobjgen.items.html
+  TLazRoundBufferListObjBase lazlistclasses/tlazroundbufferlistobjbase.html
+   InternalMoveUp lazlistclasses/tlazroundbufferlistobjbase.internalmoveup.html
+   InternalMoveDown lazlistclasses/tlazroundbufferlistobjbase.internalmovedown.html
+   GrowCapacity lazlistclasses/tlazroundbufferlistobjbase.growcapacity.html
+   ShrinkCapacity lazlistclasses/tlazroundbufferlistobjbase.shrinkcapacity.html
+   SetCapacityEx lazlistclasses/tlazroundbufferlistobjbase.setcapacityex.html
+   InsertRowsEx lazlistclasses/tlazroundbufferlistobjbase.insertrowsex.html
+   DeleteRowsEx lazlistclasses/tlazroundbufferlistobjbase.deleterowsex.html
+   ItemPointerFast lazlistclasses/tlazroundbufferlistobjbase.itempointerfast.html
+   Create lazlistclasses/tlazroundbufferlistobjbase.create.html
+   Destroy lazlistclasses/tlazroundbufferlistobjbase.destroy.html
+   InsertRows lazlistclasses/tlazroundbufferlistobjbase.insertrows.html
+   DeleteRows lazlistclasses/tlazroundbufferlistobjbase.deleterows.html
+   MoveRows lazlistclasses/tlazroundbufferlistobjbase.moverows.html
+   SwapEntries lazlistclasses/tlazroundbufferlistobjbase.swapentries.html
+   DebugDump lazlistclasses/tlazroundbufferlistobjbase.debugdump.html
+   Capacity lazlistclasses/tlazroundbufferlistobjbase.capacity.html
+   Count lazlistclasses/tlazroundbufferlistobjbase.count.html
+   ItemPointer lazlistclasses/tlazroundbufferlistobjbase.itempointer.html
+  TLazRoundBufferListObj lazlistclasses/tlazroundbufferlistobj.html
+   Create lazlistclasses/tlazroundbufferlistobj.create.html
+  TLazRoundBufferListObjGen lazlistclasses/tlazroundbufferlistobjgen.html
+   InsertRowsEx lazlistclasses/tlazroundbufferlistobjgen.insertrowsex.html
+   DeleteRowsEx lazlistclasses/tlazroundbufferlistobjgen.deleterowsex.html
+   ItemPointerFast lazlistclasses/tlazroundbufferlistobjgen.itempointerfast.html
+   Create lazlistclasses/tlazroundbufferlistobjgen.create.html
+   Destroy lazlistclasses/tlazroundbufferlistobjgen.destroy.html
+   InsertRows lazlistclasses/tlazroundbufferlistobjgen.insertrows.html
+   DeleteRows lazlistclasses/tlazroundbufferlistobjgen.deleterows.html
+   MoveRows lazlistclasses/tlazroundbufferlistobjgen.moverows.html
+   SwapEntries lazlistclasses/tlazroundbufferlistobjgen.swapentries.html
+   DebugDump lazlistclasses/tlazroundbufferlistobjgen.debugdump.html
+   Capacity lazlistclasses/tlazroundbufferlistobjgen.capacity.html
+   Count lazlistclasses/tlazroundbufferlistobjgen.count.html
+   ItemPointer lazlistclasses/tlazroundbufferlistobjgen.itempointer.html
+   IndexOf lazlistclasses/tlazroundbufferlistobjgen.indexof.html
+   Items lazlistclasses/tlazroundbufferlistobjgen.items.html
   TLazFixedRoundBufferListMemBase lazlistclasses/tlazfixedroundbufferlistmembase.html
    GrowCapacity lazlistclasses/tlazfixedroundbufferlistmembase.growcapacity.html
    ShrinkCapacity lazlistclasses/tlazfixedroundbufferlistmembase.shrinkcapacity.html
    Mem lazlistclasses/tlazfixedroundbufferlistmembase.mem.html
+   AdjustFirstItemOffset lazlistclasses/tlazfixedroundbufferlistmembase.adjustfirstitemoffset.html
+   InsertRowsAtStart lazlistclasses/tlazfixedroundbufferlistmembase.insertrowsatstart.html
+   InsertRowsAtEnd lazlistclasses/tlazfixedroundbufferlistmembase.insertrowsatend.html
+   InsertRowsAtBoundary lazlistclasses/tlazfixedroundbufferlistmembase.insertrowsatboundary.html
+   DeleteRowsAtStart lazlistclasses/tlazfixedroundbufferlistmembase.deleterowsatstart.html
+   DeleteRowsAtEnd lazlistclasses/tlazfixedroundbufferlistmembase.deleterowsatend.html
+   DeleteRowsAtBoundary lazlistclasses/tlazfixedroundbufferlistmembase.deleterowsatboundary.html
+   MoveRowsToOther lazlistclasses/tlazfixedroundbufferlistmembase.moverowstoother.html
+   MoveBytesToOther lazlistclasses/tlazfixedroundbufferlistmembase.movebytestoother.html
+   ItemPointerMasked lazlistclasses/tlazfixedroundbufferlistmembase.itempointermasked.html
    Create lazlistclasses/tlazfixedroundbufferlistmembase.create.html
    InsertRows lazlistclasses/tlazfixedroundbufferlistmembase.insertrows.html
    DeleteRows lazlistclasses/tlazfixedroundbufferlistmembase.deleterows.html
-  TLazPagedListMemBase lazlistclasses/tlazpagedlistmembase.html
-   GrowCapacity lazlistclasses/tlazpagedlistmembase.growcapacity.html
-   ShrinkCapacity lazlistclasses/tlazpagedlistmembase.shrinkcapacity.html
-   InsertPages lazlistclasses/tlazpagedlistmembase.insertpages.html
-   InsertFilledPages lazlistclasses/tlazpagedlistmembase.insertfilledpages.html
-   DeletePages lazlistclasses/tlazpagedlistmembase.deletepages.html
-   PagePointer lazlistclasses/tlazpagedlistmembase.pagepointer.html
-   Create lazlistclasses/tlazpagedlistmembase.create.html
-   Destroy lazlistclasses/tlazpagedlistmembase.destroy.html
-   InsertRows lazlistclasses/tlazpagedlistmembase.insertrows.html
-   DeleteRows lazlistclasses/tlazpagedlistmembase.deleterows.html
-   DebugDump lazlistclasses/tlazpagedlistmembase.debugdump.html
-   Capacity lazlistclasses/tlazpagedlistmembase.capacity.html
-   Count lazlistclasses/tlazpagedlistmembase.count.html
-   PageCount lazlistclasses/tlazpagedlistmembase.pagecount.html
-   ItemPointer lazlistclasses/tlazpagedlistmembase.itempointer.html
-   GrowProc lazlistclasses/tlazpagedlistmembase.growproc.html
-   ShrinkProc lazlistclasses/tlazpagedlistmembase.shrinkproc.html
-  TLazPagedListMem lazlistclasses/tlazpagedlistmem.html
-   Create lazlistclasses/tlazpagedlistmem.create.html
-  TLazDualCapacityList lazlistclasses/tlazdualcapacitylist.html
-   Create lazlistclasses/tlazdualcapacitylist.create.html
-   Destroy lazlistclasses/tlazdualcapacitylist.destroy.html
-   Add lazlistclasses/tlazdualcapacitylist.add.html
-   Clear lazlistclasses/tlazdualcapacitylist.clear.html
-   Delete lazlistclasses/tlazdualcapacitylist.delete.html
-   Insert lazlistclasses/tlazdualcapacitylist.insert.html
-   Capacity lazlistclasses/tlazdualcapacitylist.capacity.html
-   Count lazlistclasses/tlazdualcapacitylist.count.html
-   ItemPointer lazlistclasses/tlazdualcapacitylist.itempointer.html
-  TLazGenDualCapacityList lazlistclasses/tlazgendualcapacitylist.html
-   Create lazlistclasses/tlazgendualcapacitylist.create.html
-   Destroy lazlistclasses/tlazgendualcapacitylist.destroy.html
-   Add lazlistclasses/tlazgendualcapacitylist.add.html
-   Clear lazlistclasses/tlazgendualcapacitylist.clear.html
-   Delete lazlistclasses/tlazgendualcapacitylist.delete.html
-   IndexOf lazlistclasses/tlazgendualcapacitylist.indexof.html
-   Insert lazlistclasses/tlazgendualcapacitylist.insert.html
-   Remove lazlistclasses/tlazgendualcapacitylist.remove.html
-   Capacity lazlistclasses/tlazgendualcapacitylist.capacity.html
-   Count lazlistclasses/tlazgendualcapacitylist.count.html
-   ItemPointer lazlistclasses/tlazgendualcapacitylist.itempointer.html
-   Items lazlistclasses/tlazgendualcapacitylist.items.html
+  TLazPagedListObjBase lazlistclasses/tlazpagedlistobjbase.html
+   GrowCapacity lazlistclasses/tlazpagedlistobjbase.growcapacity.html
+   ShrinkCapacity lazlistclasses/tlazpagedlistobjbase.shrinkcapacity.html
+   PagePointer lazlistclasses/tlazpagedlistobjbase.pagepointer.html
+   Create lazlistclasses/tlazpagedlistobjbase.create.html
+   Destroy lazlistclasses/tlazpagedlistobjbase.destroy.html
+   InsertRows lazlistclasses/tlazpagedlistobjbase.insertrows.html
+   DeleteRows lazlistclasses/tlazpagedlistobjbase.deleterows.html
+   MoveRows lazlistclasses/tlazpagedlistobjbase.moverows.html
+   DebugDump lazlistclasses/tlazpagedlistobjbase.debugdump.html
+   Capacity lazlistclasses/tlazpagedlistobjbase.capacity.html
+   Count lazlistclasses/tlazpagedlistobjbase.count.html
+   PageCount lazlistclasses/tlazpagedlistobjbase.pagecount.html
+   ItemPointer lazlistclasses/tlazpagedlistobjbase.itempointer.html
+   GrowProc lazlistclasses/tlazpagedlistobjbase.growproc.html
+   ShrinkProc lazlistclasses/tlazpagedlistobjbase.shrinkproc.html
+  TLazPagedListObj lazlistclasses/tlazpagedlistobj.html
+   Create lazlistclasses/tlazpagedlistobj.create.html
+  TLazShiftBufferList lazlistclasses/tlazshiftbufferlist.html
+   Create lazlistclasses/tlazshiftbufferlist.create.html
+   Destroy lazlistclasses/tlazshiftbufferlist.destroy.html
+   Add lazlistclasses/tlazshiftbufferlist.add.html
+   Clear lazlistclasses/tlazshiftbufferlist.clear.html
+   Delete lazlistclasses/tlazshiftbufferlist.delete.html
+   Insert lazlistclasses/tlazshiftbufferlist.insert.html
+   Capacity lazlistclasses/tlazshiftbufferlist.capacity.html
+   Count lazlistclasses/tlazshiftbufferlist.count.html
+   ItemPointer lazlistclasses/tlazshiftbufferlist.itempointer.html
+  TLazShiftBufferListGen lazlistclasses/tlazshiftbufferlistgen.html
+   Create lazlistclasses/tlazshiftbufferlistgen.create.html
+   Destroy lazlistclasses/tlazshiftbufferlistgen.destroy.html
+   Add lazlistclasses/tlazshiftbufferlistgen.add.html
+   Clear lazlistclasses/tlazshiftbufferlistgen.clear.html
+   Delete lazlistclasses/tlazshiftbufferlistgen.delete.html
+   IndexOf lazlistclasses/tlazshiftbufferlistgen.indexof.html
+   Insert lazlistclasses/tlazshiftbufferlistgen.insert.html
+   Remove lazlistclasses/tlazshiftbufferlistgen.remove.html
+   Capacity lazlistclasses/tlazshiftbufferlistgen.capacity.html
+   Count lazlistclasses/tlazshiftbufferlistgen.count.html
+   ItemPointer lazlistclasses/tlazshiftbufferlistgen.itempointer.html
+   Items lazlistclasses/tlazshiftbufferlistgen.items.html
  LazLoggerDummy lazloggerdummy/index.html
   TLazLoggerLogGroupFlag lazloggerdummy/tlazloggerloggroupflag.html
   TLazLoggerLogGroupFlags lazloggerdummy/tlazloggerloggroupflags.html
@@ -2519,6 +2496,7 @@
   dbghex lazloggerdummy/dbghex.html
   dbgMemRange lazloggerdummy/dbgmemrange.html
   dbgMemStream lazloggerdummy/dbgmemstream.html
+  DumpExceptionBackTrace lazloggerdummy/dumpexceptionbacktrace.html
   GetDebugLoggerGroups lazloggerdummy/getdebugloggergroups.html
   SetDebugLoggerGroups lazloggerdummy/setdebugloggergroups.html
   GetDebugLogger lazloggerdummy/getdebuglogger.html
@@ -2528,6 +2506,77 @@
   LazDebugLoggerCreator lazloggerdummy/lazdebugloggercreator.html
   OnWidgetSetDebugLn lazloggerdummy/onwidgetsetdebugln.html
   OnWidgetSetDbgOut lazloggerdummy/onwidgetsetdbgout.html
+ LazLogger lazlogger/index.html
+  PLazLoggerLogGroup lazlogger/plazloggerloggroup.html
+  TLazLoggerFileHandle lazlogger/tlazloggerfilehandle.html
+   Create lazlogger/tlazloggerfilehandle.create.html
+   Destroy lazlogger/tlazloggerfilehandle.destroy.html
+   OpenFile lazlogger/tlazloggerfilehandle.openfile.html
+   CloseFile lazlogger/tlazloggerfilehandle.closefile.html
+   ResetWriteFailedCounter lazlogger/tlazloggerfilehandle.resetwritefailedcounter.html
+   WriteToFile lazlogger/tlazloggerfilehandle.writetofile.html
+   WriteLnToFile lazlogger/tlazloggerfilehandle.writelntofile.html
+   LogName lazlogger/tlazloggerfilehandle.logname.html
+   UseStdOut lazlogger/tlazloggerfilehandle.usestdout.html
+   CloseLogFileBetweenWrites lazlogger/tlazloggerfilehandle.closelogfilebetweenwrites.html
+   WriteTarget lazlogger/tlazloggerfilehandle.writetarget.html
+   ActiveLogText lazlogger/tlazloggerfilehandle.activelogtext.html
+   WriteFailedCount lazlogger/tlazloggerfilehandle.writefailedcount.html
+   LastWriteFailed lazlogger/tlazloggerfilehandle.lastwritefailed.html
+  TLazLoggerFileHandleThreadSave lazlogger/tlazloggerfilehandlethreadsave.html
+   Create lazlogger/tlazloggerfilehandlethreadsave.create.html
+   Destroy lazlogger/tlazloggerfilehandlethreadsave.destroy.html
+   WriteToFile lazlogger/tlazloggerfilehandlethreadsave.writetofile.html
+   WriteLnToFile lazlogger/tlazloggerfilehandlethreadsave.writelntofile.html
+  TLazLoggerFileHandleMainThread lazlogger/tlazloggerfilehandlemainthread.html
+   Create lazlogger/tlazloggerfilehandlemainthread.create.html
+   Destroy lazlogger/tlazloggerfilehandlemainthread.destroy.html
+   WriteToFile lazlogger/tlazloggerfilehandlemainthread.writetofile.html
+   WriteLnToFile lazlogger/tlazloggerfilehandlemainthread.writelntofile.html
+  TLazLoggerFile lazlogger/tlazloggerfile.html
+   DoInit lazlogger/tlazloggerfile.doinit.html
+   DoFinsh lazlogger/tlazloggerfile.dofinsh.html
+   IncreaseIndent lazlogger/tlazloggerfile.increaseindent.html
+   DecreaseIndent lazlogger/tlazloggerfile.decreaseindent.html
+   IndentChanged lazlogger/tlazloggerfile.indentchanged.html
+   CreateIndent lazlogger/tlazloggerfile.createindent.html
+   GetBlockHandler lazlogger/tlazloggerfile.getblockhandler.html
+   ClearAllBlockHandler lazlogger/tlazloggerfile.clearallblockhandler.html
+   DoDbgOut lazlogger/tlazloggerfile.dodbgout.html
+   DoDebugLn lazlogger/tlazloggerfile.dodebugln.html
+   DoDebuglnStack lazlogger/tlazloggerfile.dodebuglnstack.html
+   FileHandle lazlogger/tlazloggerfile.filehandle.html
+   Create lazloggerbase/tlazloggerwithgroupparam.create.html
+   Destroy lazlogger/tlazloggerfile.destroy.html
+   Assign lazloggerbase/tlazloggerwithgroupparam.assign.html
+   CurrentIndentLevel lazlogger/tlazloggerfile.currentindentlevel.html
+   ParamForLogFileName lazlogger/tlazloggerfile.paramforlogfilename.html
+   EnvironmentForLogFileName lazlogger/tlazloggerfile.environmentforlogfilename.html
+   OnDebugLn lazlogger/tlazloggerfile.ondebugln.html
+   OnDbgOut lazlogger/tlazloggerfile.ondbgout.html
+   AddBlockHandler lazlogger/tlazloggerfile.addblockhandler.html
+   RemoveBlockHandler lazlogger/tlazloggerfile.removeblockhandler.html
+   BlockHandlerCount lazlogger/tlazloggerfile.blockhandlercount.html
+   LogName lazlogger/tlazloggerfile.logname.html
+   UseStdOut lazlogger/tlazloggerfile.usestdout.html
+   CloseLogFileBetweenWrites lazlogger/tlazloggerfile.closelogfilebetweenwrites.html
+  DebuglnStack lazlogger/debuglnstack.html
+  DbgOut lazlogger/dbgout.html
+  DebugLn lazlogger/debugln.html
+  DebugLnEnter lazlogger/debuglnenter.html
+  DebugLnExit lazlogger/debuglnexit.html
+  DbgS lazlogger/dbgs.html
+  DbgSJoin lazlogger/dbgsjoin.html
+  DbgSName lazlogger/dbgsname.html
+  dbgObjMem lazlogger/dbgobjmem.html
+  dbghex lazlogger/dbghex.html
+  dbgMemRange lazlogger/dbgmemrange.html
+  dbgMemStream lazlogger/dbgmemstream.html
+  DumpExceptionBackTrace lazlogger/dumpexceptionbacktrace.html
+  DbgStr lazlogger/dbgstr.html
+  DbgWideStr lazlogger/dbgwidestr.html
+  GetDebugLogger lazlogger/getdebuglogger.html
+  SetDebugLogger lazlogger/setdebuglogger.html
  LazLoggerProfiling lazloggerprofiling/index.html
   TLazLoggerBlockTimer lazloggerprofiling/tlazloggerblocktimer.html
    Create lazloggerprofiling/tlazloggerblocktimer.create.html
@@ -2567,8 +2616,8 @@
   UnicodeToWinCP lazunicode/unicodetowincp.html
   WinCPToUnicode lazunicode/wincptounicode.html
   StringOfCodePoint lazunicode/stringofcodepoint.html
-  enumerator(string):TUnicodeCharacterEnumerator lazunicode/.op-enumerator-string-unicodecharacterenumerator.html
  LazUTF16 lazutf16/index.html
+  PtrInt lazutf16/ptrint.html
   UTF16CharacterLength lazutf16/utf16characterlength.html
   UTF16Length lazutf16/utf16length.html
   UTF16Copy lazutf16/utf16copy.html
@@ -2580,7 +2629,9 @@
   IsUTF16StringValid lazutf16/isutf16stringvalid.html
   Utf16StringReplace lazutf16/utf16stringreplace.html
   UnicodeLowercase lazutf16/unicodelowercase.html
-  UTF8LowerCaseViaTables lazutf16/utf8lowercaseviatables.html
+ LazUTF8SysUtils lazutf8sysutils/index.html
+  NowUTC lazutf8sysutils/nowutc.html
+  GetTickCount64 lazutf8sysutils/gettickcount64.html
  LazUtils lazutils/index.html
  Laz_XMLCfg laz_xmlcfg/index.html
   TXMLConfig laz_xmlcfg/txmlconfig.html
@@ -2765,6 +2816,7 @@
   UTF8ToCP950 lconvencoding/utf8tocp950.html
   UTF8ToDBCS lconvencoding/utf8todbcs.html
   GetSupportedEncodings lconvencoding/getsupportedencodings.html
+  ConvertEncodingFromUtf8RaisesException lconvencoding/convertencodingfromutf8raisesexception.html
   ConvertAnsiToUTF8 lconvencoding/convertansitoutf8.html
   ConvertUTF8ToAnsi lconvencoding/convertutf8toansi.html
  lcsvutils lcsvutils/index.html
@@ -2785,7 +2837,6 @@
    Contains lookupstringlist/tlookupstringlist.contains.html
    Find lookupstringlist/tlookupstringlist.find.html
    IndexOf lookupstringlist/tlookupstringlist.indexof.html
-  TDictionaryStringList lookupstringlist/tdictionarystringlist.html
   Deduplicate lookupstringlist/deduplicate.html
  Maps maps/index.html
   itsPtrSize maps/itsptrsize.html
@@ -2927,6 +2978,7 @@
   sBadFormatFlag translations/sbadformatflag.html
   TStringsType translations/tstringstype.html
   TTranslateUnitResult translations/ttranslateunitresult.html
+  TTranslationStatistics translations/ttranslationstatistics.html
   TPOFileItem translations/tpofileitem.html
    Tag translations/tpofileitem.tag.html
    LineNr translations/tpofileitem.linenr.html
@@ -2940,7 +2992,6 @@
    Duplicate translations/tpofileitem.duplicate.html
    Create translations/tpofileitem.create.html
    ModifyFlag translations/tpofileitem.modifyflag.html
-   Identifier translations/tpofileitem.identifier.html
   TPOFile translations/tpofile.html
    FItems translations/tpofile.fitems.html
    FIdentifierLowToItem translations/tpofile.fidentifierlowtoitem.html
@@ -2952,12 +3003,7 @@
    FModified translations/tpofile.fmodified.html
    FHelperList translations/tpofile.fhelperlist.html
    FPoName translations/tpofile.fponame.html
-   FNrTranslated translations/tpofile.fnrtranslated.html
-   FNrUntranslated translations/tpofile.fnruntranslated.html
-   FNrFuzzy translations/tpofile.fnrfuzzy.html
-   FNrErrors translations/tpofile.fnrerrors.html
    Remove translations/tpofile.remove.html
-   UpdateCounters translations/tpofile.updatecounters.html
    GetCount translations/tpofile.getcount.html
    SetCharSet translations/tpofile.setcharset.html
    GetPoItem translations/tpofile.getpoitem.html
@@ -2986,10 +3032,8 @@
    CleanUp translations/tpofile.cleanup.html
    PoName translations/tpofile.poname.html
    PoRename translations/tpofile.porename.html
-   NrTranslated translations/tpofile.nrtranslated.html
-   NrUntranslated translations/tpofile.nruntranslated.html
-   NrFuzzy translations/tpofile.nrfuzzy.html
-   NrErrors translations/tpofile.nrerrors.html
+   Statistics translations/tpofile.statistics.html
+   InvalidateStatistics translations/tpofile.invalidatestatistics.html
    FindPoItem translations/tpofile.findpoitem.html
    OriginalToItem translations/tpofile.originaltoitem.html
    PoItems translations/tpofile.poitems.html
@@ -3024,8 +3068,6 @@
   TTCache_Init ttcache/ttcache_init.html
   TTCache_Done ttcache/ttcache_done.html
  TTCalc ttcalc/index.html
-  Int16 ttcalc/int16.html
-  Word16 ttcalc/word16.html
   Int32 ttcalc/int32.html
   Word32 ttcalc/word32.html
   MulDiv ttcalc/muldiv.html
@@ -3250,18 +3292,18 @@
   TTMemory_Done ttmemory/ttmemory_done.html
  UTF8Process utf8process/index.html
   TProcessUTF8 utf8process/tprocessutf8.html
-   Create utf8process/tprocessutf8.create.html
-   Destroy utf8process/tprocessutf8.destroy.html
-   Execute utf8process/tprocessutf8.execute.html
    ParseCmdLine utf8process/tprocessutf8.parsecmdline.html
-   ApplicationName utf8process/tprocessutf8.applicationname.html
-   CommandLine utf8process/tprocessutf8.commandline.html
-   ConsoleTitle utf8process/tprocessutf8.consoletitle.html
-   CurrentDirectory utf8process/tprocessutf8.currentdirectory.html
-   Desktop utf8process/tprocessutf8.desktop.html
-   Environment utf8process/tprocessutf8.environment.html
-   Executable utf8process/tprocessutf8.executable.html
-   Parameters utf8process/tprocessutf8.parameters.html
+   Create ms-its:fcl.chm::/process/tprocess.create.html
+   Destroy ms-its:fcl.chm::/process/tprocess.destroy.html
+   Execute ms-its:fcl.chm::/process/tprocess.execute.html
+   ApplicationName ms-its:fcl.chm::/process/tprocess.applicationname.html
+   CommandLine ms-its:fcl.chm::/process/tprocess.commandline.html
+   ConsoleTitle ms-its:fcl.chm::/process/tprocess.consoletitle.html
+   CurrentDirectory ms-its:fcl.chm::/process/tprocess.currentdirectory.html
+   Desktop ms-its:fcl.chm::/process/tprocess.desktop.html
+   Environment ms-its:fcl.chm::/process/tprocess.environment.html
+   Executable ms-its:fcl.chm::/process/tprocess.executable.html
+   Parameters ms-its:fcl.chm::/process/tprocess.parameters.html
   RunCmdFromPath utf8process/runcmdfrompath.html
   FindFilenameOfCmd utf8process/findfilenameofcmd.html
   GetSystemThreadCount utf8process/getsystemthreadcount.html
@@ -3381,9 +3423,7 @@
 3MGetString
 3MAdd
 3MAddNameValues
-3MAddValues
 3MAddNames
-3MDelete
 3PValues rw
 3MGetNodeData
 3MAsText
@@ -3528,6 +3568,7 @@
 3MCount
 3PItem r
 #lazutils.LazLoggerBase.TLazLogger #lazutils.LazClasses.TRefCountedObject
+1VFLoggerCriticalSection
 1VFIsInitialized
 1VFMaxNestPrefixLen
 1VFNestLvlIndent
@@ -3569,6 +3610,7 @@
 3MDebugLn
 3MDebugLnEnter
 3MDebugLnExit
+3MDumpExceptionBackTrace
 #lazutils.LazLoggerBase.TLazLoggerWithGroupParam #lazutils.LazLoggerBase.TLazLogger
 1VFLogAllDefaultDisabled
 1VFLogDefaultEnabled
@@ -3585,8 +3627,6 @@
 #lazutils.LazClasses.TFreeNotifyingObject #rtl.System.TObject
 1VFFreeNotificationList
 3MDestroy
-3MAddFreeeNotification
-3MRemoveFreeeNotification
 3MAddFreeNotification
 3MRemoveFreeNotification
 #lazutils.LazClasses.TRefCountedObject #lazutils.LazClasses.TFreeNotifyingObject
@@ -4277,7 +4317,7 @@
 3MGetChildCount
 3MFindNode
 3MInternalAppend
-#lazutils.Laz2_DOM.TDOMNodeList #rtl.System.TObject
+#lazutils.Laz2_DOM.TDOMNodeList TObject
 2VFNode
 2VFRevision
 2VFList
@@ -4299,7 +4339,7 @@
 2VUseFilter
 2MNodeFilter
 3MCreate
-#lazutils.Laz2_DOM.TDOMNamedNodeMap #rtl.System.TObject
+#lazutils.Laz2_DOM.TDOMNamedNodeMap TObject
 2VFOwner
 2VFNodeType
 2VFSortedList
@@ -4541,7 +4581,7 @@
 3PDefault rw
 3PExternallyDeclared rw
 3PTag rw
-#lazutils.Laz2_DOM.TNodePool #rtl.System.TObject
+#lazutils.Laz2_DOM.TNodePool TObject
 1VFCurrExtent
 1VFCurrExtentSize
 1VFElementSize
@@ -4552,7 +4592,7 @@
 3MDestroy
 3MAllocNode
 3MFreeNode
-#lazutils.laz2_xmlutils.THashTable #rtl.System.TObject
+#lazutils.laz2_xmlutils.THashTable TObject
 1VFCount
 1VFBucketCount
 1VFBucket
@@ -4569,7 +4609,7 @@
 3MRemoveData
 3MForEach
 3PCount r
-#lazutils.laz2_xmlutils.TDblHashArray #rtl.System.TObject
+#lazutils.laz2_xmlutils.TDblHashArray TObject
 1VFSizeLog
 1VFRevision
 1VFData
@@ -4581,7 +4621,7 @@
 3Vnext
 3VprevPrefixBinding
 3VPrefix
-#lazutils.laz2_xmlutils.TNSSupport #rtl.System.TObject
+#lazutils.laz2_xmlutils.TNSSupport TObject
 1VFNesting
 1VFPrefixSeqNo
 1VFFreeBindings
@@ -4708,7 +4748,7 @@
 3PLine r
 3PLinePos r
 3MLineCol
-#lazutils.laz2_XMLRead.TDOMParseOptions #rtl.System.TObject
+#lazutils.laz2_XMLRead.TDOMParseOptions TObject
 1VFValidate
 1VFPreserveWhitespace
 1VFExpandEntities
@@ -4731,7 +4771,7 @@
 3PDisallowDoctype rw
 3PMaxChars rw
 3PCanonicalForm rw
-#lazutils.laz2_XMLRead.TXMLInputSource #rtl.System.TObject
+#lazutils.laz2_XMLRead.TXMLInputSource TObject
 1VFStream
 1VFStringData
 1VFBaseURI
@@ -4743,7 +4783,7 @@
 3PBaseURI rw
 3PSystemID rw
 3PPublicID rw
-#lazutils.laz2_XMLRead.TDOMParser #rtl.System.TObject
+#lazutils.laz2_XMLRead.TDOMParser TObject
 1VFOptions
 1VFOnError
 3MCreate
@@ -5047,79 +5087,6 @@
 3MSaveToConfig
 3MLoadFromConfig
 3MWriteDebugReport
-#lazutils.LazLogger.TLazLoggerFileHandle #rtl.System.TObject
-1VFActiveLogText
-1VFCloseLogFileBetweenWrites
-1VFLogName
-1VFLogText
-1VFLogTextInUse
-1VFLogTextFailed
-1VFUseStdOut
-1VFWriteToFileLock
-1MDoOpenFile
-1MDoCloseFile
-1MGetWriteTarget
-1MSetCloseLogFileBetweenWrites
-1MSetLogName
-3MCreate
-3MDestroy
-3MOpenFile
-3MCloseFile
-3MWriteToFile
-3MWriteLnToFile
-3PLogName rw
-3PUseStdOut rw
-3PCloseLogFileBetweenWrites rw
-3PWriteTarget r
-3PActiveLogText r
-#lazutils.LazLogger.TLazLoggerFile #lazutils.LazLoggerBase.TLazLoggerWithGroupParam
-1VFFileHandle
-1VFOnDbgOut
-1VFOnDebugLn
-1VFBlockHandler
-1VFEnvironmentForLogFileName
-1VFParamForLogFileName
-1VFGetLogFileNameDone
-1VFDebugNestLvl
-1VFDebugIndent
-1VFDebugNestAtBOL
-1MGetFileHandle
-1MSetEnvironmentForLogFileName
-1MSetFileHandle
-1MSetParamForLogFileName
-1MGetLogFileName
-1MGetCloseLogFileBetweenWrites
-1MGetLogName
-1MGetUseStdOut
-1MSetCloseLogFileBetweenWrites
-1MSetLogName
-1MSetUseStdOut
-2MDoInit
-2MDoFinsh
-2MIncreaseIndent
-2MDecreaseIndent
-2MIndentChanged
-2MCreateIndent
-2MGetBlockHandler
-2MClearAllBlockHandler
-2MDoDbgOut
-2MDoDebugLn
-2MDoDebuglnStack
-2PFileHandle rw
-3MCreate
-3MDestroy
-3MAssign
-3MCurrentIndentLevel
-3PParamForLogFileName rw
-3PEnvironmentForLogFileName rw
-3POnDebugLn rw
-3POnDbgOut rw
-3MAddBlockHandler
-3MRemoveBlockHandler
-3MBlockHandlerCount
-3PLogName rw
-3PUseStdOut rw
-3PCloseLogFileBetweenWrites rw
 #lazutils.lazfglhash.TLazHTGNode #fcl.contnrs.THTCustomNode
 1VFData
 3PData rw
@@ -5245,6 +5212,7 @@
 3MDrawHorizLine
 3MFillPixels
 3MDrawText
+3MDrawGlyph
 3MDestroy
 3PImage r
 #lazutils.LazFreeTypeFPImageDrawer.TFPMemoryImageWithScanline TFPMemoryImage
@@ -5288,16 +5256,20 @@
 #lazutils.LazListClasses.TLazListClassesVarItemSize 
 2VItemSize
 #lazutils.LazListClasses.TLazListClassesInternalMem 
-1MCNT_OFFS
-1MDATA_OFFS
+2MTMemRecord
+2MPMemRecord
 1VFMem
+1MGetCapacityFast
 1MGetDataPointer
+1MGetFirstItemIndex
 1MGetFirstItemPointer
 1MSetCapacity
 1MGetCapacity
 1MGetCount
 1MSetCount
+1MSetFirstItemIndex
 1MSetFirstItemPointer
+2PCapacityFast r
 3MInit
 3MAlloc
 3MFree
@@ -5306,10 +5278,12 @@
 3PCount rw
 3PDataPointer r
 3PFirstItemPointer rw
-#lazutils.LazListClasses.TLazDualCapacityListMemBase 
+3PFirstItemIndex rw
+#lazutils.LazListClasses.TLazShiftBufferListObjBase 
 1VFMem
 1VFItemSize
 1MGetItemPointer
+1MGetItemPointerFast
 1MSetCapacity
 1MGetCapacity
 1MGetCount
@@ -5318,86 +5292,122 @@
 2MSetCapacityEx
 2MInsertRowsEx
 2MDeleteRowsEx
+2PItemPointerFast r
 3MCreate
 3MDestroy
 3MInsertRows
 3MDeleteRows
+3MMoveRows
 3MSwapEntries
 3MDebugDump
 3PCapacity rw
 3PCount r
 3PItemPointer r
-#lazutils.LazListClasses.TLazDualCapacityListMem #lazutils.LazListClasses.TLazDualCapacityListMem.(#lazutils.LazListClasses.TLazDualCapacityListMemBase)
+#lazutils.LazListClasses.TLazShiftBufferListObj #lazutils.LazListClasses.TLazShiftBufferListObj.(#lazutils.LazListClasses.TLazShiftBufferListObjBase)
 3MCreate
-#lazutils.LazListClasses.TLazGenDualCapacityListMem 
+#lazutils.LazListClasses.TLazShiftBufferListObjGen 
 1MTItemSize
 1MPT
 1MTListType
+1VFList
 1MGetCapacity
 1MGetCount
 1MGetItemPointer
+1MGetItemPointerFast
 1MSetCapacity
-2VFList
 2MInsertRowsEx
 2MDeleteRowsEx
+2PItemPointerFast r
 3MCreate
 3MDestroy
 3MInsertRows
 3MDeleteRows
-3MIndexOf
+3MMoveRows
+3MSwapEntries
+3MDebugDump
 3PCapacity rw
 3PCount r
 3PItemPointer r
-#lazutils.LazListClasses.TLazRoundBufferListMemBase 
+1MGet
+1MPut
+3MIndexOf
+3PItems rw
+#lazutils.LazListClasses.TLazRoundBufferListObjBase 
 1VFMem
 1VFItemSize
 1MGetItemPointer
+1MGetItemPointerFast
 1MSetCapacity
 1MGetCapacity
 1MGetCount
+2MInternalMoveUp
+2MInternalMoveDown
 2MGrowCapacity
 2MShrinkCapacity
 2MSetCapacityEx
 2MInsertRowsEx
 2MDeleteRowsEx
+2PItemPointerFast r
 3MCreate
 3MDestroy
 3MInsertRows
 3MDeleteRows
+3MMoveRows
 3MSwapEntries
 3MDebugDump
 3PCapacity rw
 3PCount r
 3PItemPointer r
-#lazutils.LazListClasses.TLazRoundBufferListMem #lazutils.LazListClasses.TLazRoundBufferListMem.(#lazutils.LazListClasses.TLazRoundBufferListMemBase)
+#lazutils.LazListClasses.TLazRoundBufferListObj #lazutils.LazListClasses.TLazRoundBufferListObj.(#lazutils.LazListClasses.TLazRoundBufferListObjBase)
 3MCreate
-#lazutils.LazListClasses.TLazGenRoundBufferListMem 
+#lazutils.LazListClasses.TLazRoundBufferListObjGen 
 1MTItemSize
 1MPT
 1MTListType
+1VFList
 1MGetCapacity
 1MGetCount
 1MGetItemPointer
+1MGetItemPointerFast
 1MSetCapacity
-2VFList
 2MInsertRowsEx
 2MDeleteRowsEx
+2PItemPointerFast r
 3MCreate
 3MDestroy
 3MInsertRows
 3MDeleteRows
-3MIndexOf
+3MMoveRows
+3MSwapEntries
+3MDebugDump
 3PCapacity rw
 3PCount r
 3PItemPointer r
-#lazutils.LazListClasses.TLazFixedRoundBufferListMemBase #lazutils.LazListClasses.TLazFixedRoundBufferListMemBase.(#lazutils.LazListClasses.TLazRoundBufferListMemBase)
+1MGet
+1MPut
+3MIndexOf
+3PItems rw
+#lazutils.LazListClasses.TLazFixedRoundBufferListMemBase #lazutils.LazListClasses.TLazFixedRoundBufferListMemBase.(#lazutils.LazListClasses.TLazRoundBufferListObjBase)
+1MGetItemPointerMasked
+1MGetItemByteOffsetMasked
+1MGetFirstItemByteOffset
 2MGrowCapacity
 2MShrinkCapacity
 2PMem r
+2MAdjustFirstItemOffset
+2MInsertRowsAtStart
+2MInsertRowsAtEnd
+2MInsertRowsAtBoundary
+2MDeleteRowsAtStart
+2MDeleteRowsAtEnd
+2MDeleteRowsAtBoundary
+2MMoveRowsToOther
+2MMoveBytesToOther
+2PItemPointerMasked r
 3MCreate
 3MInsertRows
 3MDeleteRows
-#lazutils.LazListClasses.TLazPagedListMemBase 
+#lazutils.LazListClasses.TLazPagedListObjBase 
 1MTPageType
 1MPPageType
 1MTPageSize
@@ -5407,8 +5417,8 @@
 1VFExtraCapacityNeeded
 1VFPages
 1VFItemSize
-1VFPageSiteExp
-1VFPageSiteMask
+1VFPageSizeMask
+1VFPageSizeExp
 1VFFirstPageEmpty
 1VFCount
 1MGetPagePointer
@@ -5417,24 +5427,29 @@
 1MGetItemPointer
 1MSetCapacity
 1MGetCapacity
-1MCalculateCount
 1MGetPageCount
-1MMoveEntriesBetweenPages
+1MJoinPageWithNext
+1MSplitPageToFront
+1MSplitPageToBack
 1MSplitPage
-1MBubbleEntriesToEnd
-1MBubbleEntriesToStart
-1MBubbleEntriesFromEnd
-1MBubbleEntriesFromStart
+1MBubbleEntriesDown
+1MBubbleEntriesUp
+1MInternalBubbleEntriesDown
+1MInternalBubbleEntriesUp
+1MSwapPagesUp
+1MSwapPagesDown
+1MInternalMoveRowsDown
+1MInternalMoveRowsUp
+1MInsertFilledPages
+1MDeletePages
 2MGrowCapacity
 2MShrinkCapacity
-2MInsertPages
-2MInsertFilledPages
-2MDeletePages
 2PPagePointer r
 3MCreate
 3MDestroy
 3MInsertRows
 3MDeleteRows
+3MMoveRows
 3MDebugDump
 3PCapacity rw
 3PCount r
@@ -5442,9 +5457,9 @@
 3PItemPointer r
 3PGrowProc rw
 3PShrinkProc rw
-#lazutils.LazListClasses.TLazPagedListMem #lazutils.LazListClasses.TLazPagedListMemParent(#lazutils.LazListClasses.TLazPagedListMemBase)
+#lazutils.LazListClasses.TLazPagedListObj #lazutils.LazListClasses.TLazPagedListObjParent(#lazutils.LazListClasses.TLazPagedListObjBase)
 3MCreate
-#lazutils.LazListClasses.TLazDualCapacityList #rtl.System.TObject
+#lazutils.LazListClasses.TLazShiftBufferList #rtl.System.TObject
 1VFListMem
 1MGetCapacity
 1MGetCount
@@ -5460,7 +5475,7 @@
 3PCapacity rw
 3PCount rw
 3PItemPointer r
-#lazutils.LazListClasses.TLazGenDualCapacityList 
+#lazutils.LazListClasses.TLazShiftBufferListGen 
 1MTListMem
 1MPT
 1VFListMem
@@ -5515,6 +5530,101 @@
 3MDebugLn
 3MDebugLnEnter
 3MDebugLnExit
+#lazutils.LazLogger.TLazLoggerFileHandle #rtl.System.TObject
+1VFActiveLogText
+1VFCloseLogFileBetweenWrites
+1VFLastWriteFailed
+1VFLogName
+1VFLogText
+1VFLogTextInUse
+1VFLogTextFailed
+1VFUseStdOut
+1VFWriteFailedCount
+1MDoOpenFile
+1MDoCloseFile
+1MGetWriteTarget
+1MSetCloseLogFileBetweenWrites
+1MSetLogName
+3MCreate
+3MDestroy
+3MOpenFile
+3MCloseFile
+3MResetWriteFailedCounter
+3MWriteToFile
+3MWriteLnToFile
+3PLogName rw
+3PUseStdOut rw
+3PCloseLogFileBetweenWrites rw
+3PWriteTarget r
+3PActiveLogText r
+3PWriteFailedCount r
+3PLastWriteFailed r
+#lazutils.LazLogger.TLazLoggerFileHandleThreadSave #lazutils.LazLogger.TLazLoggerFileHandle
+1VFWriteToFileLock
+3MCreate
+3MDestroy
+3MWriteToFile
+3MWriteLnToFile
+#lazutils.LazLogger.TLazLoggerFileHandleMainThread #lazutils.LazLogger.TLazLoggerFileHandle
+1MPWriteListEntry
+1MTWriteListEntry
+1VFWriteToFileLock
+1VFFirst
+1VFLast
+1MMainThreadWrite
+3MCreate
+3MDestroy
+3MWriteToFile
+3MWriteLnToFile
+#lazutils.LazLogger.TLazLoggerFile #lazutils.LazLoggerBase.TLazLoggerWithGroupParam
+1VFFileHandle
+1VFOnDbgOut
+1VFOnDebugLn
+1VFBlockHandler
+1VFEnvironmentForLogFileName
+1VFParamForLogFileName
+1VFGetLogFileNameDone
+1VFIndentCriticalSection
+1VFDebugNestLvl
+1VFDebugIndent
+1VFDebugNestAtBOL
+1MGetFileHandle
+1MSetEnvironmentForLogFileName
+1MSetFileHandle
+1MSetParamForLogFileName
+1MGetLogFileName
+1MGetCloseLogFileBetweenWrites
+1MGetLogName
+1MGetUseStdOut
+1MSetCloseLogFileBetweenWrites
+1MSetLogName
+1MSetUseStdOut
+2MDoInit
+2MDoFinsh
+2MIncreaseIndent
+2MDecreaseIndent
+2MIndentChanged
+2MCreateIndent
+2MGetBlockHandler
+2MClearAllBlockHandler
+2MDoDbgOut
+2MDoDebugLn
+2MDoDebuglnStack
+2PFileHandle rw
+3MCreate
+3MDestroy
+3MAssign
+3MCurrentIndentLevel
+3PParamForLogFileName rw
+3PEnvironmentForLogFileName rw
+3POnDebugLn rw
+3POnDbgOut rw
+3MAddBlockHandler
+3MRemoveBlockHandler
+3MBlockHandlerCount
+3PLogName rw
+3PUseStdOut rw
+3PCloseLogFileBetweenWrites rw
 #lazutils.LazLoggerProfiling.TLazLoggerBlockTimer #lazutils.LazLoggerBase.TLazLoggerBlockHandler
 1VFMaxDepth
 1VFTimes
@@ -5645,7 +5755,6 @@
 3MContains
 3MFind
 3MIndexOf
-#lazutils.LookupStringList.TDictionaryStringList #lazutils.LookupStringList.TLookupStringList
 #lazutils.Maps.TBaseMap #rtl.Classes.TPersistent
 1VFTree
 1VFIdType
@@ -5670,7 +5779,7 @@
 3MCount
 3MDelete
 3MDestroy
-#lazutils.Maps.TBaseMapIterator #rtl.System.TObject
+#lazutils.Maps.TBaseMapIterator TObject
 1VFMap
 1VFCurrent
 1VFInValid
@@ -5722,7 +5831,7 @@
 3MGetID
 3MLocate
 3MSetData
-#lazutils.StringHashList.TStringHashList #rtl.System.TObject
+#lazutils.StringHashList.TStringHashList TObject
 1VFList
 1VFCount
 1VfCaseSensitive
@@ -5808,9 +5917,11 @@
 3VDuplicate
 3MCreate
 3MModifyFlag
-3PIdentifier r
 #lazutils.Translations.TPOFile #rtl.System.TObject
 1VFAllowChangeFuzzyFlag
+1VFStatisticsUpdated
+1VFStatistics
+1MGetStatistics
 2VFItems
 2VFIdentifierLowToItem
 2VFOriginalToItem
@@ -5821,12 +5932,7 @@
 2VFModified
 2VFHelperList
 2VFPoName
-2VFNrTranslated
-2VFNrUntranslated
-2VFNrFuzzy
-2VFNrErrors
 2MRemove
-2MUpdateCounters
 2MGetCount
 2MSetCharSet
 2MGetPoItem
@@ -5855,10 +5961,8 @@
 3MCleanUp
 3PPoName r
 3PPoRename w
-3PNrTranslated r
-3PNrUntranslated r
-3PNrFuzzy r
-3PNrErrors r
+3PStatistics r
+3MInvalidateStatistics
 3MFindPoItem
 3MOriginalToItem
 3PPoItems r
