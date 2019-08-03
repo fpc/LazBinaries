@@ -1335,60 +1335,6 @@
   COLOR_BTNHILIGHT lcltype/color_btnhilight.html
   MAX_SYS_COLORS lcltype/max_sys_colors.html
   SYS_COLOR_BASE lcltype/sys_color_base.html
-  COLOR_clForeground lcltype/color_clforeground.html
-  COLOR_clButton lcltype/color_clbutton.html
-  COLOR_clLight lcltype/color_cllight.html
-  COLOR_clMidlight lcltype/color_clmidlight.html
-  COLOR_clDark lcltype/color_cldark.html
-  COLOR_clMid lcltype/color_clmid.html
-  COLOR_clText lcltype/color_cltext.html
-  COLOR_clBrightText lcltype/color_clbrighttext.html
-  COLOR_clButtonText lcltype/color_clbuttontext.html
-  COLOR_clBase lcltype/color_clbase.html
-  COLOR_clShadow lcltype/color_clshadow.html
-  COLOR_clHighlightedText lcltype/color_clhighlightedtext.html
-  COLOR_clNormalForeground lcltype/color_clnormalforeground.html
-  COLOR_clNormalButton lcltype/color_clnormalbutton.html
-  COLOR_clNormalLight lcltype/color_clnormallight.html
-  COLOR_clNormalMidlight lcltype/color_clnormalmidlight.html
-  COLOR_clNormalDark lcltype/color_clnormaldark.html
-  COLOR_clNormalMid lcltype/color_clnormalmid.html
-  COLOR_clNormalText lcltype/color_clnormaltext.html
-  COLOR_clNormalBrightText lcltype/color_clnormalbrighttext.html
-  COLOR_clNormalButtonText lcltype/color_clnormalbuttontext.html
-  COLOR_clNormalBase lcltype/color_clnormalbase.html
-  COLOR_clNormalBackground lcltype/color_clnormalbackground.html
-  COLOR_clNormalShadow lcltype/color_clnormalshadow.html
-  COLOR_clNormalHighlight lcltype/color_clnormalhighlight.html
-  COLOR_clNormalHighlightedText lcltype/color_clnormalhighlightedtext.html
-  COLOR_clDisabledForeground lcltype/color_cldisabledforeground.html
-  COLOR_clDisabledButton lcltype/color_cldisabledbutton.html
-  COLOR_clDisabledLight lcltype/color_cldisabledlight.html
-  COLOR_clDisabledMidlight lcltype/color_cldisabledmidlight.html
-  COLOR_clDisabledDark lcltype/color_cldisableddark.html
-  COLOR_clDisabledMid lcltype/color_cldisabledmid.html
-  COLOR_clDisabledText lcltype/color_cldisabledtext.html
-  COLOR_clDisabledBrightText lcltype/color_cldisabledbrighttext.html
-  COLOR_clDisabledButtonText lcltype/color_cldisabledbuttontext.html
-  COLOR_clDisabledBase lcltype/color_cldisabledbase.html
-  COLOR_clDisabledBackground lcltype/color_cldisabledbackground.html
-  COLOR_clDisabledShadow lcltype/color_cldisabledshadow.html
-  COLOR_clDisabledHighlight lcltype/color_cldisabledhighlight.html
-  COLOR_clDisabledHighlightedText lcltype/color_cldisabledhighlightedtext.html
-  COLOR_clActiveForeground lcltype/color_clactiveforeground.html
-  COLOR_clActiveButton lcltype/color_clactivebutton.html
-  COLOR_clActiveLight lcltype/color_clactivelight.html
-  COLOR_clActiveMidlight lcltype/color_clactivemidlight.html
-  COLOR_clActiveDark lcltype/color_clactivedark.html
-  COLOR_clActiveMid lcltype/color_clactivemid.html
-  COLOR_clActiveText lcltype/color_clactivetext.html
-  COLOR_clActiveBrightText lcltype/color_clactivebrighttext.html
-  COLOR_clActiveButtonText lcltype/color_clactivebuttontext.html
-  COLOR_clActiveBase lcltype/color_clactivebase.html
-  COLOR_clActiveBackground lcltype/color_clactivebackground.html
-  COLOR_clActiveShadow lcltype/color_clactiveshadow.html
-  COLOR_clActiveHighlight lcltype/color_clactivehighlight.html
-  COLOR_clActiveHighlightedText lcltype/color_clactivehighlightedtext.html
   WHITE_BRUSH lcltype/white_brush.html
   LTGRAY_BRUSH lcltype/ltgray_brush.html
   GRAY_BRUSH lcltype/gray_brush.html
@@ -1834,6 +1780,7 @@
   MK_DOUBLECLICK lcltype/mk_doubleclick.html
   MK_TRIPLECLICK lcltype/mk_tripleclick.html
   MK_QUADCLICK lcltype/mk_quadclick.html
+  MK_ALT lcltype/mk_alt.html
   NM_FIRST lcltype/nm_first.html
   NM_OUTOFMEMORY lcltype/nm_outofmemory.html
   NM_CLICK lcltype/nm_click.html
@@ -2273,11 +2220,6 @@
   DbgSaveData lclproc/dbgsavedata.html
   DbgAppendToFile lclproc/dbgappendtofile.html
   DbgAppendToFileWithoutLn lclproc/dbgappendtofilewithoutln.html
-  StripLN lclproc/stripln.html
-  GetPart lclproc/getpart.html
-  TextToSingleLine lclproc/texttosingleline.html
-  SwapCase lclproc/swapcase.html
-  StringCase lclproc/stringcase.html
   ClassCase lclproc/classcase.html
   UTF16CharacterLength lclproc/utf16characterlength.html
   UTF16Length lclproc/utf16length.html
@@ -3362,29 +3304,29 @@
   Quadrant graphmath/quadrant.html
   RadialPoint graphmath/radialpoint.html
   SplitBezier graphmath/splitbezier.html
-  add(TFloatPoint,TFloatPoint):TFloatPoint graphmath/op-add-tfloatpoint-tfloatpoint-tfloatpoint.html
-  add(TFloatPoint,Extended):TFloatPoint graphmath/op-add-tfloatpoint-extended-tfloatpoint.html
-  add(Extended,TFloatPoint):TFloatPoint graphmath/op-add-extended-tfloatpoint-tfloatpoint.html
-  add(TFloatPoint,TPoint):TFloatPoint graphmath/op-add-tfloatpoint-tpoint-tfloatpoint.html
-  add(TPoint,TFloatPoint):TFloatPoint graphmath/op-add-tpoint-tfloatpoint-tfloatpoint.html
-  subtract(TFloatPoint,Extended):TFloatPoint graphmath/op-subtract-tfloatpoint-extended-tfloatpoint.html
-  subtract(TFloatPoint,TFloatPoint):TFloatPoint graphmath/op-subtract-tfloatpoint-tfloatpoint-tfloatpoint.html
-  subtract(TFloatPoint,TPoint):TFloatPoint graphmath/op-subtract-tfloatpoint-tpoint-tfloatpoint.html
-  subtract(TPoint,TFloatPoint):TFloatPoint graphmath/op-subtract-tpoint-tfloatpoint-tfloatpoint.html
-  multiply(TFloatPoint,TFloatPoint):TFloatPoint graphmath/op-multiply-tfloatpoint-tfloatpoint-tfloatpoint.html
-  multiply(TFloatPoint,Extended):TFloatPoint graphmath/op-multiply-tfloatpoint-extended-tfloatpoint.html
-  multiply(Extended,TFloatPoint):TFloatPoint graphmath/op-multiply-extended-tfloatpoint-tfloatpoint.html
-  multiply(TFloatPoint,TPoint):TFloatPoint graphmath/op-multiply-tfloatpoint-tpoint-tfloatpoint.html
-  multiply(TPoint,TFloatPoint):TFloatPoint graphmath/op-multiply-tpoint-tfloatpoint-tfloatpoint.html
-  divide(TFloatPoint,TFloatPoint):TFloatPoint graphmath/op-divide-tfloatpoint-tfloatpoint-tfloatpoint.html
-  divide(TFloatPoint,Extended):TFloatPoint graphmath/op-divide-tfloatpoint-extended-tfloatpoint.html
-  divide(TFloatPoint,TPoint):TFloatPoint graphmath/op-divide-tfloatpoint-tpoint-tfloatpoint.html
-  divide(TPoint,TFloatPoint):TFloatPoint graphmath/op-divide-tpoint-tfloatpoint-tfloatpoint.html
-  equal(TPoint,TPoint):Boolean graphmath/op-equal-tpoint-tpoint-boolean.html
-  equal(TFloatPoint,TFloatPoint):Boolean graphmath/op-equal-tfloatpoint-tfloatpoint-boolean.html
-  assign(TFloatPoint):TPoint graphmath/op-assign-tfloatpoint-tpoint.html
-  assign(TPoint):TFloatPoint graphmath/op-assign-tpoint-tfloatpoint.html
-  equal(TRect,TRect):Boolean graphmath/op-equal-trect-trect-boolean.html
+  add(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-add-tfloatpoint-floatpoint-floatpoint.html
+  add(TFloatPoint,Extended):TFloatPoint graphmath/.op-add-tfloatpoint-xtended-floatpoint.html
+  add(Extended,TFloatPoint):TFloatPoint graphmath/.op-add-extended-floatpoint-floatpoint.html
+  add(TFloatPoint,TPoint):TFloatPoint graphmath/.op-add-tfloatpoint-point-floatpoint.html
+  add(TPoint,TFloatPoint):TFloatPoint graphmath/.op-add-tpoint-floatpoint-floatpoint.html
+  subtract(TFloatPoint,Extended):TFloatPoint graphmath/.op-subtract-tfloatpoint-xtended-floatpoint.html
+  subtract(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-subtract-tfloatpoint-floatpoint-floatpoint.html
+  subtract(TFloatPoint,TPoint):TFloatPoint graphmath/.op-subtract-tfloatpoint-point-floatpoint.html
+  subtract(TPoint,TFloatPoint):TFloatPoint graphmath/.op-subtract-tpoint-floatpoint-floatpoint.html
+  multiply(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-multiply-tfloatpoint-floatpoint-floatpoint.html
+  multiply(TFloatPoint,Extended):TFloatPoint graphmath/.op-multiply-tfloatpoint-xtended-floatpoint.html
+  multiply(Extended,TFloatPoint):TFloatPoint graphmath/.op-multiply-extended-floatpoint-floatpoint.html
+  multiply(TFloatPoint,TPoint):TFloatPoint graphmath/.op-multiply-tfloatpoint-point-floatpoint.html
+  multiply(TPoint,TFloatPoint):TFloatPoint graphmath/.op-multiply-tpoint-floatpoint-floatpoint.html
+  divide(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-divide-tfloatpoint-floatpoint-floatpoint.html
+  divide(TFloatPoint,Extended):TFloatPoint graphmath/.op-divide-tfloatpoint-xtended-floatpoint.html
+  divide(TFloatPoint,TPoint):TFloatPoint graphmath/.op-divide-tfloatpoint-point-floatpoint.html
+  divide(TPoint,TFloatPoint):TFloatPoint graphmath/.op-divide-tpoint-floatpoint-floatpoint.html
+  equal(TPoint,TPoint):Boolean graphmath/.op-equal-tpoint-point-oolean.html
+  equal(TFloatPoint,TFloatPoint):Boolean graphmath/.op-equal-tfloatpoint-floatpoint-oolean.html
+  assign(TFloatPoint):TPoint graphmath/.op-assign-tfloatpoint-point.html
+  assign(TPoint):TFloatPoint graphmath/.op-assign-tpoint-floatpoint.html
+  equal(TRect,TRect):Boolean graphmath/.op-equal-trect-rect-oolean.html
  IntfGraphics intfgraphics/index.html
   LazTiffExtraPrefix intfgraphics/laztiffextraprefix.html
   LazTiffHostComputer intfgraphics/laztiffhostcomputer.html
@@ -3900,65 +3842,6 @@
   clFirstSpecialColor graphics/clfirstspecialcolor.html
   clMask graphics/clmask.html
   clDontMask graphics/cldontmask.html
-  clForeground graphics/clforeground.html
-  clButton graphics/clbutton.html
-  clLight graphics/cllight.html
-  clMidlight graphics/clmidlight.html
-  clDark graphics/cldark.html
-  clMid graphics/clmid.html
-  clText graphics/cltext.html
-  clBrightText graphics/clbrighttext.html
-  clButtonText graphics/clbuttontext.html
-  clBase graphics/clbase.html
-  clxBackground graphics/clxbackground.html
-  clShadow graphics/clshadow.html
-  clxHighlight graphics/clxhighlight.html
-  clHighlightedText graphics/clhighlightedtext.html
-  cloNormal graphics/clonormal.html
-  cloDisabled graphics/clodisabled.html
-  cloActive graphics/cloactive.html
-  clNormalForeground graphics/clnormalforeground.html
-  clNormalButton graphics/clnormalbutton.html
-  clNormalLight graphics/clnormallight.html
-  clNormalMidlight graphics/clnormalmidlight.html
-  clNormalDark graphics/clnormaldark.html
-  clNormalMid graphics/clnormalmid.html
-  clNormalText graphics/clnormaltext.html
-  clNormalBrightText graphics/clnormalbrighttext.html
-  clNormalButtonText graphics/clnormalbuttontext.html
-  clNormalBase graphics/clnormalbase.html
-  clNormalBackground graphics/clnormalbackground.html
-  clNormalShadow graphics/clnormalshadow.html
-  clNormalHighlight graphics/clnormalhighlight.html
-  clNormalHighlightedText graphics/clnormalhighlightedtext.html
-  clDisabledForeground graphics/cldisabledforeground.html
-  clDisabledButton graphics/cldisabledbutton.html
-  clDisabledLight graphics/cldisabledlight.html
-  clDisabledMidlight graphics/cldisabledmidlight.html
-  clDisabledDark graphics/cldisableddark.html
-  clDisabledMid graphics/cldisabledmid.html
-  clDisabledText graphics/cldisabledtext.html
-  clDisabledBrightText graphics/cldisabledbrighttext.html
-  clDisabledButtonText graphics/cldisabledbuttontext.html
-  clDisabledBase graphics/cldisabledbase.html
-  clDisabledBackground graphics/cldisabledbackground.html
-  clDisabledShadow graphics/cldisabledshadow.html
-  clDisabledHighlight graphics/cldisabledhighlight.html
-  clDisabledHighlightedText graphics/cldisabledhighlightedtext.html
-  clActiveForeground graphics/clactiveforeground.html
-  clActiveButton graphics/clactivebutton.html
-  clActiveLight graphics/clactivelight.html
-  clActiveMidlight graphics/clactivemidlight.html
-  clActiveDark graphics/clactivedark.html
-  clActiveMid graphics/clactivemid.html
-  clActiveText graphics/clactivetext.html
-  clActiveBrightText graphics/clactivebrighttext.html
-  clActiveButtonText graphics/clactivebuttontext.html
-  clActiveBase graphics/clactivebase.html
-  clActiveBackground graphics/clactivebackground.html
-  clActiveShadow graphics/clactiveshadow.html
-  clActiveHighlight graphics/clactivehighlight.html
-  clActiveHighlightedText graphics/clactivehighlightedtext.html
   cmBlackness graphics/cmblackness.html
   cmDstInvert graphics/cmdstinvert.html
   cmMergeCopy graphics/cmmergecopy.html
@@ -3998,9 +3881,6 @@
   TProgressEvent graphics/tprogressevent.html
   TPixelFormat graphics/tpixelformat.html
   TTransparentMode graphics/ttransparentmode.html
-  TMappedColor graphics/tmappedcolor.html
-  TColorGroup graphics/tcolorgroup.html
-  TColorRole graphics/tcolorrole.html
   TRasterImageClass graphics/trasterimageclass.html
   TCustomBitmapClass graphics/tcustombitmapclass.html
   TPenStyle graphics/tpenstyle.html
@@ -4689,11 +4569,16 @@
   TSharedJpegImage graphics/tsharedjpegimage.html
   TJPEGImage graphics/tjpegimage.html
    Create graphics/tjpegimage.create.html
+   Compress graphics/tjpegimage.compress.html
    IsStreamFormatSupported graphics/tjpegimage.isstreamformatsupported.html
    CompressionQuality graphics/tjpegimage.compressionquality.html
    GrayScale graphics/tjpegimage.grayscale.html
+   MinHeight graphics/tjpegimage.minheight.html
+   MinWidth graphics/tjpegimage.minwidth.html
    ProgressiveEncoding graphics/tjpegimage.progressiveencoding.html
    Performance graphics/tjpegimage.performance.html
+   Scale graphics/tjpegimage.scale.html
+   Smoothing graphics/tjpegimage.smoothing.html
    InitializeReader graphics/tfpimagebitmap.initializereader.html
    InitializeWriter graphics/tfpimagebitmap.initializewriter.html
    FinalizeReader graphics/tfpimagebitmap.finalizereader.html
@@ -6694,6 +6579,17 @@
   TImageType imglist/timagetype.html
   TOverlay imglist/toverlay.html
   TScaledImageListResolution imglist/tscaledimagelistresolution.html
+   Create imglist/tscaledimagelistresolution.create.html
+   GetBitmap imglist/tscaledimagelistresolution.getbitmap.html
+   Draw imglist/tscaledimagelistresolution.draw.html
+   StretchDraw imglist/tscaledimagelistresolution.stretchdraw.html
+   DrawOverlay imglist/tscaledimagelistresolution.drawoverlay.html
+   Width imglist/tscaledimagelistresolution.width.html
+   Height imglist/tscaledimagelistresolution.height.html
+   Size imglist/tscaledimagelistresolution.size.html
+   Resolution imglist/tscaledimagelistresolution.resolution.html
+   Count imglist/tscaledimagelistresolution.count.html
+   Valid imglist/tscaledimagelistresolution.valid.html
   TCustomImageListResolutionClass imglist/tcustomimagelistresolutionclass.html
   TCustomImageListGetWidthForPPI imglist/tcustomimagelistgetwidthforppi.html
   TLCLGlyphsMissingResources imglist/tlclglyphsmissingresources.html
@@ -6704,11 +6600,11 @@
    OnDestroyResolutionHandle imglist/tchangelink.ondestroyresolutionhandle.html
    Sender imglist/tchangelink.sender.html
   TCustomImageListResolution imglist/tcustomimagelistresolution.html
-   GetReferenceHandle 
-   WSCreateReference 
+   GetReferenceHandle imglist/tcustomimagelistresolution.getreferencehandle.html
+   WSCreateReference imglist/tcustomimagelistresolution.wscreatereference.html
    WSRegisterClass imglist/tcustomimagelistresolution.wsregisterclass.html
-   ReferenceDestroying 
-   Destroy 
+   ReferenceDestroying imglist/tcustomimagelistresolution.referencedestroying.html
+   Destroy imglist/tcustomimagelistresolution.destroy.html
    GetHotSpot imglist/tcustomimagelistresolution.gethotspot.html
    FillDescription imglist/tcustomimagelistresolution.filldescription.html
    GetBitmap imglist/tcustomimagelistresolution.getbitmap.html
@@ -6748,7 +6644,7 @@
    ClearOverlays imglist/tcustomimagelist.clearoverlays.html
    Create imglist/tcustomimagelist.create.html
    CreateSize imglist/tcustomimagelist.createsize.html
-   Destroy imglist/tcustomimagelist.destroy.html
+   Destroy 
    ScaleImage imglist/tcustomimagelist.scaleimage.html
    AssignTo imglist/tcustomimagelist.assignto.html
    Assign imglist/tcustomimagelist.assign.html
@@ -6827,8 +6723,8 @@
    GetImageIndex imglist/tlclglyphs.getimageindex.html
    RegisterResolutions imglist/tlclglyphs.registerresolutions.html
    SetWidth100Suffix imglist/tlclglyphs.setwidth100suffix.html
-   Create imglist/tcustomimagelist.create.html
-   Destroy imglist/tcustomimagelist.destroy.html
+   Create imglist/tlclglyphs.create.html
+   Destroy imglist/tlclglyphs.destroy.html
    MissingResources imglist/tlclglyphs.missingresources.html
   LCLGlyphs imglist/lclglyphs.html
   GetDefaultGlyph imglist/getdefaultglyph.html
@@ -6876,6 +6772,7 @@
    Create checklst/tcustomchecklistbox.create.html
    Toggle checklst/tcustomchecklistbox.toggle.html
    CheckAll checklst/tcustomchecklistbox.checkall.html
+   Exchange checklst/tcustomchecklistbox.exchange.html
    AllowGrayed checklst/tcustomchecklistbox.allowgrayed.html
    Checked checklst/tcustomchecklistbox.checked.html
    Header checklst/tcustomchecklistbox.header.html
@@ -6888,6 +6785,9 @@
    MeasureItem stdctrls/tcustomlistbox.measureitem.html
   TCheckListBox checklst/tchecklistbox.html
    ItemIndex checklst/tchecklistbox.itemindex.html
+   OnMouseWheelHorz checklst/tchecklistbox.onmousewheelhorz.html
+   OnMouseWheelLeft checklst/tchecklistbox.onmousewheelleft.html
+   OnMouseWheelRight checklst/tchecklistbox.onmousewheelright.html
    OnSelectionChange checklst/tchecklistbox.onselectionchange.html
    ParentColor checklst/tchecklistbox.parentcolor.html
    Align controls/tcontrol.align.html
@@ -7089,6 +6989,7 @@
   bvRaised controls/bvraised.html
   bvSpace controls/bvspace.html
   ssModifier controls/ssmodifier.html
+  GUID_ObjInspInterface controls/guid_objinspinterface.html
   asrLeft controls/asrleft.html
   asrRight controls/asrright.html
   fsAllStayOnTop controls/fsallstayontop.html
@@ -7233,6 +7134,9 @@
   TForEachZoneProc controls/tforeachzoneproc.html
   TDockTreeFlag controls/tdocktreeflag.html
   TDockTreeFlags controls/tdocktreeflags.html
+  IObjInspInterface controls/iobjinspinterface.html
+   AllowAdd controls/iobjinspinterface.allowadd.html
+   AllowDelete controls/iobjinspinterface.allowdelete.html
   TControlCanvas controls/tcontrolcanvas.html
    GetDefaultColor controls/tcontrolcanvas.getdefaultcolor.html
    Create controls/tcontrolcanvas.create.html
@@ -7245,10 +7149,10 @@
    DrawForControl controls/timagelisthelper.drawforcontrol.html
    ResolutionForControl controls/timagelisthelper.resolutionforcontrol.html
   TDragImageListResolution controls/tdragimagelistresolution.html
-   WSRegisterClass controls/tdragimagelistresolution.wsregisterclass.html
-   ImageList controls/tdragimagelistresolution.imagelist.html
+   WSRegisterClass imglist/tcustomimagelistresolution.wsregisterclass.html
+   ImageList imglist/tcustomimagelistresolution.imagelist.html
    Create controls/tdragimagelistresolution.create.html
-   GetHotSpot controls/tdragimagelistresolution.gethotspot.html
+   GetHotSpot imglist/tcustomimagelistresolution.gethotspot.html
    BeginDrag controls/tdragimagelistresolution.begindrag.html
    DragLock controls/tdragimagelistresolution.draglock.html
    DragMove controls/tdragimagelistresolution.dragmove.html
@@ -7259,7 +7163,7 @@
    DragHotspot controls/tdragimagelistresolution.draghotspot.html
    Dragging controls/tdragimagelistresolution.dragging.html
   TDragImageList controls/tdragimagelist.html
-   GetResolutionClass controls/tdragimagelist.getresolutionclass.html
+   GetResolutionClass imglist/tcustomimagelist.getresolutionclass.html
    BeginDrag controls/tdragimagelist.begindrag.html
    DragLock controls/tdragimagelist.draglock.html
    DragMove controls/tdragimagelist.dragmove.html
@@ -7272,7 +7176,7 @@
    DragHotspot controls/tdragimagelist.draghotspot.html
    Dragging controls/tdragimagelist.dragging.html
    DraggingResolution controls/tdragimagelist.draggingresolution.html
-   Resolution controls/tdragimagelist.resolution.html
+   Resolution imglist/tcustomimagelist.resolution.html
    Initialize imglist/tcustomimagelist.initialize.html
   TDragObject controls/tdragobject.html
    EndDrag controls/tdragobject.enddrag.html
@@ -7439,6 +7343,7 @@
    IsHelpLinked actnlist/tactionlink.ishelplinked.html
    IsHintLinked actnlist/tactionlink.ishintlinked.html
    IsVisibleLinked actnlist/tactionlink.isvisiblelinked.html
+  ELayoutException controls/elayoutexception.html
   TLazAccessibleObjectEnumerator controls/tlazaccessibleobjectenumerator.html
    Current controls/tlazaccessibleobjectenumerator.current.html
   TLazAccessibleObject controls/tlazaccessibleobject.html
@@ -7676,6 +7581,7 @@
    ManualDock controls/tcontrol.manualdock.html
    ManualFloat controls/tcontrol.manualfloat.html
    ReplaceDockedControl controls/tcontrol.replacedockedcontrol.html
+   Docked controls/tcontrol.docked.html
    Dragging controls/tcontrol.dragging.html
    GetAccessibleObject controls/tcontrol.getaccessibleobject.html
    CreateAccessibleObject controls/tcontrol.createaccessibleobject.html
@@ -8312,7 +8218,7 @@
   BidiFlipRect controls/bidifliprect.html
   ChangeBiDiModeAlignment controls/changebidimodealignment.html
   DbgS controls/dbgs.html
-  assign(Variant):TCaption controls/op-assign-variant-tcaption.html
+  assign(Variant):TCaption controls/.op-assign-variant-caption.html
   CompareLazAccessibleObjectsByDataObject controls/comparelazaccessibleobjectsbydataobject.html
   CompareDataObjectWithLazAccessibleObject controls/comparedataobjectwithlazaccessibleobject.html
   Register controls/register.html
@@ -9021,6 +8927,9 @@
   TListBox stdctrls/tlistbox.html
    DoubleBuffered stdctrls/tlistbox.doublebuffered.html
    ItemIndex stdctrls/tcustomlistbox.itemindex.html
+   OnMouseWheelHorz stdctrls/tlistbox.onmousewheelhorz.html
+   OnMouseWheelLeft stdctrls/tlistbox.onmousewheelleft.html
+   OnMouseWheelRight stdctrls/tlistbox.onmousewheelright.html
    OnStartDrag stdctrls/tlistbox.onstartdrag.html
    Options stdctrls/tlistbox.options.html
    ParentBidiMode stdctrls/tlistbox.parentbidimode.html
@@ -9268,6 +9177,9 @@
    Visible controls/tcontrol.visible.html
   TMemo stdctrls/tmemo.html
    DoubleBuffered stdctrls/tmemo.doublebuffered.html
+   OnMouseWheelHorz stdctrls/tmemo.onmousewheelhorz.html
+   OnMouseWheelLeft stdctrls/tmemo.onmousewheelleft.html
+   OnMouseWheelRight stdctrls/tmemo.onmousewheelright.html
    ParentDoubleBuffered stdctrls/tmemo.parentdoublebuffered.html
    Align controls/tcontrol.align.html
    Alignment 
@@ -9345,6 +9257,9 @@
    OnMouseWheel stdctrls/tstatictext.onmousewheel.html
    OnMouseWheelDown stdctrls/tstatictext.onmousewheeldown.html
    OnMouseWheelUp stdctrls/tstatictext.onmousewheelup.html
+   OnMouseWheelHorz stdctrls/tstatictext.onmousewheelhorz.html
+   OnMouseWheelLeft stdctrls/tstatictext.onmousewheelleft.html
+   OnMouseWheelRight stdctrls/tstatictext.onmousewheelright.html
    ParentDoubleBuffered stdctrls/tstatictext.parentdoublebuffered.html
    ParentShowHint stdctrls/tstatictext.parentshowhint.html
    PopupMenu stdctrls/tstatictext.popupmenu.html
@@ -9711,6 +9626,9 @@
    OnMouseWheel stdctrls/tlabel.onmousewheel.html
    OnMouseWheelDown stdctrls/tlabel.onmousewheeldown.html
    OnMouseWheelUp stdctrls/tlabel.onmousewheelup.html
+   OnMouseWheelHorz stdctrls/tlabel.onmousewheelhorz.html
+   OnMouseWheelLeft stdctrls/tlabel.onmousewheelleft.html
+   OnMouseWheelRight stdctrls/tlabel.onmousewheelright.html
    Align controls/tcontrol.align.html
    Alignment stdctrls/tcustomlabel.alignment.html
    Anchors controls/tcontrol.anchors.html
@@ -10987,6 +10905,9 @@
    ColorRectOffset colorbox/tcolorlistbox.colorrectoffset.html
    Selected colorbox/tcolorlistbox.selected.html
    DragKind colorbox/tcolorlistbox.dragkind.html
+   OnMouseWheelHorz colorbox/tcolorlistbox.onmousewheelhorz.html
+   OnMouseWheelLeft colorbox/tcolorlistbox.onmousewheelleft.html
+   OnMouseWheelRight colorbox/tcolorlistbox.onmousewheelright.html
    TopIndex colorbox/tcolorlistbox.topindex.html
    DefaultColorColor colorbox/tcustomcolorlistbox.defaultcolorcolor.html
    NoneColorColor colorbox/tcustomcolorlistbox.nonecolorcolor.html
@@ -11970,6 +11891,9 @@
    OnMouseWheel extctrls/tsplitter.onmousewheel.html
    OnMouseWheelDown extctrls/tsplitter.onmousewheeldown.html
    OnMouseWheelUp extctrls/tsplitter.onmousewheelup.html
+   OnMouseWheelHorz extctrls/tsplitter.onmousewheelhorz.html
+   OnMouseWheelLeft extctrls/tsplitter.onmousewheelleft.html
+   OnMouseWheelRight extctrls/tsplitter.onmousewheelright.html
    OnPaint extctrls/tsplitter.onpaint.html
    ParentDoubleBuffered extctrls/tsplitter.parentdoublebuffered.html
    Align controls/tcontrol.align.html
@@ -11994,6 +11918,9 @@
    Width controls/tcontrol.width.html
   TPaintBox extctrls/tpaintbox.html
    Create extctrls/tpaintbox.create.html
+   OnMouseWheelHorz extctrls/tpaintbox.onmousewheelhorz.html
+   OnMouseWheelLeft extctrls/tpaintbox.onmousewheelleft.html
+   OnMouseWheelRight extctrls/tpaintbox.onmousewheelright.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    Paint controls/tgraphiccontrol.paint.html
    GetControlClassDefaultSize controls/tcontrol.getcontrolclassdefaultsize.html
@@ -12071,6 +11998,9 @@
    AntialiasingMode extctrls/timage.antialiasingmode.html
    KeepOriginXWhenClipped extctrls/timage.keeporiginxwhenclipped.html
    KeepOriginYWhenClipped extctrls/timage.keeporiginywhenclipped.html
+   OnMouseWheelHorz extctrls/timage.onmousewheelhorz.html
+   OnMouseWheelLeft extctrls/timage.onmousewheelleft.html
+   OnMouseWheelRight extctrls/timage.onmousewheelright.html
    OnPaintBackground extctrls/timage.onpaintbackground.html
    StretchOutEnabled extctrls/timage.stretchoutenabled.html
    StretchInEnabled extctrls/timage.stretchinenabled.html
@@ -12439,6 +12369,9 @@
    OnMouseWheel extctrls/tpanel.onmousewheel.html
    OnMouseWheelDown extctrls/tpanel.onmousewheeldown.html
    OnMouseWheelUp extctrls/tpanel.onmousewheelup.html
+   OnMouseWheelHorz extctrls/tpanel.onmousewheelhorz.html
+   OnMouseWheelLeft extctrls/tpanel.onmousewheelleft.html
+   OnMouseWheelRight extctrls/tpanel.onmousewheelright.html
    OnPaint extctrls/tpanel.onpaint.html
    Align controls/tcontrol.align.html
    Alignment extctrls/tcustompanel.alignment.html
@@ -12491,10 +12424,13 @@
    OnStartDrag controls/tcontrol.onstartdrag.html
    OnUnDock controls/twincontrol.onundock.html
   TFlowPanelControl extctrls/tflowpanelcontrol.html
+   GetDisplayName extctrls/tflowpanelcontrol.getdisplayname.html
    SetIndex extctrls/tflowpanelcontrol.setindex.html
    AssignTo extctrls/tflowpanelcontrol.assignto.html
    FPCollection extctrls/tflowpanelcontrol.fpcollection.html
    FPOwner extctrls/tflowpanelcontrol.fpowner.html
+   AllowAdd extctrls/tflowpanelcontrol.allowadd.html
+   AllowDelete extctrls/tflowpanelcontrol.allowdelete.html
    Control extctrls/tflowpanelcontrol.control.html
    WrapAfter extctrls/tflowpanelcontrol.wrapafter.html
    Index extctrls/tflowpanelcontrol.index.html
@@ -12506,6 +12442,8 @@
    Create extctrls/tflowpanelcontrollist.create.html
    IndexOf extctrls/tflowpanelcontrollist.indexof.html
    Items extctrls/tflowpanelcontrollist.items.html
+   AllowAdd extctrls/tflowpanelcontrollist.allowadd.html
+   AllowDelete extctrls/tflowpanelcontrollist.allowdelete.html
   TCustomFlowPanel extctrls/tcustomflowpanel.html
    CMControlChange extctrls/tcustomflowpanel.cmcontrolchange.html
    AlignControls extctrls/tcustomflowpanel.aligncontrols.html
@@ -12800,6 +12738,7 @@
    Destroy popupnotifier/tnotifierxbutton.destroy.html
    Paint popupnotifier/tnotifierxbutton.paint.html
   TNotifierForm popupnotifier/tnotifierform.html
+   CreateHandle popupnotifier/tnotifierform.createhandle.html
    Create popupnotifier/tnotifierform.create.html
    Destroy popupnotifier/tnotifierform.destroy.html
    Paint 
@@ -12813,7 +12752,9 @@
    Color popupnotifier/tpopupnotifier.color.html
    Icon popupnotifier/tpopupnotifier.icon.html
    Text popupnotifier/tpopupnotifier.text.html
+   TextFont popupnotifier/tpopupnotifier.textfont.html
    Title popupnotifier/tpopupnotifier.title.html
+   TitleFont popupnotifier/tpopupnotifier.titlefont.html
    Visible popupnotifier/tpopupnotifier.visible.html
    OnClose popupnotifier/tpopupnotifier.onclose.html
   Register popupnotifier/register.html
@@ -13809,6 +13750,9 @@
    OnMouseWheel comctrls/tlistview.onmousewheel.html
    OnMouseWheelDown comctrls/tlistview.onmousewheeldown.html
    OnMouseWheelUp comctrls/tlistview.onmousewheelup.html
+   OnMouseWheelHorz comctrls/tlistview.onmousewheelhorz.html
+   OnMouseWheelLeft comctrls/tlistview.onmousewheelleft.html
+   OnMouseWheelRight comctrls/tlistview.onmousewheelright.html
    OnSelectItem comctrls/tlistview.onselectitem.html
    OnShowHint comctrls/tlistview.onshowhint.html
    OnStartDock comctrls/tlistview.onstartdock.html
@@ -13908,6 +13852,8 @@
    Visible controls/tcontrol.visible.html
    BarShowText comctrls/tcustomprogressbar.barshowtext.html
   TCustomUpDown comctrls/tcustomupdown.html
+   AdjustPos comctrls/tcustomupdown.adjustpos.html
+   InitializeWnd comctrls/tcustomupdown.initializewnd.html
    AssociateKeyDown comctrls/tcustomupdown.associatekeydown.html
    AssociateMouseWheel comctrls/tcustomupdown.associatemousewheel.html
    OnAssociateChangeBounds comctrls/tcustomupdown.onassociatechangebounds.html
@@ -14271,7 +14217,7 @@
    Create 
    Destroy comctrls/tcustomcoolbar.destroy.html
    AutosizeBands comctrls/tcustomcoolbar.autosizebands.html
-   EndUpdate comctrls/tcustomcoolbar.endupdate.html
+   EndUpdate 
    Invalidate comctrls/tcustomcoolbar.invalidate.html
    InsertControl comctrls/tcustomcoolbar.insertcontrol.html
    MouseToBandPos comctrls/tcustomcoolbar.mousetobandpos.html
@@ -14362,6 +14308,7 @@
    GetControlClassDefaultSize comctrls/tcustomtrackbar.getcontrolclassdefaultsize.html
    Create comctrls/tcustomtrackbar.create.html
    SetTick comctrls/tcustomtrackbar.settick.html
+   AutoSize comctrls/tcustomtrackbar.autosize.html
    Frequency comctrls/tcustomtrackbar.frequency.html
    LineSize comctrls/tcustomtrackbar.linesize.html
    Max comctrls/tcustomtrackbar.max.html
@@ -14384,6 +14331,9 @@
   TTrackBar comctrls/ttrackbar.html
    Color comctrls/ttrackbar.color.html
    Font comctrls/ttrackbar.font.html
+   OnMouseWheelHorz comctrls/ttrackbar.onmousewheelhorz.html
+   OnMouseWheelLeft comctrls/ttrackbar.onmousewheelleft.html
+   OnMouseWheelRight comctrls/ttrackbar.onmousewheelright.html
    ParentColor comctrls/ttrackbar.parentcolor.html
    ParentFont comctrls/ttrackbar.parentfont.html
    Reversed comctrls/ttrackbar.reversed.html
@@ -14654,6 +14604,7 @@
    HideSelection comctrls/tcustomtreeview.hideselection.html
    HotTrack comctrls/tcustomtreeview.hottrack.html
    HotTrackColor comctrls/tcustomtreeview.hottrackcolor.html
+   DisabledFontColor comctrls/tcustomtreeview.disabledfontcolor.html
    Indent comctrls/tcustomtreeview.indent.html
    MultiSelect comctrls/tcustomtreeview.multiselect.html
    OnAddition comctrls/tcustomtreeview.onaddition.html
@@ -14787,6 +14738,7 @@
    AutoExpand comctrls/ttreeview.autoexpand.html
    BackgroundColor comctrls/ttreeview.backgroundcolor.html
    DefaultItemHeight comctrls/ttreeview.defaultitemheight.html
+   DisabledFontColor comctrls/ttreeview.disabledfontcolor.html
    ExpandSignColor comctrls/ttreeview.expandsigncolor.html
    ExpandSignSize comctrls/ttreeview.expandsignsize.html
    ExpandSignType comctrls/ttreeview.expandsigntype.html
@@ -14823,6 +14775,9 @@
    OnMouseWheel comctrls/ttreeview.onmousewheel.html
    OnMouseWheelDown comctrls/ttreeview.onmousewheeldown.html
    OnMouseWheelUp comctrls/ttreeview.onmousewheelup.html
+   OnMouseWheelHorz comctrls/ttreeview.onmousewheelhorz.html
+   OnMouseWheelLeft comctrls/ttreeview.onmousewheelleft.html
+   OnMouseWheelRight comctrls/ttreeview.onmousewheelright.html
    OnNodeChanged comctrls/ttreeview.onnodechanged.html
    OnResize comctrls/ttreeview.onresize.html
    Options comctrls/ttreeview.options.html
@@ -14962,6 +14917,9 @@
    OnMouseWheel comctrls/theadercontrol.onmousewheel.html
    OnMouseWheelDown comctrls/theadercontrol.onmousewheeldown.html
    OnMouseWheelUp comctrls/theadercontrol.onmousewheelup.html
+   OnMouseWheelHorz comctrls/theadercontrol.onmousewheelhorz.html
+   OnMouseWheelLeft comctrls/theadercontrol.onmousewheelleft.html
+   OnMouseWheelRight comctrls/theadercontrol.onmousewheelright.html
    Align controls/tcontrol.align.html
    Anchors controls/tcontrol.anchors.html
    BiDiMode controls/tcontrol.bidimode.html
@@ -15322,6 +15280,7 @@
    InitializeWnd dbctrls/tdblookuplistbox.initializewnd.html
    DestroyWnd dbctrls/tdblookuplistbox.destroywnd.html
    KeyDown 
+   IsUnbound dbctrls/tdblookuplistbox.isunbound.html
    Create dbctrls/tdblookuplistbox.create.html
    KeyValue dbctrls/tdblookuplistbox.keyvalue.html
    BiDiMode dbctrls/tdblookuplistbox.bidimode.html
@@ -15459,7 +15418,6 @@
    Action dbctrls/tdbcheckbox.action.html
    Align dbctrls/tdbcheckbox.align.html
    Alignment dbctrls/tdbcheckbox.alignment.html
-   BiDiMode dbctrls/tdbcheckbox.bidimode.html
    DataField dbctrls/tdbcheckbox.datafield.html
    DataSource dbctrls/tdbcheckbox.datasource.html
    DoubleBuffered dbctrls/tdbcheckbox.doublebuffered.html
@@ -15480,9 +15438,11 @@
    AllowGrayed stdctrls/tcustomcheckbox.allowgrayed.html
    Anchors controls/tcontrol.anchors.html
    AutoSize controls/tcontrol.autosize.html
+   BiDiMode controls/tcontrol.bidimode.html
    BorderSpacing controls/tcontrol.borderspacing.html
    Caption controls/tcontrol.caption.html
    Color controls/tcontrol.color.html
+   Constraints controls/tcontrol.constraints.html
    DragCursor controls/tcontrol.dragcursor.html
    DragKind controls/tcontrol.dragkind.html
    DragMode controls/tcontrol.dragmode.html
@@ -15511,29 +15471,30 @@
    DoEdit dbctrls/tcustomdbcombobox.doedit.html
    DoOnCloseUp dbctrls/tcustomdbcombobox.dooncloseup.html
    DoOnSelect dbctrls/tcustomdbcombobox.doonselect.html
+   DoOnChange dbctrls/tcustomdbcombobox.doonchange.html
    LMDeferredEdit dbctrls/tcustomdbcombobox.lmdeferrededit.html
    DetectedEvents dbctrls/tcustomdbcombobox.detectedevents.html
-   CloseUp stdctrls/tcustomcombobox.closeup.html
-   Select stdctrls/tcustomcombobox.select.html
+   CloseUp dbctrls/tcustomdbcombobox.closeup.html
+   Select dbctrls/tcustomdbcombobox.select.html
    DataChange dbctrls/tcustomdbcombobox.datachange.html
    DoMouseWheel dbctrls/tcustomdbcombobox.domousewheel.html
    Change dbctrls/tcustomdbcombobox.change.html
-   KeyDown stdctrls/tcustomcombobox.keydown.html
+   KeyDown dbctrls/tcustomdbcombobox.keydown.html
    UpdateData dbctrls/tcustomdbcombobox.updatedata.html
    UpdateRecord dbctrls/tcustomdbcombobox.updaterecord.html
    WndProc dbctrls/tcustomdbcombobox.wndproc.html
-   Create stdctrls/tcustomcombobox.create.html
-   Destroy stdctrls/tcustomcombobox.destroy.html
+   Create dbctrls/tcustomdbcombobox.create.html
+   Destroy dbctrls/tcustomdbcombobox.destroy.html
    ExecuteAction dbctrls/tcustomdbcombobox.executeaction.html
    UpdateAction dbctrls/tcustomdbcombobox.updateaction.html
    Field dbctrls/tcustomdbcombobox.field.html
+   DataField dbctrls/tcustomdbcombobox.datafield.html
    DataSource dbctrls/tcustomdbcombobox.datasource.html
+   ReadOnly dbctrls/tcustomdbcombobox.readonly.html
    Notification ms-its:rtl.chm::/classes/tcomponent.notification.html
    EditingDone controls/tcontrol.editingdone.html
    Text stdctrls/tcustomcombobox.text.html
    ItemIndex stdctrls/tcustomcombobox.itemindex.html
-   DataField 
-   ReadOnly stdctrls/tcustomcombobox.readonly.html
   TDBComboBox dbctrls/tdbcombobox.html
    DataChange dbctrls/tdbcombobox.datachange.html
    KeyPress dbctrls/tdbcombobox.keypress.html
@@ -15545,13 +15506,23 @@
    BiDiMode dbctrls/tdbcombobox.bidimode.html
    BorderStyle dbctrls/tdbcombobox.borderstyle.html
    CharCase dbctrls/tdbcombobox.charcase.html
+   Constraints dbctrls/tdbcombobox.constraints.html
    DoubleBuffered dbctrls/tdbcombobox.doublebuffered.html
    DragKind dbctrls/tdbcombobox.dragkind.html
+   OnDragDrop dbctrls/tdbcombobox.ondragdrop.html
+   OnDragOver dbctrls/tdbcombobox.ondragover.html
+   OnEditingDone dbctrls/tdbcombobox.oneditingdone.html
+   OnEndDrag dbctrls/tdbcombobox.onenddrag.html
+   OnMouseDown dbctrls/tdbcombobox.onmousedown.html
    OnMouseEnter dbctrls/tdbcombobox.onmouseenter.html
    OnMouseLeave dbctrls/tdbcombobox.onmouseleave.html
+   OnMouseMove dbctrls/tdbcombobox.onmousemove.html
+   OnMouseUp dbctrls/tdbcombobox.onmouseup.html
    OnMouseWheel dbctrls/tdbcombobox.onmousewheel.html
    OnMouseWheelDown dbctrls/tdbcombobox.onmousewheeldown.html
    OnMouseWheelUp dbctrls/tdbcombobox.onmousewheelup.html
+   OnSelect dbctrls/tdbcombobox.onselect.html
+   OnStartDrag dbctrls/tdbcombobox.onstartdrag.html
    ParentBiDiMode dbctrls/tdbcombobox.parentbidimode.html
    ParentDoubleBuffered dbctrls/tdbcombobox.parentdoublebuffered.html
    PopupMenu dbctrls/tdbcombobox.popupmenu.html
@@ -15561,7 +15532,7 @@
    AutoSize controls/tcontrol.autosize.html
    BorderSpacing controls/tcontrol.borderspacing.html
    Color controls/tcontrol.color.html
-   DataField 
+   DataField dbctrls/tcustomdbcombobox.datafield.html
    DataSource dbctrls/tcustomdbcombobox.datasource.html
    DragCursor controls/tcontrol.dragcursor.html
    DragMode controls/tcontrol.dragmode.html
@@ -15577,22 +15548,13 @@
    OnClick controls/tcontrol.onclick.html
    OnCloseUp stdctrls/tcustomcombobox.oncloseup.html
    OnDblClick controls/tcontrol.ondblclick.html
-   OnDragDrop controls/tcontrol.ondragdrop.html
-   OnDragOver controls/tcontrol.ondragover.html
    OnDrawItem stdctrls/tcustomcombobox.ondrawitem.html
    OnDropDown stdctrls/tcustomcombobox.ondropdown.html
-   OnEditingDone controls/tcontrol.oneditingdone.html
-   OnEndDrag controls/tcontrol.onenddrag.html
    OnEnter controls/twincontrol.onenter.html
    OnExit controls/twincontrol.onexit.html
    OnKeyDown controls/twincontrol.onkeydown.html
    OnKeyPress controls/twincontrol.onkeypress.html
    OnKeyUp controls/twincontrol.onkeyup.html
-   OnMouseDown controls/tcontrol.onmousedown.html
-   OnMouseMove controls/tcontrol.onmousemove.html
-   OnMouseUp controls/tcontrol.onmouseup.html
-   OnSelect stdctrls/tcustomcombobox.onselect.html
-   OnStartDrag controls/tcontrol.onstartdrag.html
    OnUTF8KeyPress controls/twincontrol.onutf8keypress.html
    ParentColor controls/tcontrol.parentcolor.html
    ParentFont controls/tcontrol.parentfont.html
@@ -15605,15 +15567,15 @@
    TabStop controls/twincontrol.tabstop.html
    Visible controls/tcontrol.visible.html
   TDBLookupComboBox dbctrls/tdblookupcombobox.html
-   DoEdit dbctrls/tdblookupcombobox.doedit.html
+   DoEdit dbctrls/tcustomdbcombobox.doedit.html
    IsUnbound dbctrls/tdblookupcombobox.isunbound.html
    InitializeWnd dbctrls/tdblookupcombobox.initializewnd.html
    DestroyWnd dbctrls/tdblookupcombobox.destroywnd.html
-   KeyDown dbctrls/tdblookupcombobox.keydown.html
+   KeyDown dbctrls/tcustomdbcombobox.keydown.html
    UTF8KeyPress dbctrls/tdblookupcombobox.utf8keypress.html
    UpdateData dbctrls/tdblookupcombobox.updatedata.html
    DataChange dbctrls/tcustomdbcombobox.datachange.html
-   DoOnSelect dbctrls/tdblookupcombobox.doonselect.html
+   DoOnSelect dbctrls/tcustomdbcombobox.doonselect.html
    Create dbctrls/tdblookupcombobox.create.html
    KeyValue dbctrls/tdblookupcombobox.keyvalue.html
    AutoComplete dbctrls/tdblookupcombobox.autocomplete.html
@@ -15646,7 +15608,7 @@
    AutoSize controls/tcontrol.autosize.html
    BorderSpacing controls/tcontrol.borderspacing.html
    Color controls/tcontrol.color.html
-   DataField 
+   DataField dbctrls/tcustomdbcombobox.datafield.html
    DataSource dbctrls/tcustomdbcombobox.datasource.html
    DragCursor controls/tcontrol.dragcursor.html
    DragMode controls/tcontrol.dragmode.html
@@ -15885,11 +15847,12 @@
    ExecuteAction dbctrls/tdbcalendar.executeaction.html
    UpdateAction dbctrls/tdbcalendar.updateaction.html
    Field dbctrls/tdbcalendar.field.html
+   Constraints 
    DataField dbctrls/tdbcalendar.datafield.html
    DataSource dbctrls/tdbcalendar.datasource.html
    Date dbctrls/tdbcalendar.date.html
-   DoubleBuffered dbctrls/tdbcalendar.doublebuffered.html
-   ParentDoubleBuffered dbctrls/tdbcalendar.parentdoublebuffered.html
+   DoubleBuffered 
+   ParentDoubleBuffered 
    Notification ms-its:rtl.chm::/classes/tcomponent.notification.html
    BorderSpacing controls/tcontrol.borderspacing.html
    ReadOnly 
@@ -15953,6 +15916,7 @@
   TDBNavigator dbctrls/tdbnavigator.html
    BidiMode dbctrls/tdbnavigator.bidimode.html
    ChildSizing dbctrls/tdbnavigator.childsizing.html
+   Constraints dbctrls/tdbnavigator.constraints.html
    DoubleBuffered dbctrls/tdbnavigator.doublebuffered.html
    OnMouseEnter dbctrls/tdbnavigator.onmouseenter.html
    OnMouseLeave dbctrls/tdbnavigator.onmouseleave.html
@@ -16025,6 +15989,10 @@
   cMask_NumberPlusMin maskedit/cmask_numberplusmin.html
   cMask_HourSeparator maskedit/cmask_hourseparator.html
   cMask_DateSeparator maskedit/cmask_dateseparator.html
+  cMask_Hex maskedit/cmask_hex.html
+  cMask_HexFixed maskedit/cmask_hexfixed.html
+  cMask_Binary maskedit/cmask_binary.html
+  cMask_BinaryFixed maskedit/cmask_binaryfixed.html
   cMask_NoLeadingBlanks maskedit/cmask_noleadingblanks.html
   DefaultBlank maskedit/defaultblank.html
   MaskFieldSeparator maskedit/maskfieldseparator.html
@@ -16156,7 +16124,6 @@
    LMMonthChanged calendar/tcustomcalendar.lmmonthchanged.html
    LMYearChanged calendar/tcustomcalendar.lmyearchanged.html
    LMDayChanged calendar/tcustomcalendar.lmdaychanged.html
-   DestroyWnd controls/twincontrol.destroywnd.html
    Create calendar/tcustomcalendar.create.html
    HitTest calendar/tcustomcalendar.hittest.html
    GetCalendarView calendar/tcustomcalendar.getcalendarview.html
@@ -16171,22 +16138,20 @@
    GetControlClassDefaultSize controls/tcontrol.getcontrolclassdefaultsize.html
    Loaded 
    InitializeWnd controls/twincontrol.initializewnd.html
+   DestroyWnd controls/twincontrol.destroywnd.html
   TCalendar calendar/tcalendar.html
-   AutoSize calendar/tcalendar.autosize.html
-   DoubleBuffered calendar/tcalendar.doublebuffered.html
-   Hint calendar/tcalendar.hint.html
-   OnMouseWheel calendar/tcalendar.onmousewheel.html
    OnMouseWheelDown calendar/tcalendar.onmousewheeldown.html
    OnMouseWheelUp calendar/tcalendar.onmousewheelup.html
-   ParentDoubleBuffered calendar/tcalendar.parentdoublebuffered.html
    ShowHint calendar/tcalendar.showhint.html
-   TabOrder calendar/tcalendar.taborder.html
    Align controls/tcontrol.align.html
    Anchors controls/tcontrol.anchors.html
+   AutoSize controls/tcontrol.autosize.html
    BorderSpacing controls/tcontrol.borderspacing.html
    Constraints controls/tcontrol.constraints.html
    DateTime calendar/tcustomcalendar.datetime.html
    DisplaySettings calendar/tcustomcalendar.displaysettings.html
+   DoubleBuffered controls/twincontrol.doublebuffered.html
+   Hint controls/tcontrol.hint.html
    OnChange calendar/tcustomcalendar.onchange.html
    OnChangeBounds controls/tcontrol.onchangebounds.html
    OnClick controls/tcontrol.onclick.html
@@ -16203,10 +16168,16 @@
    OnMouseLeave controls/tcontrol.onmouseleave.html
    OnMouseMove controls/tcontrol.onmousemove.html
    OnMouseUp controls/tcontrol.onmouseup.html
+   OnMouseWheel controls/tcontrol.onmousewheel.html
+   OnMouseWheelHorz controls/tcontrol.onmousewheelhorz.html
+   OnMouseWheelLeft controls/tcontrol.onmousewheelleft.html
+   OnMouseWheelRight controls/tcontrol.onmousewheelright.html
    OnResize controls/tcontrol.onresize.html
    OnUTF8KeyPress controls/twincontrol.onutf8keypress.html
    OnYearChanged calendar/tcustomcalendar.onyearchanged.html
+   ParentDoubleBuffered 
    PopupMenu controls/tcontrol.popupmenu.html
+   TabOrder controls/twincontrol.taborder.html
    TabStop controls/twincontrol.tabstop.html
    Visible controls/tcontrol.visible.html
   Register calendar/register.html
@@ -16308,6 +16279,8 @@
    HasDesignColumns dbgrids/tdbgridcolumns.hasdesigncolumns.html
    RemoveAutoColumns dbgrids/tdbgridcolumns.removeautocolumns.html
    Add dbgrids/tdbgridcolumns.add.html
+   ColumnByFieldname dbgrids/tdbgridcolumns.columnbyfieldname.html
+   ColumnByTitle dbgrids/tdbgridcolumns.columnbytitle.html
    LinkFields dbgrids/tdbgridcolumns.linkfields.html
    ResetColumnsOrder dbgrids/tdbgridcolumns.resetcolumnsorder.html
    Items dbgrids/tdbgridcolumns.items.html
@@ -16387,6 +16360,7 @@
    Columns dbgrids/tcustomdbgrid.columns.html
    GridStatus dbgrids/tcustomdbgrid.gridstatus.html
    Datalink dbgrids/tcustomdbgrid.datalink.html
+   Options dbgrids/tcustomdbgrid.options.html
    OptionsExtra dbgrids/tcustomdbgrid.optionsextra.html
    ReadOnly dbgrids/tcustomdbgrid.readonly.html
    SelectedRows dbgrids/tcustomdbgrid.selectedrows.html
@@ -16445,7 +16419,6 @@
    SetEditText grids/tcustomgrid.setedittext.html
    WMVScroll grids/tcustomgrid.wmvscroll.html
    WndProc controls/tcontrol.wndproc.html
-   Options dbgrids/tdbgridoptions.html
    EditorByStyle grids/tcustomgrid.editorbystyle.html
   TDBGrid dbgrids/tdbgrid.html
    InplaceEditor dbgrids/tdbgrid.inplaceeditor.html
@@ -16465,6 +16438,7 @@
    OnMouseWheel dbgrids/tdbgrid.onmousewheel.html
    OnMouseWheelDown dbgrids/tdbgrid.onmousewheeldown.html
    OnMouseWheelUp dbgrids/tdbgrid.onmousewheelup.html
+   OnUserCheckboxImage dbgrids/tdbgrid.onusercheckboximage.html
    OnUserCheckboxState dbgrids/tdbgrid.onusercheckboxstate.html
    BorderColor grids/tcustomgrid.bordercolor.html
    Canvas controls/tcustomcontrol.canvas.html
@@ -16503,7 +16477,7 @@
    Font controls/tcontrol.font.html
    HeaderHotZones grids/tcustomgrid.headerhotzones.html
    HeaderPushZones grids/tcustomgrid.headerpushzones.html
-   Options dbgrids/tdbgridoptions.html
+   Options dbgrids/tcustomdbgrid.options.html
    OptionsExtra dbgrids/tcustomdbgrid.optionsextra.html
    ParentColor controls/tcontrol.parentcolor.html
    ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
@@ -16567,7 +16541,6 @@
   DEFCOLWIDTH grids/defcolwidth.html
   DEFBUTTONWIDTH grids/defbuttonwidth.html
   DEFIMAGEPADDING grids/defimagepadding.html
-  DEFAUTOADJPADDING grids/defautoadjpadding.html
   soAll grids/soall.html
   DefaultGridOptions grids/defaultgridoptions.html
   DefaultGridOptions2 grids/defaultgridoptions2.html
@@ -16612,6 +16585,7 @@
   TSelectEditorEvent grids/tselecteditorevent.html
   TOnPrepareCanvasEvent grids/tonpreparecanvasevent.html
   TUserCheckBoxBitmapEvent grids/tusercheckboxbitmapevent.html
+  TUserCheckBoxImageEvent grids/tusercheckboximageevent.html
   TValidateEntryEvent grids/tvalidateentryevent.html
   TToggledCheckboxEvent grids/ttoggledcheckboxevent.html
   THeaderSizingEvent grids/theadersizingevent.html
@@ -16697,6 +16671,8 @@
    InsertColRow grids/tvirtualgrid.insertcolrow.html
    DisposeCell grids/tvirtualgrid.disposecell.html
    DisposeColRow grids/tvirtualgrid.disposecolrow.html
+   IsColumnIndexValid grids/tvirtualgrid.iscolumnindexvalid.html
+   IsRowIndexValid grids/tvirtualgrid.isrowindexvalid.html
    Create grids/tvirtualgrid.create.html
    Destroy grids/tvirtualgrid.destroy.html
    Clear grids/tvirtualgrid.clear.html
@@ -16788,6 +16764,7 @@
    ExchangeColumn grids/tgridcolumns.exchangecolumn.html
    InsertColumn grids/tgridcolumns.insertcolumn.html
    Create grids/tgridcolumns.create.html
+   ColumnByTitle grids/tgridcolumns.columnbytitle.html
    RealIndex grids/tgridcolumns.realindex.html
    IndexOf grids/tgridcolumns.indexof.html
    IsDefault grids/tgridcolumns.isdefault.html
@@ -16860,6 +16837,7 @@
    DoOPMoveColRow grids/tcustomgrid.doopmovecolrow.html
    DoPasteFromClipboard grids/tcustomgrid.dopastefromclipboard.html
    DoPrepareCanvas grids/tcustomgrid.dopreparecanvas.html
+   DoOnResize grids/tcustomgrid.doonresize.html
    DrawBorder grids/tcustomgrid.drawborder.html
    DrawFillRect grids/tcustomgrid.drawfillrect.html
    DrawCell grids/tcustomgrid.drawcell.html
@@ -16938,6 +16916,10 @@
    InvalidateFromCol grids/tcustomgrid.invalidatefromcol.html
    InvalidateGrid grids/tcustomgrid.invalidategrid.html
    InvalidateFocused grids/tcustomgrid.invalidatefocused.html
+   IsColumnIndexValid grids/tcustomgrid.iscolumnindexvalid.html
+   IsRowIndexValid grids/tcustomgrid.isrowindexvalid.html
+   IsColumnIndexVariable grids/tcustomgrid.iscolumnindexvariable.html
+   IsRowIndexVariable grids/tcustomgrid.isrowindexvariable.html
    GetIsCellTitle grids/tcustomgrid.getiscelltitle.html
    GetIsCellSelected grids/tcustomgrid.getiscellselected.html
    IsEmptyRow grids/tcustomgrid.isemptyrow.html
@@ -17018,6 +17000,7 @@
    DefaultRowHeight grids/tcustomgrid.defaultrowheight.html
    DefaultDrawing grids/tcustomgrid.defaultdrawing.html
    DefaultTextStyle grids/tcustomgrid.defaulttextstyle.html
+   DisabledFontColor grids/tcustomgrid.disabledfontcolor.html
    DragDx grids/tcustomgrid.dragdx.html
    Editor grids/tcustomgrid.editor.html
    EditorBorderStyle grids/tcustomgrid.editorborderstyle.html
@@ -17089,6 +17072,7 @@
    OnSelectEditor grids/tcustomgrid.onselecteditor.html
    OnTopLeftChanged grids/tcustomgrid.ontopleftchanged.html
    OnUserCheckboxBitmap grids/tcustomgrid.onusercheckboxbitmap.html
+   OnUserCheckboxImage grids/tcustomgrid.onusercheckboximage.html
    OnValidateEntry grids/tcustomgrid.onvalidateentry.html
    FlipRect grids/tcustomgrid.fliprect.html
    FlipPoint grids/tcustomgrid.flippoint.html
@@ -17191,6 +17175,7 @@
    SortColRow grids/tcustomdrawgrid.sortcolrow.html
    DefaultDrawCell grids/tcustomdrawgrid.defaultdrawcell.html
    ColRow grids/tcustomdrawgrid.colrow.html
+   DisabledFontColor grids/tcustomdrawgrid.disabledfontcolor.html
    FixedGridLineColor grids/tcustomdrawgrid.fixedgridlinecolor.html
    Options2 grids/tcustomdrawgrid.options2.html
    TabAdvance grids/tcustomdrawgrid.tabadvance.html
@@ -17337,8 +17322,12 @@
    OnMouseEnter grids/tdrawgrid.onmouseenter.html
    OnMouseLeave grids/tdrawgrid.onmouseleave.html
    OnMouseWheel grids/tdrawgrid.onmousewheel.html
+   OnMouseWheelHorz grids/tdrawgrid.onmousewheelhorz.html
+   OnMouseWheelLeft grids/tdrawgrid.onmousewheelleft.html
+   OnMouseWheelRight grids/tdrawgrid.onmousewheelright.html
    OnSetCheckboxState grids/tcustomdrawgrid.onsetcheckboxstate.html
    OnUserCheckboxBitmap grids/tdrawgrid.onusercheckboxbitmap.html
+   OnUserCheckboxImage grids/tdrawgrid.onusercheckboximage.html
    OnValidateEntry grids/tdrawgrid.onvalidateentry.html
    Align controls/tcontrol.align.html
    AlternateColor grids/tcustomgrid.alternatecolor.html
@@ -17510,8 +17499,12 @@
    OnMouseEnter grids/tstringgrid.onmouseenter.html
    OnMouseLeave grids/tstringgrid.onmouseleave.html
    OnMouseWheel grids/tstringgrid.onmousewheel.html
+   OnMouseWheelHorz grids/tstringgrid.onmousewheelhorz.html
+   OnMouseWheelLeft grids/tstringgrid.onmousewheelleft.html
+   OnMouseWheelRight grids/tstringgrid.onmousewheelright.html
    OnSetCheckboxState grids/tstringgrid.onsetcheckboxstate.html
    OnUserCheckboxBitmap grids/tstringgrid.onusercheckboxbitmap.html
+   OnUserCheckboxImage grids/tstringgrid.onusercheckboximage.html
    OnValidateEntry grids/tstringgrid.onvalidateentry.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    Modified grids/tcustomstringgrid.modified.html
@@ -17618,6 +17611,7 @@
    Create lcltranslator/tpotranslator.create.html
    Destroy lcltranslator/tpotranslator.destroy.html
    TranslateStringProperty lcltranslator/tpotranslator.translatestringproperty.html
+  TranslateLCLResourceStrings lcltranslator/translatelclresourcestrings.html
   SetDefaultLang lcltranslator/setdefaultlang.html
   GetDefaultLang lcltranslator/getdefaultlang.html
  ExtDlgs extdlgs/index.html
@@ -17935,6 +17929,9 @@
    OnMouseWheel shellctrls/tshelltreeview.onmousewheel.html
    OnMouseWheelDown shellctrls/tshelltreeview.onmousewheeldown.html
    OnMouseWheelUp shellctrls/tshelltreeview.onmousewheelup.html
+   OnMouseWheelHorz shellctrls/tshelltreeview.onmousewheelhorz.html
+   OnMouseWheelLeft shellctrls/tshelltreeview.onmousewheelleft.html
+   OnMouseWheelRight shellctrls/tshelltreeview.onmousewheelright.html
    Align controls/tcontrol.align.html
    Anchors controls/tcontrol.anchors.html
    AutoExpand comctrls/tcustomtreeview.autoexpand.html
@@ -18003,6 +18000,9 @@
    OnMouseWheel shellctrls/tshelllistview.onmousewheel.html
    OnMouseWheelDown shellctrls/tshelllistview.onmousewheeldown.html
    OnMouseWheelUp shellctrls/tshelllistview.onmousewheelup.html
+   OnMouseWheelHorz shellctrls/tshelllistview.onmousewheelhorz.html
+   OnMouseWheelLeft shellctrls/tshelllistview.onmousewheelleft.html
+   OnMouseWheelRight shellctrls/tshelllistview.onmousewheelright.html
    OnFileAdded shellctrls/tshelllistview.onfileadded.html
    Align controls/tcontrol.align.html
    Anchors controls/tcontrol.anchors.html
@@ -18078,8 +18078,21 @@
   RGBtoHLS graphutil/rgbtohls.html
   HLStoColor graphutil/hlstocolor.html
   HLStoRGB graphutil/hlstorgb.html
+  ColorToHSV graphutil/colortohsv.html
+  HSVToColor graphutil/hsvtocolor.html
+  RGBToHSV graphutil/rgbtohsv.html
+  HSVtoRGB graphutil/hsvtorgb.html
+  RGBtoHSVRange graphutil/rgbtohsvrange.html
+  HSVtoRGBRange graphutil/hsvtorgbrange.html
+  HSVRangeToColor graphutil/hsvrangetocolor.html
+  HSVtoRGBTriple graphutil/hsvtorgbtriple.html
+  HSVtoRGBQuad graphutil/hsvtorgbquad.html
+  GetHValue graphutil/gethvalue.html
+  GetSValue graphutil/getsvalue.html
+  GetVValue graphutil/getvvalue.html
   DrawVerticalGradient graphutil/drawverticalgradient.html
   DrawGradientWindow graphutil/drawgradientwindow.html
+  AntiAliasedStretchDrawBitmap graphutil/antialiasedstretchdrawbitmap.html
   DrawArrow graphutil/drawarrow.html
   FloodFill graphutil/floodfill.html
   ColorRGBToHLS graphutil/colorrgbtohls.html
@@ -18464,35 +18477,35 @@
    SetParent pairsplitter/tpairsplitterside.setparent.html
    WMPaint pairsplitter/tpairsplitterside.wmpaint.html
    Paint pairsplitter/tpairsplitterside.paint.html
-   Align pairsplitter/tpairsplitterside.align.html
-   Anchors pairsplitter/tpairsplitterside.anchors.html
    Create pairsplitter/tpairsplitterside.create.html
    Destroy pairsplitter/tpairsplitterside.destroy.html
    Splitter pairsplitter/tpairsplitterside.splitter.html
-   Visible pairsplitter/tpairsplitterside.visible.html
-   Left pairsplitter/tpairsplitterside.left.html
-   Top pairsplitter/tpairsplitterside.top.html
-   Width pairsplitter/tpairsplitterside.width.html
-   Height pairsplitter/tpairsplitterside.height.html
-   ChildSizing pairsplitter/tpairsplitterside.childsizing.html
-   ClientWidth pairsplitter/tpairsplitterside.clientwidth.html
-   ClientHeight pairsplitter/tpairsplitterside.clientheight.html
    Constraints pairsplitter/tpairsplitterside.constraints.html
-   Cursor pairsplitter/tpairsplitterside.cursor.html
-   Enabled pairsplitter/tpairsplitterside.enabled.html
-   OnMouseDown pairsplitter/tpairsplitterside.onmousedown.html
-   OnMouseEnter pairsplitter/tpairsplitterside.onmouseenter.html
-   OnMouseLeave pairsplitter/tpairsplitterside.onmouseleave.html
-   OnMouseMove pairsplitter/tpairsplitterside.onmousemove.html
-   OnMouseUp pairsplitter/tpairsplitterside.onmouseup.html
-   OnMouseWheel pairsplitter/tpairsplitterside.onmousewheel.html
-   OnMouseWheelDown pairsplitter/tpairsplitterside.onmousewheeldown.html
-   OnMouseWheelUp pairsplitter/tpairsplitterside.onmousewheelup.html
-   OnResize pairsplitter/tpairsplitterside.onresize.html
-   ShowHint pairsplitter/tpairsplitterside.showhint.html
-   ParentShowHint pairsplitter/tpairsplitterside.parentshowhint.html
-   PopupMenu pairsplitter/tpairsplitterside.popupmenu.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
+   Align controls/tcontrol.align.html
+   Anchors controls/tcontrol.anchors.html
+   Visible controls/tcontrol.html
+   Left controls/tcontrol.html
+   Top controls/tcontrol.html
+   Width controls/tcontrol.html
+   Height controls/tcontrol.html
+   ChildSizing controls/twincontrol.html
+   ClientWidth controls/tcontrol.html
+   ClientHeight controls/tcontrol.html
+   Cursor controls/tcontrol.html
+   Enabled controls/tcontrol.html
+   OnMouseDown controls/tcontrol.html
+   OnMouseEnter controls/tcontrol.html
+   OnMouseLeave controls/tcontrol.html
+   OnMouseMove controls/tcontrol.html
+   OnMouseUp controls/tcontrol.html
+   OnMouseWheel controls/tcontrol.html
+   OnMouseWheelDown controls/tcontrol.html
+   OnMouseWheelUp controls/tcontrol.html
+   OnResize controls/tcontrol.html
+   ShowHint controls/tcontrol.html
+   ParentShowHint controls/tcontrol.html
+   PopupMenu controls/tcontrol.html
   TCustomPairSplitter pairsplitter/tcustompairsplitter.html
    GetCursor pairsplitter/tcustompairsplitter.getcursor.html
    SetCursor pairsplitter/tcustompairsplitter.setcursor.html
@@ -18504,35 +18517,35 @@
    CreateSides pairsplitter/tcustompairsplitter.createsides.html
    Loaded pairsplitter/tcustompairsplitter.loaded.html
    ChildClassAllowed pairsplitter/tcustompairsplitter.childclassallowed.html
-   Cursor pairsplitter/tcustompairsplitter.cursor.html
    Sides pairsplitter/tcustompairsplitter.sides.html
    SplitterType pairsplitter/tcustompairsplitter.splittertype.html
    Position pairsplitter/tcustompairsplitter.position.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
+   Cursor controls/tcontrol.html
   TPairSplitter pairsplitter/tpairsplitter.html
-   Align pairsplitter/tpairsplitter.align.html
-   Anchors pairsplitter/tpairsplitter.anchors.html
-   BorderSpacing pairsplitter/tpairsplitter.borderspacing.html
-   Constraints pairsplitter/tpairsplitter.constraints.html
-   Color pairsplitter/tpairsplitter.color.html
-   Cursor pairsplitter/tpairsplitter.cursor.html
-   Enabled pairsplitter/tpairsplitter.enabled.html
-   OnMouseDown pairsplitter/tpairsplitter.onmousedown.html
-   OnMouseEnter pairsplitter/tpairsplitter.onmouseenter.html
-   OnMouseLeave pairsplitter/tpairsplitter.onmouseleave.html
-   OnMouseMove pairsplitter/tpairsplitter.onmousemove.html
-   OnMouseUp pairsplitter/tpairsplitter.onmouseup.html
-   OnMouseWheel pairsplitter/tpairsplitter.onmousewheel.html
-   OnMouseWheelDown pairsplitter/tpairsplitter.onmousewheeldown.html
-   OnMouseWheelUp pairsplitter/tpairsplitter.onmousewheelup.html
-   OnResize pairsplitter/tpairsplitter.onresize.html
-   OnChangeBounds pairsplitter/tpairsplitter.onchangebounds.html
-   ParentShowHint pairsplitter/tpairsplitter.parentshowhint.html
-   PopupMenu pairsplitter/tpairsplitter.popupmenu.html
-   Position pairsplitter/tpairsplitter.position.html
-   ShowHint pairsplitter/tpairsplitter.showhint.html
-   SplitterType pairsplitter/tpairsplitter.splittertype.html
-   Visible pairsplitter/tpairsplitter.visible.html
+   Align controls/tcontrol.align.html
+   Anchors controls/tcontrol.anchors.html
+   BorderSpacing controls/tcontrol.borderspacing.html
+   Constraints 
+   Color controls/tcontrol.color.html
+   Cursor controls/tcontrol.cursor.html
+   Enabled controls/tcontrol.enabled.html
+   OnMouseDown controls/tcontrol.onmousedown.html
+   OnMouseEnter controls/tcontrol.onmouseenter.html
+   OnMouseLeave controls/tcontrol.onmouseleave.html
+   OnMouseMove controls/tcontrol.onmousemove.html
+   OnMouseUp controls/tcontrol.onmouseup.html
+   OnMouseWheel controls/tcontrol.onmousewheel.html
+   OnMouseWheelDown controls/tcontrol.onmousewheeldown.html
+   OnMouseWheelUp controls/tcontrol.onmousewheelup.html
+   OnResize controls/tcontrol.onresize.html
+   OnChangeBounds controls/tcontrol.onchangebounds.html
+   ParentShowHint controls/tcontrol.parentshowhint.html
+   PopupMenu controls/tcontrol.popupmenu.html
+   Position 
+   ShowHint controls/tcontrol.showhint.html
+   SplitterType 
+   Visible controls/tcontrol.visible.html
   Register pairsplitter/register.html
  PostScriptCanvas postscriptcanvas/index.html
   TpsPoint postscriptcanvas/tpspoint.html
@@ -18863,6 +18876,9 @@
    OnMouseWheel spin/tfloatspinedit.onmousewheel.html
    OnMouseWheelDown spin/tfloatspinedit.onmousewheeldown.html
    OnMouseWheelUp spin/tfloatspinedit.onmousewheelup.html
+   OnMouseWheelHorz spin/tfloatspinedit.onmousewheelhorz.html
+   OnMouseWheelLeft spin/tfloatspinedit.onmousewheelleft.html
+   OnMouseWheelRight spin/tfloatspinedit.onmousewheelright.html
    ParentColor spin/tfloatspinedit.parentcolor.html
    ParentFont spin/tfloatspinedit.parentfont.html
    ReadOnly spin/tfloatspinedit.readonly.html
@@ -18912,6 +18928,9 @@
    OnMouseWheel spin/tspinedit.onmousewheel.html
    OnMouseWheelDown spin/tspinedit.onmousewheeldown.html
    OnMouseWheelUp spin/tspinedit.onmousewheelup.html
+   OnMouseWheelHorz spin/tspinedit.onmousewheelhorz.html
+   OnMouseWheelLeft spin/tspinedit.onmousewheelleft.html
+   OnMouseWheelRight spin/tspinedit.onmousewheelright.html
    ParentColor spin/tspinedit.parentcolor.html
    ParentFont spin/tspinedit.parentfont.html
    AutoSelected stdctrls/tcustomedit.autoselected.html
@@ -19522,6 +19541,7 @@
    StoreSelection editbtn/tcustomcontrolfilteredit.storeselection.html
    RestoreSelection editbtn/tcustomcontrolfilteredit.restoreselection.html
    Filter editbtn/tcustomcontrolfilteredit.filter.html
+   FilterLowercase editbtn/tcustomcontrolfilteredit.filterlowercase.html
    IdleConnected editbtn/tcustomcontrolfilteredit.idleconnected.html
    SortData editbtn/tcustomcontrolfilteredit.sortdata.html
    SelectedPart editbtn/tcustomcontrolfilteredit.selectedpart.html
@@ -20244,7 +20264,6 @@
   TGetPickListEvent valedit/tgetpicklistevent.html
   TOnValidateEvent valedit/tonvalidateevent.html
   TItemProp valedit/titemprop.html
-   AssignTo valedit/titemprop.assignto.html
    Create valedit/titemprop.create.html
    Destroy valedit/titemprop.destroy.html
    EditMask valedit/titemprop.editmask.html
@@ -20253,6 +20272,7 @@
    PickList valedit/titemprop.picklist.html
    MaxLength valedit/titemprop.maxlength.html
    ReadOnly valedit/titemprop.readonly.html
+   AssignTo 
   TItemPropList valedit/titemproplist.html
    Add valedit/titemproplist.add.html
    Assign valedit/titemproplist.assign.html
@@ -20279,21 +20299,13 @@
    SetFixedCols valedit/tvaluelisteditor.setfixedcols.html
    ShowColumnTitles valedit/tvaluelisteditor.showcolumntitles.html
    AdjustRowCount valedit/tvaluelisteditor.adjustrowcount.html
-   ColRowExchanged valedit/tvaluelisteditor.colrowexchanged.html
-   ColRowDeleted valedit/tvaluelisteditor.colrowdeleted.html
-   DefineCellsProperty valedit/tvaluelisteditor.definecellsproperty.html
    InvalidateCachedRow valedit/tvaluelisteditor.invalidatecachedrow.html
-   GetAutoFillColumnInfo valedit/tvaluelisteditor.getautofillcolumninfo.html
    GetEditText valedit/tvaluelisteditor.getedittext.html
    GetCells valedit/tvaluelisteditor.getcells.html
    GetDefaultEditor valedit/tvaluelisteditor.getdefaulteditor.html
-   GetRowCount valedit/tvaluelisteditor.getrowcount.html
    KeyDown valedit/tvaluelisteditor.keydown.html
    ResetDefaultColWidths valedit/tvaluelisteditor.resetdefaultcolwidths.html
-   SetCells valedit/tvaluelisteditor.setcells.html
-   SetEditText valedit/tvaluelisteditor.setedittext.html
    SetFixedRows valedit/tvaluelisteditor.setfixedrows.html
-   SetRowCount valedit/tvaluelisteditor.setrowcount.html
    Sort valedit/tvaluelisteditor.sort.html
    TitlesChanged valedit/tvaluelisteditor.titleschanged.html
    ValidateEntry valedit/tvaluelisteditor.validateentry.html
@@ -20315,61 +20327,8 @@
    Keys valedit/tvaluelisteditor.keys.html
    Values valedit/tvaluelisteditor.values.html
    ItemProps valedit/tvaluelisteditor.itemprops.html
-   Align valedit/tvaluelisteditor.align.html
-   MouseWheelOption valedit/tvaluelisteditor.mousewheeloption.html
-   OnBeforeSelection valedit/tvaluelisteditor.onbeforeselection.html
-   OnButtonClick valedit/tvaluelisteditor.onbuttonclick.html
-   OnChangeBounds valedit/tvaluelisteditor.onchangebounds.html
-   OnCheckboxToggled valedit/tvaluelisteditor.oncheckboxtoggled.html
-   OnClick valedit/tvaluelisteditor.onclick.html
-   OnColRowDeleted valedit/tvaluelisteditor.oncolrowdeleted.html
-   OnColRowExchanged valedit/tvaluelisteditor.oncolrowexchanged.html
-   OnColRowInserted valedit/tvaluelisteditor.oncolrowinserted.html
-   OnColRowMoved valedit/tvaluelisteditor.oncolrowmoved.html
-   OnCompareCells valedit/tvaluelisteditor.oncomparecells.html
-   OnContextPopup valedit/tvaluelisteditor.oncontextpopup.html
-   OnDragDrop valedit/tvaluelisteditor.ondragdrop.html
-   OnDragOver valedit/tvaluelisteditor.ondragover.html
-   OnDblClick valedit/tvaluelisteditor.ondblclick.html
-   OnDrawCell valedit/tvaluelisteditor.ondrawcell.html
    OnEditButtonClick valedit/tvaluelisteditor.oneditbuttonclick.html
-   OnEditingDone valedit/tvaluelisteditor.oneditingdone.html
-   OnEndDock valedit/tvaluelisteditor.onenddock.html
-   OnEndDrag valedit/tvaluelisteditor.onenddrag.html
-   OnEnter valedit/tvaluelisteditor.onenter.html
-   OnExit valedit/tvaluelisteditor.onexit.html
-   OnGetEditMask valedit/tvaluelisteditor.ongeteditmask.html
-   OnGetEditText valedit/tvaluelisteditor.ongetedittext.html
-   OnHeaderClick valedit/tvaluelisteditor.onheaderclick.html
-   OnHeaderSized valedit/tvaluelisteditor.onheadersized.html
-   OnHeaderSizing valedit/tvaluelisteditor.onheadersizing.html
-   OnKeyDown valedit/tvaluelisteditor.onkeydown.html
-   OnKeyPress valedit/tvaluelisteditor.onkeypress.html
-   OnKeyUp valedit/tvaluelisteditor.onkeyup.html
-   OnMouseDown valedit/tvaluelisteditor.onmousedown.html
-   OnMouseEnter valedit/tvaluelisteditor.onmouseenter.html
-   OnMouseLeave valedit/tvaluelisteditor.onmouseleave.html
-   OnMouseMove valedit/tvaluelisteditor.onmousemove.html
-   OnMouseUp valedit/tvaluelisteditor.onmouseup.html
-   OnMouseWheel valedit/tvaluelisteditor.onmousewheel.html
-   OnMouseWheelDown valedit/tvaluelisteditor.onmousewheeldown.html
-   OnMouseWheelUp valedit/tvaluelisteditor.onmousewheelup.html
-   OnPickListSelect valedit/tvaluelisteditor.onpicklistselect.html
-   OnPrepareCanvas valedit/tvaluelisteditor.onpreparecanvas.html
-   OnResize valedit/tvaluelisteditor.onresize.html
-   OnSelectEditor valedit/tvaluelisteditor.onselecteditor.html
-   OnSelection valedit/tvaluelisteditor.onselection.html
-   OnSelectCell valedit/tvaluelisteditor.onselectcell.html
-   OnSetEditText valedit/tvaluelisteditor.onsetedittext.html
-   OnShowHint valedit/tvaluelisteditor.onshowhint.html
-   OnStartDock valedit/tvaluelisteditor.onstartdock.html
-   OnStartDrag valedit/tvaluelisteditor.onstartdrag.html
-   OnTopLeftChanged valedit/tvaluelisteditor.ontopleftchanged.html
-   OnUserCheckboxBitmap valedit/tvaluelisteditor.onusercheckboxbitmap.html
-   OnUTF8KeyPress valedit/tvaluelisteditor.onutf8keypress.html
-   OnValidateEntry valedit/tvaluelisteditor.onvalidateentry.html
    DisplayOptions valedit/tvaluelisteditor.displayoptions.html
-   DoubleBuffered valedit/tvaluelisteditor.doublebuffered.html
    DropDownRows valedit/tvaluelisteditor.dropdownrows.html
    KeyOptions valedit/tvaluelisteditor.keyoptions.html
    Options valedit/tvaluelisteditor.options.html
@@ -20379,47 +20338,111 @@
    OnStringsChange valedit/tvaluelisteditor.onstringschange.html
    OnStringsChanging valedit/tvaluelisteditor.onstringschanging.html
    OnValidate valedit/tvaluelisteditor.onvalidate.html
-   AlternateColor 
-   Anchors 
-   AutoAdvance 
-   AutoEdit 
-   BiDiMode 
-   BorderSpacing 
-   BorderStyle 
-   Color 
-   Constraints 
-   DefaultColWidth 
-   DefaultDrawing 
-   DefaultRowHeight 
-   DragCursor 
-   DragKind 
-   DragMode 
-   Enabled 
-   ExtendedSelect 
-   FixedColor 
-   FixedCols 
-   Flat 
-   Font 
-   GridLineWidth 
-   HeaderHotZones 
-   HeaderPushZones 
-   ParentBiDiMode 
-   ParentColor 
-   ParentFont 
-   ParentShowHint 
-   PopupMenu 
-   RowCount 
-   ScrollBars 
-   ShowHint 
-   TabOrder 
-   TabStop 
-   TitleFont 
-   TitleImageList 
-   TitleStyle 
-   UseXORFeatures 
-   Visible 
-   VisibleColCount 
-   VisibleRowCount 
+   ColRowExchanged grids/tcustomgrid.colrowexchanged.html
+   ColRowDeleted grids/tcustomgrid.colrowdeleted.html
+   DefineCellsProperty grids/tcustomstringgrid.html
+   GetAutoFillColumnInfo grids/tcustomgrid.getautofillcolumninfo.html
+   GetRowCount 
+   SetCells grids/tcustomstringgrid.setcells.html
+   SetEditText grids/tcustomgrid.setedittext.html
+   SetRowCount 
+   Align controls/tcontrol.align.html
+   AlternateColor grids/tcustomgrid.alternatecolor.html
+   Anchors controls/tcontrol.anchors.html
+   AutoAdvance grids/tcustomgrid.autoadvance.html
+   AutoEdit grids/tcustomgrid.autoedit.html
+   BiDiMode controls/tcontrol.bidimode.html
+   BorderSpacing controls/tcontrol.borderspacing.html
+   BorderStyle controls/twincontrol.borderstyle.html
+   Color controls/tcontrol.color.html
+   Constraints controls/tcontrol.constraints.html
+   DefaultColWidth grids/tcustomgrid.defaultcolwidth.html
+   DefaultDrawing grids/tcustomgrid.defaultdrawing.html
+   DefaultRowHeight grids/tcustomgrid.defaultrowheight.html
+   DragCursor controls/tcontrol.dragcursor.html
+   DragKind controls/tcontrol.dragkind.html
+   DragMode controls/tcontrol.dragmode.html
+   Enabled controls/tcontrol.enabled.html
+   ExtendedSelect grids/tcustomgrid.extendedselect.html
+   FixedColor grids/tcustomgrid.fixedcolor.html
+   FixedCols grids/tcustomgrid.fixedcols.html
+   Flat grids/tcustomgrid.flat.html
+   Font controls/tcontrol.font.html
+   GridLineWidth grids/tcustomgrid.gridlinewidth.html
+   HeaderHotZones grids/tcustomgrid.headerhotzones.html
+   HeaderPushZones grids/tcustomgrid.headerpushzones.html
+   MouseWheelOption grids/tcustomgrid.mousewheeloption.html
+   ParentBiDiMode controls/tcontrol.parentbidimode.html
+   ParentColor controls/tcontrol.parentcolor.html
+   ParentFont controls/tcontrol.parentfont.html
+   ParentShowHint controls/tcontrol.parentshowhint.html
+   PopupMenu controls/tcontrol.popupmenu.html
+   RowCount grids/tcustomgrid.rowcount.html
+   ScrollBars grids/tcustomgrid.scrollbars.html
+   ShowHint controls/tcontrol.showhint.html
+   TabOrder controls/twincontrol.taborder.html
+   TabStop controls/twincontrol.tabstop.html
+   TitleFont grids/tcustomgrid.titlefont.html
+   TitleImageList grids/tcustomgrid.titleimagelist.html
+   TitleStyle grids/tcustomgrid.titlestyle.html
+   UseXORFeatures grids/tcustomgrid.usexorfeatures.html
+   Visible controls/tcontrol.visible.html
+   VisibleColCount grids/tcustomgrid.visiblecolcount.html
+   VisibleRowCount grids/tcustomgrid.visiblerowcount.html
+   OnBeforeSelection grids/tcustomgrid.onbeforeselection.html
+   OnButtonClick grids/tcustomgrid.onbuttonclick.html
+   OnChangeBounds controls/tcontrol.onchangebounds.html
+   OnCheckboxToggled grids/tcustomgrid.oncheckboxtoggled.html
+   OnClick controls/tcontrol.onclick.html
+   OnColRowDeleted grids/tcustomdrawgrid.oncolrowdeleted.html
+   OnColRowExchanged grids/tcustomdrawgrid.oncolrowexchanged.html
+   OnColRowInserted grids/tcustomdrawgrid.oncolrowinserted.html
+   OnColRowMoved grids/tcustomdrawgrid.oncolrowmoved.html
+   OnCompareCells grids/tcustomgrid.oncomparecells.html
+   OnContextPopup controls/tcontrol.oncontextpopup.html
+   OnDragDrop controls/tcontrol.ondragdrop.html
+   OnDragOver controls/tcontrol.ondragover.html
+   OnDblClick controls/tcontrol.ondblclick.html
+   OnDrawCell grids/tcustomgrid.ondrawcell.html
+   OnEditingDone 
+   OnEndDock controls/tcontrol.onenddock.html
+   OnEndDrag controls/tcontrol.onenddrag.html
+   OnEnter controls/twincontrol.onenter.html
+   OnExit controls/twincontrol.onexit.html
+   OnGetEditMask grids/tcustomdrawgrid.ongeteditmask.html
+   OnGetEditText grids/tcustomdrawgrid.ongetedittext.html
+   OnHeaderClick grids/tcustomdrawgrid.onheaderclick.html
+   OnHeaderSized grids/tcustomdrawgrid.onheadersized.html
+   OnHeaderSizing grids/tcustomdrawgrid.onheadersizing.html
+   OnKeyDown controls/twincontrol.onkeydown.html
+   OnKeyPress controls/twincontrol.onkeypress.html
+   OnKeyUp controls/twincontrol.onkeyup.html
+   OnMouseDown controls/tcontrol.onmousedown.html
+   OnMouseEnter controls/tcontrol.onmouseenter.html
+   OnMouseLeave controls/tcontrol.onmouseleave.html
+   OnMouseMove controls/tcontrol.onmousemove.html
+   OnMouseUp controls/tcontrol.onmouseup.html
+   OnMouseWheel controls/tcontrol.onmousewheel.html
+   OnMouseWheelDown controls/tcontrol.onmousewheeldown.html
+   OnMouseWheelUp controls/tcontrol.onmousewheelup.html
+   OnMouseWheelHorz controls/tcontrol.onmousewheelhorz.html
+   OnMouseWheelLeft controls/tcontrol.onmousewheelleft.html
+   OnMouseWheelRight controls/tcontrol.onmousewheelright.html
+   OnPickListSelect grids/tcustomgrid.onpicklistselect.html
+   OnPrepareCanvas grids/tcustomgrid.onpreparecanvas.html
+   OnResize controls/tcontrol.onresize.html
+   OnSelectEditor grids/tcustomgrid.onselecteditor.html
+   OnSelection grids/tcustomgrid.onselection.html
+   OnSelectCell grids/tcustomdrawgrid.onselectcell.html
+   OnSetEditText grids/tcustomdrawgrid.onsetedittext.html
+   OnShowHint controls/tcontrol.onshowhint.html
+   OnStartDock controls/tcontrol.onstartdock.html
+   OnStartDrag controls/tcontrol.onstartdrag.html
+   OnTopLeftChanged grids/tcustomgrid.ontopleftchanged.html
+   OnUserCheckboxBitmap grids/tcustomgrid.onusercheckboxbitmap.html
+   OnUTF8KeyPress controls/twincontrol.onutf8keypress.html
+   OnValidateEntry grids/tcustomgrid.onvalidateentry.html
+   DoubleBuffered controls/twincontrol.doublebuffered.html
   Register valedit/register.html
  ComboEx comboex/index.html
   TAutoCompleteOption comboex/tautocompleteoption.html
@@ -21881,7 +21904,7 @@
 3PDefaultButton rw
 3PCancelButton rw
 3PItems rw
-#lcl.InterfaceBase.TWidgetSet TObject
+#lcl.InterfaceBase.TWidgetSet #rtl.System.TObject
 2VFThemeServices
 2MPassCmdLineOptions
 2MCreateThemeServices
@@ -22515,7 +22538,7 @@
 3PUpdateDescription rw
 3PIconType r
 3PDataSize r
-#lcl.Themes.TThemeServices TObject
+#lcl.Themes.TThemeServices #rtl.System.TObject
 1VFThemesAvailable
 1VFUseThemes
 1VFThemedControlsEnabled
@@ -23392,9 +23415,16 @@
 #lcl.Graphics.TSharedJpegImage #lcl.Graphics.TSharedCustomBitmap
 #lcl.Graphics.TJPEGImage #lcl.Graphics.TFPImageBitmap
 1VFGrayScale
+1VFMinHeight
+1VFMinWidth
 1VFPerformance
 1VFProgressiveEncoding
 1VFQuality
+1VFScale
+1VFSmoothing
+1MSetCompressionQuality
+1MSetGrayScale
+1MSetProgressiveEncoding
 2MInitializeReader
 2MInitializeWriter
 2MFinalizeReader
@@ -23402,12 +23432,17 @@
 2MGetWriterClass
 2MGetSharedImageClass
 3MCreate
+3MCompress
 3MIsStreamFormatSupported
 3MGetFileExtensions
 3PCompressionQuality rw
 3PGrayScale r
-3PProgressiveEncoding r
+3PMinHeight rw
+3PMinWidth rw
+3PProgressiveEncoding rw
 3PPerformance rw
+3PScale rw
+3PSmoothing rw
 #lcl.Graphics.TSharedTiffImage #lcl.Graphics.TSharedCustomBitmap
 #lcl.Graphics.TTiffImage #lcl.Graphics.TFPImageBitmap
 1VFArtist
@@ -23461,7 +23496,7 @@
 3VName
 3VValueType
 3VValue
-#lcl.LResources.TLResourceList TObject
+#lcl.LResources.TLResourceList #rtl.System.TObject
 1VFList
 1VFMergeList
 1VFSortedCount
@@ -23486,7 +23521,7 @@
 3MDestroy
 3MWrite
 3PRes r
-#lcl.LResources.TAbstractTranslator TObject
+#lcl.LResources.TAbstractTranslator #rtl.System.TObject
 3MTranslateStringProperty
 #lcl.LResources.TLRSObjectReader #rtl.Classes.TAbstractObjectReader
 1VFStream
@@ -23612,7 +23647,7 @@
 3PLRS rw
 3PData rw
 3PCount rw
-#lcl.LResources.TUTF8Parser TObject
+#lcl.LResources.TUTF8Parser #rtl.System.TObject
 1VfStream
 1VfBuf
 1VfBufLen
@@ -23756,7 +23791,7 @@
 3MCompareDescriptors
 3PDataSize r
 3POnCompareDescPtrWithDescriptor r
-#lcl.ImgList.TChangeLink TObject
+#lcl.ImgList.TChangeLink #rtl.System.TObject
 1VFSender
 1VFOnChange
 1VFOnDestroyResolutionHandle
@@ -23809,7 +23844,7 @@
 3PCount r
 3PAutoCreatedInDesignTime rw
 3PReference r
-#lcl.ImgList.TCustomImageListResolutions TObject
+#lcl.ImgList.TCustomImageListResolutions #rtl.System.TObject
 1VFList
 1VFImageList
 1VFResolutionClass
@@ -24037,6 +24072,7 @@
 3MMeasureItem
 3MToggle
 3MCheckAll
+3MExchange
 3PAllowGrayed rw
 3PChecked rw
 3PHeader rw
@@ -24087,6 +24123,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnResize
 4POnSelectionChange
 4POnShowHint
@@ -24104,6 +24143,9 @@
 4PTabStop
 4PTopIndex
 4PVisible
+#lcl.Controls.IObjInspInterface #rtl.System.IUnknown
+0MAllowAdd
+0MAllowDelete
 #lcl.Controls.TControlCanvas #lcl.Graphics.TCanvas
 1VFControl
 1VFDeviceContext
@@ -24401,6 +24443,7 @@
 3MIsHelpLinked
 3MIsHintLinked
 3MIsVisibleLinked
+#lcl.Controls.ELayoutException #rtl.sysutils.Exception
 #lcl.Controls.TLazAccessibleObjectEnumerator TAvlTreeNodeEnumerator
 1MGetCurrent
 3PCurrent r
@@ -24473,7 +24516,6 @@
 1VFControlFlags
 1VFControlHandlers
 1VFControlStyle
-1VFDesktopFont
 1VFDockOrientation
 1VFDragCursor
 1VFDragKind
@@ -24523,7 +24565,6 @@
 1VFOnStartDrag
 1VFOnTripleClick
 1VFParent
-1VFParentBiDiMode
 1VFPopupMenu
 1VFPreferredMinWidth
 1VFPreferredMinHeight
@@ -24538,6 +24579,8 @@
 1VFUndockWidth
 1VFWidth
 1VFWindowProc
+1VFDesktopFont
+1VFParentBiDiMode
 1VFIsControl
 1VFShowHint
 1VFParentColor
@@ -24834,6 +24877,7 @@
 3MManualDock
 3MManualFloat
 3MReplaceDockedControl
+3MDocked
 3MDragging
 3MGetAccessibleObject
 3MCreateAccessibleObject
@@ -26079,6 +26123,7 @@
 1VFDropDownCount
 1VFDroppedDown
 1VFDroppingDown
+1VFEditingDone
 1VFItemHeight
 1VFItemIndex
 1VFItemWidth
@@ -26449,6 +26494,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnResize
 4POnSelectionChange
 4POnShowHint
@@ -26731,6 +26779,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnStartDrag
 4POnUTF8KeyPress
 4PParentBidiMode
@@ -26805,6 +26856,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnResize
 4POnStartDrag
 4PParentBidiMode
@@ -27220,6 +27274,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnResize
 4POnStartDrag
 4POptimalFill
@@ -27889,7 +27946,7 @@
 3MCreate
 3MDestroy
 3MActivateRendered
-#lcl.Forms.TMonitor TObject
+#lcl.Forms.TMonitor #rtl.System.TObject
 1VFHandle
 1VFMonitorNum
 1MGetInfo
@@ -28445,7 +28502,7 @@
 4POnHint rw
 4POnShowHint rw
 4POnUserInput rw
-#lcl.Forms.TIDesigner TObject
+#lcl.Forms.TIDesigner #rtl.System.TObject
 2VFLookupRoot
 2VFDefaultFormBoundsValid
 3MIsDesignMsg
@@ -28584,7 +28641,7 @@
 1VFTheClass
 3MCreate
 3PTheClass rw
-#lcl.HelpIntfs.THelpManager TObject
+#lcl.HelpIntfs.THelpManager #rtl.System.TObject
 3MDoHelpNotFound
 3MShowTableOfContents
 3MShowError
@@ -28783,6 +28840,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnResize
 4POnSelectionChange
 4POnShowHint
@@ -29186,7 +29246,7 @@
 #lcl.Dialogs.TCustomCopyToClipboardDialog #lcl.Forms.TForm
 2MDoCreate
 3MGetMessageText
-#lcl.Buttons.TButtonGlyph TObject,#rtl.System.IUnknown,#lcl.ImageListCache.IImageCacheListener
+#lcl.Buttons.TButtonGlyph #rtl.System.TObject,#rtl.System.IUnknown,#lcl.ImageListCache.IImageCacheListener
 1VFIsDesigning
 1VFShowMode
 1VFImageIndexes
@@ -29764,7 +29824,6 @@
 1VFPen
 1VFBrush
 1VFShape
-1MGetStarAngle
 1MSetBrush
 1MSetPen
 1MSetShape
@@ -29880,6 +29939,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnPaint
 4PParentColor
 4PParentDoubleBuffered
@@ -29926,6 +29988,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnPaint
 4POnResize
 4POnStartDrag
@@ -30017,6 +30082,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnPaint
 4POnPictureChanged
 4POnPaintBackground
@@ -30482,24 +30550,30 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnPaint
 4POnResize
 4POnStartDock
 4POnStartDrag
 4POnUnDock
-#lcl.ExtCtrls.TFlowPanelControl #rtl.Classes.TCollectionItem
+#lcl.ExtCtrls.TFlowPanelControl #rtl.Classes.TCollectionItem,#lcl.Controls.IObjInspInterface
 1VFControl
 1VFWrapAfter
 1MSetControl
 1MSetWrapAfter
+2MGetDisplayName
 2MSetIndex
 2MAssignTo
 2MFPCollection
 2MFPOwner
+3MAllowAdd
+3MAllowDelete
 4PControl rw
 4PWrapAfter rw
 4PIndex
-#lcl.ExtCtrls.TFlowPanelControlList #rtl.Classes.TOwnedCollection
+#lcl.ExtCtrls.TFlowPanelControlList #rtl.Classes.TOwnedCollection,#lcl.Controls.IObjInspInterface
 1MGetItem
 1MSetItem
 2MFPOwner
@@ -30509,6 +30583,8 @@
 3MCreate
 3MIndexOf
 3PItems rw
+3MAllowAdd
+3MAllowDelete
 #lcl.ExtCtrls.TCustomFlowPanel #lcl.ExtCtrls.TCustomPanel
 1VFControlList
 1VFAutoWrap
@@ -30890,6 +30966,7 @@
 1VbtnX
 1MHideForm
 1MHandleResize
+2MCreateHandle
 3MCreate
 3MDestroy
 3MPaint
@@ -30906,6 +30983,10 @@
 1MSetVisible
 1MSetOnClose
 1MGetOnClose
+1MGetTextFont
+1MSetTextFont
+1MGetTitleFont
+1MSetTitleFont
 3VvNotifierForm
 3MCreate
 3MDestroy
@@ -30915,7 +30996,9 @@
 4PColor rw
 4PIcon rw
 4PText rw
+4PTextFont rw
 4PTitle rw
+4PTitleFont rw
 4PVisible rw
 4POnClose rw
 #lcl.LCLTaskDialog.TEmulatedTaskDialog #lcl.Forms.TForm
@@ -32120,6 +32203,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnResize
 4POnSelectItem
 4POnShowHint
@@ -32230,6 +32316,7 @@
 1VFPosition
 1VFThousands
 1VFWrap
+1VFUseWS
 1MGetPosition
 1MBTimerExec
 1MGetFlat
@@ -32249,6 +32336,8 @@
 1MUpdateOrientation
 1MUpdateUpDownPositionText
 2MWSRegisterClass
+2MAdjustPos
+2MInitializeWnd
 2MAssociateKeyDown
 2MAssociateMouseWheel
 2MOnAssociateChangeBounds
@@ -32915,6 +33004,7 @@
 2MLoaded
 3MCreate
 3MSetTick
+4PAutoSize
 4PFrequency rw
 4PLineSize rw
 4PMax rw
@@ -32963,6 +33053,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnKeyDown
 4POnKeyPress
 4POnKeyUp
@@ -33272,6 +33365,7 @@
 1VfMouseDownPos
 1VFMultiSelectStyle
 1VFHotTrackColor
+1VFDisabledFontColor
 1VFOnAddition
 1VFOnAdvancedCustomDraw
 1VFOnAdvancedCustomDrawItem
@@ -33487,6 +33581,7 @@
 2PHideSelection rw
 2PHotTrack rw
 2PHotTrackColor rw
+2PDisabledFontColor rw
 2PIndent rws
 2PMultiSelect rw
 2POnAddition rw
@@ -33605,6 +33700,7 @@
 4PColor
 4PConstraints
 4PDefaultItemHeight
+4PDisabledFontColor
 4PDragKind
 4PDragCursor
 4PDragMode
@@ -33685,6 +33781,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnNodeChanged
 4POnResize
 4POnSelectionChanged
@@ -33854,6 +33953,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnResize
 4POnSectionClick
 4POnSectionResize
@@ -34261,6 +34363,7 @@
 2MKeyDown
 2MLoaded
 2MUpdateData
+2MIsUnbound
 3MCreate
 3PKeyValue rw
 4PAlign
@@ -34435,6 +34538,7 @@
 4PBorderSpacing
 4PCaption
 4PColor
+4PConstraints
 4PDataField rw
 4PDataSource rw
 4PDoubleBuffered
@@ -34487,6 +34591,7 @@
 2MDoEdit
 2MDoOnCloseUp
 2MDoOnSelect
+2MDoOnChange
 2MLMDeferredEdit
 2PDetectedEvents r
 2MCloseUp
@@ -34527,6 +34632,7 @@
 4PBorderStyle
 4PCharCase
 4PColor
+4PConstraints
 4PDataField
 4PDataSource
 4PDoubleBuffered
@@ -34930,6 +35036,7 @@
 3MUpdateAction
 3PField r
 4PBorderSpacing
+4PConstraints
 4PDataField rw
 4PDataSource rw
 4PDate ws
@@ -35045,6 +35152,7 @@
 4PClientHeight
 4PClientWidth
 4PColor
+4PConstraints
 4PConfirmDelete
 4PDataSource
 4PDirection
@@ -35306,6 +35414,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnResize
 4POnUTF8KeyPress
 4POnYearChanged
@@ -35443,6 +35554,8 @@
 2MHasDesignColumns
 2MRemoveAutoColumns
 3MAdd
+3MColumnByFieldname
+3MColumnByTitle
 3MLinkFields
 3MResetColumnsOrder
 3PItems rw
@@ -35764,6 +35877,7 @@
 4POnStartDrag
 4POnTitleClick
 4POnUserCheckboxBitmap
+4POnUserCheckboxImage
 4POnUserCheckboxState
 4POnUTF8KeyPress
 #lcl.Grids.EGridException #rtl.sysutils.Exception
@@ -35864,6 +35978,8 @@
 2MInsertColRow
 2MDisposeCell
 2MDisposeColRow
+2MIsColumnIndexValid
+2MIsRowIndexValid
 3MCreate
 3MDestroy
 3MClear
@@ -36056,6 +36172,7 @@
 3MCreate
 3MAdd
 3MClear
+3MColumnByTitle
 3MRealIndex
 3MIndexOf
 3MIsDefault
@@ -36089,6 +36206,7 @@
 1VFRangeSelectMode
 1VFSelections
 1VFOnUserCheckboxBitmap
+1VFOnUserCheckboxImage
 1VFSortOrder
 1VFSortColumn
 1VFSortLCLImages
@@ -36122,6 +36240,7 @@
 1VFFixedHotColor
 1VFFocusColor
 1VFSelectedColor
+1VFDisabledFontColor
 1VFFocusRectVisible
 1VFCols
 1VFRows
@@ -36362,6 +36481,7 @@
 2MDoOPMoveColRow
 2MDoPasteFromClipboard
 2MDoPrepareCanvas
+2MDoOnResize
 2MDoSetBounds
 2MDoUTF8KeyPress
 2MDrawBorder
@@ -36443,6 +36563,10 @@
 2MInvalidateFromCol
 2MInvalidateGrid
 2MInvalidateFocused
+2MIsColumnIndexValid
+2MIsRowIndexValid
+2MIsColumnIndexVariable
+2MIsRowIndexVariable
 2MGetIsCellTitle
 2MGetIsCellSelected
 2MIsEmptyRow
@@ -36534,6 +36658,7 @@
 2PDefaultRowHeight rws
 2PDefaultDrawing rw
 2PDefaultTextStyle rw
+2PDisabledFontColor rw
 2PDragDx rw
 2PEditor rw
 2PEditorBorderStyle rw
@@ -36605,6 +36730,7 @@
 2POnSelectEditor rw
 2POnTopLeftChanged rw
 2POnUserCheckboxBitmap rw
+2POnUserCheckboxImage rw
 2POnValidateEntry rw
 2MFlipRect
 2MFlipPoint
@@ -36717,6 +36843,7 @@
 3PCol
 3PColWidths
 3PColRow
+3PDisabledFontColor
 3PEditor
 3PEditorBorderStyle
 3PEditorMode
@@ -36917,6 +37044,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnPickListSelect
 4POnPrepareCanvas
 4POnSelectEditor
@@ -36928,6 +37058,7 @@
 4POnStartDrag
 4POnTopleftChanged
 4POnUserCheckboxBitmap
+4POnUserCheckboxImage
 4POnUTF8KeyPress
 4POnValidateEntry
 #lcl.Grids.TStringGridStrings #rtl.Classes.TStrings
@@ -37113,6 +37244,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnPickListSelect
 4POnPrepareCanvas
 4POnResize
@@ -37126,6 +37260,7 @@
 4POnStartDrag
 4POnTopLeftChanged
 4POnUserCheckboxBitmap
+4POnUserCheckboxImage
 4POnUTF8KeyPress
 4POnValidateEntry
 #lcl.LCLTranslator.TUpdateTranslator #lcl.LResources.TAbstractTranslator
@@ -37258,6 +37393,9 @@
 1VFOKCaption
 1VFCancelCaption
 1VFCalendar
+1VokButton
+1VcancelButton
+1Vpanel
 1MOnDialogClose
 1MOnDialogCloseQuery
 1MOnDialogShow
@@ -37531,6 +37669,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnSelectionChanged
 4POnShowHint
 4POnUTF8KeyPress
@@ -37616,6 +37757,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnResize
 4POnSelectItem
 4POnStartDrag
@@ -38226,7 +38370,7 @@
 #lcl.Printers.TFilePrinterCanvas #lcl.Printers.TPrinterCanvas
 2VFOutputFileName
 3POutputFileName rw
-#lcl.Printers.TPaperSize TObject
+#lcl.Printers.TPaperSize #rtl.System.TObject
 1VfOwnedPrinter
 1VfSupportedPapers
 1VfLastPrinterIndex
@@ -38256,7 +38400,7 @@
 3PPaperRect r
 3PSupportedPapers r
 3PPaperRectOf r
-#lcl.Printers.TPrinter TObject
+#lcl.Printers.TPrinter #rtl.System.TObject
 1VfCanvas
 1VFFileName
 1VfFonts
@@ -38400,7 +38544,7 @@
 3PFontSize rw
 3PFOntStyle rw
 3POutLst rw
-#lcl.PostScriptPrinter.TPSPattern TObject
+#lcl.PostScriptPrinter.TPSPattern #rtl.System.TObject
 1VFOldName
 1VFOnChange
 1VFBBox
@@ -38431,7 +38575,7 @@
 3PGetPS r
 3POldName rw
 3POnChange rw
-#lcl.PostScriptPrinter.TPSObject TObject
+#lcl.PostScriptPrinter.TPSObject #rtl.System.TObject
 1VFOnChange
 2MChanged
 2MLock
@@ -38451,7 +38595,7 @@
 3PPattern rw
 3PWidth rw
 3MAsString
-#lcl.PostScriptPrinter.TPostScriptCanvas TObject
+#lcl.PostScriptPrinter.TPostScriptCanvas #rtl.System.TObject
 1VFBrush
 1VFFontFace
 1VFFontSize
@@ -38493,7 +38637,7 @@
 3PColor rw
 3PPen rw
 3PBrush rw
-#lcl.PostScriptPrinter.TPostScript TObject
+#lcl.PostScriptPrinter.TPostScript #rtl.System.TObject
 1VFCanvas
 1VFHeight
 1VFLineSpacing
@@ -38610,6 +38754,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnResize
 4POnUTF8KeyPress
 4PParentColor
@@ -38668,6 +38815,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnResize
 4POnUTF8KeyPress
 4PParentColor
@@ -39282,6 +39432,7 @@
 3MStoreSelection
 3MRestoreSelection
 3PFilter rw
+3PFilterLowercase r
 3PIdleConnected rw
 3PSortData rw
 3PSelectedPart rw
@@ -40362,6 +40513,9 @@
 4POnMouseWheel
 4POnMouseWheelDown
 4POnMouseWheelUp
+4POnMouseWheelHorz
+4POnMouseWheelLeft
+4POnMouseWheelRight
 4POnPickListSelect
 4POnPrepareCanvas
 4POnResize
