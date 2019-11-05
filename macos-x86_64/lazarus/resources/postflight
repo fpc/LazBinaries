@@ -1,0 +1,23 @@
+#!/bin/sh
+rootdir="$2"
+cfgdir="$4"
+
+fpcversion=`"$rootdir"usr/local/bin/fpc -iV`
+
+mkdir -p "$rootdir"usr/local/bin
+rm -rf "$rootdir"usr/local/bin/lazbuild
+ln -s "$rootdir"Library/Lazarus/lazbuild "$rootdir"usr/local/bin/lazbuild
+
+mkdir -p "$rootdir"Applications
+rm -rf "$rootdir"Applications/Lazarus.app
+ln -s "$rootdir"Library/Lazarus/lazarus.app "$rootdir"Applications/Lazarus.app
+
+mkdir -p "$cfgdir"etc/lazarus
+cat "$rootdir"Library/Lazarus/tools/install/macosx/environmentoptions.xml | sed \
+  -e "s#/Developer/lazarus#/Library/Lazarus#" \
+  -e "s#_PPCARCH_#fpc#" \
+  -e "s#/usr/local/share/fpcsrc/\"#/usr/local/share/fpcsrc/$fpcversion/\"#" \
+  > "$cfgdir"etc/lazarus/environmentoptions.xml
+
+#end.
+

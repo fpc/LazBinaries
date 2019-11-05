@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# called by "packages"
+
+rootdir="$2"
+cfgdir="$4"
+version=`"$rootdir"usr/local/bin/fpc -iV`
+"$rootdir"usr/local/lib/fpc/"$version"/samplecfg "$rootdir"usr/local/lib/fpc/"$version" "$cfgdir"/etc
+
+sdkpath=`xcrun --show-sdk-path`
+for f in "$cfgdir"/etc/fpc.cfg "$rootdir"usr/local/lib/fpc/"$version"/ide/text/fp.cfg; do
+  cfgfile="$cfgdir"/"$f"
+  cat "$cfgfile" | sed -e 's#/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/.*$'"#$sdkpath#" > "$cfgfile".tmp
+  cat "$cfgfile".tmp > "$cfgfile"
+  rm "$cfgfile".tmp
+done
+
+#end.
+
