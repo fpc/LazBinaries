@@ -189,6 +189,11 @@
   rsPostRecordHint lclstrconsts/index-1.html#rspostrecordhint
   rsCancelRecordHint lclstrconsts/index-1.html#rscancelrecordhint
   rsRefreshRecordsHint lclstrconsts/index-1.html#rsrefreshrecordshint
+  rsMacOSMenuHide lclstrconsts/index-1.html#rsmacosmenuhide
+  rsMacOSMenuHideOthers lclstrconsts/index-1.html#rsmacosmenuhideothers
+  rsMacOSMenuQuit lclstrconsts/index-1.html#rsmacosmenuquit
+  rsMacOSMenuServices lclstrconsts/index-1.html#rsmacosmenuservices
+  rsMacOSMenuShowAll lclstrconsts/index-1.html#rsmacosmenushowall
   rsWarningUnremovedPaintMessages lclstrconsts/index-1.html#rswarningunremovedpaintmessages
   rsWarningUnreleasedDCsDump lclstrconsts/index-1.html#rswarningunreleaseddcsdump
   rsWarningUnreleasedGDIObjectsDump lclstrconsts/index-1.html#rswarningunreleasedgdiobjectsdump
@@ -7745,6 +7750,7 @@
    GetParentComponent controls/tcontrol.getparentcomponent.html
    IsParentOf controls/tcontrol.isparentof.html
    GetTopParent controls/tcontrol.gettopparent.html
+   FindSubComponent controls/tcontrol.findsubcomponent.html
    IsVisible controls/tcontrol.isvisible.html
    IsControlVisible controls/tcontrol.iscontrolvisible.html
    IsEnabled controls/tcontrol.isenabled.html
@@ -12899,6 +12905,7 @@
   TListItemsFlag comctrls/tlistitemsflag.html
   TListItemsFlags comctrls/tlistitemsflags.html
   TWidth comctrls/twidth.html
+  TSortIndicator comctrls/tsortindicator.html
   TItemChange comctrls/titemchange.html
   TViewStyle comctrls/tviewstyle.html
   TItemFind comctrls/titemfind.html
@@ -13610,6 +13617,7 @@
    Tag comctrls/tlistcolumn.tag.html
    Visible comctrls/tlistcolumn.visible.html
    Width comctrls/tlistcolumn.width.html
+   SortIndicator comctrls/tlistcolumn.sortindicator.html
   TListColumns comctrls/tlistcolumns.html
    GetOwner comctrls/tlistcolumns.getowner.html
    Create comctrls/tlistcolumns.create.html
@@ -13659,6 +13667,7 @@
    KeyDown controls/twincontrol.keydown.html
    AllocBy comctrls/tcustomlistview.allocby.html
    AutoSort comctrls/tcustomlistview.autosort.html
+   AutoSortIndicator comctrls/tcustomlistview.autosortindicator.html
    AutoWidthLastColumn comctrls/tcustomlistview.autowidthlastcolumn.html
    ColumnClick comctrls/tcustomlistview.columnclick.html
    Columns comctrls/tcustomlistview.columns.html
@@ -13754,6 +13763,7 @@
   TListView comctrls/tlistview.html
    AllocBy comctrls/tcustomlistview.allocby.html
    AutoSort comctrls/tcustomlistview.autosort.html
+   AutoSortIndicator comctrls/tcustomlistview.autosortindicator.html
    AutoWidthLastColumn comctrls/tcustomlistview.autowidthlastcolumn.html
    Checkboxes comctrls/tlistview.checkboxes.html
    Columns comctrls/tlistview.columns.html
@@ -15325,6 +15335,7 @@
    InitializeWnd dbctrls/tdblookuplistbox.initializewnd.html
    DestroyWnd dbctrls/tdblookuplistbox.destroywnd.html
    KeyDown 
+   IsUnbound dbctrls/tdblookuplistbox.isunbound.html
    Create dbctrls/tdblookuplistbox.create.html
    KeyValue dbctrls/tdblookuplistbox.keyvalue.html
    BiDiMode dbctrls/tdblookuplistbox.bidimode.html
@@ -16722,6 +16733,8 @@
    Create grids/tgridcolumntitle.create.html
    Destroy grids/tgridcolumntitle.destroy.html
    FillTitleDefaultFont grids/tgridcolumntitle.filltitledefaultfont.html
+   FixDesignFontsPPI grids/tgridcolumntitle.fixdesignfontsppi.html
+   ScaleFontsPPI grids/tgridcolumntitle.scalefontsppi.html
    IsDefault grids/tgridcolumntitle.isdefault.html
    Column grids/tgridcolumntitle.column.html
    Alignment grids/tgridcolumntitle.alignment.html
@@ -16757,6 +16770,8 @@
    Create grids/tgridcolumn.create.html
    Destroy grids/tgridcolumn.destroy.html
    FillDefaultFont grids/tgridcolumn.filldefaultfont.html
+   FixDesignFontsPPI grids/tgridcolumn.fixdesignfontsppi.html
+   ScaleFontsPPI grids/tgridcolumn.scalefontsppi.html
    IsDefault grids/tgridcolumn.isdefault.html
    Grid grids/tgridcolumn.grid.html
    DefaultWidth grids/tgridcolumn.defaultwidth.html
@@ -16968,6 +16983,8 @@
    RowHeightsChanged grids/tcustomgrid.rowheightschanged.html
    SaveContent grids/tcustomgrid.savecontent.html
    SaveGridOptions grids/tcustomgrid.savegridoptions.html
+   FixDesignFontsPPI grids/tcustomgrid.fixdesignfontsppi.html
+   ScaleFontsPPI grids/tcustomgrid.scalefontsppi.html
    ScrollBarRange grids/tcustomgrid.scrollbarrange.html
    ScrollBarPosition grids/tcustomgrid.scrollbarposition.html
    ScrollBarIsVisible grids/tcustomgrid.scrollbarisvisible.html
@@ -18901,6 +18918,7 @@
    SetIncrement spin/tcustomspinedit.setincrement.html
    SetValue spin/tcustomspinedit.setvalue.html
    Create spin/tcustomspinedit.create.html
+   GetLimitedValue spin/tcustomfloatspinedit.getlimitedvalue.html
    Value spin/tcustomspinedit.value.html
    MinValue spin/tcustomspinedit.minvalue.html
    MaxValue spin/tcustomspinedit.maxvalue.html
@@ -24905,6 +24923,7 @@
 3MGetParentComponent
 3MIsParentOf
 3MGetTopParent
+3MFindSubComponent
 3MIsVisible
 3MIsControlVisible
 3MIsEnabled
@@ -31749,6 +31768,7 @@
 1VFWidth
 1VFImageIndex
 1VFTag
+1VFSortIndicator
 1MGetWidth
 1MWSCreateColumn
 1MWSDestroyColumn
@@ -31762,6 +31782,7 @@
 1MSetCaption
 1MSetAlignment
 1MSetImageIndex
+1MSetSortIndicator
 2MSetIndex
 2MGetDisplayName
 2MGetStoredWidth
@@ -31778,6 +31799,7 @@
 4PTag rw
 4PVisible rw
 4PWidth rw
+4PSortIndicator rw
 #lcl.ComCtrls.TListColumns #rtl.Classes.TCollection
 1VFOwner
 1VFItemNeedsUpdate
@@ -31804,6 +31826,7 @@
 1VFEditor
 1VFAllocBy
 1VFAutoSort
+1VFAutoSortIndicator
 1VFAutoWidthLastColumn
 1VFCanvas
 1VFDefaultItemHeight
@@ -31946,6 +31969,7 @@
 2MKeyDown
 2PAllocBy rw
 2PAutoSort rw
+2PAutoSortIndicator rw
 2PAutoWidthLastColumn rw
 2PColumnClick rw
 2PColumns rw
@@ -32039,6 +32063,7 @@
 4PAllocBy
 4PAnchors
 4PAutoSort
+4PAutoSortIndicator
 4PAutoWidthLastColumn rw
 4PBorderSpacing
 4PBorderStyle
@@ -34267,6 +34292,7 @@
 2MKeyDown
 2MLoaded
 2MUpdateData
+2MIsUnbound
 3MCreate
 3PKeyValue rw
 4PAlign
@@ -35925,6 +35951,8 @@
 3MDestroy
 3MAssign
 3MFillTitleDefaultFont
+3MFixDesignFontsPPI
+3MScaleFontsPPI
 3MIsDefault
 3PColumn r
 4PAlignment rws
@@ -36022,6 +36050,8 @@
 3MDestroy
 3MAssign
 3MFillDefaultFont
+3MFixDesignFontsPPI
+3MScaleFontsPPI
 3MIsDefault
 3PGrid r
 3PDefaultWidth r
@@ -36287,6 +36317,7 @@
 1MSetTopRow
 1MStartColSizing
 1MChangeCursor
+1MTitleFontIsStored
 1MTrySmoothScrollBy
 1MTryScrollTo
 1MUpdateCachedSizes
@@ -36483,6 +36514,8 @@
 2MRowHeightsChanged
 2MSaveContent
 2MSaveGridOptions
+2MFixDesignFontsPPI
+2MScaleFontsPPI
 2MScrollBarRange
 2MScrollBarPosition
 2MScrollBarIsVisible
@@ -36591,7 +36624,7 @@
 2PSelection rw
 2PScrollBars rw
 2PStrictSort rw
-2PTitleFont rw
+2PTitleFont rws
 2PTitleStyle rw
 2PTopRow rw
 2PUseXORFeatures rw
@@ -38638,6 +38671,7 @@
 2MSetIncrement
 2MSetValue
 3MCreate
+3MGetLimitedValue
 3PValue rw
 3PMinValue rw
 3PMaxValue rw
