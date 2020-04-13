@@ -5088,10 +5088,10 @@
 3MSaveToConfig
 3MLoadFromConfig
 3MWriteDebugReport
-#lazutils.lazfglhash.TLazHTGNode #fcl.contnrs.THTCustomNode
+#lazutils.lazfglhash.TLazHTGNode #fcl.Contnrs.THTCustomNode
 1VFData
 3PData rw
-#lazutils.lazfglhash.TLazFPGHashTable #fcl.contnrs.TFPCustomHashTable
+#lazutils.lazfglhash.TLazFPGHashTable #fcl.Contnrs.TFPCustomHashTable
 2MTHTGNode
 2MTGIteratorMethod
 2MCreateNewNode
@@ -6014,7 +6014,7 @@
 3PBase r
 3PPosition r
 3PUsed r
-#lazutils.UTF8Process.TProcessUTF8 #fcl.process.TProcess
+#lazutils.UTF8Process.TProcessUTF8 #fcl.process.TPROCESS
 1VFApplicationNameUTF8
 1VFCommandLineUTF8
 1VFConsoleTitleUTF8

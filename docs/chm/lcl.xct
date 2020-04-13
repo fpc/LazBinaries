@@ -33952,7 +33952,7 @@
 3MExecuteTarget
 3MUpdateTarget
 4PDataSource
-#lcl.DBCtrls.TFieldDataLink #fcl.db.TDataLink
+#lcl.DBCtrls.TFieldDataLink #fcl.DB.TDataLink
 1VFField
 1VFFieldName
 1VFControl
@@ -35053,7 +35053,7 @@
 1VFNavStyle
 3PNavStyle rw
 3PIndex rw
-#lcl.DBCtrls.TDBNavDataLink #fcl.db.TDataLink
+#lcl.DBCtrls.TDBNavDataLink #fcl.DB.TDataLink
 1VFNavigator
 2MEditingChanged
 2MDataSetChanged
@@ -35383,7 +35383,7 @@
 3PCount r
 3PCurrentRowSelected rw
 3PItems r
-#lcl.DBGrids.TComponentDataLink #fcl.db.TDataLink
+#lcl.DBGrids.TComponentDataLink #fcl.DB.TDataLink
 1VFDataSet
 1VFDataSetName
 1VFModified
