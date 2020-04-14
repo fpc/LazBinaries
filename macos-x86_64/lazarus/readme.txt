@@ -11,3 +11,7 @@ find . -name '*compiledbak' -delete
 
 cp path/svn/binaries/docs/chm/* docs/chm/
 
+Open in "Packages" the LazarusIDE.pkgproj
+
+Build / Build and Debug
+
