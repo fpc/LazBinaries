@@ -15,3 +15,8 @@ Open in "Packages" the LazarusIDE.pkgproj
 
 Build / Build and Debug
 
+Packge file is created in
+LazarusIDE/build/LazarusIDE.pkg
+
+sudo installer -pkg LazarusIDE/build/LazarusIDE.pkg -verbose -target /
+less /var/log/install.log

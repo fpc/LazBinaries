@@ -2,18 +2,23 @@
 #
 # called by "packages"
 
+#set -x
+
 rootdir="$2"
 cfgdir="$4"
-version=`"$rootdir"usr/local/bin/fpc -iV`
+version="3.0.4"
 "$rootdir"usr/local/lib/fpc/"$version"/samplecfg "$rootdir"usr/local/lib/fpc/"$version" "$cfgdir"/etc
 
 sdkpath=`xcrun --show-sdk-path`
-for f in "$cfgdir"/etc/fpc.cfg "$rootdir"usr/local/lib/fpc/"$version"/ide/text/fp.cfg; do
-  cfgfile="$cfgdir"/"$f"
+echo "postflight: sdkpath=$sdkpath"
+for cfgfile in "$cfgdir"/etc/fpc.cfg "$rootdir"usr/local/lib/fpc/"$version"/ide/text/fp.cfg; do
+  echo "postflight cfgdir: $cfgdir"
   cat "$cfgfile" | sed -e 's#/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/.*$'"#$sdkpath#" > "$cfgfile".tmp
   cat "$cfgfile".tmp > "$cfgfile"
   rm "$cfgfile".tmp
 done
+
+echo "postflight: END."
 
 #end.
 
