@@ -3368,29 +3368,29 @@
   Quadrant graphmath/quadrant.html
   RadialPoint graphmath/radialpoint.html
   SplitBezier graphmath/splitbezier.html
-  add(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-add-tfloatpoint-floatpoint-floatpoint.html
-  add(TFloatPoint,Extended):TFloatPoint graphmath/.op-add-tfloatpoint-xtended-floatpoint.html
-  add(Extended,TFloatPoint):TFloatPoint graphmath/.op-add-extended-floatpoint-floatpoint.html
-  add(TFloatPoint,TPoint):TFloatPoint graphmath/.op-add-tfloatpoint-point-floatpoint.html
-  add(TPoint,TFloatPoint):TFloatPoint graphmath/.op-add-tpoint-floatpoint-floatpoint.html
-  subtract(TFloatPoint,Extended):TFloatPoint graphmath/.op-subtract-tfloatpoint-xtended-floatpoint.html
-  subtract(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-subtract-tfloatpoint-floatpoint-floatpoint.html
-  subtract(TFloatPoint,TPoint):TFloatPoint graphmath/.op-subtract-tfloatpoint-point-floatpoint.html
-  subtract(TPoint,TFloatPoint):TFloatPoint graphmath/.op-subtract-tpoint-floatpoint-floatpoint.html
-  multiply(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-multiply-tfloatpoint-floatpoint-floatpoint.html
-  multiply(TFloatPoint,Extended):TFloatPoint graphmath/.op-multiply-tfloatpoint-xtended-floatpoint.html
-  multiply(Extended,TFloatPoint):TFloatPoint graphmath/.op-multiply-extended-floatpoint-floatpoint.html
-  multiply(TFloatPoint,TPoint):TFloatPoint graphmath/.op-multiply-tfloatpoint-point-floatpoint.html
-  multiply(TPoint,TFloatPoint):TFloatPoint graphmath/.op-multiply-tpoint-floatpoint-floatpoint.html
-  divide(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-divide-tfloatpoint-floatpoint-floatpoint.html
-  divide(TFloatPoint,Extended):TFloatPoint graphmath/.op-divide-tfloatpoint-xtended-floatpoint.html
-  divide(TFloatPoint,TPoint):TFloatPoint graphmath/.op-divide-tfloatpoint-point-floatpoint.html
-  divide(TPoint,TFloatPoint):TFloatPoint graphmath/.op-divide-tpoint-floatpoint-floatpoint.html
-  equal(TPoint,TPoint):Boolean graphmath/.op-equal-tpoint-point-oolean.html
-  equal(TFloatPoint,TFloatPoint):Boolean graphmath/.op-equal-tfloatpoint-floatpoint-oolean.html
-  assign(TFloatPoint):TPoint graphmath/.op-assign-tfloatpoint-point.html
-  assign(TPoint):TFloatPoint graphmath/.op-assign-tpoint-floatpoint.html
-  equal(TRect,TRect):Boolean graphmath/.op-equal-trect-rect-oolean.html
+  add(TFloatPoint,TFloatPoint):TFloatPoint graphmath/op-add-tfloatpoint-tfloatpoint-tfloatpoint.html
+  add(TFloatPoint,Extended):TFloatPoint graphmath/op-add-tfloatpoint-extended-tfloatpoint.html
+  add(Extended,TFloatPoint):TFloatPoint graphmath/op-add-extended-tfloatpoint-tfloatpoint.html
+  add(TFloatPoint,TPoint):TFloatPoint graphmath/op-add-tfloatpoint-tpoint-tfloatpoint.html
+  add(TPoint,TFloatPoint):TFloatPoint graphmath/op-add-tpoint-tfloatpoint-tfloatpoint.html
+  subtract(TFloatPoint,Extended):TFloatPoint graphmath/op-subtract-tfloatpoint-extended-tfloatpoint.html
+  subtract(TFloatPoint,TFloatPoint):TFloatPoint graphmath/op-subtract-tfloatpoint-tfloatpoint-tfloatpoint.html
+  subtract(TFloatPoint,TPoint):TFloatPoint graphmath/op-subtract-tfloatpoint-tpoint-tfloatpoint.html
+  subtract(TPoint,TFloatPoint):TFloatPoint graphmath/op-subtract-tpoint-tfloatpoint-tfloatpoint.html
+  multiply(TFloatPoint,TFloatPoint):TFloatPoint graphmath/op-multiply-tfloatpoint-tfloatpoint-tfloatpoint.html
+  multiply(TFloatPoint,Extended):TFloatPoint graphmath/op-multiply-tfloatpoint-extended-tfloatpoint.html
+  multiply(Extended,TFloatPoint):TFloatPoint graphmath/op-multiply-extended-tfloatpoint-tfloatpoint.html
+  multiply(TFloatPoint,TPoint):TFloatPoint graphmath/op-multiply-tfloatpoint-tpoint-tfloatpoint.html
+  multiply(TPoint,TFloatPoint):TFloatPoint graphmath/op-multiply-tpoint-tfloatpoint-tfloatpoint.html
+  divide(TFloatPoint,TFloatPoint):TFloatPoint graphmath/op-divide-tfloatpoint-tfloatpoint-tfloatpoint.html
+  divide(TFloatPoint,Extended):TFloatPoint graphmath/op-divide-tfloatpoint-extended-tfloatpoint.html
+  divide(TFloatPoint,TPoint):TFloatPoint graphmath/op-divide-tfloatpoint-tpoint-tfloatpoint.html
+  divide(TPoint,TFloatPoint):TFloatPoint graphmath/op-divide-tpoint-tfloatpoint-tfloatpoint.html
+  equal(TPoint,TPoint):Boolean graphmath/op-equal-tpoint-tpoint-boolean.html
+  equal(TFloatPoint,TFloatPoint):Boolean graphmath/op-equal-tfloatpoint-tfloatpoint-boolean.html
+  assign(TFloatPoint):TPoint graphmath/op-assign-tfloatpoint-tpoint.html
+  assign(TPoint):TFloatPoint graphmath/op-assign-tpoint-tfloatpoint.html
+  equal(TRect,TRect):Boolean graphmath/op-equal-trect-trect-boolean.html
  IntfGraphics intfgraphics/index.html
   LazTiffExtraPrefix intfgraphics/laztiffextraprefix.html
   LazTiffHostComputer intfgraphics/laztiffhostcomputer.html
@@ -8319,7 +8319,7 @@
   BidiFlipRect controls/bidifliprect.html
   ChangeBiDiModeAlignment controls/changebidimodealignment.html
   DbgS controls/dbgs.html
-  assign(Variant):TCaption controls/.op-assign-variant-caption.html
+  assign(Variant):TCaption controls/op-assign-variant-tcaption.html
   CompareLazAccessibleObjectsByDataObject controls/comparelazaccessibleobjectsbydataobject.html
   CompareDataObjectWithLazAccessibleObject controls/comparedataobjectwithlazaccessibleobject.html
   Register controls/register.html
@@ -13397,6 +13397,7 @@
    MouseUp comctrls/tnotebookstringstabcontrol.mouseup.html
    MouseEnter comctrls/tnotebookstringstabcontrol.mouseenter.html
    MouseLeave comctrls/tnotebookstringstabcontrol.mouseleave.html
+   GetPopupMenu comctrls/tnotebookstringstabcontrol.getpopupmenu.html
    WSRegisterClass 
   TTabControlNoteBookStrings comctrls/ttabcontrolnotebookstrings.html
    GetInternalTabControllClass comctrls/ttabcontrolnotebookstrings.getinternaltabcontrollclass.html
@@ -13467,6 +13468,7 @@
    OnMouseWheel comctrls/ttabcontrol.onmousewheel.html
    OnMouseWheelDown comctrls/ttabcontrol.onmousewheeldown.html
    OnMouseWheelUp comctrls/ttabcontrol.onmousewheelup.html
+   Options comctrls/tcustomtabcontrol.options.html
    ParentBiDiMode comctrls/ttabcontrol.parentbidimode.html
    DisplayRect comctrls/tcustomtabcontrol.displayrect.html
    HotTrack comctrls/tcustomtabcontrol.hottrack.html
@@ -14637,6 +14639,10 @@
    MoveSelection comctrls/tcustomtreeview.moveselection.html
    Change comctrls/tcustomtreeview.change.html
    Collapse comctrls/tcustomtreeview.collapse.html
+   Click comctrls/tcustomtreeview.click.html
+   DblClick comctrls/tcustomtreeview.dblclick.html
+   TripleClick comctrls/tcustomtreeview.tripleclick.html
+   QuadClick comctrls/tcustomtreeview.quadclick.html
    Delete comctrls/tcustomtreeview.delete.html
    DoCreateNodeClass comctrls/tcustomtreeview.docreatenodeclass.html
    DoMouseWheelHorz comctrls/tcustomtreeview.domousewheelhorz.html
@@ -14712,6 +14718,7 @@
    DefaultTreeViewSort comctrls/tcustomtreeview.defaulttreeviewsort.html
    GetHitTestInfoAt comctrls/tcustomtreeview.gethittestinfoat.html
    GetNodeAt comctrls/tcustomtreeview.getnodeat.html
+   GetNodeWithExpandSignAt comctrls/tcustomtreeview.getnodewithexpandsignat.html
    GetInsertMarkAt comctrls/tcustomtreeview.getinsertmarkat.html
    SetInsertMark comctrls/tcustomtreeview.setinsertmark.html
    SetInsertMarkAt comctrls/tcustomtreeview.setinsertmarkat.html
@@ -21902,7 +21909,7 @@
 3PDefaultButton rw
 3PCancelButton rw
 3PItems rw
-#lcl.InterfaceBase.TWidgetSet #rtl.System.TObject
+#lcl.InterfaceBase.TWidgetSet TObject
 2VFThemeServices
 2MPassCmdLineOptions
 2MCreateThemeServices
@@ -22536,7 +22543,7 @@
 3PUpdateDescription rw
 3PIconType r
 3PDataSize r
-#lcl.Themes.TThemeServices #rtl.System.TObject
+#lcl.Themes.TThemeServices TObject
 1VFThemesAvailable
 1VFUseThemes
 1VFThemedControlsEnabled
@@ -23482,7 +23489,7 @@
 3VName
 3VValueType
 3VValue
-#lcl.LResources.TLResourceList #rtl.System.TObject
+#lcl.LResources.TLResourceList TObject
 1VFList
 1VFMergeList
 1VFSortedCount
@@ -23507,7 +23514,7 @@
 3MDestroy
 3MWrite
 3PRes r
-#lcl.LResources.TAbstractTranslator #rtl.System.TObject
+#lcl.LResources.TAbstractTranslator TObject
 3MTranslateStringProperty
 #lcl.LResources.TLRSObjectReader #rtl.Classes.TAbstractObjectReader
 1VFStream
@@ -23633,7 +23640,7 @@
 3PLRS rw
 3PData rw
 3PCount rw
-#lcl.LResources.TUTF8Parser #rtl.System.TObject
+#lcl.LResources.TUTF8Parser TObject
 1VfStream
 1VfBuf
 1VfBufLen
@@ -23777,7 +23784,7 @@
 3MCompareDescriptors
 3PDataSize r
 3POnCompareDescPtrWithDescriptor r
-#lcl.ImgList.TChangeLink #rtl.System.TObject
+#lcl.ImgList.TChangeLink TObject
 1VFSender
 1VFOnChange
 1VFOnDestroyResolutionHandle
@@ -23830,7 +23837,7 @@
 3PCount r
 3PAutoCreatedInDesignTime rw
 3PReference r
-#lcl.ImgList.TCustomImageListResolutions #rtl.System.TObject
+#lcl.ImgList.TCustomImageListResolutions TObject
 1VFList
 1VFImageList
 1VFResolutionClass
@@ -27911,7 +27918,7 @@
 3MCreate
 3MDestroy
 3MActivateRendered
-#lcl.Forms.TMonitor #rtl.System.TObject
+#lcl.Forms.TMonitor TObject
 1VFHandle
 1VFMonitorNum
 1MGetInfo
@@ -28467,7 +28474,7 @@
 4POnHint rw
 4POnShowHint rw
 4POnUserInput rw
-#lcl.Forms.TIDesigner #rtl.System.TObject
+#lcl.Forms.TIDesigner TObject
 2VFLookupRoot
 2VFDefaultFormBoundsValid
 3MIsDesignMsg
@@ -28606,7 +28613,7 @@
 1VFTheClass
 3MCreate
 3PTheClass rw
-#lcl.HelpIntfs.THelpManager #rtl.System.TObject
+#lcl.HelpIntfs.THelpManager TObject
 3MDoHelpNotFound
 3MShowTableOfContents
 3MShowError
@@ -29208,7 +29215,7 @@
 #lcl.Dialogs.TCustomCopyToClipboardDialog #lcl.Forms.TForm
 2MDoCreate
 3MGetMessageText
-#lcl.Buttons.TButtonGlyph #rtl.System.TObject,#rtl.System.IUnknown,#lcl.ImageListCache.IImageCacheListener
+#lcl.Buttons.TButtonGlyph TObject,#rtl.System.IUnknown,#lcl.ImageListCache.IImageCacheListener
 1VFIsDesigning
 1VFShowMode
 1VFImageIndexes
@@ -31450,6 +31457,7 @@
 2MMouseUp
 2MMouseEnter
 2MMouseLeave
+2MGetPopupMenu
 2MWSRegisterClass
 #lcl.ComCtrls.TTabControlNoteBookStrings #lcl.ComCtrls.TTabControlStrings
 1VFNoteBook
@@ -31599,6 +31607,7 @@
 4POnStartDock
 4POnStartDrag
 4POnUnDock
+4POptions
 4PParentBiDiMode
 4PParentFont
 4PParentShowHint
@@ -33300,7 +33309,8 @@
 1VFLastVertScrollInfo
 1VFMaxLvl
 1VFMaxRight
-1VfMouseDownPos
+1VFMouseDownPos
+1VFMouseDownOnFoldingSign
 1VFMultiSelectStyle
 1VFHotTrackColor
 1VFOnAddition
@@ -33383,6 +33393,7 @@
 1MIsStoredBackgroundColor
 1MHintMouseLeave
 1MImageListChange
+1MNodeIsSelected
 1MOnChangeTimer
 1MSetAutoExpand
 1MSetBackgroundColor
@@ -33471,6 +33482,10 @@
 2MChange
 2MCollapse
 2MCreateWnd
+2MClick
+2MDblClick
+2MTripleClick
+2MQuadClick
 2MDelete
 2MDestroyWnd
 2MDoCreateNodeClass
@@ -33564,6 +33579,7 @@
 3MEraseBackground
 3MGetHitTestInfoAt
 3MGetNodeAt
+3MGetNodeWithExpandSignAt
 3MGetInsertMarkAt
 3MSetInsertMark
 3MSetInsertMarkAt
@@ -38265,7 +38281,7 @@
 #lcl.Printers.TFilePrinterCanvas #lcl.Printers.TPrinterCanvas
 2VFOutputFileName
 3POutputFileName rw
-#lcl.Printers.TPaperSize #rtl.System.TObject
+#lcl.Printers.TPaperSize TObject
 1VfOwnedPrinter
 1VfSupportedPapers
 1VfLastPrinterIndex
@@ -38295,7 +38311,7 @@
 3PPaperRect r
 3PSupportedPapers r
 3PPaperRectOf r
-#lcl.Printers.TPrinter #rtl.System.TObject
+#lcl.Printers.TPrinter TObject
 1VfCanvas
 1VFFileName
 1VfFonts
@@ -38439,7 +38455,7 @@
 3PFontSize rw
 3PFOntStyle rw
 3POutLst rw
-#lcl.PostScriptPrinter.TPSPattern #rtl.System.TObject
+#lcl.PostScriptPrinter.TPSPattern TObject
 1VFOldName
 1VFOnChange
 1VFBBox
@@ -38470,7 +38486,7 @@
 3PGetPS r
 3POldName rw
 3POnChange rw
-#lcl.PostScriptPrinter.TPSObject #rtl.System.TObject
+#lcl.PostScriptPrinter.TPSObject TObject
 1VFOnChange
 2MChanged
 2MLock
@@ -38490,7 +38506,7 @@
 3PPattern rw
 3PWidth rw
 3MAsString
-#lcl.PostScriptPrinter.TPostScriptCanvas #rtl.System.TObject
+#lcl.PostScriptPrinter.TPostScriptCanvas TObject
 1VFBrush
 1VFFontFace
 1VFFontSize
@@ -38532,7 +38548,7 @@
 3PColor rw
 3PPen rw
 3PBrush rw
-#lcl.PostScriptPrinter.TPostScript #rtl.System.TObject
+#lcl.PostScriptPrinter.TPostScript TObject
 1VFCanvas
 1VFHeight
 1VFLineSpacing

@@ -598,6 +598,7 @@
   EM_IA_64 elfconsts/em_ia_64.html
   EM_MIPS_X elfconsts/em_mips_x.html
   EM_X86_64 elfconsts/em_x86_64.html
+  EM_AARCH64 elfconsts/em_aarch64.html
   EM_ALPHA elfconsts/em_alpha.html
   EF_IA_64_ABI64 elfconsts/ef_ia_64_abi64.html
   SHT_NULL elfconsts/sht_null.html
@@ -645,6 +646,7 @@
   R_PPC_ADDR32 elfconsts/r_ppc_addr32.html
   R_PPC64_ADDR64 elfconsts/r_ppc64_addr64.html
   R_ARM_ABS32 elfconsts/r_arm_abs32.html
+  R_AARCH64_ABS64 elfconsts/r_aarch64_abs64.html
   R_68K_32 elfconsts/r_68k_32.html
   R_SPARC_32 elfconsts/r_sparc_32.html
   R_ALPHA_REFQUAD elfconsts/r_alpha_refquad.html
@@ -688,6 +690,7 @@
   TMachOSubMachineType386 machotypes/tmachosubmachinetype386.html
   TMachOSubMachineTypex64 machotypes/tmachosubmachinetypex64.html
   TMachOSubMachineTypeArm machotypes/tmachosubmachinetypearm.html
+  TMachOSubMachineTypeAarch64 machotypes/tmachosubmachinetypeaarch64.html
   TSegSectName machotypes/tsegsectname.html
   TMachHdr machotypes/tmachhdr.html
   TLoadCommand machotypes/tloadcommand.html
@@ -716,6 +719,7 @@
   TMachoSubMachineType machowriter/tmachosubmachinetype.html
   EMachOResourceWriterException machowriter/emachoresourcewriterexception.html
   EMachOResourceWriterUnknownBitSizeException machowriter/emachoresourcewriterunknownbitsizeexception.html
+  EMachOResourceWriterSymbolTableWrongOrderException machowriter/emachoresourcewritersymboltablewrongorderexception.html
   TMachOResourceWriter machowriter/tmachoresourcewriter.html
    GetExtensions resource/tabstractresourcewriter.getextensions.html
    GetDescription resource/tabstractresourcewriter.getdescription.html
@@ -1449,6 +1453,7 @@
 3PMachineType r
 #fcl-res.machowriter.EMachOResourceWriterException #fcl-res.resource.EResourceWriterException
 #fcl-res.machowriter.EMachOResourceWriterUnknownBitSizeException #fcl-res.machowriter.EMachOResourceWriterException
+#fcl-res.machowriter.EMachOResourceWriterSymbolTableWrongOrderException #fcl-res.machowriter.EMachOResourceWriterException
 #fcl-res.machowriter.TMachOResourceWriter #fcl-res.resource.TAbstractResourceWriter
 1VfExtensions
 1VfDescription

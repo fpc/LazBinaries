@@ -220,7 +220,6 @@
   GetShellLinkTarget lazfileutils/getshelllinktarget.html
   DbgSFileAttr lazfileutils/dbgsfileattr.html
   GetPhysicalFilename lazfileutils/getphysicalfilename.html
-  GetUnixPhysicalFilename lazfileutils/getunixphysicalfilename.html
   GetAppConfigDirUTF8 lazfileutils/getappconfigdirutf8.html
   GetAppConfigFileUTF8 lazfileutils/getappconfigfileutf8.html
   GetTempFileNameUTF8 lazfileutils/gettempfilenameutf8.html
@@ -1130,6 +1129,7 @@
   UTF8FileHeader fileutil/utf8fileheader.html
   FilenamesCaseSensitive fileutil/filenamescasesensitive.html
   FilenamesLiteral fileutil/filenamesliteral.html
+  sffFindProgramInPath fileutil/sfffindprograminpath.html
   PascalFileExt fileutil/pascalfileext.html
   PascalSourceExt fileutil/pascalsourceext.html
   AllDirectoryEntriesMask fileutil/alldirectoryentriesmask.html
@@ -1258,6 +1258,7 @@
   stduri_xmlns laz2_dom/stduri_xmlns.html
   PNodePoolArray laz2_dom/pnodepoolarray.html
   TNodePoolArray laz2_dom/tnodepoolarray.html
+  TFPList laz2_dom/tfplist.html
   TSetOfChar laz2_dom/tsetofchar.html
   DOMString laz2_dom/domstring.html
   DOMPChar laz2_dom/dompchar.html
@@ -1683,6 +1684,8 @@
   TXMLUtilChar laz2_xmlutils/txmlutilchar.html
   PXMLUtilChar laz2_xmlutils/pxmlutilchar.html
   PXMLUtilString laz2_xmlutils/pxmlutilstring.html
+  PtrInt laz2_xmlutils/ptrint.html
+  TFPList laz2_xmlutils/tfplist.html
   PPHashItem laz2_xmlutils/pphashitem.html
   PHashItem laz2_xmlutils/phashitem.html
   THashItem laz2_xmlutils/thashitem.html
@@ -2614,8 +2617,8 @@
   UnicodeToWinCP lazunicode/unicodetowincp.html
   WinCPToUnicode lazunicode/wincptounicode.html
   StringOfCodePoint lazunicode/stringofcodepoint.html
-  enumerator(string):TUnicodeCharacterEnumerator lazunicode/.op-enumerator-string-unicodecharacterenumerator.html
  LazUTF16 lazutf16/index.html
+  PtrInt lazutf16/ptrint.html
   UTF16CharacterLength lazutf16/utf16characterlength.html
   UTF16Length lazutf16/utf16length.html
   UTF16Copy lazutf16/utf16copy.html
@@ -2627,7 +2630,6 @@
   IsUTF16StringValid lazutf16/isutf16stringvalid.html
   Utf16StringReplace lazutf16/utf16stringreplace.html
   UnicodeLowercase lazutf16/unicodelowercase.html
-  UTF8LowerCaseViaTables lazutf16/utf8lowercaseviatables.html
  LazUTF8SysUtils lazutf8sysutils/index.html
   NowUTC lazutf8sysutils/nowutc.html
   GetTickCount64 lazutf8sysutils/gettickcount64.html
@@ -3067,8 +3069,6 @@
   TTCache_Init ttcache/ttcache_init.html
   TTCache_Done ttcache/ttcache_done.html
  TTCalc ttcalc/index.html
-  Int16 ttcalc/int16.html
-  Word16 ttcalc/word16.html
   Int32 ttcalc/int32.html
   Word32 ttcalc/word32.html
   MulDiv ttcalc/muldiv.html
@@ -4318,7 +4318,7 @@
 3MGetChildCount
 3MFindNode
 3MInternalAppend
-#lazutils.Laz2_DOM.TDOMNodeList #rtl.System.TObject
+#lazutils.Laz2_DOM.TDOMNodeList TObject
 2VFNode
 2VFRevision
 2VFList
@@ -4340,7 +4340,7 @@
 2VUseFilter
 2MNodeFilter
 3MCreate
-#lazutils.Laz2_DOM.TDOMNamedNodeMap #rtl.System.TObject
+#lazutils.Laz2_DOM.TDOMNamedNodeMap TObject
 2VFOwner
 2VFNodeType
 2VFSortedList
@@ -4582,7 +4582,7 @@
 3PDefault rw
 3PExternallyDeclared rw
 3PTag rw
-#lazutils.Laz2_DOM.TNodePool #rtl.System.TObject
+#lazutils.Laz2_DOM.TNodePool TObject
 1VFCurrExtent
 1VFCurrExtentSize
 1VFElementSize
@@ -4593,7 +4593,7 @@
 3MDestroy
 3MAllocNode
 3MFreeNode
-#lazutils.laz2_xmlutils.THashTable #rtl.System.TObject
+#lazutils.laz2_xmlutils.THashTable TObject
 1VFCount
 1VFBucketCount
 1VFBucket
@@ -4610,7 +4610,7 @@
 3MRemoveData
 3MForEach
 3PCount r
-#lazutils.laz2_xmlutils.TDblHashArray #rtl.System.TObject
+#lazutils.laz2_xmlutils.TDblHashArray TObject
 1VFSizeLog
 1VFRevision
 1VFData
@@ -4622,7 +4622,7 @@
 3Vnext
 3VprevPrefixBinding
 3VPrefix
-#lazutils.laz2_xmlutils.TNSSupport #rtl.System.TObject
+#lazutils.laz2_xmlutils.TNSSupport TObject
 1VFNesting
 1VFPrefixSeqNo
 1VFFreeBindings
@@ -4749,7 +4749,7 @@
 3PLine r
 3PLinePos r
 3MLineCol
-#lazutils.laz2_XMLRead.TDOMParseOptions #rtl.System.TObject
+#lazutils.laz2_XMLRead.TDOMParseOptions TObject
 1VFValidate
 1VFPreserveWhitespace
 1VFExpandEntities
@@ -4772,7 +4772,7 @@
 3PDisallowDoctype rw
 3PMaxChars rw
 3PCanonicalForm rw
-#lazutils.laz2_XMLRead.TXMLInputSource #rtl.System.TObject
+#lazutils.laz2_XMLRead.TXMLInputSource TObject
 1VFStream
 1VFStringData
 1VFBaseURI
@@ -4784,7 +4784,7 @@
 3PBaseURI rw
 3PSystemID rw
 3PPublicID rw
-#lazutils.laz2_XMLRead.TDOMParser #rtl.System.TObject
+#lazutils.laz2_XMLRead.TDOMParser TObject
 1VFOptions
 1VFOnError
 3MCreate
@@ -5013,7 +5013,7 @@
 3MAcquire
 3PSpinCount rw
 3PDefaultSpinCount rw
-#lazutils.lazCollections.TLazThreadedQueue 
+#lazutils.lazCollections.TLazThreadedQueue #rtl.System.TObject
 1VFMonitor
 1VFList
 1VFPushTimeout
@@ -5476,7 +5476,7 @@
 3PCapacity rw
 3PCount rw
 3PItemPointer r
-#lazutils.LazListClasses.TLazShiftBufferListGen 
+#lazutils.LazListClasses.TLazShiftBufferListGen #rtl.System.TObject
 1MTListMem
 1MPT
 1VFListMem
@@ -5780,7 +5780,7 @@
 3MCount
 3MDelete
 3MDestroy
-#lazutils.Maps.TBaseMapIterator #rtl.System.TObject
+#lazutils.Maps.TBaseMapIterator TObject
 1VFMap
 1VFCurrent
 1VFInValid
@@ -5832,7 +5832,7 @@
 3MGetID
 3MLocate
 3MSetData
-#lazutils.StringHashList.TStringHashList #rtl.System.TObject
+#lazutils.StringHashList.TStringHashList TObject
 1VFList
 1VFCount
 1VfCaseSensitive
