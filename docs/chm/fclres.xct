@@ -37,6 +37,7 @@
   RT_ANIICON resource/rt_aniicon.html
   RT_HTML resource/rt_html.html
   RT_MANIFEST resource/rt_manifest.html
+  RT_DLGINIT resource/rt_dlginit.html
   CREATEPROCESS_MANIFEST_RESOURCE_ID resource/createprocess_manifest_resource_id.html
   ISOLATIONAWARE_MANIFEST_RESOURCE_ID resource/isolationaware_manifest_resource_id.html
   ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID resource/isolationaware_nostaticimport_manifest_resource_id.html

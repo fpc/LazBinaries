@@ -6,19 +6,14 @@ textmode IDE.  This archive also contains the .xct and .kwd files that are
 needed for crosslinking this archive with other CHM files. These files are
 not required for viewing (but are only about 1% of the total size)
 
-toc.chm is a workaround for help systems that don't provide a list of 
-helpfiles. In such system it provides access to the default pages of the 
-various CHMs.
-
 How to install the CHMs in Lazarus
 ------------------------------------
 
 - Install the chmhelp package
-- Copy the chm, xct, or kwd files to docs/chm in the Lazarus directory.
+- Copy the chms to docs/html in the Lazarus directory.
 
 Note that Lazarus does not load ref.* at this moment, so (CHM) help
 on keywords does not work yet.
-Note that toc.chm is not loaded by the LHelp CHM viewer at the present time.
 
 How to install the CHMs into the textmode IDE.
 -------------------------------------

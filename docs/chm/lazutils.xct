@@ -61,6 +61,7 @@
    GetLast avglvltree/tpointertopointertree.getlast.html
    GetNext avglvltree/tpointertopointertree.getnext.html
    GetPrev avglvltree/tpointertopointertree.getprev.html
+   FindByValue avglvltree/tpointertopointertree.findbyvalue.html
    Count avglvltree/tpointertopointertree.count.html
    Values avglvltree/tpointertopointertree.values.html
    Tree avglvltree/tpointertopointertree.tree.html
@@ -151,9 +152,11 @@
   TInvalidateFileStateCacheEvent lazfileutils/tinvalidatefilestatecacheevent.html
   CompareFilenames lazfileutils/comparefilenames.html
   CompareFilenamesIgnoreCase lazfileutils/comparefilenamesignorecase.html
-  CompareFileExt lazfileutils/comparefileext.html
   CompareFilenameStarts lazfileutils/comparefilenamestarts.html
   CompareFilenamesP lazfileutils/comparefilenamesp.html
+  CompareFileExt lazfileutils/comparefileext.html
+  FilenameExtIs lazfileutils/filenameextis.html
+  FilenameExtIn lazfileutils/filenameextin.html
   DirPathExists lazfileutils/dirpathexists.html
   DirectoryIsWritable lazfileutils/directoryiswritable.html
   ExtractFileNameOnly lazfileutils/extractfilenameonly.html
@@ -222,6 +225,7 @@
   GetShellLinkTarget lazfileutils/getshelllinktarget.html
   DbgSFileAttr lazfileutils/dbgsfileattr.html
   GetPhysicalFilename lazfileutils/getphysicalfilename.html
+  GetUnixPhysicalFilename lazfileutils/getunixphysicalfilename.html
   GetAppConfigDirUTF8 lazfileutils/getappconfigdirutf8.html
   GetAppConfigFileUTF8 lazfileutils/getappconfigfileutf8.html
   GetTempFileNameUTF8 lazfileutils/gettempfilenameutf8.html
@@ -242,6 +246,8 @@
   TConvertResult lazutf8/tconvertresult.html
   TConvertOption lazutf8/tconvertoption.html
   TConvertOptions lazutf8/tconvertoptions.html
+  TStringListUTF8Fast lazutf8/tstringlistutf8fast.html
+   DoCompareText lazutf8/tstringlistutf8fast.docomparetext.html
   NeedRTLAnsi lazutf8/needrtlansi.html
   SetNeedRTLAnsi lazutf8/setneedrtlansi.html
   UTF8ToSys lazutf8/utf8tosys.html
@@ -310,6 +316,8 @@
   UTF8CompareStr lazutf8/utf8comparestr.html
   UTF8CompareStrP lazutf8/utf8comparestrp.html
   UTF8CompareText lazutf8/utf8comparetext.html
+  UTF8CompareTextP lazutf8/utf8comparetextp.html
+  UTF8CompareLatinTextFast lazutf8/utf8comparelatintextfast.html
   UTF8CompareStrCollated lazutf8/utf8comparestrcollated.html
   CompareStrListUTF8LowerCase lazutf8/comparestrlistutf8lowercase.html
   ConvertUTF8ToUTF16 lazutf8/convertutf8toutf16.html
@@ -320,6 +328,14 @@
   LazGetShortLanguageID lazutf8/lazgetshortlanguageid.html
   ReplaceSubstring lazutf8/replacesubstring.html
   FPUpChars lazutf8/fpupchars.html
+ FPCAdds fpcadds/index.html
+  TStreamSeekType fpcadds/tstreamseektype.html
+  TMemStreamSeekType fpcadds/tmemstreamseektype.html
+  TCompareMemSize fpcadds/tcomparememsize.html
+  PHandle fpcadds/phandle.html
+  StrToWord fpcadds/strtoword.html
+  AlignToPtr fpcadds/aligntoptr.html
+  AlignToInt fpcadds/aligntoint.html
  LazUtilsStrConsts lazutilsstrconsts/index.html
   lrsModified lazutilsstrconsts/index-1.html#lrsmodified
   lrsInvalidCharSet lazutilsstrconsts/index-1.html#lrsinvalidcharset
@@ -366,6 +382,50 @@
   MemSizeString lazdbglog/memsizestring.html
   MemSizeFPList lazdbglog/memsizefplist.html
   GetStringRefCount lazdbglog/getstringrefcount.html
+ CodepagesAsian codepagesasian/index.html
+  CP936CC codepagesasian/cp936cc.html
+  Uni936C codepagesasian/uni936c.html
+  CP936CU codepagesasian/cp936cu.html
+  Uni936U codepagesasian/uni936u.html
+  CP950CC codepagesasian/cp950cc.html
+  Uni950C codepagesasian/uni950c.html
+  CP950CU codepagesasian/cp950cu.html
+  Uni950U codepagesasian/uni950u.html
+  CP949CC codepagesasian/cp949cc.html
+  Uni949C codepagesasian/uni949c.html
+  CP949CU codepagesasian/cp949cu.html
+  Uni949U codepagesasian/uni949u.html
+  CP932CC codepagesasian/cp932cc.html
+  Uni932C codepagesasian/uni932c.html
+  CP932CU codepagesasian/cp932cu.html
+  Uni932U codepagesasian/uni932u.html
+  CP936Arr codepagesasian/cp936arr.html
+  CP950Arr codepagesasian/cp950arr.html
+  CP949Arr codepagesasian/cp949arr.html
+  CP932Arr codepagesasian/cp932arr.html
+ CodepagesCommon codepagescommon/index.html
+  ArrayISO_8859_1ToUTF8 codepagescommon/arrayiso_8859_1toutf8.html
+  ArrayISO_8859_15ToUTF8 codepagescommon/arrayiso_8859_15toutf8.html
+  ArrayISO_8859_2ToUTF8 codepagescommon/arrayiso_8859_2toutf8.html
+  ArrayCP1250ToUTF8 codepagescommon/arraycp1250toutf8.html
+  ArrayCP1251ToUTF8 codepagescommon/arraycp1251toutf8.html
+  ArrayCP1252ToUTF8 codepagescommon/arraycp1252toutf8.html
+  ArrayCP1253ToUTF8 codepagescommon/arraycp1253toutf8.html
+  ArrayCP1254ToUTF8 codepagescommon/arraycp1254toutf8.html
+  ArrayCP1255ToUTF8 codepagescommon/arraycp1255toutf8.html
+  ArrayCP1256ToUTF8 codepagescommon/arraycp1256toutf8.html
+  ArrayCP1257ToUTF8 codepagescommon/arraycp1257toutf8.html
+  ArrayCP1258ToUTF8 codepagescommon/arraycp1258toutf8.html
+  ArrayCP437ToUTF8 codepagescommon/arraycp437toutf8.html
+  ArrayCP850ToUTF8 codepagescommon/arraycp850toutf8.html
+  ArrayCP852ToUTF8 codepagescommon/arraycp852toutf8.html
+  ArrayCP866ToUTF8 codepagescommon/arraycp866toutf8.html
+  ArrayCP874ToUTF8 codepagescommon/arraycp874toutf8.html
+  ArrayKOI8RToUTF8 codepagescommon/arraykoi8rtoutf8.html
+  ArrayKOI8UToUTF8 codepagescommon/arraykoi8utoutf8.html
+  ArrayKOI8RUToUTF8 codepagescommon/arraykoi8rutoutf8.html
+  ArrayMacintoshToUTF8 codepagescommon/arraymacintoshtoutf8.html
+  TCharToUTF8Table codepagescommon/tchartoutf8table.html
  CompWriterPas compwriterpas/index.html
   CSPVersion compwriterpas/cspversion.html
   CSPDefaultSignature compwriterpas/cspdefaultsignature.html
@@ -530,13 +590,14 @@
   DbgSName lazloggerbase/dbgsname.html
   dbgObjMem lazloggerbase/dbgobjmem.html
   dbghex lazloggerbase/dbghex.html
+  DbgSTime lazloggerbase/dbgstime.html
   dbgMemRange lazloggerbase/dbgmemrange.html
   dbgMemStream lazloggerbase/dbgmemstream.html
   DumpExceptionBackTrace lazloggerbase/dumpexceptionbacktrace.html
-  assign(PLazLoggerLogGroup):TLazLoggerLogEnabled lazloggerbase/op-assign-plazloggerloggroup-tlazloggerlogenabled.html
-  assign(Boolean):TLazLoggerLogEnabled lazloggerbase/op-assign-boolean-tlazloggerlogenabled.html
-  logicaland(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerbase/op-logicaland-tlazloggerlogenabled-tlazloggerlogenabled-tlazloggerlogenabled.html
-  logicalor(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerbase/op-logicalor-tlazloggerlogenabled-tlazloggerlogenabled-tlazloggerlogenabled.html
+  assign(PLazLoggerLogGroup):TLazLoggerLogEnabled lazloggerbase/.op-assign-plazloggerloggroup-lazloggerlogenabled.html
+  assign(Boolean):TLazLoggerLogEnabled lazloggerbase/.op-assign-boolean-lazloggerlogenabled.html
+  logicaland(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerbase/.op-logicaland-tlazloggerlogenabled-lazloggerlogenabled-lazloggerlogenabled.html
+  logicalor(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerbase/.op-logicalor-tlazloggerlogenabled-lazloggerlogenabled-lazloggerlogenabled.html
   GetParamByNameCount lazloggerbase/getparambynamecount.html
   GetParamByName lazloggerbase/getparambyname.html
   GetDebugLoggerGroups lazloggerbase/getdebugloggergroups.html
@@ -675,545 +736,6 @@
    Size dynqueue/tdynamicdataqueue.size.html
    MinimumBlockSize dynqueue/tdynamicdataqueue.minimumblocksize.html
    MaximumBlockSize dynqueue/tdynamicdataqueue.maximumblocksize.html
- EasyLazFreeType easylazfreetype/index.html
-  FreeTypeInformationStr easylazfreetype/freetypeinformationstr.html
-  FreeTypeMinPointSize easylazfreetype/freetypeminpointsize.html
-  TGlyphRenderQuality easylazfreetype/tglyphrenderquality.html
-  ArrayOfSingle easylazfreetype/arrayofsingle.html
-  TCharPosition easylazfreetype/tcharposition.html
-  ArrayOfCharPosition easylazfreetype/arrayofcharposition.html
-  TFreeTypeAlignment easylazfreetype/tfreetypealignment.html
-  TFreeTypeAlignments easylazfreetype/tfreetypealignments.html
-  TFreeTypeInformation easylazfreetype/tfreetypeinformation.html
-  TFreeTypeStyle easylazfreetype/tfreetypestyle.html
-  TFreeTypeStyles easylazfreetype/tfreetypestyles.html
-  TFreeTypeWordBreakHandler easylazfreetype/tfreetypewordbreakhandler.html
-  TFreeTypeKerning easylazfreetype/tfreetypekerning.html
-  TFontCollectionItemDestroyProc easylazfreetype/tfontcollectionitemdestroyproc.html
-  TFontCollectionItemDestroyListener easylazfreetype/tfontcollectionitemdestroylistener.html
-  ArrayOfFontCollectionItemDestroyListener easylazfreetype/arrayoffontcollectionitemdestroylistener.html
-  TOnRenderTextHandler easylazfreetype/tonrendertexthandler.html
-  ArrayOfString easylazfreetype/arrayofstring.html
-  EFreeType easylazfreetype/efreetype.html
-  TCustomFontCollectionItem easylazfreetype/tcustomfontcollectionitem.html
-   FFamily easylazfreetype/tcustomfontcollectionitem.ffamily.html
-   GetBold easylazfreetype/tcustomfontcollectionitem.getbold.html
-   GetInformation easylazfreetype/tcustomfontcollectionitem.getinformation.html
-   GetItalic easylazfreetype/tcustomfontcollectionitem.getitalic.html
-   GetStyleCount easylazfreetype/tcustomfontcollectionitem.getstylecount.html
-   GetStyles easylazfreetype/tcustomfontcollectionitem.getstyles.html
-   GetFilename easylazfreetype/tcustomfontcollectionitem.getfilename.html
-   GetVersionNumber easylazfreetype/tcustomfontcollectionitem.getversionnumber.html
-   GetStyle easylazfreetype/tcustomfontcollectionitem.getstyle.html
-   NotifyDestroy easylazfreetype/tcustomfontcollectionitem.notifydestroy.html
-   HasStyle easylazfreetype/tcustomfontcollectionitem.hasstyle.html
-   CreateFont easylazfreetype/tcustomfontcollectionitem.createfont.html
-   QueryFace easylazfreetype/tcustomfontcollectionitem.queryface.html
-   ReleaseFace easylazfreetype/tcustomfontcollectionitem.releaseface.html
-   Styles easylazfreetype/tcustomfontcollectionitem.styles.html
-   Italic easylazfreetype/tcustomfontcollectionitem.italic.html
-   Bold easylazfreetype/tcustomfontcollectionitem.bold.html
-   Filename easylazfreetype/tcustomfontcollectionitem.filename.html
-   Information easylazfreetype/tcustomfontcollectionitem.information.html
-   VersionNumber easylazfreetype/tcustomfontcollectionitem.versionnumber.html
-   Style easylazfreetype/tcustomfontcollectionitem.style.html
-   StyleCount easylazfreetype/tcustomfontcollectionitem.stylecount.html
-   Family easylazfreetype/tcustomfontcollectionitem.family.html
-  IFreeTypeFontEnumerator easylazfreetype/ifreetypefontenumerator.html
-   MoveNext easylazfreetype/ifreetypefontenumerator.movenext.html
-   GetCurrent easylazfreetype/ifreetypefontenumerator.getcurrent.html
-   Current easylazfreetype/ifreetypefontenumerator.current.html
-  TCustomFamilyCollectionItem easylazfreetype/tcustomfamilycollectionitem.html
-   GetFontByIndex easylazfreetype/tcustomfamilycollectionitem.getfontbyindex.html
-   GetStyle easylazfreetype/tcustomfamilycollectionitem.getstyle.html
-   GetStyles easylazfreetype/tcustomfamilycollectionitem.getstyles.html
-   GetFamilyName easylazfreetype/tcustomfamilycollectionitem.getfamilyname.html
-   GetFontCount easylazfreetype/tcustomfamilycollectionitem.getfontcount.html
-   GetStyleCount easylazfreetype/tcustomfamilycollectionitem.getstylecount.html
-   GetFont easylazfreetype/tcustomfamilycollectionitem.getfont.html
-   GetFontIndex easylazfreetype/tcustomfamilycollectionitem.getfontindex.html
-   HasStyle easylazfreetype/tcustomfamilycollectionitem.hasstyle.html
-   FamilyName easylazfreetype/tcustomfamilycollectionitem.familyname.html
-   Font easylazfreetype/tcustomfamilycollectionitem.font.html
-   FontCount easylazfreetype/tcustomfamilycollectionitem.fontcount.html
-   Style easylazfreetype/tcustomfamilycollectionitem.style.html
-   StyleCount easylazfreetype/tcustomfamilycollectionitem.stylecount.html
-   Styles easylazfreetype/tcustomfamilycollectionitem.styles.html
-  IFreeTypeFamilyEnumerator easylazfreetype/ifreetypefamilyenumerator.html
-   MoveNext easylazfreetype/ifreetypefamilyenumerator.movenext.html
-   GetCurrent easylazfreetype/ifreetypefamilyenumerator.getcurrent.html
-   Current easylazfreetype/ifreetypefamilyenumerator.current.html
-  TCustomFreeTypeFontCollection easylazfreetype/tcustomfreetypefontcollection.html
-   GetFont easylazfreetype/tcustomfreetypefontcollection.getfont.html
-   GetFamily easylazfreetype/tcustomfreetypefontcollection.getfamily.html
-   GetFamilyCount easylazfreetype/tcustomfreetypefontcollection.getfamilycount.html
-   GetFontCount easylazfreetype/tcustomfreetypefontcollection.getfontcount.html
-   Create easylazfreetype/tcustomfreetypefontcollection.create.html
-   Clear easylazfreetype/tcustomfreetypefontcollection.clear.html
-   BeginUpdate easylazfreetype/tcustomfreetypefontcollection.beginupdate.html
-   AddFolder easylazfreetype/tcustomfreetypefontcollection.addfolder.html
-   RemoveFolder easylazfreetype/tcustomfreetypefontcollection.removefolder.html
-   AddFile easylazfreetype/tcustomfreetypefontcollection.addfile.html
-   RemoveFile easylazfreetype/tcustomfreetypefontcollection.removefile.html
-   AddStream easylazfreetype/tcustomfreetypefontcollection.addstream.html
-   EndUpdate easylazfreetype/tcustomfreetypefontcollection.endupdate.html
-   FontFileEnumerator easylazfreetype/tcustomfreetypefontcollection.fontfileenumerator.html
-   FamilyEnumerator easylazfreetype/tcustomfreetypefontcollection.familyenumerator.html
-   FontFileCount easylazfreetype/tcustomfreetypefontcollection.fontfilecount.html
-   FontFile easylazfreetype/tcustomfreetypefontcollection.fontfile.html
-   FamilyCount easylazfreetype/tcustomfreetypefontcollection.familycount.html
-   Family easylazfreetype/tcustomfreetypefontcollection.family.html
-  TFreeTypeRenderableFont easylazfreetype/tfreetyperenderablefont.html
-   FWordBreakHandler easylazfreetype/tfreetyperenderablefont.fwordbreakhandler.html
-   FOnRenderText easylazfreetype/tfreetyperenderablefont.fonrendertext.html
-   GetClearType easylazfreetype/tfreetyperenderablefont.getcleartype.html
-   SetClearType easylazfreetype/tfreetyperenderablefont.setcleartype.html
-   GetLineFullHeight easylazfreetype/tfreetyperenderablefont.getlinefullheight.html
-   GetAscent easylazfreetype/tfreetyperenderablefont.getascent.html
-   GetDescent easylazfreetype/tfreetyperenderablefont.getdescent.html
-   GetLineSpacing easylazfreetype/tfreetyperenderablefont.getlinespacing.html
-   DefaultWordBreakHandler easylazfreetype/tfreetyperenderablefont.defaultwordbreakhandler.html
-   GetHinted easylazfreetype/tfreetyperenderablefont.gethinted.html
-   SetHinted easylazfreetype/tfreetyperenderablefont.sethinted.html
-   UnderlineDecoration easylazfreetype/tfreetyperenderablefont.underlinedecoration.html
-   StrikeOutDecoration easylazfreetype/tfreetyperenderablefont.strikeoutdecoration.html
-   TextWidth easylazfreetype/tfreetyperenderablefont.textwidth.html
-   TextHeight easylazfreetype/tfreetyperenderablefont.textheight.html
-   CharWidthFromUnicode easylazfreetype/tfreetyperenderablefont.charwidthfromunicode.html
-   SplitText easylazfreetype/tfreetyperenderablefont.splittext.html
-   GetTextSize easylazfreetype/tfreetyperenderablefont.gettextsize.html
-   RenderText easylazfreetype/tfreetyperenderablefont.rendertext.html
-   ClearType easylazfreetype/tfreetyperenderablefont.cleartype.html
-   Ascent easylazfreetype/tfreetyperenderablefont.ascent.html
-   Descent easylazfreetype/tfreetyperenderablefont.descent.html
-   LineSpacing easylazfreetype/tfreetyperenderablefont.linespacing.html
-   LineFullHeight easylazfreetype/tfreetyperenderablefont.linefullheight.html
-   Hinted easylazfreetype/tfreetyperenderablefont.hinted.html
-   OnWordBreak easylazfreetype/tfreetyperenderablefont.onwordbreak.html
-   OnRenderText easylazfreetype/tfreetyperenderablefont.onrendertext.html
-  TFreeTypeDrawer easylazfreetype/tfreetypedrawer.html
-   DrawText easylazfreetype/tfreetypedrawer.drawtext.html
-   DrawTextWordBreak easylazfreetype/tfreetypedrawer.drawtextwordbreak.html
-   DrawTextRect easylazfreetype/tfreetypedrawer.drawtextrect.html
-   DrawGlyph easylazfreetype/tfreetypedrawer.drawglyph.html
-  TFreeTypeFont easylazfreetype/tfreetypefont.html
-   FFace easylazfreetype/tfreetypefont.fface.html
-   FFaceItem easylazfreetype/tfreetypefont.ffaceitem.html
-   FFaceLoaded easylazfreetype/tfreetypefont.ffaceloaded.html
-   FInstance easylazfreetype/tfreetypefont.finstance.html
-   FInstanceCreated easylazfreetype/tfreetypefont.finstancecreated.html
-   FGlyphTable easylazfreetype/tfreetypefont.fglyphtable.html
-   FCharMap easylazfreetype/tfreetypefont.fcharmap.html
-   FCharmapOk easylazfreetype/tfreetypefont.fcharmapok.html
-   FCharmapSymbol easylazfreetype/tfreetypefont.fcharmapsymbol.html
-   FAscentValue easylazfreetype/tfreetypefont.fascentvalue.html
-   FDescentValue easylazfreetype/tfreetypefont.fdescentvalue.html
-   FLineGapValue easylazfreetype/tfreetypefont.flinegapvalue.html
-   FLargeLineGapValue easylazfreetype/tfreetypefont.flargelinegapvalue.html
-   FCapHeight easylazfreetype/tfreetypefont.fcapheight.html
-   FUnitsPerEM easylazfreetype/tfreetypefont.funitsperem.html
-   FaceChanged easylazfreetype/tfreetypefont.facechanged.html
-   GetClearType easylazfreetype/tfreetypefont.getcleartype.html
-   SetClearType easylazfreetype/tfreetypefont.setcleartype.html
-   GetLineFullHeight easylazfreetype/tfreetypefont.getlinefullheight.html
-   GetAscent easylazfreetype/tfreetypefont.getascent.html
-   GetDescent easylazfreetype/tfreetypefont.getdescent.html
-   GetLineSpacing easylazfreetype/tfreetypefont.getlinespacing.html
-   GetCapHeight easylazfreetype/tfreetypefont.getcapheight.html
-   SetHinted easylazfreetype/tfreetypefont.sethinted.html
-   GetHinted easylazfreetype/tfreetypefont.gethinted.html
-   OnDestroyFontItem easylazfreetype/tfreetypefont.ondestroyfontitem.html
-   FetchNames easylazfreetype/tfreetypefont.fetchnames.html
-   GetCollection easylazfreetype/tfreetypefont.getcollection.html
-   CheckFace easylazfreetype/tfreetypefont.checkface.html
-   Quality easylazfreetype/tfreetypefont.quality.html
-   SmallLinePadding easylazfreetype/tfreetypefont.smalllinepadding.html
-   Create easylazfreetype/tfreetypefont.create.html
-   Destroy easylazfreetype/tfreetypefont.destroy.html
-   AccessFromStream easylazfreetype/tfreetypefont.accessfromstream.html
-   RenderText easylazfreetype/tfreetypefont.rendertext.html
-   RenderGlyph easylazfreetype/tfreetypefont.renderglyph.html
-   SetNameAndStyle easylazfreetype/tfreetypefont.setnameandstyle.html
-   TextWidth easylazfreetype/tfreetypefont.textwidth.html
-   TextHeight easylazfreetype/tfreetypefont.textheight.html
-   CharWidthFromUnicode easylazfreetype/tfreetypefont.charwidthfromunicode.html
-   CharWidthFromGlyph easylazfreetype/tfreetypefont.charwidthfromglyph.html
-   CharsWidth easylazfreetype/tfreetypefont.charswidth.html
-   CharsPosition easylazfreetype/tfreetypefont.charsposition.html
-   CheckInstance easylazfreetype/tfreetypefont.checkinstance.html
-   Name easylazfreetype/tfreetypefont.name.html
-   DPI easylazfreetype/tfreetypefont.dpi.html
-   SizeInPoints easylazfreetype/tfreetypefont.sizeinpoints.html
-   SizeInPixels easylazfreetype/tfreetypefont.sizeinpixels.html
-   CapHeight easylazfreetype/tfreetypefont.capheight.html
-   Glyph easylazfreetype/tfreetypefont.glyph.html
-   GlyphCount easylazfreetype/tfreetypefont.glyphcount.html
-   CharKerning easylazfreetype/tfreetypefont.charkerning.html
-   GlyphKerning easylazfreetype/tfreetypefont.glyphkerning.html
-   CharIndex easylazfreetype/tfreetypefont.charindex.html
-   Hinted easylazfreetype/tfreetypefont.hinted.html
-   KerningEnabled easylazfreetype/tfreetypefont.kerningenabled.html
-   KerningFallbackEnabled easylazfreetype/tfreetypefont.kerningfallbackenabled.html
-   WidthFactor easylazfreetype/tfreetypefont.widthfactor.html
-   LineFullHeight easylazfreetype/tfreetypefont.linefullheight.html
-   Information easylazfreetype/tfreetypefont.information.html
-   VersionNumber easylazfreetype/tfreetypefont.versionnumber.html
-   Family easylazfreetype/tfreetypefont.family.html
-   Collection easylazfreetype/tfreetypefont.collection.html
-   StyleAsString easylazfreetype/tfreetypefont.styleasstring.html
-   Style easylazfreetype/tfreetypefont.style.html
-  TFreeTypeGlyph easylazfreetype/tfreetypeglyph.html
-   Create easylazfreetype/tfreetypeglyph.create.html
-   RenderDirectly easylazfreetype/tfreetypeglyph.renderdirectly.html
-   Destroy easylazfreetype/tfreetypeglyph.destroy.html
-   Loaded easylazfreetype/tfreetypeglyph.loaded.html
-   Data easylazfreetype/tfreetypeglyph.data.html
-   Index easylazfreetype/tfreetypeglyph.index.html
-   Bounds easylazfreetype/tfreetypeglyph.bounds.html
-   BoundsWithOffset easylazfreetype/tfreetypeglyph.boundswithoffset.html
-   Advance easylazfreetype/tfreetypeglyph.advance.html
-  TFreeTypeRasterMap easylazfreetype/tfreetyperastermap.html
-   map easylazfreetype/tfreetyperastermap.map.html
-   FRasterizer easylazfreetype/tfreetyperastermap.frasterizer.html
-   GetHeight easylazfreetype/tfreetyperastermap.getheight.html
-   GetWidth easylazfreetype/tfreetyperastermap.getwidth.html
-   GetScanLine easylazfreetype/tfreetyperastermap.getscanline.html
-   Init easylazfreetype/tfreetyperastermap.init.html
-   Create easylazfreetype/tfreetyperastermap.create.html
-   Clear easylazfreetype/tfreetyperastermap.clear.html
-   Fill easylazfreetype/tfreetyperastermap.fill.html
-   RenderGlyph easylazfreetype/tfreetyperastermap.renderglyph.html
-   ScanMoveTo easylazfreetype/tfreetyperastermap.scanmoveto.html
-   Destroy easylazfreetype/tfreetyperastermap.destroy.html
-   Width easylazfreetype/tfreetyperastermap.width.html
-   Height easylazfreetype/tfreetyperastermap.height.html
-   ScanLine easylazfreetype/tfreetyperastermap.scanline.html
-  TFreeTypeMonochromeMap easylazfreetype/tfreetypemonochromemap.html
-   Init easylazfreetype/tfreetypemonochromemap.init.html
-   RenderGlyph easylazfreetype/tfreetypemonochromemap.renderglyph.html
-   ScanMoveTo easylazfreetype/tfreetypemonochromemap.scanmoveto.html
-   ScanNextPixel easylazfreetype/tfreetypemonochromemap.scannextpixel.html
-   GetPixel easylazfreetype/tfreetypemonochromemap.getpixel.html
-   SetPixel easylazfreetype/tfreetypemonochromemap.setpixel.html
-   GetPixelsInRect easylazfreetype/tfreetypemonochromemap.getpixelsinrect.html
-   GetPixelsInHorizline easylazfreetype/tfreetypemonochromemap.getpixelsinhorizline.html
-   TogglePixel easylazfreetype/tfreetypemonochromemap.togglepixel.html
-  TFreeTypeGrayscaleMap easylazfreetype/tfreetypegrayscalemap.html
-   Init easylazfreetype/tfreetypegrayscalemap.init.html
-   RenderQuality easylazfreetype/tfreetypegrayscalemap.renderquality.html
-   RenderGlyph easylazfreetype/tfreetypegrayscalemap.renderglyph.html
-   ScanMoveTo easylazfreetype/tfreetypegrayscalemap.scanmoveto.html
-   ScanNextPixel easylazfreetype/tfreetypegrayscalemap.scannextpixel.html
-   GetPixel easylazfreetype/tfreetypegrayscalemap.getpixel.html
-   SetPixel easylazfreetype/tfreetypegrayscalemap.setpixel.html
-   XorPixel easylazfreetype/tfreetypegrayscalemap.xorpixel.html
-  FontCollectionItemDestroyListener easylazfreetype/fontcollectionitemdestroylistener.html
-  StylesToArray easylazfreetype/stylestoarray.html
-  FontCollection easylazfreetype/fontcollection.html
- LazFreeType lazfreetype/index.html
-  TT_Load_Scale_Glyph lazfreetype/tt_load_scale_glyph.html
-  TT_Load_Hint_Glyph lazfreetype/tt_load_hint_glyph.html
-  TT_Load_Debug lazfreetype/tt_load_debug.html
-  TT_Load_Default lazfreetype/tt_load_default.html
-  TT_Init_FreeType lazfreetype/tt_init_freetype.html
-  TT_Done_FreeType lazfreetype/tt_done_freetype.html
-  TT_Set_Raster_Palette lazfreetype/tt_set_raster_palette.html
-  TT_Open_Face lazfreetype/tt_open_face.html
-  TT_Open_Collection lazfreetype/tt_open_collection.html
-  TT_Get_Face_Properties lazfreetype/tt_get_face_properties.html
-  TT_Set_Face_Pointer lazfreetype/tt_set_face_pointer.html
-  TT_Get_Face_Pointer lazfreetype/tt_get_face_pointer.html
-  TT_Close_Face lazfreetype/tt_close_face.html
-  TT_New_Instance lazfreetype/tt_new_instance.html
-  TT_Set_Instance_Resolutions lazfreetype/tt_set_instance_resolutions.html
-  TT_Set_Instance_PointSize lazfreetype/tt_set_instance_pointsize.html
-  TT_Set_Instance_CharSize lazfreetype/tt_set_instance_charsize.html
-  TT_Set_Instance_CharSizes lazfreetype/tt_set_instance_charsizes.html
-  TT_Set_Instance_PixelSizes lazfreetype/tt_set_instance_pixelsizes.html
-  TT_Set_Instance_Transforms lazfreetype/tt_set_instance_transforms.html
-  TT_Get_Instance_Metrics lazfreetype/tt_get_instance_metrics.html
-  TT_Set_Instance_Pointer lazfreetype/tt_set_instance_pointer.html
-  TT_Get_Instance_Pointer lazfreetype/tt_get_instance_pointer.html
-  TT_Done_Instance lazfreetype/tt_done_instance.html
-  TT_New_Glyph lazfreetype/tt_new_glyph.html
-  TT_Done_Glyph lazfreetype/tt_done_glyph.html
-  TT_Load_Glyph lazfreetype/tt_load_glyph.html
-  TT_Get_Glyph_Outline lazfreetype/tt_get_glyph_outline.html
-  TT_Get_Glyph_Metrics lazfreetype/tt_get_glyph_metrics.html
-  TT_Get_Glyph_Big_Metrics lazfreetype/tt_get_glyph_big_metrics.html
-  TT_Get_Glyph_Bitmap lazfreetype/tt_get_glyph_bitmap.html
-  TT_Get_Glyph_Pixmap lazfreetype/tt_get_glyph_pixmap.html
-  TT_Get_Glyph_Pixmap_HQ lazfreetype/tt_get_glyph_pixmap_hq.html
-  TT_Render_Directly_Glyph_Gray lazfreetype/tt_render_directly_glyph_gray.html
-  TT_Render_Directly_Glyph_HQ lazfreetype/tt_render_directly_glyph_hq.html
-  TT_Translate_Outline lazfreetype/tt_translate_outline.html
-  TT_Transform_Outline lazfreetype/tt_transform_outline.html
-  TT_Transform_Vector lazfreetype/tt_transform_vector.html
-  TT_Get_Outline_Bitmap lazfreetype/tt_get_outline_bitmap.html
-  TT_Get_Outline_Pixmap lazfreetype/tt_get_outline_pixmap.html
-  TT_Get_Outline_Pixmap_HQ lazfreetype/tt_get_outline_pixmap_hq.html
-  TT_Render_Directly_Outline_Gray lazfreetype/tt_render_directly_outline_gray.html
-  TT_Render_Directly_Outline_HQ lazfreetype/tt_render_directly_outline_hq.html
-  TT_Get_Outline_BBox lazfreetype/tt_get_outline_bbox.html
-  TT_Get_KerningInfo lazfreetype/tt_get_kerninginfo.html
-  TT_New_Outline lazfreetype/tt_new_outline.html
-  TT_Copy_Outline lazfreetype/tt_copy_outline.html
-  TT_Clone_Outline lazfreetype/tt_clone_outline.html
-  TT_Done_Outline lazfreetype/tt_done_outline.html
-  TT_Get_CharMap_Count lazfreetype/tt_get_charmap_count.html
-  TT_Get_CharMap_ID lazfreetype/tt_get_charmap_id.html
-  TT_Get_CharMap lazfreetype/tt_get_charmap.html
-  TT_Char_Index lazfreetype/tt_char_index.html
-  TT_Get_Name_Count lazfreetype/tt_get_name_count.html
-  TT_Get_Name_ID lazfreetype/tt_get_name_id.html
-  TT_Get_Name_String lazfreetype/tt_get_name_string.html
-  TT_Get_Font_Data lazfreetype/tt_get_font_data.html
- TTTypes tttypes/index.html
-  TT_Flag_On_Curve tttypes/tt_flag_on_curve.html
-  TT_Flow_Down tttypes/tt_flow_down.html
-  TT_Flow_Up tttypes/tt_flow_up.html
-  TT_Err_Ok tttypes/tt_err_ok.html
-  TT_Err_Invalid_Face_Handle tttypes/tt_err_invalid_face_handle.html
-  TT_Err_Invalid_Instance_Handle tttypes/tt_err_invalid_instance_handle.html
-  TT_Err_Invalid_Glyph_Handle tttypes/tt_err_invalid_glyph_handle.html
-  TT_Err_Invalid_CharMap_Handle tttypes/tt_err_invalid_charmap_handle.html
-  TT_Err_Invalid_Result_Address tttypes/tt_err_invalid_result_address.html
-  TT_Err_Invalid_Glyph_Index tttypes/tt_err_invalid_glyph_index.html
-  TT_Err_Invalid_Argument tttypes/tt_err_invalid_argument.html
-  TT_Err_Could_Not_Open_File tttypes/tt_err_could_not_open_file.html
-  TT_Err_File_Is_Not_Collection tttypes/tt_err_file_is_not_collection.html
-  TT_Err_Table_Missing tttypes/tt_err_table_missing.html
-  TT_Err_Invalid_Horiz_Metrics tttypes/tt_err_invalid_horiz_metrics.html
-  TT_Err_Invalid_Vert_Metrics tttypes/tt_err_invalid_vert_metrics.html
-  TT_Err_Invalid_CharMap_Format tttypes/tt_err_invalid_charmap_format.html
-  TT_Err_Invalid_File_Format tttypes/tt_err_invalid_file_format.html
-  TT_Err_File_Error tttypes/tt_err_file_error.html
-  TT_Err_Invalid_Engine tttypes/tt_err_invalid_engine.html
-  TT_Err_Too_Many_Extensions tttypes/tt_err_too_many_extensions.html
-  TT_Err_Extensions_Unsupported tttypes/tt_err_extensions_unsupported.html
-  TT_Err_Invalid_Extension_Id tttypes/tt_err_invalid_extension_id.html
-  TT_Err_No_Vertical_Data tttypes/tt_err_no_vertical_data.html
-  TT_Err_Max_Profile_Missing tttypes/tt_err_max_profile_missing.html
-  TT_Err_Header_Table_Missing tttypes/tt_err_header_table_missing.html
-  TT_Err_Horiz_Header_Missing tttypes/tt_err_horiz_header_missing.html
-  TT_Err_Locations_Missing tttypes/tt_err_locations_missing.html
-  TT_Err_Name_Table_Missing tttypes/tt_err_name_table_missing.html
-  TT_Err_CMap_Table_Missing tttypes/tt_err_cmap_table_missing.html
-  TT_Err_Hmtx_Table_Missing tttypes/tt_err_hmtx_table_missing.html
-  TT_Err_OS2_Table_Missing tttypes/tt_err_os2_table_missing.html
-  TT_Err_Post_Table_Missing tttypes/tt_err_post_table_missing.html
-  TT_Err_Out_Of_Memory tttypes/tt_err_out_of_memory.html
-  TT_Err_Invalid_File_Offset tttypes/tt_err_invalid_file_offset.html
-  TT_Err_Invalid_File_Read tttypes/tt_err_invalid_file_read.html
-  TT_Err_Invalid_Frame_Access tttypes/tt_err_invalid_frame_access.html
-  TT_Err_Too_Many_Points tttypes/tt_err_too_many_points.html
-  TT_Err_Too_Many_Contours tttypes/tt_err_too_many_contours.html
-  TT_Err_Invalid_Composite tttypes/tt_err_invalid_composite.html
-  TT_Err_Too_Many_Ins tttypes/tt_err_too_many_ins.html
-  TT_Err_Invalid_Opcode tttypes/tt_err_invalid_opcode.html
-  TT_Err_Too_Few_Arguments tttypes/tt_err_too_few_arguments.html
-  TT_Err_Stack_Overflow tttypes/tt_err_stack_overflow.html
-  TT_Err_Code_Overflow tttypes/tt_err_code_overflow.html
-  TT_Err_Bad_Argument tttypes/tt_err_bad_argument.html
-  TT_Err_Divide_By_Zero tttypes/tt_err_divide_by_zero.html
-  TT_Err_Storage_Overflow tttypes/tt_err_storage_overflow.html
-  TT_Err_Cvt_Overflow tttypes/tt_err_cvt_overflow.html
-  TT_Err_Invalid_Reference tttypes/tt_err_invalid_reference.html
-  TT_Err_Invalid_Distance tttypes/tt_err_invalid_distance.html
-  TT_Err_Interpolate_Twilight tttypes/tt_err_interpolate_twilight.html
-  TT_Err_Debug_Opcode tttypes/tt_err_debug_opcode.html
-  TT_Err_ENDF_In_Exec_Stream tttypes/tt_err_endf_in_exec_stream.html
-  TT_Err_Out_Of_CodeRanges tttypes/tt_err_out_of_coderanges.html
-  TT_Err_Nested_DEFs tttypes/tt_err_nested_defs.html
-  TT_Err_Invalid_CodeRange tttypes/tt_err_invalid_coderange.html
-  TT_Err_Invalid_Displacement tttypes/tt_err_invalid_displacement.html
-  TT_Err_Execution_Too_Long tttypes/tt_err_execution_too_long.html
-  TT_Err_Too_Many_FuncDefs tttypes/tt_err_too_many_funcdefs.html
-  TT_Err_Too_Many_InsDefs tttypes/tt_err_too_many_insdefs.html
-  TT_Err_Nested_Frame_Access tttypes/tt_err_nested_frame_access.html
-  TT_Err_Invalid_Cache_List tttypes/tt_err_invalid_cache_list.html
-  TT_Err_Could_Not_Find_Context tttypes/tt_err_could_not_find_context.html
-  TT_Err_UNlisted_Object tttypes/tt_err_unlisted_object.html
-  TT_Err_Raster_Pool_Overflow tttypes/tt_err_raster_pool_overflow.html
-  TT_Err_Raster_Negative_Height tttypes/tt_err_raster_negative_height.html
-  TT_Err_Invalid_Value tttypes/tt_err_invalid_value.html
-  TT_Err_Raster_Not_Initialised tttypes/tt_err_raster_not_initialised.html
-  Success tttypes/success.html
-  Failure tttypes/failure.html
-  TError tttypes/terror.html
-  TT_Int tttypes/tt_int.html
-  TT_Long tttypes/tt_long.html
-  TT_ULong tttypes/tt_ulong.html
-  TT_Short tttypes/tt_short.html
-  TT_UShort tttypes/tt_ushort.html
-  TT_Fixed tttypes/tt_fixed.html
-  TT_FWord tttypes/tt_fword.html
-  TT_UFWord tttypes/tt_ufword.html
-  TT_F2Dot14 tttypes/tt_f2dot14.html
-  TT_F26Dot6 tttypes/tt_f26dot6.html
-  TT_Pos tttypes/tt_pos.html
-  TT_UnitVector tttypes/tt_unitvector.html
-  TT_Vector tttypes/tt_vector.html
-  TT_Matrix tttypes/tt_matrix.html
-  TT_BBox tttypes/tt_bbox.html
-  TT_KerningInfo tttypes/tt_kerninginfo.html
-  TT_Error tttypes/tt_error.html
-  TT_Points_Table tttypes/tt_points_table.html
-  TT_Points tttypes/tt_points.html
-  TT_Coordinates tttypes/tt_coordinates.html
-  TT_PCoordinates tttypes/tt_pcoordinates.html
-  TT_TouchTable tttypes/tt_touchtable.html
-  TT_PTouchTable tttypes/tt_ptouchtable.html
-  TT_ConStarts tttypes/tt_constarts.html
-  TT_PConStarts tttypes/tt_pconstarts.html
-  TT_Outline tttypes/tt_outline.html
-  TT_Glyph_Metrics tttypes/tt_glyph_metrics.html
-  TT_Big_Glyph_Metrics tttypes/tt_big_glyph_metrics.html
-  TDirectRenderingFunction tttypes/tdirectrenderingfunction.html
-  TT_Instance_Metrics tttypes/tt_instance_metrics.html
-  TT_Raster_Map tttypes/tt_raster_map.html
-  TT_Header tttypes/tt_header.html
-  TT_Horizontal_Header tttypes/tt_horizontal_header.html
-  TT_Vertical_Header tttypes/tt_vertical_header.html
-  TT_OS2 tttypes/tt_os2.html
-  TT_Postscript tttypes/tt_postscript.html
-  TT_Face_Properties tttypes/tt_face_properties.html
-  TT_Stream tttypes/tt_stream.html
-  TT_Face tttypes/tt_face.html
-  TT_Instance tttypes/tt_instance.html
-  TT_Glyph tttypes/tt_glyph.html
-  TT_CharMap tttypes/tt_charmap.html
-  TT_Gray_Palette tttypes/tt_gray_palette.html
-  PTT_Gray_Palette tttypes/ptt_gray_palette.html
-  UShort tttypes/ushort.html
-  Short tttypes/short.html
-  Long tttypes/long.html
-  ULong tttypes/ulong.html
-  Int tttypes/int.html
-  TByteArray tttypes/tbytearray.html
-  PByte tttypes/pbyte.html
-  TShortArray tttypes/tshortarray.html
-  PShort tttypes/pshort.html
-  TUShortArray tttypes/tushortarray.html
-  PUShort tttypes/pushort.html
-  TStorage tttypes/tstorage.html
-  PStorage tttypes/pstorage.html
-  PLong tttypes/plong.html
-  PULong tttypes/pulong.html
-  TCoordinates tttypes/tcoordinates.html
-  PCoordinates tttypes/pcoordinates.html
-  PTouchTable tttypes/ptouchtable.html
-  TVecRecord tttypes/tvecrecord.html
-  TFreeTypeCustomRasterizer tttypes/tfreetypecustomrasterizer.html
-   Render_Glyph tttypes/tfreetypecustomrasterizer.render_glyph.html
-   Render_Gray_Glyph tttypes/tfreetypecustomrasterizer.render_gray_glyph.html
-   Render_Gray_Glyph_HQ tttypes/tfreetypecustomrasterizer.render_gray_glyph_hq.html
-   Render_Directly_Gray_Glyph tttypes/tfreetypecustomrasterizer.render_directly_gray_glyph.html
-   Render_Directly_Gray_Glyph_HQ tttypes/tfreetypecustomrasterizer.render_directly_gray_glyph_hq.html
-   Set_Raster_Palette tttypes/tfreetypecustomrasterizer.set_raster_palette.html
- TTRASTER ttraster/index.html
-  Function_Sweep_Init ttraster/function_sweep_init.html
-  Function_Sweep_Span ttraster/function_sweep_span.html
-  Function_Sweep_Step ttraster/function_sweep_step.html
-  TFreeTypeRasterizer ttraster/tfreetyperasterizer.html
-   Render_Glyph ttraster/tfreetyperasterizer.render_glyph.html
-   Render_Gray_Glyph ttraster/tfreetyperasterizer.render_gray_glyph.html
-   Render_Gray_Glyph_HQ ttraster/tfreetyperasterizer.render_gray_glyph_hq.html
-   Render_Directly_Gray_Glyph ttraster/tfreetyperasterizer.render_directly_gray_glyph.html
-   Render_Directly_Gray_Glyph_HQ ttraster/tfreetyperasterizer.render_directly_gray_glyph_hq.html
-   Set_Raster_Palette ttraster/tfreetyperasterizer.set_raster_palette.html
-   Create ttraster/tfreetyperasterizer.create.html
-   Destroy ttraster/tfreetyperasterizer.destroy.html
-  IncludeFullGrainMin ttraster/includefullgrainmin.html
-  IncludeFullGrainMax ttraster/includefullgrainmax.html
-  TTRaster_Init ttraster/ttraster_init.html
-  TTRaster_Done ttraster/ttraster_done.html
-  TTGetDefaultRasterizer ttraster/ttgetdefaultrasterizer.html
- TTProfile ttprofile/index.html
-  PoolMaxCapacity ttprofile/poolmaxcapacity.html
-  PoolIdleCapacity ttprofile/poolidlecapacity.html
-  TCurveDirection ttprofile/tcurvedirection.html
-  TPoint ttprofile/tpoint.html
-  TBezierStack ttprofile/tbezierstack.html
-  PBezierStack ttprofile/pbezierstack.html
-  TRenderPool ttprofile/trenderpool.html
-   Precision ttprofile/trenderpool.precision.html
-   PrecisionHalf ttprofile/trenderpool.precisionhalf.html
-   BezierPrecision ttprofile/trenderpool.bezierprecision.html
-   BoundsMinY ttprofile/trenderpool.boundsminy.html
-   BoundsMaxY ttprofile/trenderpool.boundsmaxy.html
-   scaleShift ttprofile/trenderpool.scaleshift.html
-   Bezier_Down ttprofile/trenderpool.bezier_down.html
-   Bezier_State ttprofile/trenderpool.bezier_state.html
-   Bezier_To ttprofile/trenderpool.bezier_to.html
-   Bezier_Up ttprofile/trenderpool.bezier_up.html
-   CEILING ttprofile/trenderpool.ceiling.html
-   DecomposeCurve ttprofile/trenderpool.decomposecurve.html
-   FLOOR ttprofile/trenderpool.floor.html
-   FRAC ttprofile/trenderpool.frac.html
-   GetCapacity ttprofile/trenderpool.getcapacity.html
-   Line_Down ttprofile/trenderpool.line_down.html
-   Line_To ttprofile/trenderpool.line_to.html
-   Line_Up ttprofile/trenderpool.line_up.html
-   Move_To ttprofile/trenderpool.move_to.html
-   PushBezier ttprofile/trenderpool.pushbezier.html
-   SCALED ttprofile/trenderpool.scaled.html
-   Split_Bezier ttprofile/trenderpool.split_bezier.html
-   TRUNC ttprofile/trenderpool.trunc.html
-   RequireCapacity ttprofile/trenderpool.requirecapacity.html
-   PushValue ttprofile/trenderpool.pushvalue.html
-   Capacity ttprofile/trenderpool.capacity.html
-   Joint ttprofile/trenderpool.joint.html
-   Fresh ttprofile/trenderpool.fresh.html
-   cProfile ttprofile/trenderpool.cprofile.html
-   ProfileColl ttprofile/trenderpool.profilecoll.html
-   LastX ttprofile/trenderpool.lastx.html
-   LastY ttprofile/trenderpool.lasty.html
-   CurveDir ttprofile/trenderpool.curvedir.html
-   Arcs ttprofile/trenderpool.arcs.html
-   CurArc ttprofile/trenderpool.curarc.html
-   data ttprofile/trenderpool.data.html
-   position ttprofile/trenderpool.position.html
-   Create ttprofile/trenderpool.create.html
-   Destroy ttprofile/trenderpool.destroy.html
-   SetPrecision ttprofile/trenderpool.setprecision.html
-   SetBounds ttprofile/trenderpool.setbounds.html
-   SetScaleShift ttprofile/trenderpool.setscaleshift.html
-   Clear ttprofile/trenderpool.clear.html
-   ReduceCapacity ttprofile/trenderpool.reducecapacity.html
-   Convert_Glyph ttprofile/trenderpool.convert_glyph.html
-  TProfile ttprofile/tprofile.html
-   Pool ttprofile/tprofile.pool.html
-   Flow ttprofile/tprofile.flow.html
-   Height ttprofile/tprofile.height.html
-   Start ttprofile/tprofile.start.html
-   Offset ttprofile/tprofile.offset.html
-   X ttprofile/tprofile.x.html
-   nextInContour ttprofile/tprofile.nextincontour.html
-   nextInColl ttprofile/tprofile.nextincoll.html
-   nextInList ttprofile/tprofile.nextinlist.html
-   prevInList ttprofile/tprofile.previnlist.html
-   Create ttprofile/tprofile.create.html
-  TProfileCollection ttprofile/tprofilecollection.html
-   Remove_Profile ttprofile/tprofilecollection.remove_profile.html
-   Pool ttprofile/tprofilecollection.pool.html
-   prevProfile ttprofile/tprofilecollection.prevprofile.html
-   fProfile ttprofile/tprofilecollection.fprofile.html
-   gProfile ttprofile/tprofilecollection.gprofile.html
-   nProfs ttprofile/tprofilecollection.nprofs.html
-   Create ttprofile/tprofilecollection.create.html
-   Clear ttprofile/tprofilecollection.clear.html
-   New_Profile ttprofile/tprofilecollection.new_profile.html
-   End_Profile ttprofile/tprofilecollection.end_profile.html
-   Destroy ttprofile/tprofilecollection.destroy.html
-  ProfileList_Init ttprofile/profilelist_init.html
-  ProfileList_InsertFirstElement ttprofile/profilelist_insertfirstelement.html
-  ProfileList_AppendToList ttprofile/profilelist_appendtolist.html
-  ProfileList_Remove ttprofile/profilelist_remove.html
-  ProfileList_SortByX ttprofile/profilelist_sortbyx.html
-  ProfileList_SortByStart ttprofile/profilelist_sortbystart.html
-  ProfileList_Count ttprofile/profilelist_count.html
-  ProfileList_Split ttprofile/profilelist_split.html
  ExtendedStrings extendedstrings/index.html
   TExtStringsOption extendedstrings/textstringsoption.html
   TExtStringsOptions extendedstrings/textstringsoptions.html
@@ -1232,6 +754,104 @@
    Records extendedstrings/textendedstringlist.records.html
    RecordSize extendedstrings/textendedstringlist.recordsize.html
    Options extendedstrings/textendedstringlist.options.html
+ FileReferenceList filereferencelist/index.html
+  TFileReferenceFlag filereferencelist/tfilereferenceflag.html
+  TFileReferenceFlags filereferencelist/tfilereferenceflags.html
+  TFileReference filereferencelist/tfilereference.html
+   Filename filereferencelist/tfilereference.filename.html
+   ReferenceCount filereferencelist/tfilereference.referencecount.html
+  TFileReferenceList filereferencelist/tfilereferencelist.html
+   Create filereferencelist/tfilereferencelist.create.html
+   Destroy filereferencelist/tfilereferencelist.destroy.html
+   Clear filereferencelist/tfilereferencelist.clear.html
+   BeginUpdate filereferencelist/tfilereferencelist.beginupdate.html
+   EndUpdate filereferencelist/tfilereferencelist.endupdate.html
+   AddFilename filereferencelist/tfilereferencelist.addfilename.html
+   RemoveFilename filereferencelist/tfilereferencelist.removefilename.html
+   GetFileReference filereferencelist/tfilereferencelist.getfilereference.html
+   CreateSearchPathFromAllFiles filereferencelist/tfilereferencelist.createsearchpathfromallfiles.html
+   CreateFileList filereferencelist/tfilereferencelist.createfilelist.html
+   TimeStamp filereferencelist/tfilereferencelist.timestamp.html
+   OnChanged filereferencelist/tfilereferencelist.onchanged.html
+   UpdateLock filereferencelist/tfilereferencelist.updatelock.html
+ LazFileCache lazfilecache/index.html
+  LUInvalidChangeStamp lazfilecache/luinvalidchangestamp.html
+  LUInvalidChangeStamp64 lazfilecache/luinvalidchangestamp64.html
+  TFileStateCacheItemFlag lazfilecache/tfilestatecacheitemflag.html
+  TFileStateCacheItemFlags lazfilecache/tfilestatecacheitemflags.html
+  TOnChangeFileStateTimeStamp lazfilecache/tonchangefilestatetimestamp.html
+  TOnFileExistsCached lazfilecache/tonfileexistscached.html
+  TOnFileAgeCached lazfilecache/tonfileagecached.html
+  TFileStateCacheItem lazfilecache/tfilestatecacheitem.html
+   Create lazfilecache/tfilestatecacheitem.create.html
+   CalcMemSize lazfilecache/tfilestatecacheitem.calcmemsize.html
+   Filename lazfilecache/tfilestatecacheitem.filename.html
+   PhysicalFilename lazfilecache/tfilestatecacheitem.physicalfilename.html
+   Flags lazfilecache/tfilestatecacheitem.flags.html
+   TestedFlags lazfilecache/tfilestatecacheitem.testedflags.html
+   TimeStamp lazfilecache/tfilestatecacheitem.timestamp.html
+   Age lazfilecache/tfilestatecacheitem.age.html
+  TFileStateCache lazfilecache/tfilestatecache.html
+   Create lazfilecache/tfilestatecache.create.html
+   Destroy lazfilecache/tfilestatecache.destroy.html
+   Lock lazfilecache/tfilestatecache.lock.html
+   Unlock lazfilecache/tfilestatecache.unlock.html
+   Locked lazfilecache/tfilestatecache.locked.html
+   IncreaseTimeStamp lazfilecache/tfilestatecache.increasetimestamp.html
+   FileExistsCached lazfilecache/tfilestatecache.fileexistscached.html
+   DirPathExistsCached lazfilecache/tfilestatecache.dirpathexistscached.html
+   DirectoryIsWritableCached lazfilecache/tfilestatecache.directoryiswritablecached.html
+   FileIsExecutableCached lazfilecache/tfilestatecache.fileisexecutablecached.html
+   FileIsReadableCached lazfilecache/tfilestatecache.fileisreadablecached.html
+   FileIsWritableCached lazfilecache/tfilestatecache.fileiswritablecached.html
+   FileIsTextCached lazfilecache/tfilestatecache.fileistextcached.html
+   FileAgeCached lazfilecache/tfilestatecache.fileagecached.html
+   GetPhysicalFilenameCached lazfilecache/tfilestatecache.getphysicalfilenamecached.html
+   FindFile lazfilecache/tfilestatecache.findfile.html
+   Check lazfilecache/tfilestatecache.check.html
+   AddChangeTimeStampHandler lazfilecache/tfilestatecache.addchangetimestamphandler.html
+   RemoveChangeTimeStampHandler lazfilecache/tfilestatecache.removechangetimestamphandler.html
+   CalcMemSize lazfilecache/tfilestatecache.calcmemsize.html
+   TimeStamp lazfilecache/tfilestatecache.timestamp.html
+  FileExistsCached lazfilecache/fileexistscached.html
+  DirPathExistsCached lazfilecache/dirpathexistscached.html
+  DirectoryIsWritableCached lazfilecache/directoryiswritablecached.html
+  FileIsExecutableCached lazfilecache/fileisexecutablecached.html
+  FileIsReadableCached lazfilecache/fileisreadablecached.html
+  FileIsWritableCached lazfilecache/fileiswritablecached.html
+  FileIsTextCached lazfilecache/fileistextcached.html
+  FileAgeCached lazfilecache/fileagecached.html
+  GetPhysicalFilenameCached lazfilecache/getphysicalfilenamecached.html
+  InvalidateFileStateCache lazfilecache/invalidatefilestatecache.html
+  CompareFileStateItems lazfilecache/comparefilestateitems.html
+  CompareFilenameWithFileStateCacheItem lazfilecache/comparefilenamewithfilestatecacheitem.html
+  LUIncreaseChangeStamp lazfilecache/luincreasechangestamp.html
+  LUIncreaseChangeStamp64 lazfilecache/luincreasechangestamp64.html
+  FileStateCache lazfilecache/filestatecache.html
+  OnFileExistsCached lazfilecache/onfileexistscached.html
+  OnFileAgeCached lazfilecache/onfileagecached.html
+ LazTracer laztracer/index.html
+  TStackTracePointers laztracer/tstacktracepointers.html
+  TLineInfoCacheItem laztracer/tlineinfocacheitem.html
+  PLineInfoCacheItem laztracer/plineinfocacheitem.html
+  RaiseGDBException laztracer/raisegdbexception.html
+  RaiseAndCatchException laztracer/raiseandcatchexception.html
+  GetStackTrace laztracer/getstacktrace.html
+  GetStackTracePointers laztracer/getstacktracepointers.html
+  StackTraceAsString laztracer/stacktraceasstring.html
+  GetLineInfo laztracer/getlineinfo.html
+ LazUtilities lazutilities/index.html
+  FreeThenNil lazutilities/freethennil.html
+  ComparePointers lazutilities/comparepointers.html
+  CompareBoolean lazutilities/compareboolean.html
+  GetEnumValueDef lazutilities/getenumvaluedef.html
+  RoundToInt lazutilities/roundtoint.html
+  RoundToCardinal lazutilities/roundtocardinal.html
+  TruncToInt lazutilities/trunctoint.html
+  TruncToCardinal lazutilities/trunctocardinal.html
+  StrToDouble lazutilities/strtodouble.html
+  MergeSortWithLen lazutilities/mergesortwithlen.html
+  ConsoleVerbosity lazutilities/consoleverbosity.html
  FileUtil fileutil/index.html
   UTF8FileHeader fileutil/utf8fileheader.html
   FilenamesCaseSensitive fileutil/filenamescasesensitive.html
@@ -1283,7 +903,7 @@
   ProgramDirectoryWithBundle fileutil/programdirectorywithbundle.html
   ExpandUNCFileNameUTF8 fileutil/expanduncfilenameutf8.html
   FileSize fileutil/filesize.html
-  FilenameIsPascalUnit fileutil/filenameispascalunit.html
+  FilenameHasPascalExt fileutil/filenamehaspascalext.html
   FileIsInPath fileutil/fileisinpath.html
   FileIsInDirectory fileutil/fileisindirectory.html
   ExtractFileNameWithoutExt fileutil/extractfilenamewithoutext.html
@@ -1302,6 +922,7 @@
   CopyFile fileutil/copyfile.html
   CopyDirTree fileutil/copydirtree.html
  Masks masks/index.html
+  MasksOverview masks/masksoverview.html
   TMaskCharType masks/tmaskchartype.html
   TMaskOption masks/tmaskoption.html
   TMaskOptions masks/tmaskoptions.html
@@ -1328,14 +949,51 @@
   MatchesWindowsMask masks/matcheswindowsmask.html
   MatchesMaskList masks/matchesmasklist.html
   MatchesWindowsMaskList masks/matcheswindowsmasklist.html
- FPCAdds fpcadds/index.html
-  TStreamSeekType fpcadds/tstreamseektype.html
-  TMemStreamSeekType fpcadds/tmemstreamseektype.html
-  TCompareMemSize fpcadds/tcomparememsize.html
-  PHandle fpcadds/phandle.html
-  StrToWord fpcadds/strtoword.html
-  AlignToPtr fpcadds/aligntoptr.html
-  AlignToInt fpcadds/aligntoint.html
+ GraphMath graphmath/index.html
+  GraphMathOperators graphmath/graphmathoperators.html
+  TFloatPoint graphmath/tfloatpoint.html
+  TBezier graphmath/tbezier.html
+  PPoint graphmath/ppoint.html
+  Angles2Coords graphmath/angles2coords.html
+  Arc2Bezier graphmath/arc2bezier.html
+  Bezier graphmath/bezier.html
+  Bezier2Polyline graphmath/bezier2polyline.html
+  BezierArcPoints graphmath/bezierarcpoints.html
+  BezierMidPoint graphmath/beziermidpoint.html
+  Coords2Angles graphmath/coords2angles.html
+  Distance graphmath/distance.html
+  EccentricAngle graphmath/eccentricangle.html
+  EllipseRadialLength graphmath/ellipseradiallength.html
+  FloatPoint graphmath/floatpoint.html
+  LineEndPoint graphmath/lineendpoint.html
+  PolyBezier2Polyline graphmath/polybezier2polyline.html
+  PolyBezierArcPoints graphmath/polybezierarcpoints.html
+  Quadrant graphmath/quadrant.html
+  RadialPoint graphmath/radialpoint.html
+  SplitBezier graphmath/splitbezier.html
+  add(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-add-tfloatpoint-floatpoint-floatpoint.html
+  add(TFloatPoint,Extended):TFloatPoint graphmath/.op-add-tfloatpoint-xtended-floatpoint.html
+  add(Extended,TFloatPoint):TFloatPoint graphmath/.op-add-extended-floatpoint-floatpoint.html
+  add(TFloatPoint,TPoint):TFloatPoint graphmath/.op-add-tfloatpoint-point-floatpoint.html
+  add(TPoint,TFloatPoint):TFloatPoint graphmath/.op-add-tpoint-floatpoint-floatpoint.html
+  subtract(TFloatPoint,Extended):TFloatPoint graphmath/.op-subtract-tfloatpoint-xtended-floatpoint.html
+  subtract(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-subtract-tfloatpoint-floatpoint-floatpoint.html
+  subtract(TFloatPoint,TPoint):TFloatPoint graphmath/.op-subtract-tfloatpoint-point-floatpoint.html
+  subtract(TPoint,TFloatPoint):TFloatPoint graphmath/.op-subtract-tpoint-floatpoint-floatpoint.html
+  multiply(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-multiply-tfloatpoint-floatpoint-floatpoint.html
+  multiply(TFloatPoint,Extended):TFloatPoint graphmath/.op-multiply-tfloatpoint-xtended-floatpoint.html
+  multiply(Extended,TFloatPoint):TFloatPoint graphmath/.op-multiply-extended-floatpoint-floatpoint.html
+  multiply(TFloatPoint,TPoint):TFloatPoint graphmath/.op-multiply-tfloatpoint-point-floatpoint.html
+  multiply(TPoint,TFloatPoint):TFloatPoint graphmath/.op-multiply-tpoint-floatpoint-floatpoint.html
+  divide(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-divide-tfloatpoint-floatpoint-floatpoint.html
+  divide(TFloatPoint,Extended):TFloatPoint graphmath/.op-divide-tfloatpoint-xtended-floatpoint.html
+  divide(TFloatPoint,TPoint):TFloatPoint graphmath/.op-divide-tfloatpoint-point-floatpoint.html
+  divide(TPoint,TFloatPoint):TFloatPoint graphmath/.op-divide-tpoint-floatpoint-floatpoint.html
+  equal(TPoint,TPoint):Boolean graphmath/.op-equal-tpoint-point-oolean.html
+  equal(TFloatPoint,TFloatPoint):Boolean graphmath/.op-equal-tfloatpoint-floatpoint-oolean.html
+  assign(TFloatPoint):TPoint graphmath/.op-assign-tfloatpoint-point.html
+  assign(TPoint):TFloatPoint graphmath/.op-assign-tpoint-floatpoint.html
+  equal(TRect,TRect):Boolean graphmath/.op-equal-trect-rect-oolean.html
  GraphType graphtype/index.html
   DefaultByteOrder graphtype/defaultbyteorder.html
   TGraphicsColor graphtype/tgraphicscolor.html
@@ -1602,7 +1260,6 @@
   stduri_xmlns laz2_dom/stduri_xmlns.html
   PNodePoolArray laz2_dom/pnodepoolarray.html
   TNodePoolArray laz2_dom/tnodepoolarray.html
-  TFPList laz2_dom/tfplist.html
   TSetOfChar laz2_dom/tsetofchar.html
   DOMString laz2_dom/domstring.html
   DOMPChar laz2_dom/dompchar.html
@@ -1704,23 +1361,23 @@
    FindNode laz2_dom/tdomnode.findnode.html
    CompareName laz2_dom/tdomnode.comparename.html
    Flags laz2_dom/tdomnode.flags.html
-   GetNodeName 
-   GetNodeValue 
-   SetNodeValue 
-   GetFirstChild 
-   GetLastChild 
-   GetAttributes 
-   GetNodeType 
-   GetTextContent 
-   SetTextContent 
-   GetLocalName 
-   GetNamespaceURI 
-   GetPrefix 
-   SetPrefix 
-   GetOwnerDocument 
-   GetBaseURI 
+   GetNodeName laz2_dom/tdomnode.nodename.html
+   GetNodeValue laz2_dom/tdomnode.nodevalue.html
+   SetNodeValue laz2_dom/tdomnode.nodevalue.html
+   GetFirstChild laz2_dom/tdomnode.firstchild.html
+   GetLastChild laz2_dom/tdomnode.lastchild.html
+   GetAttributes laz2_dom/tdomnode.attributes.html
+   GetNodeType laz2_dom/tdomnode.nodetype.html
+   GetTextContent laz2_dom/tdomnode.textcontent.html
+   SetTextContent laz2_dom/tdomnode.textcontent.html
+   GetLocalName laz2_dom/tdomnode.localname.html
+   GetNamespaceURI laz2_dom/tdomnode.namespaceuri.html
+   GetPrefix laz2_dom/tdomnode.prefix.html
+   SetPrefix laz2_dom/tdomnode.prefix.html
+   GetOwnerDocument laz2_dom/tdomnode.ownerdocument.html
+   GetBaseURI laz2_dom/tdomnode.baseuri.html
    FreeInstance ms-its:rtl.chm::/system/tobject.freeinstance.html
-   GetChildNodes 
+   GetChildNodes laz2_dom/tdomnode.childnodes.html
   TDOMNode_WithChildren laz2_dom/tdomnode_withchildren.html
    FFirstChild laz2_dom/tdomnode_withchildren.ffirstchild.html
    FLastChild laz2_dom/tdomnode_withchildren.flastchild.html
@@ -1733,12 +1390,12 @@
    Destroy laz2_dom/tdomnode_withchildren.destroy.html
    GetChildCount laz2_dom/tdomnode.getchildcount.html
    InternalAppend laz2_dom/tdomnode_withchildren.internalappend.html
-   GetTextContent 
-   InsertBefore 
-   ReplaceChild 
-   DetachChild 
-   HasChildNodes 
-   FindNode 
+   GetTextContent laz2_dom/tdomnode.textcontent.html
+   InsertBefore laz2_dom/tdomnode.insertbefore.html
+   ReplaceChild laz2_dom/tdomnode.replacechild.html
+   DetachChild laz2_dom/tdomnode.detachchild.html
+   HasChildNodes laz2_dom/tdomnode.haschildnodes.html
+   FindNode laz2_dom/tdomnode.findnode.html
   TDOMNodeList laz2_dom/tdomnodelist.html
    FNode laz2_dom/tdomnodelist.fnode.html
    FRevision laz2_dom/tdomnodelist.frevision.html
@@ -1750,8 +1407,8 @@
    Item laz2_dom/tdomnodelist.item.html
    Count laz2_dom/tdomnodelist.count.html
    Length laz2_dom/tdomnodelist.length.html
-   GetCount 
-   GetItem 
+   GetCount laz2_dom/tdomnodelist.length.html
+   GetItem laz2_dom/tdomnodelist.item.html
   TDOMElementList laz2_dom/tdomelementlist.html
    filter laz2_dom/tdomelementlist.filter.html
    FNSIndexFilter laz2_dom/tdomelementlist.fnsindexfilter.html
@@ -1782,9 +1439,9 @@
    Item laz2_dom/tdomnamednodemap.item.html
    SortedItem laz2_dom/tdomnamednodemap.sorteditem.html
    Length laz2_dom/tdomnamednodemap.length.html
-   GetPosItem 
-   GetSortedItem 
-   GetLength 
+   GetPosItem laz2_dom/tdomnamednodemap.item.html
+   GetSortedItem laz2_dom/tdomnamednodemap.sorteditem.html
+   GetLength laz2_dom/tdomnamednodemap.length.html
   TDOMCharacterData laz2_dom/tdomcharacterdata.html
    Data laz2_dom/tdomcharacterdata.data.html
    Length laz2_dom/tdomcharacterdata.length.html
@@ -1794,16 +1451,16 @@
    DeleteData laz2_dom/tdomcharacterdata.deletedata.html
    ReplaceData laz2_dom/tdomcharacterdata.replacedata.html
    GetLength 
-   GetNodeValue 
-   SetNodeValue 
+   GetNodeValue laz2_dom/tdomnode.nodevalue.html
+   SetNodeValue laz2_dom/tdomnode.nodevalue.html
   TDOMImplementation laz2_dom/tdomimplementation.html
    HasFeature laz2_dom/tdomimplementation.hasfeature.html
    CreateDocumentType laz2_dom/tdomimplementation.createdocumenttype.html
    CreateDocument laz2_dom/tdomimplementation.createdocument.html
   TDOMDocumentFragment laz2_dom/tdomdocumentfragment.html
    CloneNode laz2_dom/tdomdocumentfragment.clonenode.html
-   GetNodeType 
-   GetNodeName 
+   GetNodeType laz2_dom/tdomnode.nodetype.html
+   GetNodeName laz2_dom/tdomnode.nodename.html
   TDOMDocument laz2_dom/tdomdocument.html
    FIDList laz2_dom/tdomdocument.fidlist.html
    FRevision laz2_dom/tdomdocument.frevision.html
@@ -1869,13 +1526,13 @@
   TDOMNode_NS laz2_dom/tdomnode_ns.html
    CompareName laz2_dom/tdomnode_ns.comparename.html
    NSI laz2_dom/tdomnode_ns.nsi.html
-   FNSI 
-   GetNodeName 
-   GetLocalName 
-   GetNamespaceURI 
-   GetPrefix 
-   SetPrefix 
-   SetNSI 
+   FNSI laz2_dom/tdomnode_ns.nsi.html
+   GetNodeName laz2_dom/tdomnode.nodename.html
+   GetLocalName laz2_dom/tdomnode.localname.html
+   GetNamespaceURI laz2_dom/tdomnode.namespaceuri.html
+   GetPrefix laz2_dom/tdomnode.prefix.html
+   SetPrefix laz2_dom/tdomnode.prefix.html
+   SetNSI laz2_dom/tdomnode.namespaceuri.html
   TDOMAttr laz2_dom/tdomattr.html
    FOwnerElement laz2_dom/tdomattr.fownerelement.html
    FDataType laz2_dom/tdomattr.fdatatype.html
@@ -1886,12 +1543,12 @@
    OwnerElement laz2_dom/tdomattr.ownerelement.html
    IsID laz2_dom/tdomattr.isid.html
    DataType laz2_dom/tdomattr.datatype.html
-   GetNodeValue 
-   GetNodeType 
-   GetSpecified 
-   GetIsID 
-   SetNodeValue 
-   CloneNode 
+   GetNodeValue laz2_dom/tdomnode.nodevalue.html
+   GetNodeType laz2_dom/tdomnode.nodetype.html
+   GetSpecified laz2_dom/tdomattr.specified.html
+   GetIsID laz2_dom/tdomattr.isid.html
+   SetNodeValue laz2_dom/tdomnode.nodevalue.html
+   CloneNode laz2_dom/tdomnode.clonenode.html
   TDOMElement laz2_dom/tdomelement.html
    AttachDefaultAttrs laz2_dom/tdomelement.attachdefaultattrs.html
    InternalLookupPrefix laz2_dom/tdomelement.internallookupprefix.html
@@ -1915,12 +1572,12 @@
    HasAttributes laz2_dom/tdomelement.hasattributes.html
    AttribStrings laz2_dom/tdomelement.attribstrings.html
    FAttributes 
-   GetNodeType 
+   GetNodeType laz2_dom/tdomnode.nodetype.html
    GetAttributes 
-   CloneNode 
-   Normalize 
-   GetAttribute 
-   SetAttribute 
+   CloneNode laz2_dom/tdomnode.clonenode.html
+   Normalize laz2_dom/tdomnode.normalize.html
+   GetAttribute laz2_dom/tdomelement.attribstrings.html
+   SetAttribute laz2_dom/tdomelement.attribstrings.html
   TDOMText laz2_dom/tdomtext.html
    GetNodeType laz2_dom/tdomtext.getnodetype.html
    GetNodeName laz2_dom/tdomtext.getnodename.html
@@ -1931,11 +1588,11 @@
   TDOMComment laz2_dom/tdomcomment.html
    GetNodeType laz2_dom/tdomcomment.getnodetype.html
    GetNodeName laz2_dom/tdomcomment.getnodename.html
-   CloneNode 
+   CloneNode laz2_dom/tdomnode.clonenode.html
   TDOMCDATASection laz2_dom/tdomcdatasection.html
-   GetNodeType 
-   GetNodeName 
-   CloneNode 
+   GetNodeType laz2_dom/tdomnode.nodetype.html
+   GetNodeName laz2_dom/tdomnode.nodename.html
+   CloneNode laz2_dom/tdomnode.clonenode.html
   TDOMDocumentType laz2_dom/tdomdocumenttype.html
    FName laz2_dom/tdomdocumenttype.fname.html
    FPublicID laz2_dom/tdomdocumenttype.fpublicid.html
@@ -1982,11 +1639,11 @@
   TDOMProcessingInstruction laz2_dom/tdomprocessinginstruction.html
    Target laz2_dom/tdomprocessinginstruction.target.html
    Data laz2_dom/tdomprocessinginstruction.data.html
-   GetNodeType 
-   GetNodeName 
-   GetNodeValue 
-   SetNodeValue 
-   CloneNode 
+   GetNodeType laz2_dom/tdomnode.nodetype.html
+   GetNodeName laz2_dom/tdomnode.nodename.html
+   GetNodeValue laz2_dom/tdomnode.nodevalue.html
+   SetNodeValue laz2_dom/tdomnode.nodevalue.html
+   CloneNode laz2_dom/tdomnode.clonenode.html
   TDOMAttrDef laz2_dom/tdomattrdef.html
    FExternallyDeclared laz2_dom/tdomattrdef.fexternallydeclared.html
    FDefault laz2_dom/tdomattrdef.fdefault.html
@@ -2028,8 +1685,6 @@
   TXMLUtilChar laz2_xmlutils/txmlutilchar.html
   PXMLUtilChar laz2_xmlutils/pxmlutilchar.html
   PXMLUtilString laz2_xmlutils/pxmlutilstring.html
-  PtrInt laz2_xmlutils/ptrint.html
-  TFPList laz2_xmlutils/tfplist.html
   PPHashItem laz2_xmlutils/pphashitem.html
   PHashItem laz2_xmlutils/phashitem.html
   THashItem laz2_xmlutils/thashitem.html
@@ -2143,62 +1798,6 @@
    WriteObject laz2_xmlcfg/trttixmlconfig.writeobject.html
    ReadObject laz2_xmlcfg/trttixmlconfig.readobject.html
   CompareDomNodeNames laz2_xmlcfg/comparedomnodenames.html
- LazFileCache lazfilecache/index.html
-  LUInvalidChangeStamp lazfilecache/luinvalidchangestamp.html
-  LUInvalidChangeStamp64 lazfilecache/luinvalidchangestamp64.html
-  TFileStateCacheItemFlag lazfilecache/tfilestatecacheitemflag.html
-  TFileStateCacheItemFlags lazfilecache/tfilestatecacheitemflags.html
-  TOnChangeFileStateTimeStamp lazfilecache/tonchangefilestatetimestamp.html
-  TOnFileExistsCached lazfilecache/tonfileexistscached.html
-  TOnFileAgeCached lazfilecache/tonfileagecached.html
-  TFileStateCacheItem lazfilecache/tfilestatecacheitem.html
-   Create lazfilecache/tfilestatecacheitem.create.html
-   CalcMemSize lazfilecache/tfilestatecacheitem.calcmemsize.html
-   Filename lazfilecache/tfilestatecacheitem.filename.html
-   PhysicalFilename lazfilecache/tfilestatecacheitem.physicalfilename.html
-   Flags lazfilecache/tfilestatecacheitem.flags.html
-   TestedFlags lazfilecache/tfilestatecacheitem.testedflags.html
-   TimeStamp lazfilecache/tfilestatecacheitem.timestamp.html
-   Age lazfilecache/tfilestatecacheitem.age.html
-  TFileStateCache lazfilecache/tfilestatecache.html
-   Create lazfilecache/tfilestatecache.create.html
-   Destroy lazfilecache/tfilestatecache.destroy.html
-   Lock lazfilecache/tfilestatecache.lock.html
-   Unlock lazfilecache/tfilestatecache.unlock.html
-   Locked lazfilecache/tfilestatecache.locked.html
-   IncreaseTimeStamp lazfilecache/tfilestatecache.increasetimestamp.html
-   FileExistsCached lazfilecache/tfilestatecache.fileexistscached.html
-   DirPathExistsCached lazfilecache/tfilestatecache.dirpathexistscached.html
-   DirectoryIsWritableCached lazfilecache/tfilestatecache.directoryiswritablecached.html
-   FileIsExecutableCached lazfilecache/tfilestatecache.fileisexecutablecached.html
-   FileIsReadableCached lazfilecache/tfilestatecache.fileisreadablecached.html
-   FileIsWritableCached lazfilecache/tfilestatecache.fileiswritablecached.html
-   FileIsTextCached lazfilecache/tfilestatecache.fileistextcached.html
-   FileAgeCached lazfilecache/tfilestatecache.fileagecached.html
-   GetPhysicalFilenameCached lazfilecache/tfilestatecache.getphysicalfilenamecached.html
-   FindFile lazfilecache/tfilestatecache.findfile.html
-   Check lazfilecache/tfilestatecache.check.html
-   AddChangeTimeStampHandler lazfilecache/tfilestatecache.addchangetimestamphandler.html
-   RemoveChangeTimeStampHandler lazfilecache/tfilestatecache.removechangetimestamphandler.html
-   CalcMemSize lazfilecache/tfilestatecache.calcmemsize.html
-   TimeStamp lazfilecache/tfilestatecache.timestamp.html
-  FileExistsCached lazfilecache/fileexistscached.html
-  DirPathExistsCached lazfilecache/dirpathexistscached.html
-  DirectoryIsWritableCached lazfilecache/directoryiswritablecached.html
-  FileIsExecutableCached lazfilecache/fileisexecutablecached.html
-  FileIsReadableCached lazfilecache/fileisreadablecached.html
-  FileIsWritableCached lazfilecache/fileiswritablecached.html
-  FileIsTextCached lazfilecache/fileistextcached.html
-  FileAgeCached lazfilecache/fileagecached.html
-  GetPhysicalFilenameCached lazfilecache/getphysicalfilenamecached.html
-  InvalidateFileStateCache lazfilecache/invalidatefilestatecache.html
-  CompareFileStateItems lazfilecache/comparefilestateitems.html
-  CompareFilenameWithFileStateCacheItem lazfilecache/comparefilenamewithfilestatecacheitem.html
-  LUIncreaseChangeStamp lazfilecache/luincreasechangestamp.html
-  LUIncreaseChangeStamp64 lazfilecache/luincreasechangestamp64.html
-  FileStateCache lazfilecache/filestatecache.html
-  OnFileExistsCached lazfilecache/onfileexistscached.html
-  OnFileAgeCached lazfilecache/onfileagecached.html
  laz2_XMLRead laz2_xmlread/index.html
   TErrorSeverity laz2_xmlread/terrorseverity.html
   TXMLReaderFlag laz2_xmlread/txmlreaderflag.html
@@ -2243,29 +1842,11 @@
   ReadXMLFragment laz2_xmlread/readxmlfragment.html
   ReadDTDFile laz2_xmlread/readdtdfile.html
   RegisterDecoder laz2_xmlread/registerdecoder.html
- LazUTF8Classes lazutf8classes/index.html
-  TFileStreamUTF8 lazutf8classes/tfilestreamutf8.html
-  TStringListUTF8 lazutf8classes/tstringlistutf8.html
-   DoCompareText lazutf8classes/tstringlistutf8.docomparetext.html
-   LoadFromFile 
-   SaveToFile 
-  TMemoryStreamUTF8 lazutf8classes/tmemorystreamutf8.html
-   LoadFromFile ms-its:rtl.chm::/classes/tmemorystream.loadfromfile.html
-   SaveToFile 
-  LoadStringsFromFileUTF8 lazutf8classes/loadstringsfromfileutf8.html
-  SaveStringsToFileUTF8 lazutf8classes/savestringstofileutf8.html
-  CompareStringListItemsUTF8LowerCase lazutf8classes/comparestringlistitemsutf8lowercase.html
  laz2_XMLWrite laz2_xmlwrite/index.html
   TXMLWriterFlag laz2_xmlwrite/txmlwriterflag.html
   TXMLWriterFlags laz2_xmlwrite/txmlwriterflags.html
   WriteXMLFile laz2_xmlwrite/writexmlfile.html
   WriteXML laz2_xmlwrite/writexml.html
- LazUtilities lazutilities/index.html
-  FreeThenNil lazutilities/freethennil.html
-  ComparePointers lazutilities/comparepointers.html
-  CompareBoolean lazutilities/compareboolean.html
-  MergeSortWithLen lazutilities/mergesortwithlen.html
-  ConsoleVerbosity lazutilities/consoleverbosity.html
  laz2_xpath laz2_xpath/index.html
   TXPathToken laz2_xpath/txpathtoken.html
   TXPathKeyword laz2_xpath/txpathkeyword.html
@@ -2433,7 +2014,28 @@
    Acquire lazcollections/tlazmonitor.acquire.html
    SpinCount lazcollections/tlazmonitor.spincount.html
    DefaultSpinCount lazcollections/tlazmonitor.defaultspincount.html
+  TLazFifoQueue lazcollections/tlazfifoqueue.html
+   FTotalItemsPopped lazcollections/tlazfifoqueue.ftotalitemspopped.html
+   FTotalItemsPushed lazcollections/tlazfifoqueue.ftotalitemspushed.html
+   GetIsEmpty lazcollections/tlazfifoqueue.getisempty.html
+   GetIsFull lazcollections/tlazfifoqueue.getisfull.html
+   create lazcollections/tlazfifoqueue.create.html
+   Grow lazcollections/tlazfifoqueue.grow.html
+   PushItem lazcollections/tlazfifoqueue.pushitem.html
+   PopItem lazcollections/tlazfifoqueue.popitem.html
+   QueueSize lazcollections/tlazfifoqueue.queuesize.html
+   TotalItemsPopped lazcollections/tlazfifoqueue.totalitemspopped.html
+   TotalItemsPushed lazcollections/tlazfifoqueue.totalitemspushed.html
+   IsEmpty lazcollections/tlazfifoqueue.isempty.html
+   IsFull lazcollections/tlazfifoqueue.isfull.html
   TLazThreadedQueue lazcollections/tlazthreadedqueue.html
+   TLazTypedFifoQueue lazcollections/tlazthreadedqueue.tlaztypedfifoqueue.html
+   TryPushItemUnprotected lazcollections/tlazthreadedqueue.trypushitemunprotected.html
+   TryPopItemUnprotected lazcollections/tlazthreadedqueue.trypopitemunprotected.html
+   Lock lazcollections/tlazthreadedqueue.lock.html
+   Unlock lazcollections/tlazthreadedqueue.unlock.html
+   CreateFifoQueue lazcollections/tlazthreadedqueue.createfifoqueue.html
+   FifoQueue lazcollections/tlazthreadedqueue.fifoqueue.html
    create lazcollections/tlazthreadedqueue.create.html
    Destroy lazcollections/tlazthreadedqueue.destroy.html
    Grow lazcollections/tlazthreadedqueue.grow.html
@@ -2524,7 +2126,7 @@
   DOMString laz_dom/domstring.html
   DOMPChar laz_dom/dompchar.html
   EDOMError laz_dom/edomerror.html
- lazfglhash lazfglhash/index.html
+ LazFglHash lazfglhash/index.html
   TLazHTGNode lazfglhash/tlazhtgnode.html
    Data lazfglhash/tlazhtgnode.data.html
   TLazFPGHashTable lazfglhash/tlazfpghashtable.html
@@ -2538,106 +2140,6 @@
    Iterate lazfglhash/tlazfpghashtable.iterate.html
    Add lazfglhash/tlazfpghashtable.add.html
    Items lazfglhash/tlazfpghashtable.items.html
- LazFreeTypeFontCollection lazfreetypefontcollection/index.html
-  TFontCollectionItem lazfreetypefontcollection/tfontcollectionitem.html
-   GetFilename lazfreetypefontcollection/tfontcollectionitem.getfilename.html
-   GetBold lazfreetypefontcollection/tfontcollectionitem.getbold.html
-   GetInformation lazfreetypefontcollection/tfontcollectionitem.getinformation.html
-   GetItalic lazfreetypefontcollection/tfontcollectionitem.getitalic.html
-   GetStyleCount lazfreetypefontcollection/tfontcollectionitem.getstylecount.html
-   GetStyles lazfreetypefontcollection/tfontcollectionitem.getstyles.html
-   GetStyle lazfreetypefontcollection/tfontcollectionitem.getstyle.html
-   GetVersionNumber lazfreetypefontcollection/tfontcollectionitem.getversionnumber.html
-   NotifyDestroy lazfreetypefontcollection/tfontcollectionitem.notifydestroy.html
-   Init lazfreetypefontcollection/tfontcollectionitem.init.html
-   Create lazfreetypefontcollection/tfontcollectionitem.create.html
-   Destroy lazfreetypefontcollection/tfontcollectionitem.destroy.html
-   HasStyle lazfreetypefontcollection/tfontcollectionitem.hasstyle.html
-   Information lazfreetypefontcollection/tfontcollectionitem.information.html
-   VersionNumber lazfreetypefontcollection/tfontcollectionitem.versionnumber.html
-   CreateFont lazfreetypefontcollection/tfontcollectionitem.createfont.html
-   QueryFace lazfreetypefontcollection/tfontcollectionitem.queryface.html
-   ReleaseFace lazfreetypefontcollection/tfontcollectionitem.releaseface.html
-   UsePostscriptStyle lazfreetypefontcollection/tfontcollectionitem.usepostscriptstyle.html
-  TFamilyCollectionItem lazfreetypefontcollection/tfamilycollectionitem.html
-   GetFontByIndex lazfreetypefontcollection/tfamilycollectionitem.getfontbyindex.html
-   GetFontByStyles lazfreetypefontcollection/tfamilycollectionitem.getfontbystyles.html
-   GetFontIndexByStyles lazfreetypefontcollection/tfamilycollectionitem.getfontindexbystyles.html
-   GetStyle lazfreetypefontcollection/tfamilycollectionitem.getstyle.html
-   AddStyle lazfreetypefontcollection/tfamilycollectionitem.addstyle.html
-   RemoveStyle lazfreetypefontcollection/tfamilycollectionitem.removestyle.html
-   GetStyles lazfreetypefontcollection/tfamilycollectionitem.getstyles.html
-   GetFamilyName lazfreetypefontcollection/tfamilycollectionitem.getfamilyname.html
-   GetFontCount lazfreetypefontcollection/tfamilycollectionitem.getfontcount.html
-   GetStyleCount lazfreetypefontcollection/tfamilycollectionitem.getstylecount.html
-   RebuildStyleList lazfreetypefontcollection/tfamilycollectionitem.rebuildstylelist.html
-   Create lazfreetypefontcollection/tfamilycollectionitem.create.html
-   AddFont lazfreetypefontcollection/tfamilycollectionitem.addfont.html
-   RemoveFont lazfreetypefontcollection/tfamilycollectionitem.removefont.html
-   GetFont lazfreetypefontcollection/tfamilycollectionitem.getfont.html
-   GetFontIndex lazfreetypefontcollection/tfamilycollectionitem.getfontindex.html
-   HasStyle lazfreetypefontcollection/tfamilycollectionitem.hasstyle.html
-  TFreeTypeFontCollection lazfreetypefontcollection/tfreetypefontcollection.html
-   GetFont lazfreetypefontcollection/tfreetypefontcollection.getfont.html
-   GetFamily lazfreetypefontcollection/tfreetypefontcollection.getfamily.html
-   GetFamilyCount lazfreetypefontcollection/tfreetypefontcollection.getfamilycount.html
-   GetFontCount lazfreetypefontcollection/tfreetypefontcollection.getfontcount.html
-   RemoveAndFreeFamily lazfreetypefontcollection/tfreetypefontcollection.removeandfreefamily.html
-   Create lazfreetypefontcollection/tfreetypefontcollection.create.html
-   Clear lazfreetypefontcollection/tfreetypefontcollection.clear.html
-   BeginUpdate lazfreetypefontcollection/tfreetypefontcollection.beginupdate.html
-   AddFolder lazfreetypefontcollection/tfreetypefontcollection.addfolder.html
-   RemoveFolder lazfreetypefontcollection/tfreetypefontcollection.removefolder.html
-   AddFile lazfreetypefontcollection/tfreetypefontcollection.addfile.html
-   RemoveFile lazfreetypefontcollection/tfreetypefontcollection.removefile.html
-   AddStream lazfreetypefontcollection/tfreetypefontcollection.addstream.html
-   EndUpdate lazfreetypefontcollection/tfreetypefontcollection.endupdate.html
-   Destroy lazfreetypefontcollection/tfreetypefontcollection.destroy.html
-   FontFileEnumerator lazfreetypefontcollection/tfreetypefontcollection.fontfileenumerator.html
-   FamilyEnumerator lazfreetypefontcollection/tfreetypefontcollection.familyenumerator.html
-  SetDefaultFreeTypeFontCollection lazfreetypefontcollection/setdefaultfreetypefontcollection.html
- LazFreeTypeFPImageDrawer lazfreetypefpimagedrawer/index.html
-  TLazIntfImageGetPixelAtProc lazfreetypefpimagedrawer/tlazintfimagegetpixelatproc.html
-  TLazIntfImageSetPixelAtProc lazfreetypefpimagedrawer/tlazintfimagesetpixelatproc.html
-  TFPImageFreeTypeDrawer lazfreetypefpimagedrawer/tfpimagefreetypedrawer.html
-   FImage lazfreetypefpimagedrawer/tfpimagefreetypedrawer.fimage.html
-   MoveToPixel lazfreetypefpimagedrawer/tfpimagefreetypedrawer.movetopixel.html
-   GetCurrentColor lazfreetypefpimagedrawer/tfpimagefreetypedrawer.getcurrentcolor.html
-   SetCurrentColorAndMoveRight lazfreetypefpimagedrawer/tfpimagefreetypedrawer.setcurrentcolorandmoveright.html
-   MoveRight lazfreetypefpimagedrawer/tfpimagefreetypedrawer.moveright.html
-   GetClipRect lazfreetypefpimagedrawer/tfpimagefreetypedrawer.getcliprect.html
-   RenderDirectly lazfreetypefpimagedrawer/tfpimagefreetypedrawer.renderdirectly.html
-   RenderDirectlyClearType lazfreetypefpimagedrawer/tfpimagefreetypedrawer.renderdirectlycleartype.html
-   InternalMergeColorOver lazfreetypefpimagedrawer/tfpimagefreetypedrawer.internalmergecolorover.html
-   MergeColorOver lazfreetypefpimagedrawer/tfpimagefreetypedrawer.mergecolorover.html
-   DrawPixelAndMoveRight lazfreetypefpimagedrawer/tfpimagefreetypedrawer.drawpixelandmoveright.html
-   ClearTypePixelAndMoveRight lazfreetypefpimagedrawer/tfpimagefreetypedrawer.cleartypepixelandmoveright.html
-   UnclippedDrawPixel lazfreetypefpimagedrawer/tfpimagefreetypedrawer.unclippeddrawpixel.html
-   ClearTypeRGBOrder lazfreetypefpimagedrawer/tfpimagefreetypedrawer.cleartypergborder.html
-   Create lazfreetypefpimagedrawer/tfpimagefreetypedrawer.create.html
-   DrawPixel lazfreetypefpimagedrawer/tfpimagefreetypedrawer.drawpixel.html
-   ClearTypePixel lazfreetypefpimagedrawer/tfpimagefreetypedrawer.cleartypepixel.html
-   SetVertLine lazfreetypefpimagedrawer/tfpimagefreetypedrawer.setvertline.html
-   DrawVertLine lazfreetypefpimagedrawer/tfpimagefreetypedrawer.drawvertline.html
-   SetHorizLine lazfreetypefpimagedrawer/tfpimagefreetypedrawer.sethorizline.html
-   DrawHorizLine lazfreetypefpimagedrawer/tfpimagefreetypedrawer.drawhorizline.html
-   FillPixels lazfreetypefpimagedrawer/tfpimagefreetypedrawer.fillpixels.html
-   DrawText lazfreetypefpimagedrawer/tfpimagefreetypedrawer.drawtext.html
-   DrawGlyph lazfreetypefpimagedrawer/tfpimagefreetypedrawer.drawglyph.html
-   Destroy lazfreetypefpimagedrawer/tfpimagefreetypedrawer.destroy.html
-   Image lazfreetypefpimagedrawer/tfpimagefreetypedrawer.image.html
-  TFPMemoryImageWithScanline lazfreetypefpimagedrawer/tfpmemoryimagewithscanline.html
-   GetScanline lazfreetypefpimagedrawer/tfpmemoryimagewithscanline.getscanline.html
-   SetUsePalette lazfreetypefpimagedrawer/tfpmemoryimagewithscanline.setusepalette.html
-   ScanLine lazfreetypefpimagedrawer/tfpmemoryimagewithscanline.scanline.html
-  TFPImageWithScanlineFreeTypeDrawer lazfreetypefpimagedrawer/tfpimagewithscanlinefreetypedrawer.html
-   FCurrentColor lazfreetypefpimagedrawer/tfpimagewithscanlinefreetypedrawer.fcurrentcolor.html
-   MoveToPixel lazfreetypefpimagedrawer/tfpimagewithscanlinefreetypedrawer.movetopixel.html
-   GetCurrentColor lazfreetypefpimagedrawer/tfpimagewithscanlinefreetypedrawer.getcurrentcolor.html
-   SetCurrentColorAndMoveRight lazfreetypefpimagedrawer/tfpimagewithscanlinefreetypedrawer.setcurrentcolorandmoveright.html
-   MoveRight lazfreetypefpimagedrawer/tfpimagewithscanlinefreetypedrawer.moveright.html
-   GetClipRect lazfreetypefpimagedrawer/tfpimagewithscanlinefreetypedrawer.getcliprect.html
-   Create lazfreetypefpimagedrawer/tfpimagewithscanlinefreetypedrawer.create.html
  LazLinkedList lazlinkedlist/index.html
   TLinkListItem lazlinkedlist/tlinklistitem.html
    Next lazlinkedlist/tlinklistitem.next.html
@@ -2849,13 +2351,14 @@
   DbgSName lazloggerdummy/dbgsname.html
   dbgObjMem lazloggerdummy/dbgobjmem.html
   dbghex lazloggerdummy/dbghex.html
+  DbgSTime lazloggerdummy/dbgstime.html
   dbgMemRange lazloggerdummy/dbgmemrange.html
   dbgMemStream lazloggerdummy/dbgmemstream.html
   DumpExceptionBackTrace lazloggerdummy/dumpexceptionbacktrace.html
-  assign(PLazLoggerLogGroup):TLazLoggerLogEnabled lazloggerdummy/op-assign-plazloggerloggroup-tlazloggerlogenabled.html
-  assign(Boolean):TLazLoggerLogEnabled lazloggerdummy/op-assign-boolean-tlazloggerlogenabled.html
-  logicaland(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerdummy/op-logicaland-tlazloggerlogenabled-tlazloggerlogenabled-tlazloggerlogenabled.html
-  logicalor(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerdummy/op-logicalor-tlazloggerlogenabled-tlazloggerlogenabled-tlazloggerlogenabled.html
+  assign(PLazLoggerLogGroup):TLazLoggerLogEnabled lazloggerdummy/.op-assign-plazloggerloggroup-lazloggerlogenabled.html
+  assign(Boolean):TLazLoggerLogEnabled lazloggerdummy/.op-assign-boolean-lazloggerlogenabled.html
+  logicaland(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerdummy/.op-logicaland-tlazloggerlogenabled-lazloggerlogenabled-lazloggerlogenabled.html
+  logicalor(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerdummy/.op-logicalor-tlazloggerlogenabled-lazloggerlogenabled-lazloggerlogenabled.html
   GetDebugLoggerGroups lazloggerdummy/getdebugloggergroups.html
   SetDebugLoggerGroups lazloggerdummy/setdebugloggergroups.html
   GetDebugLogger lazloggerdummy/getdebuglogger.html
@@ -2929,21 +2432,26 @@
   DbgSName lazlogger/dbgsname.html
   dbgObjMem lazlogger/dbgobjmem.html
   dbghex lazlogger/dbghex.html
+  DbgSTime lazlogger/dbgstime.html
   dbgMemRange lazlogger/dbgmemrange.html
   dbgMemStream lazlogger/dbgmemstream.html
   DumpExceptionBackTrace lazlogger/dumpexceptionbacktrace.html
-  assign(PLazLoggerLogGroup):TLazLoggerLogEnabled lazlogger/op-assign-plazloggerloggroup-tlazloggerlogenabled.html
-  assign(Boolean):TLazLoggerLogEnabled lazlogger/op-assign-boolean-tlazloggerlogenabled.html
-  logicaland(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazlogger/op-logicaland-tlazloggerlogenabled-tlazloggerlogenabled-tlazloggerlogenabled.html
-  logicalor(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazlogger/op-logicalor-tlazloggerlogenabled-tlazloggerlogenabled-tlazloggerlogenabled.html
+  assign(PLazLoggerLogGroup):TLazLoggerLogEnabled lazlogger/.op-assign-plazloggerloggroup-lazloggerlogenabled.html
+  assign(Boolean):TLazLoggerLogEnabled lazlogger/.op-assign-boolean-lazloggerlogenabled.html
+  logicaland(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazlogger/.op-logicaland-tlazloggerlogenabled-lazloggerlogenabled-lazloggerlogenabled.html
+  logicalor(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazlogger/.op-logicalor-tlazloggerlogenabled-lazloggerlogenabled-lazloggerlogenabled.html
   DbgStr lazlogger/dbgstr.html
   DbgWideStr lazlogger/dbgwidestr.html
   GetDebugLogger lazlogger/getdebuglogger.html
   SetDebugLogger lazlogger/setdebuglogger.html
  LazStringUtils lazstringutils/index.html
   EndOfLine lazstringutils/endofline.html
+  MaxTextLen lazstringutils/maxtextlen.html
   TCommentType lazstringutils/tcommenttype.html
   TCommentTypes lazstringutils/tcommenttypes.html
+  PosI lazstringutils/posi.html
+  LazStartsText lazstringutils/lazstartstext.html
+  LazEndsText lazstringutils/lazendstext.html
   IsNumber lazstringutils/isnumber.html
   LineEndingCount lazstringutils/lineendingcount.html
   ChangeLineEndings lazstringutils/changelineendings.html
@@ -2956,6 +2464,8 @@
   BinaryStrToText lazstringutils/binarystrtotext.html
   SpecialCharsToSpaces lazstringutils/specialcharstospaces.html
   SpecialCharsToHex lazstringutils/specialcharstohex.html
+  ShortDotsLine lazstringutils/shortdotsline.html
+  BeautifyLineXY lazstringutils/beautifylinexy.html
   BreakString lazstringutils/breakstring.html
   SplitString lazstringutils/splitstring.html
   StringListToText lazstringutils/stringlisttotext.html
@@ -2970,20 +2480,11 @@
   GetPart lazstringutils/getpart.html
   TextToSingleLine lazstringutils/texttosingleline.html
   SwapCase lazstringutils/swapcase.html
+  ReplaceSubstring lazstringutils/replacesubstring.html
   StringCase lazstringutils/stringcase.html
   SamePChar lazstringutils/samepchar.html
   StrLScan lazstringutils/strlscan.html
   LazIsValidIdent lazstringutils/lazisvalidident.html
- LazTracer laztracer/index.html
-  TStackTracePointers laztracer/tstacktracepointers.html
-  TLineInfoCacheItem laztracer/tlineinfocacheitem.html
-  PLineInfoCacheItem laztracer/plineinfocacheitem.html
-  RaiseGDBException laztracer/raisegdbexception.html
-  RaiseAndCatchException laztracer/raiseandcatchexception.html
-  GetStackTrace laztracer/getstacktrace.html
-  GetStackTracePointers laztracer/getstacktracepointers.html
-  StackTraceAsString laztracer/stacktraceasstring.html
-  GetLineInfo laztracer/getlineinfo.html
  LazLoggerProfiling lazloggerprofiling/index.html
   TLazLoggerBlockTimer lazloggerprofiling/tlazloggerblocktimer.html
    Create lazloggerprofiling/tlazloggerblocktimer.create.html
@@ -3005,6 +2506,8 @@
   DbgStopTimer lazloggerprofiling/dbgstoptimer.html
   DbgStartMemWatch lazloggerprofiling/dbgstartmemwatch.html
   DbgStopMemWatch lazloggerprofiling/dbgstopmemwatch.html
+ LazPasReadUtil lazpasreadutil/index.html
+  ExecCustomCSP lazpasreadutil/execcustomcsp.html
  LazUnicode lazunicode/index.html
   TUnicodeEnumeratorBase lazunicode/tunicodeenumeratorbase.html
    Create lazunicode/tunicodeenumeratorbase.create.html
@@ -3023,8 +2526,8 @@
   UnicodeToWinCP lazunicode/unicodetowincp.html
   WinCPToUnicode lazunicode/wincptounicode.html
   StringOfCodePoint lazunicode/stringofcodepoint.html
+  enumerator(string):TUnicodeCharacterEnumerator lazunicode/.op-enumerator-string-unicodecharacterenumerator.html
  LazUTF16 lazutf16/index.html
-  PtrInt lazutf16/ptrint.html
   UTF16CharacterLength lazutf16/utf16characterlength.html
   UTF16Length lazutf16/utf16length.html
   UTF16Copy lazutf16/utf16copy.html
@@ -3036,6 +2539,18 @@
   IsUTF16StringValid lazutf16/isutf16stringvalid.html
   Utf16StringReplace lazutf16/utf16stringreplace.html
   UnicodeLowercase lazutf16/unicodelowercase.html
+  UTF8LowerCaseViaTables lazutf16/utf8lowercaseviatables.html
+ LazUTF8Classes lazutf8classes/index.html
+  TFileStreamUTF8 lazutf8classes/tfilestreamutf8.html
+  TStringListUTF8 lazutf8classes/tstringlistutf8.html
+   DoCompareText lazutf8classes/tstringlistutf8.docomparetext.html
+   LoadFromFile 
+   SaveToFile 
+  TMemoryStreamUTF8 lazutf8classes/tmemorystreamutf8.html
+   LoadFromFile ms-its:rtl.chm::/classes/tmemorystream.loadfromfile.html
+   SaveToFile 
+  LoadStringsFromFileUTF8 lazutf8classes/loadstringsfromfileutf8.html
+  SaveStringsToFileUTF8 lazutf8classes/savestringstofileutf8.html
  LazUTF8SysUtils lazutf8sysutils/index.html
   NowUTC lazutf8sysutils/nowutc.html
   GetTickCount64 lazutf8sysutils/gettickcount64.html
@@ -3079,6 +2594,7 @@
    WriteSet laz_xmlstreaming/txmlobjectwriter.writeset.html
    WriteString laz_xmlstreaming/txmlobjectwriter.writestring.html
    WriteWideString laz_xmlstreaming/txmlobjectwriter.writewidestring.html
+   WriteSignature laz_xmlstreaming/txmlobjectwriter.writesignature.html
    WriteUInt64 laz_xmlstreaming/txmlobjectwriter.writeuint64.html
    WriteUnicodeString laz_xmlstreaming/txmlobjectwriter.writeunicodestring.html
    WriteVariant laz_xmlstreaming/txmlobjectwriter.writevariant.html
@@ -3107,6 +2623,7 @@
    ReadStr laz_xmlstreaming/txmlobjectreader.readstr.html
    ReadString laz_xmlstreaming/txmlobjectreader.readstring.html
    ReadWideString laz_xmlstreaming/txmlobjectreader.readwidestring.html
+   ReadSignature laz_xmlstreaming/txmlobjectreader.readsignature.html
    ReadUnicodeString laz_xmlstreaming/txmlobjectreader.readunicodestring.html
    SkipComponent laz_xmlstreaming/txmlobjectreader.skipcomponent.html
    SkipValue laz_xmlstreaming/txmlobjectreader.skipvalue.html
@@ -3119,6 +2636,13 @@
   xwfOldXMLWrite laz_xmlwrite/xwfoldxmlwrite.html
   WriteXMLFile laz_xmlwrite/writexmlfile.html
   WriteXML laz_xmlwrite/writexml.html
+ LazVersion lazversion/index.html
+  laz_major lazversion/laz_major.html
+  laz_minor lazversion/laz_minor.html
+  laz_release lazversion/laz_release.html
+  laz_patch lazversion/laz_patch.html
+  laz_fullversion lazversion/laz_fullversion.html
+  laz_version lazversion/laz_version.html
  lcsvutils lcsvutils/index.html
   TCSVRecordProc lcsvutils/tcsvrecordproc.html
   TCSVEncoding lcsvutils/tcsvencoding.html
@@ -3148,7 +2672,11 @@
   PMapID maps/pmapid.html
   TMapID maps/tmapid.html
   TMapItem maps/tmapitem.html
+  TLockedMapModifyException maps/tlockedmapmodifyexception.html
+   Create maps/tlockedmapmodifyexception.create.html
   TBaseMap maps/tbasemap.html
+   LockMap maps/tbasemap.lockmap.html
+   UnLockMap maps/tbasemap.unlockmap.html
    InternalAdd maps/tbasemap.internaladd.html
    InternalGetData maps/tbasemap.internalgetdata.html
    InternalGetDataPtr maps/tbasemap.internalgetdataptr.html
@@ -3161,6 +2689,8 @@
    Delete maps/tbasemap.delete.html
    Destroy maps/tbasemap.destroy.html
   TBaseMapIterator maps/tbasemapiterator.html
+   AddToMap maps/tbasemapiterator.addtomap.html
+   RemoveFromMap maps/tbasemapiterator.removefrommap.html
    InternalCreate maps/tbasemapiterator.internalcreate.html
    InternalLocate maps/tbasemapiterator.internallocate.html
    Validate maps/tbasemapiterator.validate.html
@@ -3176,27 +2706,30 @@
    EOM maps/tbasemapiterator.eom.html
   TMap maps/tmap.html
    HasId maps/tmap.hasid.html
-   Add 
-   GetData 
-   GetDataPtr 
-   SetData 
+   Add maps/tbasemap.internaladd.html
+   GetData maps/tbasemap.internalgetdata.html
+   GetDataPtr maps/tbasemap.internalgetdataptr.html
+   SetData maps/tbasemap.internalsetdata.html
   TMapIterator maps/tmapiterator.html
-   Create 
-   DataPtr 
-   GetData 
-   GetID 
-   Locate 
-   SetData 
+   Create maps/tbasemapiterator.internalcreate.html
+   DataPtr maps/tbasemap.internalgetdataptr.html
+   GetData maps/tbasemap.internalgetdata.html
+   GetID maps/tbasemap.internalgetid.html
+   Locate maps/tbasemapiterator.internallocate.html
+   SetData maps/tbasemap.internalsetdata.html
+  TLockedMapIterator maps/tlockedmapiterator.html
+   AddToMap maps/tlockedmapiterator.addtomap.html
+   RemoveFromMap maps/tlockedmapiterator.removefrommap.html
   TTypedMap maps/ttypedmap.html
    Create maps/ttypedmap.create.html
-   InternalSetData 
-   ReleaseData 
-   Add 
-   Destroy 
-   HasId 
-   GetData 
-   GetDataPtr 
-   SetData 
+   InternalSetData maps/tbasemap.internalsetdata.html
+   ReleaseData maps/tbasemap.releasedata.html
+   Add maps/tbasemap.internaladd.html
+   Destroy maps/tbasemap.destroy.html
+   HasId maps/tmap.hasid.html
+   GetData maps/tbasemap.internalgetdata.html
+   GetDataPtr maps/tbasemap.internalgetdataptr.html
+   SetData maps/tbasemap.internalsetdata.html
   TTypedMapIterator maps/ttypedmapiterator.html
    Create maps/ttypedmapiterator.create.html
    GetData maps/ttypedmapiterator.getdata.html
@@ -3204,8 +2737,38 @@
    Locate maps/ttypedmapiterator.locate.html
    SetData maps/ttypedmapiterator.setdata.html
   MapReport maps/mapreport.html
- PasWString paswstring/index.html
-  SetPasWidestringManager paswstring/setpaswidestringmanager.html
+ ObjectLists objectlists/index.html
+  T2Pointer objectlists/t2pointer.html
+  P2Pointer objectlists/p2pointer.html
+  TObjectArray objectlists/tobjectarray.html
+   Get objectlists/tobjectarray.get.html
+   Put objectlists/tobjectarray.put.html
+   GetObject objectlists/tobjectarray.getobject.html
+   PutObject objectlists/tobjectarray.putobject.html
+   SetCapacity objectlists/tobjectarray.setcapacity.html
+   SetCount objectlists/tobjectarray.setcount.html
+   Grow objectlists/tobjectarray.grow.html
+   Shrink objectlists/tobjectarray.shrink.html
+   Destroy objectlists/tobjectarray.destroy.html
+   Add objectlists/tobjectarray.add.html
+   AddObject objectlists/tobjectarray.addobject.html
+   Clear objectlists/tobjectarray.clear.html
+   Delete objectlists/tobjectarray.delete.html
+   Exchange objectlists/tobjectarray.exchange.html
+   First objectlists/tobjectarray.first.html
+   IndexOf objectlists/tobjectarray.indexof.html
+   Insert objectlists/tobjectarray.insert.html
+   InsertObject objectlists/tobjectarray.insertobject.html
+   Last objectlists/tobjectarray.last.html
+   Move objectlists/tobjectarray.move.html
+   Assign objectlists/tobjectarray.assign.html
+   Remove objectlists/tobjectarray.remove.html
+   Pack objectlists/tobjectarray.pack.html
+   Capacity objectlists/tobjectarray.capacity.html
+   Count objectlists/tobjectarray.count.html
+   Items objectlists/tobjectarray.items.html
+   Objects objectlists/tobjectarray.objects.html
+   List objectlists/tobjectarray.list.html
  StringHashList stringhashlist/index.html
   PStringHashItem stringhashlist/pstringhashitem.html
   TStringHashItem stringhashlist/tstringhashitem.html
@@ -3353,272 +2916,6 @@
   UpdatePoFile translations/updatepofile.html
   UpdatePoFileTranslations translations/updatepofiletranslations.html
   SystemCharSetIsUTF8 translations/systemcharsetisutf8.html
- TTCache ttcache/index.html
-  PList_Element ttcache/plist_element.html
-  TList_Element ttcache/tlist_element.html
-  TSingle_List ttcache/tsingle_list.html
-  TConstructor ttcache/tconstructor.html
-  TDestructor ttcache/tdestructor.html
-  PCache_Class ttcache/pcache_class.html
-  TCache_Class ttcache/tcache_class.html
-  PCache ttcache/pcache.html
-  TCache ttcache/tcache.html
-  Cache_Create ttcache/cache_create.html
-  Cache_Destroy ttcache/cache_destroy.html
-  Cache_New ttcache/cache_new.html
-  Cache_Done ttcache/cache_done.html
-  Element_New ttcache/element_new.html
-  Element_Done ttcache/element_done.html
-  TTCache_Init ttcache/ttcache_init.html
-  TTCache_Done ttcache/ttcache_done.html
- TTCalc ttcalc/index.html
-  Int32 ttcalc/int32.html
-  Word32 ttcalc/word32.html
-  MulDiv ttcalc/muldiv.html
-  MulDiv_Round ttcalc/muldiv_round.html
-  MulTo64 ttcalc/multo64.html
-  Div64by32 ttcalc/div64by32.html
-  Order64 ttcalc/order64.html
-  Order32 ttcalc/order32.html
-  Sqrt32 ttcalc/sqrt32.html
-  Sqrt64 ttcalc/sqrt64.html
- TTCMap ttcmap/index.html
-  TCMap0 ttcmap/tcmap0.html
-  TCMap2SubHeader ttcmap/tcmap2subheader.html
-  TCMap2SubHeaders ttcmap/tcmap2subheaders.html
-  PCMap2SubHeaders ttcmap/pcmap2subheaders.html
-  TCMap2 ttcmap/tcmap2.html
-  TCMap4Segment ttcmap/tcmap4segment.html
-  TCMap4Segments ttcmap/tcmap4segments.html
-  PCMap4Segments ttcmap/pcmap4segments.html
-  TCMap4 ttcmap/tcmap4.html
-  TCMap6 ttcmap/tcmap6.html
-  PCMapTable ttcmap/pcmaptable.html
-  TCMapTable ttcmap/tcmaptable.html
-  TCMapTables ttcmap/tcmaptables.html
-  PCMapTables ttcmap/pcmaptables.html
-  CharMap_Load ttcmap/charmap_load.html
-  CharMap_Free ttcmap/charmap_free.html
-  CharMap_Index ttcmap/charmap_index.html
- TTDebug ttdebug/index.html
-  ByteHexStr ttdebug/bytehexstr.html
-  ShortHexStr ttdebug/shorthexstr.html
-  LongHexStr ttdebug/longhexstr.html
-  DebugStr ttdebug/debugstr.html
-  PBreakPoint ttdebug/pbreakpoint.html
-  TBreakPoint ttdebug/tbreakpoint.html
-  PRangeRec ttdebug/prangerec.html
-  TRangeRec ttdebug/trangerec.html
-  Generate_Range ttdebug/generate_range.html
-  Throw_Range ttdebug/throw_range.html
-  Toggle_Break ttdebug/toggle_break.html
-  Set_Break ttdebug/set_break.html
-  Clear_Break ttdebug/clear_break.html
-  Clear_All_Breaks ttdebug/clear_all_breaks.html
-  Find_BreakPoint ttdebug/find_breakpoint.html
-  Cur_U_Line ttdebug/cur_u_line.html
-  Get_Length ttdebug/get_length.html
-  Get_Dis_Line ttdebug/get_dis_line.html
-  Hex8 ttdebug/hex8.html
-  Hex16 ttdebug/hex16.html
-  Hex32 ttdebug/hex32.html
- TTObjs ttobjs/index.html
-  Default_GraphicsState ttobjs/default_graphicsstate.html
-  MaxCodeRanges ttobjs/maxcoderanges.html
-  TT_CodeRange_Font ttobjs/tt_coderange_font.html
-  TT_CodeRange_Cvt ttobjs/tt_coderange_cvt.html
-  TT_CodeRange_Glyph ttobjs/tt_coderange_glyph.html
-  CvtFlag_None ttobjs/cvtflag_none.html
-  CvtFlag_X ttobjs/cvtflag_x.html
-  CvtFlag_Y ttobjs/cvtflag_y.html
-  CvtFlag_Both ttobjs/cvtflag_both.html
-  PGraphicsState ttobjs/pgraphicsstate.html
-  TGraphicsState ttobjs/tgraphicsstate.html
-  TCodeRange ttobjs/tcoderange.html
-  PCodeRange ttobjs/pcoderange.html
-  TCodeRangeTable ttobjs/tcoderangetable.html
-  PDefRecord ttobjs/pdefrecord.html
-  TDefRecord ttobjs/tdefrecord.html
-  PDefArray ttobjs/pdefarray.html
-  TDefArray ttobjs/tdefarray.html
-  TCallRecord ttobjs/tcallrecord.html
-  TCallStack ttobjs/tcallstack.html
-  PCallStack ttobjs/pcallstack.html
-  PGlyph_Zone ttobjs/pglyph_zone.html
-  TGlyph_Zone ttobjs/tglyph_zone.html
-  TRound_Function ttobjs/tround_function.html
-  TMove_Function ttobjs/tmove_function.html
-  TProject_Function ttobjs/tproject_function.html
-  TFunc_Get_CVT ttobjs/tfunc_get_cvt.html
-  TFunc_Set_CVT ttobjs/tfunc_set_cvt.html
-  PGlyph_Transform ttobjs/pglyph_transform.html
-  TGlyph_Transform ttobjs/tglyph_transform.html
-  PSubglyph_Record ttobjs/psubglyph_record.html
-  TSubglyph_Record ttobjs/tsubglyph_record.html
-  TSubglyph_Stack ttobjs/tsubglyph_stack.html
-  PSubglyph_Stack ttobjs/psubglyph_stack.html
-  TIns_Metrics ttobjs/tins_metrics.html
-  PFace ttobjs/pface.html
-  PInstance ttobjs/pinstance.html
-  PExec_Context ttobjs/pexec_context.html
-  TFace ttobjs/tface.html
-  TInstance ttobjs/tinstance.html
-  TExec_Context ttobjs/texec_context.html
-  PGlyph ttobjs/pglyph.html
-  TGlyph ttobjs/tglyph.html
-  PFont_Input ttobjs/pfont_input.html
-  TFont_Input ttobjs/tfont_input.html
-  Goto_CodeRange ttobjs/goto_coderange.html
-  Get_CodeRange ttobjs/get_coderange.html
-  Set_CodeRange ttobjs/set_coderange.html
-  Clear_CodeRange ttobjs/clear_coderange.html
-  New_Context ttobjs/new_context.html
-  Done_Context ttobjs/done_context.html
-  Context_Load ttobjs/context_load.html
-  Context_Save ttobjs/context_save.html
-  Context_Run ttobjs/context_run.html
-  Instance_Init ttobjs/instance_init.html
-  Instance_Reset ttobjs/instance_reset.html
-  Scale_X ttobjs/scale_x.html
-  Scale_Y ttobjs/scale_y.html
-  TTObjs_Init ttobjs/ttobjs_init.html
-  TTObjs_Done ttobjs/ttobjs_done.html
-  face_cache ttobjs/face_cache.html
-  exec_cache ttobjs/exec_cache.html
- TTError tterror/index.html
-  Err_Ras_None tterror/err_ras_none.html
-  Err_Ras_NotIni tterror/err_ras_notini.html
-  Err_Ras_Overflow tterror/err_ras_overflow.html
-  Err_Ras_Neg_H tterror/err_ras_neg_h.html
-  Err_Ras_Invalid tterror/err_ras_invalid.html
-  Err_Ras_Invalid_Contours tterror/err_ras_invalid_contours.html
-  Check_Error tterror/check_error.html
-  Panic1 tterror/panic1.html
-  Trace1 tterror/trace1.html
-  error tterror/error.html
- TTTables tttables/index.html
-  Gasp_GridFit tttables/gasp_gridfit.html
-  Gasp_DoGray tttables/gasp_dogray.html
-  PTTCHeader tttables/pttcheader.html
-  TTTCHeader tttables/tttcheader.html
-  PTableDir tttables/ptabledir.html
-  TTableDir tttables/ttabledir.html
-  TTableDirEntry tttables/ttabledirentry.html
-  TTableDirEntries tttables/ttabledirentries.html
-  PTableDirEntries tttables/ptabledirentries.html
-  TCMapDir tttables/tcmapdir.html
-  TCMapDirEntry tttables/tcmapdirentry.html
-  TCMapDirEntries tttables/tcmapdirentries.html
-  PCMapDirEntries tttables/pcmapdirentries.html
-  TMaxProfile tttables/tmaxprofile.html
-  TGaspRange tttables/tgasprange.html
-  TGaspRanges tttables/tgaspranges.html
-  PGaspRanges tttables/pgaspranges.html
-  TGasp tttables/tgasp.html
-  TLongMetrics tttables/tlongmetrics.html
-  TTableLongMetrics tttables/ttablelongmetrics.html
-  PTableLongMetrics tttables/ptablelongmetrics.html
-  TShortMetrics tttables/tshortmetrics.html
-  TTableShortMetrics tttables/ttableshortmetrics.html
-  PTableShortMetrics tttables/ptableshortmetrics.html
-  TName_Record tttables/tname_record.html
-  PName_Record tttables/pname_record.html
-  TName_Records tttables/tname_records.html
-  PName_Records tttables/pname_records.html
-  PName_Table tttables/pname_table.html
-  TName_Table tttables/tname_table.html
-  PHdmx_Record tttables/phdmx_record.html
-  THdmx_Record tttables/thdmx_record.html
-  THdmx_Records tttables/thdmx_records.html
-  PHdmx_Records tttables/phdmx_records.html
-  THdmx tttables/thdmx.html
- TTFile ttfile/index.html
-  TFreeTypeStream ttfile/tfreetypestream.html
-   Create ttfile/tfreetypestream.create.html
-   Destroy ttfile/tfreetypestream.destroy.html
-   Activate ttfile/tfreetypestream.activate.html
-   Deactivate ttfile/tfreetypestream.deactivate.html
-   SeekFile ttfile/tfreetypestream.seekfile.html
-   SkipFile ttfile/tfreetypestream.skipfile.html
-   ReadFile ttfile/tfreetypestream.readfile.html
-   ReadAtFile ttfile/tfreetypestream.readatfile.html
-   AccessFrame ttfile/tfreetypestream.accessframe.html
-   CheckAndAccessFrame ttfile/tfreetypestream.checkandaccessframe.html
-   ForgetFrame ttfile/tfreetypestream.forgetframe.html
-   GET_Byte ttfile/tfreetypestream.get_byte.html
-   GET_Char ttfile/tfreetypestream.get_char.html
-   GET_Short ttfile/tfreetypestream.get_short.html
-   GET_UShort ttfile/tfreetypestream.get_ushort.html
-   GET_Long ttfile/tfreetypestream.get_long.html
-   GET_ULong ttfile/tfreetypestream.get_ulong.html
-   GET_Tag4 ttfile/tfreetypestream.get_tag4.html
-   Open ttfile/tfreetypestream.open.html
-   Name ttfile/tfreetypestream.name.html
-   Base ttfile/tfreetypestream.base.html
-   Position ttfile/tfreetypestream.position.html
-   Used ttfile/tfreetypestream.used.html
-  TTFile_Init ttfile/ttfile_init.html
-  TTFile_Done ttfile/ttfile_done.html
-  TT_Open_Stream ttfile/tt_open_stream.html
-  TT_Close_Stream ttfile/tt_close_stream.html
-  TT_Use_Stream ttfile/tt_use_stream.html
-  TT_Flush_Stream ttfile/tt_flush_stream.html
-  TT_Done_Stream ttfile/tt_done_stream.html
-  TT_Stream_Size ttfile/tt_stream_size.html
- TTGLoad ttgload/index.html
-  Load_TrueType_Glyph ttgload/load_truetype_glyph.html
-  TT_Get_Metrics ttgload/tt_get_metrics.html
-  Get_Advance_Widths ttgload/get_advance_widths.html
- TTInterp ttinterp/index.html
-  Run_Ins ttinterp/run_ins.html
- TTLoad ttload/index.html
-  LookUp_TrueType_Table ttload/lookup_truetype_table.html
-  Load_TrueType_Directory ttload/load_truetype_directory.html
-  Load_TrueType_MaxProfile ttload/load_truetype_maxprofile.html
-  Load_TrueType_Header ttload/load_truetype_header.html
-  Load_TrueType_Locations ttload/load_truetype_locations.html
-  Load_TrueType_CVT ttload/load_truetype_cvt.html
-  Load_TrueType_CMap ttload/load_truetype_cmap.html
-  Load_TrueType_Gasp ttload/load_truetype_gasp.html
-  Load_TrueType_Names ttload/load_truetype_names.html
-  Load_TrueType_Programs ttload/load_truetype_programs.html
-  Load_trueType_Postscript ttload/load_truetype_postscript.html
-  Load_TrueType_OS2 ttload/load_truetype_os2.html
-  Load_TrueType_HDMX ttload/load_truetype_hdmx.html
-  Load_TrueType_Metrics_Header ttload/load_truetype_metrics_header.html
-  Load_TrueType_Any ttload/load_truetype_any.html
- TTMemory ttmemory/index.html
-  Font_Pool_Allocated ttmemory/font_pool_allocated.html
-  TMarkRecord ttmemory/tmarkrecord.html
-  Alloc ttmemory/alloc.html
-  Free ttmemory/free.html
-  TTMemory_Init ttmemory/ttmemory_init.html
-  TTMemory_Done ttmemory/ttmemory_done.html
- UTF8Process utf8process/index.html
-  TProcessUTF8 utf8process/tprocessutf8.html
-   ParseCmdLine utf8process/tprocessutf8.parsecmdline.html
-   Create ms-its:fcl.chm::/process/tprocess.create.html
-   Destroy ms-its:fcl.chm::/process/tprocess.destroy.html
-   Execute ms-its:fcl.chm::/process/tprocess.execute.html
-   ApplicationName ms-its:fcl.chm::/process/tprocess.applicationname.html
-   CommandLine ms-its:fcl.chm::/process/tprocess.commandline.html
-   ConsoleTitle ms-its:fcl.chm::/process/tprocess.consoletitle.html
-   CurrentDirectory ms-its:fcl.chm::/process/tprocess.currentdirectory.html
-   Desktop ms-its:fcl.chm::/process/tprocess.desktop.html
-   Environment ms-its:fcl.chm::/process/tprocess.environment.html
-   Executable ms-its:fcl.chm::/process/tprocess.executable.html
-   Parameters ms-its:fcl.chm::/process/tprocess.parameters.html
-  RunCmdFromPath utf8process/runcmdfrompath.html
-  FindFilenameOfCmd utf8process/findfilenameofcmd.html
-  GetSystemThreadCount utf8process/getsystemthreadcount.html
-  Register utf8process/register.html
- LazVersion lazversion/index.html
-  laz_major lazversion/laz_major.html
-  laz_minor lazversion/laz_minor.html
-  laz_release lazversion/laz_release.html
-  laz_patch lazversion/laz_patch.html
-  laz_fullversion lazversion/laz_fullversion.html
-  laz_version lazversion/laz_version.html
  UITypes uitypes/index.html
   mrNone uitypes/mrnone.html
   mrOK uitypes/mrok.html
@@ -3639,38 +2936,13 @@
   TMsgDlgButtons uitypes/tmsgdlgbuttons.html
   TModalResult uitypes/tmodalresult.html
   PModalResult uitypes/pmodalresult.html
- ObjectLists objectlists/index.html
-  T2Pointer objectlists/t2pointer.html
-  P2Pointer objectlists/p2pointer.html
-  TObjectArray objectlists/tobjectarray.html
-   Get objectlists/tobjectarray.get.html
-   Put objectlists/tobjectarray.put.html
-   GetObject objectlists/tobjectarray.getobject.html
-   PutObject objectlists/tobjectarray.putobject.html
-   SetCapacity objectlists/tobjectarray.setcapacity.html
-   SetCount objectlists/tobjectarray.setcount.html
-   Grow objectlists/tobjectarray.grow.html
-   Shrink objectlists/tobjectarray.shrink.html
-   Destroy objectlists/tobjectarray.destroy.html
-   Add objectlists/tobjectarray.add.html
-   AddObject objectlists/tobjectarray.addobject.html
-   Clear objectlists/tobjectarray.clear.html
-   Delete objectlists/tobjectarray.delete.html
-   Exchange objectlists/tobjectarray.exchange.html
-   First objectlists/tobjectarray.first.html
-   IndexOf objectlists/tobjectarray.indexof.html
-   Insert objectlists/tobjectarray.insert.html
-   InsertObject objectlists/tobjectarray.insertobject.html
-   Last objectlists/tobjectarray.last.html
-   Move objectlists/tobjectarray.move.html
-   Assign objectlists/tobjectarray.assign.html
-   Remove objectlists/tobjectarray.remove.html
-   Pack objectlists/tobjectarray.pack.html
-   Capacity objectlists/tobjectarray.capacity.html
-   Count objectlists/tobjectarray.count.html
-   Items objectlists/tobjectarray.items.html
-   Objects objectlists/tobjectarray.objects.html
-   List objectlists/tobjectarray.list.html
+ UTF8Process utf8process/index.html
+  TProcessUTF8 utf8process/tprocessutf8.html
+   ParseCmdLine utf8process/tprocessutf8.parsecmdline.html
+  RunCmdFromPath utf8process/runcmdfrompath.html
+  FindFilenameOfCmd utf8process/findfilenameofcmd.html
+  GetSystemThreadCount utf8process/getsystemthreadcount.html
+  Register utf8process/register.html
 
 :classes
 #lazutils.AvgLvlTree.TAvgLvlTree TAvlTree
@@ -3730,6 +3002,7 @@
 3MGetLast
 3MGetNext
 3MGetPrev
+3MFindByValue
 3PCount r
 3PValues rw
 3PTree r
@@ -3816,6 +3089,8 @@
 3MCreate
 #lazutils.AvgLvlTree.TFilenameToPointerTree #lazutils.AvgLvlTree.TStringToPointerTree
 3MCreate
+#lazutils.LazUTF8.TStringListUTF8Fast #rtl.Classes.TStringList
+2MDoCompareText
 #lazutils.CompWriterPas.TCompWriterPas #rtl.System.TObject
 1VFAccessClass
 1VFAncestor
@@ -4157,426 +3432,6 @@
 3PSize r
 3PMinimumBlockSize rw
 3PMaximumBlockSize rw
-#lazutils.EasyLazFreeType.EFreeType #rtl.sysutils.Exception
-#lazutils.EasyLazFreeType.TCustomFontCollectionItem #rtl.System.TObject
-2VFFamily
-2MGetBold
-2MGetInformation
-2MGetItalic
-2MGetStyleCount
-2MGetStyles
-2MGetFilename
-2MGetVersionNumber
-2MGetStyle
-2MNotifyDestroy
-3MHasStyle
-3MCreateFont
-3MQueryFace
-3MReleaseFace
-3PStyles r
-3PItalic r
-3PBold r
-3PFilename r
-3PInformation r
-3PVersionNumber r
-3PStyle r
-3PStyleCount r
-3PFamily rw
-#lazutils.EasyLazFreeType.IFreeTypeFontEnumerator #rtl.System.IUnknown
-0MMoveNext
-0MGetCurrent
-0PCurrent r
-#lazutils.EasyLazFreeType.TCustomFamilyCollectionItem #rtl.System.TObject
-2MGetFontByIndex
-2MGetStyle
-2MGetStyles
-2MGetFamilyName
-2MGetFontCount
-2MGetStyleCount
-3MGetFont
-3MGetFontIndex
-3MHasStyle
-3PFamilyName r
-3PFont r
-3PFontCount r
-3PStyle r
-3PStyleCount r
-3PStyles r
-#lazutils.EasyLazFreeType.IFreeTypeFamilyEnumerator #rtl.System.IUnknown
-0MMoveNext
-0MGetCurrent
-0PCurrent r
-#lazutils.EasyLazFreeType.TCustomFreeTypeFontCollection #rtl.System.TObject
-2MGetFont
-2MGetFamily
-2MGetFamilyCount
-2MGetFontCount
-3MCreate
-3MClear
-3MBeginUpdate
-3MAddFolder
-3MRemoveFolder
-3MAddFile
-3MRemoveFile
-3MAddStream
-3MEndUpdate
-3MFontFileEnumerator
-3MFamilyEnumerator
-3PFontFileCount r
-3PFontFile r
-3PFamilyCount r
-3PFamily r
-#lazutils.EasyLazFreeType.TFreeTypeRenderableFont #rtl.System.TObject
-2VFWordBreakHandler
-2VFOnRenderText
-2MGetClearType
-2MSetClearType
-2MGetLineFullHeight
-2MGetAscent
-2MGetDescent
-2MGetLineSpacing
-2MDefaultWordBreakHandler
-2MGetHinted
-2MSetHinted
-3VUnderlineDecoration
-3VStrikeOutDecoration
-3MTextWidth
-3MTextHeight
-3MCharWidthFromUnicode
-3MSplitText
-3MGetTextSize
-3MRenderText
-3PClearType rw
-3PAscent r
-3PDescent r
-3PLineSpacing r
-3PLineFullHeight r
-3PHinted rw
-3POnWordBreak rw
-3POnRenderText rw
-#lazutils.EasyLazFreeType.TFreeTypeDrawer #rtl.System.TObject
-0MDrawText
-0MDrawTextWordBreak
-0MDrawTextRect
-0MDrawGlyph
-#lazutils.EasyLazFreeType.TFreeTypeFont #lazutils.EasyLazFreeType.TFreeTypeRenderableFont
-1VFName
-1VFFaceChanged
-1VFDPI
-1VFStream
-1VFOwnedStream
-1VFPointSize
-1VFHinted
-1VFKerningEnabled
-1VFKerningFallbackEnabled
-1VFStyleStr
-1VFWidthFactor
-1VFClearType
-1VFNamesArray
-1VFCollection
-1MFindGlyphNode
-1MGetCharIndex
-1MGetDPI
-1MGetFamily
-1MGetFreeTypeStyles
-1MGetGlyph
-1MGetGlyphCount
-1MGetInformation
-1MGetGlyphKerning
-1MGetCharKerning
-1MGetPixelSize
-1MGetVersionNumber
-1MSetDPI
-1MSetFreeTypeStyles
-1MSetLineFullHeight
-1MSetStyleAsString
-1MLoadFace
-1MSetName
-1MDiscardFace
-1MDiscardInstance
-1MDiscardStream
-1MSetPixelSize
-1MSetPointSize
-1MLoadGlyphInto
-1MSetWidthFactor
-1MUpdateInstance
-1MUpdateSizeInPoints
-1MUpdateMetrics
-1MUpdateCharmap
-1MRenderTextDecoration
-1MFillRect
-2VFFace
-2VFFaceItem
-2VFFaceLoaded
-2VFInstance
-2VFInstanceCreated
-2VFGlyphTable
-2VFCharMap
-2VFCharmapOk
-2VFCharmapSymbol
-2VFAscentValue
-2VFDescentValue
-2VFLineGapValue
-2VFLargeLineGapValue
-2VFCapHeight
-2VFUnitsPerEM
-2MFaceChanged
-2MGetClearType
-2MSetClearType
-2MGetLineFullHeight
-2MGetAscent
-2MGetDescent
-2MGetLineSpacing
-2MGetCapHeight
-2MSetHinted
-2MGetHinted
-2MOnDestroyFontItem
-2MFetchNames
-2MGetCollection
-2MCheckFace
-3VQuality
-3VSmallLinePadding
-3MCreate
-3MDestroy
-3MAccessFromStream
-3MRenderText
-3MRenderGlyph
-3MSetNameAndStyle
-3MTextWidth
-3MTextHeight
-3MCharWidthFromUnicode
-3MCharWidthFromGlyph
-3MCharsWidth
-3MCharsPosition
-3MCheckInstance
-3PName rw
-3PDPI rw
-3PSizeInPoints rw
-3PSizeInPixels rw
-3PCapHeight r
-3PGlyph r
-3PGlyphCount r
-3PCharKerning r
-3PGlyphKerning r
-3PCharIndex r
-3PHinted rw
-3PKerningEnabled rw
-3PKerningFallbackEnabled rw
-3PWidthFactor rw
-3PLineFullHeight rw
-3PInformation r
-3PVersionNumber r
-3PFamily r
-3PCollection rw
-3PStyleAsString rw
-3PStyle rw
-#lazutils.EasyLazFreeType.TFreeTypeGlyph #rtl.System.TObject
-1VFLoaded
-1VFGlyphData
-1VFIndex
-1MGetAdvance
-1MGetBounds
-1MGetBoundsWithOffset
-3MCreate
-3MRenderDirectly
-3MDestroy
-3PLoaded r
-3PData r
-3PIndex r
-3PBounds r
-3PBoundsWithOffset r
-3PAdvance r
-#lazutils.EasyLazFreeType.TFreeTypeRasterMap #rtl.System.TObject
-2Vmap
-2VFRasterizer
-2MGetHeight
-2MGetWidth
-2MGetScanLine
-2MInit
-3MCreate
-3MClear
-3MFill
-3MRenderGlyph
-3MScanMoveTo
-3MDestroy
-3PWidth r
-3PHeight r
-3PScanLine r
-#lazutils.EasyLazFreeType.TFreeTypeMonochromeMap #lazutils.EasyLazFreeType.TFreeTypeRasterMap
-1VScanPtrStart
-1VScanPtrCur
-1VScanBit
-1VScanX
-1MGetPixelsInHorizlineNoBoundsChecking
-2MInit
-3MRenderGlyph
-3MScanMoveTo
-3MScanNextPixel
-3MGetPixel
-3MSetPixel
-3MGetPixelsInRect
-3MGetPixelsInHorizline
-3MTogglePixel
-#lazutils.EasyLazFreeType.TFreeTypeGrayscaleMap #lazutils.EasyLazFreeType.TFreeTypeRasterMap
-1VScanPtrStart
-1VScanX
-2MInit
-3VRenderQuality
-3MRenderGlyph
-3MScanMoveTo
-3MScanNextPixel
-3MGetPixel
-3MSetPixel
-3MXorPixel
-#lazutils.TTTypes.TFreeTypeCustomRasterizer #rtl.System.TObject
-0MRender_Glyph
-0MRender_Gray_Glyph
-0MRender_Gray_Glyph_HQ
-0MRender_Directly_Gray_Glyph
-0MRender_Directly_Gray_Glyph_HQ
-0MSet_Raster_Palette
-#lazutils.TTRASTER.TFreeTypeRasterizer #lazutils.TTTypes.TFreeTypeCustomRasterizer
-1VPrecision_Bits
-1VPrecision
-1VPrecision_Half
-1VPrecision_Step
-1VPrecision_Shift
-1VPrecision_Mask
-1VPrecision_Jitter
-1VPool
-1VCible
-1VBWidth
-1VBCible
-1VGCible
-1VTraceBOfs
-1VTraceBIncr
-1VTraceGOfs
-1VTraceGIncr
-1Vgray_min_x
-1Vgray_max_x
-1VProc_Sweep_Init
-1VProc_Sweep_Span
-1VProc_Sweep_Drop
-1VProc_Sweep_Step
-1VProc_Sweep_Direct
-1VDirect_X
-1VDirect_Y
-1VDirect_TX
-1VPoints
-1VFlags
-1VOuts
-1VnContours
-1VDropOutControl
-1VGrays
-1VBGray_Data
-1VBGray_Incr
-1VBGray_End
-1VBGray_Capacity
-1VSecond_Pass
-1MBGray_NeedCapacity
-1MDraw_Sweep
-1MHorizontal_Gray_Sweep_Drop
-1MHorizontal_Gray_Sweep_Span
-1MHorizontal_Sweep_Drop
-1MHorizontal_Sweep_Init
-1MHorizontal_Sweep_Span
-1MHorizontal_Sweep_Step
-1MProcessCoordinate
-1MRaster_Object_Init
-1MRaster_Object_Done
-1MRender_Single_Pass
-1MSet_High_Precision
-1MSet_Second_Pass
-1MVertical_Gray_Sweep_Init
-1MVertical_Gray_Sweep_Init_Direct
-1MVertical_Gray_Sweep_Init_Direct_HQ
-1MVertical_Gray_Sweep_Init_HQ
-1MVertical_Gray_Sweep_Step
-1MVertical_Gray_Sweep_Step_Direct
-1MVertical_Gray_Sweep_Step_Direct_HQ
-1MVertical_Gray_Sweep_Step_HQ
-1MVertical_Sweep_Drop
-1MVertical_Sweep_Init
-1MVertical_Sweep_Span
-1MVertical_Sweep_Step
-3MRender_Glyph
-3MRender_Gray_Glyph
-3MRender_Gray_Glyph_HQ
-3MRender_Directly_Gray_Glyph
-3MRender_Directly_Gray_Glyph_HQ
-3MSet_Raster_Palette
-3MCreate
-3MDestroy
-#lazutils.TTProfile.TRenderPool #rtl.System.TObject
-2VPrecision
-2VPrecisionHalf
-2VBezierPrecision
-2VBoundsMinY
-2VBoundsMaxY
-2VscaleShift
-2MBezier_Down
-2MBezier_State
-2MBezier_To
-2MBezier_Up
-2MCEILING
-2MDecomposeCurve
-2MFLOOR
-2MFRAC
-2MGetCapacity
-2MLine_Down
-2MLine_To
-2MLine_Up
-2MMove_To
-2MPushBezier
-2MSCALED
-2MSplit_Bezier
-2MTRUNC
-2MRequireCapacity
-2MPushValue
-2PCapacity r
-3VJoint
-3VFresh
-3VcProfile
-3VProfileColl
-3VLastX
-3VLastY
-3VCurveDir
-3VArcs
-3VCurArc
-3Vdata
-3Vposition
-3MCreate
-3MDestroy
-3MSetPrecision
-3MSetBounds
-3MSetScaleShift
-3MClear
-3MReduceCapacity
-3MConvert_Glyph
-#lazutils.TTProfile.TProfile #rtl.System.TObject
-0VPool
-0VFlow
-0VHeight
-0VStart
-0VOffset
-0VX
-0VnextInContour
-0VnextInColl
-0VnextInList
-0VprevInList
-0MCreate
-#lazutils.TTProfile.TProfileCollection #rtl.System.TObject
-2MRemove_Profile
-3VPool
-3VprevProfile
-3VfProfile
-3VgProfile
-3VnProfs
-3MCreate
-3MClear
-3MNew_Profile
-3MEnd_Profile
-3MDestroy
 #lazutils.ExtendedStrings.TExtendedStringList #rtl.Classes.TStringList
 1VFOptions
 1VFRecordSize
@@ -4599,6 +3454,76 @@
 3PRecords rw
 3PRecordSize rw
 3POptions rw
+#lazutils.FileReferenceList.TFileReference #rtl.System.TObject
+1VfFilename
+1VfReferenceCount
+3PFilename r
+3PReferenceCount r
+#lazutils.FileReferenceList.TFileReferenceList #rtl.System.TObject
+1VFOnChanged
+1VFTimeStamp
+1VFTree
+1VFFlags
+1VFSearchPath
+1VFUpdateLock
+1MUpdateSearchPath
+1MIncreaseTimeStamp
+1MInvalidate
+3MCreate
+3MDestroy
+3MClear
+3MBeginUpdate
+3MEndUpdate
+3MAddFilename
+3MRemoveFilename
+3MGetFileReference
+3MCreateSearchPathFromAllFiles
+3MCreateFileList
+3PTimeStamp r
+3POnChanged rw
+3PUpdateLock r
+#lazutils.LazFileCache.TFileStateCacheItem #rtl.System.TObject
+1VFAge
+1VFFilename
+1VFFlags
+1VFPhysicalFilename
+1VFTestedFlags
+1VFTimeStamp
+3MCreate
+3MCalcMemSize
+3PFilename r
+3PPhysicalFilename r
+3PFlags r
+3PTestedFlags r
+3PTimeStamp r
+3PAge r
+#lazutils.LazFileCache.TFileStateCache #rtl.System.TObject
+1VFFiles
+1VFTimeStamp
+1VFLockCount
+1VFChangeTimeStampHandler
+1MSetFlag
+3MCreate
+3MDestroy
+3MLock
+3MUnlock
+3MLocked
+3MIncreaseTimeStamp
+3MFileExistsCached
+3MDirPathExistsCached
+3MDirectoryIsWritableCached
+3MFileIsExecutableCached
+3MFileIsReadableCached
+3MFileIsWritableCached
+3MFileIsTextCached
+3MFileAgeCached
+3MGetPhysicalFilenameCached
+3MFindFile
+3MCheck
+3MAddChangeTimeStampHandler
+3MRemoveChangeTimeStampHandler
+3MCalcMemSize
+3PTimeStamp r
 #lazutils.FileUtil.TFileIterator #rtl.System.TObject
 1VFPath
 1VFLevel
@@ -4921,7 +3846,7 @@
 3MGetChildCount
 3MFindNode
 3MInternalAppend
-#lazutils.Laz2_DOM.TDOMNodeList TObject
+#lazutils.Laz2_DOM.TDOMNodeList #rtl.System.TObject
 2VFNode
 2VFRevision
 2VFList
@@ -4943,7 +3868,7 @@
 2VUseFilter
 2MNodeFilter
 3MCreate
-#lazutils.Laz2_DOM.TDOMNamedNodeMap TObject
+#lazutils.Laz2_DOM.TDOMNamedNodeMap #rtl.System.TObject
 2VFOwner
 2VFNodeType
 2VFSortedList
@@ -5185,7 +4110,7 @@
 3PDefault rw
 3PExternallyDeclared rw
 3PTag rw
-#lazutils.Laz2_DOM.TNodePool TObject
+#lazutils.Laz2_DOM.TNodePool #rtl.System.TObject
 1VFCurrExtent
 1VFCurrExtentSize
 1VFElementSize
@@ -5196,7 +4121,7 @@
 3MDestroy
 3MAllocNode
 3MFreeNode
-#lazutils.laz2_xmlutils.THashTable TObject
+#lazutils.laz2_xmlutils.THashTable #rtl.System.TObject
 1VFCount
 1VFBucketCount
 1VFBucket
@@ -5213,7 +4138,7 @@
 3MRemoveData
 3MForEach
 3PCount r
-#lazutils.laz2_xmlutils.TDblHashArray TObject
+#lazutils.laz2_xmlutils.TDblHashArray #rtl.System.TObject
 1VFSizeLog
 1VFRevision
 1VFData
@@ -5225,7 +4150,7 @@
 3Vnext
 3VprevPrefixBinding
 3VPrefix
-#lazutils.laz2_xmlutils.TNSSupport TObject
+#lazutils.laz2_xmlutils.TNSSupport #rtl.System.TObject
 1VFNesting
 1VFPrefixSeqNo
 1VFFreeBindings
@@ -5306,48 +4231,6 @@
 2MReadProperty
 3MWriteObject
 3MReadObject
-#lazutils.LazFileCache.TFileStateCacheItem #rtl.System.TObject
-1VFAge
-1VFFilename
-1VFFlags
-1VFPhysicalFilename
-1VFTestedFlags
-1VFTimeStamp
-3MCreate
-3MCalcMemSize
-3PFilename r
-3PPhysicalFilename r
-3PFlags r
-3PTestedFlags r
-3PTimeStamp r
-3PAge r
-#lazutils.LazFileCache.TFileStateCache #rtl.System.TObject
-1VFFiles
-1VFTimeStamp
-1VFLockCount
-1VFChangeTimeStampHandler
-1MSetFlag
-3MCreate
-3MDestroy
-3MLock
-3MUnlock
-3MLocked
-3MIncreaseTimeStamp
-3MFileExistsCached
-3MDirPathExistsCached
-3MDirectoryIsWritableCached
-3MFileIsExecutableCached
-3MFileIsReadableCached
-3MFileIsWritableCached
-3MFileIsTextCached
-3MFileAgeCached
-3MGetPhysicalFilenameCached
-3MFindFile
-3MCheck
-3MAddChangeTimeStampHandler
-3MRemoveChangeTimeStampHandler
-3MCalcMemSize
-3PTimeStamp r
 #lazutils.laz2_XMLRead.EXMLReadError #rtl.sysutils.Exception
 1VFSeverity
 1VFErrorMessage
@@ -5358,7 +4241,7 @@
 3PLine r
 3PLinePos r
 3MLineCol
-#lazutils.laz2_XMLRead.TDOMParseOptions TObject
+#lazutils.laz2_XMLRead.TDOMParseOptions #rtl.System.TObject
 1VFValidate
 1VFPreserveWhitespace
 1VFExpandEntities
@@ -5381,7 +4264,7 @@
 3PDisallowDoctype rw
 3PMaxChars rw
 3PCanonicalForm rw
-#lazutils.laz2_XMLRead.TXMLInputSource TObject
+#lazutils.laz2_XMLRead.TXMLInputSource #rtl.System.TObject
 1VFStream
 1VFStringData
 1VFBaseURI
@@ -5393,7 +4276,7 @@
 3PBaseURI rw
 3PSystemID rw
 3PPublicID rw
-#lazutils.laz2_XMLRead.TDOMParser TObject
+#lazutils.laz2_XMLRead.TDOMParser #rtl.System.TObject
 1VFOptions
 1VFOnError
 3MCreate
@@ -5403,13 +4286,6 @@
 3MParseWithContext
 3POptions r
 3POnError rw
-#lazutils.LazUTF8Classes.TStringListUTF8 #rtl.Classes.TStringList
-2MDoCompareText
-3MLoadFromFile
-3MSaveToFile
-#lazutils.LazUTF8Classes.TMemoryStreamUTF8 #rtl.Classes.TMemoryStream
-3MLoadFromFile
-3MSaveToFile
 #lazutils.laz2_xpath.TXPathExprNode #rtl.System.TObject
 2MEvalPredicate
 3MEvaluate
@@ -5618,19 +4494,42 @@
 3MAcquire
 3PSpinCount rw
 3PDefaultSpinCount rw
-#lazutils.lazCollections.TLazThreadedQueue #rtl.System.TObject
-1VFMonitor
+#lazutils.lazCollections.TLazFifoQueue 
 1VFList
+1VFQueueSize
+2VFTotalItemsPopped
+2VFTotalItemsPushed
+2MGetIsEmpty
+2MGetIsFull
+3Mcreate
+3MGrow
+3MPushItem
+3MPopItem
+3PQueueSize r
+3PTotalItemsPopped r
+3PTotalItemsPushed r
+3PIsEmpty r
+3PIsFull r
+#lazutils.lazCollections.TLazThreadedQueue 
+2MTLazTypedFifoQueue
+1VFMonitor
+1VFFifoQueue
 1VFPushTimeout
 1VFPopTimeout
-1VFQueueSize
-1VFTotalItemsPopped
-1VFTotalItemsPushed
 1VFHasRoomEvent
 1VFHasItemEvent
 1VFShutDown
+1MGetQueueSize
+1MGetTotalItemsPopped
+1MGetTotalItemsPushed
 1MTryPushItem
 1MTryPopItem
+2MTryPushItemUnprotected
+2MTryPopItemUnprotected
+2MLock
+2MUnlock
+2MCreateFifoQueue
+2PFifoQueue r
 3Mcreate
 3MDestroy
 3MGrow
@@ -5693,10 +4592,10 @@
 3MSaveToConfig
 3MLoadFromConfig
 3MWriteDebugReport
-#lazutils.lazfglhash.TLazHTGNode #fcl.contnrs.THTCustomNode
+#lazutils.LazFglHash.TLazHTGNode #fcl.Contnrs.THTCustomNode
 1VFData
 3PData rw
-#lazutils.lazfglhash.TLazFPGHashTable #fcl.contnrs.TFPCustomHashTable
+#lazutils.LazFglHash.TLazFPGHashTable #fcl.Contnrs.TFPCustomHashTable
 2MTHTGNode
 2MTGIteratorMethod
 2MCreateNewNode
@@ -5707,132 +4606,6 @@
 3MIterate
 3MAdd
 3PItems rw
-#lazutils.LazFreeTypeFontCollection.TFontCollectionItem #lazutils.EasyLazFreeType.TCustomFontCollectionItem
-1VFFilename
-1VFSourceStream
-1VFSourceStreamOwned
-1VFInformation
-1VFVersionNumber
-1VFStyleList
-1VFFace
-1VFFaceUsage
-1VFUsePostscriptStyle
-1VFDestroyListeners
-1MUpdateStyles
-1MSetInformation
-1MSetUsePostscriptStyle
-2MGetFilename
-2MGetBold
-2MGetInformation
-2MGetItalic
-2MGetStyleCount
-2MGetStyles
-2MGetStyle
-2MGetVersionNumber
-2MNotifyDestroy
-2MInit
-3MCreate
-3MDestroy
-3MHasStyle
-3PInformation rw
-3PVersionNumber rw
-3MCreateFont
-3MQueryFace
-3MReleaseFace
-3PUsePostscriptStyle rw
-#lazutils.LazFreeTypeFontCollection.TFamilyCollectionItem #lazutils.EasyLazFreeType.TCustomFamilyCollectionItem
-1VFFamilyName
-1VFFonts
-1VFFontCount
-1VFStyles
-1VFStyleCount
-1VFUsePostscriptStyle
-2MGetFontByIndex
-2MGetFontByStyles
-2MGetFontIndexByStyles
-2MGetStyle
-2MAddStyle
-2MRemoveStyle
-2MGetStyles
-2MGetFamilyName
-2MGetFontCount
-2MGetStyleCount
-2MRebuildStyleList
-3MCreate
-3MAddFont
-3MRemoveFont
-3MGetFont
-3MGetFontIndex
-3MHasStyle
-#lazutils.LazFreeTypeFontCollection.TFreeTypeFontCollection #lazutils.EasyLazFreeType.TCustomFreeTypeFontCollection
-1VFFontList
-1VFTempFont
-1VFUpdateCount
-1VFFamilyList
-1MAddFamily
-1MFindFamily
-1MFindFont
-1MCompareFontFileName
-1MCompareFamilyName
-2MGetFont
-2MGetFamily
-2MGetFamilyCount
-2MGetFontCount
-2MRemoveAndFreeFamily
-3MCreate
-3MClear
-3MBeginUpdate
-3MAddFolder
-3MRemoveFolder
-3MAddFile
-3MRemoveFile
-3MAddStream
-3MEndUpdate
-3MDestroy
-3MFontFileEnumerator
-3MFamilyEnumerator
-#lazutils.LazFreeTypeFPImageDrawer.TFPImageFreeTypeDrawer #lazutils.EasyLazFreeType.TFreeTypeDrawer
-1VFColor
-1VFCurX
-1VFCurY
-2VFImage
-2MMoveToPixel
-2MGetCurrentColor
-2MSetCurrentColorAndMoveRight
-2MMoveRight
-2MGetClipRect
-2MRenderDirectly
-2MRenderDirectlyClearType
-2MInternalMergeColorOver
-2MMergeColorOver
-2MDrawPixelAndMoveRight
-2MClearTypePixelAndMoveRight
-2MUnclippedDrawPixel
-3VClearTypeRGBOrder
-3MCreate
-3MDrawPixel
-3MClearTypePixel
-3MSetVertLine
-3MDrawVertLine
-3MSetHorizLine
-3MDrawHorizLine
-3MFillPixels
-3MDrawText
-3MDrawGlyph
-3MDestroy
-3PImage r
-#lazutils.LazFreeTypeFPImageDrawer.TFPMemoryImageWithScanline TFPMemoryImage
-2MGetScanline
-2MSetUsePalette
-3PScanLine r
-#lazutils.LazFreeTypeFPImageDrawer.TFPImageWithScanlineFreeTypeDrawer #lazutils.LazFreeTypeFPImageDrawer.TFPImageFreeTypeDrawer
-2VFCurrentColor
-2MMoveToPixel
-2MGetCurrentColor
-2MSetCurrentColorAndMoveRight
-2MMoveRight
-2MGetClipRect
-3MCreate
 #lazutils.LazLinkedList.TLinkListItem #rtl.System.TObject
 0VNext
 0VPrior
@@ -6081,7 +4854,7 @@
 3PCapacity rw
 3PCount rw
 3PItemPointer r
-#lazutils.LazListClasses.TLazShiftBufferListGen #rtl.System.TObject
+#lazutils.LazListClasses.TLazShiftBufferListGen 
 1MTListMem
 1MPT
 1VFListMem
@@ -6276,6 +5049,13 @@
 1VfCurrentCodePointCount
 3PCurrentCodePointCount r
 3MMoveNext
+#lazutils.LazUTF8Classes.TStringListUTF8 #rtl.Classes.TStringList
+2MDoCompareText
+3MLoadFromFile
+3MSaveToFile
+#lazutils.LazUTF8Classes.TMemoryStreamUTF8 #rtl.Classes.TMemoryStream
+3MLoadFromFile
+3MSaveToFile
 #lazutils.Laz_XMLStreaming.TXMLObjectWriterStackEl #rtl.System.TObject
 3VElement
 3VParent
@@ -6308,6 +5088,7 @@
 3MWriteSet
 3MWriteString
 3MWriteWideString
+3MWriteSignature
 3MWriteUInt64
 3MWriteUnicodeString
 3MWriteVariant
@@ -6341,6 +5122,7 @@
 3MReadStr
 3MReadString
 3MReadWideString
+3MReadSignature
 3MReadUnicodeString
 3MSkipComponent
 3MSkipValue
@@ -6361,6 +5143,8 @@
 3MContains
 3MFind
 3MIndexOf
+#lazutils.Maps.TLockedMapModifyException #rtl.sysutils.Exception
+3MCreate
 #lazutils.Maps.TBaseMap #rtl.Classes.TPersistent
 1VFTree
 1VFIdType
@@ -6368,12 +5152,15 @@
 1VFFirst
 1VFLast
 1VFIterators
+1VFLocked
 1MFindNode
 1MFindItem
 1MFreeData
 1MTreeCompareID
 1MIteratorAdd
 1MIteratorRemove
+2MLockMap
+2MUnLockMap
 2MInternalAdd
 2MInternalGetData
 2MInternalGetDataPtr
@@ -6385,7 +5172,7 @@
 3MCount
 3MDelete
 3MDestroy
-#lazutils.Maps.TBaseMapIterator TObject
+#lazutils.Maps.TBaseMapIterator #rtl.System.TObject
 1VFMap
 1VFCurrent
 1VFInValid
@@ -6394,6 +5181,8 @@
 1MMapDestroyed
 1MMapCleared
 1MItemRemove
+2MAddToMap
+2MRemoveFromMap
 2MInternalCreate
 2MInternalLocate
 2MValidate
@@ -6420,6 +5209,9 @@
 3MGetID
 3MLocate
 3MSetData
+#lazutils.Maps.TLockedMapIterator #lazutils.Maps.TMapIterator
+2MAddToMap
+2MRemoveFromMap
 #lazutils.Maps.TTypedMap #lazutils.Maps.TBaseMap
 1VFTypeInfo
 2MInternalSetData
@@ -6437,7 +5229,39 @@
 3MGetID
 3MLocate
 3MSetData
-#lazutils.StringHashList.TStringHashList TObject
+#lazutils.ObjectLists.TObjectArray 
+1VFCapacity
+1VFCount
+1VFList
+2MGet
+2MPut
+2MGetObject
+2MPutObject
+2MSetCapacity
+2MSetCount
+2MGrow
+2MShrink
+3MDestroy
+3MAdd
+3MAddObject
+3MClear
+3MDelete
+3MExchange
+3MFirst
+3MIndexOf
+3MInsert
+3MInsertObject
+3MLast
+3MMove
+3MAssign
+3MRemove
+3MPack
+3PCapacity rw
+3PCount rw
+3PItems rw
+3PObjects rw
+3PList r
+#lazutils.StringHashList.TStringHashList #rtl.System.TObject
 1VFList
 1VFCount
 1VfCaseSensitive
@@ -6579,107 +5403,5 @@
 #lazutils.Translations.EPOFileError #rtl.sysutils.Exception
 3VResFileName
 3VPOFileName
-#lazutils.TTFile.TFreeTypeStream #rtl.System.TObject
-1MGetSize
-1VFCurrentFrame
-1VFFrameCursor
-1VFFrameSize
-1VFFrameCache
-1VFName
-1VFStream
-1VFBase
-1VFStoredSize
-1VFPosit
-1VFOwnedStream
-1VFOpen
-1VFUsed
-1MGetFilePos
-1MGetFileSize
-1MGetPosition
-1PSize r
-1MInit
-3MCreate
-3MDestroy
-3MActivate
-3MDeactivate
-3MSeekFile
-3MSkipFile
-3MReadFile
-3MReadAtFile
-3MAccessFrame
-3MCheckAndAccessFrame
-3MForgetFrame
-3MGET_Byte
-3MGET_Char
-3MGET_Short
-3MGET_UShort
-3MGET_Long
-3MGET_ULong
-3MGET_Tag4
-3POpen r
-3PName r
-3PBase r
-3PPosition r
-3PUsed r
-#lazutils.UTF8Process.TProcessUTF8 #fcl.process.TProcess
-1VFApplicationNameUTF8
-1VFCommandLineUTF8
-1VFConsoleTitleUTF8
-1VFCurrentDirectoryUTF8
-1VFDesktopUTF8
-1VFEnvironmentUTF8
-1VFExecutableUTF8
-1VFParametersUTF8
-1MSetApplicationNameUTF8
-1MSetCommandLineUTF8
-1MSetConsoleTitleUTF8
-1MSetCurrentDirectoryUTF8
-1MSetDesktopUTF8
-1MSetEnvironmentUTF8
-1MSetExecutableUTF8
-1MSetParametersUTF8
-1MUpdateEnvironment
-3MCreate
-3MDestroy
-3MExecute
+#lazutils.UTF8Process.TProcessUTF8 #fcl.process.TPROCESS
 3MParseCmdLine
-4PApplicationName rw
-4PCommandLine rw
-4PConsoleTitle rw
-4PCurrentDirectory rw
-4PDesktop rw
-4PEnvironment rw
-4PExecutable rw
-4PParameters rw
-#lazutils.ObjectLists.TObjectArray #rtl.System.TObject
-1VFCapacity
-1VFCount
-1VFList
-2MGet
-2MPut
-2MGetObject
-2MPutObject
-2MSetCapacity
-2MSetCount
-2MGrow
-2MShrink
-3MDestroy
-3MAdd
-3MAddObject
-3MClear
-3MDelete
-3MExchange
-3MFirst
-3MIndexOf
-3MInsert
-3MInsertObject
-3MLast
-3MMove
-3MAssign
-3MRemove
-3MPack
-3PCapacity rw
-3PCount rw
-3PItems rw
-3PObjects rw
-3PList r

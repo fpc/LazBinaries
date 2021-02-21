@@ -187,6 +187,8 @@
   ModuleIsLib system/moduleislib.html
   ModuleIsPackage system/moduleispackage.html
   ModuleIsCpp system/moduleiscpp.html
+  Default8087CW system/default8087cw.html
+  DefaultMXCSR system/defaultmxcsr.html
   float_flag_invalid system/float_flag_invalid.html
   float_flag_denormal system/float_flag_denormal.html
   float_flag_divbyzero system/float_flag_divbyzero.html
@@ -264,38 +266,38 @@
   vtQWord system/vtqword.html
   vtUnicodeString system/vtunicodestring.html
   IObjectInstance system/iobjectinstance.html
-  varempty system/varempty.html
-  varnull system/varnull.html
-  varsmallint system/varsmallint.html
-  varinteger system/varinteger.html
-  varsingle system/varsingle.html
-  vardouble system/vardouble.html
-  vardate system/vardate.html
-  varcurrency system/varcurrency.html
-  varolestr system/varolestr.html
-  vardispatch system/vardispatch.html
-  varerror system/varerror.html
-  varboolean system/varboolean.html
-  varvariant system/varvariant.html
-  varunknown system/varunknown.html
-  vardecimal system/vardecimal.html
-  varshortint system/varshortint.html
-  varbyte system/varbyte.html
-  varword system/varword.html
-  varlongword system/varlongword.html
-  varint64 system/varint64.html
-  varqword system/varqword.html
-  varrecord system/varrecord.html
-  varstrarg system/varstrarg.html
-  varustrarg system/varustrarg.html
-  varstring system/varstring.html
-  varany system/varany.html
-  varustring system/varustring.html
-  vartypemask system/vartypemask.html
-  vararray system/vararray.html
-  varbyref system/varbyref.html
-  varword64 system/varword64.html
-  varuint64 system/varuint64.html
+  varEmpty system/varempty.html
+  varNull system/varnull.html
+  varSmallInt system/varsmallint.html
+  varInteger system/varinteger.html
+  varSingle system/varsingle.html
+  varDouble system/vardouble.html
+  varDate system/vardate.html
+  varCurrency system/varcurrency.html
+  varOleStr system/varolestr.html
+  varDispatch system/vardispatch.html
+  varError system/varerror.html
+  varBoolean system/varboolean.html
+  varVariant system/varvariant.html
+  varUnknown system/varunknown.html
+  varDecimal system/vardecimal.html
+  varShortInt system/varshortint.html
+  varByte system/varbyte.html
+  varWord system/varword.html
+  varLongWord system/varlongword.html
+  varInt64 system/varint64.html
+  varQWord system/varqword.html
+  varRecord system/varrecord.html
+  varStrArg system/varstrarg.html
+  varUStrArg system/varustrarg.html
+  varString system/varstring.html
+  varAny system/varany.html
+  varUString system/varustring.html
+  varTypeMask system/vartypemask.html
+  varArray system/vararray.html
+  varByRef system/varbyref.html
+  varWord64 system/varword64.html
+  varUInt64 system/varuint64.html
   VarClearProc system/varclearproc.html
   VarAddRefProc system/varaddrefproc.html
   VarCopyProc system/varcopyproc.html
@@ -350,11 +352,14 @@
   CtrlZMarksEOF system/ctrlzmarkseof.html
   sLineBreak system/slinebreak.html
   DefaultTextLineBreakStyle system/defaulttextlinebreakstyle.html
+  UnixGetModuleByAddrHook system/unixgetmodulebyaddrhook.html
   DWord system/dword.html
   Cardinal system/cardinal.html
   Integer system/integer.html
   UInt64 system/uint64.html
   Real system/real.html
+  ValReal system/valreal.html
+  FarPointer system/farpointer.html
   SizeInt system/sizeint.html
   SizeUInt system/sizeuint.html
   PtrInt system/ptrint.html
@@ -500,6 +505,13 @@
   TFPUExceptionMask system/tfpuexceptionmask.html
   Real48 system/real48.html
   TFloatSpecial system/tfloatspecial.html
+  TExtended80Rec system/textended80rec.html
+   Mantissa system/textended80rec.mantissa.html
+   Fraction system/textended80rec.fraction.html
+   Exponent system/textended80rec.exponent.html
+   Sign system/textended80rec.sign.html
+   Exp system/textended80rec.exp.html
+   SpecialType system/textended80rec.specialtype.html
   TDoubleRec system/tdoublerec.html
    Mantissa system/tdoublerec.mantissa.html
    Fraction system/tdoublerec.fraction.html
@@ -793,6 +805,12 @@
   BsfQWord system/bsfqword.html
   BsrQWord system/bsrqword.html
   PopCnt system/popcnt.html
+  Set8087CW system/set8087cw.html
+  Get8087CW system/get8087cw.html
+  SetMXCSR system/setmxcsr.html
+  GetMXCSR system/getmxcsr.html
+  SetSSECSR system/setssecsr.html
+  GetSSECSR system/getssecsr.html
   float_raise system/float_raise.html
   Pi system/pi.html
   Sqrt system/sqrt.html
@@ -805,10 +823,13 @@
   Frac system/frac.html
   Int system/int.html
   Trunc system/trunc.html
+  FPower10 system/fpower10.html
   Real2Double system/real2double.html
   assign(Real48):Double system/op-assign-real48-double.html
+  assign(Real48):extended system/op-assign-real48-extended.html
   FMASingle system/fmasingle.html
   FMADouble system/fmadouble.html
+  FMAExtended system/fmaextended.html
   Ptr system/ptr.html
   CSeg system/cseg.html
   DSeg system/dseg.html
@@ -905,6 +926,11 @@
   InterlockedExchange system/interlockedexchange.html
   InterlockedExchangeAdd system/interlockedexchangeadd.html
   InterlockedCompareExchange system/interlockedcompareexchange.html
+  InterlockedIncrement64 system/interlockedincrement64.html
+  InterlockedDecrement64 system/interlockeddecrement64.html
+  InterlockedExchange64 system/interlockedexchange64.html
+  InterlockedExchangeAdd64 system/interlockedexchangeadd64.html
+  InterlockedCompareExchange64 system/interlockedcompareexchange64.html
   InterlockedCompareExchangePointer system/interlockedcompareexchangepointer.html
   Error system/error.html
   ParamCount system/paramcount.html
@@ -959,6 +985,8 @@
   assign(UnicodeString):variant system/op-assign-unicodestring-variant.html
   assign(single):variant system/op-assign-single-variant.html
   assign(Double):variant system/op-assign-double-variant.html
+  assign(extended):variant system/op-assign-extended-variant.html
+  assign(Comp):variant system/op-assign-comp-variant.html
   assign(Real):variant system/op-assign-real-variant.html
   assign(currency):variant system/op-assign-currency-variant.html
   assign(TDateTime):variant system/op-assign-tdatetime-variant.html
@@ -983,6 +1011,8 @@
   assign(variant):unicodestring system/op-assign-variant-unicodestring.html
   assign(variant):single system/op-assign-variant-single.html
   assign(variant):Double system/op-assign-variant-double.html
+  assign(variant):extended system/op-assign-variant-extended.html
+  assign(variant):Comp system/op-assign-variant-comp.html
   assign(variant):Real system/op-assign-variant-real.html
   assign(variant):olevariant system/op-assign-variant-olevariant.html
   assign(variant):currency system/op-assign-variant-currency.html
@@ -1030,6 +1060,8 @@
   assign(olevariant):UnicodeString system/op-assign-olevariant-unicodestring.html
   assign(olevariant):single system/op-assign-olevariant-single.html
   assign(olevariant):Double system/op-assign-olevariant-double.html
+  assign(olevariant):extended system/op-assign-olevariant-extended.html
+  assign(olevariant):Comp system/op-assign-olevariant-comp.html
   assign(olevariant):Real system/op-assign-olevariant-real.html
   assign(olevariant):currency system/op-assign-olevariant-currency.html
   assign(olevariant):TDateTime system/op-assign-olevariant-tdatetime.html
@@ -1053,6 +1085,8 @@
   assign(UnicodeString):olevariant system/op-assign-unicodestring-olevariant.html
   assign(single):olevariant system/op-assign-single-olevariant.html
   assign(Double):olevariant system/op-assign-double-olevariant.html
+  assign(extended):olevariant system/op-assign-extended-olevariant.html
+  assign(Comp):olevariant system/op-assign-comp-olevariant.html
   assign(Real):olevariant system/op-assign-real-olevariant.html
   assign(currency):olevariant system/op-assign-currency-olevariant.html
   assign(TDateTime):olevariant system/op-assign-tdatetime-olevariant.html
@@ -2304,16 +2338,19 @@
   IntToHex sysutils/inttohex.html
   StrToInt sysutils/strtoint.html
   StrToDWord sysutils/strtodword.html
+  StrToUInt sysutils/strtouint.html
   StrToInt64 sysutils/strtoint64.html
   StrToQWord sysutils/strtoqword.html
   StrToUInt64 sysutils/strtouint64.html
   TryStrToInt sysutils/trystrtoint.html
   TryStrToDWord sysutils/trystrtodword.html
+  TryStrToUInt sysutils/trystrtouint.html
   TryStrToInt64 sysutils/trystrtoint64.html
   TryStrToQWord sysutils/trystrtoqword.html
   TryStrToUInt64 sysutils/trystrtouint64.html
   StrToIntDef sysutils/strtointdef.html
   StrToDWordDef sysutils/strtodworddef.html
+  StrToUIntDef sysutils/strtouintdef.html
   StrToInt64Def sysutils/strtoint64def.html
   StrToQWordDef sysutils/strtoqworddef.html
   StrToUInt64Def sysutils/strtouint64def.html
@@ -4000,6 +4037,7 @@
   SO_PRIORITY sockets/so_priority.html
   SO_LINGER sockets/so_linger.html
   SO_BSDCOMPAT sockets/so_bsdcompat.html
+  SO_REUSEPORT sockets/so_reuseport.html
   SO_PASSCRED sockets/so_passcred.html
   SO_PEERCRED sockets/so_peercred.html
   SO_RCVLOWAT sockets/so_rcvlowat.html
@@ -4253,6 +4291,7 @@
   HostAddrToStr sockets/hostaddrtostr.html
   StrToHostAddr sockets/strtohostaddr.html
   StrToNetAddr sockets/strtonetaddr.html
+  TryStrToHostAddr sockets/trystrtohostaddr.html
   HostToNet sockets/hosttonet.html
   NetToHost sockets/nettohost.html
   ShortHostToNet sockets/shorthosttonet.html
@@ -4261,6 +4300,7 @@
   StrToHostAddr6 sockets/strtohostaddr6.html
   NetAddrToStr6 sockets/netaddrtostr6.html
   StrToNetAddr6 sockets/strtonetaddr6.html
+  TryStrToHostAddr6 sockets/trystrtohostaddr6.html
   Str2UnixSockAddr sockets/str2unixsockaddr.html
   Bind sockets/bind.html
  Objects objects/index.html
@@ -4556,6 +4596,7 @@
   IPC_CREAT ipc/ipc_creat.html
   IPC_EXCL ipc/ipc_excl.html
   IPC_NOWAIT ipc/ipc_nowait.html
+  IPC_PRIVATE ipc/ipc_private.html
   IPC_RMID ipc/ipc_rmid.html
   IPC_SET ipc/ipc_set.html
   IPC_STAT ipc/ipc_stat.html
@@ -4564,27 +4605,37 @@
   SHM_W ipc/shm_w.html
   SHM_RDONLY ipc/shm_rdonly.html
   SHM_RND ipc/shm_rnd.html
+  SHM_REMAP ipc/shm_remap.html
   SHM_LOCK ipc/shm_lock.html
   SHM_UNLOCK ipc/shm_unlock.html
   MSG_NOERROR ipc/msg_noerror.html
+  MSG_EXCEPT ipc/msg_except.html
+  MSGMNI ipc/msgmni.html
+  MSGMAX ipc/msgmax.html
+  MSGMNB ipc/msgmnb.html
   SEM_UNDO ipc/sem_undo.html
-  MAX_SOPS ipc/max_sops.html
-  SEM_GETNCNT ipc/sem_getncnt.html
   SEM_GETPID ipc/sem_getpid.html
   SEM_GETVAL ipc/sem_getval.html
   SEM_GETALL ipc/sem_getall.html
+  SEM_GETNCNT ipc/sem_getncnt.html
   SEM_GETZCNT ipc/sem_getzcnt.html
   SEM_SETVAL ipc/sem_setval.html
   SEM_SETALL ipc/sem_setall.html
-  SEM_A ipc/sem_a.html
-  SEM_R ipc/sem_r.html
+  SEM_SEMMNI ipc/sem_semmni.html
+  SEM_SEMMSL ipc/sem_semmsl.html
+  SEM_SEMMNS ipc/sem_semmns.html
+  SEM_SEMOPM ipc/sem_semopm.html
+  SEM_SEMVMX ipc/sem_semvmx.html
   TKey ipc/tkey.html
   key_t ipc/key_t.html
   PIPC_Perm ipc/pipc_perm.html
   TIPC_Perm ipc/tipc_perm.html
   PShmid_DS ipc/pshmid_ds.html
+  TShmid_ds ipc/tshmid_ds.html
   PSHMinfo ipc/pshminfo.html
   TSHMinfo ipc/tshminfo.html
+  PSHM_info ipc/pshm_info.html
+  TSHM_info ipc/tshm_info.html
   msglen_t ipc/msglen_t.html
   msgqnum_t ipc/msgqnum_t.html
   PMSG ipc/pmsg.html
@@ -4595,8 +4646,6 @@
   TMSGbuf ipc/tmsgbuf.html
   PMSGinfo ipc/pmsginfo.html
   TMSGinfo ipc/tmsginfo.html
-  PSEM ipc/psem.html
-  TSEM ipc/tsem.html
   PSEMid_ds ipc/psemid_ds.html
   TSEMid_ds ipc/tsemid_ds.html
   PSEMbuf ipc/psembuf.html
@@ -4617,6 +4666,7 @@
   semget ipc/semget.html
   semop ipc/semop.html
   semctl ipc/semctl.html
+  semtimedop ipc/semtimedop.html
  printer printer/index.html
   IsLstAvailable printer/islstavailable.html
   InitPrinter printer/initprinter.html
@@ -5249,7 +5299,6 @@
   G1600x1200x64K graph/g1600x1200x64k.html
   G1600x1200x16M graph/g1600x1200x16m.html
   G1600x1200x16M32 graph/g1600x1200x16m32.html
-  smallint graph/smallint.html
   TResolutionRec graph/tresolutionrec.html
   ColorType graph/colortype.html
   RGBRec graph/rgbrec.html
@@ -6480,6 +6529,18 @@
   MAP_EXECUTABLE linux/map_executable.html
   MAP_LOCKED linux/map_locked.html
   MAP_NORESERVE linux/map_noreserve.html
+  MODIFY_LDT_CONTENTS_DATA linux/modify_ldt_contents_data.html
+  MODIFY_LDT_CONTENTS_STACK linux/modify_ldt_contents_stack.html
+  MODIFY_LDT_CONTENTS_CODE linux/modify_ldt_contents_code.html
+  UD_SEG_32BIT linux/ud_seg_32bit.html
+  UD_CONTENTS_DATA linux/ud_contents_data.html
+  UD_CONTENTS_STACK linux/ud_contents_stack.html
+  UD_CONTENTS_CODE linux/ud_contents_code.html
+  UD_READ_EXEC_ONLY linux/ud_read_exec_only.html
+  UD_LIMIT_IN_PAGES linux/ud_limit_in_pages.html
+  UD_SEG_NOT_PRESENT linux/ud_seg_not_present.html
+  UD_USEABLE linux/ud_useable.html
+  UD_LM linux/ud_lm.html
   CAP_CHOWN linux/cap_chown.html
   CAP_DAC_OVERRIDE linux/cap_dac_override.html
   CAP_DAC_READ_SEARCH linux/cap_dac_read_search.html
@@ -6559,6 +6620,9 @@
   TSysInfo linux/tsysinfo.html
   PSysInfo linux/psysinfo.html
   TCloneFunc linux/tclonefunc.html
+  user_desc linux/user_desc.html
+  TUser_Desc linux/tuser_desc.html
+  PUser_Desc linux/puser_desc.html
   EPoll_Data linux/epoll_data.html
   TEPoll_Data linux/tepoll_data.html
   PEPoll_Data linux/pepoll_data.html
@@ -6576,6 +6640,7 @@
   futex linux/futex.html
   futex_op linux/futex_op.html
   clone linux/clone.html
+  modify_ldt linux/modify_ldt.html
   sched_yield linux/sched_yield.html
   epoll_create linux/epoll_create.html
   epoll_ctl linux/epoll_ctl.html
@@ -7609,9 +7674,6 @@
   CloseDwarf lnfodwrf/closedwarf.html
   AllowReuseOfLineInfoData lnfodwrf/allowreuseoflineinfodata.html
  ctypes ctypes/index.html
-  qword ctypes/qword.html
-  ptruint ctypes/ptruint.html
-  pptruint ctypes/pptruint.html
   cint8 ctypes/cint8.html
   pcint8 ctypes/pcint8.html
   cuint8 ctypes/cuint8.html
@@ -7636,6 +7698,16 @@
   pcint32 ctypes/pcint32.html
   cuint32 ctypes/cuint32.html
   pcuint32 ctypes/pcuint32.html
+  cint ctypes/cint.html
+  pcint ctypes/pcint.html
+  csint ctypes/csint.html
+  pcsint ctypes/pcsint.html
+  cuint ctypes/cuint.html
+  pcuint ctypes/pcuint.html
+  csigned ctypes/csigned.html
+  pcsigned ctypes/pcsigned.html
+  cunsigned ctypes/cunsigned.html
+  pcunsigned ctypes/pcunsigned.html
   cint64 ctypes/cint64.html
   pcint64 ctypes/pcint64.html
   cuint64 ctypes/cuint64.html
@@ -7648,31 +7720,19 @@
   pculonglong ctypes/pculonglong.html
   cbool ctypes/cbool.html
   pcbool ctypes/pcbool.html
-  cint ctypes/cint.html
-  pcint ctypes/pcint.html
-  csint ctypes/csint.html
-  pcsint ctypes/pcsint.html
-  cuint ctypes/cuint.html
-  pcuint ctypes/pcuint.html
   clong ctypes/clong.html
   pclong ctypes/pclong.html
   cslong ctypes/cslong.html
   pcslong ctypes/pcslong.html
   culong ctypes/culong.html
   pculong ctypes/pculong.html
-  csigned ctypes/csigned.html
-  pcsigned ctypes/pcsigned.html
-  cunsigned ctypes/cunsigned.html
-  pcunsigned ctypes/pcunsigned.html
-  csize_t ctypes/csize_t.html
-  pcsize_t ctypes/pcsize_t.html
-  u_long ctypes/u_long.html
-  u_short ctypes/u_short.html
-  coff_t ctypes/coff_t.html
   cfloat ctypes/cfloat.html
   pcfloat ctypes/pcfloat.html
   cdouble ctypes/cdouble.html
   pcdouble ctypes/pcdouble.html
+  csize_t ctypes/csize_t.html
+  pcsize_t ctypes/pcsize_t.html
+  coff_t ctypes/coff_t.html
   clongdouble ctypes/clongdouble.html
   Pclongdouble ctypes/pclongdouble.html
  fpwidestring fpwidestring/index.html
@@ -9258,7 +9318,7 @@
 3MGetCurrent
 3MMoveNext
 3PCurrent r
-#rtl.Classes.TFPList TObject
+#rtl.Classes.TFPList #rtl.System.TObject
 1VFList
 1VFCount
 1VFCapacity
@@ -9309,7 +9369,7 @@
 3MGetCurrent
 3MMoveNext
 3PCurrent r
-#rtl.Classes.TList TObject,#rtl.Classes.IFPObserved
+#rtl.Classes.TList #rtl.System.TObject,#rtl.Classes.IFPObserved
 1VFList
 1VFObservers
 1MCopyMove
@@ -9368,7 +9428,7 @@
 3MRemove
 3MUnlockList
 3PDuplicates rw
-#rtl.Classes.TBits TObject
+#rtl.Classes.TBits #rtl.System.TObject
 1VFBits
 1VFSize
 1VFBSize
@@ -9398,7 +9458,7 @@
 3MOpenBit
 3PBits rw
 3PSize rw
-#rtl.Classes.TPersistent TObject,#rtl.Classes.IFPObserved
+#rtl.Classes.TPersistent #rtl.System.TObject,#rtl.Classes.IFPObserved
 1VFObservers
 1MAssignError
 2MAssignTo
@@ -9410,13 +9470,13 @@
 3MFPODetachObserver
 3MFPONotifyObservers
 3MGetNamePath
-#rtl.Classes.TInterfacedPersistent #rtl.Classes.TPersistent,IInterface
+#rtl.Classes.TInterfacedPersistent #rtl.Classes.TPersistent,#rtl.System.IInterface(#rtl.System.IUnknown)
 1VFOwnerInterface
 2M_AddRef
 2M_Release
 3MQueryInterface
 3MAfterConstruction
-#rtl.Classes.TRecall TObject
+#rtl.Classes.TRecall #rtl.System.TObject
 1VFStorage
 1VFReference
 3MCreate
@@ -9698,7 +9758,7 @@
 3POnChanging rw
 3POwnsObjects rw
 3PSortStyle rw
-#rtl.Classes.TStream TObject
+#rtl.Classes.TStream #rtl.System.TObject
 2MInvalidSeek
 2MDiscard
 2MDiscardLarge
@@ -9826,7 +9886,7 @@
 3MCreate
 3MCreateFromID
 3MDestroy
-#rtl.Classes.TStreamAdapter TInterfacedObject,#rtl.Types.IStream
+#rtl.Classes.TStreamAdapter #rtl.System.TInterfacedObject,#rtl.Types.IStream
 1VFStream
 1VFOwnership
 1Vm_bReverted
@@ -9845,7 +9905,7 @@
 3MClone
 3PStream r
 3PStreamOwnership rw
-#rtl.Classes.TFiler TObject
+#rtl.Classes.TFiler #rtl.System.TObject
 1VFRoot
 1VFLookupRoot
 1VFAncestor
@@ -10122,7 +10182,7 @@
 3POnWriteStringProperty rw
 3PDriver r
 3PPropertyPath r
-#rtl.Classes.TParser TObject
+#rtl.Classes.TParser #rtl.System.TObject
 1VfStream
 1VfBuf
 1VfBufLen
@@ -10208,12 +10268,17 @@
 1MSysDestroy
 2VFThreadID
 2MDoTerminate
+2MTerminatedSet
 2MExecute
 2MSynchronize
 2MQueue
 2MForceQueue
 2PReturnValue rw
 2PTerminated r
+1VFSuspendEvent
+1VFInitialSuspended
+1VFSuspendedInternal
+1VFThreadReaped
 3MCreate
 3MDestroy
 3MCreateAnonymousThread
@@ -10353,7 +10418,7 @@
 3PVCLComObject rw
 4PName rws
 4PTag rw
-#rtl.Classes.TBasicActionLink TObject
+#rtl.Classes.TBasicActionLink #rtl.System.TObject
 1VFOnChange
 2VFAction
 2MAssignClient
@@ -10416,7 +10481,7 @@
 3MGetCurrent
 3MMoveNext
 3PCurrent r
-#rtl.Classes.TInterfaceList TInterfacedObject,#rtl.Classes.IInterfaceList
+#rtl.Classes.TInterfaceList #rtl.System.TInterfacedObject,#rtl.Classes.IInterfaceList
 1VFList
 2MGet
 2MGetCapacity
@@ -10664,7 +10729,7 @@
 #rtl.Variants.EVariantDispatchError #rtl.sysutils.EVariantError
 #rtl.Variants.EVariantRangeCheckError #rtl.Variants.EVariantOverflowError
 #rtl.Variants.EVariantInvalidNullOpError #rtl.Variants.EVariantInvalidOpError
-#rtl.Variants.TCustomVariantType TObject,IInterface
+#rtl.Variants.TCustomVariantType #rtl.System.TObject,#rtl.System.IInterface(#rtl.System.IUnknown)
 1VFVarType
 2MQueryInterface
 2M_AddRef
@@ -10726,7 +10791,7 @@
 3MGetProperty
 3MSetProperty
 #rtl.fgl.EListError #rtl.sysutils.Exception
-#rtl.fgl.TFPSList TObject
+#rtl.fgl.TFPSList #rtl.System.TObject
 2VFList
 2VFCount
 2VFCapacity
@@ -10775,7 +10840,7 @@
 3PList r
 3PFirst rw
 3PLast rw
-#rtl.fgl.TFPGListEnumerator TObject
+#rtl.fgl.TFPGListEnumerator #rtl.System.TObject
 2VFList
 2VFPosition
 2MGetCurrent

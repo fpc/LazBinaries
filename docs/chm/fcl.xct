@@ -40,6 +40,7 @@
   TRunCommandEventCode process/truncommandeventcode.html
   TRunCommandEventCodeSet process/truncommandeventcodeset.html
   TOnRunCommandEvent process/tonruncommandevent.html
+  TProcessForkEvent process/tprocessforkevent.html
   TprocessChar process/tprocesschar.html
   TProcessString process/tprocessstring.html
   TProcessStrings process/tprocessstrings.html
@@ -73,6 +74,7 @@
    InheritHandles process/tprocess.inherithandles.html
    OnRunCommandEvent process/tprocess.onruncommandevent.html
    RunCommandSleepTime process/tprocess.runcommandsleeptime.html
+   OnForkEvent process/tprocess.onforkevent.html
    PipeBufferSize process/tprocess.pipebuffersize.html
    Active process/tprocess.active.html
    ApplicationName process/tprocess.applicationname.html
@@ -97,8 +99,11 @@
    FillAttribute process/tprocess.fillattribute.html
    XTermProgram process/tprocess.xtermprogram.html
   CommandToList process/commandtolist.html
+  DetectXTerm process/detectxterm.html
   RunCommandIndir process/runcommandindir.html
   RunCommand process/runcommand.html
+  TryTerminals process/tryterminals.html
+  XTermProgram process/xtermprogram.html
   DefaultTProcess process/defaulttprocess.html
  dbugintf dbugintf/index.html
   debugservers dbugintf/debugservers.html
@@ -107,9 +112,8 @@
   SExiting dbugintf/index-1.html#sexiting
   SSeparator dbugintf/index-1.html#sseparator
   SServerStartFailed dbugintf/index-1.html#sserverstartfailed
-  SendError dbugintf/senderror.html
-  DefaultDebugServer dbugintf/defaultdebugserver.html
   TDebugLevel dbugintf/tdebuglevel.html
+  TErrorLevel dbugintf/terrorlevel.html
   SendBoolean dbugintf/sendboolean.html
   SendDateTime dbugintf/senddatetime.html
   SendInteger dbugintf/sendinteger.html
@@ -125,7 +129,21 @@
   GetDebuggingEnabled dbugintf/getdebuggingenabled.html
   StartDebugServer dbugintf/startdebugserver.html
   InitDebugClient dbugintf/initdebugclient.html
+  FreeDebugClient dbugintf/freedebugclient.html
   DebugServerExe dbugintf/debugserverexe.html
+  DefaultDebugServer dbugintf/defaultdebugserver.html
+  SendError dbugintf/senderror.html
+ dbugmsg dbugmsg/index.html
+  DebugServerID dbugmsg/debugserverid.html
+  lctStop dbugmsg/lctstop.html
+  lctInformation dbugmsg/lctinformation.html
+  lctWarning dbugmsg/lctwarning.html
+  lctError dbugmsg/lcterror.html
+  lctIdentify dbugmsg/lctidentify.html
+  TDebugMessage dbugmsg/tdebugmessage.html
+  ReadDebugMessageFromStream dbugmsg/readdebugmessagefromstream.html
+  WriteDebugMessageToStream dbugmsg/writedebugmessagetostream.html
+  DebugMessageName dbugmsg/debugmessagename.html
  Contnrs contnrs/index.html
   MaxHashListSize contnrs/maxhashlistsize.html
   MaxHashStrSize contnrs/maxhashstrsize.html
@@ -513,17 +531,6 @@
    Destroy pooledmm/tnonfreepooledmemmanager.destroy.html
    NewItem pooledmm/tnonfreepooledmemmanager.newitem.html
    EnumerateItems pooledmm/tnonfreepooledmemmanager.enumerateitems.html
- dbugmsg dbugmsg/index.html
-  DebugServerID dbugmsg/debugserverid.html
-  lctStop dbugmsg/lctstop.html
-  lctInformation dbugmsg/lctinformation.html
-  lctWarning dbugmsg/lctwarning.html
-  lctError dbugmsg/lcterror.html
-  lctIdentify dbugmsg/lctidentify.html
-  TDebugMessage dbugmsg/tdebugmessage.html
-  ReadDebugMessageFromStream dbugmsg/readdebugmessagefromstream.html
-  WriteDebugMessageToStream dbugmsg/writedebugmessagetostream.html
-  DebugMessageName dbugmsg/debugmessagename.html
  streamex streamex/index.html
   MIN_BUFFER_SIZE streamex/min_buffer_size.html
   BUFFER_SIZE streamex/buffer_size.html
@@ -593,14 +600,6 @@
    ReadDouble streamex/tstreamhelper.readdouble.html
    WriteSingle streamex/tstreamhelper.writesingle.html
    WriteDouble streamex/tstreamhelper.writedouble.html
-   ReadByte streamex/tstreamhelper.readbyte.html
-   ReadWord streamex/tstreamhelper.readword.html
-   ReadDWord streamex/tstreamhelper.readdword.html
-   ReadQWord streamex/tstreamhelper.readqword.html
-   WriteByte streamex/tstreamhelper.writebyte.html
-   WriteWord streamex/tstreamhelper.writeword.html
-   WriteDWord streamex/tstreamhelper.writedword.html
-   WriteQWord streamex/tstreamhelper.writeqword.html
  inicol inicol/index.html
   KeyCount inicol/keycount.html
   SGlobal inicol/sglobal.html
@@ -2787,7 +2786,9 @@
   DEFDIALECT ibconnection/defdialect.html
   MAXBLOBSEGMENTSIZE ibconnection/maxblobsegmentsize.html
   TDatabaseInfo ibconnection/tdatabaseinfo.html
+  TStatusVector ibconnection/tstatusvector.html
   EIBDatabaseError ibconnection/eibdatabaseerror.html
+   StatusVector ibconnection/eibdatabaseerror.statusvector.html
    GDSErrorCode ibconnection/eibdatabaseerror.gdserrorcode.html
   TIBCursor ibconnection/tibcursor.html
   TIBTrans ibconnection/tibtrans.html
@@ -2860,14 +2861,17 @@
   ValueJSONTypes fpjson/valuejsontypes.html
   ActualValueJSONTypes fpjson/actualvaluejsontypes.html
   StructuredJSONTypes fpjson/structuredjsontypes.html
+  jitNumberLargeInt fpjson/jitnumberlargeint.html
   TJSONtype fpjson/tjsontype.html
   TJSONInstanceType fpjson/tjsoninstancetype.html
   TJSONFloat fpjson/tjsonfloat.html
   TJSONStringType fpjson/tjsonstringtype.html
   TJSONUnicodeStringType fpjson/tjsonunicodestringtype.html
   TJSONCharType fpjson/tjsonchartype.html
+  PJSONCharType fpjson/pjsonchartype.html
   TJSONVariant fpjson/tjsonvariant.html
   TFPJSStream fpjson/tfpjsstream.html
+  TJSONLargeInt fpjson/tjsonlargeint.html
   TFormatOption fpjson/tformatoption.html
   TFormatOptions fpjson/tformatoptions.html
   TJSONEnum fpjson/tjsonenum.html
@@ -2875,6 +2879,10 @@
   TJSONNumberType fpjson/tjsonnumbertype.html
   TJSONFloatNumberClass fpjson/tjsonfloatnumberclass.html
   TJSONIntegerNumberClass fpjson/tjsonintegernumberclass.html
+  TJSONInt64NumberClass fpjson/tjsonint64numberclass.html
+  TJSONLargeIntNumber fpjson/tjsonlargeintnumber.html
+  TJSONLargeIntNumberClass fpjson/tjsonlargeintnumberclass.html
+  TJSONQWordNumberClass fpjson/tjsonqwordnumberclass.html
   TJSONStringClass fpjson/tjsonstringclass.html
   TJSONBooleanClass fpjson/tjsonbooleanclass.html
   TJSONNullClass fpjson/tjsonnullclass.html
@@ -2882,6 +2890,8 @@
   TJSONArrayClass fpjson/tjsonarrayclass.html
   TJSONObjectIterator fpjson/tjsonobjectiterator.html
   TJSONObjectClass fpjson/tjsonobjectclass.html
+  TJSONParserHandler fpjson/tjsonparserhandler.html
+  TJSONStringParserHandler fpjson/tjsonstringparserhandler.html
   TBaseJSONEnumerator fpjson/tbasejsonenumerator.html
    GetCurrent fpjson/tbasejsonenumerator.getcurrent.html
    MoveNext fpjson/tbasejsonenumerator.movenext.html
@@ -2901,6 +2911,10 @@
    Items fpjson/tjsondata.items.html
    Value fpjson/tjsondata.value.html
    AsString fpjson/tjsondata.asstring.html
+   AsUnicodeString fpjson/tjsondata.asunicodestring.html
+   AsInt64 fpjson/tjsondata.asint64.html
+   AsQWord fpjson/tjsondata.asqword.html
+   AsLargeInt fpjson/tjsondata.aslargeint.html
    AsFloat fpjson/tjsondata.asfloat.html
    AsInteger fpjson/tjsondata.asinteger.html
    AsBoolean fpjson/tjsondata.asboolean.html
@@ -2919,6 +2933,16 @@
    NumberType fpjson/tjsonintegernumber.numbertype.html
    Clear fpjson/tjsonintegernumber.clear.html
    Clone fpjson/tjsonintegernumber.clone.html
+  TJSONInt64Number fpjson/tjsonint64number.html
+   Create fpjson/tjsonint64number.create.html
+   NumberType fpjson/tjsonint64number.numbertype.html
+   Clear fpjson/tjsonint64number.clear.html
+   Clone fpjson/tjsonint64number.clone.html
+  TJSONQWordNumber fpjson/tjsonqwordnumber.html
+   Create fpjson/tjsonqwordnumber.create.html
+   NumberType fpjson/tjsonqwordnumber.numbertype.html
+   Clear fpjson/tjsonqwordnumber.clear.html
+   Clone fpjson/tjsonqwordnumber.clone.html
   TJSONString fpjson/tjsonstring.html
    StrictEscaping fpjson/tjsonstring.strictescaping.html
    Create fpjson/tjsonstring.create.html
@@ -2955,6 +2979,10 @@
    Types fpjson/tjsonarray.types.html
    Nulls fpjson/tjsonarray.nulls.html
    Integers fpjson/tjsonarray.integers.html
+   Int64s fpjson/tjsonarray.int64s.html
+   LargeInts fpjson/tjsonarray.largeints.html
+   QWords fpjson/tjsonarray.qwords.html
+   UnicodeStrings fpjson/tjsonarray.unicodestrings.html
    Strings fpjson/tjsonarray.strings.html
    Floats fpjson/tjsonarray.floats.html
    Booleans fpjson/tjsonarray.booleans.html
@@ -2976,12 +3004,17 @@
    Add fpjson/tjsonobject.add.html
    Delete fpjson/tjsonobject.delete.html
    Remove fpjson/tjsonobject.remove.html
+   Extract fpjson/tjsonobject.extract.html
    Names fpjson/tjsonobject.names.html
    Elements fpjson/tjsonobject.elements.html
    Types fpjson/tjsonobject.types.html
    Nulls fpjson/tjsonobject.nulls.html
    Floats fpjson/tjsonobject.floats.html
    Integers fpjson/tjsonobject.integers.html
+   Int64s fpjson/tjsonobject.int64s.html
+   QWords fpjson/tjsonobject.qwords.html
+   LargeInts fpjson/tjsonobject.largeints.html
+   UnicodeStrings fpjson/tjsonobject.unicodestrings.html
    Strings fpjson/tjsonobject.strings.html
    Booleans fpjson/tjsonobject.booleans.html
    Arrays fpjson/tjsonobject.arrays.html
@@ -2995,6 +3028,11 @@
   CreateJSON fpjson/createjson.html
   CreateJSONArray fpjson/createjsonarray.html
   CreateJSONObject fpjson/createjsonobject.html
+  GetJSON fpjson/getjson.html
+  SetJSONParserHandler fpjson/setjsonparserhandler.html
+  SetJSONStringParserHandler fpjson/setjsonstringparserhandler.html
+  GetJSONParserHandler fpjson/getjsonparserhandler.html
+  GetJSONStringParserHandler fpjson/getjsonstringparserhandler.html
  fpmimetypes fpmimetypes/index.html
   TMimeType fpmimetypes/tmimetype.html
    Create fpmimetypes/tmimetype.create.html
@@ -3052,10 +3090,6 @@
 1VFProcessOptions
 1VFRunCommandSleepTime
 1VFStartupOptions
-1VFProcessID
-1VFThreadID
-1VFProcessHandle
-1VFThreadHandle
 1VFFillAttribute
 1VFApplicationName
 1VFConsoleTitle
@@ -3067,6 +3101,7 @@
 1VFParameters
 1VFShowWindow
 1VFInherithandles
+1VFForkEvent
 1VFProcessPriority
 1VdwXCountchars
 1VdwXSize
@@ -3103,6 +3138,10 @@
 2VFInputStream
 2VFOutputStream
 2VFStderrStream
+2VFProcessID
+2VFThreadID
+2VFProcessHandle
+2VFThreadHandle
 2MCloseProcessHandles
 2MCreateStreams
 2MFreeStream
@@ -3133,6 +3172,7 @@
 3PInheritHandles rw
 3POnRunCommandEvent rw
 3PRunCommandSleepTime rw
+3POnForkEvent rw
 4PPipeBufferSize rw
 4PActive rw
 4PApplicationName rw
@@ -3156,7 +3196,7 @@
 4PWindowWidth rw
 4PFillAttribute rw
 4PXTermProgram rw
-#fcl.Contnrs.TFPObjectList TObject
+#fcl.Contnrs.TFPObjectList #rtl.System.TObject
 1VFFreeObjects
 1VFList
 1MGetCount
@@ -3231,7 +3271,7 @@
 3MLast
 3MInsert
 3PItems rw
-#fcl.Contnrs.TOrderedList TObject
+#fcl.Contnrs.TOrderedList #rtl.System.TObject
 1VFList
 2MPushItem
 2MPopItem
@@ -3256,7 +3296,7 @@
 3MPush
 3MPop
 3MPeek
-#fcl.Contnrs.TFPHashList TObject
+#fcl.Contnrs.TFPHashList #rtl.System.TObject
 1VFHashList
 1VFCount
 1VFCapacity
@@ -3316,7 +3356,7 @@
 3MRename
 3PName r
 3PHash r
-#fcl.Contnrs.TFPHashObjectList TObject
+#fcl.Contnrs.TFPHashObjectList #rtl.System.TObject
 1VFFreeObjects
 1VFHashList
 1MGetCount
@@ -3350,12 +3390,12 @@
 3POwnsObjects rw
 3PItems rw
 3PList r
-#fcl.Contnrs.THTCustomNode TObject
+#fcl.Contnrs.THTCustomNode #rtl.System.TObject
 1VFKey
 3MCreateWith
 3MHasKey
 3PKey r
-#fcl.Contnrs.TFPCustomHashTable TObject
+#fcl.Contnrs.TFPCustomHashTable #rtl.System.TObject
 1VFHashTable
 1VFHashFunction
 1VFCount
@@ -3443,7 +3483,7 @@
 3POwnsObjects r
 #fcl.Contnrs.EDuplicate #rtl.sysutils.Exception
 #fcl.Contnrs.EKeyNotFound #rtl.sysutils.Exception
-#fcl.Contnrs.TCustomBucketList TObject
+#fcl.Contnrs.TCustomBucketList #rtl.System.TObject
 1VFBuckets
 1MGetBucketCount
 1MGetData
@@ -3641,7 +3681,7 @@
 3MTranslate
 #fcl.gettext.EMOFileError #rtl.sysutils.Exception
 #fcl.ezcgi.ECGIException #rtl.sysutils.Exception
-#fcl.ezcgi.TEZcgi TObject
+#fcl.ezcgi.TEZcgi #rtl.System.TObject
 1VFVariables
 1VFName
 1VFEmail
@@ -3739,7 +3779,7 @@
 3MWriteStr
 3MWriteValue
 3PPosition rw
-#fcl.streamex.TTextReader TObject
+#fcl.streamex.TTextReader #rtl.System.TObject
 2MIsEof
 3MCreate
 3MReset
@@ -3807,14 +3847,6 @@
 0MReadDouble
 0MWriteSingle
 0MWriteDouble
-0MReadByte
-0MReadWord
-0MReadDWord
-0MReadQWord
-0MWriteByte
-0MWriteWord
-0MWriteDWord
-0MWriteQWord
 #fcl.inicol.TIniCollectionItem #rtl.Classes.TCollectionItem
 2MGetSectionName
 2MSetSectionName
@@ -4121,7 +4153,7 @@
 #fcl.syncobjs.ESyncObjectException #rtl.sysutils.Exception
 #fcl.syncobjs.ELockException #fcl.syncobjs.ESyncObjectException
 #fcl.syncobjs.ELockRecursionException #fcl.syncobjs.ESyncObjectException
-#fcl.syncobjs.TSynchroObject TObject
+#fcl.syncobjs.TSynchroObject #rtl.System.TObject
 0MAcquire
 0MRelease
 #fcl.syncobjs.TCriticalSection #fcl.syncobjs.TSynchroObject
@@ -4208,7 +4240,7 @@
 3PSingleInstance r
 3PSingleInstanceClass rw
 3PSingleInstanceEnabled rw
-#fcl.BlowFish.TBlowFish TObject
+#fcl.BlowFish.TBlowFish #rtl.System.TObject
 1VPBox
 1VSBox
 1MF
@@ -4276,7 +4308,7 @@
 3PCount r
 3PMaxCount rw
 3PMaxAction rw
-#fcl.simpleipc.TIPCServerComm TObject
+#fcl.simpleipc.TIPCServerComm #rtl.System.TObject
 1VFOwner
 2MGetInstanceID
 2MDoError
@@ -4385,7 +4417,7 @@
 4PThreaded rw
 4PThreadTimeout rw
 4PSynchronizeEvents rw
-#fcl.simpleipc.TIPCClientComm TObject
+#fcl.simpleipc.TIPCClientComm #rtl.System.TObject
 1VFOwner
 2MDoError
 3MCreate
@@ -4411,7 +4443,7 @@
 3MSendStringMessageFmt
 3PServerInstance rw
 #fcl.simpleipc.EIPCError #rtl.sysutils.Exception
-#fcl.RttiUtils.TPropInfoList TObject
+#fcl.RttiUtils.TPropInfoList #rtl.System.TObject
 1VFList
 1VFCount
 1VFSize
@@ -4424,7 +4456,7 @@
 3MIntersect
 3PCount r
 3PItems r
-#fcl.RttiUtils.TPropsStorage TObject
+#fcl.RttiUtils.TPropsStorage #rtl.System.TObject
 1VFObject
 1VFOwner
 1VFPrefix
@@ -4948,7 +4980,7 @@
 4POnTimer
 4POnStartTimer
 4POnStopTimer
-#fcl.fptimer.TFPTimerDriver TObject
+#fcl.fptimer.TFPTimerDriver #rtl.System.TObject
 2VFTimer
 2VFTimerStarted
 2MSetInterval
@@ -5029,7 +5061,7 @@
 3MMakeNameUnique
 3PHiddenFields rw
 3PItems rw
-#fcl.DB.TLookupList TObject
+#fcl.DB.TLookupList #rtl.System.TObject
 1VFList
 3MCreate
 3MDestroy
@@ -5646,7 +5678,7 @@
 3MCreate
 3MMoveNext
 3PCurrent r
-#fcl.DB.TFields TObject
+#fcl.DB.TFields #rtl.System.TObject
 1VFDataset
 1VFFieldList
 1VFOnChange
@@ -6407,7 +6439,7 @@
 2MWrite
 3MCreate
 3MDestroy
-#fcl.BufDataset.TBufIndex TObject
+#fcl.BufDataset.TBufIndex #rtl.System.TObject
 1VFDataset
 2MGetBookmarkSize
 2MGetCurrentBuffer
@@ -6573,7 +6605,7 @@
 3MInsertRecordBeforeCurrentRecord
 3MRemoveRecordFromIndex
 3MEndUpdate
-#fcl.BufDataset.TDataPacketReader TObject
+#fcl.BufDataset.TDataPacketReader #rtl.System.TObject
 0VFDataSet
 0VFStream
 2MRowStateToByte
@@ -6922,7 +6954,7 @@
 1MSetIdentifier
 3MAddIdentifier
 3PIdentifiers rw
-#fcl.Zipper.TCompressor TObject
+#fcl.Zipper.TCompressor #rtl.System.TObject
 1VFTerminated
 2VFInFile
 2VFOutFile
@@ -6942,7 +6974,7 @@
 3POnProgress rw
 3PCrc32Val rw
 3PTerminated r
-#fcl.Zipper.TDeCompressor TObject
+#fcl.Zipper.TDeCompressor #rtl.System.TObject
 2VFInFile
 2VFOutFile
 2VFCrc32Val
@@ -7058,7 +7090,7 @@
 3MAddFileEntry
 3MAddFileEntries
 3PEntries rw
-#fcl.Zipper.TZipper TObject
+#fcl.Zipper.TZipper #rtl.System.TObject
 1VFEntries
 1VFTerminated
 1VFZipping
@@ -7130,7 +7162,7 @@
 1MGetFZ
 1MSetFZ
 3PFullEntries rw
-#fcl.Zipper.TUnZipper TObject
+#fcl.Zipper.TUnZipper #rtl.System.TObject
 1VFOnCloseInputStream
 1VFOnCreateStream
 1VFOnDoneStream
@@ -7200,7 +7232,7 @@
 3PFlat rw
 3PTerminated r
 #fcl.Zipper.EZipError #rtl.sysutils.Exception
-#fcl.SQLDB.TSQLHandle TObject
+#fcl.SQLDB.TSQLHandle #rtl.System.TObject
 #fcl.SQLDB.TSQLCursor #fcl.SQLDB.TSQLHandle
 3VFPrepared
 3VFSelectable
@@ -7718,6 +7750,8 @@
 0MLoadedLibraryName
 0MApplyParams
 #fcl.IBConnection.EIBDatabaseError #fcl.SQLDB.ESQLDatabaseError
+1VFStatusVector
+3PStatusVector rw
 3PGDSErrorCode r
 #fcl.IBConnection.TIBCursor #fcl.SQLDB.TSQLCursor
 2VStatus
@@ -7883,7 +7917,7 @@
 3MGetCurrent
 3MMoveNext
 3PCurrent r
-#fcl.fpjson.TJSONData TObject
+#fcl.fpjson.TJSONData #rtl.System.TObject
 1MElementSeps
 1VFCompressedJSON
 1VFElementSep
@@ -7896,6 +7930,12 @@
 2MGetAsFloat
 2MGetAsInteger
 2MGetIsNull
+2MGetAsInt64
+2MGetAsQWord
+2MGetAsUnicodeString
+2MSetAsInt64
+2MSetAsQword
+2MSetAsUnicodeString
 2MSetAsBoolean
 2MSetAsFloat
 2MSetAsInteger
@@ -7922,6 +7962,10 @@
 3PItems rw
 3PValue rw
 3PAsString rw
+3PAsUnicodeString rw
+3PAsInt64 rw
+3PAsQWord rw
+3PAsLargeInt rw
 3PAsFloat rw
 3PAsInteger rw
 3PAsBoolean rw
@@ -7935,6 +7979,31 @@
 2MGetAsBoolean
 2MGetAsFloat
 2MGetAsInteger
+2MGetAsJSON
+2MGetAsString
+2MGetValue
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsInt64
+2MSetAsQword
+2MSetAsBoolean
+2MSetAsFloat
+2MSetAsInteger
+2MSetAsString
+2MSetValue
+3MCreate
+3MNumberType
+3MClear
+3MClone
+#fcl.fpjson.TJSONIntegerNumber #fcl.fpjson.TJSONNumber
+1VFValue
+2MGetAsBoolean
+2MGetAsFloat
+2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsInt64
+2MSetAsQword
 2MSetAsBoolean
 2MSetAsFloat
 2MSetAsInteger
@@ -7947,14 +8016,39 @@
 3MNumberType
 3MClear
 3MClone
-#fcl.fpjson.TJSONIntegerNumber #fcl.fpjson.TJSONNumber
+#fcl.fpjson.TJSONInt64Number #fcl.fpjson.TJSONNumber
 1VFValue
 2MGetAsBoolean
 2MGetAsFloat
 2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
 2MSetAsBoolean
 2MSetAsFloat
 2MSetAsInteger
+2MSetAsInt64
+2MSetAsQword
+2MGetAsJSON
+2MGetAsString
+2MSetAsString
+2MGetValue
+2MSetValue
+3MCreate
+3MNumberType
+3MClear
+3MClone
+#fcl.fpjson.TJSONQWordNumber #fcl.fpjson.TJSONNumber
+1VFValue
+2MGetAsBoolean
+2MGetAsFloat
+2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsBoolean
+2MSetAsFloat
+2MSetAsInteger
+2MSetAsInt64
+2MSetAsQword
 2MGetAsJSON
 2MGetAsString
 2MSetAsString
@@ -7971,6 +8065,10 @@
 2MGetAsBoolean
 2MGetAsFloat
 2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsInt64
+2MSetAsQword
 2MSetAsBoolean
 2MSetAsFloat
 2MSetAsInteger
@@ -7989,6 +8087,10 @@
 2MGetAsBoolean
 2MGetAsFloat
 2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsInt64
+2MSetAsQword
 2MSetAsBoolean
 2MSetAsFloat
 2MSetAsInteger
@@ -8005,13 +8107,17 @@
 2MGetAsFloat
 2MGetAsInteger
 2MGetIsNull
+2MGetAsJSON
+2MGetAsString
+2MGetValue
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsInt64
+2MSetAsQword
 2MSetAsBoolean
 2MSetAsFloat
 2MSetAsInteger
-2MGetAsJSON
-2MGetAsString
 2MSetAsString
-2MGetValue
 2MSetValue
 3MJSONType
 3MClear
@@ -8026,6 +8132,12 @@
 1MGetObjects
 1MGetStrings
 1MGetTypes
+1MGetInt64s
+1MGetQWords
+1MGetUnicodeStrings
+1MSetInt64s
+1MSetQWords
+1MSetUnicodeStrings
 1MSetArrays
 1MSetBooleans
 1MSetFloats
@@ -8037,6 +8149,10 @@
 2MGetAsBoolean
 2MGetAsFloat
 2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsInt64
+2MSetAsQword
 2MSetAsBoolean
 2MSetAsFloat
 2MSetAsInteger
@@ -8069,6 +8185,10 @@
 3PTypes r
 3PNulls r
 3PIntegers rw
+3PInt64s rw
+3PLargeInts rw
+3PQWords rw
+3PUnicodeStrings rw
 3PStrings rw
 3PFloats rw
 3PBooleans rw
@@ -8103,6 +8223,12 @@
 1MSetElements
 1MSetFloats
 1MSetIntegers
+1MGetInt64s
+1MGetUnicodeStrings
+1MGetQWords
+1MSetInt64s
+1MSetQWords
+1MSetUnicodeStrings
 1MSetIsNull
 1MSetObjects
 1MSetStrings
@@ -8113,6 +8239,10 @@
 2MGetAsBoolean
 2MGetAsFloat
 2MGetAsInteger
+2MGetAsInt64
+2MGetAsQWord
+2MSetAsInt64
+2MSetAsQword
 2MSetAsBoolean
 2MSetAsFloat
 2MSetAsInteger
@@ -8140,18 +8270,23 @@
 3MAdd
 3MDelete
 3MRemove
+3MExtract
 3PNames r
 3PElements rw
 3PTypes r
 3PNulls rw
 3PFloats rw
 3PIntegers rw
+3PInt64s rw
+3PQWords rw
+3PLargeInts rw
+3PUnicodeStrings rw
 3PStrings rw
 3PBooleans rw
 3PArrays rw
 3PObjects rw
 #fcl.fpjson.EJSON #rtl.sysutils.Exception
-#fcl.fpmimetypes.TMimeType TObject
+#fcl.fpmimetypes.TMimeType #rtl.System.TObject
 1VFExtensions
 1VFMimeType
 3MCreate
