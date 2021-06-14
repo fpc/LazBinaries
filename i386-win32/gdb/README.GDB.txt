@@ -1,6 +1,8 @@
 The files in this directory are for distribution with Lazarus (IDE for FreePacal)
 
-This folder contains GDB version 7.7.1 for windows 32 bit.
+This folder contains a modified GDB based on version 9.2 for windows 32 bit.
+
+Modifications are published here: https://github.com/User4martin/binutils-gdb/tree/win-unicode-9-2
 
 From the gdb source files:
 >>>>>>>>>>>>>>>>
@@ -25,23 +27,4 @@ From the gdb source files:
 See the file "copying.gdb" for details. Or download the sources as specified below and read the included copyright notes.
 
 This gdb is linked with other libraries included (or redistributed by) in the mingw distribution. See the mingw project for copyright and licenses.
-
-
-The source for this build of gdb can be downloaded using GIT 
-  git clone git://sourceware.org/git/binutils-gdb.git TARGETDIR
-  cd TARGETDIR
-  git checkout gdb-7.7.1-release
-  
-Other downloads, including archives can be found at http://www.gnu.org/software/gdb/download/
-  
-To build the exe a full install of mingw ( http://www.mingw.org/ ) is needed.
-  make distclean
-  ./configure --enable-static=yes --build=mingw32 --with-expat
-  make LDFLAGS=-static
-  strip gdb.exe
-  strip gdbserver.exe
-  
-Note that gettext-18.3.2-1 may not work. Revert to a previous version, e.g.:
-  mingw-get remove gettext
-  mingw-get install gettext=18.3.1-1
 
