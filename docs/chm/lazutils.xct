@@ -931,6 +931,7 @@
   TUtf8Char masks/tutf8char.html
   TMaskChar masks/tmaskchar.html
   TMaskString masks/tmaskstring.html
+  EMaskError masks/emaskerror.html
   TMask masks/tmask.html
    Create masks/tmask.create.html
    Destroy masks/tmask.destroy.html
@@ -1316,11 +1317,28 @@
    FPreviousSibling laz2_dom/tdomnode.fprevioussibling.html
    FNextSibling laz2_dom/tdomnode.fnextsibling.html
    FOwnerDocument laz2_dom/tdomnode.fownerdocument.html
+   GetNodeName laz2_dom/tdomnode.getnodename.html
+   GetNodeValue laz2_dom/tdomnode.getnodevalue.html
+   SetNodeValue laz2_dom/tdomnode.setnodevalue.html
+   GetFirstChild laz2_dom/tdomnode.getfirstchild.html
+   GetLastChild laz2_dom/tdomnode.getlastchild.html
+   GetAttributes laz2_dom/tdomnode.getattributes.html
    GetRevision laz2_dom/tdomnode.getrevision.html
+   GetNodeType laz2_dom/tdomnode.getnodetype.html
+   GetTextContent laz2_dom/tdomnode.gettextcontent.html
+   SetTextContent laz2_dom/tdomnode.settextcontent.html
+   GetLocalName laz2_dom/tdomnode.getlocalname.html
+   GetNamespaceURI laz2_dom/tdomnode.getnamespaceuri.html
+   GetPrefix laz2_dom/tdomnode.getprefix.html
+   SetPrefix laz2_dom/tdomnode.setprefix.html
+   GetOwnerDocument laz2_dom/tdomnode.getownerdocument.html
+   GetBaseURI laz2_dom/tdomnode.getbaseuri.html
    SetReadOnly laz2_dom/tdomnode.setreadonly.html
    Changing laz2_dom/tdomnode.changing.html
    Create laz2_dom/tdomnode.create.html
    Destroy laz2_dom/tdomnode.destroy.html
+   FreeInstance laz2_dom/tdomnode.freeinstance.html
+   GetChildNodes laz2_dom/tdomnode.getchildnodes.html
    GetChildCount laz2_dom/tdomnode.getchildcount.html
    NodeName laz2_dom/tdomnode.nodename.html
    NodeValue laz2_dom/tdomnode.nodevalue.html
@@ -1361,23 +1379,6 @@
    FindNode laz2_dom/tdomnode.findnode.html
    CompareName laz2_dom/tdomnode.comparename.html
    Flags laz2_dom/tdomnode.flags.html
-   GetNodeName laz2_dom/tdomnode.nodename.html
-   GetNodeValue laz2_dom/tdomnode.nodevalue.html
-   SetNodeValue laz2_dom/tdomnode.nodevalue.html
-   GetFirstChild laz2_dom/tdomnode.firstchild.html
-   GetLastChild laz2_dom/tdomnode.lastchild.html
-   GetAttributes laz2_dom/tdomnode.attributes.html
-   GetNodeType laz2_dom/tdomnode.nodetype.html
-   GetTextContent laz2_dom/tdomnode.textcontent.html
-   SetTextContent laz2_dom/tdomnode.textcontent.html
-   GetLocalName laz2_dom/tdomnode.localname.html
-   GetNamespaceURI laz2_dom/tdomnode.namespaceuri.html
-   GetPrefix laz2_dom/tdomnode.prefix.html
-   SetPrefix laz2_dom/tdomnode.prefix.html
-   GetOwnerDocument laz2_dom/tdomnode.ownerdocument.html
-   GetBaseURI laz2_dom/tdomnode.baseuri.html
-   FreeInstance ms-its:rtl.chm::/system/tobject.freeinstance.html
-   GetChildNodes laz2_dom/tdomnode.childnodes.html
   TDOMNode_WithChildren laz2_dom/tdomnode_withchildren.html
    FFirstChild laz2_dom/tdomnode_withchildren.ffirstchild.html
    FLastChild laz2_dom/tdomnode_withchildren.flastchild.html
@@ -1386,20 +1387,22 @@
    GetLastChild laz2_dom/tdomnode_withchildren.getlastchild.html
    CloneChildren laz2_dom/tdomnode_withchildren.clonechildren.html
    FreeChildren laz2_dom/tdomnode_withchildren.freechildren.html
+   GetTextContent laz2_dom/tdomnode_withchildren.gettextcontent.html
    SetTextContent laz2_dom/tdomnode_withchildren.settextcontent.html
    Destroy laz2_dom/tdomnode_withchildren.destroy.html
+   InsertBefore laz2_dom/tdomnode_withchildren.insertbefore.html
+   ReplaceChild laz2_dom/tdomnode_withchildren.replacechild.html
+   DetachChild laz2_dom/tdomnode_withchildren.detachchild.html
+   HasChildNodes laz2_dom/tdomnode_withchildren.haschildnodes.html
    GetChildCount laz2_dom/tdomnode.getchildcount.html
+   FindNode laz2_dom/tdomnode_withchildren.findnode.html
    InternalAppend laz2_dom/tdomnode_withchildren.internalappend.html
-   GetTextContent laz2_dom/tdomnode.textcontent.html
-   InsertBefore laz2_dom/tdomnode.insertbefore.html
-   ReplaceChild laz2_dom/tdomnode.replacechild.html
-   DetachChild laz2_dom/tdomnode.detachchild.html
-   HasChildNodes laz2_dom/tdomnode.haschildnodes.html
-   FindNode laz2_dom/tdomnode.findnode.html
   TDOMNodeList laz2_dom/tdomnodelist.html
    FNode laz2_dom/tdomnodelist.fnode.html
    FRevision laz2_dom/tdomnodelist.frevision.html
    FList laz2_dom/tdomnodelist.flist.html
+   GetCount laz2_dom/tdomnodelist.getcount.html
+   GetItem laz2_dom/tdomnodelist.getitem.html
    NodeFilter laz2_dom/tdomnodelist.nodefilter.html
    BuildList laz2_dom/tdomnodelist.buildlist.html
    Create laz2_dom/tdomnodelist.create.html
@@ -1407,8 +1410,6 @@
    Item laz2_dom/tdomnodelist.item.html
    Count laz2_dom/tdomnodelist.count.html
    Length laz2_dom/tdomnodelist.length.html
-   GetCount laz2_dom/tdomnodelist.length.html
-   GetItem laz2_dom/tdomnodelist.item.html
   TDOMElementList laz2_dom/tdomelementlist.html
    filter laz2_dom/tdomelementlist.filter.html
    FNSIndexFilter laz2_dom/tdomelementlist.fnsindexfilter.html
@@ -1423,6 +1424,9 @@
    FNodeType laz2_dom/tdomnamednodemap.fnodetype.html
    FSortedList laz2_dom/tdomnamednodemap.fsortedlist.html
    FPosList laz2_dom/tdomnamednodemap.fposlist.html
+   GetPosItem laz2_dom/tdomnamednodemap.getpositem.html
+   GetSortedItem laz2_dom/tdomnamednodemap.getsorteditem.html
+   GetLength laz2_dom/tdomnamednodemap.getlength.html
    FindSorted laz2_dom/tdomnamednodemap.findsorted.html
    DeleteSorted laz2_dom/tdomnamednodemap.deletesorted.html
    RestoreDefault laz2_dom/tdomnamednodemap.restoredefault.html
@@ -1434,15 +1438,15 @@
    SetNamedItem laz2_dom/tdomnamednodemap.setnameditem.html
    RemoveNamedItem laz2_dom/tdomnamednodemap.removenameditem.html
    getNamedItemNS laz2_dom/tdomnamednodemap.getnameditemns.html
-   setNamedItemNS laz2_dom/tdomnamednodemap.setnameditemns.html
    removeNamedItemNS laz2_dom/tdomnamednodemap.removenameditemns.html
    Item laz2_dom/tdomnamednodemap.item.html
    SortedItem laz2_dom/tdomnamednodemap.sorteditem.html
    Length laz2_dom/tdomnamednodemap.length.html
-   GetPosItem laz2_dom/tdomnamednodemap.item.html
-   GetSortedItem laz2_dom/tdomnamednodemap.sorteditem.html
-   GetLength laz2_dom/tdomnamednodemap.length.html
+   setNamedItemNS 
   TDOMCharacterData laz2_dom/tdomcharacterdata.html
+   GetLength laz2_dom/tdomcharacterdata.getlength.html
+   GetNodeValue laz2_dom/tdomcharacterdata.getnodevalue.html
+   SetNodeValue laz2_dom/tdomcharacterdata.setnodevalue.html
    Data laz2_dom/tdomcharacterdata.data.html
    Length laz2_dom/tdomcharacterdata.length.html
    SubstringData laz2_dom/tdomcharacterdata.substringdata.html
@@ -1450,17 +1454,14 @@
    InsertData laz2_dom/tdomcharacterdata.insertdata.html
    DeleteData laz2_dom/tdomcharacterdata.deletedata.html
    ReplaceData laz2_dom/tdomcharacterdata.replacedata.html
-   GetLength 
-   GetNodeValue laz2_dom/tdomnode.nodevalue.html
-   SetNodeValue laz2_dom/tdomnode.nodevalue.html
   TDOMImplementation laz2_dom/tdomimplementation.html
    HasFeature laz2_dom/tdomimplementation.hasfeature.html
    CreateDocumentType laz2_dom/tdomimplementation.createdocumenttype.html
    CreateDocument laz2_dom/tdomimplementation.createdocument.html
   TDOMDocumentFragment laz2_dom/tdomdocumentfragment.html
+   GetNodeType laz2_dom/tdomdocumentfragment.getnodetype.html
+   GetNodeName laz2_dom/tdomdocumentfragment.getnodename.html
    CloneNode laz2_dom/tdomdocumentfragment.clonenode.html
-   GetNodeType laz2_dom/tdomnode.nodetype.html
-   GetNodeName laz2_dom/tdomnode.nodename.html
   TDOMDocument laz2_dom/tdomdocument.html
    FIDList laz2_dom/tdomdocument.fidlist.html
    FRevision laz2_dom/tdomdocument.frevision.html
@@ -1524,38 +1525,44 @@
    CreateEntityReference laz2_dom/txmldocument.createentityreference.html
    XMLVersion laz2_dom/txmldocument.xmlversion.html
   TDOMNode_NS laz2_dom/tdomnode_ns.html
+   GetNodeName laz2_dom/tdomnode_ns.getnodename.html
+   GetLocalName laz2_dom/tdomnode_ns.getlocalname.html
+   GetNamespaceURI laz2_dom/tdomnode_ns.getnamespaceuri.html
+   GetPrefix laz2_dom/tdomnode_ns.getprefix.html
+   SetPrefix laz2_dom/tdomnode_ns.setprefix.html
+   SetNSI laz2_dom/tdomnode_ns.setnsi.html
    CompareName laz2_dom/tdomnode_ns.comparename.html
    NSI laz2_dom/tdomnode_ns.nsi.html
    FNSI laz2_dom/tdomnode_ns.nsi.html
-   GetNodeName laz2_dom/tdomnode.nodename.html
-   GetLocalName laz2_dom/tdomnode.localname.html
-   GetNamespaceURI laz2_dom/tdomnode.namespaceuri.html
-   GetPrefix laz2_dom/tdomnode.prefix.html
-   SetPrefix laz2_dom/tdomnode.prefix.html
-   SetNSI laz2_dom/tdomnode.namespaceuri.html
   TDOMAttr laz2_dom/tdomattr.html
    FOwnerElement laz2_dom/tdomattr.fownerelement.html
    FDataType laz2_dom/tdomattr.fdatatype.html
+   GetNodeValue laz2_dom/tdomattr.getnodevalue.html
+   GetNodeType laz2_dom/tdomattr.getnodetype.html
+   GetSpecified laz2_dom/tdomattr.getspecified.html
+   GetIsID laz2_dom/tdomattr.getisid.html
+   SetNodeValue laz2_dom/tdomattr.setnodevalue.html
    Destroy laz2_dom/tdomattr.destroy.html
+   CloneNode laz2_dom/tdomattr.clonenode.html
    Name laz2_dom/tdomattr.name.html
    Specified laz2_dom/tdomattr.specified.html
    Value laz2_dom/tdomattr.value.html
    OwnerElement laz2_dom/tdomattr.ownerelement.html
    IsID laz2_dom/tdomattr.isid.html
    DataType laz2_dom/tdomattr.datatype.html
-   GetNodeValue laz2_dom/tdomnode.nodevalue.html
-   GetNodeType laz2_dom/tdomnode.nodetype.html
-   GetSpecified laz2_dom/tdomattr.specified.html
-   GetIsID laz2_dom/tdomattr.isid.html
-   SetNodeValue laz2_dom/tdomnode.nodevalue.html
-   CloneNode laz2_dom/tdomnode.clonenode.html
   TDOMElement laz2_dom/tdomelement.html
+   GetNodeType laz2_dom/tdomelement.getnodetype.html
+   GetAttributes laz2_dom/tdomelement.getattributes.html
    AttachDefaultAttrs laz2_dom/tdomelement.attachdefaultattrs.html
    InternalLookupPrefix laz2_dom/tdomelement.internallookupprefix.html
    RestoreDefaultAttr laz2_dom/tdomelement.restoredefaultattr.html
    Destroy laz2_dom/tdomelement.destroy.html
+   CloneNode laz2_dom/tdomelement.clonenode.html
    IsEmpty laz2_dom/tdomelement.isempty.html
+   Normalize laz2_dom/tdomelement.normalize.html
    TagName laz2_dom/tdomelement.tagname.html
+   GetAttribute laz2_dom/tdomelement.getattribute.html
+   SetAttribute laz2_dom/tdomelement.setattribute.html
    RemoveAttribute laz2_dom/tdomelement.removeattribute.html
    GetAttributeNode laz2_dom/tdomelement.getattributenode.html
    SetAttributeNode laz2_dom/tdomelement.setattributenode.html
@@ -1572,12 +1579,6 @@
    HasAttributes laz2_dom/tdomelement.hasattributes.html
    AttribStrings laz2_dom/tdomelement.attribstrings.html
    FAttributes 
-   GetNodeType laz2_dom/tdomnode.nodetype.html
-   GetAttributes 
-   CloneNode laz2_dom/tdomnode.clonenode.html
-   Normalize laz2_dom/tdomnode.normalize.html
-   GetAttribute laz2_dom/tdomelement.attribstrings.html
-   SetAttribute laz2_dom/tdomelement.attribstrings.html
   TDOMText laz2_dom/tdomtext.html
    GetNodeType laz2_dom/tdomtext.getnodetype.html
    GetNodeName laz2_dom/tdomtext.getnodename.html
@@ -1588,11 +1589,11 @@
   TDOMComment laz2_dom/tdomcomment.html
    GetNodeType laz2_dom/tdomcomment.getnodetype.html
    GetNodeName laz2_dom/tdomcomment.getnodename.html
-   CloneNode laz2_dom/tdomnode.clonenode.html
+   CloneNode laz2_dom/tdomcomment.clonenode.html
   TDOMCDATASection laz2_dom/tdomcdatasection.html
-   GetNodeType laz2_dom/tdomnode.nodetype.html
-   GetNodeName laz2_dom/tdomnode.nodename.html
-   CloneNode laz2_dom/tdomnode.clonenode.html
+   GetNodeType laz2_dom/tdomcdatasection.getnodetype.html
+   GetNodeName laz2_dom/tdomcdatasection.getnodename.html
+   CloneNode laz2_dom/tdomcdatasection.clonenode.html
   TDOMDocumentType laz2_dom/tdomdocumenttype.html
    FName laz2_dom/tdomdocumenttype.fname.html
    FPublicID laz2_dom/tdomdocumenttype.fpublicid.html
@@ -1637,13 +1638,13 @@
    GetNodeName laz2_dom/tdomentityreference.getnodename.html
    CloneNode laz2_dom/tdomentityreference.clonenode.html
   TDOMProcessingInstruction laz2_dom/tdomprocessinginstruction.html
+   GetNodeType laz2_dom/tdomprocessinginstruction.getnodetype.html
+   GetNodeName laz2_dom/tdomprocessinginstruction.getnodename.html
+   GetNodeValue laz2_dom/tdomprocessinginstruction.getnodevalue.html
+   SetNodeValue laz2_dom/tdomprocessinginstruction.setnodevalue.html
+   CloneNode laz2_dom/tdomprocessinginstruction.clonenode.html
    Target laz2_dom/tdomprocessinginstruction.target.html
    Data laz2_dom/tdomprocessinginstruction.data.html
-   GetNodeType laz2_dom/tdomnode.nodetype.html
-   GetNodeName laz2_dom/tdomnode.nodename.html
-   GetNodeValue laz2_dom/tdomnode.nodevalue.html
-   SetNodeValue laz2_dom/tdomnode.nodevalue.html
-   CloneNode laz2_dom/tdomnode.clonenode.html
   TDOMAttrDef laz2_dom/tdomattrdef.html
    FExternallyDeclared laz2_dom/tdomattrdef.fexternallydeclared.html
    FDefault laz2_dom/tdomattrdef.fdefault.html
@@ -2009,6 +2010,12 @@
   EvaluationError laz2_xpath/evaluationerror.html
   EvaluateXPathExpression laz2_xpath/evaluatexpathexpression.html
  lazCollections lazcollections/index.html
+  PPRTLEvent lazcollections/pprtlevent.html
+  TWaitableSection lazcollections/twaitablesection.html
+   GetCachedOrNewEvent lazcollections/twaitablesection.getcachedornewevent.html
+   FreeOrCacheEvent lazcollections/twaitablesection.freeorcacheevent.html
+   EnterOrWait lazcollections/twaitablesection.enterorwait.html
+   Leave lazcollections/twaitablesection.leave.html
   TLazMonitor lazcollections/tlazmonitor.html
    create lazcollections/tlazmonitor.create.html
    Acquire lazcollections/tlazmonitor.acquire.html
@@ -2449,9 +2456,11 @@
   MaxTextLen lazstringutils/maxtextlen.html
   TCommentType lazstringutils/tcommenttype.html
   TCommentTypes lazstringutils/tcommenttypes.html
-  PosI lazstringutils/posi.html
+  LazStartsStr lazstringutils/lazstartsstr.html
+  LazEndsStr lazstringutils/lazendsstr.html
   LazStartsText lazstringutils/lazstartstext.html
   LazEndsText lazstringutils/lazendstext.html
+  PosI lazstringutils/posi.html
   IsNumber lazstringutils/isnumber.html
   LineEndingCount lazstringutils/lineendingcount.html
   ChangeLineEndings lazstringutils/changelineendings.html
@@ -2801,41 +2810,41 @@
    FText textstrings/ttextstrings.ftext.html
    FUpdateCount textstrings/ttextstrings.fupdatecount.html
    FChangedWhileUpdate textstrings/ttextstrings.fchangedwhileupdate.html
-   GetTextStr textstrings/ttextstrings.gettextstr.html
-   SetTextStr textstrings/ttextstrings.settextstr.html
    BuildArrays textstrings/ttextstrings.buildarrays.html
    GetCount textstrings/ttextstrings.getcount.html
    Changed textstrings/ttextstrings.changed.html
    Changing textstrings/ttextstrings.changing.html
-   Get textstrings/ttextstrings.get.html
    ClearArrays textstrings/ttextstrings.cleararrays.html
-   GetObject textstrings/ttextstrings.getobject.html
-   Put textstrings/ttextstrings.put.html
-   PutObject textstrings/ttextstrings.putobject.html
    GetLineLen textstrings/ttextstrings.getlinelen.html
    GetLineEnd textstrings/ttextstrings.getlineend.html
    CountLineEndings textstrings/ttextstrings.countlineendings.html
    Create textstrings/ttextstrings.create.html
-   Destroy textstrings/ttextstrings.destroy.html
-   Clear textstrings/ttextstrings.clear.html
-   SetText textstrings/ttextstrings.settext.html
-   Insert textstrings/ttextstrings.insert.html
-   Delete textstrings/ttextstrings.delete.html
-   Exchange textstrings/ttextstrings.exchange.html
-   Move textstrings/ttextstrings.move.html
    MakeTextBufferUnique textstrings/ttextstrings.maketextbufferunique.html
    BeginUpdate textstrings/ttextstrings.beginupdate.html
-   EndUpdate textstrings/ttextstrings.endupdate.html
-   GetText textstrings/ttextstrings.gettext.html
-   IndexOf textstrings/ttextstrings.indexof.html
-   Add textstrings/ttextstrings.add.html
    AddObject textstrings/ttextstrings.addobject.html
-   AddStrings textstrings/ttextstrings.addstrings.html
    LoadFromFile textstrings/ttextstrings.loadfromfile.html
    SaveToFile textstrings/ttextstrings.savetofile.html
-   Text textstrings/ttextstrings.text.html
    OnChange textstrings/ttextstrings.onchange.html
    OnChanging textstrings/ttextstrings.onchanging.html
+   GetTextStr 
+   SetTextStr 
+   Get 
+   GetObject 
+   Put 
+   PutObject 
+   Destroy ms-its:rtl.chm::/classes/tstrings.destroy.html
+   Clear ms-its:rtl.chm::/classes/tstrings.clear.html
+   SetText ms-its:rtl.chm::/classes/tstrings.settext.html
+   Insert ms-its:rtl.chm::/classes/tstrings.insert.html
+   Delete ms-its:rtl.chm::/classes/tstrings.delete.html
+   Exchange ms-its:rtl.chm::/classes/tstrings.exchange.html
+   Move ms-its:rtl.chm::/classes/tstrings.move.html
+   EndUpdate ms-its:rtl.chm::/classes/tstrings.endupdate.html
+   GetText ms-its:rtl.chm::/classes/tstrings.gettext.html
+   IndexOf ms-its:rtl.chm::/classes/tstrings.indexof.html
+   Add ms-its:rtl.chm::/classes/tstrings.add.html
+   AddStrings ms-its:rtl.chm::/classes/tstrings.addstrings.html
+   Text ms-its:rtl.chm::/classes/tstrings.text.html
  Translations translations/index.html
   sFuzzyFlag translations/sfuzzyflag.html
   sBadFormatFlag translations/sbadformatflag.html
@@ -3568,6 +3577,7 @@
 1VFDirectoriesList
 2MDoDirectoryFound
 3MCreate
+#lazutils.Masks.EMaskError #rtl.sysutils.EConvertError
 #lazutils.Masks.TMask #rtl.System.TObject
 1VFMask
 1VfInitialMask
