@@ -145,243 +145,6 @@
   CompareFilenameAndFilenameToStringTreeItem avglvltree/comparefilenameandfilenametostringtreeitem.html
   CompareFilenameToStringItemsI avglvltree/comparefilenametostringitemsi.html
   CompareFilenameAndFilenameToStringTreeItemI avglvltree/comparefilenameandfilenametostringtreeitemi.html
- LazFileUtils lazfileutils/index.html
-  PathDelimSwitchToDelim lazfileutils/pathdelimswitchtodelim.html
-  TPathDelimSwitch lazfileutils/tpathdelimswitch.html
-  TPhysicalFilenameOnError lazfileutils/tphysicalfilenameonerror.html
-  TInvalidateFileStateCacheEvent lazfileutils/tinvalidatefilestatecacheevent.html
-  CompareFilenames lazfileutils/comparefilenames.html
-  CompareFilenamesIgnoreCase lazfileutils/comparefilenamesignorecase.html
-  CompareFilenameStarts lazfileutils/comparefilenamestarts.html
-  CompareFilenamesP lazfileutils/comparefilenamesp.html
-  CompareFileExt lazfileutils/comparefileext.html
-  FilenameExtIs lazfileutils/filenameextis.html
-  FilenameExtIn lazfileutils/filenameextin.html
-  DirPathExists lazfileutils/dirpathexists.html
-  DirectoryIsWritable lazfileutils/directoryiswritable.html
-  ExtractFileNameOnly lazfileutils/extractfilenameonly.html
-  ExtractFileNameWithoutExt lazfileutils/extractfilenamewithoutext.html
-  FilenameIsAbsolute lazfileutils/filenameisabsolute.html
-  FilenameIsWinAbsolute lazfileutils/filenameiswinabsolute.html
-  FilenameIsUnixAbsolute lazfileutils/filenameisunixabsolute.html
-  ForceDirectory lazfileutils/forcedirectory.html
-  CheckIfFileIsExecutable lazfileutils/checkiffileisexecutable.html
-  CheckIfFileIsSymlink lazfileutils/checkiffileissymlink.html
-  FileIsExecutable lazfileutils/fileisexecutable.html
-  FileIsSymlink lazfileutils/fileissymlink.html
-  FileIsHardLink lazfileutils/fileishardlink.html
-  FileIsReadable lazfileutils/fileisreadable.html
-  FileIsWritable lazfileutils/fileiswritable.html
-  FileIsText lazfileutils/fileistext.html
-  FilenameIsTrimmed lazfileutils/filenameistrimmed.html
-  TrimFilename lazfileutils/trimfilename.html
-  ResolveDots lazfileutils/resolvedots.html
-  CleanAndExpandFilename lazfileutils/cleanandexpandfilename.html
-  CleanAndExpandDirectory lazfileutils/cleanandexpanddirectory.html
-  TrimAndExpandFilename lazfileutils/trimandexpandfilename.html
-  TrimAndExpandDirectory lazfileutils/trimandexpanddirectory.html
-  CreateAbsolutePath lazfileutils/createabsolutepath.html
-  TryCreateRelativePath lazfileutils/trycreaterelativepath.html
-  CreateRelativePath lazfileutils/createrelativepath.html
-  FileIsInPath lazfileutils/fileisinpath.html
-  PathIsInPath lazfileutils/pathisinpath.html
-  ShortDisplayFilename lazfileutils/shortdisplayfilename.html
-  ForcePathDelims lazfileutils/forcepathdelims.html
-  GetForcedPathDelims lazfileutils/getforcedpathdelims.html
-  AppendPathDelim lazfileutils/appendpathdelim.html
-  ChompPathDelim lazfileutils/chomppathdelim.html
-  SwitchPathDelims lazfileutils/switchpathdelims.html
-  CheckPathDelim lazfileutils/checkpathdelim.html
-  IsCurrentPathDelim lazfileutils/iscurrentpathdelim.html
-  CreateAbsoluteSearchPath lazfileutils/createabsolutesearchpath.html
-  CreateRelativeSearchPath lazfileutils/createrelativesearchpath.html
-  MinimizeSearchPath lazfileutils/minimizesearchpath.html
-  FindPathInSearchPath lazfileutils/findpathinsearchpath.html
-  FileExistsUTF8 lazfileutils/fileexistsutf8.html
-  FileAgeUTF8 lazfileutils/fileageutf8.html
-  DirectoryExistsUTF8 lazfileutils/directoryexistsutf8.html
-  ExpandFileNameUTF8 lazfileutils/expandfilenameutf8.html
-  FindFirstUTF8 lazfileutils/findfirstutf8.html
-  FindNextUTF8 lazfileutils/findnextutf8.html
-  FindCloseUTF8 lazfileutils/findcloseutf8.html
-  FileSetDateUTF8 lazfileutils/filesetdateutf8.html
-  FileGetAttrUTF8 lazfileutils/filegetattrutf8.html
-  FileSetAttrUTF8 lazfileutils/filesetattrutf8.html
-  DeleteFileUTF8 lazfileutils/deletefileutf8.html
-  RenameFileUTF8 lazfileutils/renamefileutf8.html
-  FileSearchUTF8 lazfileutils/filesearchutf8.html
-  FileIsReadOnlyUTF8 lazfileutils/fileisreadonlyutf8.html
-  GetCurrentDirUTF8 lazfileutils/getcurrentdirutf8.html
-  SetCurrentDirUTF8 lazfileutils/setcurrentdirutf8.html
-  CreateDirUTF8 lazfileutils/createdirutf8.html
-  RemoveDirUTF8 lazfileutils/removedirutf8.html
-  ForceDirectoriesUTF8 lazfileutils/forcedirectoriesutf8.html
-  FileOpenUTF8 lazfileutils/fileopenutf8.html
-  FileCreateUTF8 lazfileutils/filecreateutf8.html
-  FileSizeUtf8 lazfileutils/filesizeutf8.html
-  GetFileDescription lazfileutils/getfiledescription.html
-  ReadAllLinks lazfileutils/readalllinks.html
-  TryReadAllLinks lazfileutils/tryreadalllinks.html
-  GetShellLinkTarget lazfileutils/getshelllinktarget.html
-  DbgSFileAttr lazfileutils/dbgsfileattr.html
-  GetPhysicalFilename lazfileutils/getphysicalfilename.html
-  GetUnixPhysicalFilename lazfileutils/getunixphysicalfilename.html
-  GetAppConfigDirUTF8 lazfileutils/getappconfigdirutf8.html
-  GetAppConfigFileUTF8 lazfileutils/getappconfigfileutf8.html
-  GetTempFileNameUTF8 lazfileutils/gettempfilenameutf8.html
-  IsUNCPath lazfileutils/isuncpath.html
-  ExtractUNCVolume lazfileutils/extractuncvolume.html
-  ExtractFileRoot lazfileutils/extractfileroot.html
-  SplitCmdLineParams lazfileutils/splitcmdlineparams.html
-  StrToCmdLineParam lazfileutils/strtocmdlineparam.html
-  MergeCmdLineParams lazfileutils/mergecmdlineparams.html
-  SplitCmdLine lazfileutils/splitcmdline.html
-  PrepareCmdLineOption lazfileutils/preparecmdlineoption.html
-  InvalidateFileStateCache lazfileutils/invalidatefilestatecache.html
-  OnInvalidateFileStateCache lazfileutils/oninvalidatefilestatecache.html
- LazUTF8 lazutf8/index.html
-  TEscapeMode lazutf8/tescapemode.html
-  TUTF8TrimFlag lazutf8/tutf8trimflag.html
-  TUTF8TrimFlags lazutf8/tutf8trimflags.html
-  TConvertResult lazutf8/tconvertresult.html
-  TConvertOption lazutf8/tconvertoption.html
-  TConvertOptions lazutf8/tconvertoptions.html
-  TStringListUTF8Fast lazutf8/tstringlistutf8fast.html
-   DoCompareText lazutf8/tstringlistutf8fast.docomparetext.html
-  NeedRTLAnsi lazutf8/needrtlansi.html
-  SetNeedRTLAnsi lazutf8/setneedrtlansi.html
-  UTF8ToSys lazutf8/utf8tosys.html
-  SysToUTF8 lazutf8/systoutf8.html
-  ConsoleToUTF8 lazutf8/consoletoutf8.html
-  UTF8ToConsole lazutf8/utf8toconsole.html
-  WinCPToUTF8 lazutf8/wincptoutf8.html
-  UTF8ToWinCP lazutf8/utf8towincp.html
-  ParamStrUTF8 lazutf8/paramstrutf8.html
-  GetEnvironmentVariableCountUTF8 lazutf8/getenvironmentvariablecountutf8.html
-  GetEnvironmentStringUTF8 lazutf8/getenvironmentstringutf8.html
-  GetEnvironmentVariableUTF8 lazutf8/getenvironmentvariableutf8.html
-  SysErrorMessageUTF8 lazutf8/syserrormessageutf8.html
-  UTF8CodepointSize lazutf8/utf8codepointsize.html
-  UTF8CharacterLength lazutf8/utf8characterlength.html
-  UTF8CodepointSizeFast lazutf8/utf8codepointsizefast.html
-  UTF8Length lazutf8/utf8length.html
-  UTF8LengthFast lazutf8/utf8lengthfast.html
-  UTF8CodepointToUnicode lazutf8/utf8codepointtounicode.html
-  UTF8CharacterToUnicode lazutf8/utf8charactertounicode.html
-  UnicodeToUTF8 lazutf8/unicodetoutf8.html
-  UnicodeToUTF8SkipErrors lazutf8/unicodetoutf8skiperrors.html
-  UnicodeToUTF8Inline lazutf8/unicodetoutf8inline.html
-  UTF8ToDoubleByteString lazutf8/utf8todoublebytestring.html
-  UTF8ToDoubleByte lazutf8/utf8todoublebyte.html
-  UTF8FindNearestCharStart lazutf8/utf8findnearestcharstart.html
-  Utf8TryFindCodepointStart lazutf8/utf8tryfindcodepointstart.html
-  UTF8CodepointStart lazutf8/utf8codepointstart.html
-  UTF8CharStart lazutf8/utf8charstart.html
-  UTF8CodepointToByteIndex lazutf8/utf8codepointtobyteindex.html
-  UTF8CharToByteIndex lazutf8/utf8chartobyteindex.html
-  UTF8FixBroken lazutf8/utf8fixbroken.html
-  UTF8CodepointStrictSize lazutf8/utf8codepointstrictsize.html
-  UTF8CharacterStrictLength lazutf8/utf8characterstrictlength.html
-  UTF8CStringToUTF8String lazutf8/utf8cstringtoutf8string.html
-  UTF8Pos lazutf8/utf8pos.html
-  UTF8PosP lazutf8/utf8posp.html
-  UTF8Copy lazutf8/utf8copy.html
-  UTF8Delete lazutf8/utf8delete.html
-  UTF8Insert lazutf8/utf8insert.html
-  UTF8StringReplace lazutf8/utf8stringreplace.html
-  UTF8LowerCase lazutf8/utf8lowercase.html
-  UTF8LowerString lazutf8/utf8lowerstring.html
-  UTF8UpperCase lazutf8/utf8uppercase.html
-  UTF8UpperString lazutf8/utf8upperstring.html
-  UTF8SwapCase lazutf8/utf8swapcase.html
-  UTF8ProperCase lazutf8/utf8propercase.html
-  FindInvalidUTF8Codepoint lazutf8/findinvalidutf8codepoint.html
-  FindInvalidUTF8Character lazutf8/findinvalidutf8character.html
-  UTF8StringOfChar lazutf8/utf8stringofchar.html
-  UTF8AddChar lazutf8/utf8addchar.html
-  UTF8AddCharR lazutf8/utf8addcharr.html
-  UTF8PadLeft lazutf8/utf8padleft.html
-  UTF8PadRight lazutf8/utf8padright.html
-  UTF8PadCenter lazutf8/utf8padcenter.html
-  UTF8LeftStr lazutf8/utf8leftstr.html
-  UTF8RightStr lazutf8/utf8rightstr.html
-  UTF8QuotedStr lazutf8/utf8quotedstr.html
-  UTF8StartsText lazutf8/utf8startstext.html
-  UTF8EndsText lazutf8/utf8endstext.html
-  UTF8ReverseString lazutf8/utf8reversestring.html
-  UTF8RPos lazutf8/utf8rpos.html
-  UTF8WrapText lazutf8/utf8wraptext.html
-  Utf8EscapeControlChars lazutf8/utf8escapecontrolchars.html
-  UTF8Trim lazutf8/utf8trim.html
-  UTF8CompareStr lazutf8/utf8comparestr.html
-  UTF8CompareStrP lazutf8/utf8comparestrp.html
-  UTF8CompareText lazutf8/utf8comparetext.html
-  UTF8CompareTextP lazutf8/utf8comparetextp.html
-  UTF8CompareLatinTextFast lazutf8/utf8comparelatintextfast.html
-  UTF8CompareStrCollated lazutf8/utf8comparestrcollated.html
-  CompareStrListUTF8LowerCase lazutf8/comparestrlistutf8lowercase.html
-  ConvertUTF8ToUTF16 lazutf8/convertutf8toutf16.html
-  ConvertUTF16ToUTF8 lazutf8/convertutf16toutf8.html
-  UTF8ToUTF16 lazutf8/utf8toutf16.html
-  UTF16ToUTF8 lazutf8/utf16toutf8.html
-  LazGetLanguageIDs lazutf8/lazgetlanguageids.html
-  LazGetShortLanguageID lazutf8/lazgetshortlanguageid.html
-  ReplaceSubstring lazutf8/replacesubstring.html
-  FPUpChars lazutf8/fpupchars.html
- FPCAdds fpcadds/index.html
-  TStreamSeekType fpcadds/tstreamseektype.html
-  TMemStreamSeekType fpcadds/tmemstreamseektype.html
-  TCompareMemSize fpcadds/tcomparememsize.html
-  PHandle fpcadds/phandle.html
-  StrToWord fpcadds/strtoword.html
-  AlignToPtr fpcadds/aligntoptr.html
-  AlignToInt fpcadds/aligntoint.html
- LazUtilsStrConsts lazutilsstrconsts/index.html
-  lrsModified lazutilsstrconsts/index-1.html#lrsmodified
-  lrsInvalidCharSet lazutilsstrconsts/index-1.html#lrsinvalidcharset
-  lrsSize lazutilsstrconsts/index-1.html#lrssize
-  lrsFileDoesNotExist lazutilsstrconsts/index-1.html#lrsfiledoesnotexist
-  lrsFileIsADirectoryAndNotAnExecutable lazutilsstrconsts/index-1.html#lrsfileisadirectoryandnotanexecutable
-  lrsReadAccessDeniedFor lazutilsstrconsts/index-1.html#lrsreadaccessdeniedfor
-  lrsADirectoryComponentInDoesNotExistOrIsADanglingSyml2 lazutilsstrconsts/index-1.html#lrsadirectorycomponentindoesnotexistorisadanglingsyml2
-  lrsADirectoryComponentInIsNotADirectory2 lazutilsstrconsts/index-1.html#lrsadirectorycomponentinisnotadirectory2
-  lrsADirectoryComponentInDoesNotExistOrIsADanglingSyml lazutilsstrconsts/index-1.html#lrsadirectorycomponentindoesnotexistorisadanglingsyml
-  lrsADirectoryComponentInIsNotADirectory lazutilsstrconsts/index-1.html#lrsadirectorycomponentinisnotadirectory
-  lrsInsufficientMemory lazutilsstrconsts/index-1.html#lrsinsufficientmemory
-  lrsHasACircularSymbolicLink lazutilsstrconsts/index-1.html#lrshasacircularsymboliclink
-  lrsIsNotASymbolicLink lazutilsstrconsts/index-1.html#lrsisnotasymboliclink
-  lrsIsNotExecutable lazutilsstrconsts/index-1.html#lrsisnotexecutable
-  lrsUnableToCreateConfigDirectoryS lazutilsstrconsts/index-1.html#lrsunabletocreateconfigdirectorys
-  lrsProgramFileNotFound lazutilsstrconsts/index-1.html#lrsprogramfilenotfound
-  lrsCanNotExecute lazutilsstrconsts/index-1.html#lrscannotexecute
-  lrsListMustBeEmpty lazutilsstrconsts/index-1.html#lrslistmustbeempty
-  lrsListIndexExceedsBounds lazutilsstrconsts/index-1.html#lrslistindexexceedsbounds
-  lrsERRORInCode lazutilsstrconsts/index-1.html#lrserrorincode
-  lrsCreatingGdbCatchableError lazutilsstrconsts/index-1.html#lrscreatinggdbcatchableerror
-  lrsNodeSet lazutilsstrconsts/index-1.html#lrsnodeset
-  lrsBoolean lazutilsstrconsts/index-1.html#lrsboolean
-  lrsNumber lazutilsstrconsts/index-1.html#lrsnumber
-  lrsString lazutilsstrconsts/index-1.html#lrsstring
-  lrsVarNoConversion lazutilsstrconsts/index-1.html#lrsvarnoconversion
-  lrsScannerUnclosedString lazutilsstrconsts/index-1.html#lrsscannerunclosedstring
-  lrsScannerInvalidChar lazutilsstrconsts/index-1.html#lrsscannerinvalidchar
-  lrsScannerMalformedQName lazutilsstrconsts/index-1.html#lrsscannermalformedqname
-  lrsScannerExpectedVarName lazutilsstrconsts/index-1.html#lrsscannerexpectedvarname
-  lrsParserExpectedLeftBracket lazutilsstrconsts/index-1.html#lrsparserexpectedleftbracket
-  lrsParserExpectedRightBracket lazutilsstrconsts/index-1.html#lrsparserexpectedrightbracket
-  lrsParserBadAxisName lazutilsstrconsts/index-1.html#lrsparserbadaxisname
-  lrsParserBadNodeType lazutilsstrconsts/index-1.html#lrsparserbadnodetype
-  lrsParserExpectedRightSquareBracket lazutilsstrconsts/index-1.html#lrsparserexpectedrightsquarebracket
-  lrsParserInvalidPrimExpr lazutilsstrconsts/index-1.html#lrsparserinvalidprimexpr
-  lrsParserGarbageAfterExpression lazutilsstrconsts/index-1.html#lrsparsergarbageafterexpression
-  lrsParserInvalidNodeTest lazutilsstrconsts/index-1.html#lrsparserinvalidnodetest
-  lrsEvalUnknownFunction lazutilsstrconsts/index-1.html#lrsevalunknownfunction
-  lrsEvalUnknownVariable lazutilsstrconsts/index-1.html#lrsevalunknownvariable
-  lrsEvalInvalidArgCount lazutilsstrconsts/index-1.html#lrsevalinvalidargcount
- LazDbgLog lazdbglog/index.html
-  MemSizeString lazdbglog/memsizestring.html
-  MemSizeFPList lazdbglog/memsizefplist.html
-  GetStringRefCount lazdbglog/getstringrefcount.html
  CodepagesAsian codepagesasian/index.html
   CP936CC codepagesasian/cp936cc.html
   Uni936C codepagesasian/uni936c.html
@@ -514,142 +277,6 @@
   RegisterDefinePropertiesPas compwriterpas/registerdefinepropertiespas.html
   UnregisterDefinePropertiesPas compwriterpas/unregisterdefinepropertiespas.html
   CallDefinePropertiesPas compwriterpas/calldefinepropertiespas.html
- LazLoggerBase lazloggerbase/index.html
-  TLazLoggerLogGroupFlag lazloggerbase/tlazloggerloggroupflag.html
-  TLazLoggerLogGroupFlags lazloggerbase/tlazloggerloggroupflags.html
-  TLazLoggerLogGroup lazloggerbase/tlazloggerloggroup.html
-  PLazLoggerLogGroup lazloggerbase/plazloggerloggroup.html
-  TLazLoggerLogEnabled lazloggerbase/tlazloggerlogenabled.html
-  TLazLoggerWriteTarget lazloggerbase/tlazloggerwritetarget.html
-  TLazLoggerWriteEvent lazloggerbase/tlazloggerwriteevent.html
-  TLazLoggerWidgetSetWriteEvent lazloggerbase/tlazloggerwidgetsetwriteevent.html
-  TLazDebugLoggerCreator lazloggerbase/tlazdebugloggercreator.html
-  TLazLoggerBlockHandler lazloggerbase/tlazloggerblockhandler.html
-   EnterBlock lazloggerbase/tlazloggerblockhandler.enterblock.html
-   ExitBlock lazloggerbase/tlazloggerblockhandler.exitblock.html
-  TLazLoggerLogGroupList lazloggerbase/tlazloggerloggrouplist.html
-   Add lazloggerbase/tlazloggerloggrouplist.add.html
-   FindOrAdd lazloggerbase/tlazloggerloggrouplist.findoradd.html
-   Remove lazloggerbase/tlazloggerloggrouplist.remove.html
-   Create lazloggerbase/tlazloggerloggrouplist.create.html
-   Destroy lazloggerbase/tlazloggerloggrouplist.destroy.html
-   Assign lazloggerbase/tlazloggerloggrouplist.assign.html
-   IndexOf lazloggerbase/tlazloggerloggrouplist.indexof.html
-   Find lazloggerbase/tlazloggerloggrouplist.find.html
-   Count lazloggerbase/tlazloggerloggrouplist.count.html
-   Item lazloggerbase/tlazloggerloggrouplist.item.html
-  TLazLogger lazloggerbase/tlazlogger.html
-   DoInit lazloggerbase/tlazlogger.doinit.html
-   DoFinish lazloggerbase/tlazlogger.dofinish.html
-   DoFinsh lazloggerbase/tlazlogger.dofinsh.html
-   IncreaseIndent lazloggerbase/tlazlogger.increaseindent.html
-   DecreaseIndent lazloggerbase/tlazlogger.decreaseindent.html
-   IndentChanged lazloggerbase/tlazlogger.indentchanged.html
-   GetBlockHandler lazloggerbase/tlazlogger.getblockhandler.html
-   DoDbgOut lazloggerbase/tlazlogger.dodbgout.html
-   DoDebugLn lazloggerbase/tlazlogger.dodebugln.html
-   DoDebuglnStack lazloggerbase/tlazlogger.dodebuglnstack.html
-   ArgsToString lazloggerbase/tlazlogger.argstostring.html
-   IsInitialized lazloggerbase/tlazlogger.isinitialized.html
-   Create lazloggerbase/tlazlogger.create.html
-   Destroy lazloggerbase/tlazlogger.destroy.html
-   Assign lazloggerbase/tlazlogger.assign.html
-   Init lazloggerbase/tlazlogger.init.html
-   Finish lazloggerbase/tlazlogger.finish.html
-   CurrentIndentLevel lazloggerbase/tlazlogger.currentindentlevel.html
-   NestLvlIndent lazloggerbase/tlazlogger.nestlvlindent.html
-   MaxNestPrefixLen lazloggerbase/tlazlogger.maxnestprefixlen.html
-   RegisterLogGroup lazloggerbase/tlazlogger.registerloggroup.html
-   FindOrRegisterLogGroup lazloggerbase/tlazlogger.findorregisterloggroup.html
-   LogGroupList lazloggerbase/tlazlogger.loggrouplist.html
-   UseGlobalLogGroupList lazloggerbase/tlazlogger.usegloballoggrouplist.html
-   AddBlockHandler lazloggerbase/tlazlogger.addblockhandler.html
-   RemoveBlockHandler lazloggerbase/tlazlogger.removeblockhandler.html
-   BlockHandlerCount lazloggerbase/tlazlogger.blockhandlercount.html
-   BlockHandler lazloggerbase/tlazlogger.blockhandler.html
-   DebuglnStack lazloggerbase/tlazlogger.debuglnstack.html
-   DbgOut lazloggerbase/tlazlogger.dbgout.html
-   DebugLn lazloggerbase/tlazlogger.debugln.html
-   DebugLnEnter lazloggerbase/tlazlogger.debuglnenter.html
-   DebugLnExit lazloggerbase/tlazlogger.debuglnexit.html
-   DumpExceptionBackTrace lazloggerbase/tlazlogger.dumpexceptionbacktrace.html
-  TLazLoggerWithGroupParam lazloggerbase/tlazloggerwithgroupparam.html
-   Create lazloggerbase/tlazloggerwithgroupparam.create.html
-   Assign lazloggerbase/tlazloggerwithgroupparam.assign.html
-   RegisterLogGroup lazloggerbase/tlazloggerwithgroupparam.registerloggroup.html
-   FindOrRegisterLogGroup lazloggerbase/tlazloggerwithgroupparam.findorregisterloggroup.html
-   ParamForEnabledLogGroups lazloggerbase/tlazloggerwithgroupparam.paramforenabledloggroups.html
-  TLazLoggerNoOutput lazloggerbase/tlazloggernooutput.html
-  DebuglnStack lazloggerbase/debuglnstack.html
-  DbgOut lazloggerbase/dbgout.html
-  DebugLn lazloggerbase/debugln.html
-  DebugLnEnter lazloggerbase/debuglnenter.html
-  DebugLnExit lazloggerbase/debuglnexit.html
-  DbgS lazloggerbase/dbgs.html
-  DbgSJoin lazloggerbase/dbgsjoin.html
-  DbgSName lazloggerbase/dbgsname.html
-  dbgObjMem lazloggerbase/dbgobjmem.html
-  dbghex lazloggerbase/dbghex.html
-  DbgSTime lazloggerbase/dbgstime.html
-  dbgMemRange lazloggerbase/dbgmemrange.html
-  dbgMemStream lazloggerbase/dbgmemstream.html
-  DumpExceptionBackTrace lazloggerbase/dumpexceptionbacktrace.html
-  assign(PLazLoggerLogGroup):TLazLoggerLogEnabled lazloggerbase/.op-assign-plazloggerloggroup-lazloggerlogenabled.html
-  assign(Boolean):TLazLoggerLogEnabled lazloggerbase/.op-assign-boolean-lazloggerlogenabled.html
-  logicaland(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerbase/.op-logicaland-tlazloggerlogenabled-lazloggerlogenabled-lazloggerlogenabled.html
-  logicalor(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerbase/.op-logicalor-tlazloggerlogenabled-lazloggerlogenabled-lazloggerlogenabled.html
-  GetParamByNameCount lazloggerbase/getparambynamecount.html
-  GetParamByName lazloggerbase/getparambyname.html
-  GetDebugLoggerGroups lazloggerbase/getdebugloggergroups.html
-  SetDebugLoggerGroups lazloggerbase/setdebugloggergroups.html
-  GetDebugLogger lazloggerbase/getdebuglogger.html
-  GetExistingDebugLogger lazloggerbase/getexistingdebuglogger.html
-  SetDebugLogger lazloggerbase/setdebuglogger.html
-  RecreateDebugLogger lazloggerbase/recreatedebuglogger.html
-  DbgStr lazloggerbase/dbgstr.html
-  DbgWideStr lazloggerbase/dbgwidestr.html
-  DumpStack lazloggerbase/dumpstack.html
-  LazDebugLoggerCreator lazloggerbase/lazdebugloggercreator.html
-  OnWidgetSetDebugLn lazloggerbase/onwidgetsetdebugln.html
-  OnWidgetSetDbgOut lazloggerbase/onwidgetsetdbgout.html
- LazClasses lazclasses/index.html
-  TFreeNotifyingObject lazclasses/tfreenotifyingobject.html
-   Destroy lazclasses/tfreenotifyingobject.destroy.html
-   AddFreeNotification lazclasses/tfreenotifyingobject.addfreenotification.html
-   RemoveFreeNotification lazclasses/tfreenotifyingobject.removefreenotification.html
-  TRefCountedObject lazclasses/trefcountedobject.html
-   DoFree lazclasses/trefcountedobject.dofree.html
-   DoReferenceAdded lazclasses/trefcountedobject.doreferenceadded.html
-   DoReferenceReleased lazclasses/trefcountedobject.doreferencereleased.html
-   RefCount lazclasses/trefcountedobject.refcount.html
-   Create lazclasses/trefcountedobject.create.html
-   Destroy lazclasses/trefcountedobject.destroy.html
-   AddReference lazclasses/trefcountedobject.addreference.html
-   ReleaseReference lazclasses/trefcountedobject.releasereference.html
-  TRefCntObjList lazclasses/trefcntobjlist.html
-   Notify lazclasses/trefcntobjlist.notify.html
-  ReleaseRefAndNil lazclasses/releaserefandnil.html
-  NilThenReleaseRef lazclasses/nilthenreleaseref.html
- LazMethodList lazmethodlist/index.html
-  TMethodList lazmethodlist/tmethodlist.html
-   Destroy lazmethodlist/tmethodlist.destroy.html
-   Count lazmethodlist/tmethodlist.count.html
-   NextDownIndex lazmethodlist/tmethodlist.nextdownindex.html
-   IndexOf lazmethodlist/tmethodlist.indexof.html
-   Assign lazmethodlist/tmethodlist.assign.html
-   Clear lazmethodlist/tmethodlist.clear.html
-   Delete lazmethodlist/tmethodlist.delete.html
-   Remove lazmethodlist/tmethodlist.remove.html
-   Add lazmethodlist/tmethodlist.add.html
-   Insert lazmethodlist/tmethodlist.insert.html
-   Move lazmethodlist/tmethodlist.move.html
-   RemoveAllMethodsOfObject lazmethodlist/tmethodlist.removeallmethodsofobject.html
-   CallNotifyEvents lazmethodlist/tmethodlist.callnotifyevents.html
-   GetReversedEnumerator lazmethodlist/tmethodlist.getreversedenumerator.html
-   GetEnumerator lazmethodlist/tmethodlist.getenumerator.html
-   Items lazmethodlist/tmethodlist.items.html
-   AllowDuplicates lazmethodlist/tmethodlist.allowduplicates.html
-  CompareMethods lazmethodlist/comparemethods.html
  DynamicArray dynamicarray/index.html
   TOnNotifyItem dynamicarray/tonnotifyitem.html
   TOnExchangeItem dynamicarray/tonexchangeitem.html
@@ -774,84 +401,6 @@
    TimeStamp filereferencelist/tfilereferencelist.timestamp.html
    OnChanged filereferencelist/tfilereferencelist.onchanged.html
    UpdateLock filereferencelist/tfilereferencelist.updatelock.html
- LazFileCache lazfilecache/index.html
-  LUInvalidChangeStamp lazfilecache/luinvalidchangestamp.html
-  LUInvalidChangeStamp64 lazfilecache/luinvalidchangestamp64.html
-  TFileStateCacheItemFlag lazfilecache/tfilestatecacheitemflag.html
-  TFileStateCacheItemFlags lazfilecache/tfilestatecacheitemflags.html
-  TOnChangeFileStateTimeStamp lazfilecache/tonchangefilestatetimestamp.html
-  TOnFileExistsCached lazfilecache/tonfileexistscached.html
-  TOnFileAgeCached lazfilecache/tonfileagecached.html
-  TFileStateCacheItem lazfilecache/tfilestatecacheitem.html
-   Create lazfilecache/tfilestatecacheitem.create.html
-   CalcMemSize lazfilecache/tfilestatecacheitem.calcmemsize.html
-   Filename lazfilecache/tfilestatecacheitem.filename.html
-   PhysicalFilename lazfilecache/tfilestatecacheitem.physicalfilename.html
-   Flags lazfilecache/tfilestatecacheitem.flags.html
-   TestedFlags lazfilecache/tfilestatecacheitem.testedflags.html
-   TimeStamp lazfilecache/tfilestatecacheitem.timestamp.html
-   Age lazfilecache/tfilestatecacheitem.age.html
-  TFileStateCache lazfilecache/tfilestatecache.html
-   Create lazfilecache/tfilestatecache.create.html
-   Destroy lazfilecache/tfilestatecache.destroy.html
-   Lock lazfilecache/tfilestatecache.lock.html
-   Unlock lazfilecache/tfilestatecache.unlock.html
-   Locked lazfilecache/tfilestatecache.locked.html
-   IncreaseTimeStamp lazfilecache/tfilestatecache.increasetimestamp.html
-   FileExistsCached lazfilecache/tfilestatecache.fileexistscached.html
-   DirPathExistsCached lazfilecache/tfilestatecache.dirpathexistscached.html
-   DirectoryIsWritableCached lazfilecache/tfilestatecache.directoryiswritablecached.html
-   FileIsExecutableCached lazfilecache/tfilestatecache.fileisexecutablecached.html
-   FileIsReadableCached lazfilecache/tfilestatecache.fileisreadablecached.html
-   FileIsWritableCached lazfilecache/tfilestatecache.fileiswritablecached.html
-   FileIsTextCached lazfilecache/tfilestatecache.fileistextcached.html
-   FileAgeCached lazfilecache/tfilestatecache.fileagecached.html
-   GetPhysicalFilenameCached lazfilecache/tfilestatecache.getphysicalfilenamecached.html
-   FindFile lazfilecache/tfilestatecache.findfile.html
-   Check lazfilecache/tfilestatecache.check.html
-   AddChangeTimeStampHandler lazfilecache/tfilestatecache.addchangetimestamphandler.html
-   RemoveChangeTimeStampHandler lazfilecache/tfilestatecache.removechangetimestamphandler.html
-   CalcMemSize lazfilecache/tfilestatecache.calcmemsize.html
-   TimeStamp lazfilecache/tfilestatecache.timestamp.html
-  FileExistsCached lazfilecache/fileexistscached.html
-  DirPathExistsCached lazfilecache/dirpathexistscached.html
-  DirectoryIsWritableCached lazfilecache/directoryiswritablecached.html
-  FileIsExecutableCached lazfilecache/fileisexecutablecached.html
-  FileIsReadableCached lazfilecache/fileisreadablecached.html
-  FileIsWritableCached lazfilecache/fileiswritablecached.html
-  FileIsTextCached lazfilecache/fileistextcached.html
-  FileAgeCached lazfilecache/fileagecached.html
-  GetPhysicalFilenameCached lazfilecache/getphysicalfilenamecached.html
-  InvalidateFileStateCache lazfilecache/invalidatefilestatecache.html
-  CompareFileStateItems lazfilecache/comparefilestateitems.html
-  CompareFilenameWithFileStateCacheItem lazfilecache/comparefilenamewithfilestatecacheitem.html
-  LUIncreaseChangeStamp lazfilecache/luincreasechangestamp.html
-  LUIncreaseChangeStamp64 lazfilecache/luincreasechangestamp64.html
-  FileStateCache lazfilecache/filestatecache.html
-  OnFileExistsCached lazfilecache/onfileexistscached.html
-  OnFileAgeCached lazfilecache/onfileagecached.html
- LazTracer laztracer/index.html
-  TStackTracePointers laztracer/tstacktracepointers.html
-  TLineInfoCacheItem laztracer/tlineinfocacheitem.html
-  PLineInfoCacheItem laztracer/plineinfocacheitem.html
-  RaiseGDBException laztracer/raisegdbexception.html
-  RaiseAndCatchException laztracer/raiseandcatchexception.html
-  GetStackTrace laztracer/getstacktrace.html
-  GetStackTracePointers laztracer/getstacktracepointers.html
-  StackTraceAsString laztracer/stacktraceasstring.html
-  GetLineInfo laztracer/getlineinfo.html
- LazUtilities lazutilities/index.html
-  FreeThenNil lazutilities/freethennil.html
-  ComparePointers lazutilities/comparepointers.html
-  CompareBoolean lazutilities/compareboolean.html
-  GetEnumValueDef lazutilities/getenumvaluedef.html
-  RoundToInt lazutilities/roundtoint.html
-  RoundToCardinal lazutilities/roundtocardinal.html
-  TruncToInt lazutilities/trunctoint.html
-  TruncToCardinal lazutilities/trunctocardinal.html
-  StrToDouble lazutilities/strtodouble.html
-  MergeSortWithLen lazutilities/mergesortwithlen.html
-  ConsoleVerbosity lazutilities/consoleverbosity.html
  FileUtil fileutil/index.html
   UTF8FileHeader fileutil/utf8fileheader.html
   FilenamesCaseSensitive fileutil/filenamescasesensitive.html
@@ -921,35 +470,14 @@
   FindAllDirectories fileutil/findalldirectories.html
   CopyFile fileutil/copyfile.html
   CopyDirTree fileutil/copydirtree.html
- Masks masks/index.html
-  MasksOverview masks/masksoverview.html
-  TMaskCharType masks/tmaskchartype.html
-  TMaskOption masks/tmaskoption.html
-  TMaskOptions masks/tmaskoptions.html
-  TCharSet masks/tcharset.html
-  PCharSet masks/pcharset.html
-  TUtf8Char masks/tutf8char.html
-  TMaskChar masks/tmaskchar.html
-  TMaskString masks/tmaskstring.html
-  EMaskError masks/emaskerror.html
-  TMask masks/tmask.html
-   Create masks/tmask.create.html
-   Destroy masks/tmask.destroy.html
-   Matches masks/tmask.matches.html
-   MatchesWindowsMask masks/tmask.matcheswindowsmask.html
-  TParseStringList masks/tparsestringlist.html
-   Create masks/tparsestringlist.create.html
-  TMaskList masks/tmasklist.html
-   Create masks/tmasklist.create.html
-   Destroy masks/tmasklist.destroy.html
-   Matches masks/tmasklist.matches.html
-   MatchesWindowsMask masks/tmasklist.matcheswindowsmask.html
-   Count masks/tmasklist.count.html
-   Items masks/tmasklist.items.html
-  MatchesMask masks/matchesmask.html
-  MatchesWindowsMask masks/matcheswindowsmask.html
-  MatchesMaskList masks/matchesmasklist.html
-  MatchesWindowsMaskList masks/matcheswindowsmasklist.html
+ FPCAdds fpcadds/index.html
+  TStreamSeekType fpcadds/tstreamseektype.html
+  TMemStreamSeekType fpcadds/tmemstreamseektype.html
+  TCompareMemSize fpcadds/tcomparememsize.html
+  PHandle fpcadds/phandle.html
+  StrToWord fpcadds/strtoword.html
+  AlignToPtr fpcadds/aligntoptr.html
+  AlignToInt fpcadds/aligntoint.html
  GraphMath graphmath/index.html
   GraphMathOperators graphmath/graphmathoperators.html
   TFloatPoint graphmath/tfloatpoint.html
@@ -972,29 +500,29 @@
   Quadrant graphmath/quadrant.html
   RadialPoint graphmath/radialpoint.html
   SplitBezier graphmath/splitbezier.html
-  add(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-add-tfloatpoint-floatpoint-floatpoint.html
-  add(TFloatPoint,Extended):TFloatPoint graphmath/.op-add-tfloatpoint-xtended-floatpoint.html
-  add(Extended,TFloatPoint):TFloatPoint graphmath/.op-add-extended-floatpoint-floatpoint.html
-  add(TFloatPoint,TPoint):TFloatPoint graphmath/.op-add-tfloatpoint-point-floatpoint.html
-  add(TPoint,TFloatPoint):TFloatPoint graphmath/.op-add-tpoint-floatpoint-floatpoint.html
-  subtract(TFloatPoint,Extended):TFloatPoint graphmath/.op-subtract-tfloatpoint-xtended-floatpoint.html
-  subtract(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-subtract-tfloatpoint-floatpoint-floatpoint.html
-  subtract(TFloatPoint,TPoint):TFloatPoint graphmath/.op-subtract-tfloatpoint-point-floatpoint.html
-  subtract(TPoint,TFloatPoint):TFloatPoint graphmath/.op-subtract-tpoint-floatpoint-floatpoint.html
-  multiply(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-multiply-tfloatpoint-floatpoint-floatpoint.html
-  multiply(TFloatPoint,Extended):TFloatPoint graphmath/.op-multiply-tfloatpoint-xtended-floatpoint.html
-  multiply(Extended,TFloatPoint):TFloatPoint graphmath/.op-multiply-extended-floatpoint-floatpoint.html
-  multiply(TFloatPoint,TPoint):TFloatPoint graphmath/.op-multiply-tfloatpoint-point-floatpoint.html
-  multiply(TPoint,TFloatPoint):TFloatPoint graphmath/.op-multiply-tpoint-floatpoint-floatpoint.html
-  divide(TFloatPoint,TFloatPoint):TFloatPoint graphmath/.op-divide-tfloatpoint-floatpoint-floatpoint.html
-  divide(TFloatPoint,Extended):TFloatPoint graphmath/.op-divide-tfloatpoint-xtended-floatpoint.html
-  divide(TFloatPoint,TPoint):TFloatPoint graphmath/.op-divide-tfloatpoint-point-floatpoint.html
-  divide(TPoint,TFloatPoint):TFloatPoint graphmath/.op-divide-tpoint-floatpoint-floatpoint.html
-  equal(TPoint,TPoint):Boolean graphmath/.op-equal-tpoint-point-oolean.html
-  equal(TFloatPoint,TFloatPoint):Boolean graphmath/.op-equal-tfloatpoint-floatpoint-oolean.html
-  assign(TFloatPoint):TPoint graphmath/.op-assign-tfloatpoint-point.html
-  assign(TPoint):TFloatPoint graphmath/.op-assign-tpoint-floatpoint.html
-  equal(TRect,TRect):Boolean graphmath/.op-equal-trect-rect-oolean.html
+  add(TFloatPoint,TFloatPoint):TFloatPoint graphmath/op-add-tfloatpoint-tfloatpoint-tfloatpoint.html
+  add(TFloatPoint,Extended):TFloatPoint graphmath/op-add-tfloatpoint-extended-tfloatpoint.html
+  add(Extended,TFloatPoint):TFloatPoint graphmath/op-add-extended-tfloatpoint-tfloatpoint.html
+  add(TFloatPoint,TPoint):TFloatPoint graphmath/op-add-tfloatpoint-tpoint-tfloatpoint.html
+  add(TPoint,TFloatPoint):TFloatPoint graphmath/op-add-tpoint-tfloatpoint-tfloatpoint.html
+  subtract(TFloatPoint,Extended):TFloatPoint graphmath/op-subtract-tfloatpoint-extended-tfloatpoint.html
+  subtract(TFloatPoint,TFloatPoint):TFloatPoint graphmath/op-subtract-tfloatpoint-tfloatpoint-tfloatpoint.html
+  subtract(TFloatPoint,TPoint):TFloatPoint graphmath/op-subtract-tfloatpoint-tpoint-tfloatpoint.html
+  subtract(TPoint,TFloatPoint):TFloatPoint graphmath/op-subtract-tpoint-tfloatpoint-tfloatpoint.html
+  multiply(TFloatPoint,TFloatPoint):TFloatPoint graphmath/op-multiply-tfloatpoint-tfloatpoint-tfloatpoint.html
+  multiply(TFloatPoint,Extended):TFloatPoint graphmath/op-multiply-tfloatpoint-extended-tfloatpoint.html
+  multiply(Extended,TFloatPoint):TFloatPoint graphmath/op-multiply-extended-tfloatpoint-tfloatpoint.html
+  multiply(TFloatPoint,TPoint):TFloatPoint graphmath/op-multiply-tfloatpoint-tpoint-tfloatpoint.html
+  multiply(TPoint,TFloatPoint):TFloatPoint graphmath/op-multiply-tpoint-tfloatpoint-tfloatpoint.html
+  divide(TFloatPoint,TFloatPoint):TFloatPoint graphmath/op-divide-tfloatpoint-tfloatpoint-tfloatpoint.html
+  divide(TFloatPoint,Extended):TFloatPoint graphmath/op-divide-tfloatpoint-extended-tfloatpoint.html
+  divide(TFloatPoint,TPoint):TFloatPoint graphmath/op-divide-tfloatpoint-tpoint-tfloatpoint.html
+  divide(TPoint,TFloatPoint):TFloatPoint graphmath/op-divide-tpoint-tfloatpoint-tfloatpoint.html
+  equal(TPoint,TPoint):Boolean graphmath/op-equal-tpoint-tpoint-boolean.html
+  equal(TFloatPoint,TFloatPoint):Boolean graphmath/op-equal-tfloatpoint-tfloatpoint-boolean.html
+  assign(TFloatPoint):TPoint graphmath/op-assign-tfloatpoint-tpoint.html
+  assign(TPoint):TFloatPoint graphmath/op-assign-tpoint-tfloatpoint.html
+  equal(TRect,TRect):Boolean graphmath/op-equal-trect-trect-boolean.html
  GraphType graphtype/index.html
   DefaultByteOrder graphtype/defaultbyteorder.html
   TGraphicsColor graphtype/tgraphicscolor.html
@@ -1109,126 +637,17 @@
    ListItemMark html2textrender/thtml2textrenderer.listitemmark.html
    MoreMark html2textrender/thtml2textrenderer.moremark.html
    IndentStep html2textrender/thtml2textrenderer.indentstep.html
- LConvEncoding lconvencoding/index.html
-  EncodingUTF8 lconvencoding/encodingutf8.html
-  EncodingAnsi lconvencoding/encodingansi.html
-  EncodingUTF8BOM lconvencoding/encodingutf8bom.html
-  EncodingUCS2LE lconvencoding/encodingucs2le.html
-  EncodingUCS2BE lconvencoding/encodingucs2be.html
-  EncodingCP1250 lconvencoding/encodingcp1250.html
-  EncodingCP1251 lconvencoding/encodingcp1251.html
-  EncodingCP1252 lconvencoding/encodingcp1252.html
-  EncodingCP1253 lconvencoding/encodingcp1253.html
-  EncodingCP1254 lconvencoding/encodingcp1254.html
-  EncodingCP1255 lconvencoding/encodingcp1255.html
-  EncodingCP1256 lconvencoding/encodingcp1256.html
-  EncodingCP1257 lconvencoding/encodingcp1257.html
-  EncodingCP1258 lconvencoding/encodingcp1258.html
-  EncodingCP437 lconvencoding/encodingcp437.html
-  EncodingCP850 lconvencoding/encodingcp850.html
-  EncodingCP852 lconvencoding/encodingcp852.html
-  EncodingCP866 lconvencoding/encodingcp866.html
-  EncodingCP874 lconvencoding/encodingcp874.html
-  EncodingCP932 lconvencoding/encodingcp932.html
-  EncodingCP936 lconvencoding/encodingcp936.html
-  EncodingCP949 lconvencoding/encodingcp949.html
-  EncodingCP950 lconvencoding/encodingcp950.html
-  EncodingCPMac lconvencoding/encodingcpmac.html
-  EncodingCPKOI8R lconvencoding/encodingcpkoi8r.html
-  EncodingCPKOI8U lconvencoding/encodingcpkoi8u.html
-  EncodingCPKOI8RU lconvencoding/encodingcpkoi8ru.html
-  EncodingCPIso1 lconvencoding/encodingcpiso1.html
-  EncodingCPIso2 lconvencoding/encodingcpiso2.html
-  EncodingCPIso15 lconvencoding/encodingcpiso15.html
-  UTF8BOM lconvencoding/utf8bom.html
-  UTF16BEBOM lconvencoding/utf16bebom.html
-  UTF16LEBOM lconvencoding/utf16lebom.html
-  UTF32BEBOM lconvencoding/utf32bebom.html
-  UTF32LEBOM lconvencoding/utf32lebom.html
-  TConvertEncodingErrorMode lconvencoding/tconvertencodingerrormode.html
-  TConvertEncodingFunction lconvencoding/tconvertencodingfunction.html
-  TConvertUTF8ToEncodingFunc lconvencoding/tconvertutf8toencodingfunc.html
-  TCharToUTF8Table lconvencoding/tchartoutf8table.html
-  TUnicodeToCharID lconvencoding/tunicodetocharid.html
-  GuessEncoding lconvencoding/guessencoding.html
-  ConvertEncodingFromUTF8 lconvencoding/convertencodingfromutf8.html
-  ConvertEncodingToUTF8 lconvencoding/convertencodingtoutf8.html
-  ConvertEncoding lconvencoding/convertencoding.html
-  GetDefaultTextEncoding lconvencoding/getdefaulttextencoding.html
-  GetConsoleTextEncoding lconvencoding/getconsoletextencoding.html
-  NormalizeEncoding lconvencoding/normalizeencoding.html
-  UTF8BOMToUTF8 lconvencoding/utf8bomtoutf8.html
-  ISO_8859_1ToUTF8 lconvencoding/iso_8859_1toutf8.html
-  ISO_8859_15ToUTF8 lconvencoding/iso_8859_15toutf8.html
-  ISO_8859_2ToUTF8 lconvencoding/iso_8859_2toutf8.html
-  CP1250ToUTF8 lconvencoding/cp1250toutf8.html
-  CP1251ToUTF8 lconvencoding/cp1251toutf8.html
-  CP1252ToUTF8 lconvencoding/cp1252toutf8.html
-  CP1253ToUTF8 lconvencoding/cp1253toutf8.html
-  CP1254ToUTF8 lconvencoding/cp1254toutf8.html
-  CP1255ToUTF8 lconvencoding/cp1255toutf8.html
-  CP1256ToUTF8 lconvencoding/cp1256toutf8.html
-  CP1257ToUTF8 lconvencoding/cp1257toutf8.html
-  CP1258ToUTF8 lconvencoding/cp1258toutf8.html
-  CP437ToUTF8 lconvencoding/cp437toutf8.html
-  CP850ToUTF8 lconvencoding/cp850toutf8.html
-  CP852ToUTF8 lconvencoding/cp852toutf8.html
-  CP866ToUTF8 lconvencoding/cp866toutf8.html
-  CP874ToUTF8 lconvencoding/cp874toutf8.html
-  KOI8RToUTF8 lconvencoding/koi8rtoutf8.html
-  MacintoshToUTF8 lconvencoding/macintoshtoutf8.html
-  SingleByteToUTF8 lconvencoding/singlebytetoutf8.html
-  UCS2LEToUTF8 lconvencoding/ucs2letoutf8.html
-  UCS2BEToUTF8 lconvencoding/ucs2betoutf8.html
-  UTF8ToUTF8BOM lconvencoding/utf8toutf8bom.html
-  UTF8ToISO_8859_1 lconvencoding/utf8toiso_8859_1.html
-  UTF8ToISO_8859_15 lconvencoding/utf8toiso_8859_15.html
-  UTF8ToISO_8859_2 lconvencoding/utf8toiso_8859_2.html
-  UTF8ToCP1250 lconvencoding/utf8tocp1250.html
-  UTF8ToCP1251 lconvencoding/utf8tocp1251.html
-  UTF8ToCP1252 lconvencoding/utf8tocp1252.html
-  UTF8ToCP1253 lconvencoding/utf8tocp1253.html
-  UTF8ToCP1254 lconvencoding/utf8tocp1254.html
-  UTF8ToCP1255 lconvencoding/utf8tocp1255.html
-  UTF8ToCP1256 lconvencoding/utf8tocp1256.html
-  UTF8ToCP1257 lconvencoding/utf8tocp1257.html
-  UTF8ToCP1258 lconvencoding/utf8tocp1258.html
-  UTF8ToCP437 lconvencoding/utf8tocp437.html
-  UTF8ToCP850 lconvencoding/utf8tocp850.html
-  UTF8ToCP852 lconvencoding/utf8tocp852.html
-  UTF8ToCP866 lconvencoding/utf8tocp866.html
-  UTF8ToCP874 lconvencoding/utf8tocp874.html
-  UTF8ToKOI8R lconvencoding/utf8tokoi8r.html
-  UTF8ToKOI8U lconvencoding/utf8tokoi8u.html
-  UTF8ToKOI8RU lconvencoding/utf8tokoi8ru.html
-  UTF8ToMacintosh lconvencoding/utf8tomacintosh.html
-  UTF8ToSingleByte lconvencoding/utf8tosinglebyte.html
-  UTF8ToUCS2LE lconvencoding/utf8toucs2le.html
-  UTF8ToUCS2BE lconvencoding/utf8toucs2be.html
-  CP932ToUTF8 lconvencoding/cp932toutf8.html
-  CP936ToUTF8 lconvencoding/cp936toutf8.html
-  CP949ToUTF8 lconvencoding/cp949toutf8.html
-  CP950ToUTF8 lconvencoding/cp950toutf8.html
-  UTF8ToCP932 lconvencoding/utf8tocp932.html
-  UTF8ToCP936 lconvencoding/utf8tocp936.html
-  UTF8ToCP949 lconvencoding/utf8tocp949.html
-  UTF8ToCP950 lconvencoding/utf8tocp950.html
-  UTF8ToDBCS lconvencoding/utf8todbcs.html
-  GetSupportedEncodings lconvencoding/getsupportedencodings.html
-  ConvertEncodingErrorMode lconvencoding/convertencodingerrormode.html
-  ConvertAnsiToUTF8 lconvencoding/convertansitoutf8.html
-  ConvertUTF8ToAnsi lconvencoding/convertutf8toansi.html
  IntegerList integerlist/index.html
   TByteList integerlist/tbytelist.html
-   Sort ms-its:rtl.chm::/fgl/tfpglist.sort.html
+   Sort integerlist/tbytelist.sort.html
   TWordList integerlist/twordlist.html
-   Sort ms-its:rtl.chm::/fgl/tfpglist.sort.html
+   Sort integerlist/twordlist.sort.html
   TCardinalList integerlist/tcardinallist.html
-   Sort ms-its:rtl.chm::/fgl/tfpglist.sort.html
+   Sort integerlist/tcardinallist.sort.html
   TIntegerList integerlist/tintegerlist.html
-   Sort ms-its:rtl.chm::/fgl/tfpglist.sort.html
+   Sort integerlist/tintegerlist.sort.html
   TInt64List integerlist/tint64list.html
-   Sort ms-its:rtl.chm::/fgl/tfpglist.sort.html
+   Sort integerlist/tint64list.sort.html
  Laz2_DOM laz2_dom/index.html
   INDEX_SIZE_ERR laz2_dom/index_size_err.html
   DOMSTRING_SIZE_ERR laz2_dom/domstring_size_err.html
@@ -1394,7 +813,7 @@
    ReplaceChild laz2_dom/tdomnode_withchildren.replacechild.html
    DetachChild laz2_dom/tdomnode_withchildren.detachchild.html
    HasChildNodes laz2_dom/tdomnode_withchildren.haschildnodes.html
-   GetChildCount laz2_dom/tdomnode.getchildcount.html
+   GetChildCount laz2_dom/tdomnode_withchildren.getchildcount.html
    FindNode laz2_dom/tdomnode_withchildren.findnode.html
    InternalAppend laz2_dom/tdomnode_withchildren.internalappend.html
   TDOMNodeList laz2_dom/tdomnodelist.html
@@ -1664,81 +1083,6 @@
   StrToXMLValue laz2_dom/strtoxmlvalue.html
   XMLValueToStr laz2_dom/xmlvaluetostr.html
   EncodeLesserAndGreaterThan laz2_dom/encodelesserandgreaterthan.html
- laz2_xmlutils laz2_xmlutils/index.html
-  ns_ASCII laz2_xmlutils/ns_ascii.html
-  ns_0200 laz2_xmlutils/ns_0200.html
-  ns_0300 laz2_xmlutils/ns_0300.html
-  ns_0400 laz2_xmlutils/ns_0400.html
-  ns_0500 laz2_xmlutils/ns_0500.html
-  ns_0600 laz2_xmlutils/ns_0600.html
-  ns_0900 laz2_xmlutils/ns_0900.html
-  ns_0A00 laz2_xmlutils/ns_0a00.html
-  ns_0B00 laz2_xmlutils/ns_0b00.html
-  ns_0C00 laz2_xmlutils/ns_0c00.html
-  ns_0D00 laz2_xmlutils/ns_0d00.html
-  ns_0E00 laz2_xmlutils/ns_0e00.html
-  ns_0F00 laz2_xmlutils/ns_0f00.html
-  ns_3000 laz2_xmlutils/ns_3000.html
-  namingBitmap laz2_xmlutils/namingbitmap.html
-  Xml11HighPages laz2_xmlutils/xml11highpages.html
-  NamePages laz2_xmlutils/namepages.html
-  TXMLUtilString laz2_xmlutils/txmlutilstring.html
-  TXMLUtilChar laz2_xmlutils/txmlutilchar.html
-  PXMLUtilChar laz2_xmlutils/pxmlutilchar.html
-  PXMLUtilString laz2_xmlutils/pxmlutilstring.html
-  PPHashItem laz2_xmlutils/pphashitem.html
-  PHashItem laz2_xmlutils/phashitem.html
-  THashItem laz2_xmlutils/thashitem.html
-  THashItemArray laz2_xmlutils/thashitemarray.html
-  PHashItemArray laz2_xmlutils/phashitemarray.html
-  THashForEach laz2_xmlutils/thashforeach.html
-  TExpHashEntry laz2_xmlutils/texphashentry.html
-  TExpHashEntryArray laz2_xmlutils/texphashentryarray.html
-  PExpHashEntryArray laz2_xmlutils/pexphashentryarray.html
-  TAttributeAction laz2_xmlutils/tattributeaction.html
-  TSetOfByte laz2_xmlutils/tsetofbyte.html
-  THashTable laz2_xmlutils/thashtable.html
-   Create laz2_xmlutils/thashtable.create.html
-   Destroy laz2_xmlutils/thashtable.destroy.html
-   Clear laz2_xmlutils/thashtable.clear.html
-   Find laz2_xmlutils/thashtable.find.html
-   FindOrAdd laz2_xmlutils/thashtable.findoradd.html
-   Get laz2_xmlutils/thashtable.get.html
-   Remove laz2_xmlutils/thashtable.remove.html
-   RemoveData laz2_xmlutils/thashtable.removedata.html
-   ForEach laz2_xmlutils/thashtable.foreach.html
-   Count laz2_xmlutils/thashtable.count.html
-  TDblHashArray laz2_xmlutils/tdblhasharray.html
-   Init laz2_xmlutils/tdblhasharray.init.html
-   Locate laz2_xmlutils/tdblhasharray.locate.html
-   Destroy laz2_xmlutils/tdblhasharray.destroy.html
-  TBinding laz2_xmlutils/tbinding.html
-   uri laz2_xmlutils/tbinding.uri.html
-   next laz2_xmlutils/tbinding.next.html
-   prevPrefixBinding laz2_xmlutils/tbinding.prevprefixbinding.html
-   Prefix laz2_xmlutils/tbinding.prefix.html
-  TNSSupport laz2_xmlutils/tnssupport.html
-   Create laz2_xmlutils/tnssupport.create.html
-   Destroy laz2_xmlutils/tnssupport.destroy.html
-   DefineBinding laz2_xmlutils/tnssupport.definebinding.html
-   CheckAttribute laz2_xmlutils/tnssupport.checkattribute.html
-   IsPrefixBound laz2_xmlutils/tnssupport.isprefixbound.html
-   GetPrefix laz2_xmlutils/tnssupport.getprefix.html
-   BindPrefix laz2_xmlutils/tnssupport.bindprefix.html
-   DefaultNSBinding laz2_xmlutils/tnssupport.defaultnsbinding.html
-   StartElement laz2_xmlutils/tnssupport.startelement.html
-   EndElement laz2_xmlutils/tnssupport.endelement.html
-  IsXmlName laz2_xmlutils/isxmlname.html
-  IsXmlNames laz2_xmlutils/isxmlnames.html
-  IsXmlNmToken laz2_xmlutils/isxmlnmtoken.html
-  IsXmlNmTokens laz2_xmlutils/isxmlnmtokens.html
-  IsValidXmlEncoding laz2_xmlutils/isvalidxmlencoding.html
-  Xml11NamePages laz2_xmlutils/xml11namepages.html
-  NormalizeSpaces laz2_xmlutils/normalizespaces.html
-  IsXmlWhiteSpace laz2_xmlutils/isxmlwhitespace.html
-  Hash laz2_xmlutils/hash.html
-  XUStrLIComp laz2_xmlutils/xustrlicomp.html
-  TranslateUTF8Chars laz2_xmlutils/translateutf8chars.html
  Laz2_XMLCfg laz2_xmlcfg/index.html
   TXMLConfig-PathSyntax laz2_xmlcfg/txmlconfig-pathsyntax.html
   TXMLConfig-Using laz2_xmlcfg/txmlconfig-using.html
@@ -1843,6 +1187,81 @@
   ReadXMLFragment laz2_xmlread/readxmlfragment.html
   ReadDTDFile laz2_xmlread/readdtdfile.html
   RegisterDecoder laz2_xmlread/registerdecoder.html
+ laz2_xmlutils laz2_xmlutils/index.html
+  ns_ASCII laz2_xmlutils/ns_ascii.html
+  ns_0200 laz2_xmlutils/ns_0200.html
+  ns_0300 laz2_xmlutils/ns_0300.html
+  ns_0400 laz2_xmlutils/ns_0400.html
+  ns_0500 laz2_xmlutils/ns_0500.html
+  ns_0600 laz2_xmlutils/ns_0600.html
+  ns_0900 laz2_xmlutils/ns_0900.html
+  ns_0A00 laz2_xmlutils/ns_0a00.html
+  ns_0B00 laz2_xmlutils/ns_0b00.html
+  ns_0C00 laz2_xmlutils/ns_0c00.html
+  ns_0D00 laz2_xmlutils/ns_0d00.html
+  ns_0E00 laz2_xmlutils/ns_0e00.html
+  ns_0F00 laz2_xmlutils/ns_0f00.html
+  ns_3000 laz2_xmlutils/ns_3000.html
+  namingBitmap laz2_xmlutils/namingbitmap.html
+  Xml11HighPages laz2_xmlutils/xml11highpages.html
+  NamePages laz2_xmlutils/namepages.html
+  TXMLUtilString laz2_xmlutils/txmlutilstring.html
+  TXMLUtilChar laz2_xmlutils/txmlutilchar.html
+  PXMLUtilChar laz2_xmlutils/pxmlutilchar.html
+  PXMLUtilString laz2_xmlutils/pxmlutilstring.html
+  PPHashItem laz2_xmlutils/pphashitem.html
+  PHashItem laz2_xmlutils/phashitem.html
+  THashItem laz2_xmlutils/thashitem.html
+  THashItemArray laz2_xmlutils/thashitemarray.html
+  PHashItemArray laz2_xmlutils/phashitemarray.html
+  THashForEach laz2_xmlutils/thashforeach.html
+  TExpHashEntry laz2_xmlutils/texphashentry.html
+  TExpHashEntryArray laz2_xmlutils/texphashentryarray.html
+  PExpHashEntryArray laz2_xmlutils/pexphashentryarray.html
+  TAttributeAction laz2_xmlutils/tattributeaction.html
+  TSetOfByte laz2_xmlutils/tsetofbyte.html
+  THashTable laz2_xmlutils/thashtable.html
+   Create laz2_xmlutils/thashtable.create.html
+   Destroy laz2_xmlutils/thashtable.destroy.html
+   Clear laz2_xmlutils/thashtable.clear.html
+   Find laz2_xmlutils/thashtable.find.html
+   FindOrAdd laz2_xmlutils/thashtable.findoradd.html
+   Get laz2_xmlutils/thashtable.get.html
+   Remove laz2_xmlutils/thashtable.remove.html
+   RemoveData laz2_xmlutils/thashtable.removedata.html
+   ForEach laz2_xmlutils/thashtable.foreach.html
+   Count laz2_xmlutils/thashtable.count.html
+  TDblHashArray laz2_xmlutils/tdblhasharray.html
+   Init laz2_xmlutils/tdblhasharray.init.html
+   Locate laz2_xmlutils/tdblhasharray.locate.html
+   Destroy laz2_xmlutils/tdblhasharray.destroy.html
+  TBinding laz2_xmlutils/tbinding.html
+   uri laz2_xmlutils/tbinding.uri.html
+   next laz2_xmlutils/tbinding.next.html
+   prevPrefixBinding laz2_xmlutils/tbinding.prevprefixbinding.html
+   Prefix laz2_xmlutils/tbinding.prefix.html
+  TNSSupport laz2_xmlutils/tnssupport.html
+   Create laz2_xmlutils/tnssupport.create.html
+   Destroy laz2_xmlutils/tnssupport.destroy.html
+   DefineBinding laz2_xmlutils/tnssupport.definebinding.html
+   CheckAttribute laz2_xmlutils/tnssupport.checkattribute.html
+   IsPrefixBound laz2_xmlutils/tnssupport.isprefixbound.html
+   GetPrefix laz2_xmlutils/tnssupport.getprefix.html
+   BindPrefix laz2_xmlutils/tnssupport.bindprefix.html
+   DefaultNSBinding laz2_xmlutils/tnssupport.defaultnsbinding.html
+   StartElement laz2_xmlutils/tnssupport.startelement.html
+   EndElement laz2_xmlutils/tnssupport.endelement.html
+  IsXmlName laz2_xmlutils/isxmlname.html
+  IsXmlNames laz2_xmlutils/isxmlnames.html
+  IsXmlNmToken laz2_xmlutils/isxmlnmtoken.html
+  IsXmlNmTokens laz2_xmlutils/isxmlnmtokens.html
+  IsValidXmlEncoding laz2_xmlutils/isvalidxmlencoding.html
+  Xml11NamePages laz2_xmlutils/xml11namepages.html
+  NormalizeSpaces laz2_xmlutils/normalizespaces.html
+  IsXmlWhiteSpace laz2_xmlutils/isxmlwhitespace.html
+  Hash laz2_xmlutils/hash.html
+  XUStrLIComp laz2_xmlutils/xustrlicomp.html
+  TranslateUTF8Chars laz2_xmlutils/translateutf8chars.html
  laz2_XMLWrite laz2_xmlwrite/index.html
   TXMLWriterFlag laz2_xmlwrite/txmlwriterflag.html
   TXMLWriterFlags laz2_xmlwrite/txmlwriterflags.html
@@ -2009,6 +1428,24 @@
    Evaluate laz2_xpath/txpathexpression.evaluate.html
   EvaluationError laz2_xpath/evaluationerror.html
   EvaluateXPathExpression laz2_xpath/evaluatexpathexpression.html
+ LazClasses lazclasses/index.html
+  TFreeNotifyingObject lazclasses/tfreenotifyingobject.html
+   Destroy lazclasses/tfreenotifyingobject.destroy.html
+   AddFreeNotification lazclasses/tfreenotifyingobject.addfreenotification.html
+   RemoveFreeNotification lazclasses/tfreenotifyingobject.removefreenotification.html
+  TRefCountedObject lazclasses/trefcountedobject.html
+   DoFree lazclasses/trefcountedobject.dofree.html
+   DoReferenceAdded lazclasses/trefcountedobject.doreferenceadded.html
+   DoReferenceReleased lazclasses/trefcountedobject.doreferencereleased.html
+   RefCount lazclasses/trefcountedobject.refcount.html
+   Create lazclasses/trefcountedobject.create.html
+   Destroy lazclasses/trefcountedobject.destroy.html
+   AddReference lazclasses/trefcountedobject.addreference.html
+   ReleaseReference lazclasses/trefcountedobject.releasereference.html
+  TRefCntObjList lazclasses/trefcntobjlist.html
+   Notify lazclasses/trefcntobjlist.notify.html
+  ReleaseRefAndNil lazclasses/releaserefandnil.html
+  NilThenReleaseRef lazclasses/nilthenreleaseref.html
  lazCollections lazcollections/index.html
   PPRTLEvent lazcollections/pprtlevent.html
   TWaitableSection lazcollections/twaitablesection.html
@@ -2054,9 +1491,6 @@
    TotalItemsPopped lazcollections/tlazthreadedqueue.totalitemspopped.html
    TotalItemsPushed lazcollections/tlazthreadedqueue.totalitemspushed.html
    ShutDown lazcollections/tlazthreadedqueue.shutdown.html
- LazSysUtils lazsysutils/index.html
-  NowUTC lazsysutils/nowutc.html
-  GetTickCount64 lazsysutils/gettickcount64.html
  LazConfigStorage lazconfigstorage/index.html
   ConfigMemStorageFormatVersion lazconfigstorage/configmemstorageformatversion.html
   TConfigStorageClass lazconfigstorage/tconfigstorageclass.html
@@ -2112,27 +1546,10 @@
   CompareConfigMemStorageNames lazconfigstorage/compareconfigmemstoragenames.html
   CompareConfigMemStorageNodes lazconfigstorage/compareconfigmemstoragenodes.html
   ComparePCharWithConfigMemStorageNode lazconfigstorage/comparepcharwithconfigmemstoragenode.html
- Laz_DOM laz_dom/index.html
-  TDOMImplementation laz_dom/tdomimplementation.html
-  TDOMDocumentFragment laz_dom/tdomdocumentfragment.html
-  TDOMDocument laz_dom/tdomdocument.html
-  TDOMNode laz_dom/tdomnode.html
-  TDOMNodeList laz_dom/tdomnodelist.html
-  TDOMNamedNodeMap laz_dom/tdomnamednodemap.html
-  TDOMCharacterData laz_dom/tdomcharacterdata.html
-  TDOMAttr laz_dom/tdomattr.html
-  TDOMElement laz_dom/tdomelement.html
-  TDOMText laz_dom/tdomtext.html
-  TDOMComment laz_dom/tdomcomment.html
-  TDOMCDATASection laz_dom/tdomcdatasection.html
-  TDOMDocumentType laz_dom/tdomdocumenttype.html
-  TDOMNotation laz_dom/tdomnotation.html
-  TDOMEntity laz_dom/tdomentity.html
-  TDOMEntityReference laz_dom/tdomentityreference.html
-  TDOMProcessingInstruction laz_dom/tdomprocessinginstruction.html
-  DOMString laz_dom/domstring.html
-  DOMPChar laz_dom/dompchar.html
-  EDOMError laz_dom/edomerror.html
+ LazDbgLog lazdbglog/index.html
+  MemSizeString lazdbglog/memsizestring.html
+  MemSizeFPList lazdbglog/memsizefplist.html
+  GetStringRefCount lazdbglog/getstringrefcount.html
  LazFglHash lazfglhash/index.html
   TLazHTGNode lazfglhash/tlazhtgnode.html
    Data lazfglhash/tlazhtgnode.data.html
@@ -2147,6 +1564,156 @@
    Iterate lazfglhash/tlazfpghashtable.iterate.html
    Add lazfglhash/tlazfpghashtable.add.html
    Items lazfglhash/tlazfpghashtable.items.html
+ LazFileCache lazfilecache/index.html
+  LUInvalidChangeStamp lazfilecache/luinvalidchangestamp.html
+  LUInvalidChangeStamp64 lazfilecache/luinvalidchangestamp64.html
+  TFileStateCacheItemFlag lazfilecache/tfilestatecacheitemflag.html
+  TFileStateCacheItemFlags lazfilecache/tfilestatecacheitemflags.html
+  TOnChangeFileStateTimeStamp lazfilecache/tonchangefilestatetimestamp.html
+  TOnFileExistsCached lazfilecache/tonfileexistscached.html
+  TOnFileAgeCached lazfilecache/tonfileagecached.html
+  TFileStateCacheItem lazfilecache/tfilestatecacheitem.html
+   Create lazfilecache/tfilestatecacheitem.create.html
+   CalcMemSize lazfilecache/tfilestatecacheitem.calcmemsize.html
+   Filename lazfilecache/tfilestatecacheitem.filename.html
+   PhysicalFilename lazfilecache/tfilestatecacheitem.physicalfilename.html
+   Flags lazfilecache/tfilestatecacheitem.flags.html
+   TestedFlags lazfilecache/tfilestatecacheitem.testedflags.html
+   TimeStamp lazfilecache/tfilestatecacheitem.timestamp.html
+   Age lazfilecache/tfilestatecacheitem.age.html
+  TFileStateCache lazfilecache/tfilestatecache.html
+   Create lazfilecache/tfilestatecache.create.html
+   Destroy lazfilecache/tfilestatecache.destroy.html
+   Lock lazfilecache/tfilestatecache.lock.html
+   Unlock lazfilecache/tfilestatecache.unlock.html
+   Locked lazfilecache/tfilestatecache.locked.html
+   IncreaseTimeStamp lazfilecache/tfilestatecache.increasetimestamp.html
+   FileExistsCached lazfilecache/tfilestatecache.fileexistscached.html
+   DirPathExistsCached lazfilecache/tfilestatecache.dirpathexistscached.html
+   DirectoryIsWritableCached lazfilecache/tfilestatecache.directoryiswritablecached.html
+   FileIsExecutableCached lazfilecache/tfilestatecache.fileisexecutablecached.html
+   FileIsReadableCached lazfilecache/tfilestatecache.fileisreadablecached.html
+   FileIsWritableCached lazfilecache/tfilestatecache.fileiswritablecached.html
+   FileIsTextCached lazfilecache/tfilestatecache.fileistextcached.html
+   FileAgeCached lazfilecache/tfilestatecache.fileagecached.html
+   GetPhysicalFilenameCached lazfilecache/tfilestatecache.getphysicalfilenamecached.html
+   FindFile lazfilecache/tfilestatecache.findfile.html
+   Check lazfilecache/tfilestatecache.check.html
+   AddChangeTimeStampHandler lazfilecache/tfilestatecache.addchangetimestamphandler.html
+   RemoveChangeTimeStampHandler lazfilecache/tfilestatecache.removechangetimestamphandler.html
+   CalcMemSize lazfilecache/tfilestatecache.calcmemsize.html
+   TimeStamp lazfilecache/tfilestatecache.timestamp.html
+  FileExistsCached lazfilecache/fileexistscached.html
+  DirPathExistsCached lazfilecache/dirpathexistscached.html
+  DirectoryIsWritableCached lazfilecache/directoryiswritablecached.html
+  FileIsExecutableCached lazfilecache/fileisexecutablecached.html
+  FileIsReadableCached lazfilecache/fileisreadablecached.html
+  FileIsWritableCached lazfilecache/fileiswritablecached.html
+  FileIsTextCached lazfilecache/fileistextcached.html
+  FileAgeCached lazfilecache/fileagecached.html
+  GetPhysicalFilenameCached lazfilecache/getphysicalfilenamecached.html
+  InvalidateFileStateCache lazfilecache/invalidatefilestatecache.html
+  CompareFileStateItems lazfilecache/comparefilestateitems.html
+  CompareFilenameWithFileStateCacheItem lazfilecache/comparefilenamewithfilestatecacheitem.html
+  LUIncreaseChangeStamp lazfilecache/luincreasechangestamp.html
+  LUIncreaseChangeStamp64 lazfilecache/luincreasechangestamp64.html
+  FileStateCache lazfilecache/filestatecache.html
+  OnFileExistsCached lazfilecache/onfileexistscached.html
+  OnFileAgeCached lazfilecache/onfileagecached.html
+ LazFileUtils lazfileutils/index.html
+  PathDelimSwitchToDelim lazfileutils/pathdelimswitchtodelim.html
+  TPathDelimSwitch lazfileutils/tpathdelimswitch.html
+  TPhysicalFilenameOnError lazfileutils/tphysicalfilenameonerror.html
+  TInvalidateFileStateCacheEvent lazfileutils/tinvalidatefilestatecacheevent.html
+  CompareFilenames lazfileutils/comparefilenames.html
+  CompareFilenamesIgnoreCase lazfileutils/comparefilenamesignorecase.html
+  CompareFilenameStarts lazfileutils/comparefilenamestarts.html
+  CompareFilenamesP lazfileutils/comparefilenamesp.html
+  CompareFileExt lazfileutils/comparefileext.html
+  FilenameExtIs lazfileutils/filenameextis.html
+  FilenameExtIn lazfileutils/filenameextin.html
+  DirPathExists lazfileutils/dirpathexists.html
+  DirectoryIsWritable lazfileutils/directoryiswritable.html
+  ExtractFileNameOnly lazfileutils/extractfilenameonly.html
+  ExtractFileNameWithoutExt lazfileutils/extractfilenamewithoutext.html
+  FilenameIsAbsolute lazfileutils/filenameisabsolute.html
+  FilenameIsWinAbsolute lazfileutils/filenameiswinabsolute.html
+  FilenameIsUnixAbsolute lazfileutils/filenameisunixabsolute.html
+  ForceDirectory lazfileutils/forcedirectory.html
+  CheckIfFileIsExecutable lazfileutils/checkiffileisexecutable.html
+  CheckIfFileIsSymlink lazfileutils/checkiffileissymlink.html
+  FileIsExecutable lazfileutils/fileisexecutable.html
+  FileIsSymlink lazfileutils/fileissymlink.html
+  FileIsHardLink lazfileutils/fileishardlink.html
+  FileIsReadable lazfileutils/fileisreadable.html
+  FileIsWritable lazfileutils/fileiswritable.html
+  FileIsText lazfileutils/fileistext.html
+  FilenameIsTrimmed lazfileutils/filenameistrimmed.html
+  TrimFilename lazfileutils/trimfilename.html
+  ResolveDots lazfileutils/resolvedots.html
+  CleanAndExpandFilename lazfileutils/cleanandexpandfilename.html
+  CleanAndExpandDirectory lazfileutils/cleanandexpanddirectory.html
+  TrimAndExpandFilename lazfileutils/trimandexpandfilename.html
+  TrimAndExpandDirectory lazfileutils/trimandexpanddirectory.html
+  CreateAbsolutePath lazfileutils/createabsolutepath.html
+  TryCreateRelativePath lazfileutils/trycreaterelativepath.html
+  CreateRelativePath lazfileutils/createrelativepath.html
+  FileIsInPath lazfileutils/fileisinpath.html
+  PathIsInPath lazfileutils/pathisinpath.html
+  ShortDisplayFilename lazfileutils/shortdisplayfilename.html
+  ForcePathDelims lazfileutils/forcepathdelims.html
+  GetForcedPathDelims lazfileutils/getforcedpathdelims.html
+  AppendPathDelim lazfileutils/appendpathdelim.html
+  ChompPathDelim lazfileutils/chomppathdelim.html
+  SwitchPathDelims lazfileutils/switchpathdelims.html
+  CheckPathDelim lazfileutils/checkpathdelim.html
+  IsCurrentPathDelim lazfileutils/iscurrentpathdelim.html
+  CreateAbsoluteSearchPath lazfileutils/createabsolutesearchpath.html
+  CreateRelativeSearchPath lazfileutils/createrelativesearchpath.html
+  MinimizeSearchPath lazfileutils/minimizesearchpath.html
+  FindPathInSearchPath lazfileutils/findpathinsearchpath.html
+  FileExistsUTF8 lazfileutils/fileexistsutf8.html
+  FileAgeUTF8 lazfileutils/fileageutf8.html
+  DirectoryExistsUTF8 lazfileutils/directoryexistsutf8.html
+  ExpandFileNameUTF8 lazfileutils/expandfilenameutf8.html
+  FindFirstUTF8 lazfileutils/findfirstutf8.html
+  FindNextUTF8 lazfileutils/findnextutf8.html
+  FindCloseUTF8 lazfileutils/findcloseutf8.html
+  FileSetDateUTF8 lazfileutils/filesetdateutf8.html
+  FileGetAttrUTF8 lazfileutils/filegetattrutf8.html
+  FileSetAttrUTF8 lazfileutils/filesetattrutf8.html
+  DeleteFileUTF8 lazfileutils/deletefileutf8.html
+  RenameFileUTF8 lazfileutils/renamefileutf8.html
+  FileSearchUTF8 lazfileutils/filesearchutf8.html
+  FileIsReadOnlyUTF8 lazfileutils/fileisreadonlyutf8.html
+  GetCurrentDirUTF8 lazfileutils/getcurrentdirutf8.html
+  SetCurrentDirUTF8 lazfileutils/setcurrentdirutf8.html
+  CreateDirUTF8 lazfileutils/createdirutf8.html
+  RemoveDirUTF8 lazfileutils/removedirutf8.html
+  ForceDirectoriesUTF8 lazfileutils/forcedirectoriesutf8.html
+  FileOpenUTF8 lazfileutils/fileopenutf8.html
+  FileCreateUTF8 lazfileutils/filecreateutf8.html
+  FileSizeUtf8 lazfileutils/filesizeutf8.html
+  GetFileDescription lazfileutils/getfiledescription.html
+  ReadAllLinks lazfileutils/readalllinks.html
+  TryReadAllLinks lazfileutils/tryreadalllinks.html
+  GetShellLinkTarget lazfileutils/getshelllinktarget.html
+  DbgSFileAttr lazfileutils/dbgsfileattr.html
+  GetPhysicalFilename lazfileutils/getphysicalfilename.html
+  GetUnixPhysicalFilename lazfileutils/getunixphysicalfilename.html
+  GetAppConfigDirUTF8 lazfileutils/getappconfigdirutf8.html
+  GetAppConfigFileUTF8 lazfileutils/getappconfigfileutf8.html
+  GetTempFileNameUTF8 lazfileutils/gettempfilenameutf8.html
+  IsUNCPath lazfileutils/isuncpath.html
+  ExtractUNCVolume lazfileutils/extractuncvolume.html
+  ExtractFileRoot lazfileutils/extractfileroot.html
+  SplitCmdLineParams lazfileutils/splitcmdlineparams.html
+  StrToCmdLineParam lazfileutils/strtocmdlineparam.html
+  MergeCmdLineParams lazfileutils/mergecmdlineparams.html
+  SplitCmdLine lazfileutils/splitcmdline.html
+  PrepareCmdLineOption lazfileutils/preparecmdlineoption.html
+  InvalidateFileStateCache lazfileutils/invalidatefilestatecache.html
+  OnInvalidateFileStateCache lazfileutils/oninvalidatefilestatecache.html
  LazLinkedList lazlinkedlist/index.html
   TLinkListItem lazlinkedlist/tlinklistitem.html
    Next lazlinkedlist/tlinklistitem.next.html
@@ -2316,65 +1883,6 @@
    Count lazlistclasses/tlazshiftbufferlistgen.count.html
    ItemPointer lazlistclasses/tlazshiftbufferlistgen.itempointer.html
    Items lazlistclasses/tlazshiftbufferlistgen.items.html
- LazLoggerDummy lazloggerdummy/index.html
-  TLazLoggerLogGroupFlag lazloggerdummy/tlazloggerloggroupflag.html
-  TLazLoggerLogGroupFlags lazloggerdummy/tlazloggerloggroupflags.html
-  TLazLoggerLogGroup lazloggerdummy/tlazloggerloggroup.html
-  PLazLoggerLogGroup lazloggerdummy/plazloggerloggroup.html
-  TLazLoggerLogEnabled lazloggerdummy/tlazloggerlogenabled.html
-  TLazLoggerWriteEvent lazloggerdummy/tlazloggerwriteevent.html
-  TLazDebugLoggerCreator lazloggerdummy/tlazdebugloggercreator.html
-  TLazLoggerBlockHandler lazloggerdummy/tlazloggerblockhandler.html
-   IncreaseIndent lazloggerdummy/tlazloggerblockhandler.increaseindent.html
-   DecreaseIndent lazloggerdummy/tlazloggerblockhandler.decreaseindent.html
-  TLazLoggerLogGroupList lazloggerdummy/tlazloggerloggrouplist.html
-   Assign lazloggerdummy/tlazloggerloggrouplist.assign.html
-   IndexOf lazloggerdummy/tlazloggerloggrouplist.indexof.html
-   Find lazloggerdummy/tlazloggerloggrouplist.find.html
-   Count lazloggerdummy/tlazloggerloggrouplist.count.html
-   Item lazloggerdummy/tlazloggerloggrouplist.item.html
-  TLazLogger lazloggerdummy/tlazlogger.html
-   Assign lazloggerdummy/tlazlogger.assign.html
-   Init lazloggerdummy/tlazlogger.init.html
-   Finish lazloggerdummy/tlazlogger.finish.html
-   NestLvlIndent lazloggerdummy/tlazlogger.nestlvlindent.html
-   MaxNestPrefixLen lazloggerdummy/tlazlogger.maxnestprefixlen.html
-   RegisterLogGroup lazloggerdummy/tlazlogger.registerloggroup.html
-   FindOrRegisterLogGroup lazloggerdummy/tlazlogger.findorregisterloggroup.html
-   LogGroupList lazloggerdummy/tlazlogger.loggrouplist.html
-   UseGlobalLogGroupList lazloggerdummy/tlazlogger.usegloballoggrouplist.html
-   DebuglnStack lazloggerdummy/tlazlogger.debuglnstack.html
-   DbgOut lazloggerdummy/tlazlogger.dbgout.html
-   DebugLn lazloggerdummy/tlazlogger.debugln.html
-   DebugLnEnter lazloggerdummy/tlazlogger.debuglnenter.html
-   DebugLnExit lazloggerdummy/tlazlogger.debuglnexit.html
-  DebuglnStack lazloggerdummy/debuglnstack.html
-  DbgOut lazloggerdummy/dbgout.html
-  DebugLn lazloggerdummy/debugln.html
-  DebugLnEnter lazloggerdummy/debuglnenter.html
-  DebugLnExit lazloggerdummy/debuglnexit.html
-  DbgS lazloggerdummy/dbgs.html
-  DbgSJoin lazloggerdummy/dbgsjoin.html
-  DbgSName lazloggerdummy/dbgsname.html
-  dbgObjMem lazloggerdummy/dbgobjmem.html
-  dbghex lazloggerdummy/dbghex.html
-  DbgSTime lazloggerdummy/dbgstime.html
-  dbgMemRange lazloggerdummy/dbgmemrange.html
-  dbgMemStream lazloggerdummy/dbgmemstream.html
-  DumpExceptionBackTrace lazloggerdummy/dumpexceptionbacktrace.html
-  assign(PLazLoggerLogGroup):TLazLoggerLogEnabled lazloggerdummy/.op-assign-plazloggerloggroup-lazloggerlogenabled.html
-  assign(Boolean):TLazLoggerLogEnabled lazloggerdummy/.op-assign-boolean-lazloggerlogenabled.html
-  logicaland(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerdummy/.op-logicaland-tlazloggerlogenabled-lazloggerlogenabled-lazloggerlogenabled.html
-  logicalor(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerdummy/.op-logicalor-tlazloggerlogenabled-lazloggerlogenabled-lazloggerlogenabled.html
-  GetDebugLoggerGroups lazloggerdummy/getdebugloggergroups.html
-  SetDebugLoggerGroups lazloggerdummy/setdebugloggergroups.html
-  GetDebugLogger lazloggerdummy/getdebuglogger.html
-  GetExistingDebugLogger lazloggerdummy/getexistingdebuglogger.html
-  SetDebugLogger lazloggerdummy/setdebuglogger.html
-  RecreateDebugLogger lazloggerdummy/recreatedebuglogger.html
-  LazDebugLoggerCreator lazloggerdummy/lazdebugloggercreator.html
-  OnWidgetSetDebugLn lazloggerdummy/onwidgetsetdebugln.html
-  OnWidgetSetDbgOut lazloggerdummy/onwidgetsetdbgout.html
  LazLogger lazlogger/index.html
   PLazLoggerLogGroup lazlogger/plazloggerloggroup.html
   TLazLoggerFileHandle lazlogger/tlazloggerfilehandle.html
@@ -2443,14 +1951,215 @@
   dbgMemRange lazlogger/dbgmemrange.html
   dbgMemStream lazlogger/dbgmemstream.html
   DumpExceptionBackTrace lazlogger/dumpexceptionbacktrace.html
-  assign(PLazLoggerLogGroup):TLazLoggerLogEnabled lazlogger/.op-assign-plazloggerloggroup-lazloggerlogenabled.html
-  assign(Boolean):TLazLoggerLogEnabled lazlogger/.op-assign-boolean-lazloggerlogenabled.html
-  logicaland(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazlogger/.op-logicaland-tlazloggerlogenabled-lazloggerlogenabled-lazloggerlogenabled.html
-  logicalor(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazlogger/.op-logicalor-tlazloggerlogenabled-lazloggerlogenabled-lazloggerlogenabled.html
+  assign(PLazLoggerLogGroup):TLazLoggerLogEnabled lazlogger/op-assign-plazloggerloggroup-tlazloggerlogenabled.html
+  assign(Boolean):TLazLoggerLogEnabled lazlogger/op-assign-boolean-tlazloggerlogenabled.html
+  logicaland(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazlogger/op-logicaland-tlazloggerlogenabled-tlazloggerlogenabled-tlazloggerlogenabled.html
+  logicalor(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazlogger/op-logicalor-tlazloggerlogenabled-tlazloggerlogenabled-tlazloggerlogenabled.html
   DbgStr lazlogger/dbgstr.html
   DbgWideStr lazlogger/dbgwidestr.html
   GetDebugLogger lazlogger/getdebuglogger.html
   SetDebugLogger lazlogger/setdebuglogger.html
+ LazLoggerBase lazloggerbase/index.html
+  TLazLoggerLogGroupFlag lazloggerbase/tlazloggerloggroupflag.html
+  TLazLoggerLogGroupFlags lazloggerbase/tlazloggerloggroupflags.html
+  TLazLoggerLogGroup lazloggerbase/tlazloggerloggroup.html
+  PLazLoggerLogGroup lazloggerbase/plazloggerloggroup.html
+  TLazLoggerLogEnabled lazloggerbase/tlazloggerlogenabled.html
+  TLazLoggerWriteTarget lazloggerbase/tlazloggerwritetarget.html
+  TLazLoggerWriteEvent lazloggerbase/tlazloggerwriteevent.html
+  TLazLoggerWidgetSetWriteEvent lazloggerbase/tlazloggerwidgetsetwriteevent.html
+  TLazDebugLoggerCreator lazloggerbase/tlazdebugloggercreator.html
+  TLazLoggerBlockHandler lazloggerbase/tlazloggerblockhandler.html
+   EnterBlock lazloggerbase/tlazloggerblockhandler.enterblock.html
+   ExitBlock lazloggerbase/tlazloggerblockhandler.exitblock.html
+  TLazLoggerLogGroupList lazloggerbase/tlazloggerloggrouplist.html
+   Add lazloggerbase/tlazloggerloggrouplist.add.html
+   FindOrAdd lazloggerbase/tlazloggerloggrouplist.findoradd.html
+   Remove lazloggerbase/tlazloggerloggrouplist.remove.html
+   Create lazloggerbase/tlazloggerloggrouplist.create.html
+   Destroy lazloggerbase/tlazloggerloggrouplist.destroy.html
+   Assign lazloggerbase/tlazloggerloggrouplist.assign.html
+   IndexOf lazloggerbase/tlazloggerloggrouplist.indexof.html
+   Find lazloggerbase/tlazloggerloggrouplist.find.html
+   Count lazloggerbase/tlazloggerloggrouplist.count.html
+   Item lazloggerbase/tlazloggerloggrouplist.item.html
+  TLazLogger lazloggerbase/tlazlogger.html
+   DoInit lazloggerbase/tlazlogger.doinit.html
+   DoFinish lazloggerbase/tlazlogger.dofinish.html
+   DoFinsh lazloggerbase/tlazlogger.dofinsh.html
+   IncreaseIndent lazloggerbase/tlazlogger.increaseindent.html
+   DecreaseIndent lazloggerbase/tlazlogger.decreaseindent.html
+   IndentChanged lazloggerbase/tlazlogger.indentchanged.html
+   GetBlockHandler lazloggerbase/tlazlogger.getblockhandler.html
+   DoDbgOut lazloggerbase/tlazlogger.dodbgout.html
+   DoDebugLn lazloggerbase/tlazlogger.dodebugln.html
+   DoDebuglnStack lazloggerbase/tlazlogger.dodebuglnstack.html
+   ArgsToString lazloggerbase/tlazlogger.argstostring.html
+   IsInitialized lazloggerbase/tlazlogger.isinitialized.html
+   Create lazloggerbase/tlazlogger.create.html
+   Destroy lazloggerbase/tlazlogger.destroy.html
+   Assign lazloggerbase/tlazlogger.assign.html
+   Init lazloggerbase/tlazlogger.init.html
+   Finish lazloggerbase/tlazlogger.finish.html
+   CurrentIndentLevel lazloggerbase/tlazlogger.currentindentlevel.html
+   NestLvlIndent lazloggerbase/tlazlogger.nestlvlindent.html
+   MaxNestPrefixLen lazloggerbase/tlazlogger.maxnestprefixlen.html
+   RegisterLogGroup lazloggerbase/tlazlogger.registerloggroup.html
+   FindOrRegisterLogGroup lazloggerbase/tlazlogger.findorregisterloggroup.html
+   LogGroupList lazloggerbase/tlazlogger.loggrouplist.html
+   UseGlobalLogGroupList lazloggerbase/tlazlogger.usegloballoggrouplist.html
+   AddBlockHandler lazloggerbase/tlazlogger.addblockhandler.html
+   RemoveBlockHandler lazloggerbase/tlazlogger.removeblockhandler.html
+   BlockHandlerCount lazloggerbase/tlazlogger.blockhandlercount.html
+   BlockHandler lazloggerbase/tlazlogger.blockhandler.html
+   DebuglnStack lazloggerbase/tlazlogger.debuglnstack.html
+   DbgOut lazloggerbase/tlazlogger.dbgout.html
+   DebugLn lazloggerbase/tlazlogger.debugln.html
+   DebugLnEnter lazloggerbase/tlazlogger.debuglnenter.html
+   DebugLnExit lazloggerbase/tlazlogger.debuglnexit.html
+   DumpExceptionBackTrace lazloggerbase/tlazlogger.dumpexceptionbacktrace.html
+  TLazLoggerWithGroupParam lazloggerbase/tlazloggerwithgroupparam.html
+   Create lazloggerbase/tlazloggerwithgroupparam.create.html
+   Assign lazloggerbase/tlazloggerwithgroupparam.assign.html
+   RegisterLogGroup lazloggerbase/tlazloggerwithgroupparam.registerloggroup.html
+   FindOrRegisterLogGroup lazloggerbase/tlazloggerwithgroupparam.findorregisterloggroup.html
+   ParamForEnabledLogGroups lazloggerbase/tlazloggerwithgroupparam.paramforenabledloggroups.html
+  TLazLoggerNoOutput lazloggerbase/tlazloggernooutput.html
+  DebuglnStack lazloggerbase/debuglnstack.html
+  DbgOut lazloggerbase/dbgout.html
+  DebugLn lazloggerbase/debugln.html
+  DebugLnEnter lazloggerbase/debuglnenter.html
+  DebugLnExit lazloggerbase/debuglnexit.html
+  DbgS lazloggerbase/dbgs.html
+  DbgSJoin lazloggerbase/dbgsjoin.html
+  DbgSName lazloggerbase/dbgsname.html
+  dbgObjMem lazloggerbase/dbgobjmem.html
+  dbghex lazloggerbase/dbghex.html
+  DbgSTime lazloggerbase/dbgstime.html
+  dbgMemRange lazloggerbase/dbgmemrange.html
+  dbgMemStream lazloggerbase/dbgmemstream.html
+  DumpExceptionBackTrace lazloggerbase/dumpexceptionbacktrace.html
+  assign(PLazLoggerLogGroup):TLazLoggerLogEnabled lazloggerbase/op-assign-plazloggerloggroup-tlazloggerlogenabled.html
+  assign(Boolean):TLazLoggerLogEnabled lazloggerbase/op-assign-boolean-tlazloggerlogenabled.html
+  logicaland(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerbase/op-logicaland-tlazloggerlogenabled-tlazloggerlogenabled-tlazloggerlogenabled.html
+  logicalor(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerbase/op-logicalor-tlazloggerlogenabled-tlazloggerlogenabled-tlazloggerlogenabled.html
+  GetParamByNameCount lazloggerbase/getparambynamecount.html
+  GetParamByName lazloggerbase/getparambyname.html
+  GetDebugLoggerGroups lazloggerbase/getdebugloggergroups.html
+  SetDebugLoggerGroups lazloggerbase/setdebugloggergroups.html
+  GetDebugLogger lazloggerbase/getdebuglogger.html
+  GetExistingDebugLogger lazloggerbase/getexistingdebuglogger.html
+  SetDebugLogger lazloggerbase/setdebuglogger.html
+  RecreateDebugLogger lazloggerbase/recreatedebuglogger.html
+  DbgStr lazloggerbase/dbgstr.html
+  DbgWideStr lazloggerbase/dbgwidestr.html
+  DumpStack lazloggerbase/dumpstack.html
+  LazDebugLoggerCreator lazloggerbase/lazdebugloggercreator.html
+  OnWidgetSetDebugLn lazloggerbase/onwidgetsetdebugln.html
+  OnWidgetSetDbgOut lazloggerbase/onwidgetsetdbgout.html
+ LazLoggerDummy lazloggerdummy/index.html
+  TLazLoggerLogGroupFlag lazloggerdummy/tlazloggerloggroupflag.html
+  TLazLoggerLogGroupFlags lazloggerdummy/tlazloggerloggroupflags.html
+  TLazLoggerLogGroup lazloggerdummy/tlazloggerloggroup.html
+  PLazLoggerLogGroup lazloggerdummy/plazloggerloggroup.html
+  TLazLoggerLogEnabled lazloggerdummy/tlazloggerlogenabled.html
+  TLazLoggerWriteEvent lazloggerdummy/tlazloggerwriteevent.html
+  TLazDebugLoggerCreator lazloggerdummy/tlazdebugloggercreator.html
+  TLazLoggerBlockHandler lazloggerdummy/tlazloggerblockhandler.html
+   IncreaseIndent lazloggerdummy/tlazloggerblockhandler.increaseindent.html
+   DecreaseIndent lazloggerdummy/tlazloggerblockhandler.decreaseindent.html
+  TLazLoggerLogGroupList lazloggerdummy/tlazloggerloggrouplist.html
+   Assign lazloggerdummy/tlazloggerloggrouplist.assign.html
+   IndexOf lazloggerdummy/tlazloggerloggrouplist.indexof.html
+   Find lazloggerdummy/tlazloggerloggrouplist.find.html
+   Count lazloggerdummy/tlazloggerloggrouplist.count.html
+   Item lazloggerdummy/tlazloggerloggrouplist.item.html
+  TLazLogger lazloggerdummy/tlazlogger.html
+   Assign lazloggerdummy/tlazlogger.assign.html
+   Init lazloggerdummy/tlazlogger.init.html
+   Finish lazloggerdummy/tlazlogger.finish.html
+   NestLvlIndent lazloggerdummy/tlazlogger.nestlvlindent.html
+   MaxNestPrefixLen lazloggerdummy/tlazlogger.maxnestprefixlen.html
+   RegisterLogGroup lazloggerdummy/tlazlogger.registerloggroup.html
+   FindOrRegisterLogGroup lazloggerdummy/tlazlogger.findorregisterloggroup.html
+   LogGroupList lazloggerdummy/tlazlogger.loggrouplist.html
+   UseGlobalLogGroupList lazloggerdummy/tlazlogger.usegloballoggrouplist.html
+   DebuglnStack lazloggerdummy/tlazlogger.debuglnstack.html
+   DbgOut lazloggerdummy/tlazlogger.dbgout.html
+   DebugLn lazloggerdummy/tlazlogger.debugln.html
+   DebugLnEnter lazloggerdummy/tlazlogger.debuglnenter.html
+   DebugLnExit lazloggerdummy/tlazlogger.debuglnexit.html
+  DebuglnStack lazloggerdummy/debuglnstack.html
+  DbgOut lazloggerdummy/dbgout.html
+  DebugLn lazloggerdummy/debugln.html
+  DebugLnEnter lazloggerdummy/debuglnenter.html
+  DebugLnExit lazloggerdummy/debuglnexit.html
+  DbgS lazloggerdummy/dbgs.html
+  DbgSJoin lazloggerdummy/dbgsjoin.html
+  DbgSName lazloggerdummy/dbgsname.html
+  dbgObjMem lazloggerdummy/dbgobjmem.html
+  dbghex lazloggerdummy/dbghex.html
+  DbgSTime lazloggerdummy/dbgstime.html
+  dbgMemRange lazloggerdummy/dbgmemrange.html
+  dbgMemStream lazloggerdummy/dbgmemstream.html
+  DumpExceptionBackTrace lazloggerdummy/dumpexceptionbacktrace.html
+  assign(PLazLoggerLogGroup):TLazLoggerLogEnabled lazloggerdummy/op-assign-plazloggerloggroup-tlazloggerlogenabled.html
+  assign(Boolean):TLazLoggerLogEnabled lazloggerdummy/op-assign-boolean-tlazloggerlogenabled.html
+  logicaland(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerdummy/op-logicaland-tlazloggerlogenabled-tlazloggerlogenabled-tlazloggerlogenabled.html
+  logicalor(TLazLoggerLogEnabled,TLazLoggerLogEnabled):TLazLoggerLogEnabled lazloggerdummy/op-logicalor-tlazloggerlogenabled-tlazloggerlogenabled-tlazloggerlogenabled.html
+  GetDebugLoggerGroups lazloggerdummy/getdebugloggergroups.html
+  SetDebugLoggerGroups lazloggerdummy/setdebugloggergroups.html
+  GetDebugLogger lazloggerdummy/getdebuglogger.html
+  GetExistingDebugLogger lazloggerdummy/getexistingdebuglogger.html
+  SetDebugLogger lazloggerdummy/setdebuglogger.html
+  RecreateDebugLogger lazloggerdummy/recreatedebuglogger.html
+  LazDebugLoggerCreator lazloggerdummy/lazdebugloggercreator.html
+  OnWidgetSetDebugLn lazloggerdummy/onwidgetsetdebugln.html
+  OnWidgetSetDbgOut lazloggerdummy/onwidgetsetdbgout.html
+ LazLoggerProfiling lazloggerprofiling/index.html
+  TLazLoggerBlockTimer lazloggerprofiling/tlazloggerblocktimer.html
+   Create lazloggerprofiling/tlazloggerblocktimer.create.html
+   EnterBlock lazloggerprofiling/tlazloggerblocktimer.enterblock.html
+   ExitBlock lazloggerprofiling/tlazloggerblocktimer.exitblock.html
+   MaxDepth lazloggerprofiling/tlazloggerblocktimer.maxdepth.html
+   TimeDiff lazloggerprofiling/tlazloggerblocktimer.timediff.html
+   Nested lazloggerprofiling/tlazloggerblocktimer.nested.html
+  TLazLoggerBlockMemWatch lazloggerprofiling/tlazloggerblockmemwatch.html
+   Create lazloggerprofiling/tlazloggerblockmemwatch.create.html
+   EnterBlock lazloggerprofiling/tlazloggerblockmemwatch.enterblock.html
+   ExitBlock lazloggerprofiling/tlazloggerblockmemwatch.exitblock.html
+   MaxDepth lazloggerprofiling/tlazloggerblockmemwatch.maxdepth.html
+   MemDiff lazloggerprofiling/tlazloggerblockmemwatch.memdiff.html
+   Nested lazloggerprofiling/tlazloggerblockmemwatch.nested.html
+  DbgsMemUsed lazloggerprofiling/dbgsmemused.html
+  DbgsTimeUsed lazloggerprofiling/dbgstimeused.html
+  DbgStartTimer lazloggerprofiling/dbgstarttimer.html
+  DbgStopTimer lazloggerprofiling/dbgstoptimer.html
+  DbgStartMemWatch lazloggerprofiling/dbgstartmemwatch.html
+  DbgStopMemWatch lazloggerprofiling/dbgstopmemwatch.html
+ LazMethodList lazmethodlist/index.html
+  TMethodList lazmethodlist/tmethodlist.html
+   Destroy lazmethodlist/tmethodlist.destroy.html
+   Count lazmethodlist/tmethodlist.count.html
+   NextDownIndex lazmethodlist/tmethodlist.nextdownindex.html
+   IndexOf lazmethodlist/tmethodlist.indexof.html
+   Assign lazmethodlist/tmethodlist.assign.html
+   Clear lazmethodlist/tmethodlist.clear.html
+   Delete lazmethodlist/tmethodlist.delete.html
+   Remove lazmethodlist/tmethodlist.remove.html
+   Add lazmethodlist/tmethodlist.add.html
+   Insert lazmethodlist/tmethodlist.insert.html
+   Move lazmethodlist/tmethodlist.move.html
+   RemoveAllMethodsOfObject lazmethodlist/tmethodlist.removeallmethodsofobject.html
+   CallNotifyEvents lazmethodlist/tmethodlist.callnotifyevents.html
+   GetReversedEnumerator lazmethodlist/tmethodlist.getreversedenumerator.html
+   GetEnumerator lazmethodlist/tmethodlist.getenumerator.html
+   Items lazmethodlist/tmethodlist.items.html
+   AllowDuplicates lazmethodlist/tmethodlist.allowduplicates.html
+  SameMethod lazmethodlist/samemethod.html
+  CompareMethods lazmethodlist/comparemethods.html
+ LazPasReadUtil lazpasreadutil/index.html
+  ExecCustomCSP lazpasreadutil/execcustomcsp.html
  LazStringUtils lazstringutils/index.html
   EndOfLine lazstringutils/endofline.html
   MaxTextLen lazstringutils/maxtextlen.html
@@ -2494,29 +2203,19 @@
   SamePChar lazstringutils/samepchar.html
   StrLScan lazstringutils/strlscan.html
   LazIsValidIdent lazstringutils/lazisvalidident.html
- LazLoggerProfiling lazloggerprofiling/index.html
-  TLazLoggerBlockTimer lazloggerprofiling/tlazloggerblocktimer.html
-   Create lazloggerprofiling/tlazloggerblocktimer.create.html
-   EnterBlock lazloggerprofiling/tlazloggerblocktimer.enterblock.html
-   ExitBlock lazloggerprofiling/tlazloggerblocktimer.exitblock.html
-   MaxDepth lazloggerprofiling/tlazloggerblocktimer.maxdepth.html
-   TimeDiff lazloggerprofiling/tlazloggerblocktimer.timediff.html
-   Nested lazloggerprofiling/tlazloggerblocktimer.nested.html
-  TLazLoggerBlockMemWatch lazloggerprofiling/tlazloggerblockmemwatch.html
-   Create lazloggerprofiling/tlazloggerblockmemwatch.create.html
-   EnterBlock lazloggerprofiling/tlazloggerblockmemwatch.enterblock.html
-   ExitBlock lazloggerprofiling/tlazloggerblockmemwatch.exitblock.html
-   MaxDepth lazloggerprofiling/tlazloggerblockmemwatch.maxdepth.html
-   MemDiff lazloggerprofiling/tlazloggerblockmemwatch.memdiff.html
-   Nested lazloggerprofiling/tlazloggerblockmemwatch.nested.html
-  DbgsMemUsed lazloggerprofiling/dbgsmemused.html
-  DbgsTimeUsed lazloggerprofiling/dbgstimeused.html
-  DbgStartTimer lazloggerprofiling/dbgstarttimer.html
-  DbgStopTimer lazloggerprofiling/dbgstoptimer.html
-  DbgStartMemWatch lazloggerprofiling/dbgstartmemwatch.html
-  DbgStopMemWatch lazloggerprofiling/dbgstopmemwatch.html
- LazPasReadUtil lazpasreadutil/index.html
-  ExecCustomCSP lazpasreadutil/execcustomcsp.html
+ LazSysUtils lazsysutils/index.html
+  NowUTC lazsysutils/nowutc.html
+  GetTickCount64 lazsysutils/gettickcount64.html
+ LazTracer laztracer/index.html
+  TStackTracePointers laztracer/tstacktracepointers.html
+  TLineInfoCacheItem laztracer/tlineinfocacheitem.html
+  PLineInfoCacheItem laztracer/plineinfocacheitem.html
+  RaiseGDBException laztracer/raisegdbexception.html
+  RaiseAndCatchException laztracer/raiseandcatchexception.html
+  GetStackTrace laztracer/getstacktrace.html
+  GetStackTracePointers laztracer/getstacktracepointers.html
+  StackTraceAsString laztracer/stacktraceasstring.html
+  GetLineInfo laztracer/getlineinfo.html
  LazUnicode lazunicode/index.html
   TUnicodeEnumeratorBase lazunicode/tunicodeenumeratorbase.html
    Create lazunicode/tunicodeenumeratorbase.create.html
@@ -2535,7 +2234,7 @@
   UnicodeToWinCP lazunicode/unicodetowincp.html
   WinCPToUnicode lazunicode/wincptounicode.html
   StringOfCodePoint lazunicode/stringofcodepoint.html
-  enumerator(string):TUnicodeCharacterEnumerator lazunicode/.op-enumerator-string-unicodecharacterenumerator.html
+  enumerator(string):TUnicodeCharacterEnumerator lazunicode/op-enumerator-string-tunicodecharacterenumerator.html
  LazUTF16 lazutf16/index.html
   UTF16CharacterLength lazutf16/utf16characterlength.html
   UTF16Length lazutf16/utf16length.html
@@ -2549,21 +2248,198 @@
   Utf16StringReplace lazutf16/utf16stringreplace.html
   UnicodeLowercase lazutf16/unicodelowercase.html
   UTF8LowerCaseViaTables lazutf16/utf8lowercaseviatables.html
+ LazUTF8 lazutf8/index.html
+  TEscapeMode lazutf8/tescapemode.html
+  TUTF8TrimFlag lazutf8/tutf8trimflag.html
+  TUTF8TrimFlags lazutf8/tutf8trimflags.html
+  TConvertResult lazutf8/tconvertresult.html
+  TConvertOption lazutf8/tconvertoption.html
+  TConvertOptions lazutf8/tconvertoptions.html
+  TStringListUTF8Fast lazutf8/tstringlistutf8fast.html
+   DoCompareText lazutf8/tstringlistutf8fast.docomparetext.html
+  NeedRTLAnsi lazutf8/needrtlansi.html
+  SetNeedRTLAnsi lazutf8/setneedrtlansi.html
+  UTF8ToSys lazutf8/utf8tosys.html
+  SysToUTF8 lazutf8/systoutf8.html
+  ConsoleToUTF8 lazutf8/consoletoutf8.html
+  UTF8ToConsole lazutf8/utf8toconsole.html
+  WinCPToUTF8 lazutf8/wincptoutf8.html
+  UTF8ToWinCP lazutf8/utf8towincp.html
+  ParamStrUTF8 lazutf8/paramstrutf8.html
+  GetEnvironmentVariableCountUTF8 lazutf8/getenvironmentvariablecountutf8.html
+  GetEnvironmentStringUTF8 lazutf8/getenvironmentstringutf8.html
+  GetEnvironmentVariableUTF8 lazutf8/getenvironmentvariableutf8.html
+  SysErrorMessageUTF8 lazutf8/syserrormessageutf8.html
+  UTF8CodepointSize lazutf8/utf8codepointsize.html
+  UTF8CharacterLength lazutf8/utf8characterlength.html
+  UTF8CodepointSizeFast lazutf8/utf8codepointsizefast.html
+  UTF8Length lazutf8/utf8length.html
+  UTF8LengthFast lazutf8/utf8lengthfast.html
+  UTF8CodepointToUnicode lazutf8/utf8codepointtounicode.html
+  UTF8CharacterToUnicode lazutf8/utf8charactertounicode.html
+  UnicodeToUTF8 lazutf8/unicodetoutf8.html
+  UnicodeToUTF8SkipErrors lazutf8/unicodetoutf8skiperrors.html
+  UnicodeToUTF8Inline lazutf8/unicodetoutf8inline.html
+  UTF8ToDoubleByteString lazutf8/utf8todoublebytestring.html
+  UTF8ToDoubleByte lazutf8/utf8todoublebyte.html
+  UTF8FindNearestCharStart lazutf8/utf8findnearestcharstart.html
+  Utf8TryFindCodepointStart lazutf8/utf8tryfindcodepointstart.html
+  UTF8CodepointStart lazutf8/utf8codepointstart.html
+  UTF8CharStart lazutf8/utf8charstart.html
+  UTF8CodepointToByteIndex lazutf8/utf8codepointtobyteindex.html
+  UTF8CharToByteIndex lazutf8/utf8chartobyteindex.html
+  UTF8FixBroken lazutf8/utf8fixbroken.html
+  UTF8CodepointStrictSize lazutf8/utf8codepointstrictsize.html
+  UTF8CharacterStrictLength lazutf8/utf8characterstrictlength.html
+  UTF8CStringToUTF8String lazutf8/utf8cstringtoutf8string.html
+  UTF8Pos lazutf8/utf8pos.html
+  UTF8PosP lazutf8/utf8posp.html
+  UTF8Copy lazutf8/utf8copy.html
+  UTF8Delete lazutf8/utf8delete.html
+  UTF8Insert lazutf8/utf8insert.html
+  UTF8StringReplace lazutf8/utf8stringreplace.html
+  UTF8LowerCase lazutf8/utf8lowercase.html
+  UTF8LowerString lazutf8/utf8lowerstring.html
+  UTF8UpperCase lazutf8/utf8uppercase.html
+  UTF8UpperString lazutf8/utf8upperstring.html
+  UTF8SwapCase lazutf8/utf8swapcase.html
+  UTF8ProperCase lazutf8/utf8propercase.html
+  FindInvalidUTF8Codepoint lazutf8/findinvalidutf8codepoint.html
+  FindInvalidUTF8Character lazutf8/findinvalidutf8character.html
+  UTF8StringOfChar lazutf8/utf8stringofchar.html
+  UTF8AddChar lazutf8/utf8addchar.html
+  UTF8AddCharR lazutf8/utf8addcharr.html
+  UTF8PadLeft lazutf8/utf8padleft.html
+  UTF8PadRight lazutf8/utf8padright.html
+  UTF8PadCenter lazutf8/utf8padcenter.html
+  UTF8LeftStr lazutf8/utf8leftstr.html
+  UTF8RightStr lazutf8/utf8rightstr.html
+  UTF8QuotedStr lazutf8/utf8quotedstr.html
+  UTF8StartsText lazutf8/utf8startstext.html
+  UTF8EndsText lazutf8/utf8endstext.html
+  UTF8ReverseString lazutf8/utf8reversestring.html
+  UTF8RPos lazutf8/utf8rpos.html
+  UTF8WrapText lazutf8/utf8wraptext.html
+  Utf8EscapeControlChars lazutf8/utf8escapecontrolchars.html
+  UTF8Trim lazutf8/utf8trim.html
+  UTF8CompareStr lazutf8/utf8comparestr.html
+  UTF8CompareStrP lazutf8/utf8comparestrp.html
+  UTF8CompareText lazutf8/utf8comparetext.html
+  UTF8CompareTextP lazutf8/utf8comparetextp.html
+  UTF8CompareLatinTextFast lazutf8/utf8comparelatintextfast.html
+  UTF8CompareStrCollated lazutf8/utf8comparestrcollated.html
+  CompareStrListUTF8LowerCase lazutf8/comparestrlistutf8lowercase.html
+  ConvertUTF8ToUTF16 lazutf8/convertutf8toutf16.html
+  ConvertUTF16ToUTF8 lazutf8/convertutf16toutf8.html
+  UTF8ToUTF16 lazutf8/utf8toutf16.html
+  UTF16ToUTF8 lazutf8/utf16toutf8.html
+  LazGetLanguageIDs lazutf8/lazgetlanguageids.html
+  LazGetShortLanguageID lazutf8/lazgetshortlanguageid.html
+  ReplaceSubstring lazutf8/replacesubstring.html
+  FPUpChars lazutf8/fpupchars.html
  LazUTF8Classes lazutf8classes/index.html
   TFileStreamUTF8 lazutf8classes/tfilestreamutf8.html
   TStringListUTF8 lazutf8classes/tstringlistutf8.html
    DoCompareText lazutf8classes/tstringlistutf8.docomparetext.html
-   LoadFromFile 
-   SaveToFile 
+   LoadFromFile lazutf8classes/tstringlistutf8.loadfromfile.html
+   SaveToFile lazutf8classes/tstringlistutf8.savetofile.html
   TMemoryStreamUTF8 lazutf8classes/tmemorystreamutf8.html
-   LoadFromFile ms-its:rtl.chm::/classes/tmemorystream.loadfromfile.html
-   SaveToFile 
+   LoadFromFile lazutf8classes/tmemorystreamutf8.loadfromfile.html
+   SaveToFile lazutf8classes/tmemorystreamutf8.savetofile.html
   LoadStringsFromFileUTF8 lazutf8classes/loadstringsfromfileutf8.html
   SaveStringsToFileUTF8 lazutf8classes/savestringstofileutf8.html
  LazUTF8SysUtils lazutf8sysutils/index.html
   NowUTC lazutf8sysutils/nowutc.html
   GetTickCount64 lazutf8sysutils/gettickcount64.html
+ LazUtilities lazutilities/index.html
+  FreeThenNil lazutilities/freethennil.html
+  ComparePointers lazutilities/comparepointers.html
+  CompareBoolean lazutilities/compareboolean.html
+  GetEnumValueDef lazutilities/getenumvaluedef.html
+  RoundToInt lazutilities/roundtoint.html
+  RoundToCardinal lazutilities/roundtocardinal.html
+  TruncToInt lazutilities/trunctoint.html
+  TruncToCardinal lazutilities/trunctocardinal.html
+  StrToDouble lazutilities/strtodouble.html
+  MergeSortWithLen lazutilities/mergesortwithlen.html
+  ConsoleVerbosity lazutilities/consoleverbosity.html
  LazUtils lazutils/index.html
+ LazUtilsStrConsts lazutilsstrconsts/index.html
+  lrsModified lazutilsstrconsts/index-1.html#lrsmodified
+  lrsSize lazutilsstrconsts/index-1.html#lrssize
+  lrsFileDoesNotExist lazutilsstrconsts/index-1.html#lrsfiledoesnotexist
+  lrsFileIsADirectoryAndNotAnExecutable lazutilsstrconsts/index-1.html#lrsfileisadirectoryandnotanexecutable
+  lrsReadAccessDeniedFor lazutilsstrconsts/index-1.html#lrsreadaccessdeniedfor
+  lrsADirectoryComponentInDoesNotExistOrIsADanglingSyml2 lazutilsstrconsts/index-1.html#lrsadirectorycomponentindoesnotexistorisadanglingsyml2
+  lrsADirectoryComponentInIsNotADirectory2 lazutilsstrconsts/index-1.html#lrsadirectorycomponentinisnotadirectory2
+  lrsADirectoryComponentInDoesNotExistOrIsADanglingSyml lazutilsstrconsts/index-1.html#lrsadirectorycomponentindoesnotexistorisadanglingsyml
+  lrsADirectoryComponentInIsNotADirectory lazutilsstrconsts/index-1.html#lrsadirectorycomponentinisnotadirectory
+  lrsInsufficientMemory lazutilsstrconsts/index-1.html#lrsinsufficientmemory
+  lrsHasACircularSymbolicLink lazutilsstrconsts/index-1.html#lrshasacircularsymboliclink
+  lrsIsNotASymbolicLink lazutilsstrconsts/index-1.html#lrsisnotasymboliclink
+  lrsIsNotExecutable lazutilsstrconsts/index-1.html#lrsisnotexecutable
+  lrsUnableToCreateConfigDirectoryS lazutilsstrconsts/index-1.html#lrsunabletocreateconfigdirectorys
+  lrsProgramFileNotFound lazutilsstrconsts/index-1.html#lrsprogramfilenotfound
+  lrsCanNotExecute lazutilsstrconsts/index-1.html#lrscannotexecute
+  lrsListMustBeEmpty lazutilsstrconsts/index-1.html#lrslistmustbeempty
+  lrsListIndexExceedsBounds lazutilsstrconsts/index-1.html#lrslistindexexceedsbounds
+  lrsERRORInCode lazutilsstrconsts/index-1.html#lrserrorincode
+  lrsCreatingGdbCatchableError lazutilsstrconsts/index-1.html#lrscreatinggdbcatchableerror
+  rsInvalidCharMaskAt lazutilsstrconsts/index-1.html#rsinvalidcharmaskat
+  rsInvalidCharMask lazutilsstrconsts/index-1.html#rsinvalidcharmask
+  rsMissingCloseCharMaskAt lazutilsstrconsts/index-1.html#rsmissingclosecharmaskat
+  rsMissingCloseCharMask lazutilsstrconsts/index-1.html#rsmissingclosecharmask
+  rsIncompleteMask lazutilsstrconsts/index-1.html#rsincompletemask
+  rsInvalidEscapeChar lazutilsstrconsts/index-1.html#rsinvalidescapechar
+  rsInternalError lazutilsstrconsts/index-1.html#rsinternalerror
+  lrsNodeSet lazutilsstrconsts/index-1.html#lrsnodeset
+  lrsBoolean lazutilsstrconsts/index-1.html#lrsboolean
+  lrsNumber lazutilsstrconsts/index-1.html#lrsnumber
+  lrsString lazutilsstrconsts/index-1.html#lrsstring
+  lrsVarNoConversion lazutilsstrconsts/index-1.html#lrsvarnoconversion
+  lrsScannerUnclosedString lazutilsstrconsts/index-1.html#lrsscannerunclosedstring
+  lrsScannerInvalidChar lazutilsstrconsts/index-1.html#lrsscannerinvalidchar
+  lrsScannerMalformedQName lazutilsstrconsts/index-1.html#lrsscannermalformedqname
+  lrsScannerExpectedVarName lazutilsstrconsts/index-1.html#lrsscannerexpectedvarname
+  lrsParserExpectedLeftBracket lazutilsstrconsts/index-1.html#lrsparserexpectedleftbracket
+  lrsParserExpectedRightBracket lazutilsstrconsts/index-1.html#lrsparserexpectedrightbracket
+  lrsParserBadAxisName lazutilsstrconsts/index-1.html#lrsparserbadaxisname
+  lrsParserBadNodeType lazutilsstrconsts/index-1.html#lrsparserbadnodetype
+  lrsParserExpectedRightSquareBracket lazutilsstrconsts/index-1.html#lrsparserexpectedrightsquarebracket
+  lrsParserInvalidPrimExpr lazutilsstrconsts/index-1.html#lrsparserinvalidprimexpr
+  lrsParserGarbageAfterExpression lazutilsstrconsts/index-1.html#lrsparsergarbageafterexpression
+  lrsParserInvalidNodeTest lazutilsstrconsts/index-1.html#lrsparserinvalidnodetest
+  lrsEvalUnknownFunction lazutilsstrconsts/index-1.html#lrsevalunknownfunction
+  lrsEvalUnknownVariable lazutilsstrconsts/index-1.html#lrsevalunknownvariable
+  lrsEvalInvalidArgCount lazutilsstrconsts/index-1.html#lrsevalinvalidargcount
+ LazVersion lazversion/index.html
+  laz_major lazversion/laz_major.html
+  laz_minor lazversion/laz_minor.html
+  laz_release lazversion/laz_release.html
+  laz_patch lazversion/laz_patch.html
+  laz_fullversion lazversion/laz_fullversion.html
+  laz_version lazversion/laz_version.html
+ Laz_DOM laz_dom/index.html
+  TDOMImplementation laz_dom/tdomimplementation.html
+  TDOMDocumentFragment laz_dom/tdomdocumentfragment.html
+  TDOMDocument laz_dom/tdomdocument.html
+  TDOMNode laz_dom/tdomnode.html
+  TDOMNodeList laz_dom/tdomnodelist.html
+  TDOMNamedNodeMap laz_dom/tdomnamednodemap.html
+  TDOMCharacterData laz_dom/tdomcharacterdata.html
+  TDOMAttr laz_dom/tdomattr.html
+  TDOMElement laz_dom/tdomelement.html
+  TDOMText laz_dom/tdomtext.html
+  TDOMComment laz_dom/tdomcomment.html
+  TDOMCDATASection laz_dom/tdomcdatasection.html
+  TDOMDocumentType laz_dom/tdomdocumenttype.html
+  TDOMNotation laz_dom/tdomnotation.html
+  TDOMEntity laz_dom/tdomentity.html
+  TDOMEntityReference laz_dom/tdomentityreference.html
+  TDOMProcessingInstruction laz_dom/tdomprocessinginstruction.html
+  DOMString laz_dom/domstring.html
+  DOMPChar laz_dom/dompchar.html
+  EDOMError laz_dom/edomerror.html
  Laz_XMLCfg laz_xmlcfg/index.html
   TXMLConfig laz_xmlcfg/txmlconfig.html
   TRttiXMLConfig laz_xmlcfg/trttixmlconfig.html
@@ -2645,13 +2521,116 @@
   xwfOldXMLWrite laz_xmlwrite/xwfoldxmlwrite.html
   WriteXMLFile laz_xmlwrite/writexmlfile.html
   WriteXML laz_xmlwrite/writexml.html
- LazVersion lazversion/index.html
-  laz_major lazversion/laz_major.html
-  laz_minor lazversion/laz_minor.html
-  laz_release lazversion/laz_release.html
-  laz_patch lazversion/laz_patch.html
-  laz_fullversion lazversion/laz_fullversion.html
-  laz_version lazversion/laz_version.html
+ LConvEncoding lconvencoding/index.html
+  EncodingUTF8 lconvencoding/encodingutf8.html
+  EncodingAnsi lconvencoding/encodingansi.html
+  EncodingUTF8BOM lconvencoding/encodingutf8bom.html
+  EncodingUCS2LE lconvencoding/encodingucs2le.html
+  EncodingUCS2BE lconvencoding/encodingucs2be.html
+  EncodingCP1250 lconvencoding/encodingcp1250.html
+  EncodingCP1251 lconvencoding/encodingcp1251.html
+  EncodingCP1252 lconvencoding/encodingcp1252.html
+  EncodingCP1253 lconvencoding/encodingcp1253.html
+  EncodingCP1254 lconvencoding/encodingcp1254.html
+  EncodingCP1255 lconvencoding/encodingcp1255.html
+  EncodingCP1256 lconvencoding/encodingcp1256.html
+  EncodingCP1257 lconvencoding/encodingcp1257.html
+  EncodingCP1258 lconvencoding/encodingcp1258.html
+  EncodingCP437 lconvencoding/encodingcp437.html
+  EncodingCP850 lconvencoding/encodingcp850.html
+  EncodingCP852 lconvencoding/encodingcp852.html
+  EncodingCP866 lconvencoding/encodingcp866.html
+  EncodingCP874 lconvencoding/encodingcp874.html
+  EncodingCP932 lconvencoding/encodingcp932.html
+  EncodingCP936 lconvencoding/encodingcp936.html
+  EncodingCP949 lconvencoding/encodingcp949.html
+  EncodingCP950 lconvencoding/encodingcp950.html
+  EncodingCPMac lconvencoding/encodingcpmac.html
+  EncodingCPKOI8R lconvencoding/encodingcpkoi8r.html
+  EncodingCPKOI8U lconvencoding/encodingcpkoi8u.html
+  EncodingCPKOI8RU lconvencoding/encodingcpkoi8ru.html
+  EncodingCPIso1 lconvencoding/encodingcpiso1.html
+  EncodingCPIso2 lconvencoding/encodingcpiso2.html
+  EncodingCPIso15 lconvencoding/encodingcpiso15.html
+  UTF8BOM lconvencoding/utf8bom.html
+  UTF16BEBOM lconvencoding/utf16bebom.html
+  UTF16LEBOM lconvencoding/utf16lebom.html
+  UTF32BEBOM lconvencoding/utf32bebom.html
+  UTF32LEBOM lconvencoding/utf32lebom.html
+  TConvertEncodingErrorMode lconvencoding/tconvertencodingerrormode.html
+  TConvertEncodingFunction lconvencoding/tconvertencodingfunction.html
+  TConvertUTF8ToEncodingFunc lconvencoding/tconvertutf8toencodingfunc.html
+  TCharToUTF8Table lconvencoding/tchartoutf8table.html
+  TUnicodeToCharID lconvencoding/tunicodetocharid.html
+  GuessEncoding lconvencoding/guessencoding.html
+  ConvertEncodingFromUTF8 lconvencoding/convertencodingfromutf8.html
+  ConvertEncodingToUTF8 lconvencoding/convertencodingtoutf8.html
+  ConvertEncoding lconvencoding/convertencoding.html
+  GetDefaultTextEncoding lconvencoding/getdefaulttextencoding.html
+  GetConsoleTextEncoding lconvencoding/getconsoletextencoding.html
+  NormalizeEncoding lconvencoding/normalizeencoding.html
+  UTF8BOMToUTF8 lconvencoding/utf8bomtoutf8.html
+  ISO_8859_1ToUTF8 lconvencoding/iso_8859_1toutf8.html
+  ISO_8859_15ToUTF8 lconvencoding/iso_8859_15toutf8.html
+  ISO_8859_2ToUTF8 lconvencoding/iso_8859_2toutf8.html
+  CP1250ToUTF8 lconvencoding/cp1250toutf8.html
+  CP1251ToUTF8 lconvencoding/cp1251toutf8.html
+  CP1252ToUTF8 lconvencoding/cp1252toutf8.html
+  CP1253ToUTF8 lconvencoding/cp1253toutf8.html
+  CP1254ToUTF8 lconvencoding/cp1254toutf8.html
+  CP1255ToUTF8 lconvencoding/cp1255toutf8.html
+  CP1256ToUTF8 lconvencoding/cp1256toutf8.html
+  CP1257ToUTF8 lconvencoding/cp1257toutf8.html
+  CP1258ToUTF8 lconvencoding/cp1258toutf8.html
+  CP437ToUTF8 lconvencoding/cp437toutf8.html
+  CP850ToUTF8 lconvencoding/cp850toutf8.html
+  CP852ToUTF8 lconvencoding/cp852toutf8.html
+  CP866ToUTF8 lconvencoding/cp866toutf8.html
+  CP874ToUTF8 lconvencoding/cp874toutf8.html
+  KOI8RToUTF8 lconvencoding/koi8rtoutf8.html
+  KOI8ToUTF8 lconvencoding/koi8toutf8.html
+  MacintoshToUTF8 lconvencoding/macintoshtoutf8.html
+  SingleByteToUTF8 lconvencoding/singlebytetoutf8.html
+  UCS2LEToUTF8 lconvencoding/ucs2letoutf8.html
+  UCS2BEToUTF8 lconvencoding/ucs2betoutf8.html
+  UTF8ToUTF8BOM lconvencoding/utf8toutf8bom.html
+  UTF8ToISO_8859_1 lconvencoding/utf8toiso_8859_1.html
+  UTF8ToISO_8859_15 lconvencoding/utf8toiso_8859_15.html
+  UTF8ToISO_8859_2 lconvencoding/utf8toiso_8859_2.html
+  UTF8ToCP1250 lconvencoding/utf8tocp1250.html
+  UTF8ToCP1251 lconvencoding/utf8tocp1251.html
+  UTF8ToCP1252 lconvencoding/utf8tocp1252.html
+  UTF8ToCP1253 lconvencoding/utf8tocp1253.html
+  UTF8ToCP1254 lconvencoding/utf8tocp1254.html
+  UTF8ToCP1255 lconvencoding/utf8tocp1255.html
+  UTF8ToCP1256 lconvencoding/utf8tocp1256.html
+  UTF8ToCP1257 lconvencoding/utf8tocp1257.html
+  UTF8ToCP1258 lconvencoding/utf8tocp1258.html
+  UTF8ToCP437 lconvencoding/utf8tocp437.html
+  UTF8ToCP850 lconvencoding/utf8tocp850.html
+  UTF8ToCP852 lconvencoding/utf8tocp852.html
+  UTF8ToCP866 lconvencoding/utf8tocp866.html
+  UTF8ToCP874 lconvencoding/utf8tocp874.html
+  UTF8ToKOI8R lconvencoding/utf8tokoi8r.html
+  UTF8ToKOI8U lconvencoding/utf8tokoi8u.html
+  UTF8ToKOI8RU lconvencoding/utf8tokoi8ru.html
+  UTF8ToMacintosh lconvencoding/utf8tomacintosh.html
+  UTF8ToSingleByte lconvencoding/utf8tosinglebyte.html
+  UTF8ToUCS2LE lconvencoding/utf8toucs2le.html
+  UTF8ToUCS2BE lconvencoding/utf8toucs2be.html
+  CP932ToUTF8 lconvencoding/cp932toutf8.html
+  CP936ToUTF8 lconvencoding/cp936toutf8.html
+  CP949ToUTF8 lconvencoding/cp949toutf8.html
+  CP950ToUTF8 lconvencoding/cp950toutf8.html
+  UTF8ToCP932 lconvencoding/utf8tocp932.html
+  UTF8ToCP936 lconvencoding/utf8tocp936.html
+  UTF8ToCP949 lconvencoding/utf8tocp949.html
+  UTF8ToCP950 lconvencoding/utf8tocp950.html
+  UTF8ToDBCS lconvencoding/utf8todbcs.html
+  GetSupportedEncodings lconvencoding/getsupportedencodings.html
+  ConvertEncodingErrorMode lconvencoding/convertencodingerrormode.html
+  ConvertAnsiToUTF8 lconvencoding/convertansitoutf8.html
+  ConvertUTF8ToAnsi lconvencoding/convertutf8toansi.html
  lcsvutils lcsvutils/index.html
   TCSVRecordProc lcsvutils/tcsvrecordproc.html
   TCSVEncoding lcsvutils/tcsvencoding.html
@@ -2659,17 +2638,17 @@
   LoadFromCSVFile lcsvutils/loadfromcsvfile.html
  LookupStringList lookupstringlist/index.html
   TLookupStringList lookupstringlist/tlookupstringlist.html
+   InsertItem lookupstringlist/tlookupstringlist.insertitem.html
+   Create lookupstringlist/tlookupstringlist.create.html
+   Destroy lookupstringlist/tlookupstringlist.destroy.html
+   Assign lookupstringlist/tlookupstringlist.assign.html
+   Clear lookupstringlist/tlookupstringlist.clear.html
+   Delete lookupstringlist/tlookupstringlist.delete.html
+   Add lookupstringlist/tlookupstringlist.add.html
+   AddObject lookupstringlist/tlookupstringlist.addobject.html
    Contains lookupstringlist/tlookupstringlist.contains.html
-   InsertItem 
-   Create 
-   Destroy ms-its:rtl.chm::/classes/tstringlist.destroy.html
-   Assign ms-its:rtl.chm::/classes/tstrings.assign.html
-   Clear ms-its:rtl.chm::/classes/tstringlist.clear.html
-   Delete ms-its:rtl.chm::/classes/tstringlist.delete.html
-   Add ms-its:rtl.chm::/classes/tstringlist.add.html
-   AddObject ms-its:rtl.chm::/classes/tstrings.addobject.html
-   Find ms-its:rtl.chm::/classes/tstringlist.find.html
-   IndexOf ms-its:rtl.chm::/classes/tstringlist.indexof.html
+   Find lookupstringlist/tlookupstringlist.find.html
+   IndexOf lookupstringlist/tlookupstringlist.indexof.html
   Deduplicate lookupstringlist/deduplicate.html
  Maps maps/index.html
   itsPtrSize maps/itsptrsize.html
@@ -2714,18 +2693,18 @@
    BOM maps/tbasemapiterator.bom.html
    EOM maps/tbasemapiterator.eom.html
   TMap maps/tmap.html
+   Add maps/tmap.add.html
    HasId maps/tmap.hasid.html
-   Add maps/tbasemap.internaladd.html
-   GetData maps/tbasemap.internalgetdata.html
-   GetDataPtr maps/tbasemap.internalgetdataptr.html
-   SetData maps/tbasemap.internalsetdata.html
+   GetData maps/tmap.getdata.html
+   GetDataPtr maps/tmap.getdataptr.html
+   SetData maps/tmap.setdata.html
   TMapIterator maps/tmapiterator.html
-   Create maps/tbasemapiterator.internalcreate.html
-   DataPtr maps/tbasemap.internalgetdataptr.html
-   GetData maps/tbasemap.internalgetdata.html
-   GetID maps/tbasemap.internalgetid.html
-   Locate maps/tbasemapiterator.internallocate.html
-   SetData maps/tbasemap.internalsetdata.html
+   Create maps/tmapiterator.create.html
+   DataPtr maps/tmapiterator.dataptr.html
+   GetData maps/tmapiterator.getdata.html
+   GetID maps/tmapiterator.getid.html
+   Locate maps/tmapiterator.locate.html
+   SetData maps/tmapiterator.setdata.html
   TLockedMapIterator maps/tlockedmapiterator.html
    AddToMap maps/tlockedmapiterator.addtomap.html
    RemoveFromMap maps/tlockedmapiterator.removefrommap.html
@@ -2733,12 +2712,12 @@
    Create maps/ttypedmap.create.html
    InternalSetData maps/tbasemap.internalsetdata.html
    ReleaseData maps/tbasemap.releasedata.html
-   Add maps/tbasemap.internaladd.html
+   Add maps/tmap.add.html
    Destroy maps/tbasemap.destroy.html
    HasId maps/tmap.hasid.html
-   GetData maps/tbasemap.internalgetdata.html
-   GetDataPtr maps/tbasemap.internalgetdataptr.html
-   SetData maps/tbasemap.internalsetdata.html
+   GetData maps/tmap.getdata.html
+   GetDataPtr maps/tmap.getdataptr.html
+   SetData maps/tmap.setdata.html
   TTypedMapIterator maps/ttypedmapiterator.html
    Create maps/ttypedmapiterator.create.html
    GetData maps/ttypedmapiterator.getdata.html
@@ -2746,6 +2725,100 @@
    Locate maps/ttypedmapiterator.locate.html
    SetData maps/ttypedmapiterator.setdata.html
   MapReport maps/mapreport.html
+ Masks masks/index.html
+  MasksOverview masks/masksoverview.html
+  AllWindowsQuirks masks/allwindowsquirks.html
+  DefaultWindowsQuirks masks/defaultwindowsquirks.html
+  AllMaskOpCodes masks/allmaskopcodes.html
+  MaskOpCodesDisableRange masks/maskopcodesdisablerange.html
+  MaskOpCodesNoEscape masks/maskopcodesnoescape.html
+  DefaultMaskOpCodes masks/defaultmaskopcodes.html
+  TMaskFailCause masks/tmaskfailcause.html
+  TMaskOpCode masks/tmaskopcode.html
+  TMaskOpCodes masks/tmaskopcodes.html
+  TWindowsQuirk masks/twindowsquirk.html
+  TWindowsQuirks masks/twindowsquirks.html
+  TMaskOption masks/tmaskoption.html
+  TMaskOptions masks/tmaskoptions.html
+  TMaskClass masks/tmaskclass.html
+  EMaskError masks/emaskerror.html
+   TMaskExceptionCode masks/emaskerror.tmaskexceptioncode.html
+   FCode masks/emaskerror.fcode.html
+   Create masks/emaskerror.create.html
+   CreateFmt masks/emaskerror.createfmt.html
+   Code masks/emaskerror.code.html
+  TMaskBase masks/tmaskbase.html
+   TMaskParsedCode masks/tmaskbase.tmaskparsedcode.html
+   GROW_BY masks/tmaskbase.grow_by.html
+   Add masks/tmaskbase.add.html
+   IncrementLastCounterBy masks/tmaskbase.incrementlastcounterby.html
+   fCaseSensitive masks/tmaskbase.fcasesensitive.html
+   fAutoReverseRange masks/tmaskbase.fautoreverserange.html
+   fMaskIsCompiled masks/tmaskbase.fmaskiscompiled.html
+   fMaskCompiled masks/tmaskbase.fmaskcompiled.html
+   fMaskCompiledIndex masks/tmaskbase.fmaskcompiledindex.html
+   fMaskCompiledAllocated masks/tmaskbase.fmaskcompiledallocated.html
+   fMaskCompiledLimit masks/tmaskbase.fmaskcompiledlimit.html
+   fMaskLimit masks/tmaskbase.fmasklimit.html
+   fMatchStringLimit masks/tmaskbase.fmatchstringlimit.html
+   fMatchMinimumLiteralBytes masks/tmaskbase.fmatchminimumliteralbytes.html
+   fMatchMaximumLiteralBytes masks/tmaskbase.fmatchmaximumliteralbytes.html
+   fMaskOpcodesAllowed masks/tmaskbase.fmaskopcodesallowed.html
+   fMaskEscapeChar masks/tmaskbase.fmaskescapechar.html
+   Compile masks/tmaskbase.compile.html
+   Exception_InvalidCharMask masks/tmaskbase.exception_invalidcharmask.html
+   Exception_MissingCloseChar masks/tmaskbase.exception_missingclosechar.html
+   Exception_IncompleteMask masks/tmaskbase.exception_incompletemask.html
+   Exception_InvalidEscapeChar masks/tmaskbase.exception_invalidescapechar.html
+   Exception_InternalError masks/tmaskbase.exception_internalerror.html
+   Create masks/tmaskbase.create.html
+   CaseSensitive masks/tmaskbase.casesensitive.html
+   AutoReverseRange masks/tmaskbase.autoreverserange.html
+   EscapeChar masks/tmaskbase.escapechar.html
+  TMaskUTF8 masks/tmaskutf8.html
+   fOriginalMask masks/tmaskutf8.foriginalmask.html
+   CompareUTF8Sequences masks/tmaskutf8.compareutf8sequences.html
+   intfMatches masks/tmaskutf8.intfmatches.html
+   Create masks/tmaskutf8.create.html
+   Compile masks/tmaskutf8.compile.html
+   Matches masks/tmaskutf8.matches.html
+   MatchesWindowsMask masks/tmaskutf8.matcheswindowsmask.html
+   Mask masks/tmaskutf8.mask.html
+   OPCodesAllowed masks/tmaskutf8.opcodesallowed.html
+  TMask masks/tmask.html
+  TWindowsMaskUTF8 masks/twindowsmaskutf8.html
+   fWindowsQuirkAllowed masks/twindowsmaskutf8.fwindowsquirkallowed.html
+   fWindowsQuirkInUse masks/twindowsmaskutf8.fwindowsquirkinuse.html
+   fWindowsMask masks/twindowsmaskutf8.fwindowsmask.html
+   SplitFileNameExtension masks/twindowsmaskutf8.splitfilenameextension.html
+   Create masks/twindowsmaskutf8.create.html
+   Compile masks/twindowsmaskutf8.compile.html
+   Matches masks/twindowsmaskutf8.matches.html
+   Mask masks/twindowsmaskutf8.mask.html
+   Quirks masks/twindowsmaskutf8.quirks.html
+  TWindowsMask masks/twindowsmask.html
+  TParseStringList masks/tparsestringlist.html
+   Create masks/tparsestringlist.create.html
+  TMaskList masks/tmasklist.html
+   GetMaskClass masks/tmasklist.getmaskclass.html
+   AddMasksToList masks/tmasklist.addmaskstolist.html
+   Create masks/tmasklist.create.html
+   Destroy masks/tmasklist.destroy.html
+   Matches masks/tmasklist.matches.html
+   MatchesWindowsMask masks/tmasklist.matcheswindowsmask.html
+   Count masks/tmasklist.count.html
+   Items masks/tmasklist.items.html
+  TWindowsMaskList masks/twindowsmasklist.html
+   GetMaskClass masks/twindowsmasklist.getmaskclass.html
+   AddMasksToList masks/twindowsmasklist.addmaskstolist.html
+   Create masks/tmasklist.create.html
+   MatchesWindowsMask masks/tmasklist.matcheswindowsmask.html
+   Quirks masks/twindowsmasklist.quirks.html
+  MatchesMask masks/matchesmask.html
+  MatchesWindowsMask masks/matcheswindowsmask.html
+  MatchesMaskList masks/matchesmasklist.html
+  MatchesWindowsMaskList masks/matcheswindowsmasklist.html
+  DbgS masks/dbgs.html
  ObjectLists objectlists/index.html
   T2Pointer objectlists/t2pointer.html
   P2Pointer objectlists/p2pointer.html
@@ -2810,41 +2883,41 @@
    FText textstrings/ttextstrings.ftext.html
    FUpdateCount textstrings/ttextstrings.fupdatecount.html
    FChangedWhileUpdate textstrings/ttextstrings.fchangedwhileupdate.html
+   GetTextStr textstrings/ttextstrings.gettextstr.html
+   SetTextStr textstrings/ttextstrings.settextstr.html
    BuildArrays textstrings/ttextstrings.buildarrays.html
    GetCount textstrings/ttextstrings.getcount.html
    Changed textstrings/ttextstrings.changed.html
    Changing textstrings/ttextstrings.changing.html
+   Get textstrings/ttextstrings.get.html
    ClearArrays textstrings/ttextstrings.cleararrays.html
+   GetObject textstrings/ttextstrings.getobject.html
+   Put textstrings/ttextstrings.put.html
+   PutObject textstrings/ttextstrings.putobject.html
    GetLineLen textstrings/ttextstrings.getlinelen.html
    GetLineEnd textstrings/ttextstrings.getlineend.html
    CountLineEndings textstrings/ttextstrings.countlineendings.html
    Create textstrings/ttextstrings.create.html
+   Destroy textstrings/ttextstrings.destroy.html
+   Clear textstrings/ttextstrings.clear.html
+   SetText textstrings/ttextstrings.settext.html
+   Insert textstrings/ttextstrings.insert.html
+   Delete textstrings/ttextstrings.delete.html
+   Exchange textstrings/ttextstrings.exchange.html
+   Move textstrings/ttextstrings.move.html
    MakeTextBufferUnique textstrings/ttextstrings.maketextbufferunique.html
    BeginUpdate textstrings/ttextstrings.beginupdate.html
+   EndUpdate textstrings/ttextstrings.endupdate.html
+   GetText textstrings/ttextstrings.gettext.html
+   IndexOf textstrings/ttextstrings.indexof.html
+   Add textstrings/ttextstrings.add.html
    AddObject textstrings/ttextstrings.addobject.html
+   AddStrings textstrings/ttextstrings.addstrings.html
    LoadFromFile textstrings/ttextstrings.loadfromfile.html
    SaveToFile textstrings/ttextstrings.savetofile.html
+   Text textstrings/ttextstrings.text.html
    OnChange textstrings/ttextstrings.onchange.html
    OnChanging textstrings/ttextstrings.onchanging.html
-   GetTextStr 
-   SetTextStr 
-   Get 
-   GetObject 
-   Put 
-   PutObject 
-   Destroy ms-its:rtl.chm::/classes/tstrings.destroy.html
-   Clear ms-its:rtl.chm::/classes/tstrings.clear.html
-   SetText ms-its:rtl.chm::/classes/tstrings.settext.html
-   Insert ms-its:rtl.chm::/classes/tstrings.insert.html
-   Delete ms-its:rtl.chm::/classes/tstrings.delete.html
-   Exchange ms-its:rtl.chm::/classes/tstrings.exchange.html
-   Move ms-its:rtl.chm::/classes/tstrings.move.html
-   EndUpdate ms-its:rtl.chm::/classes/tstrings.endupdate.html
-   GetText ms-its:rtl.chm::/classes/tstrings.gettext.html
-   IndexOf ms-its:rtl.chm::/classes/tstrings.indexof.html
-   Add ms-its:rtl.chm::/classes/tstrings.add.html
-   AddStrings ms-its:rtl.chm::/classes/tstrings.addstrings.html
-   Text ms-its:rtl.chm::/classes/tstrings.text.html
  Translations translations/index.html
   sFuzzyFlag translations/sfuzzyflag.html
   sBadFormatFlag translations/sbadformatflag.html
@@ -3578,28 +3651,95 @@
 2MDoDirectoryFound
 3MCreate
 #lazutils.Masks.EMaskError #rtl.sysutils.EConvertError
-#lazutils.Masks.TMask #rtl.System.TObject
-1VFMask
-1VfInitialMask
-1VfOptions
-1MInitMaskString
-1MClearMaskString
+3MTMaskExceptionCode
+2VFCode
 3MCreate
-3MDestroy
+3MCreateFmt
+3PCode r
+#lazutils.Masks.TMaskBase #rtl.System.TObject
+1MSetMaskEscapeChar
+2MTMaskParsedCode
+2MGROW_BY
+2MAdd
+2MIncrementLastCounterBy
+2VfCaseSensitive
+2VfAutoReverseRange
+2VfMaskIsCompiled
+2VfMaskCompiled
+2VfMaskCompiledIndex
+2VfMaskCompiledAllocated
+2VfMaskCompiledLimit
+2VfMaskLimit
+2VfMatchStringLimit
+2VfMatchMinimumLiteralBytes
+2VfMatchMaximumLiteralBytes
+2VfMaskOpcodesAllowed
+2VfMaskEscapeChar
+2MCompile
+2MException_InvalidCharMask
+2MException_MissingCloseChar
+2MException_IncompleteMask
+2MException_InvalidEscapeChar
+2MException_InternalError
+3MCreate
+3PCaseSensitive r
+3PAutoReverseRange rw
+3PEscapeChar rw
+#lazutils.Masks.TMaskUTF8 #lazutils.Masks.TMaskBase
+1VfMatchString
+1VfMaskInd
+1VfCPLength
+1VfLastOC
+1VfMask
+1MAddAnyChar
+1MAddLiteral
+1MAddRange
+1MCompileRange
+1MReverseRange
+2VfOriginalMask
+2MCompareUTF8Sequences
+2MintfMatches
+3MCreate
+3MCompile
 3MMatches
 3MMatchesWindowsMask
+3PMask rw
+3POPCodesAllowed r
+#lazutils.Masks.TMask #lazutils.Masks.TMaskUTF8
+#lazutils.Masks.TWindowsMaskUTF8 #lazutils.Masks.TMask
+2VfWindowsQuirkAllowed
+2VfWindowsQuirkInUse
+2VfWindowsMask
+2MSplitFileNameExtension
+3MCreate
+3MCompile
+3MMatches
+3PMask rw
+3PQuirks r
+#lazutils.Masks.TWindowsMask #lazutils.Masks.TWindowsMaskUTF8
 #lazutils.Masks.TParseStringList #rtl.Classes.TStringList
 3MCreate
 #lazutils.Masks.TMaskList #rtl.System.TObject
-1VFMasks
+1VfMasks
+1VFMaskClass
+1VfWindowsMasks
 1MGetCount
 1MGetItem
+2MGetMaskClass
+2MAddMasksToList
 3MCreate
 3MDestroy
 3MMatches
 3MMatchesWindowsMask
 3PCount r
 3PItems r
+#lazutils.Masks.TWindowsMaskList #lazutils.Masks.TMaskList
+1VfWindowsQuirks
+2MGetMaskClass
+2MAddMasksToList
+3MCreate
+3MMatchesWindowsMask
+3PQuirks r
 #lazutils.GraphType.TRawImageDescription 
 0VFormat
 0VWidth
@@ -4504,7 +4644,7 @@
 3MAcquire
 3PSpinCount rw
 3PDefaultSpinCount rw
-#lazutils.lazCollections.TLazFifoQueue 
+#lazutils.lazCollections.TLazFifoQueue #rtl.System.TObject
 1VFList
 1VFQueueSize
 2VFTotalItemsPopped
@@ -4520,7 +4660,7 @@
 3PTotalItemsPushed r
 3PIsEmpty r
 3PIsFull r
-#lazutils.lazCollections.TLazThreadedQueue 
+#lazutils.lazCollections.TLazThreadedQueue #rtl.System.TObject
 2MTLazTypedFifoQueue
 1VFMonitor
 1VFFifoQueue
@@ -4864,7 +5004,7 @@
 3PCapacity rw
 3PCount rw
 3PItemPointer r
-#lazutils.LazListClasses.TLazShiftBufferListGen 
+#lazutils.LazListClasses.TLazShiftBufferListGen #rtl.System.TObject
 1MTListMem
 1MPT
 1VFListMem
@@ -5239,7 +5379,7 @@
 3MGetID
 3MLocate
 3MSetData
-#lazutils.ObjectLists.TObjectArray 
+#lazutils.ObjectLists.TObjectArray #rtl.System.TObject
 1VFCapacity
 1VFCount
 1VFList
