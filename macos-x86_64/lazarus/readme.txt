@@ -1,6 +1,13 @@
 Lazarus folder:
-svn up path/svn/binaries
-svn export releasetag Lazarus
+cd path/git/binaries
+git -C your_lazaurs_binaries_git pull
+git -C your_lazaurs_fixes_git pull
+rm -rf Lazarus
+mkdir Lazarus
+cp -a path/git/lazarus_fixes/.git Lazarus/
+git -C Lazarus restore .
+rm -rf Lazarus/.git*
+
 cd Lazarus
 
 replace " -g " with " -gw " in Makefile.compiled :
@@ -9,18 +16,9 @@ find . -name '*compiledbak' -delete
 
 ../resources/build.sh
 
-cp path/svn/binaries/docs/chm/* docs/chm/
+cp lazarus_binaries_git/docs/chm/* docs/chm/
 
 Open in "Packages" the LazarusIDE.pkgproj
-Update version in Packages/LazarusIDE/Tag/Version
 
 Build / Build and Debug
 
-Packge file is created in
-LazarusIDE/build/LazarusIDE.pkg
-
-Test install:
-sudo installer -pkg LazarusIDE/build/LazarusIDE.pkg -verbose -target /
-
-Check for errors:
-less /var/log/install.log
