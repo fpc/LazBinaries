@@ -1,10 +1,10 @@
 Lazarus folder:
-cd path/git/binaries
-git -C your_lazaurs_binaries_git pull
-git -C your_lazaurs_fixes_git pull
+cd folder_of_this_readme
+git -C your_lazarus_binaries_git pull
+git -C your_lazarus_fixes_git pull
 rm -rf Lazarus
 mkdir Lazarus
-cp -a path/git/lazarus_fixes/.git Lazarus/
+cp -a your_lazarus_fixes_git/.git Lazarus/
 git -C Lazarus restore .
 rm -rf Lazarus/.git*
 
@@ -16,7 +16,7 @@ find . -name '*compiledbak' -delete
 
 ../resources/build.sh
 
-cp lazarus_binaries_git/docs/chm/* docs/chm/
+cp your_lazarus_binaries_git/docs/chm/* docs/chm/
 
 Open in "Packages" the LazarusIDE.pkgproj
 
