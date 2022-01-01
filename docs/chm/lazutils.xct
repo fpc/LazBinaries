@@ -2181,7 +2181,6 @@
   SimpleSyntaxToRegExpr lazstringutils/simplesyntaxtoregexpr.html
   BinaryStrToText lazstringutils/binarystrtotext.html
   SpecialCharsToSpaces lazstringutils/specialcharstospaces.html
-  SpecialCharsToHex lazstringutils/specialcharstohex.html
   ShortDotsLine lazstringutils/shortdotsline.html
   BeautifyLineXY lazstringutils/beautifylinexy.html
   BreakString lazstringutils/breakstring.html
@@ -2595,8 +2594,8 @@
   UCS2BEToUTF8 lconvencoding/ucs2betoutf8.html
   UTF8ToUTF8BOM lconvencoding/utf8toutf8bom.html
   UTF8ToISO_8859_1 lconvencoding/utf8toiso_8859_1.html
-  UTF8ToISO_8859_15 lconvencoding/utf8toiso_8859_15.html
   UTF8ToISO_8859_2 lconvencoding/utf8toiso_8859_2.html
+  UTF8ToISO_8859_15 lconvencoding/utf8toiso_8859_15.html
   UTF8ToCP1250 lconvencoding/utf8tocp1250.html
   UTF8ToCP1251 lconvencoding/utf8tocp1251.html
   UTF8ToCP1252 lconvencoding/utf8tocp1252.html
@@ -2727,13 +2726,12 @@
   MapReport maps/mapreport.html
  Masks masks/index.html
   MasksOverview masks/masksoverview.html
-  AllWindowsQuirks masks/allwindowsquirks.html
-  DefaultWindowsQuirks masks/defaultwindowsquirks.html
   AllMaskOpCodes masks/allmaskopcodes.html
   MaskOpCodesDisableRange masks/maskopcodesdisablerange.html
   MaskOpCodesNoEscape masks/maskopcodesnoescape.html
   DefaultMaskOpCodes masks/defaultmaskopcodes.html
-  TMaskFailCause masks/tmaskfailcause.html
+  AllWindowsQuirks masks/allwindowsquirks.html
+  DefaultWindowsQuirks masks/defaultwindowsquirks.html
   TMaskOpCode masks/tmaskopcode.html
   TMaskOpCodes masks/tmaskopcodes.html
   TWindowsQuirk masks/twindowsquirk.html
@@ -2749,7 +2747,9 @@
    Code masks/emaskerror.code.html
   TMaskBase masks/tmaskbase.html
    TMaskParsedCode masks/tmaskbase.tmaskparsedcode.html
+   TMaskFailCause masks/tmaskbase.tmaskfailcause.html
    GROW_BY masks/tmaskbase.grow_by.html
+   DefaultSpecialChars masks/tmaskbase.defaultspecialchars.html
    Add masks/tmaskbase.add.html
    IncrementLastCounterBy masks/tmaskbase.incrementlastcounterby.html
    fCaseSensitive masks/tmaskbase.fcasesensitive.html
@@ -2775,8 +2775,11 @@
    CaseSensitive masks/tmaskbase.casesensitive.html
    AutoReverseRange masks/tmaskbase.autoreverserange.html
    EscapeChar masks/tmaskbase.escapechar.html
+   MaskOpCodes masks/tmaskbase.maskopcodes.html
   TMaskUTF8 masks/tmaskutf8.html
    fOriginalMask masks/tmaskutf8.foriginalmask.html
+   IsSpecialChar masks/tmaskutf8.isspecialchar.html
+   CompileOtherSpecialChars masks/tmaskutf8.compileotherspecialchars.html
    CompareUTF8Sequences masks/tmaskutf8.compareutf8sequences.html
    intfMatches masks/tmaskutf8.intfmatches.html
    Create masks/tmaskutf8.create.html
@@ -2784,17 +2787,17 @@
    Matches masks/tmaskutf8.matches.html
    MatchesWindowsMask masks/tmaskutf8.matcheswindowsmask.html
    Mask masks/tmaskutf8.mask.html
-   OPCodesAllowed masks/tmaskutf8.opcodesallowed.html
   TMask masks/tmask.html
   TWindowsMaskUTF8 masks/twindowsmaskutf8.html
    fWindowsQuirkAllowed masks/twindowsmaskutf8.fwindowsquirkallowed.html
    fWindowsQuirkInUse masks/twindowsmaskutf8.fwindowsquirkinuse.html
    fWindowsMask masks/twindowsmaskutf8.fwindowsmask.html
+   CompileOtherSpecialChars masks/twindowsmaskutf8.compileotherspecialchars.html
+   IsSpecialChar masks/twindowsmaskutf8.isspecialchar.html
    SplitFileNameExtension masks/twindowsmaskutf8.splitfilenameextension.html
    Create masks/twindowsmaskutf8.create.html
    Compile masks/twindowsmaskutf8.compile.html
    Matches masks/twindowsmaskutf8.matches.html
-   Mask masks/twindowsmaskutf8.mask.html
    Quirks masks/twindowsmaskutf8.quirks.html
   TWindowsMask masks/twindowsmask.html
   TParseStringList masks/tparsestringlist.html
@@ -2808,6 +2811,10 @@
    MatchesWindowsMask masks/tmasklist.matcheswindowsmask.html
    Count masks/tmasklist.count.html
    Items masks/tmasklist.items.html
+   Mask masks/tmasklist.mask.html
+   MaskOpCodes masks/tmasklist.maskopcodes.html
+   AutoReverseRange masks/tmasklist.autoreverserange.html
+   CaseSensitive masks/tmasklist.casesensitive.html
   TWindowsMaskList masks/twindowsmasklist.html
    GetMaskClass masks/twindowsmasklist.getmaskclass.html
    AddMasksToList masks/twindowsmasklist.addmaskstolist.html
@@ -3657,9 +3664,14 @@
 3MCreateFmt
 3PCode r
 #lazutils.Masks.TMaskBase #rtl.System.TObject
+1MSetAutoReverseRange
+1MSetCaseSensitive
 1MSetMaskEscapeChar
+1MSetMaskOpCodesAllowed
 2MTMaskParsedCode
+2MTMaskFailCause
 2MGROW_BY
+2MDefaultSpecialChars
 2MAdd
 2MIncrementLastCounterBy
 2VfCaseSensitive
@@ -3682,9 +3694,10 @@
 2MException_InvalidEscapeChar
 2MException_InternalError
 3MCreate
-3PCaseSensitive r
+3PCaseSensitive rw
 3PAutoReverseRange rw
 3PEscapeChar rw
+3PMaskOpCodes rw
 #lazutils.Masks.TMaskUTF8 #lazutils.Masks.TMaskBase
 1VfMatchString
 1VfMaskInd
@@ -3694,9 +3707,16 @@
 1MAddAnyChar
 1MAddLiteral
 1MAddRange
+1MAddRangeReverse
 1MCompileRange
-1MReverseRange
+1MCompileEscapeCharPlusLiteral
+1MCompileSpecialChars
+1MCompileAnyCharOrNone
+1MGetMask
+1MSetMask
 2VfOriginalMask
+2MIsSpecialChar
+2MCompileOtherSpecialChars
 2MCompareUTF8Sequences
 2MintfMatches
 3MCreate
@@ -3704,27 +3724,38 @@
 3MMatches
 3MMatchesWindowsMask
 3PMask rw
-3POPCodesAllowed r
 #lazutils.Masks.TMask #lazutils.Masks.TMaskUTF8
 #lazutils.Masks.TWindowsMaskUTF8 #lazutils.Masks.TMask
+1MSetMask
+1MGetMask
+1MSetWindowsQuirkAllowed
 2VfWindowsQuirkAllowed
 2VfWindowsQuirkInUse
 2VfWindowsMask
+2MCompileOtherSpecialChars
+2MIsSpecialChar
 2MSplitFileNameExtension
 3MCreate
 3MCompile
 3MMatches
-3PMask rw
-3PQuirks r
+3PQuirks rw
 #lazutils.Masks.TWindowsMask #lazutils.Masks.TWindowsMaskUTF8
 #lazutils.Masks.TParseStringList #rtl.Classes.TStringList
 3MCreate
 #lazutils.Masks.TMaskList #rtl.System.TObject
+1VfAutoReverseRange
 1VfMasks
 1VFMaskClass
-1VfWindowsMasks
+1VfMask
+1VfSeparator
+1VfCaseSensitive
+1VfMaskOpcodes
 1MGetCount
 1MGetItem
+1MSetAutoReverseRange
+1MSetCaseSensitive
+1MSetMask
+1MSetMaskOpCodes
 2MGetMaskClass
 2MAddMasksToList
 3MCreate
@@ -3733,13 +3764,18 @@
 3MMatchesWindowsMask
 3PCount r
 3PItems r
+3PMask rw
+3PMaskOpCodes rw
+3PAutoReverseRange rw
+3PCaseSensitive rw
 #lazutils.Masks.TWindowsMaskList #lazutils.Masks.TMaskList
 1VfWindowsQuirks
+1MSetQuirks
 2MGetMaskClass
 2MAddMasksToList
 3MCreate
 3MMatchesWindowsMask
-3PQuirks r
+3PQuirks rw
 #lazutils.GraphType.TRawImageDescription 
 0VFormat
 0VWidth
