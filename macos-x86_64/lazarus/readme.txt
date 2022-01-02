@@ -20,6 +20,8 @@ cp your_lazarus_binaries_git/docs/chm/* docs/chm/
 
 Open in "Packages" the LazarusIDE.pkgproj
 
+Set Version
+
 Build / Build and Debug
 or
 Build / Build and Run
