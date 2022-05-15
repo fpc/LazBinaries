@@ -168,6 +168,7 @@
   CP932Arr codepagesasian/cp932arr.html
  CodepagesCommon codepagescommon/index.html
   ArrayISO_8859_1ToUTF8 codepagescommon/arrayiso_8859_1toutf8.html
+  ArrayISO_8859_9ToUTF8 codepagescommon/arrayiso_8859_9toutf8.html
   ArrayISO_8859_15ToUTF8 codepagescommon/arrayiso_8859_15toutf8.html
   ArrayISO_8859_2ToUTF8 codepagescommon/arrayiso_8859_2toutf8.html
   ArrayCP1250ToUTF8 codepagescommon/arraycp1250toutf8.html
@@ -499,6 +500,8 @@
   PolyBezierArcPoints graphmath/polybezierarcpoints.html
   Quadrant graphmath/quadrant.html
   RadialPoint graphmath/radialpoint.html
+  RotatePoint graphmath/rotatepoint.html
+  RotateRect graphmath/rotaterect.html
   SplitBezier graphmath/splitbezier.html
   add(TFloatPoint,TFloatPoint):TFloatPoint graphmath/op-add-tfloatpoint-tfloatpoint-tfloatpoint.html
   add(TFloatPoint,Extended):TFloatPoint graphmath/op-add-tfloatpoint-extended-tfloatpoint.html
@@ -637,6 +640,7 @@
    ListItemMark html2textrender/thtml2textrenderer.listitemmark.html
    MoreMark html2textrender/thtml2textrenderer.moremark.html
    IndentStep html2textrender/thtml2textrenderer.indentstep.html
+  RenderHTML2Text html2textrender/renderhtml2text.html
  IntegerList integerlist/index.html
   TByteList integerlist/tbytelist.html
    Sort integerlist/tbytelist.sort.html
@@ -1098,6 +1102,9 @@
    Loaded laz2_xmlcfg/txmlconfig.loaded.html
    ExtendedToStr laz2_xmlcfg/txmlconfig.extendedtostr.html
    StrToExtended laz2_xmlcfg/txmlconfig.strtoextended.html
+   SizeOfTypeInfo laz2_xmlcfg/txmlconfig.sizeoftypeinfo.html
+   ValueWithTypeInfoToString laz2_xmlcfg/txmlconfig.valuewithtypeinfotostring.html
+   StringToValueWithTypeInfo laz2_xmlcfg/txmlconfig.stringtovaluewithtypeinfo.html
    ReadXMLFile laz2_xmlcfg/txmlconfig.readxmlfile.html
    WriteXMLFile laz2_xmlcfg/txmlconfig.writexmlfile.html
    FreeDoc laz2_xmlcfg/txmlconfig.freedoc.html
@@ -2089,6 +2096,7 @@
    DebugLn lazloggerdummy/tlazlogger.debugln.html
    DebugLnEnter lazloggerdummy/tlazlogger.debuglnenter.html
    DebugLnExit lazloggerdummy/tlazlogger.debuglnexit.html
+   DumpExceptionBackTrace lazloggerdummy/tlazlogger.dumpexceptionbacktrace.html
   DebuglnStack lazloggerdummy/debuglnstack.html
   DbgOut lazloggerdummy/dbgout.html
   DebugLn lazloggerdummy/debugln.html
@@ -2550,6 +2558,7 @@
   EncodingCPKOI8RU lconvencoding/encodingcpkoi8ru.html
   EncodingCPIso1 lconvencoding/encodingcpiso1.html
   EncodingCPIso2 lconvencoding/encodingcpiso2.html
+  EncodingCPIso9 lconvencoding/encodingcpiso9.html
   EncodingCPIso15 lconvencoding/encodingcpiso15.html
   UTF8BOM lconvencoding/utf8bom.html
   UTF16BEBOM lconvencoding/utf16bebom.html
@@ -2572,6 +2581,7 @@
   ISO_8859_1ToUTF8 lconvencoding/iso_8859_1toutf8.html
   ISO_8859_15ToUTF8 lconvencoding/iso_8859_15toutf8.html
   ISO_8859_2ToUTF8 lconvencoding/iso_8859_2toutf8.html
+  ISO_8859_9ToUTF8 lconvencoding/iso_8859_9toutf8.html
   CP1250ToUTF8 lconvencoding/cp1250toutf8.html
   CP1251ToUTF8 lconvencoding/cp1251toutf8.html
   CP1252ToUTF8 lconvencoding/cp1252toutf8.html
@@ -2595,6 +2605,7 @@
   UTF8ToUTF8BOM lconvencoding/utf8toutf8bom.html
   UTF8ToISO_8859_1 lconvencoding/utf8toiso_8859_1.html
   UTF8ToISO_8859_2 lconvencoding/utf8toiso_8859_2.html
+  UTF8ToISO_8859_9 lconvencoding/utf8toiso_8859_9.html
   UTF8ToISO_8859_15 lconvencoding/utf8toiso_8859_15.html
   UTF8ToCP1250 lconvencoding/utf8tocp1250.html
   UTF8ToCP1251 lconvencoding/utf8tocp1251.html
@@ -2818,8 +2829,8 @@
   TWindowsMaskList masks/twindowsmasklist.html
    GetMaskClass masks/twindowsmasklist.getmaskclass.html
    AddMasksToList masks/twindowsmasklist.addmaskstolist.html
-   Create masks/tmasklist.create.html
-   MatchesWindowsMask masks/tmasklist.matcheswindowsmask.html
+   Create masks/twindowsmasklist.create.html
+   MatchesWindowsMask masks/twindowsmasklist.matcheswindowsmask.html
    Quirks masks/twindowsmasklist.quirks.html
   MatchesMask masks/matchesmask.html
   MatchesWindowsMask masks/matcheswindowsmask.html
@@ -4355,6 +4366,7 @@
 3MStartElement
 3MEndElement
 #lazutils.Laz2_XMLCfg.TXMLConfig #rtl.Classes.TComponent
+1MZeroSrc
 1VFFilename
 1VFReadFlags
 1VFWriteFlags
@@ -4373,6 +4385,9 @@
 2MLoaded
 2MExtendedToStr
 2MStrToExtended
+2MSizeOfTypeInfo
+2MValueWithTypeInfoToString
+2MStringToValueWithTypeInfo
 2MReadXMLFile
 2MWriteXMLFile
 2MFreeDoc
@@ -5095,6 +5110,7 @@
 3MDebugLn
 3MDebugLnEnter
 3MDebugLnExit
+3MDumpExceptionBackTrace
 #lazutils.LazLogger.TLazLoggerFileHandle #rtl.System.TObject
 1VFActiveLogText
 1VFCloseLogFileBetweenWrites
