@@ -169,8 +169,16 @@
  CodepagesCommon codepagescommon/index.html
   ArrayISO_8859_1ToUTF8 codepagescommon/arrayiso_8859_1toutf8.html
   ArrayISO_8859_9ToUTF8 codepagescommon/arrayiso_8859_9toutf8.html
+  ArrayISO_8859_10ToUTF8 codepagescommon/arrayiso_8859_10toutf8.html
+  ArrayISO_8859_13ToUTF8 codepagescommon/arrayiso_8859_13toutf8.html
+  ArrayISO_8859_14ToUTF8 codepagescommon/arrayiso_8859_14toutf8.html
   ArrayISO_8859_15ToUTF8 codepagescommon/arrayiso_8859_15toutf8.html
+  ArrayISO_8859_16ToUTF8 codepagescommon/arrayiso_8859_16toutf8.html
   ArrayISO_8859_2ToUTF8 codepagescommon/arrayiso_8859_2toutf8.html
+  ArrayISO_8859_3ToUTF8 codepagescommon/arrayiso_8859_3toutf8.html
+  ArrayISO_8859_4ToUTF8 codepagescommon/arrayiso_8859_4toutf8.html
+  ArrayISO_8859_5ToUTF8 codepagescommon/arrayiso_8859_5toutf8.html
+  ArrayISO_8859_7ToUTF8 codepagescommon/arrayiso_8859_7toutf8.html
   ArrayCP1250ToUTF8 codepagescommon/arraycp1250toutf8.html
   ArrayCP1251ToUTF8 codepagescommon/arraycp1251toutf8.html
   ArrayCP1252ToUTF8 codepagescommon/arraycp1252toutf8.html
@@ -2558,8 +2566,16 @@
   EncodingCPKOI8RU lconvencoding/encodingcpkoi8ru.html
   EncodingCPIso1 lconvencoding/encodingcpiso1.html
   EncodingCPIso2 lconvencoding/encodingcpiso2.html
+  EncodingCPIso3 lconvencoding/encodingcpiso3.html
+  EncodingCPIso4 lconvencoding/encodingcpiso4.html
+  EncodingCPIso5 lconvencoding/encodingcpiso5.html
+  EncodingCPIso7 lconvencoding/encodingcpiso7.html
   EncodingCPIso9 lconvencoding/encodingcpiso9.html
+  EncodingCPIso10 lconvencoding/encodingcpiso10.html
+  EncodingCPIso13 lconvencoding/encodingcpiso13.html
+  EncodingCPIso14 lconvencoding/encodingcpiso14.html
   EncodingCPIso15 lconvencoding/encodingcpiso15.html
+  EncodingCPIso16 lconvencoding/encodingcpiso16.html
   UTF8BOM lconvencoding/utf8bom.html
   UTF16BEBOM lconvencoding/utf16bebom.html
   UTF16LEBOM lconvencoding/utf16lebom.html
@@ -2579,9 +2595,17 @@
   NormalizeEncoding lconvencoding/normalizeencoding.html
   UTF8BOMToUTF8 lconvencoding/utf8bomtoutf8.html
   ISO_8859_1ToUTF8 lconvencoding/iso_8859_1toutf8.html
-  ISO_8859_15ToUTF8 lconvencoding/iso_8859_15toutf8.html
   ISO_8859_2ToUTF8 lconvencoding/iso_8859_2toutf8.html
+  ISO_8859_3ToUTF8 lconvencoding/iso_8859_3toutf8.html
+  ISO_8859_4ToUTF8 lconvencoding/iso_8859_4toutf8.html
+  ISO_8859_5ToUTF8 lconvencoding/iso_8859_5toutf8.html
+  ISO_8859_7ToUTF8 lconvencoding/iso_8859_7toutf8.html
   ISO_8859_9ToUTF8 lconvencoding/iso_8859_9toutf8.html
+  ISO_8859_10ToUTF8 lconvencoding/iso_8859_10toutf8.html
+  ISO_8859_13ToUTF8 lconvencoding/iso_8859_13toutf8.html
+  ISO_8859_14ToUTF8 lconvencoding/iso_8859_14toutf8.html
+  ISO_8859_15ToUTF8 lconvencoding/iso_8859_15toutf8.html
+  ISO_8859_16ToUTF8 lconvencoding/iso_8859_16toutf8.html
   CP1250ToUTF8 lconvencoding/cp1250toutf8.html
   CP1251ToUTF8 lconvencoding/cp1251toutf8.html
   CP1252ToUTF8 lconvencoding/cp1252toutf8.html
@@ -2605,8 +2629,16 @@
   UTF8ToUTF8BOM lconvencoding/utf8toutf8bom.html
   UTF8ToISO_8859_1 lconvencoding/utf8toiso_8859_1.html
   UTF8ToISO_8859_2 lconvencoding/utf8toiso_8859_2.html
+  UTF8ToISO_8859_3 lconvencoding/utf8toiso_8859_3.html
+  UTF8ToISO_8859_4 lconvencoding/utf8toiso_8859_4.html
+  UTF8ToISO_8859_5 lconvencoding/utf8toiso_8859_5.html
+  UTF8ToISO_8859_7 lconvencoding/utf8toiso_8859_7.html
   UTF8ToISO_8859_9 lconvencoding/utf8toiso_8859_9.html
+  UTF8ToISO_8859_10 lconvencoding/utf8toiso_8859_10.html
+  UTF8ToISO_8859_13 lconvencoding/utf8toiso_8859_13.html
+  UTF8ToISO_8859_14 lconvencoding/utf8toiso_8859_14.html
   UTF8ToISO_8859_15 lconvencoding/utf8toiso_8859_15.html
+  UTF8ToISO_8859_16 lconvencoding/utf8toiso_8859_16.html
   UTF8ToCP1250 lconvencoding/utf8tocp1250.html
   UTF8ToCP1251 lconvencoding/utf8tocp1251.html
   UTF8ToCP1252 lconvencoding/utf8tocp1252.html

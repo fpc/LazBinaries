@@ -74,6 +74,7 @@
    AutoCheck actnlist/tcustomaction.autocheck.html
    Caption actnlist/tcustomaction.caption.html
    Checked actnlist/tcustomaction.checked.html
+   Grayed actnlist/tcustomaction.grayed.html
    DisableIfNoHandler actnlist/tcustomaction.disableifnohandler.html
    Enabled actnlist/tcustomaction.enabled.html
    GroupIndex actnlist/tcustomaction.groupindex.html
@@ -141,6 +142,7 @@
   TTriPts arrow/ttripts.html
   TTrianglePoints arrow/ttrianglepoints.html
   TArrow arrow/tarrow.html
+   Paint arrow/tarrow.paint.html
    Create arrow/tarrow.create.html
    ArrowColor arrow/tarrow.arrowcolor.html
    ArrowType arrow/tarrow.arrowtype.html
@@ -148,7 +150,6 @@
    ShadowType arrow/tarrow.shadowtype.html
    ShadowColor arrow/tarrow.shadowcolor.html
    GetControlClassDefaultSize controls/tcontrol.getcontrolclassdefaultsize.html
-   Paint controls/tcustomcontrol.paint.html
    Align controls/tcontrol.align.html
    Anchors controls/tcontrol.anchors.html
    BorderSpacing controls/tcontrol.borderspacing.html
@@ -219,13 +220,11 @@
    ShowHint controls/tcontrol.showhint.html
    OnClick controls/tcontrol.onclick.html
   TCustomButtonPanel buttonpanel/tcustombuttonpanel.html
-   Loaded buttonpanel/tcustombuttonpanel.loaded.html
    Notification buttonpanel/tcustombuttonpanel.notification.html
    SetAlign buttonpanel/tcustombuttonpanel.setalign.html
    CMAppShowBtnGlyphChanged buttonpanel/tcustombuttonpanel.cmappshowbtnglyphchanged.html
    CMShowingChanged buttonpanel/tcustombuttonpanel.cmshowingchanged.html
    Create buttonpanel/tcustombuttonpanel.create.html
-   Destroy buttonpanel/tcustombuttonpanel.destroy.html
    Align buttonpanel/tcustombuttonpanel.align.html
    AutoSize buttonpanel/tcustombuttonpanel.autosize.html
    OKButton buttonpanel/tcustombuttonpanel.okbutton.html
@@ -332,6 +331,7 @@
    IsCaptionStored buttons/tcustombitbtn.iscaptionstored.html
    Loaded buttons/tcustombitbtn.loaded.html
    Notification buttons/tcustombitbtn.notification.html
+   TextChanged buttons/tcustombitbtn.textchanged.html
    CMAppShowBtnGlyphChanged buttons/tcustombitbtn.cmappshowbtnglyphchanged.html
    Create buttons/tcustombitbtn.create.html
    Destroy buttons/tcustombitbtn.destroy.html
@@ -357,7 +357,6 @@
    GlyphShowMode buttons/tcustombitbtn.glyphshowmode.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    InitializeWnd controls/twincontrol.initializewnd.html
-   TextChanged controls/tcontrol.textchanged.html
    GetControlClassDefaultSize controls/tcontrol.getcontrolclassdefaultsize.html
   TBitBtn buttons/tbitbtn.html
    OnKeyDown buttons/tbitbtn.onkeydown.html
@@ -435,7 +434,6 @@
    GetNumGlyphs buttons/tcustomspeedbutton.getnumglyphs.html
    GlyphChanged buttons/tcustomspeedbutton.glyphchanged.html
    CalculatePreferredSize buttons/tcustomspeedbutton.calculatepreferredsize.html
-   DoMouseUp buttons/tcustomspeedbutton.domouseup.html
    MeasureDraw buttons/tcustomspeedbutton.measuredraw.html
    MouseDown buttons/tcustomspeedbutton.mousedown.html
    MouseMove buttons/tcustomspeedbutton.mousemove.html
@@ -631,6 +629,8 @@
    LMMonthChanged calendar/tcustomcalendar.lmmonthchanged.html
    LMYearChanged calendar/tcustomcalendar.lmyearchanged.html
    LMDayChanged calendar/tcustomcalendar.lmdaychanged.html
+   GetControlClassDefaultSize calendar/tcustomcalendar.getcontrolclassdefaultsize.html
+   Loaded calendar/tcustomcalendar.loaded.html
    Create calendar/tcustomcalendar.create.html
    HitTest calendar/tcustomcalendar.hittest.html
    GetCalendarView calendar/tcustomcalendar.getcalendarview.html
@@ -638,13 +638,13 @@
    DateTime calendar/tcustomcalendar.datetime.html
    DisplaySettings calendar/tcustomcalendar.displaysettings.html
    FirstDayOfWeek calendar/tcustomcalendar.firstdayofweek.html
+   MaxDate calendar/tcustomcalendar.maxdate.html
+   MinDate calendar/tcustomcalendar.mindate.html
    OnChange calendar/tcustomcalendar.onchange.html
    OnDayChanged calendar/tcustomcalendar.ondaychanged.html
    OnMonthChanged calendar/tcustomcalendar.onmonthchanged.html
    OnYearChanged calendar/tcustomcalendar.onyearchanged.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
-   GetControlClassDefaultSize controls/tcontrol.getcontrolclassdefaultsize.html
-   Loaded controls/twincontrol.loaded.html
    InitializeWnd controls/twincontrol.initializewnd.html
    DestroyWnd controls/twincontrol.destroywnd.html
   TCalendar calendar/tcalendar.html
@@ -658,6 +658,8 @@
    DoubleBuffered controls/twincontrol.doublebuffered.html
    FirstDayOfWeek calendar/tcustomcalendar.firstdayofweek.html
    Hint controls/tcontrol.hint.html
+   MinDate calendar/tcustomcalendar.mindate.html
+   MaxDate calendar/tcustomcalendar.maxdate.html
    OnChange calendar/tcustomcalendar.onchange.html
    OnChangeBounds controls/tcontrol.onchangebounds.html
    OnClick controls/tcontrol.onclick.html
@@ -706,7 +708,6 @@
   TCustomCheckListBox checklst/tcustomchecklistbox.html
    AssignItemDataToCache checklst/tcustomchecklistbox.assignitemdatatocache.html
    AssignCacheToItemData checklst/tcustomchecklistbox.assigncachetoitemdata.html
-   CreateParams checklst/tcustomchecklistbox.createparams.html
    DrawItem checklst/tcustomchecklistbox.drawitem.html
    GetCachedDataSize checklst/tcustomchecklistbox.getcacheddatasize.html
    GetCheckWidth checklst/tcustomchecklistbox.getcheckwidth.html
@@ -717,13 +718,15 @@
    KeyDown checklst/tcustomchecklistbox.keydown.html
    FontChanged checklst/tcustomchecklistbox.fontchanged.html
    Create checklst/tcustomchecklistbox.create.html
-   MeasureItem checklst/tcustomchecklistbox.measureitem.html
+   CalculateStandardItemHeight checklst/tcustomchecklistbox.calculatestandarditemheight.html
    Toggle checklst/tcustomchecklistbox.toggle.html
    CheckAll checklst/tcustomchecklistbox.checkall.html
    Exchange checklst/tcustomchecklistbox.exchange.html
    AllowGrayed checklst/tcustomchecklistbox.allowgrayed.html
    Checked checklst/tcustomchecklistbox.checked.html
    Header checklst/tcustomchecklistbox.header.html
+   HeaderBackgroundColor checklst/tcustomchecklistbox.headerbackgroundcolor.html
+   HeaderColor checklst/tcustomchecklistbox.headercolor.html
    ItemEnabled checklst/tcustomchecklistbox.itemenabled.html
    State checklst/tcustomchecklistbox.state.html
    OnClickCheck checklst/tcustomchecklistbox.onclickcheck.html
@@ -745,6 +748,8 @@
    ExtendedSelect stdctrls/tcustomlistbox.extendedselect.html
    Enabled controls/tcontrol.enabled.html
    Font controls/tcontrol.font.html
+   HeaderBackgroundColor checklst/tcustomchecklistbox.headerbackgroundcolor.html
+   HeaderColor checklst/tcustomchecklistbox.headercolor.html
    IntegralHeight stdctrls/tcustomlistbox.integralheight.html
    Items stdctrls/tcustomlistbox.items.html
    ItemHeight stdctrls/tcustomlistbox.itemheight.html
@@ -765,6 +770,7 @@
    OnKeyPress controls/twincontrol.onkeypress.html
    OnKeyDown controls/twincontrol.onkeydown.html
    OnKeyUp controls/twincontrol.onkeyup.html
+   OnMeasureItem stdctrls/tcustomlistbox.onmeasureitem.html
    OnMouseDown controls/tcontrol.onmousedown.html
    OnMouseEnter controls/tcontrol.onmouseenter.html
    OnMouseLeave controls/tcontrol.onmouseleave.html
@@ -854,6 +860,7 @@
    InitializeWnd colorbox/tcustomcolorbox.initializewnd.html
    DoAutoAdjustLayout colorbox/tcustomcolorbox.doautoadjustlayout.html
    DoGetColors colorbox/tcustomcolorbox.dogetcolors.html
+   CloseUp colorbox/tcustomcolorbox.closeup.html
    PickCustomColor colorbox/tcustomcolorbox.pickcustomcolor.html
    Notification colorbox/tcustomcolorbox.notification.html
    Create colorbox/tcustomcolorbox.create.html
@@ -868,7 +875,6 @@
    OnGetColors colorbox/tcustomcolorbox.ongetcolors.html
    ColorDialog colorbox/tcustomcolorbox.colordialog.html
    Loaded controls/twincontrol.loaded.html
-   CloseUp stdctrls/tcustomcombobox.closeup.html
   TColorBox colorbox/tcolorbox.html
    ColorRectWidth colorbox/tcustomcolorbox.colorrectwidth.html
    ColorRectOffset colorbox/tcustomcolorbox.colorrectoffset.html
@@ -2452,6 +2458,8 @@
    cDefSeparatorWidth comctrls/ttoolbutton.cdefseparatorwidth.html
    cDefDividerWidth comctrls/ttoolbutton.cdefdividerwidth.html
    cDefButtonDropDecArrowWidth comctrls/ttoolbutton.cdefbuttondropdecarrowwidth.html
+   cHorIconTextDist comctrls/ttoolbutton.choricontextdist.html
+   cVertIconTextDist comctrls/ttoolbutton.cverticontextdist.html
    FToolBar comctrls/ttoolbutton.ftoolbar.html
    CopyPropertiesFromMenuItem comctrls/ttoolbutton.copypropertiesfrommenuitem.html
    GetActionLinkClass comctrls/ttoolbutton.getactionlinkclass.html
@@ -2467,6 +2475,7 @@
    Notification comctrls/ttoolbutton.notification.html
    Paint comctrls/ttoolbutton.paint.html
    TextChanged comctrls/ttoolbutton.textchanged.html
+   CalculatePreferredSize comctrls/ttoolbutton.calculatepreferredsize.html
    GetControlClassDefaultSize comctrls/ttoolbutton.getcontrolclassdefaultsize.html
    Loaded comctrls/ttoolbutton.loaded.html
    RefreshControl comctrls/ttoolbutton.refreshcontrol.html
@@ -2502,7 +2511,6 @@
    Style comctrls/ttoolbutton.style.html
    Wrap comctrls/ttoolbutton.wrap.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
-   CalculatePreferredSize controls/tcontrol.calculatepreferredsize.html
    RealSetText controls/tcontrol.realsettext.html
    Click controls/tcontrol.click.html
    Action controls/tcontrol.action.html
@@ -6828,6 +6836,8 @@
    UpdateAutoSizeColumns dbgrids/tcustomdbgrid.updateautosizecolumns.html
    UpdateData dbgrids/tcustomdbgrid.updatedata.html
    UpdateGridCounts dbgrids/tcustomdbgrid.updategridcounts.html
+   WMVScroll dbgrids/tcustomdbgrid.wmvscroll.html
+   WndProc dbgrids/tcustomdbgrid.wndproc.html
    Columns dbgrids/tcustomdbgrid.columns.html
    FixedRowsExtra dbgrids/tcustomdbgrid.fixedrowsextra.html
    GridStatus dbgrids/tcustomdbgrid.gridstatus.html
@@ -6873,8 +6883,6 @@
    FirstColumn dbgrids/tcustomdbgrid.firstcolumn.html
    DataSource dbgrids/tcustomdbgrid.datasource.html
    GetSBRanges grids/tcustomgrid.getsbranges.html
-   WMVScroll grids/tcustomgrid.wmvscroll.html
-   WndProc controls/tcontrol.wndproc.html
    AllowOutboundEvents grids/tcustomgrid.allowoutboundevents.html
   TDBGrid dbgrids/tdbgrid.html
    AutoAdvance dbgrids/tdbgrid.autoadvance.html
@@ -7224,6 +7232,7 @@
    Create dialogs/tfinddialog.create.html
    Destroy dialogs/tfinddialog.destroy.html
    CloseDialog dialogs/tfinddialog.closedialog.html
+   Execute dialogs/tfinddialog.execute.html
    Left dialogs/tfinddialog.left.html
    Position dialogs/tfinddialog.position.html
    Top dialogs/tfinddialog.top.html
@@ -7231,7 +7240,6 @@
    Options dialogs/tfinddialog.options.html
    OnFind dialogs/tfinddialog.onfind.html
    OnHelpClicked dialogs/tfinddialog.onhelpclicked.html
-   Execute dialogs/tcommondialog.execute.html
   TReplaceDialog dialogs/treplacedialog.html
    DefaultTitle dialogs/treplacedialog.defaulttitle.html
    ReplaceClick dialogs/treplacedialog.replaceclick.html
@@ -7334,6 +7342,7 @@
   DefaultMessageBox dialogs/defaultmessagebox.html
   InputBox dialogs/inputbox.html
   PasswordBox dialogs/passwordbox.html
+  PromptForFileName dialogs/promptforfilename.html
   RegisterDialogForCopyToClipboard dialogs/registerdialogforcopytoclipboard.html
   DialogCopyToClipboard dialogs/dialogcopytoclipboard.html
   SelectDirectory dialogs/selectdirectory.html
@@ -7350,6 +7359,7 @@
   MinimumDialogButtonHeight dialogs/minimumdialogbuttonheight.html
  EditBtn editbtn/index.html
   NullDate editbtn/nulldate.html
+  NullTime editbtn/nulltime.html
   ResBtnListFilter editbtn/resbtnlistfilter.html
   ResBtnFileOpen editbtn/resbtnfileopen.html
   ResBtnSelDir editbtn/resbtnseldir.html
@@ -7365,6 +7375,7 @@
   TDialogKind editbtn/tdialogkind.html
   TAcceptDateEvent editbtn/tacceptdateevent.html
   TCustomDateEvent editbtn/tcustomdateevent.html
+  TDateRangeCheckEvent editbtn/tdaterangecheckevent.html
   TDateOrder editbtn/tdateorder.html
   TAcceptTimeEvent editbtn/taccepttimeevent.html
   TCustomTimeEvent editbtn/tcustomtimeevent.html
@@ -7677,6 +7688,7 @@
    Text controls/tcontrol.text.html
    TextHint groupededit/tcustomabstractgroupededit.texthint.html
   TDirectoryEdit editbtn/tdirectoryedit.html
+   GetDefaultGlyphName editbtn/tdirectoryedit.getdefaultglyphname.html
    CreateDialog editbtn/tdirectoryedit.createdialog.html
    GetDialogResult editbtn/tdirectoryedit.getdialogresult.html
    ButtonClick editbtn/tdirectoryedit.buttonclick.html
@@ -7691,7 +7703,6 @@
    ButtonCaption editbtn/tdirectoryedit.buttoncaption.html
    ButtonCursor editbtn/tdirectoryedit.buttoncursor.html
    ButtonHint editbtn/tdirectoryedit.buttonhint.html
-   GetDefaultGlyphName editbtn/tcustomeditbutton.getdefaultglyphname.html
    AutoSelected stdctrls/tcustomedit.autoselected.html
    ButtonOnlyWhenFocused editbtn/tcustomeditbutton.buttononlywhenfocused.html
    ButtonWidth editbtn/tcustomeditbutton.buttonwidth.html
@@ -7765,6 +7776,7 @@
    RealSetText editbtn/tdateedit.realsettext.html
    SetDateMask editbtn/tdateedit.setdatemask.html
    Loaded editbtn/tdateedit.loaded.html
+   DoDateRangeCheck editbtn/tdateedit.dodaterangecheck.html
    Create editbtn/tdateedit.create.html
    GetDateFormat editbtn/tdateedit.getdateformat.html
    Date editbtn/tdateedit.date.html
@@ -7772,12 +7784,15 @@
    CalendarDisplaySettings editbtn/tdateedit.calendardisplaysettings.html
    OnAcceptDate editbtn/tdateedit.onacceptdate.html
    OnCustomDate editbtn/tdateedit.oncustomdate.html
-   ReadOnly editbtn/tdateedit.readonly.html
+   OnDateRangeCheck editbtn/tdateedit.ondaterangecheck.html
    DefaultToday editbtn/tdateedit.defaulttoday.html
    DateOrder editbtn/tdateedit.dateorder.html
    DateFormat editbtn/tdateedit.dateformat.html
+   MinDate editbtn/tdateedit.mindate.html
+   MaxDate editbtn/tdateedit.maxdate.html
    AutoSelected groupededit/tcustomabstractgroupededit.autoselected.html
    Button editbtn/tcustomeditbutton.button.html
+   ReadOnly groupededit/tcustomabstractgroupededit.readonly.html
    ButtonOnlyWhenFocused editbtn/tcustomeditbutton.buttononlywhenfocused.html
    ButtonCaption editbtn/tcustomeditbutton.buttoncaption.html
    ButtonCursor editbtn/tcustomeditbutton.buttoncursor.html
@@ -8685,6 +8700,7 @@
    Paint extctrls/tcustompanel.paint.html
    SetParentBackground extctrls/tcustompanel.setparentbackground.html
    UpdateParentColorChange extctrls/tcustompanel.updateparentcolorchange.html
+   VerticalAlignment extctrls/tcustompanel.verticalalignment.html
    WordWrap extctrls/tcustompanel.wordwrap.html
    Create extctrls/tcustompanel.create.html
    Align extctrls/tcustompanel.align.html
@@ -8739,6 +8755,7 @@
    ShowHint controls/tcontrol.showhint.html
    TabOrder controls/twincontrol.taborder.html
    TabStop extctrls/tcustompanel.tabstop.html
+   VerticalAlignment extctrls/tcustompanel.verticalalignment.html
    Visible controls/tcontrol.visible.html
    Wordwrap extctrls/tcustompanel.wordwrap.html
    OnChangeBounds controls/tcontrol.onchangebounds.html
@@ -8795,6 +8812,7 @@
   TCustomFlowPanel extctrls/tcustomflowpanel.html
    CMControlChange extctrls/tcustomflowpanel.cmcontrolchange.html
    AlignControls extctrls/tcustomflowpanel.aligncontrols.html
+   CalculatePreferredSize extctrls/tcustomflowpanel.calculatepreferredsize.html
    Create extctrls/tcustomflowpanel.create.html
    Destroy extctrls/tcustomflowpanel.destroy.html
    GetControlIndex extctrls/tcustomflowpanel.getcontrolindex.html
@@ -8803,7 +8821,6 @@
    ControlList extctrls/tcustomflowpanel.controllist.html
    FlowStyle extctrls/tcustomflowpanel.flowstyle.html
    FlowLayout extctrls/tcustomflowpanel.flowlayout.html
-   CalculatePreferredSize controls/tcontrol.calculatepreferredsize.html
   TFlowPanel extctrls/tflowpanel.html
    AutoWrap extctrls/tflowpanel.autowrap.html
    UseDockManager extctrls/tflowpanel.usedockmanager.html
@@ -8953,6 +8970,7 @@
    CalcBandHeightSnapped extctrls/tcustomcontrolbar.calcbandheightsnapped.html
    CalcInnerBevelWidth extctrls/tcustomcontrolbar.calcinnerbevelwidth.html
    CalcLowestBandBottomPx extctrls/tcustomcontrolbar.calclowestbandbottompx.html
+   CalculatePreferredSize extctrls/tcustomcontrolbar.calculatepreferredsize.html
    ChangeCursor extctrls/tcustomcontrolbar.changecursor.html
    CheckBandsSizeAndVisibility extctrls/tcustomcontrolbar.checkbandssizeandvisibility.html
    CMBiDiModeChanged extctrls/tcustomcontrolbar.cmbidimodechanged.html
@@ -9007,7 +9025,6 @@
    OnBandPaint extctrls/tcustomcontrolbar.onbandpaint.html
    OnCanResize extctrls/tcustomcontrolbar.oncanresize.html
    OnPaint extctrls/tcustomcontrolbar.onpaint.html
-   CalculatePreferredSize controls/twincontrol.calculatepreferredsize.html
    DragOver controls/tcontrol.dragover.html
   TControlBar extctrls/tcontrolbar.html
    BevelInner extctrls/tcontrolbar.bevelinner.html
@@ -9482,6 +9499,8 @@
    CalculateAutoRanges forms/tscrollingwincontrol.calculateautoranges.html
    CreateWnd forms/tscrollingwincontrol.createwnd.html
    GetClientScrollOffset forms/tscrollingwincontrol.getclientscrolloffset.html
+   GetLogicalClientRect forms/tscrollingwincontrol.getlogicalclientrect.html
+   DoOnResize forms/tscrollingwincontrol.doonresize.html
    GetPreferredSizeClientFrame forms/tscrollingwincontrol.getpreferredsizeclientframe.html
    WMSize forms/tscrollingwincontrol.wmsize.html
    WMHScroll forms/tscrollingwincontrol.wmhscroll.html
@@ -9494,16 +9513,14 @@
    SetAutoSize forms/tscrollingwincontrol.setautosize.html
    Create forms/tscrollingwincontrol.create.html
    Destroy forms/tscrollingwincontrol.destroy.html
+   ScreenToClient forms/tscrollingwincontrol.screentoclient.html
+   ClientToScreen forms/tscrollingwincontrol.clienttoscreen.html
    UpdateScrollbars forms/tscrollingwincontrol.updatescrollbars.html
    ScrollBy forms/tscrollingwincontrol.scrollby.html
    ScrollInView forms/tscrollingwincontrol.scrollinview.html
    HorzScrollBar forms/tscrollingwincontrol.horzscrollbar.html
    VertScrollBar forms/tscrollingwincontrol.vertscrollbar.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
-   GetLogicalClientRect controls/tcontrol.getlogicalclientrect.html
-   DoOnResize controls/tcontrol.doonresize.html
-   ScreenToClient controls/tcontrol.screentoclient.html
-   ClientToScreen controls/tcontrol.clienttoscreen.html
    GetControlClassDefaultSize controls/tcontrol.getcontrolclassdefaultsize.html
   TScrollBox forms/tscrollbox.html
    Create forms/tscrollbox.create.html
@@ -9689,6 +9706,7 @@
    PaintWindow forms/tcustomform.paintwindow.html
    RequestAlign forms/tcustomform.requestalign.html
    Resizing forms/tcustomform.resizing.html
+   CalculatePreferredSize forms/tcustomform.calculatepreferredsize.html
    DoOnResize forms/tcustomform.doonresize.html
    DoOnChangeBounds forms/tcustomform.doonchangebounds.html
    SetZOrder forms/tcustomform.setzorder.html
@@ -9812,7 +9830,6 @@
    FFormBorderStyle forms/tcustomform.borderstyle.html
    FFormState forms/tcustomform.formstate.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
-   CalculatePreferredSize controls/tcontrol.calculatepreferredsize.html
    WndProc controls/tcontrol.wndproc.html
    DoAutoSize controls/tcontrol.doautosize.html
    GetControlClassDefaultSize controls/tcontrol.getcontrolclassdefaultsize.html
@@ -10367,6 +10384,7 @@
   MessageBoxFunction forms/messageboxfunction.html
  Graphics graphics/index.html
   Progress graphics/progress.html
+  DefFontData graphics/deffontdata.html
   psSolid graphics/pssolid.html
   psDash graphics/psdash.html
   psDot graphics/psdot.html
@@ -11305,7 +11323,6 @@
   ScaleY graphics/scaley.html
   Register graphics/register.html
   UpdateHandleObjects graphics/updatehandleobjects.html
-  DefFontData graphics/deffontdata.html
   OnLoadSaveClipBrdGraphicValid graphics/onloadsaveclipbrdgraphicvalid.html
   OnLoadGraphicFromClipboardFormat graphics/onloadgraphicfromclipboardformat.html
   OnSaveGraphicToClipboardFormat graphics/onsavegraphictoclipboardformat.html
@@ -11437,6 +11454,8 @@
   EGridException grids/egridexception.html
   TStringCellEditor grids/tstringcelleditor.html
    WndProc grids/tstringcelleditor.wndproc.html
+   Change grids/tstringcelleditor.change.html
+   KeyDown grids/tstringcelleditor.keydown.html
    msg_SetMask grids/tstringcelleditor.msg_setmask.html
    msg_SetValue grids/tstringcelleditor.msg_setvalue.html
    msg_GetValue grids/tstringcelleditor.msg_getvalue.html
@@ -11446,10 +11465,8 @@
    msg_GetGrid grids/tstringcelleditor.msg_getgrid.html
    Create grids/tstringcelleditor.create.html
    EditingDone grids/tstringcelleditor.editingdone.html
-   Change stdctrls/tcustomedit.change.html
-   KeyDown controls/twincontrol.keydown.html
    EditText maskedit/tcustommaskedit.edittext.html
-   OnEditingDone 
+   OnEditingDone controls/tcontrol.oneditingdone.html
   TButtonCellEditor grids/tbuttoncelleditor.html
    msg_SetGrid grids/tbuttoncelleditor.msg_setgrid.html
    msg_SetBounds grids/tbuttoncelleditor.msg_setbounds.html
@@ -11459,21 +11476,22 @@
    Col grids/tbuttoncelleditor.col.html
    Row grids/tbuttoncelleditor.row.html
   TPickListCellEditor grids/tpicklistcelleditor.html
+   WndProc grids/tpicklistcelleditor.wndproc.html
+   KeyDown grids/tpicklistcelleditor.keydown.html
+   Select grids/tpicklistcelleditor.select.html
    Change grids/tpicklistcelleditor.change.html
    msg_GetValue grids/tpicklistcelleditor.msg_getvalue.html
    msg_SetGrid grids/tpicklistcelleditor.msg_setgrid.html
    msg_SetValue grids/tpicklistcelleditor.msg_setvalue.html
    msg_SetPos grids/tpicklistcelleditor.msg_setpos.html
    msg_GetGrid grids/tpicklistcelleditor.msg_getgrid.html
-   OnEditingDone grids/tpicklistcelleditor.oneditingdone.html
-   WndProc controls/tcontrol.wndproc.html
-   KeyDown controls/twincontrol.keydown.html
+   EditingDone grids/tpicklistcelleditor.editingdone.html
    DropDown stdctrls/tcustomcombobox.dropdown.html
    CloseUp stdctrls/tcustomcombobox.closeup.html
-   Select stdctrls/tcustomcombobox.select.html
-   EditingDone controls/tcontrol.editingdone.html
    BorderStyle controls/twincontrol.borderstyle.html
+   OnEditingDone controls/tcontrol.oneditingdone.html
   TCompositeCellEditor grids/tcompositecelleditor.html
+   DoUTF8KeyPress grids/tcompositecelleditor.doutf8keypress.html
    msg_GetValue grids/tcompositecelleditor.msg_getvalue.html
    msg_SetGrid grids/tcompositecelleditor.msg_setgrid.html
    msg_SetValue grids/tcompositecelleditor.msg_setvalue.html
@@ -11484,18 +11502,17 @@
    msg_SetPos grids/tcompositecelleditor.msg_setpos.html
    msg_GetGrid grids/tcompositecelleditor.msg_getgrid.html
    GetActiveControl grids/tcompositecelleditor.getactivecontrol.html
+   VisibleChanging grids/tcompositecelleditor.visiblechanging.html
    SendChar grids/tcompositecelleditor.sendchar.html
    SetColor grids/tcompositecelleditor.setcolor.html
+   WndProc grids/tcompositecelleditor.wndproc.html
    CustomAlignPosition grids/tcompositecelleditor.customalignposition.html
    Destroy grids/tcompositecelleditor.destroy.html
    AddEditor grids/tcompositecelleditor.addeditor.html
+   SetFocus grids/tcompositecelleditor.setfocus.html
    Focused grids/tcompositecelleditor.focused.html
    MaxLength grids/tcompositecelleditor.maxlength.html
    ActiveControl grids/tcompositecelleditor.activecontrol.html
-   DoUTF8KeyPress controls/twincontrol.doutf8keypress.html
-   VisibleChanging controls/tcontrol.visiblechanging.html
-   WndProc controls/tcontrol.wndproc.html
-   SetFocus controls/twincontrol.setfocus.html
   TVirtualGrid grids/tvirtualgrid.html
    doDestroyItem grids/tvirtualgrid.dodestroyitem.html
    doNewItem grids/tvirtualgrid.donewitem.html
@@ -11655,6 +11672,7 @@
    CreateColumns grids/tcustomgrid.createcolumns.html
    CheckNewCachedSizes grids/tcustomgrid.checknewcachedsizes.html
    CreateWnd grids/tcustomgrid.createwnd.html
+   CreateParams grids/tcustomgrid.createparams.html
    Click grids/tcustomgrid.click.html
    DblClick grids/tcustomgrid.dblclick.html
    DefaultColWidthIsStored grids/tcustomgrid.defaultcolwidthisstored.html
@@ -11997,18 +12015,22 @@
    SortColumn grids/tcustomgrid.sortcolumn.html
    TabStop grids/tcustomgrid.tabstop.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
-   CreateParams controls/twincontrol.createparams.html
    DestroyHandle controls/twincontrol.destroyhandle.html
    KeyUp controls/twincontrol.keyup.html
   TCustomDrawGrid grids/tcustomdrawgrid.html
    FGrid grids/tcustomdrawgrid.fgrid.html
    CellClick grids/tcustomdrawgrid.cellclick.html
    ColRowDeleted grids/tcustomdrawgrid.colrowdeleted.html
+   ColRowExchanged grids/tcustomdrawgrid.colrowexchanged.html
+   ColRowInserted grids/tcustomdrawgrid.colrowinserted.html
+   ColRowMoved grids/tcustomdrawgrid.colrowmoved.html
    CreateVirtualGrid grids/tcustomdrawgrid.createvirtualgrid.html
+   DrawCell grids/tcustomdrawgrid.drawcell.html
    DrawCellAutonumbering grids/tcustomdrawgrid.drawcellautonumbering.html
    DrawFocusRect grids/tcustomdrawgrid.drawfocusrect.html
    GetCells grids/tcustomdrawgrid.getcells.html
    GetCheckBoxState grids/tcustomdrawgrid.getcheckboxstate.html
+   GetEditMask grids/tcustomdrawgrid.geteditmask.html
    GetEditText grids/tcustomdrawgrid.getedittext.html
    GridMouseWheel grids/tcustomdrawgrid.gridmousewheel.html
    HeaderClick grids/tcustomdrawgrid.headerclick.html
@@ -12046,11 +12068,6 @@
    OnHeaderSizing grids/tcustomdrawgrid.onheadersizing.html
    OnSelectCell grids/tcustomdrawgrid.onselectcell.html
    OnSetEditText grids/tcustomdrawgrid.onsetedittext.html
-   ColRowExchanged grids/tcustomgrid.colrowexchanged.html
-   ColRowInserted grids/tcustomgrid.colrowinserted.html
-   ColRowMoved grids/tcustomgrid.colrowmoved.html
-   DrawCell grids/tcustomgrid.drawcell.html
-   GetEditMask grids/tcustomgrid.geteditmask.html
    AllowOutboundEvents grids/tcustomgrid.allowoutboundevents.html
    BorderColor grids/tcustomgrid.bordercolor.html
    Canvas controls/tcustomcontrol.canvas.html
@@ -14847,6 +14864,8 @@
   rsScrollBarOutOfRange lclstrconsts/index-1.html#rsscrollbaroutofrange
   rsInvalidDate lclstrconsts/index-1.html#rsinvaliddate
   rsInvalidDateRangeHint lclstrconsts/index-1.html#rsinvaliddaterangehint
+  rsDateTooLarge lclstrconsts/index-1.html#rsdatetoolarge
+  rsDateTooSmall lclstrconsts/index-1.html#rsdatetoosmall
   rsErrorOccurredInAtAddressFrame lclstrconsts/index-1.html#rserroroccurredinataddressframe
   rsException lclstrconsts/index-1.html#rsexception
   rsFormStreamingError lclstrconsts/index-1.html#rsformstreamingerror
@@ -15094,6 +15113,7 @@
    Destroy lcltranslator/tpotranslator.destroy.html
    TranslateStringProperty lcltranslator/tpotranslator.translatestringproperty.html
   TranslateLCLResourceStrings lcltranslator/translatelclresourcestrings.html
+  TranslateUnitResourceStringsEx lcltranslator/translateunitresourcestringsex.html
   SetDefaultLang lcltranslator/setdefaultlang.html
   GetDefaultLang lcltranslator/getdefaultlang.html
  LCLType lcltype/index.html
@@ -17657,6 +17677,7 @@
   EMenuError menus/emenuerror.html
   TMenuActionLink menus/tmenuactionlink.html
    FClient menus/tmenuactionlink.fclient.html
+   AssignClient menus/tmenuactionlink.assignclient.html
    IsAutoCheckLinked menus/tmenuactionlink.isautochecklinked.html
    IsOnExecuteLinked menus/tmenuactionlink.isonexecutelinked.html
    SetAutoCheck menus/tmenuactionlink.setautocheck.html
@@ -17669,7 +17690,6 @@
    SetShortCut menus/tmenuactionlink.setshortcut.html
    SetVisible menus/tmenuactionlink.setvisible.html
    SetOnExecute menus/tmenuactionlink.setonexecute.html
-   AssignClient 
    IsCaptionLinked actnlist/tactionlink.iscaptionlinked.html
    IsCheckedLinked actnlist/tactionlink.ischeckedlinked.html
    IsEnabledLinked actnlist/tactionlink.isenabledlinked.html
@@ -17759,6 +17779,7 @@
    Clear menus/tmenuitem.clear.html
    HasBitmap menus/tmenuitem.hasbitmap.html
    GetIconSize menus/tmenuitem.geticonsize.html
+   RemoveAllHandlersOfObject menus/tmenuitem.removeallhandlersofobject.html
    AddHandlerOnDestroy menus/tmenuitem.addhandlerondestroy.html
    RemoveHandlerOnDestroy menus/tmenuitem.removehandlerondestroy.html
    AddHandler menus/tmenuitem.addhandler.html
@@ -17800,7 +17821,6 @@
    OnDrawItem menus/tmenuitem.ondrawitem.html
    OnMeasureItem menus/tmenuitem.onmeasureitem.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
-   RemoveAllHandlersOfObject lclclasses/tlclcomponent.removeallhandlersofobject.html
   TMenu menus/tmenu.html
    BidiModeChanged menus/tmenu.bidimodechanged.html
    CreateHandle menus/tmenu.createhandle.html
@@ -18483,6 +18503,7 @@
   TCustomShellListView shellctrls/tcustomshelllistview.html
    WSRegisterClass shellctrls/tcustomshelllistview.wsregisterclass.html
    AdjustColWidths shellctrls/tcustomshelllistview.adjustcolwidths.html
+   CreateHandle shellctrls/tcustomshelllistview.createhandle.html
    PopulateWithRoot shellctrls/tcustomshelllistview.populatewithroot.html
    DoOnResize shellctrls/tcustomshelllistview.doonresize.html
    SetAutoSizeColumns shellctrls/tcustomshelllistview.setautosizecolumns.html
@@ -18752,17 +18773,17 @@
    UpdateTarget stdactns/teditdelete.updatetarget.html
   THelpAction stdactns/thelpaction.html
    Create stdactns/thelpaction.create.html
-   HandlesTarget stdactns/thelpaction.handlestarget.html
-   UpdateTarget stdactns/thelpaction.updatetarget.html
+   HandlesTarget ms-its:rtl.chm::/classes/tbasicaction.handlestarget.html
+   UpdateTarget ms-its:rtl.chm::/classes/tbasicaction.updatetarget.html
   THelpContents stdactns/thelpcontents.html
-   ExecuteTarget stdactns/thelpcontents.executetarget.html
+   ExecuteTarget ms-its:rtl.chm::/classes/tbasicaction.executetarget.html
   THelpTopicSearch stdactns/thelptopicsearch.html
    ExecuteTarget stdactns/thelptopicsearch.executetarget.html
   THelpOnHelp stdactns/thelponhelp.html
-   ExecuteTarget stdactns/thelponhelp.executetarget.html
+   ExecuteTarget ms-its:rtl.chm::/classes/tbasicaction.executetarget.html
   THelpContextAction stdactns/thelpcontextaction.html
-   ExecuteTarget stdactns/thelpcontextaction.executetarget.html
-   UpdateTarget stdactns/thelpcontextaction.updatetarget.html
+   ExecuteTarget ms-its:rtl.chm::/classes/tbasicaction.executetarget.html
+   UpdateTarget ms-its:rtl.chm::/classes/tbasicaction.updatetarget.html
   TCommonDialogAction stdactns/tcommondialogaction.html
    FDialog stdactns/tcommondialogaction.fdialog.html
    DoAccept stdactns/tcommondialogaction.doaccept.html
@@ -18777,7 +18798,7 @@
    BeforeExecute stdactns/tcommondialogaction.beforeexecute.html
    OnAccept stdactns/tcommondialogaction.onaccept.html
    OnCancel stdactns/tcommondialogaction.oncancel.html
-   OnUpdate stdactns/tcommondialogaction.onupdate.html
+   OnUpdate ms-its:rtl.chm::/classes/tbasicaction.onupdate.html
   TFileAction stdactns/tfileaction.html
    GetDialog stdactns/tfileaction.getdialog.html
    FileName stdactns/tfileaction.filename.html
@@ -18917,8 +18938,8 @@
    OnCancel stdactns/tcommondialogaction.oncancel.html
    OnHint actnlist/tcustomaction.onhint.html
   TColorSelect stdactns/tcolorselect.html
+   GetDialogClass stdactns/tcolorselect.getdialogclass.html
    Dialog stdactns/tcolorselect.dialog.html
-   GetDialogClass stdactns/tcommondialogaction.getdialogclass.html
    Caption actnlist/tcustomaction.caption.html
    Enabled actnlist/tcustomaction.enabled.html
    HelpContext actnlist/tcustomaction.helpcontext.html
@@ -19732,6 +19753,7 @@
    Transparent stdctrls/tcustomstatictext.transparent.html
    Visible controls/tcontrol.visible.html
   TButtonControl stdctrls/tbuttoncontrol.html
+   FSkipOnChangeOnClick stdctrls/tbuttoncontrol.fskiponchangeonclick.html
    GetChecked stdctrls/tbuttoncontrol.getchecked.html
    SetChecked stdctrls/tbuttoncontrol.setchecked.html
    DoOnChange stdctrls/tbuttoncontrol.doonchange.html
@@ -19838,6 +19860,8 @@
    ApplyChanges stdctrls/tcustomcheckbox.applychanges.html
    Loaded stdctrls/tcustomcheckbox.loaded.html
    TextChanged stdctrls/tcustomcheckbox.textchanged.html
+   VCL_OnClick_Emulation stdctrls/tcustomcheckbox.vcl_onclick_emulation.html
+   CreateClass stdctrls/tcustomcheckbox.createclass.html
    Create stdctrls/tcustomcheckbox.create.html
    Alignment stdctrls/tcustomcheckbox.alignment.html
    AllowGrayed stdctrls/tcustomcheckbox.allowgrayed.html
@@ -19854,6 +19878,7 @@
   TCheckBox stdctrls/tcheckbox.html
    Create stdctrls/tcheckbox.create.html
    AutoSize stdctrls/tcheckbox.autosize.html
+   OnClick stdctrls/tcheckbox.onclick.html
    TabStop stdctrls/tcheckbox.tabstop.html
    Action controls/tcontrol.action.html
    Align controls/tcontrol.align.html
@@ -19875,7 +19900,6 @@
    Hint controls/tcontrol.hint.html
    OnChange stdctrls/tbuttoncontrol.onchange.html
    OnChangeBounds controls/tcontrol.onchangebounds.html
-   OnClick controls/tcontrol.onclick.html
    OnContextPopup controls/tcontrol.oncontextpopup.html
    OnDragDrop controls/tcontrol.ondragdrop.html
    OnDragOver controls/tcontrol.ondragover.html
@@ -19909,6 +19933,7 @@
    Visible controls/tcontrol.visible.html
   TToggleBox stdctrls/ttogglebox.html
    Create stdctrls/ttogglebox.create.html
+   OnClick stdctrls/ttogglebox.onclick.html
    TabStop stdctrls/ttogglebox.tabstop.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    GetControlClassDefaultSize controls/tcontrol.getcontrolclassdefaultsize.html
@@ -19932,7 +19957,6 @@
    Font controls/tcontrol.font.html
    Hint controls/tcontrol.hint.html
    OnChange stdctrls/tbuttoncontrol.onchange.html
-   OnClick controls/tcontrol.onclick.html
    OnContextPopup controls/tcontrol.oncontextpopup.html
    OnDragDrop controls/tcontrol.ondragdrop.html
    OnDragOver controls/tcontrol.ondragover.html
@@ -19966,6 +19990,7 @@
    CreateParams stdctrls/tradiobutton.createparams.html
    Create stdctrls/tradiobutton.create.html
    AutoSize stdctrls/tradiobutton.autosize.html
+   OnClick stdctrls/tradiobutton.onclick.html
    TabStop stdctrls/tradiobutton.tabstop.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    Align controls/tcontrol.align.html
@@ -19986,7 +20011,6 @@
    Hint controls/tcontrol.hint.html
    OnChange stdctrls/tbuttoncontrol.onchange.html
    OnChangeBounds controls/tcontrol.onchangebounds.html
-   OnClick controls/tcontrol.onclick.html
    OnContextPopup controls/tcontrol.oncontextpopup.html
    OnDragDrop controls/tcontrol.ondragdrop.html
    OnDragOver controls/tcontrol.ondragover.html
@@ -20021,6 +20045,7 @@
    HasMultiLine stdctrls/tcustomlabel.hasmultiline.html
    CalculatePreferredSize stdctrls/tcustomlabel.calculatepreferredsize.html
    CalculateSize stdctrls/tcustomlabel.calculatesize.html
+   TextChanged stdctrls/tcustomlabel.textchanged.html
    DoSetBounds stdctrls/tcustomlabel.dosetbounds.html
    FontChanged stdctrls/tcustomlabel.fontchanged.html
    GetControlClassDefaultSize stdctrls/tcustomlabel.getcontrolclassdefaultsize.html
@@ -20052,7 +20077,6 @@
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    DoAutoSize controls/tcontrol.doautosize.html
    DialogChar controls/tcontrol.dialogchar.html
-   TextChanged controls/tcontrol.textchanged.html
   TLabel stdctrls/tlabel.html
    Align controls/tcontrol.align.html
    Alignment stdctrls/tcustomlabel.alignment.html
@@ -22167,6 +22191,7 @@
 1VFCaption
 1VFChecked
 1VFChecking
+1VFGrayed
 1VFDisableIfNoHandler
 1VFEnabled
 1VFGroupIndex
@@ -22208,6 +22233,7 @@
 3PAutoCheck rw
 3PCaption rw
 3PChecked rw
+3PGrayed rw
 3PDisableIfNoHandler rw
 3PEnabled rw
 3PGroupIndex rw
@@ -24446,6 +24472,8 @@
 3PReferenceAllocated r
 #lcl.CheckLst.TCustomCheckListBox #lcl.StdCtrls.TCustomListBox
 1VFAllowGrayed
+1VFHeaderBackgroundColor
+1VFHeaderColor
 1VFItemDataOffset
 1VFOnClickCheck
 1VFOnItemClick
@@ -24459,12 +24487,13 @@
 1MSendItemHeader
 1MDoChange
 1MSetHeader
+1MSetHeaderBackgroundColor
+1MSetHeaderColor
 1MSetItemEnabled
 1MSetState
 2MWSRegisterClass
 2MAssignItemDataToCache
 2MAssignCacheToItemData
-2MCreateParams
 2MDrawItem
 2MGetCachedDataSize
 2MGetCheckWidth
@@ -24476,13 +24505,15 @@
 2MKeyDown
 2MFontChanged
 3MCreate
-3MMeasureItem
+3MCalculateStandardItemHeight
 3MToggle
 3MCheckAll
 3MExchange
 3PAllowGrayed rw
 3PChecked rw
 3PHeader rw
+3PHeaderBackgroundColor rw
+3PHeaderColor rw
 3PItemEnabled rw
 3PState rw
 3POnClickCheck rw
@@ -24502,6 +24533,8 @@
 4PExtendedSelect
 4PEnabled
 4PFont
+4PHeaderBackgroundColor
+4PHeaderColor
 4PIntegralHeight
 4PItems
 4PItemHeight
@@ -24522,6 +24555,7 @@
 4POnKeyPress
 4POnKeyDown
 4POnKeyUp
+4POnMeasureItem
 4POnMouseDown
 4POnMouseEnter
 4POnMouseLeave
@@ -27353,6 +27387,7 @@
 1VFClicksDisabled
 1MIsCheckedStored
 1MWMDefaultClicked
+2VFSkipOnChangeOnClick
 2MWSRegisterClass
 2MGetActionLinkClass
 2MGetChecked
@@ -27489,6 +27524,8 @@
 2MWSSetText
 2MTextChanged
 2MCreateParams
+3VVCL_OnClick_Emulation
+3MCreateClass
 3MCreate
 3PAlignment rw
 3PAllowGrayed rw
@@ -29996,7 +30033,6 @@
 2MGlyphChanged
 2MDialogChar
 2MCalculatePreferredSize
-2MDoMouseUp
 2MMeasureDraw
 2MMouseEnter
 2MMouseLeave
@@ -30152,7 +30188,6 @@
 1VFShowButtons
 1VFShowGlyphs
 1VFBevel
-1VFGlyphs
 1VFButtons
 1VFButtonsWidth
 1VFButtonsHeight
@@ -30179,13 +30214,11 @@
 2MCustomAlignInsertBefore
 2MCustomAlignPosition
 2MCalculatePreferredSize
-2MLoaded
 2MNotification
 2MSetAlign
 2MCMAppShowBtnGlyphChanged
 2MCMShowingChanged
 3MCreate
-3MDestroy
 3PAlign
 3PAutoSize
 3POKButton r
@@ -31018,6 +31051,7 @@
 1VFBevelOuter
 1VFBevelWidth
 1VFAlignment
+1VFVertAlignment
 1VFFullRepaint
 1VFWordWrap
 1MPaintBevel
@@ -31026,6 +31060,7 @@
 1MSetBevelInner
 1MSetBevelOuter
 1MSetBevelWidth
+1MSetVertAlignment
 1MSetWordwrap
 2MWSRegisterClass
 2MAdjustClientRect
@@ -31037,6 +31072,7 @@
 2MPaint
 2MSetParentBackground
 2MUpdateParentColorChange
+2PVerticalAlignment rw
 2PWordWrap rw
 3MCreate
 3PAlign
@@ -31088,6 +31124,7 @@
 4PTabOrder
 4PTabStop
 4PUseDockManager
+4PVerticalAlignment
 4PVisible
 4PWordwrap
 4POnChangeBounds
@@ -31346,7 +31383,7 @@
 3PTop rw
 3PVisible rw
 3PWidth rw
-#lcl.ExtCtrls.TCtrlBands #lcl.ExtCtrls.TCtrlBands.(#rtl.fgl.TFPGObjectList)
+#lcl.ExtCtrls.TCtrlBands #rtl.fgl.TFPGObjectList
 3MGetIndex
 #lcl.ExtCtrls.TCustomControlBar #lcl.ExtCtrls.TCustomPanel
 1VFAutoDrag
@@ -33053,6 +33090,8 @@
 2McDefSeparatorWidth
 2McDefDividerWidth
 2McDefButtonDropDecArrowWidth
+2McHorIconTextDist
+2McVertIconTextDist
 2VFToolBar
 2MWSRegisterClass
 2MCopyPropertiesFromMenuItem
@@ -36024,20 +36063,31 @@
 1VFDate
 1VFDisplaySettings
 1VFFirstDayOfWeek
+1VFMinDate
+1VFMaxDate
 1VFOnChange
 1VFDayChanged
 1VFMonthChanged
 1VFYearChanged
 1VFPropsChanged
+1VFLimitsChanged
+1MCheckRange
 1MGetDateTime
+1MGetMaxDateStored
+1MGetMinDateStored
 1MSetDateTime
 1MGetProps
+1MSetMaxDate
+1MSetMinDate
 1MSetProps
 1MGetDisplaySettings
 1MSetDisplaySettings
 1MGetDate
 1MSetDate
 1MSetFirstDayOfWeek
+1MIsLimited
+1MApplyLimits
+1MRemoveLimits
 2MWSRegisterClass
 2MLMChanged
 2MLMMonthChanged
@@ -36054,6 +36104,8 @@
 3PDateTime rw
 3PDisplaySettings rw
 3PFirstDayOfWeek rw
+3PMaxDate rws
+3PMinDate rws
 3POnChange rw
 3POnDayChanged rw
 3POnMonthChanged rw
@@ -36069,6 +36121,8 @@
 4PDoubleBuffered
 4PFirstDayOfWeek
 4PHint
+4PMinDate
+4PMaxDate
 4POnChange
 4POnChangeBounds
 4POnClick
@@ -38496,6 +38550,7 @@
 1VFMask
 1VFMaskCaseSensitivity
 1VFObjectTypes
+1VFPopulateDelayed
 1VFRoot
 1VFShellTreeView
 1VFUseBuiltInIcons
@@ -38507,6 +38562,7 @@
 1MSetRoot
 2MWSRegisterClass
 2MAdjustColWidths
+2MCreateHandle
 2MPopulateWithRoot
 2MDoOnResize
 2MSetAutoSizeColumns
@@ -40574,11 +40630,20 @@
 1VFDroppedDown
 1VFOnAcceptDate
 1VFOnCustomDate
+1VFOnDateRangeCheck
 1VFFixedDateFormat
 1VFFreeDateFormat
 1VFDate
+1VFMinDate
+1VFMaxDate
 1VFUpdatingDate
+1MCheckRange
 1MSetFreeDateFormat
+1MSetMaxDate
+1MSetMinDate
+1MIsLimited
+1MGetMaxDateStored
+1MGetMinDateStored
 1MTextToDate
 1MGetDate
 1MSetDate
@@ -40586,6 +40651,7 @@
 1MCalendarPopupShowHide
 1MSetDateOrder
 1MDateToText
+1MIsNullDate
 2MWSRegisterClass
 2MGetDefaultGlyphName
 2MButtonClick
@@ -40595,6 +40661,7 @@
 2MRealSetText
 2MSetDateMask
 2MLoaded
+2MDoDateRangeCheck
 3MCreate
 3MGetDateFormat
 3PAutoSelected
@@ -40604,10 +40671,13 @@
 4PCalendarDisplaySettings rw
 4POnAcceptDate rw
 4POnCustomDate rw
+4POnDateRangeCheck rw
 4PReadOnly
 4PDefaultToday rw
 4PDateOrder rw
 4PDateFormat rw
+4PMinDate rws
+4PMaxDate rws
 4PButtonOnlyWhenFocused
 4PButtonCaption
 4PButtonCursor
