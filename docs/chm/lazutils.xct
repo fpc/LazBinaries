@@ -191,6 +191,7 @@
   ArrayCP437ToUTF8 codepagescommon/arraycp437toutf8.html
   ArrayCP850ToUTF8 codepagescommon/arraycp850toutf8.html
   ArrayCP852ToUTF8 codepagescommon/arraycp852toutf8.html
+  ArrayCP865ToUTF8 codepagescommon/arraycp865toutf8.html
   ArrayCP866ToUTF8 codepagescommon/arraycp866toutf8.html
   ArrayCP874ToUTF8 codepagescommon/arraycp874toutf8.html
   ArrayKOI8RToUTF8 codepagescommon/arraykoi8rtoutf8.html
@@ -2350,7 +2351,6 @@
   UTF16ToUTF8 lazutf8/utf16toutf8.html
   LazGetLanguageIDs lazutf8/lazgetlanguageids.html
   LazGetShortLanguageID lazutf8/lazgetshortlanguageid.html
-  ReplaceSubstring lazutf8/replacesubstring.html
   FPUpChars lazutf8/fpupchars.html
  LazUTF8Classes lazutf8classes/index.html
   TFileStreamUTF8 lazutf8classes/tfilestreamutf8.html
@@ -2554,6 +2554,7 @@
   EncodingCP437 lconvencoding/encodingcp437.html
   EncodingCP850 lconvencoding/encodingcp850.html
   EncodingCP852 lconvencoding/encodingcp852.html
+  EncodingCP865 lconvencoding/encodingcp865.html
   EncodingCP866 lconvencoding/encodingcp866.html
   EncodingCP874 lconvencoding/encodingcp874.html
   EncodingCP932 lconvencoding/encodingcp932.html
@@ -2618,6 +2619,7 @@
   CP437ToUTF8 lconvencoding/cp437toutf8.html
   CP850ToUTF8 lconvencoding/cp850toutf8.html
   CP852ToUTF8 lconvencoding/cp852toutf8.html
+  CP865ToUTF8 lconvencoding/cp865toutf8.html
   CP866ToUTF8 lconvencoding/cp866toutf8.html
   CP874ToUTF8 lconvencoding/cp874toutf8.html
   KOI8RToUTF8 lconvencoding/koi8rtoutf8.html
@@ -2651,6 +2653,7 @@
   UTF8ToCP437 lconvencoding/utf8tocp437.html
   UTF8ToCP850 lconvencoding/utf8tocp850.html
   UTF8ToCP852 lconvencoding/utf8tocp852.html
+  UTF8ToCP865 lconvencoding/utf8tocp865.html
   UTF8ToCP866 lconvencoding/utf8tocp866.html
   UTF8ToCP874 lconvencoding/utf8tocp874.html
   UTF8ToKOI8R lconvencoding/utf8tokoi8r.html
@@ -2782,6 +2785,7 @@
   TMaskOption masks/tmaskoption.html
   TMaskOptions masks/tmaskoptions.html
   TMaskClass masks/tmaskclass.html
+  TMaskListClass masks/tmasklistclass.html
   EMaskError masks/emaskerror.html
    TMaskExceptionCode masks/emaskerror.tmaskexceptioncode.html
    FCode masks/emaskerror.fcode.html
@@ -2808,7 +2812,7 @@
    fMatchMaximumLiteralBytes masks/tmaskbase.fmatchmaximumliteralbytes.html
    fMaskOpcodesAllowed masks/tmaskbase.fmaskopcodesallowed.html
    fMaskEscapeChar masks/tmaskbase.fmaskescapechar.html
-   Compile masks/tmaskbase.compile.html
+   PrepareCompile masks/tmaskbase.preparecompile.html
    Exception_InvalidCharMask masks/tmaskbase.exception_invalidcharmask.html
    Exception_MissingCloseChar masks/tmaskbase.exception_missingclosechar.html
    Exception_IncompleteMask masks/tmaskbase.exception_incompletemask.html
@@ -2862,7 +2866,6 @@
    GetMaskClass masks/twindowsmasklist.getmaskclass.html
    AddMasksToList masks/twindowsmasklist.addmaskstolist.html
    Create masks/twindowsmasklist.create.html
-   MatchesWindowsMask masks/twindowsmasklist.matcheswindowsmask.html
    Quirks masks/twindowsmasklist.quirks.html
   MatchesMask masks/matchesmask.html
   MatchesWindowsMask masks/matcheswindowsmask.html
@@ -3730,7 +3733,7 @@
 2VfMatchMaximumLiteralBytes
 2VfMaskOpcodesAllowed
 2VfMaskEscapeChar
-2MCompile
+2MPrepareCompile
 2MException_InvalidCharMask
 2MException_MissingCloseChar
 2MException_IncompleteMask
@@ -3817,7 +3820,6 @@
 2MGetMaskClass
 2MAddMasksToList
 3MCreate
-3MMatchesWindowsMask
 3PQuirks rw
 #lazutils.GraphType.TRawImageDescription 
 0VFormat
