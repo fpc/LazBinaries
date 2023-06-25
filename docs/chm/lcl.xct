@@ -2935,35 +2935,27 @@
    GetFirstChild comctrls/ttreenode.getfirstchild.html
    GetFirstSibling comctrls/ttreenode.getfirstsibling.html
    GetFirstVisibleChild comctrls/ttreenode.getfirstvisiblechild.html
-   GetFirstVisibleEnabledChild comctrls/ttreenode.getfirstvisibleenabledchild.html
    GetHandle comctrls/ttreenode.gethandle.html
    GetLastChild comctrls/ttreenode.getlastchild.html
    GetLastSibling comctrls/ttreenode.getlastsibling.html
    GetLastSubChild comctrls/ttreenode.getlastsubchild.html
    GetLastVisibleChild comctrls/ttreenode.getlastvisiblechild.html
-   GetLastVisibleEnabledChild comctrls/ttreenode.getlastvisibleenabledchild.html
    GetNext comctrls/ttreenode.getnext.html
    GetNextChild comctrls/ttreenode.getnextchild.html
    GetNextExpanded comctrls/ttreenode.getnextexpanded.html
-   GetNextExpandedEnabled comctrls/ttreenode.getnextexpandedenabled.html
    GetNextMultiSelected comctrls/ttreenode.getnextmultiselected.html
    GetNextSibling comctrls/ttreenode.getnextsibling.html
    GetNextSkipChildren comctrls/ttreenode.getnextskipchildren.html
    GetNextVisible comctrls/ttreenode.getnextvisible.html
-   GetNextVisibleEnabled comctrls/ttreenode.getnextvisibleenabled.html
    GetNextVisibleSibling comctrls/ttreenode.getnextvisiblesibling.html
-   GetNextVisibleEnabledSibling comctrls/ttreenode.getnextvisibleenabledsibling.html
    GetParentNodeOfAbsoluteLevel comctrls/ttreenode.getparentnodeofabsolutelevel.html
    GetPrev comctrls/ttreenode.getprev.html
    GetPrevChild comctrls/ttreenode.getprevchild.html
    GetPrevExpanded comctrls/ttreenode.getprevexpanded.html
-   GetPrevExpandedEnabled comctrls/ttreenode.getprevexpandedenabled.html
    GetPrevMultiSelected comctrls/ttreenode.getprevmultiselected.html
    GetPrevSibling comctrls/ttreenode.getprevsibling.html
    GetPrevVisible comctrls/ttreenode.getprevvisible.html
-   GetPrevVisibleEnabled comctrls/ttreenode.getprevvisibleenabled.html
    GetPrevVisibleSibling comctrls/ttreenode.getprevvisiblesibling.html
-   GetPrevVisibleEnabledSibling comctrls/ttreenode.getprevvisibleenabledsibling.html
    GetTextPath comctrls/ttreenode.gettextpath.html
    HasAsParent comctrls/ttreenode.hasasparent.html
    IndexOf comctrls/ttreenode.indexof.html
@@ -3122,6 +3114,8 @@
    Delete comctrls/tcustomtreeview.delete.html
    DestroyWnd comctrls/tcustomtreeview.destroywnd.html
    DoCreateNodeClass comctrls/tcustomtreeview.docreatenodeclass.html
+   DoEndDrag comctrls/tcustomtreeview.doenddrag.html
+   DoMouseWheel comctrls/tcustomtreeview.domousewheel.html
    DoMouseWheelHorz comctrls/tcustomtreeview.domousewheelhorz.html
    DoPaint comctrls/tcustomtreeview.dopaint.html
    DoPaintNode comctrls/tcustomtreeview.dopaintnode.html
@@ -3243,6 +3237,10 @@
    MoveToPrevNode comctrls/tcustomtreeview.movetoprevnode.html
    MovePageDown comctrls/tcustomtreeview.movepagedown.html
    MovePageUp comctrls/tcustomtreeview.movepageup.html
+   MoveLeft comctrls/tcustomtreeview.moveleft.html
+   MoveRight comctrls/tcustomtreeview.moveright.html
+   MoveExpand comctrls/tcustomtreeview.moveexpand.html
+   MoveCollapse comctrls/tcustomtreeview.movecollapse.html
    MoveHome comctrls/tcustomtreeview.movehome.html
    MoveEnd comctrls/tcustomtreeview.moveend.html
    BackgroundColor comctrls/tcustomtreeview.backgroundcolor.html
@@ -3280,8 +3278,6 @@
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    BeginAutoDrag controls/tcontrol.beginautodrag.html
    DoDragMsg 
-   DoEndDrag controls/tcontrol.doenddrag.html
-   DoMouseWheel controls/tcontrol.domousewheel.html
    GetChildAccessibleObjectAtPos controls/tcontrol.getchildaccessibleobjectatpos.html
   TTreeView comctrls/ttreeview.html
    ParentColor comctrls/ttreeview.parentcolor.html
@@ -3328,6 +3324,7 @@
    ShowHint controls/tcontrol.showhint.html
    ShowLines comctrls/tcustomtreeview.showlines.html
    ShowRoot comctrls/tcustomtreeview.showroot.html
+   ShowSeparators comctrls/tcustomtreeview.showseparators.html
    SortType comctrls/tcustomtreeview.sorttype.html
    StateImages comctrls/tcustomtreeview.stateimages.html
    StateImagesWidth comctrls/tcustomtreeview.stateimageswidth.html
@@ -5418,6 +5415,7 @@
    Options customdrawndrawers/tcdctabcontrolstateex.options.html
    CurTabIndex customdrawndrawers/tcdctabcontrolstateex.curtabindex.html
    CurStartLeftPos customdrawndrawers/tcdctabcontrolstateex.curstartleftpos.html
+   CurStartTopPos customdrawndrawers/tcdctabcontrolstateex.curstarttoppos.html
   TCDSpinStateEx customdrawndrawers/tcdspinstateex.html
    Min customdrawndrawers/tcdspinstateex.min.html
    Increment customdrawndrawers/tcdspinstateex.increment.html
@@ -7127,7 +7125,6 @@
    Title dialogs/tcommondialog.title.html
   TOpenDialog dialogs/topendialog.html
    ResolveLinks dialogs/topendialog.resolvelinks.html
-   DereferenceLinks dialogs/topendialog.dereferencelinks.html
    CheckFile dialogs/topendialog.checkfile.html
    CheckFileMustExist dialogs/topendialog.checkfilemustexist.html
    CheckAllFiles dialogs/topendialog.checkallfiles.html
@@ -7522,7 +7519,7 @@
    fOnFilterItemEx editbtn/tcustomcontrolfilteredit.fonfilteritemex.html
    fOnCheckItem editbtn/tcustomcontrolfilteredit.foncheckitem.html
    DestroyWnd editbtn/tcustomcontrolfilteredit.destroywnd.html
-   ActivateFilter editbtn/tcustomcontrolfilteredit.activatefilter.html
+   InternalSetFilter editbtn/tcustomcontrolfilteredit.internalsetfilter.html
    DoDefaultFilterItem editbtn/tcustomcontrolfilteredit.dodefaultfilteritem.html
    DoFilterItem editbtn/tcustomcontrolfilteredit.dofilteritem.html
    EditKeyDown editbtn/tcustomcontrolfilteredit.editkeydown.html
@@ -8464,6 +8461,7 @@
    SetItemIndex extctrls/tcustomradiogroup.setitemindex.html
    GetItemIndex extctrls/tcustomradiogroup.getitemindex.html
    CheckItemIndexChanged extctrls/tcustomradiogroup.checkitemindexchanged.html
+   Notification extctrls/tcustomradiogroup.notification.html
    Create extctrls/tcustomradiogroup.create.html
    Destroy extctrls/tcustomradiogroup.destroy.html
    CanModify extctrls/tcustomradiogroup.canmodify.html
@@ -8546,6 +8544,7 @@
    ReadData extctrls/tcustomcheckgroup.readdata.html
    WriteData extctrls/tcustomcheckgroup.writedata.html
    Loaded extctrls/tcustomcheckgroup.loaded.html
+   Notification extctrls/tcustomcheckgroup.notification.html
    Create extctrls/tcustomcheckgroup.create.html
    Destroy extctrls/tcustomcheckgroup.destroy.html
    FlipChildren extctrls/tcustomcheckgroup.flipchildren.html
@@ -9700,12 +9699,27 @@
    TabOrder controls/twincontrol.taborder.html
    TabStop controls/twincontrol.tabstop.html
    Visible controls/tcontrol.visible.html
+  TWindowMagnetOptions forms/twindowmagnetoptions.html
+   Create forms/twindowmagnetoptions.create.html
+   AssignTo forms/twindowmagnetoptions.assignto.html
+   SnapToMonitor forms/twindowmagnetoptions.snaptomonitor.html
+   SnapToForms forms/twindowmagnetoptions.snaptoforms.html
+   SnapFormTarget forms/twindowmagnetoptions.snapformtarget.html
+   Distance forms/twindowmagnetoptions.distance.html
+  TWindowMagnetManager forms/twindowmagnetmanager.html
+   SnapToSides forms/twindowmagnetmanager.snaptosides.html
+   SnapToMonitor forms/twindowmagnetmanager.snaptomonitor.html
+   SnapToForms forms/twindowmagnetmanager.snaptoforms.html
+   Create forms/twindowmagnetmanager.create.html
+   Enabled forms/twindowmagnetmanager.enabled.html
+   SnapForm forms/twindowmagnetmanager.snapform.html
   TCustomForm forms/tcustomform.html
    WMActivate forms/tcustomform.wmactivate.html
    WMCloseQuery forms/tcustomform.wmclosequery.html
    WMHelp forms/tcustomform.wmhelp.html
    WMShowWindow forms/tcustomform.wmshowwindow.html
    WMSize forms/tcustomform.wmsize.html
+   WMWindowPosChanging forms/tcustomform.wmwindowposchanging.html
    WMWindowPosChanged forms/tcustomform.wmwindowposchanged.html
    CMBiDiModeChanged forms/tcustomform.cmbidimodechanged.html
    CMParentBiDiModeChanged forms/tcustomform.cmparentbidimodechanged.html
@@ -9841,6 +9855,9 @@
    LastActiveControl forms/tcustomform.lastactivecontrol.html
    PopupMode forms/tcustomform.popupmode.html
    PopupParent forms/tcustomform.popupparent.html
+   SnapOptions forms/tcustomform.snapoptions.html
+   ScreenSnap forms/tcustomform.screensnap.html
+   SnapBuffer forms/tcustomform.snapbuffer.html
    OnActivate forms/tcustomform.onactivate.html
    OnClose forms/tcustomform.onclose.html
    OnCloseQuery forms/tcustomform.onclosequery.html
@@ -9974,8 +9991,11 @@
    PopupMode forms/tcustomform.popupmode.html
    PopupParent forms/tcustomform.popupparent.html
    Position forms/tcustomform.position.html
+   ScreenSnap forms/tcustomform.screensnap.html
    ShowHint controls/tcontrol.showhint.html
    ShowInTaskBar forms/tcustomform.showintaskbar.html
+   SnapBuffer forms/tcustomform.snapbuffer.html
+   SnapOptions forms/tcustomform.snapoptions.html
    UseDockManager controls/twincontrol.usedockmanager.html
    Scaled forms/tcustomdesigncontrol.scaled.html
    Visible forms/tcustomform.visible.html
@@ -10047,6 +10067,7 @@
    GetIconFont forms/tscreen.geticonfont.html
    GetMenuFont forms/tscreen.getmenufont.html
    GetSystemFont forms/tscreen.getsystemfont.html
+   MagnetManager forms/tscreen.magnetmanager.html
    Create forms/tscreen.create.html
    Destroy forms/tscreen.destroy.html
    CustomFormIndex forms/tscreen.customformindex.html
@@ -10141,6 +10162,7 @@
    DoIdleActions forms/tapplication.doidleactions.html
    MenuPopupHandler forms/tapplication.menupopuphandler.html
    ProcessAsyncCallQueue forms/tapplication.processasynccallqueue.html
+   DoDecLCLRefcountToZero forms/tapplication.dodeclclrefcounttozero.html
    ReleaseComponents forms/tapplication.releasecomponents.html
    DoBeforeFinalization forms/tapplication.dobeforefinalization.html
    GetParams forms/tapplication.getparams.html
@@ -10428,7 +10450,6 @@
   RequireDerivedFormResource forms/requirederivedformresource.html
   MessageBoxFunction forms/messageboxfunction.html
  Graphics graphics/index.html
-  Progress graphics/progress.html
   DefFontData graphics/deffontdata.html
   psSolid graphics/pssolid.html
   psDash graphics/psdash.html
@@ -10462,6 +10483,8 @@
   bsBDiagonal graphics/bsbdiagonal.html
   bsCross graphics/bscross.html
   bsDiagCross graphics/bsdiagcross.html
+  bsImage graphics/bsimage.html
+  bsPattern graphics/bspattern.html
   PIXELFORMAT_BPP graphics/pixelformat_bpp.html
   clBlack graphics/clblack.html
   clMaroon graphics/clmaroon.html
@@ -12929,6 +12952,9 @@
    DefineProperties imglist/tcustomimagelist.defineproperties.html
    SetWidthHeight imglist/tcustomimagelist.setwidthheight.html
    ClearOverlays imglist/tcustomimagelist.clearoverlays.html
+   MarkAsChanged imglist/tcustomimagelist.markaschanged.html
+   DoAfterUpdateStarted imglist/tcustomimagelist.doafterupdatestarted.html
+   DoBeforeUpdateEnded imglist/tcustomimagelist.dobeforeupdateended.html
    Create imglist/tcustomimagelist.create.html
    CreateSize imglist/tcustomimagelist.createsize.html
    Destroy imglist/tcustomimagelist.destroy.html
@@ -13183,6 +13209,7 @@
    GetClientRect interfacebase/twidgetset.getclientrect.html
    GetClipBox interfacebase/twidgetset.getclipbox.html
    GetClipRGN interfacebase/twidgetset.getcliprgn.html
+   GetCompositorExtendedBorder interfacebase/twidgetset.getcompositorextendedborder.html
    GetCurrentObject interfacebase/twidgetset.getcurrentobject.html
    GetCursorPos interfacebase/twidgetset.getcursorpos.html
    GetCharABCWidths interfacebase/twidgetset.getcharabcwidths.html
@@ -14199,10 +14226,10 @@
    Destroy lclclasses/tlclcomponent.destroy.html
    NewInstance lclclasses/tlclcomponent.newinstance.html
    RemoveAllHandlersOfObject lclclasses/tlclcomponent.removeallhandlersofobject.html
+   DecLCLRefCount lclclasses/tlclcomponent.declclrefcount.html
    LCLRefCount lclclasses/tlclcomponent.lclrefcount.html
    WidgetSetClass lclclasses/tlclcomponent.widgetsetclass.html
    IncLCLRefCount lclclasses/tlclcomponent.lclrefcount.html
-   DecLCLRefCount lclclasses/tlclcomponent.lclrefcount.html
   TLCLReferenceComponent lclclasses/tlclreferencecomponent.html
    CreateParams lclclasses/tlclreferencecomponent.createparams.html
    DestroyReference lclclasses/tlclreferencecomponent.destroyreference.html
@@ -14215,6 +14242,7 @@
    Destroy lclclasses/tlclreferencecomponent.destroy.html
    ReferenceAllocated lclclasses/tlclreferencecomponent.referenceallocated.html
    HandleAllocated lclclasses/tlclreferencecomponent.referenceallocated.html
+  OnDecLCLRefcountToZero lclclasses/ondeclclrefcounttozero.html
  LCLIntf lclintf/index.html
   TOpenParamStringProc lclintf/topenparamstringproc.html
   Arc lclintf/arc.html
@@ -14279,6 +14307,7 @@
   GetClientRect lclintf/getclientrect.html
   GetClipBox lclintf/getclipbox.html
   GetClipRGN lclintf/getcliprgn.html
+  GetCompositorExtendedBorder lclintf/getcompositorextendedborder.html
   GetCurrentObject lclintf/getcurrentobject.html
   GetCursorPos lclintf/getcursorpos.html
   GetCharABCWidths lclintf/getcharabcwidths.html
@@ -14624,13 +14653,13 @@
  LCLPlatformDef lclplatformdef/index.html
   LCLPlatformDirNames lclplatformdef/lclplatformdirnames.html
   LCLPlatformDisplayNames lclplatformdef/lclplatformdisplaynames.html
+  BuildLCLWidgetType lclplatformdef/buildlclwidgettype.html
   TLCLPlatform lclplatformdef/tlclplatform.html
   TLCLPlatforms lclplatformdef/tlclplatforms.html
   DirNameToLCLPlatform lclplatformdef/dirnametolclplatform.html
   DirNameToDisplayName lclplatformdef/dirnametodisplayname.html
   DisplayNameToDirName lclplatformdef/displaynametodirname.html
   GetBuildLCLWidgetType lclplatformdef/getbuildlclwidgettype.html
-  BuildLCLWidgetType lclplatformdef/buildlclwidgettype.html
  LCLProc lclproc/index.html
   TMethodList lclproc/tmethodlist.html
   TStringsSortCompare lclproc/tstringssortcompare.html
@@ -14670,15 +14699,15 @@
   SendApplicationMessage lclproc/sendapplicationmessage.html
   OwnerFormDesignerModified lclproc/ownerformdesignermodified.html
   FreeThenNil lclproc/freethennil.html
-  RegisterInterfaceInitializationHandler lclproc/registerinterfaceinitializationhandler.html
-  CallInterfaceInitializationHandlers lclproc/callinterfaceinitializationhandlers.html
-  RegisterInterfaceFinalizationHandler lclproc/registerinterfacefinalizationhandler.html
-  CallInterfaceFinalizationHandlers lclproc/callinterfacefinalizationhandlers.html
   OffsetRect lclproc/offsetrect.html
   MoveRect lclproc/moverect.html
   MoveRectToFit lclproc/moverecttofit.html
   MakeMinMax lclproc/makeminmax.html
   CalculateLeftTopWidthHeight lclproc/calculatelefttopwidthheight.html
+  RegisterInterfaceInitializationHandler lclproc/registerinterfaceinitializationhandler.html
+  CallInterfaceInitializationHandlers lclproc/callinterfaceinitializationhandlers.html
+  RegisterInterfaceFinalizationHandler lclproc/registerinterfacefinalizationhandler.html
+  CallInterfaceFinalizationHandlers lclproc/callinterfacefinalizationhandlers.html
   DeleteAmpersands lclproc/deleteampersands.html
   RemoveAmpersands lclproc/removeampersands.html
   CompareHandles lclproc/comparehandles.html
@@ -15170,7 +15199,6 @@
   TranslateLCLResourceStrings lcltranslator/translatelclresourcestrings.html
   TranslateUnitResourceStringsEx lcltranslator/translateunitresourcestringsex.html
   SetDefaultLang lcltranslator/setdefaultlang.html
-  GetDefaultLang lcltranslator/getdefaultlang.html
  LCLType lcltype/index.html
   INVALID_HANDLE_VALUE lcltype/invalid_handle_value.html
   MAXBYTE lcltype/maxbyte.html
@@ -18484,7 +18512,7 @@
    OnSortCompare shellctrls/tcustomshelltreeview.onsortcompare.html
    Items comctrls/tcustomtreeview.items.html
   TShellTreeView shellctrls/tshelltreeview.html
-   ExpandCollapseMode shellctrls/tshelltreeview.expandcollapsemode.html
+   ExpandCollapseMode shellctrls/tcustomshelltreeview.expandcollapsemode.html
    ParentColor shellctrls/tshelltreeview.parentcolor.html
    TabStop shellctrls/tshelltreeview.tabstop.html
    Tag shellctrls/tshelltreeview.tag.html
@@ -18567,10 +18595,14 @@
    ExpandSignColor comctrls/tcustomtreeview.expandsigncolor.html
    ObjectTypes shellctrls/tcustomshelltreeview.objecttypes.html
    ShellListView shellctrls/tcustomshelltreeview.shelllistview.html
+  TShellListItem shellctrls/tshelllistitem.html
+   isFolder shellctrls/tshelllistitem.isfolder.html
+   FileInfo shellctrls/tshelllistitem.fileinfo.html
   TCustomShellListView shellctrls/tcustomshelllistview.html
    WSRegisterClass shellctrls/tcustomshelllistview.wsregisterclass.html
    AdjustColWidths shellctrls/tcustomshelllistview.adjustcolwidths.html
    CreateHandle shellctrls/tcustomshelllistview.createhandle.html
+   CreateListItem shellctrls/tcustomshelllistview.createlistitem.html
    PopulateWithRoot shellctrls/tcustomshelllistview.populatewithroot.html
    DoOnResize shellctrls/tcustomshelllistview.doonresize.html
    SetAutoSizeColumns shellctrls/tcustomshelllistview.setautosizecolumns.html
@@ -19240,12 +19272,12 @@
    Destroy stdctrls/tcustomcombobox.destroy.html
    IntfGetItems stdctrls/tcustomcombobox.intfgetitems.html
    AddItem stdctrls/tcustomcombobox.additem.html
+   MatchListItem stdctrls/tcustomcombobox.matchlistitem.html
    AddHistoryItem stdctrls/tcustomcombobox.addhistoryitem.html
    Clear stdctrls/tcustomcombobox.clear.html
    ClearSelection stdctrls/tcustomcombobox.clearselection.html
    CharCase stdctrls/tcustomcombobox.charcase.html
    DroppedDown stdctrls/tcustomcombobox.droppeddown.html
-   DroppingDown stdctrls/tcustomcombobox.droppingdown.html
    SelectAll stdctrls/tcustomcombobox.selectall.html
    AutoComplete stdctrls/tcustomcombobox.autocomplete.html
    AutoCompleteText stdctrls/tcustomcombobox.autocompletetext.html
@@ -20146,13 +20178,13 @@
    DoAutoSize controls/tcontrol.doautosize.html
    DialogChar controls/tcontrol.dialogchar.html
   TLabel stdctrls/tlabel.html
+   Caption stdctrls/tlabel.caption.html
    Align controls/tcontrol.align.html
    Alignment stdctrls/tcustomlabel.alignment.html
    Anchors controls/tcontrol.anchors.html
    AutoSize stdctrls/tcustomlabel.autosize.html
    BidiMode controls/tcontrol.bidimode.html
    BorderSpacing controls/tcontrol.borderspacing.html
-   Caption controls/tcontrol.caption.html
    Color stdctrls/tcustomlabel.color.html
    Constraints controls/tcontrol.constraints.html
    DragCursor controls/tcontrol.dragcursor.html
@@ -22506,6 +22538,7 @@
 3MGetClientRect
 3MGetClipBox
 3MGetClipRGN
+3MGetCompositorExtendedBorder
 3MGetCurrentObject
 3MGetCursorPos
 3MGetCharABCWidths
@@ -24423,6 +24456,9 @@
 2MDefineProperties
 2MSetWidthHeight
 2MClearOverlays
+2MMarkAsChanged
+2MDoAfterUpdateStarted
+2MDoBeforeUpdateEnded
 3MCreate
 3MCreateSize
 3MDestroy
@@ -26691,7 +26727,6 @@
 1VFCharCase
 1VFDropDownCount
 1VFDroppedDown
-1VFDroppingDown
 1VFEditingDone
 1VFEmulatedTextHintStatus
 1VFItemHeight
@@ -26796,12 +26831,12 @@
 3MDestroy
 3MIntfGetItems
 3MAddItem
+3MMatchListItem
 3MAddHistoryItem
 3MClear
 3MClearSelection
 3PCharCase rw
 3PDroppedDown rw
-3PDroppingDown rw
 3MSelectAll
 3PAutoComplete rw
 3PAutoCompleteText rw
@@ -28121,6 +28156,29 @@
 4PTabOrder
 4PTabStop
 4PVisible
+#lcl.Forms.TWindowMagnetOptions #rtl.Classes.TPersistent
+1VFSnapMonitor
+1VFSnapForms
+1VFSnapFormTarget
+1VFDistance
+3MCreate
+3MAssignTo
+4PSnapToMonitor rw
+4PSnapToForms rw
+4PSnapFormTarget rw
+4PDistance rw
+#lcl.Forms.TWindowMagnetManager #rtl.System.TObject
+1VFEnabled
+1VFActiveForm
+1VFPreviousSource
+1VFPreviousReturn
+1VFCompositorBorders
+2MSnapToSides
+2MSnapToMonitor
+2MSnapToForms
+3MCreate
+3PEnabled rw
+3MSnapForm
 #lcl.Forms.TCustomForm #lcl.Forms.TCustomDesignControl
 1VFActive
 1VFActiveControl
@@ -28173,6 +28231,7 @@
 1VFDelayedOnResize
 1VFIsFirstOnShow
 1VFIsFirstOnActivate
+1VFSnapOptions
 1MGetClientHandle
 1MGetEffectiveShowInTaskBar
 1MGetMonitor
@@ -28209,11 +28268,17 @@
 1MFindDefaultForActiveControl
 1MUpdateMenu
 1MUpdateShowInTaskBar
+1MGetScreenSnap
+1MSetScreenSnap
+1MGetSnapBuffer
+1MSetSnapBuffer
+1MSetSnapOptions
 2MWMActivate
 2MWMCloseQuery
 2MWMHelp
 2MWMShowWindow
 2MWMSize
+2MWMWindowPosChanging
 2MWMWindowPosChanged
 2MCMBiDiModeChanged
 2MCMParentBiDiModeChanged
@@ -28362,6 +28427,9 @@
 3PLastActiveControl r
 3PPopupMode rw
 3PPopupParent rw
+3PSnapOptions rw
+3PScreenSnap rws
+3PSnapBuffer rws
 3POnActivate rw
 3POnClose rws
 3POnCloseQuery rws
@@ -28483,8 +28551,11 @@
 4PPopupParent
 4PPosition
 4PSessionProperties
+4PScreenSnap
 4PShowHint
 4PShowInTaskBar
+4PSnapBuffer
+4PSnapOptions
 4PUseDockManager
 4PLCLVersion rws
 4PScaled
@@ -28606,6 +28677,7 @@
 1VFPixelsPerInch
 1VFSaveFocusedList
 1VFSystemFont
+1VFMagnetManager
 1MDeleteCursor
 1MDestroyCursors
 1MDestroyMonitors
@@ -28656,6 +28728,7 @@
 2MGetIconFont
 2MGetMenuFont
 2MGetSystemFont
+2PMagnetManager r
 3MCreate
 3MDestroy
 3MCustomFormIndex
@@ -28860,6 +28933,7 @@
 2MDoIdleActions
 2MMenuPopupHandler
 2MProcessAsyncCallQueue
+2MDoDecLCLRefcountToZero
 2MFreeComponent
 2MReleaseComponents
 2MDoBeforeFinalization
@@ -29582,7 +29656,6 @@
 1VFLastSelectionChangeFilename
 2MWSRegisterClass
 2MResolveLinks
-2MDereferenceLinks
 2MCheckFile
 2MCheckFileMustExist
 2MCheckAllFiles
@@ -30868,6 +30941,7 @@
 2MSetItemIndex
 2MGetItemIndex
 2MCheckItemIndexChanged
+2MNotification
 3MCreate
 3MDestroy
 3MCanModify
@@ -30974,6 +31048,7 @@
 2MWriteData
 2MLoaded
 2MDoOnResize
+2MNotification
 3MCreate
 3MDestroy
 3MFlipChildren
@@ -31979,6 +32054,8 @@
 1MSetTabPosition
 1MSetTabWidth
 1MShowCurrentPage
+1MTabHeightIsStored
+1MTabWidthIsStored
 1MUpdateAllDesignerFlags
 1MUpdateDesignerFlags
 1MDoImageListDestroyResolutionHandle
@@ -32047,9 +32124,9 @@
 3PScrollOpposite rw
 3PShowTabs rw
 3PStyle rw
-3PTabHeight rw
+3PTabHeight rws
 3PTabPosition rw
-3PTabWidth rw
+3PTabWidth rws
 4PTabStop
 #lcl.ComCtrls.TTabSheet #lcl.ComCtrls.TCustomPage
 1MGetPageControl
@@ -33351,7 +33428,6 @@
 1MSetShowCaptions
 1MSetTransparent
 1MSetWrapable
-1MToolButtonDown
 1MImageListChange
 1MDisabledImageListChange
 1MHotImageListChange
@@ -33854,7 +33930,6 @@
 1VFText
 1VFTop
 1MParentsExpandedVisible
-1MParentsExpandedVisibleEnabled
 1MBindToMultiSelected
 1MCompareCount
 1MDoCanExpand
@@ -33932,35 +34007,27 @@
 3MGetFirstChild
 3MGetFirstSibling
 3MGetFirstVisibleChild
-3MGetFirstVisibleEnabledChild
 3MGetHandle
 3MGetLastChild
 3MGetLastSibling
 3MGetLastSubChild
 3MGetLastVisibleChild
-3MGetLastVisibleEnabledChild
 3MGetNext
 3MGetNextChild
 3MGetNextExpanded
-3MGetNextExpandedEnabled
 3MGetNextMultiSelected
 3MGetNextSibling
 3MGetNextSkipChildren
 3MGetNextVisible
-3MGetNextVisibleEnabled
 3MGetNextVisibleSibling
-3MGetNextVisibleEnabledSibling
 3MGetParentNodeOfAbsoluteLevel
 3MGetPrev
 3MGetPrevChild
 3MGetPrevExpanded
-3MGetPrevExpandedEnabled
 3MGetPrevMultiSelected
 3MGetPrevSibling
 3MGetPrevVisible
-3MGetPrevVisibleEnabled
 3MGetPrevVisibleSibling
-3MGetPrevVisibleEnabledSibling
 3MGetTextPath
 3MHasAsParent
 3MIndexOf
@@ -34440,6 +34507,10 @@
 3MMoveToPrevNode
 3MMovePageDown
 3MMovePageUp
+3MMoveLeft
+3MMoveRight
+3MMoveExpand
+3MMoveCollapse
 3MMoveHome
 3MMoveEnd
 3PBackgroundColor rws
@@ -34518,6 +34589,7 @@
 4PShowHint
 4PShowLines
 4PShowRoot
+4PShowSeparators
 4PSortType
 4PStateImages
 4PStateImagesWidth
@@ -38700,6 +38772,10 @@
 4PExpandSignColor
 4PObjectTypes
 4PShellListView
+#lcl.ShellCtrls.TShellListItem #lcl.ComCtrls.TListItem
+1VFFileInfo
+3MisFolder
+3PFileInfo rw
 #lcl.ShellCtrls.TCustomShellListView #lcl.ComCtrls.TCustomListView
 1VFAutoSizeColumns
 1VFMask
@@ -38718,6 +38794,7 @@
 2MWSRegisterClass
 2MAdjustColWidths
 2MCreateHandle
+2MCreateListItem
 2MPopulateWithRoot
 2MDoOnResize
 2MSetAutoSizeColumns
@@ -40471,6 +40548,7 @@
 4PTextHint
 4PVisible
 #lcl.EditBtn.TCustomControlFilterEdit #lcl.EditBtn.TCustomEditButton
+1VfFilter
 1VfFilterLowercase
 1VfFilterOptions
 1VfIdleConnected
@@ -40478,12 +40556,11 @@
 1VfIsFirstSetFormActivate
 1VfOnAfterFilter
 1MApplyFilter
-1MGetFilter
 1MSetFilter
 1MSetFilterOptions
 1MSetSortData
 1MSetIdleConnected
-1MOnIdle
+1MOnAsync
 1MIsTextHintStored
 2VfNeedUpdate
 2VfIsFirstUpdate
@@ -40492,7 +40569,7 @@
 2VfOnFilterItemEx
 2VfOnCheckItem
 2MDestroyWnd
-2MActivateFilter
+2MInternalSetFilter
 2MDoDefaultFilterItem
 2MDoFilterItem
 2MEditKeyDown
@@ -41973,7 +42050,7 @@
 1VFAssignedFont
 1VFAssignedPen
 1VFBaseWindowOrg
-1VFPolygonWindingMode
+1VPolygonNonZeroWindingRule
 1VFWindowOrg
 1VGraphicStateList
 1MGetAssignedBrush
@@ -42219,6 +42296,7 @@
 3VOptions
 3VCurTabIndex
 3VCurStartLeftPos
+3VCurStartTopPos
 #lcl.CustomDrawnDrawers.TCDSpinStateEx #lcl.CustomDrawnDrawers.TCDPositionedCStateEx
 3VMin
 3VIncrement

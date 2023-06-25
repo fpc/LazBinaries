@@ -125,6 +125,8 @@
    DisposeItem avglvltree/tstringtopointertree.disposeitem.html
    ItemsAreEqual avglvltree/tstringtopointertree.itemsareequal.html
    CreateCopy avglvltree/tstringtopointertree.createcopy.html
+   Assign avglvltree/tcustomstringmap.assign.html
+   AddTree avglvltree/tstringtopointertree.addtree.html
    GetData avglvltree/tstringtopointertree.getdata.html
    GetNodeData avglvltree/tstringtopointertree.getnodedata.html
    GetEnumerator avglvltree/tstringtopointertree.getenumerator.html
@@ -465,9 +467,6 @@
   FilenameHasPascalExt fileutil/filenamehaspascalext.html
   FileIsInPath fileutil/fileisinpath.html
   FileIsInDirectory fileutil/fileisindirectory.html
-  ExtractFileNameWithoutExt fileutil/extractfilenamewithoutext.html
-  CreateAbsoluteSearchPath fileutil/createabsolutesearchpath.html
-  CreateAbsolutePath fileutil/createabsolutepath.html
   GetAllFilesMask fileutil/getallfilesmask.html
   GetExeExt fileutil/getexeext.html
   ReadFileToString fileutil/readfiletostring.html
@@ -485,6 +484,8 @@
   TMemStreamSeekType fpcadds/tmemstreamseektype.html
   TCompareMemSize fpcadds/tcomparememsize.html
   PHandle fpcadds/phandle.html
+  GetCompiledTargetOS fpcadds/getcompiledtargetos.html
+  GetCompiledTargetCPU fpcadds/getcompiledtargetcpu.html
   StrToWord fpcadds/strtoword.html
   AlignToPtr fpcadds/aligntoptr.html
   AlignToInt fpcadds/aligntoint.html
@@ -499,12 +500,16 @@
   Bezier2Polyline graphmath/bezier2polyline.html
   BezierArcPoints graphmath/bezierarcpoints.html
   BezierMidPoint graphmath/beziermidpoint.html
+  CalculateLeftTopWidthHeight graphmath/calculatelefttopwidthheight.html
   Coords2Angles graphmath/coords2angles.html
   Distance graphmath/distance.html
   EccentricAngle graphmath/eccentricangle.html
   EllipseRadialLength graphmath/ellipseradiallength.html
   FloatPoint graphmath/floatpoint.html
   LineEndPoint graphmath/lineendpoint.html
+  MakeMinMax graphmath/makeminmax.html
+  MoveRect graphmath/moverect.html
+  MoveRectToFit graphmath/moverecttofit.html
   PolyBezier2Polyline graphmath/polybezier2polyline.html
   PolyBezierArcPoints graphmath/polybezierarcpoints.html
   Quadrant graphmath/quadrant.html
@@ -1159,7 +1164,7 @@
    WriteObject laz2_xmlcfg/trttixmlconfig.writeobject.html
    ReadObject laz2_xmlcfg/trttixmlconfig.readobject.html
   CompareDomNodeNames laz2_xmlcfg/comparedomnodenames.html
- laz2_XMLRead laz2_xmlread/index.html
+ Laz2_XMLRead laz2_xmlread/index.html
   TErrorSeverity laz2_xmlread/terrorseverity.html
   TXMLReaderFlag laz2_xmlread/txmlreaderflag.html
   TXMLReaderFlags laz2_xmlread/txmlreaderflags.html
@@ -1203,7 +1208,7 @@
   ReadXMLFragment laz2_xmlread/readxmlfragment.html
   ReadDTDFile laz2_xmlread/readdtdfile.html
   RegisterDecoder laz2_xmlread/registerdecoder.html
- laz2_xmlutils laz2_xmlutils/index.html
+ Laz2_XMLUtils laz2_xmlutils/index.html
   ns_ASCII laz2_xmlutils/ns_ascii.html
   ns_0200 laz2_xmlutils/ns_0200.html
   ns_0300 laz2_xmlutils/ns_0300.html
@@ -1278,12 +1283,12 @@
   Hash laz2_xmlutils/hash.html
   XUStrLIComp laz2_xmlutils/xustrlicomp.html
   TranslateUTF8Chars laz2_xmlutils/translateutf8chars.html
- laz2_XMLWrite laz2_xmlwrite/index.html
+ Laz2_XMLWrite laz2_xmlwrite/index.html
   TXMLWriterFlag laz2_xmlwrite/txmlwriterflag.html
   TXMLWriterFlags laz2_xmlwrite/txmlwriterflags.html
   WriteXMLFile laz2_xmlwrite/writexmlfile.html
   WriteXML laz2_xmlwrite/writexml.html
- laz2_xpath laz2_xpath/index.html
+ Laz2_XPath laz2_xpath/index.html
   TXPathToken laz2_xpath/txpathtoken.html
   TXPathKeyword laz2_xpath/txpathkeyword.html
   TXPathNodeArray laz2_xpath/txpathnodearray.html
@@ -1509,6 +1514,8 @@
    ShutDown lazcollections/tlazthreadedqueue.shutdown.html
  LazConfigStorage lazconfigstorage/index.html
   ConfigMemStorageFormatVersion lazconfigstorage/configmemstorageformatversion.html
+  DateAsCfgStrFormat lazconfigstorage/dateascfgstrformat.html
+  DateTimeAsCfgStrFormat lazconfigstorage/datetimeascfgstrformat.html
   TConfigStorageClass lazconfigstorage/tconfigstorageclass.html
   TConfigMemStorageModification lazconfigstorage/tconfigmemstoragemodification.html
   TConfigStorage lazconfigstorage/tconfigstorage.html
@@ -1559,6 +1566,8 @@
    WriteDebugReport lazconfigstorage/tconfigmemstorage.writedebugreport.html
   LoadStringToStringTree lazconfigstorage/loadstringtostringtree.html
   SaveStringToStringTree lazconfigstorage/savestringtostringtree.html
+  DateToCfgStr lazconfigstorage/datetocfgstr.html
+  CfgStrToDate lazconfigstorage/cfgstrtodate.html
   CompareConfigMemStorageNames lazconfigstorage/compareconfigmemstoragenames.html
   CompareConfigMemStorageNodes lazconfigstorage/compareconfigmemstoragenodes.html
   ComparePCharWithConfigMemStorageNode lazconfigstorage/comparepcharwithconfigmemstoragenode.html
@@ -1901,6 +1910,7 @@
    Items lazlistclasses/tlazshiftbufferlistgen.items.html
  LazLogger lazlogger/index.html
   PLazLoggerLogGroup lazlogger/plazloggerloggroup.html
+  TLazLoggerWriteExEventInfo lazlogger/tlazloggerwriteexeventinfo.html
   TLazLoggerFileHandle lazlogger/tlazloggerfilehandle.html
    Create lazlogger/tlazloggerfilehandle.create.html
    Destroy lazlogger/tlazloggerfilehandle.destroy.html
@@ -1947,6 +1957,8 @@
    EnvironmentForLogFileName lazlogger/tlazloggerfile.environmentforlogfilename.html
    OnDebugLn lazlogger/tlazloggerfile.ondebugln.html
    OnDbgOut lazlogger/tlazloggerfile.ondbgout.html
+   OnDebugLnEx lazlogger/tlazloggerfile.ondebuglnex.html
+   OnDbgOutEx lazlogger/tlazloggerfile.ondbgoutex.html
    AddBlockHandler lazlogger/tlazloggerfile.addblockhandler.html
    RemoveBlockHandler lazlogger/tlazloggerfile.removeblockhandler.html
    BlockHandlerCount lazlogger/tlazloggerfile.blockhandlercount.html
@@ -1982,7 +1994,9 @@
   PLazLoggerLogGroup lazloggerbase/plazloggerloggroup.html
   TLazLoggerLogEnabled lazloggerbase/tlazloggerlogenabled.html
   TLazLoggerWriteTarget lazloggerbase/tlazloggerwritetarget.html
+  TLazLoggerWriteExEventInfo lazloggerbase/tlazloggerwriteexeventinfo.html
   TLazLoggerWriteEvent lazloggerbase/tlazloggerwriteevent.html
+  TLazLoggerWriteExEvent lazloggerbase/tlazloggerwriteexevent.html
   TLazLoggerWidgetSetWriteEvent lazloggerbase/tlazloggerwidgetsetwriteevent.html
   TLazDebugLoggerCreator lazloggerbase/tlazdebugloggercreator.html
   TLazLoggerBlockHandler lazloggerbase/tlazloggerblockhandler.html
@@ -2002,7 +2016,6 @@
   TLazLogger lazloggerbase/tlazlogger.html
    DoInit lazloggerbase/tlazlogger.doinit.html
    DoFinish lazloggerbase/tlazlogger.dofinish.html
-   DoFinsh lazloggerbase/tlazlogger.dofinsh.html
    IncreaseIndent lazloggerbase/tlazlogger.increaseindent.html
    DecreaseIndent lazloggerbase/tlazlogger.decreaseindent.html
    IndentChanged lazloggerbase/tlazlogger.indentchanged.html
@@ -2192,7 +2205,6 @@
   ChangeLineEndings lazstringutils/changelineendings.html
   LineBreaksToSystemLineBreaks lazstringutils/linebreakstosystemlinebreaks.html
   LineBreaksToDelimiter lazstringutils/linebreakstodelimiter.html
-  ConvertLineEndings lazstringutils/convertlineendings.html
   TabsToSpaces lazstringutils/tabstospaces.html
   CommentText lazstringutils/commenttext.html
   SimpleSyntaxToRegExpr lazstringutils/simplesyntaxtoregexpr.html
@@ -2352,21 +2364,10 @@
   LazGetLanguageIDs lazutf8/lazgetlanguageids.html
   LazGetShortLanguageID lazutf8/lazgetshortlanguageid.html
   FPUpChars lazutf8/fpupchars.html
- LazUTF8Classes lazutf8classes/index.html
-  TFileStreamUTF8 lazutf8classes/tfilestreamutf8.html
-  TStringListUTF8 lazutf8classes/tstringlistutf8.html
-   DoCompareText lazutf8classes/tstringlistutf8.docomparetext.html
-   LoadFromFile lazutf8classes/tstringlistutf8.loadfromfile.html
-   SaveToFile lazutf8classes/tstringlistutf8.savetofile.html
-  TMemoryStreamUTF8 lazutf8classes/tmemorystreamutf8.html
-   LoadFromFile lazutf8classes/tmemorystreamutf8.loadfromfile.html
-   SaveToFile lazutf8classes/tmemorystreamutf8.savetofile.html
-  LoadStringsFromFileUTF8 lazutf8classes/loadstringsfromfileutf8.html
-  SaveStringsToFileUTF8 lazutf8classes/savestringstofileutf8.html
- LazUTF8SysUtils lazutf8sysutils/index.html
-  NowUTC lazutf8sysutils/nowutc.html
-  GetTickCount64 lazutf8sysutils/gettickcount64.html
  LazUtilities lazutilities/index.html
+  TGetSkipCheckByKey lazutilities/tgetskipcheckbykey.html
+  GetSkipCheckByKey lazutilities/getskipcheckbykey.html
+  SetSkipCheckByKeyProc lazutilities/setskipcheckbykeyproc.html
   FreeThenNil lazutilities/freethennil.html
   ComparePointers lazutilities/comparepointers.html
   CompareBoolean lazutilities/compareboolean.html
@@ -2434,6 +2435,9 @@
   laz_patch lazversion/laz_patch.html
   laz_fullversion lazversion/laz_fullversion.html
   laz_version lazversion/laz_version.html
+  TLCLWidgetTypeNameEvent lazversion/tlclwidgettypenameevent.html
+  GetLCLWidgetTypeName lazversion/getlclwidgettypename.html
+  OnLCLWidgetTypeName lazversion/onlclwidgettypename.html
  Laz_DOM laz_dom/index.html
   TDOMImplementation laz_dom/tdomimplementation.html
   TDOMDocumentFragment laz_dom/tdomdocumentfragment.html
@@ -2623,7 +2627,6 @@
   CP866ToUTF8 lconvencoding/cp866toutf8.html
   CP874ToUTF8 lconvencoding/cp874toutf8.html
   KOI8RToUTF8 lconvencoding/koi8rtoutf8.html
-  KOI8ToUTF8 lconvencoding/koi8toutf8.html
   MacintoshToUTF8 lconvencoding/macintoshtoutf8.html
   SingleByteToUTF8 lconvencoding/singlebytetoutf8.html
   UCS2LEToUTF8 lconvencoding/ucs2letoutf8.html
@@ -2676,7 +2679,7 @@
   ConvertEncodingErrorMode lconvencoding/convertencodingerrormode.html
   ConvertAnsiToUTF8 lconvencoding/convertansitoutf8.html
   ConvertUTF8ToAnsi lconvencoding/convertutf8toansi.html
- lcsvutils lcsvutils/index.html
+ LCSVUtils lcsvutils/index.html
   TCSVRecordProc lcsvutils/tcsvrecordproc.html
   TCSVEncoding lcsvutils/tcsvencoding.html
   LoadFromCSVStream lcsvutils/loadfromcsvstream.html
@@ -2976,6 +2979,7 @@
   sBadFormatFlag translations/sbadformatflag.html
   sFormatFlag translations/sformatflag.html
   sNoFormatFlag translations/snoformatflag.html
+  TLanguageID translations/tlanguageid.html
   TStringsType translations/tstringstype.html
   TTranslateUnitResult translations/ttranslateunitresult.html
   TTranslationStatistics translations/ttranslationstatistics.html
@@ -3043,6 +3047,8 @@
   EPOFileError translations/epofileerror.html
    ResFileName translations/epofileerror.resfilename.html
    POFileName translations/epofileerror.pofilename.html
+  GetLanguageIDFromLocaleName translations/getlanguageidfromlocalename.html
+  GetLanguageID translations/getlanguageid.html
   GetPOFilenameParts translations/getpofilenameparts.html
   FindAllTranslatedPoFiles translations/findalltranslatedpofiles.html
   TranslateUnitResourceStrings translations/translateunitresourcestrings.html
@@ -3215,6 +3221,8 @@
 2MDisposeItem
 2MItemsAreEqual
 2MCreateCopy
+3MAssign
+3MAddTree
 3MGetData
 3MGetNodeData
 3MGetEnumerator
@@ -3353,7 +3361,6 @@
 1MSetUseGlobalLogGroupList
 2MDoInit
 2MDoFinish
-2MDoFinsh
 2MIncreaseIndent
 2MDecreaseIndent
 2MIndentChanged
@@ -4352,7 +4359,7 @@
 3MDestroy
 3MAllocNode
 3MFreeNode
-#lazutils.laz2_xmlutils.THashTable #rtl.System.TObject
+#lazutils.Laz2_XMLUtils.THashTable #rtl.System.TObject
 1VFCount
 1VFBucketCount
 1VFBucket
@@ -4369,19 +4376,19 @@
 3MRemoveData
 3MForEach
 3PCount r
-#lazutils.laz2_xmlutils.TDblHashArray #rtl.System.TObject
+#lazutils.Laz2_XMLUtils.TDblHashArray #rtl.System.TObject
 1VFSizeLog
 1VFRevision
 1VFData
 3MInit
 3MLocate
 3MDestroy
-#lazutils.laz2_xmlutils.TBinding #rtl.System.TObject
+#lazutils.Laz2_XMLUtils.TBinding #rtl.System.TObject
 3Vuri
 3Vnext
 3VprevPrefixBinding
 3VPrefix
-#lazutils.laz2_xmlutils.TNSSupport #rtl.System.TObject
+#lazutils.Laz2_XMLUtils.TNSSupport #rtl.System.TObject
 1VFNesting
 1VFPrefixSeqNo
 1VFFreeBindings
@@ -4466,7 +4473,7 @@
 2MReadProperty
 3MWriteObject
 3MReadObject
-#lazutils.laz2_XMLRead.EXMLReadError #rtl.sysutils.Exception
+#lazutils.Laz2_XMLRead.EXMLReadError #rtl.sysutils.Exception
 1VFSeverity
 1VFErrorMessage
 1VFLine
@@ -4476,7 +4483,7 @@
 3PLine r
 3PLinePos r
 3MLineCol
-#lazutils.laz2_XMLRead.TDOMParseOptions #rtl.System.TObject
+#lazutils.Laz2_XMLRead.TDOMParseOptions #rtl.System.TObject
 1VFValidate
 1VFPreserveWhitespace
 1VFExpandEntities
@@ -4499,7 +4506,7 @@
 3PDisallowDoctype rw
 3PMaxChars rw
 3PCanonicalForm rw
-#lazutils.laz2_XMLRead.TXMLInputSource #rtl.System.TObject
+#lazutils.Laz2_XMLRead.TXMLInputSource #rtl.System.TObject
 1VFStream
 1VFStringData
 1VFBaseURI
@@ -4511,7 +4518,7 @@
 3PBaseURI rw
 3PSystemID rw
 3PPublicID rw
-#lazutils.laz2_XMLRead.TDOMParser #rtl.System.TObject
+#lazutils.Laz2_XMLRead.TDOMParser #rtl.System.TObject
 1VFOptions
 1VFOnError
 3MCreate
@@ -4521,56 +4528,56 @@
 3MParseWithContext
 3POptions r
 3POnError rw
-#lazutils.laz2_xpath.TXPathExprNode #rtl.System.TObject
+#lazutils.Laz2_XPath.TXPathExprNode #rtl.System.TObject
 2MEvalPredicate
 3MEvaluate
-#lazutils.laz2_xpath.TXPathConstantNode #lazutils.laz2_xpath.TXPathExprNode
+#lazutils.Laz2_XPath.TXPathConstantNode #lazutils.Laz2_XPath.TXPathExprNode
 1VFValue
 3MCreate
 3MDestroy
 3MEvaluate
-#lazutils.laz2_xpath.TXPathVariableNode #lazutils.laz2_xpath.TXPathExprNode
+#lazutils.Laz2_XPath.TXPathVariableNode #lazutils.Laz2_XPath.TXPathExprNode
 1VFName
 3MCreate
 3MEvaluate
-#lazutils.laz2_xpath.TXPathFunctionNode #lazutils.laz2_xpath.TXPathExprNode
+#lazutils.Laz2_XPath.TXPathFunctionNode #lazutils.Laz2_XPath.TXPathExprNode
 1VFName
 1VFArgs
 3MCreate
 3MDestroy
 3MEvaluate
-#lazutils.laz2_xpath.TXPathNegationNode #lazutils.laz2_xpath.TXPathExprNode
+#lazutils.Laz2_XPath.TXPathNegationNode #lazutils.Laz2_XPath.TXPathExprNode
 1VFOperand
 3MCreate
 3MDestroy
 3MEvaluate
-#lazutils.laz2_xpath.TXPathBinaryNode #lazutils.laz2_xpath.TXPathExprNode
+#lazutils.Laz2_XPath.TXPathBinaryNode #lazutils.Laz2_XPath.TXPathExprNode
 2VFOperand1
 2VFOperand2
 3MDestroy
-#lazutils.laz2_xpath.TXPathMathOpNode #lazutils.laz2_xpath.TXPathBinaryNode
+#lazutils.Laz2_XPath.TXPathMathOpNode #lazutils.Laz2_XPath.TXPathBinaryNode
 1VFOperator
 3MCreate
 3MEvaluate
-#lazutils.laz2_xpath.TXPathCompareNode #lazutils.laz2_xpath.TXPathBinaryNode
+#lazutils.Laz2_XPath.TXPathCompareNode #lazutils.Laz2_XPath.TXPathBinaryNode
 1VFOperator
 3MCreate
 3MEvaluate
-#lazutils.laz2_xpath.TXPathBooleanOpNode #lazutils.laz2_xpath.TXPathBinaryNode
+#lazutils.Laz2_XPath.TXPathBooleanOpNode #lazutils.Laz2_XPath.TXPathBinaryNode
 1VFOperator
 3MCreate
 3MEvaluate
-#lazutils.laz2_xpath.TXPathUnionNode #lazutils.laz2_xpath.TXPathBinaryNode
+#lazutils.Laz2_XPath.TXPathUnionNode #lazutils.Laz2_XPath.TXPathBinaryNode
 3MCreate
 3MEvaluate
-#lazutils.laz2_xpath.TXPathFilterNode #lazutils.laz2_xpath.TXPathExprNode
+#lazutils.Laz2_XPath.TXPathFilterNode #lazutils.Laz2_XPath.TXPathExprNode
 1VFLeft
 1VFPredicates
 1MApplyPredicates
 3MCreate
 3MDestroy
 3MEvaluate
-#lazutils.laz2_xpath.TStep #lazutils.laz2_xpath.TXPathFilterNode
+#lazutils.Laz2_XPath.TStep #lazutils.Laz2_XPath.TXPathFilterNode
 1MSelectNodes
 3VAxis
 3VNodeTestType
@@ -4578,8 +4585,8 @@
 3VNSTestString
 3MCreate
 3MEvaluate
-#lazutils.laz2_xpath.EXPathEvaluationError #rtl.sysutils.Exception
-#lazutils.laz2_xpath.TXPathVariable #rtl.System.TObject
+#lazutils.Laz2_XPath.EXPathEvaluationError #rtl.sysutils.Exception
+#lazutils.Laz2_XPath.TXPathVariable #rtl.System.TObject
 2VFRefCount
 2MError
 3MTypeName
@@ -4588,7 +4595,7 @@
 3MAsBoolean
 3MAsNumber
 3MAsText
-#lazutils.laz2_xpath.TXPathNodeSetVariable #lazutils.laz2_xpath.TXPathVariable
+#lazutils.Laz2_XPath.TXPathNodeSetVariable #lazutils.Laz2_XPath.TXPathVariable
 1VFValue
 3MCreate
 3MDestroy
@@ -4598,7 +4605,7 @@
 3MAsBoolean
 3MAsNumber
 3PValue r
-#lazutils.laz2_xpath.TXPathBooleanVariable #lazutils.laz2_xpath.TXPathVariable
+#lazutils.Laz2_XPath.TXPathBooleanVariable #lazutils.Laz2_XPath.TXPathVariable
 1VFValue
 3MCreate
 3MTypeName
@@ -4606,7 +4613,7 @@
 3MAsNumber
 3MAsText
 3PValue r
-#lazutils.laz2_xpath.TXPathNumberVariable #lazutils.laz2_xpath.TXPathVariable
+#lazutils.Laz2_XPath.TXPathNumberVariable #lazutils.Laz2_XPath.TXPathVariable
 1VFValue
 3MCreate
 3MTypeName
@@ -4614,7 +4621,7 @@
 3MAsNumber
 3MAsText
 3PValue r
-#lazutils.laz2_xpath.TXPathStringVariable #lazutils.laz2_xpath.TXPathVariable
+#lazutils.Laz2_XPath.TXPathStringVariable #lazutils.Laz2_XPath.TXPathVariable
 1VFValue
 3MCreate
 3MTypeName
@@ -4622,11 +4629,11 @@
 3MAsNumber
 3MAsText
 3PValue r
-#lazutils.laz2_xpath.TXPathNSResolver #rtl.System.TObject
+#lazutils.Laz2_XPath.TXPathNSResolver #rtl.System.TObject
 2VFNode
 3MCreate
 3MLookupNamespaceURI
-#lazutils.laz2_xpath.TXPathScanner #rtl.System.TObject
+#lazutils.Laz2_XPath.TXPathScanner #rtl.System.TObject
 1VFExpressionString
 1VFCurData
 1VFCurToken
@@ -4660,12 +4667,12 @@
 3MSkipToken
 3PCurToken r
 3PCurTokenString r
-#lazutils.laz2_xpath.TXPathContext #rtl.System.TObject
+#lazutils.Laz2_XPath.TXPathContext #rtl.System.TObject
 3VContextNode
 3VContextPosition
 3VContextSize
 3MCreate
-#lazutils.laz2_xpath.TXPathEnvironment #rtl.System.TObject
+#lazutils.Laz2_XPath.TXPathEnvironment #rtl.System.TObject
 1VFFunctions
 1VFVariables
 1MGetFunctionCount
@@ -4713,7 +4720,7 @@
 3PFunctionsByName r
 3PVariables r
 3PVariablesByName r
-#lazutils.laz2_xpath.TXPathExpression #rtl.System.TObject
+#lazutils.Laz2_XPath.TXPathExpression #rtl.System.TObject
 1VFRootNode
 3MCreate
 3MDestroy
@@ -5195,6 +5202,8 @@
 1VFFileHandle
 1VFOnDbgOut
 1VFOnDebugLn
+1VFOnDbgOutEx
+1VFOnDebugLnEx
 1VFBlockHandler
 1VFEnvironmentForLogFileName
 1VFParamForLogFileName
@@ -5234,6 +5243,8 @@
 3PEnvironmentForLogFileName rw
 3POnDebugLn rw
 3POnDbgOut rw
+3POnDebugLnEx rw
+3POnDbgOutEx rw
 3MAddBlockHandler
 3MRemoveBlockHandler
 3MBlockHandlerCount
@@ -5285,13 +5296,6 @@
 1VfCurrentCodePointCount
 3PCurrentCodePointCount r
 3MMoveNext
-#lazutils.LazUTF8Classes.TStringListUTF8 #rtl.Classes.TStringList
-2MDoCompareText
-3MLoadFromFile
-3MSaveToFile
-#lazutils.LazUTF8Classes.TMemoryStreamUTF8 #rtl.Classes.TMemoryStream
-3MLoadFromFile
-3MSaveToFile
 #lazutils.Laz_XMLStreaming.TXMLObjectWriterStackEl #rtl.System.TObject
 3VElement
 3VParent
