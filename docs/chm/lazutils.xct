@@ -879,7 +879,7 @@
    Item laz2_dom/tdomnamednodemap.item.html
    SortedItem laz2_dom/tdomnamednodemap.sorteditem.html
    Length laz2_dom/tdomnamednodemap.length.html
-   setNamedItemNS 
+   setNamedItemNS laz2_dom/tdomnamednodemap.setnameditem.html
   TDOMCharacterData laz2_dom/tdomcharacterdata.html
    GetLength laz2_dom/tdomcharacterdata.getlength.html
    GetNodeValue laz2_dom/tdomcharacterdata.getnodevalue.html
@@ -2469,6 +2469,7 @@
   ReadXMLFragment laz_xmlread/readxmlfragment.html
   ReadDTDFile laz_xmlread/readdtdfile.html
  Laz_XMLStreaming laz_xmlstreaming/index.html
+  TXMLObjectWriterString laz_xmlstreaming/txmlobjectwriterstring.html
   TXMLObjectWriterStackElType laz_xmlstreaming/txmlobjectwriterstackeltype.html
   TXMLObjectWriterClass laz_xmlstreaming/txmlobjectwriterclass.html
   TXMLObjectReaderClass laz_xmlstreaming/txmlobjectreaderclass.html

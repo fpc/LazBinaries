@@ -758,6 +758,18 @@
    ItemHeight stdctrls/tcustomlistbox.itemheight.html
    ItemIndex stdctrls/tcustomlistbox.itemindex.html
    MultiSelect stdctrls/tcustomlistbox.multiselect.html
+   ParentBidiMode controls/tcontrol.parentbidimode.html
+   ParentColor controls/tcontrol.parentcolor.html
+   ParentFont controls/tcontrol.parentfont.html
+   ParentShowHint controls/tcontrol.parentshowhint.html
+   PopupMenu controls/tcontrol.popupmenu.html
+   ShowHint controls/tcontrol.showhint.html
+   Sorted stdctrls/tcustomlistbox.sorted.html
+   Style stdctrls/tcustomlistbox.style.html
+   TabOrder controls/twincontrol.taborder.html
+   TabStop controls/twincontrol.tabstop.html
+   TopIndex stdctrls/tcustomlistbox.topindex.html
+   Visible controls/tcontrol.visible.html
    OnChangeBounds controls/tcontrol.onchangebounds.html
    OnClick controls/tcontrol.onclick.html
    OnClickCheck checklst/tcustomchecklistbox.onclickcheck.html
@@ -790,18 +802,6 @@
    OnShowHint controls/tcontrol.onshowhint.html
    OnStartDrag controls/tcontrol.onstartdrag.html
    OnUTF8KeyPress controls/twincontrol.onutf8keypress.html
-   ParentBidiMode controls/tcontrol.parentbidimode.html
-   ParentColor controls/tcontrol.parentcolor.html
-   ParentFont controls/tcontrol.parentfont.html
-   ParentShowHint controls/tcontrol.parentshowhint.html
-   PopupMenu controls/tcontrol.popupmenu.html
-   ShowHint controls/tcontrol.showhint.html
-   Sorted stdctrls/tcustomlistbox.sorted.html
-   Style stdctrls/tcustomlistbox.style.html
-   TabOrder controls/twincontrol.taborder.html
-   TabStop controls/twincontrol.tabstop.html
-   TopIndex stdctrls/tcustomlistbox.topindex.html
-   Visible controls/tcontrol.visible.html
   Register checklst/register.html
  Clipbrd clipbrd/index.html
   TClipboardData clipbrd/tclipboarddata.html
@@ -3277,7 +3277,7 @@
    TabStop comctrls/tcustomtreeview.tabstop.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    BeginAutoDrag controls/tcontrol.beginautodrag.html
-   DoDragMsg 
+   DoDragMsg controls/twincontrol.dodragmsg.html
    GetChildAccessibleObjectAtPos controls/tcontrol.getchildaccessibleobjectatpos.html
   TTreeView comctrls/ttreeview.html
    ParentColor comctrls/ttreeview.parentcolor.html
@@ -3422,6 +3422,7 @@
   TCustomHeaderControl comctrls/tcustomheadercontrol.html
    CreateSection comctrls/tcustomheadercontrol.createsection.html
    CreateSections comctrls/tcustomheadercontrol.createsections.html
+   Loaded comctrls/tcustomheadercontrol.loaded.html
    Notification comctrls/tcustomheadercontrol.notification.html
    SectionClick comctrls/tcustomheadercontrol.sectionclick.html
    SectionResize comctrls/tcustomheadercontrol.sectionresize.html
@@ -3450,7 +3451,6 @@
    OnSectionTrack comctrls/tcustomheadercontrol.onsectiontrack.html
    OnSectionSeparatorDblClick comctrls/tcustomheadercontrol.onsectionseparatordblclick.html
    OnCreateSectionClass comctrls/tcustomheadercontrol.oncreatesectionclass.html
-   Loaded controls/twincontrol.loaded.html
    MouseEnter controls/tcontrol.mouseenter.html
    MouseLeave controls/tcontrol.mouseleave.html
    MouseDown controls/tcontrol.mousedown.html
@@ -7564,6 +7564,7 @@
    Flat editbtn/tcustomeditbutton.flat.html
    FocusOnButtonClick editbtn/tcustomeditbutton.focusonbuttonclick.html
    Align controls/tcontrol.align.html
+   Alignment groupededit/tcustomabstractgroupededit.alignment.html
    Anchors controls/tcontrol.anchors.html
    BidiMode controls/tcontrol.bidimode.html
    BorderSpacing controls/tcontrol.borderspacing.html
@@ -7737,6 +7738,7 @@
    Flat editbtn/tcustomeditbutton.flat.html
    FocusOnButtonClick editbtn/tcustomeditbutton.focusonbuttonclick.html
    Align controls/tcontrol.align.html
+   Alignment groupededit/tcustomabstractgroupededit.alignment.html
    Anchors controls/tcontrol.anchors.html
    AutoSize controls/tcontrol.autosize.html
    AutoSelect groupededit/tcustomabstractgroupededit.autoselect.html
@@ -7821,6 +7823,7 @@
    ButtonWidth editbtn/tcustomeditbutton.buttonwidth.html
    Action controls/tcontrol.action.html
    Align controls/tcontrol.align.html
+   Alignment groupededit/tcustomabstractgroupededit.alignment.html
    Anchors controls/tcontrol.anchors.html
    AutoSize controls/tcontrol.autosize.html
    AutoSelect stdctrls/tcustomedit.autoselect.html
@@ -7899,6 +7902,7 @@
    ButtonWidth editbtn/tcustomeditbutton.buttonwidth.html
    Action controls/tcontrol.action.html
    Align controls/tcontrol.align.html
+   Alignment groupededit/tcustomabstractgroupededit.alignment.html
    Anchors controls/tcontrol.anchors.html
    AutoSize controls/tcontrol.autosize.html
    AutoSelect groupededit/tcustomabstractgroupededit.autoselect.html
@@ -7985,6 +7989,7 @@
    Flat editbtn/tcustomeditbutton.flat.html
    FocusOnButtonClick editbtn/tcustomeditbutton.focusonbuttonclick.html
    Align controls/tcontrol.align.html
+   Alignment groupededit/tcustomabstractgroupededit.alignment.html
    Anchors controls/tcontrol.anchors.html
    BidiMode controls/tcontrol.bidimode.html
    BorderSpacing controls/tcontrol.borderspacing.html
@@ -10033,6 +10038,7 @@
    HintRect forms/thintwindow.hintrect.html
    HintRectAdjust forms/thintwindow.hintrectadjust.html
    HintData forms/thintwindow.hintdata.html
+   HintControl forms/thintwindow.hintcontrol.html
    AutoHide forms/thintwindow.autohide.html
    HideInterval forms/thintwindow.hideinterval.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
@@ -10075,6 +10081,7 @@
    CustomFormZIndex forms/tscreen.customformzindex.html
    MoveFormToFocusFront forms/tscreen.moveformtofocusfront.html
    MoveFormToZFront forms/tscreen.moveformtozfront.html
+   NewFormWasCreated forms/tscreen.newformwascreated.html
    GetCurrentModalForm forms/tscreen.getcurrentmodalform.html
    GetCurrentModalFormZIndex forms/tscreen.getcurrentmodalformzindex.html
    CustomFormBelongsToActiveGroup forms/tscreen.customformbelongstoactivegroup.html
@@ -10085,6 +10092,8 @@
    UpdateMonitors forms/tscreen.updatemonitors.html
    UpdateScreen forms/tscreen.updatescreen.html
    RemoveAllHandlersOfObject forms/tscreen.removeallhandlersofobject.html
+   AddHandlerNewFormCreated forms/tscreen.addhandlernewformcreated.html
+   RemoveHandlerNewFormCreated forms/tscreen.removehandlernewformcreated.html
    AddHandlerFormAdded forms/tscreen.addhandlerformadded.html
    RemoveHandlerFormAdded forms/tscreen.removehandlerformadded.html
    AddHandlerRemoveForm forms/tscreen.addhandlerremoveform.html
@@ -10170,6 +10179,7 @@
    Destroy forms/tapplication.destroy.html
    ActivateHint forms/tapplication.activatehint.html
    GetControlAtMouse forms/tapplication.getcontrolatmouse.html
+   GetControlAtPos forms/tapplication.getcontrolatpos.html
    ControlDestroyed forms/tapplication.controldestroyed.html
    BigIconHandle forms/tapplication.bigiconhandle.html
    SmallIconHandle forms/tapplication.smalliconhandle.html
@@ -13135,6 +13145,8 @@
    AppRestoreStayOnTopFlags interfacebase/twidgetset.apprestorestayontopflags.html
    AppSetMainFormOnTaskBar interfacebase/twidgetset.appsetmainformontaskbar.html
    AppSetupMainForm interfacebase/twidgetset.appsetupmainform.html
+   BeginMessageProcess interfacebase/twidgetset.beginmessageprocess.html
+   EndMessageProcess interfacebase/twidgetset.endmessageprocess.html
    LCLPlatform interfacebase/twidgetset.lclplatform.html
    GetLCLCapability interfacebase/twidgetset.getlclcapability.html
    DCGetPixel interfacebase/twidgetset.dcgetpixel.html
@@ -17353,6 +17365,7 @@
   TLRSOWStackItemState lresources/tlrsowstackitemstate.html
   TLRSOWStackItem lresources/tlrsowstackitem.html
   PLRSOWStackItem lresources/plrsowstackitem.html
+  TLazObjectWriterString lresources/tlazobjectwriterstring.html
   TLRSObjectWriterClass lresources/tlrsobjectwriterclass.html
   TLRPositionLink lresources/tlrpositionlink.html
   PLRPositionLink lresources/plrpositionlink.html
@@ -19328,6 +19341,21 @@
    Items stdctrls/tcustomcombobox.items.html
    ItemWidth stdctrls/tcustomcombobox.itemwidth.html
    MaxLength stdctrls/tcustomcombobox.maxlength.html
+   ParentBidiMode controls/tcontrol.parentbidimode.html
+   ParentColor stdctrls/tcustomcombobox.parentcolor.html
+   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
+   ParentFont controls/tcontrol.parentfont.html
+   ParentShowHint controls/tcontrol.parentshowhint.html
+   PopupMenu controls/tcontrol.popupmenu.html
+   ReadOnly stdctrls/tcustomcombobox.readonly.html
+   ShowHint controls/tcontrol.showhint.html
+   Sorted stdctrls/tcustomcombobox.sorted.html
+   Style stdctrls/tcustomcombobox.style.html
+   TabOrder controls/twincontrol.taborder.html
+   TabStop stdctrls/tcustomcombobox.tabstop.html
+   Text stdctrls/tcustomcombobox.text.html
+   TextHint stdctrls/tcustomcombobox.texthint.html
+   Visible controls/tcontrol.visible.html
    OnChange stdctrls/tcustomcombobox.onchange.html
    OnChangeBounds controls/tcontrol.onchangebounds.html
    OnClick controls/tcontrol.onclick.html
@@ -19358,21 +19386,6 @@
    OnSelect stdctrls/tcustomcombobox.onselect.html
    OnStartDrag controls/tcontrol.onstartdrag.html
    OnUTF8KeyPress controls/twincontrol.onutf8keypress.html
-   ParentBidiMode controls/tcontrol.parentbidimode.html
-   ParentColor stdctrls/tcustomcombobox.parentcolor.html
-   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
-   ParentFont controls/tcontrol.parentfont.html
-   ParentShowHint controls/tcontrol.parentshowhint.html
-   PopupMenu controls/tcontrol.popupmenu.html
-   ReadOnly stdctrls/tcustomcombobox.readonly.html
-   ShowHint controls/tcontrol.showhint.html
-   Sorted stdctrls/tcustomcombobox.sorted.html
-   Style stdctrls/tcustomcombobox.style.html
-   TabOrder controls/twincontrol.taborder.html
-   TabStop stdctrls/tcustomcombobox.tabstop.html
-   Text stdctrls/tcustomcombobox.text.html
-   TextHint stdctrls/tcustomcombobox.texthint.html
-   Visible controls/tcontrol.visible.html
   TCustomListBox stdctrls/tcustomlistbox.html
    AssignItemDataToCache stdctrls/tcustomlistbox.assignitemdatatocache.html
    AssignCacheToItemData stdctrls/tcustomlistbox.assigncachetoitemdata.html
@@ -19498,6 +19511,21 @@
    Items stdctrls/tcustomlistbox.items.html
    ItemIndex stdctrls/tcustomlistbox.itemindex.html
    MultiSelect stdctrls/tcustomlistbox.multiselect.html
+   Options stdctrls/tcustomlistbox.options.html
+   ParentBidiMode controls/tcontrol.parentbidimode.html
+   ParentColor stdctrls/tcustomlistbox.parentcolor.html
+   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
+   ParentShowHint controls/tcontrol.parentshowhint.html
+   ParentFont controls/tcontrol.parentfont.html
+   PopupMenu controls/tcontrol.popupmenu.html
+   ScrollWidth stdctrls/tcustomlistbox.scrollwidth.html
+   ShowHint controls/tcontrol.showhint.html
+   Sorted stdctrls/tcustomlistbox.sorted.html
+   Style stdctrls/tcustomlistbox.style.html
+   TabOrder controls/twincontrol.taborder.html
+   TabStop stdctrls/tcustomlistbox.tabstop.html
+   TopIndex stdctrls/tcustomlistbox.topindex.html
+   Visible controls/tcontrol.visible.html
    OnChangeBounds controls/tcontrol.onchangebounds.html
    OnClick controls/tcontrol.onclick.html
    OnContextPopup controls/tcontrol.oncontextpopup.html
@@ -19528,21 +19556,6 @@
    OnShowHint controls/tcontrol.onshowhint.html
    OnStartDrag controls/tcontrol.onstartdrag.html
    OnUTF8KeyPress controls/twincontrol.onutf8keypress.html
-   Options stdctrls/tcustomlistbox.options.html
-   ParentBidiMode controls/tcontrol.parentbidimode.html
-   ParentColor stdctrls/tcustomlistbox.parentcolor.html
-   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
-   ParentShowHint controls/tcontrol.parentshowhint.html
-   ParentFont controls/tcontrol.parentfont.html
-   PopupMenu controls/tcontrol.popupmenu.html
-   ScrollWidth stdctrls/tcustomlistbox.scrollwidth.html
-   ShowHint controls/tcontrol.showhint.html
-   Sorted stdctrls/tcustomlistbox.sorted.html
-   Style stdctrls/tcustomlistbox.style.html
-   TabOrder controls/twincontrol.taborder.html
-   TabStop stdctrls/tcustomlistbox.tabstop.html
-   TopIndex stdctrls/tcustomlistbox.topindex.html
-   Visible controls/tcontrol.visible.html
   TCustomEdit stdctrls/tcustomedit.html
    CanShowEmulatedTextHint stdctrls/tcustomedit.canshowemulatedtexthint.html
    CalculatePreferredSize stdctrls/tcustomedit.calculatepreferredsize.html
@@ -19688,6 +19701,19 @@
    MaxLength stdctrls/tcustomedit.maxlength.html
    NumbersOnly stdctrls/tcustomedit.numbersonly.html
    ParentBidiMode controls/tcontrol.parentbidimode.html
+   ParentColor stdctrls/tcustomedit.parentcolor.html
+   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
+   ParentFont controls/tcontrol.parentfont.html
+   ParentShowHint controls/tcontrol.parentshowhint.html
+   PasswordChar stdctrls/tcustomedit.passwordchar.html
+   PopupMenu controls/tcontrol.popupmenu.html
+   ReadOnly stdctrls/tcustomedit.readonly.html
+   ShowHint controls/tcontrol.showhint.html
+   TabStop stdctrls/tcustomedit.tabstop.html
+   TabOrder controls/twincontrol.taborder.html
+   Text stdctrls/tcustomedit.text.html
+   TextHint stdctrls/tcustomedit.texthint.html
+   Visible controls/tcontrol.visible.html
    OnChange stdctrls/tcustomedit.onchange.html
    OnChangeBounds controls/tcontrol.onchangebounds.html
    OnClick controls/tcontrol.onclick.html
@@ -19713,19 +19739,6 @@
    OnResize controls/tcontrol.onresize.html
    OnStartDrag controls/tcontrol.onstartdrag.html
    OnUTF8KeyPress controls/twincontrol.onutf8keypress.html
-   ParentColor stdctrls/tcustomedit.parentcolor.html
-   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
-   ParentFont controls/tcontrol.parentfont.html
-   ParentShowHint controls/tcontrol.parentshowhint.html
-   PasswordChar stdctrls/tcustomedit.passwordchar.html
-   PopupMenu controls/tcontrol.popupmenu.html
-   ReadOnly stdctrls/tcustomedit.readonly.html
-   ShowHint controls/tcontrol.showhint.html
-   TabStop stdctrls/tcustomedit.tabstop.html
-   TabOrder controls/twincontrol.taborder.html
-   Text stdctrls/tcustomedit.text.html
-   TextHint stdctrls/tcustomedit.texthint.html
-   Visible controls/tcontrol.visible.html
   TMemo stdctrls/tmemo.html
    Align controls/tcontrol.align.html
    Alignment stdctrls/tcustomedit.alignment.html
@@ -19745,6 +19758,21 @@
    HideSelection stdctrls/tcustomedit.hideselection.html
    Lines stdctrls/tcustommemo.lines.html
    MaxLength stdctrls/tcustomedit.maxlength.html
+   ParentBidiMode controls/tcontrol.parentbidimode.html
+   ParentColor controls/tcontrol.parentcolor.html
+   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
+   ParentFont controls/tcontrol.parentfont.html
+   PopupMenu controls/tcontrol.popupmenu.html
+   ParentShowHint controls/tcontrol.parentshowhint.html
+   ReadOnly stdctrls/tcustomedit.readonly.html
+   ScrollBars stdctrls/tcustommemo.scrollbars.html
+   ShowHint controls/tcontrol.showhint.html
+   TabOrder controls/twincontrol.taborder.html
+   TabStop stdctrls/tcustomedit.tabstop.html
+   Visible controls/tcontrol.visible.html
+   WantReturns stdctrls/tcustommemo.wantreturns.html
+   WantTabs stdctrls/tcustommemo.wanttabs.html
+   WordWrap stdctrls/tcustommemo.wordwrap.html
    OnChange stdctrls/tcustomedit.onchange.html
    OnClick controls/tcontrol.onclick.html
    OnContextPopup controls/tcontrol.oncontextpopup.html
@@ -19772,21 +19800,6 @@
    OnResize controls/tcontrol.onresize.html
    OnStartDrag controls/tcontrol.onstartdrag.html
    OnUTF8KeyPress controls/twincontrol.onutf8keypress.html
-   ParentBidiMode controls/tcontrol.parentbidimode.html
-   ParentColor controls/tcontrol.parentcolor.html
-   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
-   ParentFont controls/tcontrol.parentfont.html
-   PopupMenu controls/tcontrol.popupmenu.html
-   ParentShowHint controls/tcontrol.parentshowhint.html
-   ReadOnly stdctrls/tcustomedit.readonly.html
-   ScrollBars stdctrls/tcustommemo.scrollbars.html
-   ShowHint controls/tcontrol.showhint.html
-   TabOrder controls/twincontrol.taborder.html
-   TabStop stdctrls/tcustomedit.tabstop.html
-   Visible controls/tcontrol.visible.html
-   WantReturns stdctrls/tcustommemo.wantreturns.html
-   WantTabs stdctrls/tcustommemo.wanttabs.html
-   WordWrap stdctrls/tcustommemo.wordwrap.html
   TCustomStaticText stdctrls/tcustomstatictext.html
    GetLabelText stdctrls/tcustomstatictext.getlabeltext.html
    Notification stdctrls/tcustomstatictext.notification.html
@@ -19820,6 +19833,18 @@
    Enabled controls/tcontrol.enabled.html
    FocusControl stdctrls/tcustomstatictext.focuscontrol.html
    Font controls/tcontrol.font.html
+   ParentBidiMode controls/tcontrol.parentbidimode.html
+   ParentFont controls/tcontrol.parentfont.html
+   ParentColor controls/tcontrol.parentcolor.html
+   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
+   ParentShowHint controls/tcontrol.parentshowhint.html
+   PopupMenu controls/tcontrol.popupmenu.html
+   ShowAccelChar stdctrls/tcustomstatictext.showaccelchar.html
+   ShowHint controls/tcontrol.showhint.html
+   TabOrder controls/twincontrol.taborder.html
+   TabStop controls/twincontrol.tabstop.html
+   Transparent stdctrls/tcustomstatictext.transparent.html
+   Visible controls/tcontrol.visible.html
    OnChangeBounds controls/tcontrol.onchangebounds.html
    OnClick controls/tcontrol.onclick.html
    OnContextPopup controls/tcontrol.oncontextpopup.html
@@ -19840,20 +19865,7 @@
    OnMouseWheelRight controls/tcontrol.onmousewheelright.html
    OnResize controls/tcontrol.onresize.html
    OnStartDrag controls/tcontrol.onstartdrag.html
-   ParentBidiMode controls/tcontrol.parentbidimode.html
-   ParentFont controls/tcontrol.parentfont.html
-   ParentColor controls/tcontrol.parentcolor.html
-   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
-   ParentShowHint controls/tcontrol.parentshowhint.html
-   PopupMenu controls/tcontrol.popupmenu.html
-   ShowAccelChar stdctrls/tcustomstatictext.showaccelchar.html
-   ShowHint controls/tcontrol.showhint.html
-   TabOrder controls/twincontrol.taborder.html
-   TabStop controls/twincontrol.tabstop.html
-   Transparent stdctrls/tcustomstatictext.transparent.html
-   Visible controls/tcontrol.visible.html
   TButtonControl stdctrls/tbuttoncontrol.html
-   FSkipOnChangeOnClick stdctrls/tbuttoncontrol.fskiponchangeonclick.html
    GetChecked stdctrls/tbuttoncontrol.getchecked.html
    SetChecked stdctrls/tbuttoncontrol.setchecked.html
    DoOnChange stdctrls/tbuttoncontrol.doonchange.html
@@ -19919,6 +19931,14 @@
    Font controls/tcontrol.font.html
    ParentBidiMode controls/tcontrol.parentbidimode.html
    ModalResult stdctrls/tcustombutton.modalresult.html
+   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
+   ParentFont controls/tcontrol.parentfont.html
+   ParentShowHint controls/tcontrol.parentshowhint.html
+   PopupMenu controls/tcontrol.popupmenu.html
+   ShowHint controls/tcontrol.showhint.html
+   TabOrder controls/twincontrol.taborder.html
+   TabStop stdctrls/tcustombutton.tabstop.html
+   Visible controls/tcontrol.visible.html
    OnChangeBounds controls/tcontrol.onchangebounds.html
    OnClick controls/tcontrol.onclick.html
    OnContextPopup controls/tcontrol.oncontextpopup.html
@@ -19941,14 +19961,6 @@
    OnResize controls/tcontrol.onresize.html
    OnStartDrag controls/tcontrol.onstartdrag.html
    OnUTF8KeyPress controls/twincontrol.onutf8keypress.html
-   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
-   ParentFont controls/tcontrol.parentfont.html
-   ParentShowHint controls/tcontrol.parentshowhint.html
-   PopupMenu controls/tcontrol.popupmenu.html
-   ShowHint controls/tcontrol.showhint.html
-   TabOrder controls/twincontrol.taborder.html
-   TabStop stdctrls/tcustombutton.tabstop.html
-   Visible controls/tcontrol.visible.html
   TCustomCheckBox stdctrls/tcustomcheckbox.html
    Click stdctrls/tcustomcheckbox.click.html
    DoClickOnChange stdctrls/tcustomcheckbox.doclickonchange.html
@@ -19960,8 +19972,6 @@
    ApplyChanges stdctrls/tcustomcheckbox.applychanges.html
    Loaded stdctrls/tcustomcheckbox.loaded.html
    TextChanged stdctrls/tcustomcheckbox.textchanged.html
-   VCL_OnClick_Emulation stdctrls/tcustomcheckbox.vcl_onclick_emulation.html
-   CreateClass stdctrls/tcustomcheckbox.createclass.html
    Create stdctrls/tcustomcheckbox.create.html
    Alignment stdctrls/tcustomcheckbox.alignment.html
    AllowGrayed stdctrls/tcustomcheckbox.allowgrayed.html
@@ -19978,8 +19988,8 @@
   TCheckBox stdctrls/tcheckbox.html
    Create stdctrls/tcheckbox.create.html
    AutoSize stdctrls/tcheckbox.autosize.html
-   OnClick stdctrls/tcheckbox.onclick.html
    TabStop stdctrls/tcheckbox.tabstop.html
+   OnClick stdctrls/tcheckbox.onclick.html
    Action controls/tcontrol.action.html
    Align controls/tcontrol.align.html
    Alignment stdctrls/tcustomcheckbox.alignment.html
@@ -19998,6 +20008,16 @@
    Enabled controls/tcontrol.enabled.html
    Font controls/tcontrol.font.html
    Hint controls/tcontrol.hint.html
+   ParentColor controls/tcontrol.parentcolor.html
+   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
+   ParentFont controls/tcontrol.parentfont.html
+   ParentShowHint controls/tcontrol.parentshowhint.html
+   ParentBidiMode controls/tcontrol.parentbidimode.html
+   PopupMenu controls/tcontrol.popupmenu.html
+   ShowHint controls/tcontrol.showhint.html
+   State stdctrls/tcustomcheckbox.state.html
+   TabOrder controls/twincontrol.taborder.html
+   Visible controls/tcontrol.visible.html
    OnChange stdctrls/tbuttoncontrol.onchange.html
    OnChangeBounds controls/tcontrol.onchangebounds.html
    OnContextPopup controls/tcontrol.oncontextpopup.html
@@ -20021,19 +20041,8 @@
    OnResize controls/tcontrol.onresize.html
    OnStartDrag controls/tcontrol.onstartdrag.html
    OnUTF8KeyPress controls/twincontrol.onutf8keypress.html
-   ParentColor controls/tcontrol.parentcolor.html
-   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
-   ParentFont controls/tcontrol.parentfont.html
-   ParentShowHint controls/tcontrol.parentshowhint.html
-   ParentBidiMode controls/tcontrol.parentbidimode.html
-   PopupMenu controls/tcontrol.popupmenu.html
-   ShowHint controls/tcontrol.showhint.html
-   State stdctrls/tcustomcheckbox.state.html
-   TabOrder controls/twincontrol.taborder.html
-   Visible controls/tcontrol.visible.html
   TToggleBox stdctrls/ttogglebox.html
    Create stdctrls/ttogglebox.create.html
-   OnClick stdctrls/ttogglebox.onclick.html
    TabStop stdctrls/ttogglebox.tabstop.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    GetControlClassDefaultSize controls/tcontrol.getcontrolclassdefaultsize.html
@@ -20056,7 +20065,17 @@
    Enabled controls/tcontrol.enabled.html
    Font controls/tcontrol.font.html
    Hint controls/tcontrol.hint.html
+   ParentBidiMode controls/tcontrol.parentbidimode.html
+   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
+   ParentFont controls/tcontrol.parentfont.html
+   ParentShowHint controls/tcontrol.parentshowhint.html
+   PopupMenu controls/tcontrol.popupmenu.html
+   ShowHint controls/tcontrol.showhint.html
+   State stdctrls/tcustomcheckbox.state.html
+   TabOrder controls/twincontrol.taborder.html
+   Visible controls/tcontrol.visible.html
    OnChange stdctrls/tbuttoncontrol.onchange.html
+   OnClick controls/tcontrol.onclick.html
    OnContextPopup controls/tcontrol.oncontextpopup.html
    OnDragDrop controls/tcontrol.ondragdrop.html
    OnDragOver controls/tcontrol.ondragover.html
@@ -20073,15 +20092,6 @@
    OnMouseWheelUp controls/tcontrol.onmousewheelup.html
    OnResize controls/tcontrol.onresize.html
    OnStartDrag controls/tcontrol.onstartdrag.html
-   ParentBidiMode controls/tcontrol.parentbidimode.html
-   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
-   ParentFont controls/tcontrol.parentfont.html
-   ParentShowHint controls/tcontrol.parentshowhint.html
-   PopupMenu controls/tcontrol.popupmenu.html
-   ShowHint controls/tcontrol.showhint.html
-   State stdctrls/tcustomcheckbox.state.html
-   TabOrder controls/twincontrol.taborder.html
-   Visible controls/tcontrol.visible.html
   TRadioButton stdctrls/tradiobutton.html
    ApplyChanges stdctrls/tradiobutton.applychanges.html
    DialogChar stdctrls/tradiobutton.dialogchar.html
@@ -20090,7 +20100,6 @@
    CreateParams stdctrls/tradiobutton.createparams.html
    Create stdctrls/tradiobutton.create.html
    AutoSize stdctrls/tradiobutton.autosize.html
-   OnClick stdctrls/tradiobutton.onclick.html
    TabStop stdctrls/tradiobutton.tabstop.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    Align controls/tcontrol.align.html
@@ -20109,8 +20118,18 @@
    Enabled controls/tcontrol.enabled.html
    Font controls/tcontrol.font.html
    Hint controls/tcontrol.hint.html
+   ParentBidiMode controls/tcontrol.parentbidimode.html
+   ParentColor controls/tcontrol.parentcolor.html
+   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
+   ParentFont controls/tcontrol.parentfont.html
+   ParentShowHint controls/tcontrol.parentshowhint.html
+   PopupMenu controls/tcontrol.popupmenu.html
+   ShowHint controls/tcontrol.showhint.html
+   TabOrder controls/twincontrol.taborder.html
+   Visible controls/tcontrol.visible.html
    OnChange stdctrls/tbuttoncontrol.onchange.html
    OnChangeBounds controls/tcontrol.onchangebounds.html
+   OnClick controls/tcontrol.onclick.html
    OnContextPopup controls/tcontrol.oncontextpopup.html
    OnDragDrop controls/tcontrol.ondragdrop.html
    OnDragOver controls/tcontrol.ondragover.html
@@ -20130,15 +20149,6 @@
    OnMouseWheelUp controls/tcontrol.onmousewheelup.html
    OnResize controls/tcontrol.onresize.html
    OnStartDrag controls/tcontrol.onstartdrag.html
-   ParentBidiMode controls/tcontrol.parentbidimode.html
-   ParentColor controls/tcontrol.parentcolor.html
-   ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
-   ParentFont controls/tcontrol.parentfont.html
-   ParentShowHint controls/tcontrol.parentshowhint.html
-   PopupMenu controls/tcontrol.popupmenu.html
-   ShowHint controls/tcontrol.showhint.html
-   TabOrder controls/twincontrol.taborder.html
-   Visible controls/tcontrol.visible.html
   TCustomLabel stdctrls/tcustomlabel.html
    CanTab stdctrls/tcustomlabel.cantab.html
    DoDrawText stdctrls/tcustomlabel.dodrawtext.html
@@ -20194,6 +20204,7 @@
    FocusControl stdctrls/tcustomlabel.focuscontrol.html
    Font controls/tcontrol.font.html
    Layout stdctrls/tcustomlabel.layout.html
+   OptimalFill stdctrls/tcustomlabel.optimalfill.html
    ParentBidiMode controls/tcontrol.parentbidimode.html
    ParentColor controls/tcontrol.parentcolor.html
    ParentFont controls/tcontrol.parentfont.html
@@ -20224,7 +20235,6 @@
    OnMouseWheelRight controls/tcontrol.onmousewheelright.html
    OnResize controls/tcontrol.onresize.html
    OnStartDrag controls/tcontrol.onstartdrag.html
-   OptimalFill stdctrls/tcustomlabel.optimalfill.html
   CreateEmulatedTextHintFont stdctrls/createemulatedtexthintfont.html
   Register stdctrls/register.html
  Themes themes/index.html
@@ -22464,6 +22474,8 @@
 3MAppRestoreStayOnTopFlags
 3MAppSetMainFormOnTaskBar
 3MAppSetupMainForm
+3MBeginMessageProcess
+3MEndMessageProcess
 3MLCLPlatform
 3MGetLCLCapability
 3MDCGetPixel
@@ -24649,6 +24661,18 @@
 4PItemHeight
 4PItemIndex
 4PMultiSelect
+4PParentBidiMode
+4PParentColor
+4PParentFont
+4PParentShowHint
+4PPopupMenu
+4PShowHint
+4PSorted
+4PStyle
+4PTabOrder
+4PTabStop
+4PTopIndex
+4PVisible
 4POnChangeBounds
 4POnClick
 4POnClickCheck
@@ -24681,18 +24705,6 @@
 4POnShowHint
 4POnStartDrag
 4POnUTF8KeyPress
-4PParentBidiMode
-4PParentColor
-4PParentFont
-4PParentShowHint
-4PPopupMenu
-4PShowHint
-4PSorted
-4PStyle
-4PTabOrder
-4PTabStop
-4PTopIndex
-4PVisible
 #lcl.Controls.IObjInspInterface #rtl.System.IUnknown
 0MAllowAdd
 0MAllowDelete
@@ -26885,6 +26897,21 @@
 4PItems
 4PItemWidth
 4PMaxLength
+4PParentBidiMode
+4PParentColor
+4PParentDoubleBuffered
+4PParentFont
+4PParentShowHint
+4PPopupMenu
+4PReadOnly
+4PShowHint
+4PSorted
+4PStyle
+4PTabOrder
+4PTabStop
+4PText
+4PTextHint
+4PVisible
 4POnChange
 4POnChangeBounds
 4POnClick
@@ -26915,21 +26942,6 @@
 4POnSelect
 4POnStartDrag
 4POnUTF8KeyPress
-4PParentBidiMode
-4PParentColor
-4PParentDoubleBuffered
-4PParentFont
-4PParentShowHint
-4PPopupMenu
-4PReadOnly
-4PShowHint
-4PSorted
-4PStyle
-4PTabOrder
-4PTabStop
-4PText
-4PTextHint
-4PVisible
 #lcl.StdCtrls.TCustomListBox #lcl.Controls.TWinControl
 1MDefOptions
 1VFCacheValid
@@ -27093,6 +27105,21 @@
 4PItemHeight
 4PItemIndex
 4PMultiSelect
+4POptions
+4PParentBidiMode
+4PParentColor
+4PParentDoubleBuffered
+4PParentShowHint
+4PParentFont
+4PPopupMenu
+4PScrollWidth
+4PShowHint
+4PSorted
+4PStyle
+4PTabOrder
+4PTabStop
+4PTopIndex
+4PVisible
 4POnChangeBounds
 4POnClick
 4POnContextPopup
@@ -27123,21 +27150,6 @@
 4POnShowHint
 4POnStartDrag
 4POnUTF8KeyPress
-4POptions
-4PParentBidiMode
-4PParentColor
-4PParentDoubleBuffered
-4PParentShowHint
-4PParentFont
-4PPopupMenu
-4PScrollWidth
-4PShowHint
-4PSorted
-4PStyle
-4PTabOrder
-4PTabStop
-4PTopIndex
-4PVisible
 #lcl.StdCtrls.TCustomEdit #lcl.Controls.TWinControl
 1VFAlignment
 1VFAutoSelect
@@ -27320,6 +27332,19 @@
 4PMaxLength
 4PNumbersOnly
 4PParentBidiMode
+4PParentColor
+4PParentDoubleBuffered
+4PParentFont
+4PParentShowHint
+4PPasswordChar
+4PPopupMenu
+4PReadOnly
+4PShowHint
+4PTabStop
+4PTabOrder
+4PText
+4PTextHint
+4PVisible
 4POnChange
 4POnChangeBounds
 4POnClick
@@ -27345,19 +27370,6 @@
 4POnResize
 4POnStartDrag
 4POnUTF8KeyPress
-4PParentColor
-4PParentDoubleBuffered
-4PParentFont
-4PParentShowHint
-4PPasswordChar
-4PPopupMenu
-4PReadOnly
-4PShowHint
-4PTabStop
-4PTabOrder
-4PText
-4PTextHint
-4PVisible
 #lcl.StdCtrls.TMemo #lcl.StdCtrls.TCustomMemo
 4PAlign
 4PAlignment
@@ -27377,6 +27389,21 @@
 4PHideSelection
 4PLines
 4PMaxLength
+4PParentBidiMode
+4PParentColor
+4PParentDoubleBuffered
+4PParentFont
+4PPopupMenu
+4PParentShowHint
+4PReadOnly
+4PScrollBars
+4PShowHint
+4PTabOrder
+4PTabStop
+4PVisible
+4PWantReturns
+4PWantTabs
+4PWordWrap
 4POnChange
 4POnClick
 4POnContextPopup
@@ -27404,21 +27431,6 @@
 4POnResize
 4POnStartDrag
 4POnUTF8KeyPress
-4PParentBidiMode
-4PParentColor
-4PParentDoubleBuffered
-4PParentFont
-4PPopupMenu
-4PParentShowHint
-4PReadOnly
-4PScrollBars
-4PShowHint
-4PTabOrder
-4PTabStop
-4PVisible
-4PWantReturns
-4PWantTabs
-4PWordWrap
 #lcl.StdCtrls.TCustomStaticText #lcl.Controls.TWinControl
 1VFAlignment
 1VFFocusControl
@@ -27461,6 +27473,18 @@
 4PEnabled
 4PFocusControl
 4PFont
+4PParentBidiMode
+4PParentFont
+4PParentColor
+4PParentDoubleBuffered
+4PParentShowHint
+4PPopupMenu
+4PShowAccelChar
+4PShowHint
+4PTabOrder
+4PTabStop
+4PTransparent
+4PVisible
 4POnChangeBounds
 4POnClick
 4POnContextPopup
@@ -27481,24 +27505,11 @@
 4POnMouseWheelRight
 4POnResize
 4POnStartDrag
-4PParentBidiMode
-4PParentFont
-4PParentColor
-4PParentDoubleBuffered
-4PParentShowHint
-4PPopupMenu
-4PShowAccelChar
-4PShowHint
-4PTabOrder
-4PTabStop
-4PTransparent
-4PVisible
 #lcl.StdCtrls.TButtonControl #lcl.Controls.TWinControl
 1VFOnChange
 1VFClicksDisabled
 1MIsCheckedStored
 1MWMDefaultClicked
-2VFSkipOnChangeOnClick
 2MWSRegisterClass
 2MGetActionLinkClass
 2MGetChecked
@@ -27578,6 +27589,14 @@
 4PFont
 4PParentBidiMode
 4PModalResult
+4PParentDoubleBuffered
+4PParentFont
+4PParentShowHint
+4PPopupMenu
+4PShowHint
+4PTabOrder
+4PTabStop
+4PVisible
 4POnChangeBounds
 4POnClick
 4POnContextPopup
@@ -27600,14 +27619,6 @@
 4POnResize
 4POnStartDrag
 4POnUTF8KeyPress
-4PParentDoubleBuffered
-4PParentFont
-4PParentShowHint
-4PPopupMenu
-4PShowHint
-4PTabOrder
-4PTabStop
-4PVisible
 #lcl.StdCtrls.TCustomCheckBox #lcl.StdCtrls.TButtonControl
 1VFAlignment
 1VFAllowGrayed
@@ -27635,8 +27646,6 @@
 2MWSSetText
 2MTextChanged
 2MCreateParams
-3VVCL_OnClick_Emulation
-3MCreateClass
 3MCreate
 3PAlignment rw
 3PAllowGrayed rw
@@ -27665,6 +27674,17 @@
 4PEnabled
 4PFont
 4PHint
+4PParentColor
+4PParentDoubleBuffered
+4PParentFont
+4PParentShowHint
+4PParentBidiMode
+4PPopupMenu
+4PShowHint
+4PState
+4PTabOrder
+4PTabStop
+4PVisible
 4POnChange
 4POnChangeBounds
 4POnClick
@@ -27689,17 +27709,6 @@
 4POnResize
 4POnStartDrag
 4POnUTF8KeyPress
-4PParentColor
-4PParentDoubleBuffered
-4PParentFont
-4PParentShowHint
-4PParentBidiMode
-4PPopupMenu
-4PShowHint
-4PState
-4PTabOrder
-4PTabStop
-4PVisible
 #lcl.StdCtrls.TToggleBox #lcl.StdCtrls.TCustomCheckBox
 2MWSRegisterClass
 2MGetControlClassDefaultSize
@@ -27723,6 +27732,16 @@
 4PEnabled
 4PFont
 4PHint
+4PParentBidiMode
+4PParentDoubleBuffered
+4PParentFont
+4PParentShowHint
+4PPopupMenu
+4PShowHint
+4PState
+4PTabOrder
+4PTabStop
+4PVisible
 4POnChange
 4POnClick
 4POnContextPopup
@@ -27741,16 +27760,6 @@
 4POnMouseWheelUp
 4POnResize
 4POnStartDrag
-4PParentBidiMode
-4PParentDoubleBuffered
-4PParentFont
-4PParentShowHint
-4PPopupMenu
-4PShowHint
-4PState
-4PTabOrder
-4PTabStop
-4PVisible
 #lcl.StdCtrls.TRadioButton #lcl.StdCtrls.TCustomCheckBox
 2MWSRegisterClass
 2MApplyChanges
@@ -27776,6 +27785,16 @@
 4PEnabled
 4PFont
 4PHint
+4PParentBidiMode
+4PParentColor
+4PParentDoubleBuffered
+4PParentFont
+4PParentShowHint
+4PPopupMenu
+4PShowHint
+4PTabOrder
+4PTabStop
+4PVisible
 4POnChange
 4POnChangeBounds
 4POnClick
@@ -27798,16 +27817,6 @@
 4POnMouseWheelUp
 4POnResize
 4POnStartDrag
-4PParentBidiMode
-4PParentColor
-4PParentDoubleBuffered
-4PParentFont
-4PParentShowHint
-4PPopupMenu
-4PShowHint
-4PTabOrder
-4PTabStop
-4PVisible
 #lcl.StdCtrls.TCustomLabel #lcl.Controls.TGraphicControl
 1VFAlignment
 1VFFocusControl
@@ -27872,6 +27881,7 @@
 4PFocusControl
 4PFont
 4PLayout
+4POptimalFill
 4PParentBidiMode
 4PParentColor
 4PParentFont
@@ -27902,7 +27912,6 @@
 4POnMouseWheelRight
 4POnResize
 4POnStartDrag
-4POptimalFill
 #lcl.Forms.TCustomHintAction #lcl.ActnList.TCustomAction
 4PHint
 #lcl.Forms.EScrollBar #rtl.sysutils.Exception
@@ -28579,6 +28588,7 @@
 1VFAutoHide
 1VFAutoHideTimer
 1VFHideInterval
+1VFHintCtrl
 1MAdjustBoundsForMonitor
 1MGetDrawTextFlags
 1MSetAutoHide
@@ -28616,6 +28626,7 @@
 3PHintRect rw
 3PHintRectAdjust rw
 3PHintData rw
+3PHintControl rw
 3PAutoHide rw
 3PBiDiMode
 3PHideInterval rw
@@ -28736,6 +28747,7 @@
 3MCustomFormZIndex
 3MMoveFormToFocusFront
 3MMoveFormToZFront
+3MNewFormWasCreated
 3MGetCurrentModalForm
 3MGetCurrentModalFormZIndex
 3MCustomFormBelongsToActiveGroup
@@ -28746,6 +28758,8 @@
 3MUpdateMonitors
 3MUpdateScreen
 3MRemoveAllHandlersOfObject
+3MAddHandlerNewFormCreated
+3MRemoveHandlerNewFormCreated
 3MAddHandlerFormAdded
 3MRemoveHandlerFormAdded
 3MAddHandlerRemoveForm
@@ -28942,6 +28956,7 @@
 3MDestroy
 3MActivateHint
 3MGetControlAtMouse
+3MGetControlAtPos
 3MControlDestroyed
 3MBigIconHandle
 3MSmallIconHandle
@@ -40614,6 +40629,7 @@
 4PFlat
 4PFocusOnButtonClick
 4PAlign
+4PAlignment
 4PAnchors
 4PBidiMode
 4PBorderSpacing
@@ -40808,6 +40824,7 @@
 4PFlat
 4PFocusOnButtonClick
 4PAlign
+4PAlignment
 4PAnchors
 4PAutoSize
 4PAutoSelect
@@ -40920,6 +40937,7 @@
 4PButtonWidth
 4PAction
 4PAlign
+4PAlignment
 4PAnchors
 4PAutoSize
 4PAutoSelect
@@ -41014,6 +41032,7 @@
 4PButtonWidth
 4PAction
 4PAlign
+4PAlignment
 4PAnchors
 4PAutoSize
 4PAutoSelect
@@ -41112,6 +41131,7 @@
 4PFlat
 4PFocusOnButtonClick
 4PAlign
+4PAlignment
 4PAnchors
 4PBidiMode
 4PBorderSpacing
