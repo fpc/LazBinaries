@@ -9920,7 +9920,7 @@
    AlphaBlend forms/tcustomform.alphablend.html
    AlphaBlendValue forms/tcustomform.alphablendvalue.html
    Anchors controls/tcontrol.anchors.html
-   AutoScroll forms/tscrollingwincontrol.autoscroll.html
+   AutoScroll forms/tcustomform.autoscroll.html
    AutoSize controls/tcontrol.autosize.html
    BiDiMode controls/tcontrol.bidimode.html
    BorderIcons forms/tcustomform.bordericons.html
@@ -16121,6 +16121,8 @@
   idButtonOpen lcltype/idbuttonopen.html
   idButtonSave lcltype/idbuttonsave.html
   idButtonShield lcltype/idbuttonshield.html
+  idButtonContinue lcltype/idbuttoncontinue.html
+  idButtonTryAgain lcltype/idbuttontryagain.html
   idDialogBase lcltype/iddialogbase.html
   idDialogWarning lcltype/iddialogwarning.html
   idDialogError lcltype/iddialogerror.html
@@ -18512,6 +18514,7 @@
    Destroy shellctrls/tcustomshelltreeview.destroy.html
    GetBasePath shellctrls/tcustomshelltreeview.getbasepath.html
    GetRootPath shellctrls/tcustomshelltreeview.getrootpath.html
+   GetFilesInDir shellctrls/tcustomshelltreeview.getfilesindir.html
    GetPathFromNode shellctrls/tcustomshelltreeview.getpathfromnode.html
    PopulateWithBaseFiles shellctrls/tcustomshelltreeview.populatewithbasefiles.html
    Refresh shellctrls/tcustomshelltreeview.refresh.html
@@ -27925,6 +27928,7 @@
 1VFTracking
 1VFVisible
 1VFOldScrollInfo
+1VFOldVisible
 1VFOldScrollInfoValid
 2VFControl
 2VFPosition
@@ -38691,6 +38695,7 @@
 3MDestroy
 3MGetBasePath
 3MGetRootPath
+3MGetFilesInDir
 3MGetPathFromNode
 3MPopulateWithBaseFiles
 3MRefresh
