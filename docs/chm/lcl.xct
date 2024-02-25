@@ -3277,7 +3277,7 @@
    TabStop comctrls/tcustomtreeview.tabstop.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    BeginAutoDrag controls/tcontrol.beginautodrag.html
-   DoDragMsg controls/twincontrol.dodragmsg.html
+   DoDragMsg 
    GetChildAccessibleObjectAtPos controls/tcontrol.getchildaccessibleobjectatpos.html
   TTreeView comctrls/ttreeview.html
    ParentColor comctrls/ttreeview.parentcolor.html
@@ -3943,6 +3943,7 @@
    MinWidth controls/tsizeconstraints.minwidth.html
   TControlBorderSpacing controls/tcontrolborderspacing.html
    Change controls/tcontrolborderspacing.change.html
+   GetOwner controls/tcontrolborderspacing.getowner.html
    Create controls/tcontrolborderspacing.create.html
    Assign controls/tcontrolborderspacing.assign.html
    AssignTo controls/tcontrolborderspacing.assignto.html
@@ -11355,6 +11356,7 @@
   GetColorValues graphics/getcolorvalues.html
   InvertColor graphics/invertcolor.html
   DecColor graphics/deccolor.html
+  IncColor graphics/inccolor.html
   IsSysColor graphics/issyscolor.html
   Blue graphics/blue.html
   Green graphics/green.html
@@ -17684,18 +17686,19 @@
    SpaceChar maskedit/tcustommaskedit.spacechar.html
    MaxLength maskedit/tcustommaskedit.maxlength.html
    EditMask maskedit/tcustommaskedit.editmask.html
-   ValidationErrorMode maskedit/tcustommaskedit.validationerrormode.html
    Create maskedit/tcustommaskedit.create.html
    Clear maskedit/tcustommaskedit.clear.html
    SelectAll maskedit/tcustommaskedit.selectall.html
    ValidateEdit maskedit/tcustommaskedit.validateedit.html
    EnableSets maskedit/tcustommaskedit.enablesets.html
+   ValidationErrorMode maskedit/tcustommaskedit.validationerrormode.html
    Modified maskedit/tcustommaskedit.modified.html
    OnValidationError maskedit/tcustommaskedit.onvalidationerror.html
    CutToClipBoard stdctrls/tcustomedit.cuttoclipboard.html
    PasteFromClipBoard stdctrls/tcustomedit.pastefromclipboard.html
   TMaskEdit maskedit/tmaskedit.html
    CharCase maskedit/tmaskedit.charcase.html
+   EnableSets maskedit/tcustommaskedit.enablesets.html
    PopupMenu maskedit/tmaskedit.popupmenu.html
    ShowHint maskedit/tmaskedit.showhint.html
    TabOrder maskedit/tmaskedit.taborder.html
@@ -17704,10 +17707,10 @@
    OnKeyDown maskedit/tmaskedit.onkeydown.html
    OnKeyPress maskedit/tmaskedit.onkeypress.html
    OnKeyUp maskedit/tmaskedit.onkeyup.html
+   OnValidationError maskedit/tcustommaskedit.onvalidationerror.html
    Text maskedit/tmaskedit.text.html
    IsMasked maskedit/tcustommaskedit.ismasked.html
    EditText maskedit/tcustommaskedit.edittext.html
-   ValidationErrorMode maskedit/tcustommaskedit.validationerrormode.html
    Align controls/tcontrol.align.html
    Alignment stdctrls/tcustomedit.alignment.html
    Anchors controls/tcontrol.anchors.html
@@ -17729,6 +17732,7 @@
    ParentFont controls/tcontrol.parentfont.html
    ParentShowHint controls/tcontrol.parentshowhint.html
    ReadOnly stdctrls/tcustomedit.readonly.html
+   ValidationErrorMode maskedit/tcustommaskedit.validationerrormode.html
    OnChange stdctrls/tcustomedit.onchange.html
    OnClick controls/tcontrol.onclick.html
    OnDblClick controls/tcontrol.ondblclick.html
@@ -24941,6 +24945,7 @@
 1MSetSpace
 1MSetTop
 2MChange
+2MGetOwner
 3MCreate
 3MAssign
 3MAssignTo
@@ -36205,7 +36210,6 @@
 2PSpaceChar rw
 2PMaxLength rw
 2PEditMask rw
-2PValidationErrorMode rw
 3MCutToClipBoard
 3MPasteFromClipBoard
 3MCreate
@@ -36213,12 +36217,12 @@
 3MSelectAll
 3MValidateEdit
 3PEnableSets rw
+3PValidationErrorMode rw
 3PModified rw
 3POnValidationError rw
 #lcl.MaskEdit.TMaskEdit #lcl.MaskEdit.TCustomMaskEdit
 3PIsMasked
 3PEditText
-3PValidationErrorMode
 4PAlign
 4PAlignment
 4PAnchors
@@ -36234,6 +36238,7 @@
 4PDragKind
 4PDragMode
 4PEnabled
+4PEnableSets
 4PFont
 4PMaxLength
 4PParentBiDiMode
@@ -36245,6 +36250,7 @@
 4PShowHint
 4PTabOrder
 4PTabStop
+4PValidationErrorMode
 4PVisible
 4POnChange
 4POnClick
@@ -36269,6 +36275,7 @@
 4POnMouseWheelUp
 4POnStartDock
 4POnStartDrag
+4POnValidationError
 4POnUTF8KeyPress
 4PEditMask
 4PText

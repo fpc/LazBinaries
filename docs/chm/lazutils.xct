@@ -879,7 +879,7 @@
    Item laz2_dom/tdomnamednodemap.item.html
    SortedItem laz2_dom/tdomnamednodemap.sorteditem.html
    Length laz2_dom/tdomnamednodemap.length.html
-   setNamedItemNS laz2_dom/tdomnamednodemap.setnameditem.html
+   setNamedItemNS 
   TDOMCharacterData laz2_dom/tdomcharacterdata.html
    GetLength laz2_dom/tdomcharacterdata.getlength.html
    GetNodeValue laz2_dom/tdomcharacterdata.getnodevalue.html
@@ -1467,7 +1467,7 @@
    Notify lazclasses/trefcntobjlist.notify.html
   ReleaseRefAndNil lazclasses/releaserefandnil.html
   NilThenReleaseRef lazclasses/nilthenreleaseref.html
- lazCollections lazcollections/index.html
+ LazCollections lazcollections/index.html
   PPRTLEvent lazcollections/pprtlevent.html
   TWaitableSection lazcollections/twaitablesection.html
    GetCachedOrNewEvent lazcollections/twaitablesection.getcachedornewevent.html
@@ -2284,7 +2284,8 @@
   TConvertOption lazutf8/tconvertoption.html
   TConvertOptions lazutf8/tconvertoptions.html
   TStringListUTF8Fast lazutf8/tstringlistutf8fast.html
-   DoCompareText lazutf8/tstringlistutf8fast.docomparetext.html
+   InsertItem lazutf8/tstringlistutf8fast.insertitem.html
+   Create lazutf8/tstringlistutf8fast.create.html
   NeedRTLAnsi lazutf8/needrtlansi.html
   SetNeedRTLAnsi lazutf8/setneedrtlansi.html
   UTF8ToSys lazutf8/utf8tosys.html
@@ -2348,6 +2349,7 @@
   UTF8ReverseString lazutf8/utf8reversestring.html
   UTF8RPos lazutf8/utf8rpos.html
   UTF8WrapText lazutf8/utf8wraptext.html
+  IsPureAscii lazutf8/ispureascii.html
   Utf8EscapeControlChars lazutf8/utf8escapecontrolchars.html
   UTF8Trim lazutf8/utf8trim.html
   UTF8CompareStr lazutf8/utf8comparestr.html
@@ -3234,7 +3236,8 @@
 #lazutils.AvgLvlTree.TFilenameToPointerTree #lazutils.AvgLvlTree.TStringToPointerTree
 3MCreate
 #lazutils.LazUTF8.TStringListUTF8Fast #rtl.Classes.TStringList
-2MDoCompareText
+2MInsertItem
+3MCreate
 #lazutils.CompWriterPas.TCompWriterPas #rtl.System.TObject
 1VFAccessClass
 1VFAncestor
@@ -4726,7 +4729,7 @@
 3MCreate
 3MDestroy
 3MEvaluate
-#lazutils.lazCollections.TLazMonitor #fcl.syncobjs.TCriticalSection
+#lazutils.LazCollections.TLazMonitor #fcl.syncobjs.TCriticalSection
 1VFSpinCount
 1VFDefaultSpinCount
 1MGetDefaultSpinCount
@@ -4737,7 +4740,7 @@
 3MAcquire
 3PSpinCount rw
 3PDefaultSpinCount rw
-#lazutils.lazCollections.TLazFifoQueue #rtl.System.TObject
+#lazutils.LazCollections.TLazFifoQueue #rtl.System.TObject
 1VFList
 1VFQueueSize
 2VFTotalItemsPopped
@@ -4753,7 +4756,7 @@
 3PTotalItemsPushed r
 3PIsEmpty r
 3PIsFull r
-#lazutils.lazCollections.TLazThreadedQueue #rtl.System.TObject
+#lazutils.LazCollections.TLazThreadedQueue #rtl.System.TObject
 2MTLazTypedFifoQueue
 1VFMonitor
 1VFFifoQueue
