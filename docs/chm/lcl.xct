@@ -1340,6 +1340,7 @@
   TItemFind comctrls/titemfind.html
   TSearchDirection comctrls/tsearchdirection.html
   TLVChangeEvent comctrls/tlvchangeevent.html
+  TLVChangingEvent comctrls/tlvchangingevent.html
   TLVDataFindEvent comctrls/tlvdatafindevent.html
   TLVDataHintEvent comctrls/tlvdatahintevent.html
   TLVDataStateChangeEvent comctrls/tlvdatastatechangeevent.html
@@ -1626,6 +1627,7 @@
    GetPageCount comctrls/tcustomtabcontrol.getpagecount.html
    InsertPage comctrls/tcustomtabcontrol.insertpage.html
    RemovePage comctrls/tcustomtabcontrol.removepage.html
+   MaybeSelectFirstControlOnPage comctrls/tcustomtabcontrol.maybeselectfirstcontrolonpage.html
    CanChange comctrls/tcustomtabcontrol.canchange.html
    DisplayRect comctrls/tcustomtabcontrol.displayrect.html
    Tabs comctrls/tcustomtabcontrol.tabs.html
@@ -2082,6 +2084,7 @@
    CreateListItems comctrls/tcustomlistview.createlistitems.html
    CanEdit comctrls/tcustomlistview.canedit.html
    Change comctrls/tcustomlistview.change.html
+   CanChange comctrls/tcustomlistview.canchange.html
    ColClick comctrls/tcustomlistview.colclick.html
    Delete comctrls/tcustomlistview.delete.html
    DoDeletion comctrls/tcustomlistview.dodeletion.html
@@ -2138,6 +2141,7 @@
    ToolTips comctrls/tcustomlistview.tooltips.html
    ViewStyle comctrls/tcustomlistview.viewstyle.html
    OnChange comctrls/tcustomlistview.onchange.html
+   OnChanging comctrls/tcustomlistview.onchanging.html
    OnColumnClick comctrls/tcustomlistview.oncolumnclick.html
    OnCompare comctrls/tcustomlistview.oncompare.html
    OnCreateItemClass comctrls/tcustomlistview.oncreateitemclass.html
@@ -2209,6 +2213,7 @@
    BeginAutoDrag controls/tcontrol.beginautodrag.html
   TListView comctrls/tlistview.html
    ParentColor comctrls/tlistview.parentcolor.html
+   OnChanging comctrls/tlistview.onchanging.html
    Align controls/tcontrol.align.html
    AllocBy comctrls/tcustomlistview.allocby.html
    Anchors controls/tcontrol.anchors.html
@@ -3277,7 +3282,7 @@
    TabStop comctrls/tcustomtreeview.tabstop.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    BeginAutoDrag controls/tcontrol.beginautodrag.html
-   DoDragMsg 
+   DoDragMsg controls/twincontrol.dodragmsg.html
    GetChildAccessibleObjectAtPos controls/tcontrol.getchildaccessibleobjectatpos.html
   TTreeView comctrls/ttreeview.html
    ParentColor comctrls/ttreeview.parentcolor.html
@@ -8672,6 +8677,7 @@
    CMVisibleChanged controls/twincontrol.cmvisiblechanged.html
    CMEnabledChanged controls/twincontrol.cmenabledchanged.html
   TLabeledEdit extctrls/tlabelededit.html
+   NumbersOnly extctrls/tlabelededit.numbersonly.html
    Alignment stdctrls/tcustomedit.alignment.html
    Anchors controls/tcontrol.anchors.html
    AutoSelect stdctrls/tcustomedit.autoselect.html
@@ -31217,6 +31223,7 @@
 4PLabelPosition
 4PLabelSpacing
 4PMaxLength
+4PNumbersOnly
 4PParentBidiMode
 4PParentColor
 4PParentDoubleBuffered
@@ -32112,6 +32119,7 @@
 2MGetPageCount
 2MInsertPage
 2MRemovePage
+2MMaybeSelectFirstControlOnPage
 2MCanChange
 2PDisplayRect r
 2PTabs rw
@@ -32748,6 +32756,7 @@
 1VFHoverTime
 1VFUpdateCount
 1VFOnChange
+1VFOnChanging
 1VFOnColumnClick
 1VFOnCompare
 1VFOnData
@@ -32833,6 +32842,7 @@
 2MCreateListItems
 2MCanEdit
 2MChange
+2MCanChange
 2MColClick
 2MDelete
 2MDoDeletion
@@ -32889,6 +32899,7 @@
 2PToolTips rw
 2PViewStyle rw
 2POnChange rw
+2POnChanging rw
 2POnColumnClick rw
 2POnCompare rw
 2POnCreateItemClass rw
@@ -33009,6 +33020,7 @@
 4POnAdvancedCustomDrawItem
 4POnAdvancedCustomDrawSubItem
 4POnChange
+4POnChanging
 4POnClick
 4POnColumnClick
 4POnCompare
