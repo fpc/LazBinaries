@@ -426,6 +426,8 @@
   TFileFoundEvent fileutil/tfilefoundevent.html
   TDirectoryFoundEvent fileutil/tdirectoryfoundevent.html
   TDirectoryEnterEvent fileutil/tdirectoryenterevent.html
+  TQueryFileFoundEvent fileutil/tqueryfilefoundevent.html
+  TQueryDirectoryFoundEvent fileutil/tquerydirectoryfoundevent.html
   TCopyFileFlag fileutil/tcopyfileflag.html
   TCopyFileFlags fileutil/tcopyfileflags.html
   TFileIterator fileutil/tfileiterator.html
@@ -440,6 +442,8 @@
    DoDirectoryEnter fileutil/tfilesearcher.dodirectoryenter.html
    DoDirectoryFound fileutil/tfilesearcher.dodirectoryfound.html
    DoFileFound fileutil/tfilesearcher.dofilefound.html
+   DoQueryFileFound fileutil/tfilesearcher.doqueryfilefound.html
+   DoQueryDirectoryEnter fileutil/tfilesearcher.doquerydirectoryenter.html
    Create fileutil/tfilesearcher.create.html
    Search fileutil/tfilesearcher.search.html
    MaskSeparator fileutil/tfilesearcher.maskseparator.html
@@ -447,9 +451,12 @@
    FollowSymLink fileutil/tfilesearcher.followsymlink.html
    FileAttribute fileutil/tfilesearcher.fileattribute.html
    DirectoryAttribute fileutil/tfilesearcher.directoryattribute.html
+   CircularLinkdetection fileutil/tfilesearcher.circularlinkdetection.html
    OnDirectoryFound fileutil/tfilesearcher.ondirectoryfound.html
    OnFileFound fileutil/tfilesearcher.onfilefound.html
    OnDirectoryEnter fileutil/tfilesearcher.ondirectoryenter.html
+   OnQueryFileFound fileutil/tfilesearcher.onqueryfilefound.html
+   OnQueryDirectoryEnter fileutil/tfilesearcher.onquerydirectoryenter.html
   TListFileSearcher fileutil/tlistfilesearcher.html
    DoFileFound fileutil/tlistfilesearcher.dofilefound.html
    Create fileutil/tlistfilesearcher.create.html
@@ -483,7 +490,6 @@
   TStreamSeekType fpcadds/tstreamseektype.html
   TMemStreamSeekType fpcadds/tmemstreamseektype.html
   TCompareMemSize fpcadds/tcomparememsize.html
-  PHandle fpcadds/phandle.html
   GetCompiledTargetOS fpcadds/getcompiledtargetos.html
   GetCompiledTargetCPU fpcadds/getcompiledtargetcpu.html
   StrToWord fpcadds/strtoword.html
@@ -505,11 +511,13 @@
   Distance graphmath/distance.html
   EccentricAngle graphmath/eccentricangle.html
   EllipseRadialLength graphmath/ellipseradiallength.html
+  EllipsePolygon graphmath/ellipsepolygon.html
   FloatPoint graphmath/floatpoint.html
   LineEndPoint graphmath/lineendpoint.html
   MakeMinMax graphmath/makeminmax.html
   MoveRect graphmath/moverect.html
   MoveRectToFit graphmath/moverecttofit.html
+  SameRect graphmath/samerect.html
   PolyBezier2Polyline graphmath/polybezier2polyline.html
   PolyBezierArcPoints graphmath/polybezierarcpoints.html
   Quadrant graphmath/quadrant.html
@@ -542,6 +550,7 @@
   equal(TRect,TRect):Boolean graphmath/op-equal-trect-trect-boolean.html
  GraphType graphtype/index.html
   DefaultByteOrder graphtype/defaultbyteorder.html
+  TPointArray graphtype/tpointarray.html
   TGraphicsColor graphtype/tgraphicscolor.html
   TGraphicsFillStyle graphtype/tgraphicsfillstyle.html
   TGraphicsBevelCut graphtype/tgraphicsbevelcut.html
@@ -641,6 +650,7 @@
   CopyImageData graphtype/copyimagedata.html
   RawImageQueryFlagsToString graphtype/rawimagequeryflagstostring.html
   MissingBits graphtype/missingbits.html
+  DisabledDrawEffectStyle graphtype/disableddraweffectstyle.html
  HTML2TextRender html2textrender/index.html
   THTML2TextRenderer html2textrender/thtml2textrenderer.html
    Create html2textrender/thtml2textrenderer.create.html
@@ -653,6 +663,7 @@
    LinkEndMark html2textrender/thtml2textrenderer.linkendmark.html
    ListItemMark html2textrender/thtml2textrenderer.listitemmark.html
    MoreMark html2textrender/thtml2textrenderer.moremark.html
+   MaxLineLen html2textrender/thtml2textrenderer.maxlinelen.html
    IndentStep html2textrender/thtml2textrenderer.indentstep.html
   RenderHTML2Text html2textrender/renderhtml2text.html
  IntegerList integerlist/index.html
@@ -698,7 +709,6 @@
   stduri_xmlns laz2_dom/stduri_xmlns.html
   PNodePoolArray laz2_dom/pnodepoolarray.html
   TNodePoolArray laz2_dom/tnodepoolarray.html
-  TSetOfChar laz2_dom/tsetofchar.html
   DOMString laz2_dom/domstring.html
   DOMPChar laz2_dom/dompchar.html
   DOMChar laz2_dom/domchar.html
@@ -1450,6 +1460,10 @@
   EvaluationError laz2_xpath/evaluationerror.html
   EvaluateXPathExpression laz2_xpath/evaluatexpathexpression.html
  LazClasses lazclasses/index.html
+  TFreeNotifyingGeneric lazclasses/tfreenotifyinggeneric.html
+   DoDestroy lazclasses/tfreenotifyinggeneric.dodestroy.html
+   AddFreeNotification lazclasses/tfreenotifyinggeneric.addfreenotification.html
+   RemoveFreeNotification lazclasses/tfreenotifyinggeneric.removefreenotification.html
   TFreeNotifyingObject lazclasses/tfreenotifyingobject.html
    Destroy lazclasses/tfreenotifyingobject.destroy.html
    AddFreeNotification lazclasses/tfreenotifyingobject.addfreenotification.html
@@ -2200,6 +2214,7 @@
   LazStartsText lazstringutils/lazstartstext.html
   LazEndsText lazstringutils/lazendstext.html
   PosI lazstringutils/posi.html
+  IsNumeric lazstringutils/isnumeric.html
   IsNumber lazstringutils/isnumber.html
   LineEndingCount lazstringutils/lineendingcount.html
   ChangeLineEndings lazstringutils/changelineendings.html
@@ -2230,6 +2245,8 @@
   StringCase lazstringutils/stringcase.html
   SamePChar lazstringutils/samepchar.html
   StrLScan lazstringutils/strlscan.html
+  SaveStringToFile lazstringutils/savestringtofile.html
+  LoadStringFromFile lazstringutils/loadstringfromfile.html
   LazIsValidIdent lazstringutils/lazisvalidident.html
  LazSysUtils lazsysutils/index.html
   NowUTC lazsysutils/nowutc.html
@@ -2304,6 +2321,7 @@
   UTF8CodepointSizeFast lazutf8/utf8codepointsizefast.html
   UTF8Length lazutf8/utf8length.html
   UTF8LengthFast lazutf8/utf8lengthfast.html
+  UTF8CodepointCount lazutf8/utf8codepointcount.html
   UTF8CodepointToUnicode lazutf8/utf8codepointtounicode.html
   UTF8CharacterToUnicode lazutf8/utf8charactertounicode.html
   UnicodeToUTF8 lazutf8/unicodetoutf8.html
@@ -2331,6 +2349,8 @@
   UTF8LowerString lazutf8/utf8lowerstring.html
   UTF8UpperCase lazutf8/utf8uppercase.html
   UTF8UpperString lazutf8/utf8upperstring.html
+  UTF8UpperCaseFast lazutf8/utf8uppercasefast.html
+  UTF8LowerCaseFast lazutf8/utf8lowercasefast.html
   UTF8SwapCase lazutf8/utf8swapcase.html
   UTF8ProperCase lazutf8/utf8propercase.html
   FindInvalidUTF8Codepoint lazutf8/findinvalidutf8codepoint.html
@@ -2368,6 +2388,7 @@
   FPUpChars lazutf8/fpupchars.html
  LazUtilities lazutilities/index.html
   TGetSkipCheckByKey lazutilities/tgetskipcheckbykey.html
+  TStringsSortCompare lazutilities/tstringssortcompare.html
   GetSkipCheckByKey lazutilities/getskipcheckbykey.html
   SetSkipCheckByKeyProc lazutilities/setskipcheckbykeyproc.html
   FreeThenNil lazutilities/freethennil.html
@@ -2379,6 +2400,9 @@
   TruncToInt lazutilities/trunctoint.html
   TruncToCardinal lazutilities/trunctocardinal.html
   StrToDouble lazutilities/strtodouble.html
+  CreateFirstIdentifier lazutilities/createfirstidentifier.html
+  CreateNextIdentifier lazutilities/createnextidentifier.html
+  MergeSort lazutilities/mergesort.html
   MergeSortWithLen lazutilities/mergesortwithlen.html
   ConsoleVerbosity lazutilities/consoleverbosity.html
  LazUtils lazutils/index.html
@@ -3060,26 +3084,6 @@
   UpdatePoFile translations/updatepofile.html
   UpdatePoFileTranslations translations/updatepofiletranslations.html
   SystemCharSetIsUTF8 translations/systemcharsetisutf8.html
- UITypes uitypes/index.html
-  mrNone uitypes/mrnone.html
-  mrOK uitypes/mrok.html
-  mrCancel uitypes/mrcancel.html
-  mrAbort uitypes/mrabort.html
-  mrRetry uitypes/mrretry.html
-  mrIgnore uitypes/mrignore.html
-  mrYes uitypes/mryes.html
-  mrNo uitypes/mrno.html
-  mrAll uitypes/mrall.html
-  mrNoToAll uitypes/mrnotoall.html
-  mrYesToAll uitypes/mryestoall.html
-  mrClose uitypes/mrclose.html
-  mrLast uitypes/mrlast.html
-  ModalResultStr uitypes/modalresultstr.html
-  TMsgDlgType uitypes/tmsgdlgtype.html
-  TMsgDlgBtn uitypes/tmsgdlgbtn.html
-  TMsgDlgButtons uitypes/tmsgdlgbuttons.html
-  TModalResult uitypes/tmodalresult.html
-  PModalResult uitypes/pmodalresult.html
  UTF8Process utf8process/index.html
   TProcessUTF8 utf8process/tprocessutf8.html
    ParseCmdLine utf8process/tprocessutf8.parsecmdline.html
@@ -3089,7 +3093,7 @@
   Register utf8process/register.html
 
 :classes
-#lazutils.AvgLvlTree.TAvgLvlTree TAvlTree
+#lazutils.AvgLvlTree.TAvgLvlTree #fcl.AVL_Tree.TAVLTree
 1VFOwnsObjects
 1MGetObjectCompare
 1MSetObjectCompare
@@ -3098,7 +3102,7 @@
 3MFreeAndDelete
 3POwnsObjects rw
 3POnObjectCompare rw
-#lazutils.AvgLvlTree.TIndexedAVLTreeNode TAvlTreeNode
+#lazutils.AvgLvlTree.TIndexedAVLTreeNode #fcl.AVL_Tree.TAVLTreeNode
 3VLeftCount
 #lazutils.AvgLvlTree.TIndexedAVLTree #lazutils.AvgLvlTree.TAvgLvlTree
 1MGetItems
@@ -3409,6 +3413,11 @@
 3MFindOrRegisterLogGroup
 3PParamForEnabledLogGroups rw
 #lazutils.LazLoggerBase.TLazLoggerNoOutput #lazutils.LazLoggerBase.TLazLogger
+#lazutils.LazClasses.TFreeNotifyingGeneric _B
+1VFFreeNotificationList
+2MDoDestroy
+3MAddFreeNotification
+3MRemoveFreeNotification
 #lazutils.LazClasses.TFreeNotifyingObject #rtl.System.TObject
 1VFFreeNotificationList
 3MDestroy
@@ -3692,10 +3701,16 @@
 1VFOnDirectoryEnter
 1VFFileAttribute
 1VFDirectoryAttribute
+1VFOnQueryFileFound
+1VFOnQueryDirectoryEnter
+1VFCircularLinkDetection
+1VVisitedDirs
 1MRaiseSearchingError
 2MDoDirectoryEnter
 2MDoDirectoryFound
 2MDoFileFound
+2MDoQueryFileFound
+2MDoQueryDirectoryEnter
 3MCreate
 3MSearch
 3PMaskSeparator rw
@@ -3703,9 +3718,12 @@
 3PFollowSymLink rw
 3PFileAttribute rw
 3PDirectoryAttribute rw
+3PCircularLinkdetection rw
 3POnDirectoryFound rw
 3POnFileFound rw
 3POnDirectoryEnter rw
+3POnQueryFileFound rw
+3POnQueryDirectoryEnter rw
 #lazutils.FileUtil.TListFileSearcher #lazutils.FileUtil.TFileSearcher
 1VFList
 2MDoFileFound
@@ -3919,6 +3937,7 @@
 1VfHTML
 1VfOutput
 1VfMaxLines
+1VfMaxLineLen
 1VfLineEndMark
 1VfTitleMark
 1VfHorzLine
@@ -3932,6 +3951,7 @@
 1VfPendingNewLineCnt
 1VfIndentStep
 1VfIndent
+1VfLineLen
 1VfLineCnt
 1VfHtmlLen
 1Vp
@@ -3941,6 +3961,7 @@
 1MHtmlTag
 1MHtmlEntity
 1MReset
+1MSplitLongLine
 3MCreate
 3MDestroy
 3MRender
@@ -3951,6 +3972,7 @@
 3PLinkEndMark rw
 3PListItemMark rw
 3PMoreMark rw
+3PMaxLineLen rw
 3PIndentStep rw
 #lazutils.IntegerList.TByteList #lazutils.IntegerList.TByteList.(#rtl.fgl.TFPGList)
 3MSort
