@@ -8805,6 +8805,7 @@
    CMEnabledChanged controls/twincontrol.cmenabledchanged.html
   TLabeledEdit extctrls/tlabelededit.html
    NumbersOnly extctrls/tlabelededit.numbersonly.html
+   OnContextPopup extctrls/tlabelededit.oncontextpopup.html
    Alignment stdctrls/tcustomedit.alignment.html
    Anchors controls/tcontrol.anchors.html
    AutoSelect stdctrls/tcustomedit.autoselect.html
@@ -31565,6 +31566,7 @@
 4PVisible
 4POnChange
 4POnClick
+4POnContextPopup
 4POnDblClick
 4POnDragDrop
 4POnDragOver
