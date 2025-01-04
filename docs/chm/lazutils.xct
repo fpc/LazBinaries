@@ -889,7 +889,7 @@
    Item laz2_dom/tdomnamednodemap.item.html
    SortedItem laz2_dom/tdomnamednodemap.sorteditem.html
    Length laz2_dom/tdomnamednodemap.length.html
-   setNamedItemNS laz2_dom/tdomnamednodemap.setnameditem.html
+   setNamedItemNS 
   TDOMCharacterData laz2_dom/tdomcharacterdata.html
    GetLength laz2_dom/tdomcharacterdata.getlength.html
    GetNodeValue laz2_dom/tdomcharacterdata.getnodevalue.html
@@ -2934,6 +2934,8 @@
    Items objectlists/tobjectarray.items.html
    Objects objectlists/tobjectarray.objects.html
    List objectlists/tobjectarray.list.html
+ PList2JSon plist2json/index.html
+  PListXml2Json plist2json/plistxml2json.html
  StringHashList stringhashlist/index.html
   PStringHashItem stringhashlist/pstringhashitem.html
   TStringHashItem stringhashlist/tstringhashitem.html

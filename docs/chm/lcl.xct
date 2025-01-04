@@ -131,6 +131,7 @@
    SetImageIndex actnlist/tactionlink.setimageindex.html
    SetShortCut actnlist/tactionlink.setshortcut.html
    SetVisible actnlist/tactionlink.setvisible.html
+   Update actnlist/tactionlink.update.html
    IsCaptionLinked actnlist/tactionlink.iscaptionlinked.html
    IsCheckedLinked actnlist/tactionlink.ischeckedlinked.html
    IsEnabledLinked actnlist/tactionlink.isenabledlinked.html
@@ -254,7 +255,6 @@
    CustomAlignPosition controls/twincontrol.customalignposition.html
    CalculatePreferredSize controls/twincontrol.calculatepreferredsize.html
   TButtonPanel buttonpanel/tbuttonpanel.html
-   ShowHint buttonpanel/tbuttonpanel.showhint.html
    Align buttonpanel/tcustombuttonpanel.align.html
    Anchors controls/tcontrol.anchors.html
    AutoSize buttonpanel/tcustombuttonpanel.autosize.html
@@ -273,6 +273,7 @@
    ShowButtons buttonpanel/tcustombuttonpanel.showbuttons.html
    ShowGlyphs buttonpanel/tcustombuttonpanel.showglyphs.html
    ShowBevel buttonpanel/tcustombuttonpanel.showbevel.html
+   ShowHint controls/tcontrol.showhint.html
    Visible controls/tcontrol.visible.html
    OnClick controls/tcontrol.onclick.html
    OnDblClick controls/tcontrol.ondblclick.html
@@ -750,7 +751,6 @@
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    DefineProperties controls/tcontrol.defineproperties.html
   TCheckListBox checklst/tchecklistbox.html
-   Options checklst/tchecklistbox.options.html
    Align controls/tcontrol.align.html
    AllowGrayed checklst/tcustomchecklistbox.allowgrayed.html
    Anchors controls/tcontrol.anchors.html
@@ -772,6 +772,7 @@
    ItemHeight stdctrls/tcustomlistbox.itemheight.html
    ItemIndex stdctrls/tcustomlistbox.itemindex.html
    MultiSelect stdctrls/tcustomlistbox.multiselect.html
+   Options stdctrls/tcustomlistbox.options.html
    ParentBidiMode controls/tcontrol.parentbidimode.html
    ParentColor controls/tcontrol.parentcolor.html
    ParentFont controls/tcontrol.parentfont.html
@@ -2229,7 +2230,6 @@
    BeginAutoDrag controls/tcontrol.beginautodrag.html
   TListView comctrls/tlistview.html
    ParentColor comctrls/tlistview.parentcolor.html
-   OnChanging comctrls/tlistview.onchanging.html
    Align controls/tcontrol.align.html
    AllocBy comctrls/tcustomlistview.allocby.html
    Anchors controls/tcontrol.anchors.html
@@ -2282,6 +2282,7 @@
    OnAdvancedCustomDrawItem comctrls/tcustomlistview.onadvancedcustomdrawitem.html
    OnAdvancedCustomDrawSubItem comctrls/tcustomlistview.onadvancedcustomdrawsubitem.html
    OnChange comctrls/tcustomlistview.onchange.html
+   OnChanging comctrls/tcustomlistview.onchanging.html
    OnClick controls/tcontrol.onclick.html
    OnColumnClick comctrls/tcustomlistview.oncolumnclick.html
    OnCompare comctrls/tcustomlistview.oncompare.html
@@ -3299,14 +3300,14 @@
    TabStop comctrls/tcustomtreeview.tabstop.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    BeginAutoDrag controls/tcontrol.beginautodrag.html
-   DoDragMsg controls/twincontrol.dodragmsg.html
+   DoDragMsg 
    GetChildAccessibleObjectAtPos controls/tcontrol.getchildaccessibleobjectatpos.html
   TTreeView comctrls/ttreeview.html
-   PathDelimiter comctrls/tcustomtreeview.pathdelimiter.html
-   ScrolledLeft comctrls/tcustomtreeview.scrolledleft.html
-   ScrolledTop comctrls/tcustomtreeview.scrolledtop.html
    ParentColor comctrls/ttreeview.parentcolor.html
    TabStop comctrls/ttreeview.tabstop.html
+   PathDelimiter 
+   ScrolledLeft 
+   ScrolledTop 
    Align controls/tcontrol.align.html
    Anchors controls/tcontrol.anchors.html
    AutoExpand comctrls/tcustomtreeview.autoexpand.html
@@ -7072,6 +7073,7 @@
   BitBtnKindToMsgDlgBtn dialogs/bitbtnkindtomsgdlgbtn.html
   ofExNoPlacesBar dialogs/ofexnoplacesbar.html
   DefaultOpenDialogOptions dialogs/defaultopendialogoptions.html
+  DefaultColorDialogOptions dialogs/defaultcolordialogoptions.html
   PBST_NORMAL dialogs/pbst_normal.html
   PBST_ERROR dialogs/pbst_error.html
   PBST_PAUSED dialogs/pbst_paused.html
@@ -7096,6 +7098,8 @@
   TOpenOptions dialogs/topenoptions.html
   TOpenOptionEx dialogs/topenoptionex.html
   TOpenOptionsEx dialogs/topenoptionsex.html
+  TColorDialogOption dialogs/tcolordialogoption.html
+  TColorDialogOptions dialogs/tcolordialogoptions.html
   TFontDialogOption dialogs/tfontdialogoption.html
   TFontDialogOptions dialogs/tfontdialogoptions.html
   TFindOption dialogs/tfindoption.html
@@ -7198,6 +7202,7 @@
    Title dialogs/tcolordialog.title.html
    Color dialogs/tcolordialog.color.html
    CustomColors dialogs/tcolordialog.customcolors.html
+   Options dialogs/tcolordialog.options.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
   TColorButton dialogs/tcolorbutton.html
    DoAutoAdjustLayout dialogs/tcolorbutton.doautoadjustlayout.html
@@ -7335,7 +7340,7 @@
    Default dialogs/ttaskdialogbasebuttonitem.default.html
   TTaskDialogButtonItem dialogs/ttaskdialogbuttonitem.html
    Create dialogs/ttaskdialogbuttonitem.create.html
-   CommandLinkHint dialogs/ttaskdialogbuttonitem.commandlinkhint.html
+   CommandLinkHint dialogs/ttaskdialogbasebuttonitem.commandlinkhint.html
    ModalResult dialogs/ttaskdialogbasebuttonitem.modalresult.html
   TTaskDialogRadioButtonItem dialogs/ttaskdialogradiobuttonitem.html
    Create dialogs/ttaskdialogradiobuttonitem.create.html
@@ -7360,7 +7365,7 @@
    Position dialogs/ttaskdialogprogressbar.position.html
    State dialogs/ttaskdialogprogressbar.state.html
   TCustomTaskDialog dialogs/tcustomtaskdialog.html
-   WSRegisterClass 
+   WSRegisterClass dialogs/tcustomtaskdialog.wsregisterclass.html
    DoExecute dialogs/tcustomtaskdialog.doexecute.html
    DoOnButtonClicked dialogs/tcustomtaskdialog.doonbuttonclicked.html
    DoOnRadioButtonClicked dialogs/tcustomtaskdialog.doonradiobuttonclicked.html
@@ -7421,25 +7426,12 @@
    OnNavigated dialogs/tcustomtaskdialog.onnavigated.html
    OnHelp dialogs/tcustomtaskdialog.onhelp.html
   TTaskDialog dialogs/ttaskdialog.html
-   CollapseButtonCaption dialogs/ttaskdialog.collapsebuttoncaption.html
-   CustomFooterIcon dialogs/ttaskdialog.customfootericon.html
-   CustomMainIcon dialogs/ttaskdialog.custommainicon.html
-   ProgressBar dialogs/ttaskdialog.progressbar.html
-   QueryChoices dialogs/ttaskdialog.querychoices.html
-   QueryItemIndex dialogs/ttaskdialog.queryitemindex.html
-   SimpleQuery dialogs/ttaskdialog.simplequery.html
-   SimpleQueryPasswordChar dialogs/ttaskdialog.simplequerypasswordchar.html
-   OnDialogConstructed dialogs/ttaskdialog.ondialogconstructed.html
-   OnDialogCreated dialogs/ttaskdialog.ondialogcreated.html
-   OnDialogDestroyed dialogs/ttaskdialog.ondialogdestroyed.html
-   OnVerificationClicked dialogs/ttaskdialog.onverificationclicked.html
-   OnExpanded dialogs/ttaskdialog.onexpanded.html
-   OnTimer dialogs/ttaskdialog.ontimer.html
-   OnRadioButtonClicked dialogs/ttaskdialog.onradiobuttonclicked.html
-   OnHyperlinkClicked dialogs/ttaskdialog.onhyperlinkclicked.html
    Buttons dialogs/tcustomtaskdialog.buttons.html
    Caption dialogs/tcustomtaskdialog.caption.html
    CommonButtons dialogs/tcustomtaskdialog.commonbuttons.html
+   CollapseButtonCaption dialogs/tcustomtaskdialog.collapsebuttoncaption.html
+   CustomFooterIcon dialogs/tcustomtaskdialog.customfootericon.html
+   CustomMainIcon dialogs/tcustomtaskdialog.custommainicon.html
    DefaultButton dialogs/tcustomtaskdialog.defaultbutton.html
    ExpandButtonCaption dialogs/tcustomtaskdialog.expandbuttoncaption.html
    ExpandedText dialogs/tcustomtaskdialog.expandedtext.html
@@ -7447,12 +7439,25 @@
    FooterIcon dialogs/tcustomtaskdialog.footericon.html
    FooterText dialogs/tcustomtaskdialog.footertext.html
    MainIcon dialogs/tcustomtaskdialog.mainicon.html
+   ProgressBar dialogs/tcustomtaskdialog.progressbar.html
    RadioButtons dialogs/tcustomtaskdialog.radiobuttons.html
+   QueryChoices dialogs/tcustomtaskdialog.querychoices.html
+   QueryItemIndex dialogs/tcustomtaskdialog.queryitemindex.html
+   SimpleQuery dialogs/tcustomtaskdialog.simplequery.html
+   SimpleQueryPasswordChar dialogs/tcustomtaskdialog.simplequerypasswordchar.html
    Text dialogs/tcustomtaskdialog.text.html
    Title dialogs/tcustomtaskdialog.title.html
    VerificationText dialogs/tcustomtaskdialog.verificationtext.html
    Width dialogs/tcustomtaskdialog.width.html
    OnButtonClicked dialogs/tcustomtaskdialog.onbuttonclicked.html
+   OnDialogConstructed dialogs/tcustomtaskdialog.ondialogconstructed.html
+   OnDialogCreated dialogs/tcustomtaskdialog.ondialogcreated.html
+   OnDialogDestroyed dialogs/tcustomtaskdialog.ondialogdestroyed.html
+   OnVerificationClicked dialogs/tcustomtaskdialog.onverificationclicked.html
+   OnExpanded dialogs/tcustomtaskdialog.onexpanded.html
+   OnTimer dialogs/tcustomtaskdialog.ontimer.html
+   OnRadioButtonClicked dialogs/tcustomtaskdialog.onradiobuttonclicked.html
+   OnHyperlinkClicked dialogs/tcustomtaskdialog.onhyperlinkclicked.html
   TCustomCopyToClipboardDialog dialogs/tcustomcopytoclipboarddialog.html
    DoCreate dialogs/tcustomcopytoclipboarddialog.docreate.html
    GetMessageText dialogs/tcustomcopytoclipboarddialog.getmessagetext.html
@@ -7619,8 +7624,9 @@
    OnStartDrag controls/tcontrol.onstartdrag.html
    OnUTF8KeyPress controls/twincontrol.onutf8keypress.html
   TCustomControlFilterEdit editbtn/tcustomcontrolfilteredit.html
-   fNeedUpdate editbtn/tcustomcontrolfilteredit.fneedupdate.html
+   fAlreadyFiltered editbtn/tcustomcontrolfilteredit.falreadyfiltered.html
    fIsFirstUpdate editbtn/tcustomcontrolfilteredit.fisfirstupdate.html
+   fNeedUpdate editbtn/tcustomcontrolfilteredit.fneedupdate.html
    fSelectedPart editbtn/tcustomcontrolfilteredit.fselectedpart.html
    fOnFilterItem editbtn/tcustomcontrolfilteredit.fonfilteritem.html
    fOnFilterItemEx editbtn/tcustomcontrolfilteredit.fonfilteritemex.html
@@ -8008,6 +8014,7 @@
    TimeFormat editbtn/ttimeedit.timeformat.html
    TimeSeparator editbtn/ttimeedit.timeseparator.html
    TimePMString editbtn/ttimeedit.timepmstring.html
+   Text editbtn/ttimeedit.text.html
    Button editbtn/tcustomeditbutton.button.html
    ReadOnly groupededit/tcustomabstractgroupededit.readonly.html
    ButtonCaption editbtn/tcustomeditbutton.buttoncaption.html
@@ -8050,7 +8057,6 @@
    TabStop controls/twincontrol.tabstop.html
    TabOrder controls/twincontrol.taborder.html
    Visible controls/tcontrol.visible.html
-   Text controls/tcontrol.text.html
    TextHint groupededit/tcustomabstractgroupededit.texthint.html
    OnButtonClick editbtn/tcustomeditbutton.onbuttonclick.html
    OnChange groupededit/tcustomabstractgroupededit.onchange.html
@@ -8303,41 +8309,39 @@
    OnStartTimer customtimer/tcustomtimer.onstarttimer.html
    OnStopTimer customtimer/tcustomtimer.onstoptimer.html
   TCustomShape extctrls/tcustomshape.html
-   WSRegisterClass 
    GetControlClassDefaultSize extctrls/tcustomshape.getcontrolclassdefaultsize.html
    Click extctrls/tcustomshape.click.html
    CMShapeHitTest extctrls/tcustomshape.cmshapehittest.html
    DrawToCanvas extctrls/tcustomshape.drawtocanvas.html
    UpdateMask extctrls/tcustomshape.updatemask.html
-   Create controls/tgraphiccontrol.create.html
-   Destroy controls/tgraphiccontrol.destroy.html
+   Create extctrls/tcustomshape.create.html
+   Destroy extctrls/tcustomshape.destroy.html
    PtInShape extctrls/tcustomshape.ptinshape.html
-   Paint controls/tgraphiccontrol.paint.html
+   Paint extctrls/tcustomshape.paint.html
    StyleChanged extctrls/tcustomshape.stylechanged.html
    Brush extctrls/tcustomshape.brush.html
    Pen extctrls/tcustomshape.pen.html
    Shape extctrls/tcustomshape.shape.html
    OnShapeClick extctrls/tcustomshape.onshapeclick.html
    OnShapePoints extctrls/tcustomshape.onshapepoints.html
+   WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
   TShape extctrls/tshape.html
-   Brush extctrls/tshape.brush.html
-   Pen extctrls/tshape.pen.html
-   Shape extctrls/tshape.shape.html
-   OnClick extctrls/tshape.onclick.html
-   OnShapeClick extctrls/tshape.onshapeclick.html
-   OnShapePoints extctrls/tshape.onshapepoints.html
    Align controls/tcontrol.align.html
    Anchors controls/tcontrol.anchors.html
    BorderSpacing controls/tcontrol.borderspacing.html
+   Brush extctrls/tcustomshape.brush.html
    Constraints controls/tcontrol.constraints.html
    DragCursor controls/tcontrol.dragcursor.html
    DragKind controls/tcontrol.dragkind.html
    DragMode controls/tcontrol.dragmode.html
    Enabled controls/tcontrol.enabled.html
    ParentShowHint controls/tcontrol.parentshowhint.html
+   Pen extctrls/tcustomshape.pen.html
+   Shape extctrls/tcustomshape.shape.html
    ShowHint controls/tcontrol.showhint.html
    Visible controls/tcontrol.visible.html
    OnChangeBounds controls/tcontrol.onchangebounds.html
+   OnClick controls/tcontrol.onclick.html
    OnDragDrop controls/tcontrol.ondragdrop.html
    OnDragOver controls/tcontrol.ondragover.html
    OnEndDock controls/tcontrol.onenddock.html
@@ -8357,6 +8361,8 @@
    OnResize controls/tcontrol.onresize.html
    OnStartDock controls/tcontrol.onstartdock.html
    OnStartDrag controls/tcontrol.onstartdrag.html
+   OnShapeClick extctrls/tcustomshape.onshapeclick.html
+   OnShapePoints extctrls/tcustomshape.onshapepoints.html
   TCustomSplitter extctrls/tcustomsplitter.html
    CMEnabledChanged extctrls/tcustomsplitter.cmenabledchanged.html
    AdaptAnchors extctrls/tcustomsplitter.adaptanchors.html
@@ -8753,7 +8759,8 @@
   TBoundLabel extctrls/tboundlabel.html
    Create extctrls/tboundlabel.create.html
    FocusControl extctrls/tboundlabel.focuscontrol.html
-   Alignment 
+   Alignment extctrls/tboundlabel.alignment.html
+   Layout extctrls/tboundlabel.layout.html
    AnchorSideLeft controls/tcontrol.anchorsideleft.html
    AnchorSideTop controls/tcontrol.anchorsidetop.html
    AnchorSideRight controls/tcontrol.anchorsideright.html
@@ -8772,7 +8779,6 @@
    PopupMenu controls/tcontrol.popupmenu.html
    ShowAccelChar stdctrls/tcustomlabel.showaccelchar.html
    ShowHint controls/tcontrol.showhint.html
-   Layout stdctrls/tcustomlabel.layout.html
    WordWrap stdctrls/tcustomlabel.wordwrap.html
    OnClick controls/tcontrol.onclick.html
    OnDblClick controls/tcontrol.ondblclick.html
@@ -8804,8 +8810,6 @@
    CMVisibleChanged controls/twincontrol.cmvisiblechanged.html
    CMEnabledChanged controls/twincontrol.cmenabledchanged.html
   TLabeledEdit extctrls/tlabelededit.html
-   NumbersOnly extctrls/tlabelededit.numbersonly.html
-   OnContextPopup extctrls/tlabelededit.oncontextpopup.html
    Alignment stdctrls/tcustomedit.alignment.html
    Anchors controls/tcontrol.anchors.html
    AutoSelect stdctrls/tcustomedit.autoselect.html
@@ -8826,6 +8830,7 @@
    LabelPosition extctrls/tcustomlabelededit.labelposition.html
    LabelSpacing extctrls/tcustomlabelededit.labelspacing.html
    MaxLength stdctrls/tcustomedit.maxlength.html
+   NumbersOnly stdctrls/tcustomedit.numbersonly.html
    ParentBidiMode controls/tcontrol.parentbidimode.html
    ParentColor controls/tcontrol.parentcolor.html
    ParentDoubleBuffered controls/twincontrol.parentdoublebuffered.html
@@ -8842,6 +8847,7 @@
    Visible controls/tcontrol.visible.html
    OnChange stdctrls/tcustomedit.onchange.html
    OnClick controls/tcontrol.onclick.html
+   OnContextPopup controls/tcontrol.oncontextpopup.html
    OnDblClick controls/tcontrol.ondblclick.html
    OnDragDrop controls/tcontrol.ondragdrop.html
    OnDragOver controls/tcontrol.ondragover.html
@@ -11417,6 +11423,7 @@
    HotSpot graphics/tcursorimageimage.hotspot.html
   TCursorImage graphics/tcursorimage.html
    GetResourceType graphics/tcursorimage.getresourcetype.html
+   LoadFromResourceHandle graphics/tcursorimage.loadfromresourcehandle.html
    ReleaseHandle graphics/tcursorimage.releasehandle.html
    SetCenterHotSpot graphics/tcursorimage.setcenterhotspot.html
    HotSpot graphics/tcursorimage.hotspot.html
@@ -11427,7 +11434,6 @@
    GetSharedImageClass graphics/trasterimage.getsharedimageclass.html
    GetTypeID graphics/tcustomicon.gettypeid.html
    GetFileExtensions graphics/tgraphic.getfileextensions.html
-   LoadFromResourceHandle graphics/tcustomicon.loadfromresourcehandle.html
    LazarusResourceTypeValid graphics/tgraphic.lazarusresourcetypevalid.html
   TSharedJpegImage graphics/tsharedjpegimage.html
   TJPEGImage graphics/tjpegimage.html
@@ -12399,8 +12405,6 @@
    OnUTF8KeyPress controls/twincontrol.onutf8keypress.html
    OnValidateEntry grids/tcustomgrid.onvalidateentry.html
   TDrawGrid grids/tdrawgrid.html
-   FocusColor 
-   FocusRectVisible 
    ParentColor grids/tdrawgrid.parentcolor.html
    InplaceEditor grids/tcustomgrid.inplaceeditor.html
    Align controls/tcontrol.align.html
@@ -12433,6 +12437,8 @@
    FixedCols grids/tcustomgrid.fixedcols.html
    FixedRows grids/tcustomgrid.fixedrows.html
    Flat grids/tcustomgrid.flat.html
+   FocusColor grids/tcustomgrid.focuscolor.html
+   FocusRectVisible grids/tcustomgrid.focusrectvisible.html
    Font controls/tcontrol.font.html
    GridLineColor grids/tcustomgrid.gridlinecolor.html
    GridLineStyle grids/tcustomgrid.gridlinestyle.html
@@ -12579,8 +12585,6 @@
    UseXORFeatures grids/tcustomgrid.usexorfeatures.html
    ValidateOnSetSelection grids/tcustomgrid.validateonsetselection.html
   TStringGrid grids/tstringgrid.html
-   FocusColor grids/tstringgrid.focuscolor.html
-   FocusRectVisible grids/tstringgrid.focusrectvisible.html
    ParentColor grids/tstringgrid.parentcolor.html
    OnEditButtonClick grids/tstringgrid.oneditbuttonclick.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
@@ -12618,6 +12622,8 @@
    FixedCols grids/tcustomgrid.fixedcols.html
    FixedRows grids/tcustomgrid.fixedrows.html
    Flat grids/tcustomgrid.flat.html
+   FocusColor grids/tcustomgrid.focuscolor.html
+   FocusRectVisible grids/tcustomgrid.focusrectvisible.html
    Font controls/tcontrol.font.html
    GridLineColor grids/tcustomgrid.gridlinecolor.html
    GridLineStyle grids/tcustomgrid.gridlinestyle.html
@@ -13275,6 +13281,8 @@
    Destroy ms-its:rtl.chm::/classes/tcollection.destroy.html
   TWidgetSet interfacebase/twidgetset.html
    PassCmdLineOptions interfacebase/twidgetset.passcmdlineoptions.html
+   GetAppHandle interfacebase/twidgetset.getapphandle.html
+   SetAppHandle interfacebase/twidgetset.setapphandle.html
    Create interfacebase/twidgetset.create.html
    BeforeDestruction interfacebase/twidgetset.beforedestruction.html
    AppInit interfacebase/twidgetset.appinit.html
@@ -13569,8 +13577,6 @@
    ThemeServices interfacebase/twidgetset.themeservices.html
    FThemeServices interfacebase/twidgetset.themeservices.html
    CreateThemeServices interfacebase/twidgetset.themeservices.html
-   GetAppHandle interfacebase/twidgetset.apphandle.html
-   SetAppHandle interfacebase/twidgetset.apphandle.html
   TMessageDispatcher interfacebase/tmessagedispatcher.html
    Create interfacebase/tmessagedispatcher.create.html
    Dispatch interfacebase/tmessagedispatcher.dispatch.html
@@ -13821,6 +13827,7 @@
   TLazReaderBMP intfgraphics/tlazreaderbmp.html
    InternalCheck intfgraphics/tlazreaderbmp.internalcheck.html
    InternalReadHead intfgraphics/tlazreaderbmp.internalreadhead.html
+   InternalSize intfgraphics/tlazreaderbmp.internalsize.html
   TLazWriterBMP intfgraphics/tlazwriterbmp.html
    QueryInterface intfgraphics/tlazwriterbmp.queryinterface.html
    _AddRef intfgraphics/tlazwriterbmp._addref.html
@@ -18720,6 +18727,7 @@
   TShellTreeView shellctrls/tshelltreeview.html
    ExpandCollapseMode shellctrls/tcustomshelltreeview.expandcollapsemode.html
    ParentColor shellctrls/tshelltreeview.parentcolor.html
+   ReadOnly shellctrls/tshelltreeview.readonly.html
    TabStop shellctrls/tshelltreeview.tabstop.html
    Tag shellctrls/tshelltreeview.tag.html
    Align controls/tcontrol.align.html
@@ -18743,7 +18751,6 @@
    ParentFont controls/tcontrol.parentfont.html
    ParentShowHint controls/tcontrol.parentshowhint.html
    PopupMenu controls/tcontrol.popupmenu.html
-   ReadOnly comctrls/tcustomtreeview.readonly.html
    RightClickSelect comctrls/tcustomtreeview.rightclickselect.html
    Root shellctrls/tcustomshelltreeview.root.html
    RowSelect comctrls/tcustomtreeview.rowselect.html
@@ -18831,6 +18838,7 @@
   TShellListView shellctrls/tshelllistview.html
    Color shellctrls/tshelllistview.color.html
    ParentColor shellctrls/tshelllistview.parentcolor.html
+   ReadOnly shellctrls/tshelllistview.readonly.html
    Columns comctrls/tcustomlistview.columns.html
    Align controls/tcontrol.align.html
    AutoSizeColumns shellctrls/tcustomshelllistview.autosizecolumns.html
@@ -18852,7 +18860,6 @@
    ParentFont controls/tcontrol.parentfont.html
    ParentShowHint controls/tcontrol.parentshowhint.html
    PopupMenu controls/tcontrol.popupmenu.html
-   ReadOnly comctrls/tcustomlistview.readonly.html
    RowSelect comctrls/tcustomlistview.rowselect.html
    ScrollBars comctrls/tcustomlistview.scrollbars.html
    ShowColumnHeaders comctrls/tcustomlistview.showcolumnheaders.html
@@ -20431,6 +20438,20 @@
    OnStartDrag controls/tcontrol.onstartdrag.html
   CreateEmulatedTextHintFont stdctrls/createemulatedtexthintfont.html
   Register stdctrls/register.html
+ TaskDlgEmulation taskdlgemulation/index.html
+  TTaskDialogElement taskdlgemulation/ttaskdialogelement.html
+  TLCLTaskDialogIcon taskdlgemulation/tlcltaskdialogicon.html
+  TLCLTaskDialogFooterIcon taskdlgemulation/tlcltaskdialogfootericon.html
+  TLCLTaskDialog taskdlgemulation/tlcltaskdialog.html
+   SetupControls taskdlgemulation/tlcltaskdialog.setupcontrols.html
+   KeyDown taskdlgemulation/tlcltaskdialog.keydown.html
+   CreateNew taskdlgemulation/tlcltaskdialog.createnew.html
+   Destroy taskdlgemulation/tlcltaskdialog.destroy.html
+   AfterConstruction taskdlgemulation/tlcltaskdialog.afterconstruction.html
+   DoShow taskdlgemulation/tlcltaskdialog.doshow.html
+   Execute taskdlgemulation/tlcltaskdialog.execute.html
+  ExecuteLCLTaskDialog taskdlgemulation/executelcltaskdialog.html
+  IconMessage taskdlgemulation/iconmessage.html
  Themes themes/index.html
   ThemeManagerCopyright themes/thememanagercopyright.html
   TThemedElement themes/tthemedelement.html
@@ -22378,6 +22399,38 @@
   RegisterWinControl wscontrols/registerwincontrol.html
   RegisterGraphicControl wscontrols/registergraphiccontrol.html
   RegisterCustomControl wscontrols/registercustomcontrol.html
+ WSReferences wsreferences/index.html
+  TLCLHandle wsreferences/tlclhandle.html
+  PLCLHandle wsreferences/plclhandle.html
+  PWSReference wsreferences/pwsreference.html
+  TWSReference wsreferences/twsreference.html
+   FRef wsreferences/twsreference.fref.html
+   _Clear wsreferences/twsreference._clear.html
+   _Init wsreferences/twsreference._init.html
+   _Handle wsreferences/twsreference._handle.html
+   Allocated wsreferences/twsreference.allocated.html
+   Ptr wsreferences/twsreference.ptr.html
+  TWSCustomImageListReference wsreferences/twscustomimagelistreference.html
+   Handle wsreferences/twscustomimagelistreference.handle.html
+  TWSGDIObjReference wsreferences/twsgdiobjreference.html
+  TWSBitmapReference wsreferences/twsbitmapreference.html
+   Handle wsreferences/twsbitmapreference.handle.html
+  TWSBrushReference wsreferences/twsbrushreference.html
+   _lclHandle wsreferences/twsbrushreference._lclhandle.html
+   Handle wsreferences/twsbrushreference.handle.html
+  TWSPenReference wsreferences/twspenreference.html
+   _lclHandle wsreferences/twspenreference._lclhandle.html
+   Handle wsreferences/twspenreference.handle.html
+  TWSFontReference wsreferences/twsfontreference.html
+   _lclHandle wsreferences/twsfontreference._lclhandle.html
+   Handle wsreferences/twsfontreference.handle.html
+  TWSRegionReference wsreferences/twsregionreference.html
+   _lclHandle wsreferences/twsregionreference._lclhandle.html
+   Handle wsreferences/twsregionreference.handle.html
+  TWSDeviceContextReference wsreferences/twsdevicecontextreference.html
+   Handle wsreferences/twsdevicecontextreference.handle.html
+  TWSIconReference wsreferences/twsiconreference.html
+   Handle wsreferences/twsiconreference.handle.html
  XMLPropStorage xmlpropstorage/index.html
   TPropStorageXMLConfig xmlpropstorage/tpropstoragexmlconfig.html
    DeleteSubNodes xmlpropstorage/tpropstoragexmlconfig.deletesubnodes.html
@@ -22584,6 +22637,7 @@
 2MSetImageIndex
 2MSetShortCut
 2MSetVisible
+3MUpdate
 3MIsCaptionLinked
 3MIsCheckedLinked
 3MIsEnabledLinked
@@ -22598,6 +22652,35 @@
 1VFOnChange
 2MNotify
 3POnChange rw
+#lcl.WSReferences.TWSReference 
+1MGetAllocated
+2VFRef
+3M_Clear
+3M_Init
+3P_Handle r
+3PAllocated r
+3PPtr r
+#lcl.WSReferences.TWSCustomImageListReference #lcl.WSReferences.TWSReference
+3PHandle r
+#lcl.WSReferences.TWSGDIObjReference #lcl.WSReferences.TWSReference
+#lcl.WSReferences.TWSBitmapReference #lcl.WSReferences.TWSGDIObjReference
+0PHandle r
+#lcl.WSReferences.TWSBrushReference #lcl.WSReferences.TWSGDIObjReference
+0P_lclHandle w
+0PHandle r
+#lcl.WSReferences.TWSPenReference #lcl.WSReferences.TWSGDIObjReference
+0P_lclHandle w
+0PHandle r
+#lcl.WSReferences.TWSFontReference #lcl.WSReferences.TWSGDIObjReference
+0P_lclHandle w
+0PHandle r
+#lcl.WSReferences.TWSRegionReference #lcl.WSReferences.TWSGDIObjReference
+0P_lclHandle w
+0PHandle r
+#lcl.WSReferences.TWSDeviceContextReference #lcl.WSReferences.TWSReference
+0PHandle r
+#lcl.WSReferences.TWSIconReference #lcl.WSReferences.TWSReference
+0PHandle r
 #lcl.LCLProc.TDebugLCLItemInfo #rtl.System.TObject
 3VItem
 3VIsDestroyed
@@ -23215,6 +23298,7 @@
 1VFDataOffset
 2MInternalCheck
 2MInternalReadHead
+2MInternalSize
 #lcl.IntfGraphics.TLazWriterBMP TFPWriterBMP,#lcl.IntfGraphics.ILazImageWriter
 3MQueryInterface
 3M_AddRef
@@ -29911,6 +29995,7 @@
 #lcl.Dialogs.TColorDialog #lcl.Dialogs.TCommonDialog
 1VFColor
 1VFCustomColors
+1VFOptions
 1MSetCustomColors
 1MAddDefaultColor
 2MWSRegisterClass
@@ -29920,6 +30005,7 @@
 4PTitle
 4PColor rw
 4PCustomColors rw
+4POptions rw
 #lcl.Dialogs.TColorButton #lcl.Buttons.TCustomSpeedButton
 1VFBorderWidth
 1VFButtonColorAutoSize
@@ -40932,8 +41018,9 @@
 1MSetIdleConnected
 1MOnAsync
 1MIsTextHintStored
-2VfNeedUpdate
+2VfAlreadyFiltered
 2VfIsFirstUpdate
+2VfNeedUpdate
 2VfSelectedPart
 2VfOnFilterItem
 2VfOnFilterItemEx
@@ -43505,6 +43592,101 @@
 3VCombo
 3VEdit
 3VVerif
+#lcl.TaskDlgEmulation.TLCLTaskDialog #lcl.Forms.TForm
+1MRadioIndent
+1MComboBoxHeight
+1MQueryEditHeight
+1MLargeImageSize
+1MSmallImageSize
+1MCommandLinkButtonHeight
+1MRadioVSpacing
+1MLabelVSpacing
+1MCommandLinkButtonVSpacing
+1MBevelMargin
+1MBevelHeight
+1MProgressBarHeight
+1MProgressBarVSpacing
+1VFDlg
+1VFVerifyChecked
+1VFExpanded
+1VCommandLinkButtonWidth
+1VCommandLinkButtonMargin
+1VCommandLinkButtonSpacing
+1VButtonHeight
+1VGlobalLeftMargin
+1VExpandHeightRequired
+1VTimer
+1VTimerStartTime
+1VRadioButtonArray
+1VDialogCaption
+1VDlgTitle
+1VDlgText
+1VExpandButtonCaption
+1VCollapseButtonCaption
+1VExpandedText
+1VFooterText
+1VVerificationText
+1VCommonButtons
+1VTopPanel
+1VMidPanel
+1VBottomPanel
+1VMainImage
+1VFooterImage
+1VExpandedTextBevel
+1VElement
+1VQueryCombo
+1VQueryEdit
+1VVerifyCheckBox
+1VExpandBtn
+1VProgressBar
+1MGetDefaultButtons
+1MInitCaptions
+1MInitGlobalDimensionsAndStyle
+1MGetGlobalLeftMargin
+1MAddMainIcon
+1MAddPanels
+1MAddProgressBar
+1MAddRadios
+1MAddCommandLinkButtons
+1MAddButtons
+1MAddCheckBox
+1MAddExpandButton
+1MAddBevel
+1MAddFooter
+1MAddLabel
+1MAddQueryCombo
+1MAddQueryEdit
+1MSetupTimer
+1MResetTimer
+1MExpandDialog
+1MCollapseDialog
+1MFindButtonByButtonID
+1MFindRadioButtonByButtonID
+1MDoDialogConstructed
+1MDoDialogCreated
+1MDoDialogDestroyed
+1MOnButtonClicked
+1MOnRadioButtonClick
+1MOnVerifyClicked
+1MOnTimer
+1MOnExpandButtonClicked
+1MDoOnHelp
+1MSetProgressBarType
+1MSetProgressBarRange
+1MSetProgressBarPos
+1MClickVerification
+1MClickButton
+1MClickRadioButton
+1MEnableButton
+1MEnableRadioButton
+1MUpdateElementText
+2MSetupControls
+3MKeyDown
+3MCreateNew
+3MDestroy
+3MAfterConstruction
+3MDoShow
+3MExecute
 #lcl.DBLogDlg.TLoginDialog #lcl.Forms.TForm
 2VlDatabaseName
 2VlDatabase
