@@ -1,0 +1,1550 @@
+# FPDoc Content File
+:link tree
+#fcl-res index.html
+ Introduction introduction.html
+ Basic Usage basic usage.html
+ How to implement a new resource class how to implement a new resource class.html
+ How to implement a new resource reader how to implement a new resource reader.html
+ How to implement a new resource writer how to implement a new resource writer.html
+ Format of resources in object files format of resources in object files.html
+ acceleratorsresource acceleratorsresource/index.html
+  FVirtKey acceleratorsresource/fvirtkey.html
+  FNoInvert acceleratorsresource/fnoinvert.html
+  FShift acceleratorsresource/fshift.html
+  FControl acceleratorsresource/fcontrol.html
+  FAlt acceleratorsresource/falt.html
+  TAccelerator acceleratorsresource/taccelerator.html
+  PAccelerator acceleratorsresource/paccelerator.html
+  TAcceleratorsResource acceleratorsresource/tacceleratorsresource.html
+   GetType 
+   GetName 
+   ChangeDescTypeAllowed 
+   ChangeDescValueAllowed 
+   NotifyResourcesLoaded 
+   Create acceleratorsresource/tacceleratorsresource.create.html
+   Destroy 
+   UpdateRawData 
+   Add acceleratorsresource/tacceleratorsresource.add.html
+   Clear acceleratorsresource/tacceleratorsresource.clear.html
+   Delete acceleratorsresource/tacceleratorsresource.delete.html
+   Count acceleratorsresource/tacceleratorsresource.count.html
+   Items acceleratorsresource/tacceleratorsresource.items.html
+ bitmapresource bitmapresource/index.html
+  TBitmapResource bitmapresource/tbitmapresource.html
+   GetType 
+   GetName 
+   ChangeDescTypeAllowed 
+   ChangeDescValueAllowed 
+   NotifyResourcesLoaded 
+   Create bitmapresource/tbitmapresource.create.html
+   Destroy 
+   UpdateRawData 
+   SetCustomBitmapDataStream bitmapresource/tbitmapresource.setcustombitmapdatastream.html
+   BitmapData bitmapresource/tbitmapresource.bitmapdata.html
+ coffreader coffreader/index.html
+  TCoffResourceReader coffreader/tcoffresourcereader.html
+   GetExtensions 
+   GetDescription 
+   Load 
+   CheckMagic 
+   Create 
+   Destroy coffreader/tcoffresourcereader.destroy.html
+   MachineType coffreader/tcoffresourcereader.machinetype.html
+ cofftypes cofftypes/index.html
+  RSRCSectName cofftypes/rsrcsectname.html
+  TCoffMachineType cofftypes/tcoffmachinetype.html
+  TSectionName cofftypes/tsectionname.html
+  TCoffHeader cofftypes/tcoffheader.html
+  TCoffSectionHeader cofftypes/tcoffsectionheader.html
+  TXCoff32SectionHeader cofftypes/txcoff32sectionheader.html
+  TCoffSymtableEntry cofftypes/tcoffsymtableentry.html
+  TCoffSectionTable cofftypes/tcoffsectiontable.html
+  TXCoffAuxSymbol32 cofftypes/txcoffauxsymbol32.html
+  TResDirTable cofftypes/tresdirtable.html
+  TResDirEntry cofftypes/tresdirentry.html
+  TResDataEntry cofftypes/tresdataentry.html
+ coffwriter coffwriter/index.html
+  TCoffRelocation coffwriter/tcoffrelocation.html
+  PCoffRelocation coffwriter/pcoffrelocation.html
+  TCoffStringTable coffwriter/tcoffstringtable.html
+   Create coffwriter/tcoffstringtable.create.html
+   Add coffwriter/tcoffstringtable.add.html
+   Delete coffwriter/tcoffstringtable.delete.html
+   Size coffwriter/tcoffstringtable.size.html
+  TResourceStringTable coffwriter/tresourcestringtable.html
+   Create coffwriter/tresourcestringtable.create.html
+   Destroy coffwriter/tresourcestringtable.destroy.html
+   Add coffwriter/tresourcestringtable.add.html
+   Clear coffwriter/tresourcestringtable.clear.html
+   Count coffwriter/tresourcestringtable.count.html
+   Items coffwriter/tresourcestringtable.items.html
+   StartRVA coffwriter/tresourcestringtable.startrva.html
+   CurrRVA coffwriter/tresourcestringtable.currrva.html
+   EndRVA coffwriter/tresourcestringtable.endrva.html
+  TCoffRelocations coffwriter/tcoffrelocations.html
+   GetCount coffwriter/tcoffrelocations.getcount.html
+   GetRelocation coffwriter/tcoffrelocations.getrelocation.html
+   Create coffwriter/tcoffrelocations.create.html
+   Destroy coffwriter/tcoffrelocations.destroy.html
+   Add coffwriter/tcoffrelocations.add.html
+   AddRelativeToSection coffwriter/tcoffrelocations.addrelativetosection.html
+   Clear coffwriter/tcoffrelocations.clear.html
+   Count coffwriter/tcoffrelocations.count.html
+   Items coffwriter/tcoffrelocations.items.html
+   StartAddress coffwriter/tcoffrelocations.startaddress.html
+   MachineType coffwriter/tcoffrelocations.machinetype.html
+  TCoffResourceWriter coffwriter/tcoffresourcewriter.html
+   fRoot coffwriter/tcoffresourcewriter.froot.html
+   fRelocations coffwriter/tcoffresourcewriter.frelocations.html
+   fResDataSectionSymIdx coffwriter/tcoffresourcewriter.fresdatasectionsymidx.html
+   fResHandlesSectionSymIdx coffwriter/tcoffresourcewriter.freshandlessectionsymidx.html
+   fResDataEntryCurrentRVA coffwriter/tcoffresourcewriter.fresdataentrycurrentrva.html
+   fSymTablePtr coffwriter/tcoffresourcewriter.fsymtableptr.html
+   fStringTable coffwriter/tcoffresourcewriter.fstringtable.html
+   fNumSymtableEntries coffwriter/tcoffresourcewriter.fnumsymtableentries.html
+   fSymStorageClass coffwriter/tcoffresourcewriter.fsymstorageclass.html
+   fOppositeEndianess coffwriter/tcoffresourcewriter.foppositeendianess.html
+   WriteEmptyCoffHeader coffwriter/tcoffresourcewriter.writeemptycoffheader.html
+   WriteEmptySectionHeader coffwriter/tcoffresourcewriter.writeemptysectionheader.html
+   WriteResStringTable coffwriter/tcoffresourcewriter.writeresstringtable.html
+   WriteRawData coffwriter/tcoffresourcewriter.writerawdata.html
+   WriteRelocations coffwriter/tcoffresourcewriter.writerelocations.html
+   WriteCoffStringTable coffwriter/tcoffresourcewriter.writecoffstringtable.html
+   GetFixedCoffHeader coffwriter/tcoffresourcewriter.getfixedcoffheader.html
+   FixCoffHeader coffwriter/tcoffresourcewriter.fixcoffheader.html
+   FixSectionHeader coffwriter/tcoffresourcewriter.fixsectionheader.html
+   GetExtensions 
+   GetDescription 
+   PrescanNode coffwriter/tcoffresourcewriter.prescannode.html
+   PrescanResourceTree coffwriter/tcoffresourcewriter.prescanresourcetree.html
+   Write 
+   WriteSymbolTable coffwriter/tcoffresourcewriter.writesymboltable.html
+   Create 
+   Destroy coffwriter/tcoffresourcewriter.destroy.html
+   MachineType coffwriter/tcoffresourcewriter.machinetype.html
+   OppositeEndianess coffwriter/tcoffresourcewriter.oppositeendianess.html
+ dfmreader dfmreader/index.html
+  TDfmResourceReader dfmreader/tdfmresourcereader.html
+   GetExtensions 
+   GetDescription 
+   Load 
+   CheckMagic 
+   Create 
+   Destroy dfmreader/tdfmresourcereader.destroy.html
+ elfconsts elfconsts/index.html
+  ELFMAGIC elfconsts/elfmagic.html
+  ELFCLASSNONE elfconsts/elfclassnone.html
+  ELFCLASS32 elfconsts/elfclass32.html
+  ELFCLASS64 elfconsts/elfclass64.html
+  ELFDATANONE elfconsts/elfdatanone.html
+  ELFDATA2LSB elfconsts/elfdata2lsb.html
+  ELFDATA2MSB elfconsts/elfdata2msb.html
+  EV_NONE elfconsts/ev_none.html
+  EV_CURRENT elfconsts/ev_current.html
+  ELFOSABI_NONE elfconsts/elfosabi_none.html
+  ELFOSABI_LINUX elfconsts/elfosabi_linux.html
+  ELFOSABI_FREEBSD elfconsts/elfosabi_freebsd.html
+  ELFOSABI_ARM elfconsts/elfosabi_arm.html
+  ET_NONE elfconsts/et_none.html
+  ET_REL elfconsts/et_rel.html
+  ET_EXEC elfconsts/et_exec.html
+  ET_DYN elfconsts/et_dyn.html
+  ET_CORE elfconsts/et_core.html
+  ET_LOOS elfconsts/et_loos.html
+  ET_HIOS elfconsts/et_hios.html
+  ET_LOPROC elfconsts/et_loproc.html
+  ET_HIPROC elfconsts/et_hiproc.html
+  EM_NONE elfconsts/em_none.html
+  EM_SPARC elfconsts/em_sparc.html
+  EM_386 elfconsts/em_386.html
+  EM_68K elfconsts/em_68k.html
+  EM_MIPS elfconsts/em_mips.html
+  EM_MIPS_RS3_LE elfconsts/em_mips_rs3_le.html
+  EM_PPC elfconsts/em_ppc.html
+  EM_PPC64 elfconsts/em_ppc64.html
+  EM_ARM elfconsts/em_arm.html
+  EM_IA_64 elfconsts/em_ia_64.html
+  EM_MIPS_X elfconsts/em_mips_x.html
+  EM_X86_64 elfconsts/em_x86_64.html
+  EM_AARCH64 elfconsts/em_aarch64.html
+  EM_ALPHA elfconsts/em_alpha.html
+  EF_IA_64_ABI64 elfconsts/ef_ia_64_abi64.html
+  SHT_NULL elfconsts/sht_null.html
+  SHT_PROGBITS elfconsts/sht_progbits.html
+  SHT_SYMTAB elfconsts/sht_symtab.html
+  SHT_STRTAB elfconsts/sht_strtab.html
+  SHT_RELA elfconsts/sht_rela.html
+  SHT_HASH elfconsts/sht_hash.html
+  SHT_DYNAMIC elfconsts/sht_dynamic.html
+  SHT_NOTE elfconsts/sht_note.html
+  SHT_NOBITS elfconsts/sht_nobits.html
+  SHT_REL elfconsts/sht_rel.html
+  SHT_SHLIB elfconsts/sht_shlib.html
+  SHT_DYNSYM elfconsts/sht_dynsym.html
+  SHT_LOPROC elfconsts/sht_loproc.html
+  SHT_HIPROC elfconsts/sht_hiproc.html
+  SHT_LOOS elfconsts/sht_loos.html
+  SHT_HIOS elfconsts/sht_hios.html
+  SHF_WRITE elfconsts/shf_write.html
+  SHF_ALLOC elfconsts/shf_alloc.html
+  SHF_EXECINSTR elfconsts/shf_execinstr.html
+  SHF_MASKOS elfconsts/shf_maskos.html
+  SHF_MASKPROC elfconsts/shf_maskproc.html
+  STB_LOCAL elfconsts/stb_local.html
+  STB_GLOBAL elfconsts/stb_global.html
+  STB_WEAK elfconsts/stb_weak.html
+  STB_LOOS elfconsts/stb_loos.html
+  STB_HIOS elfconsts/stb_hios.html
+  STB_LOPROC elfconsts/stb_loproc.html
+  STB_HIPROC elfconsts/stb_hiproc.html
+  STT_NOTYPE elfconsts/stt_notype.html
+  STT_OBJECT elfconsts/stt_object.html
+  STT_FUNC elfconsts/stt_func.html
+  STT_SECTION elfconsts/stt_section.html
+  STT_FILE elfconsts/stt_file.html
+  STT_COMMON elfconsts/stt_common.html
+  STT_TLS elfconsts/stt_tls.html
+  STT_LOOS elfconsts/stt_loos.html
+  STT_HIOS elfconsts/stt_hios.html
+  STT_LOPROC elfconsts/stt_loproc.html
+  STT_SPARC_REGISTER elfconsts/stt_sparc_register.html
+  STT_HIPROC elfconsts/stt_hiproc.html
+  R_386_32 elfconsts/r_386_32.html
+  R_x86_64_64 elfconsts/r_x86_64_64.html
+  R_PPC_ADDR32 elfconsts/r_ppc_addr32.html
+  R_PPC64_ADDR64 elfconsts/r_ppc64_addr64.html
+  R_ARM_ABS32 elfconsts/r_arm_abs32.html
+  R_AARCH64_ABS64 elfconsts/r_aarch64_abs64.html
+  R_68K_32 elfconsts/r_68k_32.html
+  R_SPARC_32 elfconsts/r_sparc_32.html
+  R_ALPHA_REFQUAD elfconsts/r_alpha_refquad.html
+  R_IA64_DIR64LSB elfconsts/r_ia64_dir64lsb.html
+  R_MIPS_32 elfconsts/r_mips_32.html
+  RsrcSectName elfconsts/rsrcsectname.html
+  HandlesSectName elfconsts/handlessectname.html
+  RSRCSECT_IDX elfconsts/rsrcsect_idx.html
+  HANDLESECT_IDX elfconsts/handlesect_idx.html
+  TElfMachineType elfconsts/telfmachinetype.html
+ elfreader elfreader/index.html
+  EElfResourceReaderException elfreader/eelfresourcereaderexception.html
+  EElfResourceReaderUnknownClassException elfreader/eelfresourcereaderunknownclassexception.html
+  EElfResourceReaderUnknownVersionException elfreader/eelfresourcereaderunknownversionexception.html
+  EElfResourceReaderNoSectionsException elfreader/eelfresourcereadernosectionsexception.html
+  EElfResourceReaderNoStringTableException elfreader/eelfresourcereadernostringtableexception.html
+  TElfResourceReader elfreader/telfresourcereader.html
+   GetExtensions 
+   GetDescription 
+   Load 
+   CheckMagic 
+   Create 
+   Destroy elfreader/telfresourcereader.destroy.html
+   MachineType elfreader/telfresourcereader.machinetype.html
+ elfwriter elfwriter/index.html
+  EElfResourceWriterException elfwriter/eelfresourcewriterexception.html
+  EElfResourceWriterUnknownMachineException elfwriter/eelfresourcewriterunknownmachineexception.html
+  EElfResourceWriterUnknownClassException elfwriter/eelfresourcewriterunknownclassexception.html
+  EElfResourceWriterUnknownSectionException elfwriter/eelfresourcewriterunknownsectionexception.html
+  TElfResourceWriter elfwriter/telfresourcewriter.html
+   GetExtensions 
+   GetDescription 
+   Write 
+   Create 
+   Destroy elfwriter/telfresourcewriter.destroy.html
+   MachineType elfwriter/telfresourcewriter.machinetype.html
+ externalreader externalreader/index.html
+  TExternalResourceReader externalreader/texternalresourcereader.html
+   GetExtensions 
+   GetDescription 
+   Load 
+   CheckMagic 
+   Create 
+   Destroy externalreader/texternalresourcereader.destroy.html
+   Endianess externalreader/texternalresourcereader.endianess.html
+ externaltypes externaltypes/index.html
+  Description of external resource file format externaltypes/description of external resource file format.html
+  EXTERNAL_RESMAGIC externaltypes/external_resmagic.html
+  EXT_CURRENT_VERSION externaltypes/ext_current_version.html
+  EXT_ENDIAN_BIG externaltypes/ext_endian_big.html
+  EXT_ENDIAN_LITTLE externaltypes/ext_endian_little.html
+  TExternalResMagic externaltypes/texternalresmagic.html
+  TExtHeader externaltypes/textheader.html
+  TResInfoNode externaltypes/tresinfonode.html
+ externalwriter externalwriter/index.html
+  EExternalResourceWriterException externalwriter/eexternalresourcewriterexception.html
+  EExternalResInvalidEndianessException externalwriter/eexternalresinvalidendianessexception.html
+  TExternalResourceWriter externalwriter/texternalresourcewriter.html
+   GetExtensions 
+   GetDescription 
+   Write 
+   Create 
+   Destroy externalwriter/texternalresourcewriter.destroy.html
+   Endianess externalwriter/texternalresourcewriter.endianess.html
+ groupcursorresource groupcursorresource/index.html
+  TGroupCursorResource groupcursorresource/tgroupcursorresource.html
+   ReadResourceItemHeader groupcursorresource/tgroupcursorresource.readresourceitemheader.html
+   WriteHeader groupcursorresource/tgroupcursorresource.writeheader.html
+   CreateSubItem groupcursorresource/tgroupcursorresource.createsubitem.html
+   UpdateItemOwner groupcursorresource/tgroupcursorresource.updateitemowner.html
+   ClearItemList groupcursorresource/tgroupcursorresource.clearitemlist.html
+   DeleteSubItems groupcursorresource/tgroupcursorresource.deletesubitems.html
+   GetSubStream groupcursorresource/tgroupcursorresource.getsubstream.html
+   GetType groupcursorresource/tgroupcursorresource.gettype.html
+   GetName groupcursorresource/tgroupcursorresource.getname.html
+   ChangeDescTypeAllowed groupcursorresource/tgroupcursorresource.changedesctypeallowed.html
+   ChangeDescValueAllowed groupcursorresource/tgroupcursorresource.changedescvalueallowed.html
+   Create groupcursorresource/tgroupcursorresource.create.html
+ groupiconresource groupiconresource/index.html
+  TGroupIconResource groupiconresource/tgroupiconresource.html
+   ReadResourceItemHeader groupiconresource/tgroupiconresource.readresourceitemheader.html
+   WriteHeader groupiconresource/tgroupiconresource.writeheader.html
+   CreateSubItem groupiconresource/tgroupiconresource.createsubitem.html
+   UpdateItemOwner groupiconresource/tgroupiconresource.updateitemowner.html
+   ClearItemList groupiconresource/tgroupiconresource.clearitemlist.html
+   DeleteSubItems groupiconresource/tgroupiconresource.deletesubitems.html
+   GetSubStream groupiconresource/tgroupiconresource.getsubstream.html
+   GetType groupiconresource/tgroupiconresource.gettype.html
+   GetName groupiconresource/tgroupiconresource.getname.html
+   ChangeDescTypeAllowed groupiconresource/tgroupiconresource.changedesctypeallowed.html
+   ChangeDescValueAllowed groupiconresource/tgroupiconresource.changedescvalueallowed.html
+   Create groupiconresource/tgroupiconresource.create.html
+ groupresource groupresource/index.html
+  TGroupResource groupresource/tgroupresource.html
+   fType groupresource/tgroupresource.ftype.html
+   fName groupresource/tgroupresource.fname.html
+   fItemData groupresource/tgroupresource.fitemdata.html
+   fItemList groupresource/tgroupresource.fitemlist.html
+   dummyType groupresource/tgroupresource.dummytype.html
+   dummyName groupresource/tgroupresource.dummyname.html
+   FindSubResources groupresource/tgroupresource.findsubresources.html
+   ReadResourceItemHeader groupresource/tgroupresource.readresourceitemheader.html
+   CheckBuildItemStream groupresource/tgroupresource.checkbuilditemstream.html
+   GetItemData groupresource/tgroupresource.getitemdata.html
+   WriteHeader groupresource/tgroupresource.writeheader.html
+   WriteResHeader groupresource/tgroupresource.writeresheader.html
+   CreateSubItems groupresource/tgroupresource.createsubitems.html
+   CreateSubItem groupresource/tgroupresource.createsubitem.html
+   UpdateItemOwner groupresource/tgroupresource.updateitemowner.html
+   ClearItemList groupresource/tgroupresource.clearitemlist.html
+   DeleteSubItems groupresource/tgroupresource.deletesubitems.html
+   GetSubStreamCount groupresource/tgroupresource.getsubstreamcount.html
+   GetSubStream groupresource/tgroupresource.getsubstream.html
+   SetOwnerList 
+   NotifyResourcesLoaded 
+   Destroy groupresource/tgroupresource.destroy.html
+   CompareContents 
+   SetCustomItemDataStream groupresource/tgroupresource.setcustomitemdatastream.html
+   UpdateRawData 
+   ItemData groupresource/tgroupresource.itemdata.html
+  TGroupCachedDataStream groupresource/tgroupcacheddatastream.html
+   Create 
+   Destroy groupresource/tgroupcacheddatastream.destroy.html
+   Read groupresource/tgroupcacheddatastream.read.html
+ machoreader machoreader/index.html
+  TMachOResourceReader machoreader/tmachoresourcereader.html
+   GetExtensions 
+   GetDescription 
+   Load 
+   CheckMagic 
+   Create 
+   Destroy machoreader/tmachoresourcereader.destroy.html
+   MachineType machoreader/tmachoresourcereader.machinetype.html
+ machotypes machotypes/index.html
+  TMachOMachineType machotypes/tmachomachinetype.html
+  TMachOSubMachineTypePowerPC machotypes/tmachosubmachinetypepowerpc.html
+  TMachOSubMachineTypePowerPC64 machotypes/tmachosubmachinetypepowerpc64.html
+  TMachOSubMachineType386 machotypes/tmachosubmachinetype386.html
+  TMachOSubMachineTypex64 machotypes/tmachosubmachinetypex64.html
+  TMachOSubMachineTypeArm machotypes/tmachosubmachinetypearm.html
+  TMachOSubMachineTypeAarch64 machotypes/tmachosubmachinetypeaarch64.html
+  TSegSectName machotypes/tsegsectname.html
+  TMachHdr machotypes/tmachhdr.html
+  TLoadCommand machotypes/tloadcommand.html
+  TSegmentCommand32 machotypes/tsegmentcommand32.html
+  TSegmentCommand64 machotypes/tsegmentcommand64.html
+  TSection32 machotypes/tsection32.html
+  TSection64 machotypes/tsection64.html
+  TSymtabCommand machotypes/tsymtabcommand.html
+  TDySymtabCommand machotypes/tdysymtabcommand.html
+  TNList32 machotypes/tnlist32.html
+  PNList32 machotypes/pnlist32.html
+  TNList64 machotypes/tnlist64.html
+  PNList64 machotypes/pnlist64.html
+  TRelocationInfo machotypes/trelocationinfo.html
+  PRelocationInfo machotypes/prelocationinfo.html
+ machowriter machowriter/index.html
+  TMachoSubMachineType machowriter/tmachosubmachinetype.html
+  EMachOResourceWriterException machowriter/emachoresourcewriterexception.html
+  EMachOResourceWriterUnknownBitSizeException machowriter/emachoresourcewriterunknownbitsizeexception.html
+  EMachOResourceWriterSymbolTableWrongOrderException machowriter/emachoresourcewritersymboltablewrongorderexception.html
+  TMachOResourceWriter machowriter/tmachoresourcewriter.html
+   GetExtensions 
+   GetDescription 
+   Write 
+   Create 
+   Destroy machowriter/tmachoresourcewriter.destroy.html
+   MachineType machowriter/tmachoresourcewriter.machinetype.html
+   SubMachineType machowriter/tmachoresourcewriter.submachinetype.html
+ resdatastream resdatastream/index.html
+  TCachedStreamClass resdatastream/tcachedstreamclass.html
+  TUnderlyingStreamType resdatastream/tunderlyingstreamtype.html
+  TCachedDataStream resdatastream/tcacheddatastream.html
+   fStream resdatastream/tcacheddatastream.fstream.html
+   fSize resdatastream/tcacheddatastream.fsize.html
+   fPosition resdatastream/tcacheddatastream.fposition.html
+   GetPosition resdatastream/tcacheddatastream.getposition.html
+   SetPosition resdatastream/tcacheddatastream.setposition.html
+   GetSize resdatastream/tcacheddatastream.getsize.html
+   SetSize64 resdatastream/tcacheddatastream.setsize64.html
+   Create resdatastream/tcacheddatastream.create.html
+   Write resdatastream/tcacheddatastream.write.html
+   Seek resdatastream/tcacheddatastream.seek.html
+  TCachedResourceDataStream resdatastream/tcachedresourcedatastream.html
+   Create resdatastream/tcacheddatastream.create.html
+   Read resdatastream/tcachedresourcedatastream.read.html
+  TResourceDataStream resdatastream/tresourcedatastream.html
+   GetPosition resdatastream/tresourcedatastream.getposition.html
+   SetPosition resdatastream/tresourcedatastream.setposition.html
+   GetSize resdatastream/tresourcedatastream.getsize.html
+   SetSize64 resdatastream/tresourcedatastream.setsize64.html
+   Create resdatastream/tresourcedatastream.create.html
+   Destroy resdatastream/tresourcedatastream.destroy.html
+   Compare resdatastream/tresourcedatastream.compare.html
+   SetCustomStream resdatastream/tresourcedatastream.setcustomstream.html
+   Read resdatastream/tresourcedatastream.read.html
+   Write resdatastream/tresourcedatastream.write.html
+   Seek resdatastream/tresourcedatastream.seek.html
+   Cached resdatastream/tresourcedatastream.cached.html
+ resfactory resfactory/index.html
+  SAlreadyRegistered resfactory/index-1.html#salreadyregistered
+  EResourceFactoryException resfactory/eresourcefactoryexception.html
+  EResourceClassAlreadyRegisteredException resfactory/eresourceclassalreadyregisteredexception.html
+  TResourceFactory resfactory/tresourcefactory.html
+   RegisterResourceClass resfactory/tresourcefactory.registerresourceclass.html
+   CreateResource resfactory/tresourcefactory.createresource.html
+ resource resource/index.html
+  SReaderNotFoundExt resource/index-1.html#sreadernotfoundext
+  SReaderNotFoundProbe resource/index-1.html#sreadernotfoundprobe
+  SWriterNotFoundExt resource/index-1.html#swriternotfoundext
+  SDescChangeNotAllowed resource/index-1.html#sdescchangenotallowed
+  SLangIDChangeNotAllowed resource/index-1.html#slangidchangenotallowed
+  SResDuplicate resource/index-1.html#sresduplicate
+  SResourceNotFound resource/index-1.html#sresourcenotfound
+  SResourceNotFoundLang resource/index-1.html#sresourcenotfoundlang
+  RT_CURSOR resource/rt_cursor.html
+  RT_BITMAP resource/rt_bitmap.html
+  RT_ICON resource/rt_icon.html
+  RT_MENU resource/rt_menu.html
+  RT_DIALOG resource/rt_dialog.html
+  RT_STRING resource/rt_string.html
+  RT_FONTDIR resource/rt_fontdir.html
+  RT_FONT resource/rt_font.html
+  RT_ACCELERATOR resource/rt_accelerator.html
+  RT_RCDATA resource/rt_rcdata.html
+  RT_MESSAGETABLE resource/rt_messagetable.html
+  RT_GROUP_CURSOR resource/rt_group_cursor.html
+  RT_GROUP_ICON resource/rt_group_icon.html
+  RT_VERSION resource/rt_version.html
+  RT_DLGINCLUDE resource/rt_dlginclude.html
+  RT_PLUGPLAY resource/rt_plugplay.html
+  RT_VXD resource/rt_vxd.html
+  RT_ANICURSOR resource/rt_anicursor.html
+  RT_ANIICON resource/rt_aniicon.html
+  RT_HTML resource/rt_html.html
+  RT_MANIFEST resource/rt_manifest.html
+  RT_DLGINIT resource/rt_dlginit.html
+  CREATEPROCESS_MANIFEST_RESOURCE_ID resource/createprocess_manifest_resource_id.html
+  ISOLATIONAWARE_MANIFEST_RESOURCE_ID resource/isolationaware_manifest_resource_id.html
+  ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID resource/isolationaware_nostaticimport_manifest_resource_id.html
+  MINIMUM_RESERVED_MANIFEST_RESOURCE_ID resource/minimum_reserved_manifest_resource_id.html
+  MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID resource/maximum_reserved_manifest_resource_id.html
+  MF_MOVEABLE resource/mf_moveable.html
+  MF_PURE resource/mf_pure.html
+  MF_PRELOAD resource/mf_preload.html
+  MF_DISCARDABLE resource/mf_discardable.html
+  TLangID resource/tlangid.html
+  TResName resource/tresname.html
+  TResID resource/tresid.html
+  TDescType resource/tdesctype.html
+  TResourceClass resource/tresourceclass.html
+  TResourceReaderClass resource/tresourcereaderclass.html
+  TResourceWriterClass resource/tresourcewriterclass.html
+  EResourceException resource/eresourceexception.html
+  EResourceDescTypeException resource/eresourcedesctypeexception.html
+  EResourceDescChangeNotAllowedException resource/eresourcedescchangenotallowedexception.html
+  EResourceLangIDChangeNotAllowedException resource/eresourcelangidchangenotallowedexception.html
+  EResourceDuplicateException resource/eresourceduplicateexception.html
+  EResourceNotFoundException resource/eresourcenotfoundexception.html
+  ENoMoreFreeIDsException resource/enomorefreeidsexception.html
+  EResourceReaderException resource/eresourcereaderexception.html
+  EResourceReaderNotFoundException resource/eresourcereadernotfoundexception.html
+  EResourceReaderWrongFormatException resource/eresourcereaderwrongformatexception.html
+  EResourceReaderUnexpectedEndOfStreamException resource/eresourcereaderunexpectedendofstreamexception.html
+  EResourceWriterException resource/eresourcewriterexception.html
+  EResourceWriterNotFoundException resource/eresourcewriternotfoundexception.html
+  TResourceDesc resource/tresourcedesc.html
+   SetOwner resource/tresourcedesc.setowner.html
+   Create resource/tresourcedesc.create.html
+   Assign resource/tresourcedesc.assign.html
+   Equals resource/tresourcedesc.equals.html
+   Name resource/tresourcedesc.name.html
+   ID resource/tresourcedesc.id.html
+   DescType resource/tresourcedesc.desctype.html
+  TAbstractResource resource/tabstractresource.html
+   SetDescOwner resource/tabstractresource.setdescowner.html
+   SetOwnerList resource/tabstractresource.setownerlist.html
+   SetChildOwner resource/tabstractresource.setchildowner.html
+   GetType resource/tabstractresource.gettype.html
+   GetName resource/tabstractresource.getname.html
+   ChangeDescTypeAllowed resource/tabstractresource.changedesctypeallowed.html
+   ChangeDescValueAllowed resource/tabstractresource.changedescvalueallowed.html
+   NotifyResourcesLoaded resource/tabstractresource.notifyresourcesloaded.html
+   Create resource/tabstractresource.create.html
+   Destroy resource/tabstractresource.destroy.html
+   CompareContents resource/tabstractresource.comparecontents.html
+   UpdateRawData resource/tabstractresource.updaterawdata.html
+   SetCustomRawDataStream resource/tabstractresource.setcustomrawdatastream.html
+   _Type resource/tabstractresource._type.html
+   Name resource/tabstractresource.name.html
+   LangID resource/tabstractresource.langid.html
+   DataSize resource/tabstractresource.datasize.html
+   HeaderSize resource/tabstractresource.headersize.html
+   DataVersion resource/tabstractresource.dataversion.html
+   MemoryFlags resource/tabstractresource.memoryflags.html
+   Version resource/tabstractresource.version.html
+   Characteristics resource/tabstractresource.characteristics.html
+   DataOffset resource/tabstractresource.dataoffset.html
+   CodePage resource/tabstractresource.codepage.html
+   RawData resource/tabstractresource.rawdata.html
+   CacheData resource/tabstractresource.cachedata.html
+   OwnerList resource/tabstractresource.ownerlist.html
+   Owner resource/tabstractresource.owner.html
+  TGenericResource resource/tgenericresource.html
+   GetType resource/tabstractresource.gettype.html
+   GetName resource/tabstractresource.getname.html
+   ChangeDescTypeAllowed resource/tabstractresource.changedesctypeallowed.html
+   ChangeDescValueAllowed resource/tabstractresource.changedescvalueallowed.html
+   NotifyResourcesLoaded resource/tabstractresource.notifyresourcesloaded.html
+   Create resource/tabstractresource.create.html
+   Destroy resource/tabstractresource.destroy.html
+   UpdateRawData resource/tabstractresource.updaterawdata.html
+  TResources resource/tresources.html
+   Create resource/tresources.create.html
+   Destroy resource/tresources.destroy.html
+   Add resource/tresources.add.html
+   AddAutoID resource/tresources.addautoid.html
+   Clear resource/tresources.clear.html
+   Find resource/tresources.find.html
+   FindReader resource/tresources.findreader.html
+   MoveFrom resource/tresources.movefrom.html
+   Remove resource/tresources.remove.html
+   LoadFromStream resource/tresources.loadfromstream.html
+   LoadFromFile resource/tresources.loadfromfile.html
+   RegisterReader resource/tresources.registerreader.html
+   RegisterWriter resource/tresources.registerwriter.html
+   WriteToStream resource/tresources.writetostream.html
+   WriteToFile resource/tresources.writetofile.html
+   Count resource/tresources.count.html
+   Items resource/tresources.items.html
+   CacheData resource/tresources.cachedata.html
+  TAbstractResourceReader resource/tabstractresourcereader.html
+   SetDataSize resource/tabstractresourcereader.setdatasize.html
+   SetHeaderSize resource/tabstractresourcereader.setheadersize.html
+   SetDataOffset resource/tabstractresourcereader.setdataoffset.html
+   SetRawData resource/tabstractresourcereader.setrawdata.html
+   CallSubReaderLoad resource/tabstractresourcereader.callsubreaderload.html
+   AddNoTree resource/tabstractresourcereader.addnotree.html
+   GetTree resource/tabstractresourcereader.gettree.html
+   GetExtensions resource/tabstractresourcereader.getextensions.html
+   GetDescription resource/tabstractresourcereader.getdescription.html
+   Load resource/tabstractresourcereader.load.html
+   CheckMagic resource/tabstractresourcereader.checkmagic.html
+   Create resource/tabstractresourcereader.create.html
+   Extensions resource/tabstractresourcereader.extensions.html
+   Description resource/tabstractresourcereader.description.html
+  TAbstractResourceWriter resource/tabstractresourcewriter.html
+   GetTree resource/tabstractresourcewriter.gettree.html
+   GetExtensions resource/tabstractresourcewriter.getextensions.html
+   GetDescription resource/tabstractresourcewriter.getdescription.html
+   Write resource/tabstractresourcewriter.write.html
+   Create resource/tabstractresourcewriter.create.html
+   Extensions resource/tabstractresourcewriter.extensions.html
+   Description resource/tabstractresourcewriter.description.html
+ resourcetree resourcetree/index.html
+  TResourceTreeNode resourcetree/tresourcetreenode.html
+   fParent resourcetree/tresourcetreenode.fparent.html
+   fNamedEntries resourcetree/tresourcetreenode.fnamedentries.html
+   fIDEntries resourcetree/tresourcetreenode.fidentries.html
+   fSubDirRVA resourcetree/tresourcetreenode.fsubdirrva.html
+   fDataRVA resourcetree/tresourcetreenode.fdatarva.html
+   fNameRva resourcetree/tresourcetreenode.fnamerva.html
+   fDesc resourcetree/tresourcetreenode.fdesc.html
+   GetNamedCount resourcetree/tresourcetreenode.getnamedcount.html
+   GetNamedEntry resourcetree/tresourcetreenode.getnamedentry.html
+   GetIDCount resourcetree/tresourcetreenode.getidcount.html
+   GetIDEntry resourcetree/tresourcetreenode.getidentry.html
+   GetData resourcetree/tresourcetreenode.getdata.html
+   InternalFind resourcetree/tresourcetreenode.internalfind.html
+   Create resourcetree/tresourcetreenode.create.html
+   Parent resourcetree/tresourcetreenode.parent.html
+   Destroy resourcetree/tresourcetreenode.destroy.html
+   Add resourcetree/tresourcetreenode.add.html
+   CreateSubNode resourcetree/tresourcetreenode.createsubnode.html
+   CreateResource resourcetree/tresourcetreenode.createresource.html
+   Clear resourcetree/tresourcetreenode.clear.html
+   Remove resourcetree/tresourcetreenode.remove.html
+   Find resourcetree/tresourcetreenode.find.html
+   FindFreeID resourcetree/tresourcetreenode.findfreeid.html
+   IsLeaf resourcetree/tresourcetreenode.isleaf.html
+   Desc resourcetree/tresourcetreenode.desc.html
+   NamedCount resourcetree/tresourcetreenode.namedcount.html
+   NamedEntries resourcetree/tresourcetreenode.namedentries.html
+   IDCount resourcetree/tresourcetreenode.idcount.html
+   IDEntries resourcetree/tresourcetreenode.identries.html
+   NameRVA resourcetree/tresourcetreenode.namerva.html
+   SubDirRVA resourcetree/tresourcetreenode.subdirrva.html
+   DataRVA resourcetree/tresourcetreenode.datarva.html
+   Data resourcetree/tresourcetreenode.data.html
+  TRootResTreeNode resourcetree/trootrestreenode.html
+   InternalFind resourcetree/trootrestreenode.internalfind.html
+   Create resourcetree/trootrestreenode.create.html
+   CreateSubNode resourcetree/tresourcetreenode.createsubnode.html
+   Add resourcetree/tresourcetreenode.add.html
+   FindFreeID resourcetree/tresourcetreenode.findfreeid.html
+ resreader resreader/index.html
+  TResResourceReader resreader/tresresourcereader.html
+   GetExtensions resource/tabstractresourcereader.getextensions.html
+   GetDescription resource/tabstractresourcereader.getdescription.html
+   Load resource/tabstractresourcereader.load.html
+   CheckMagic resource/tabstractresourcereader.checkmagic.html
+   Create resource/tabstractresourcereader.create.html
+   Destroy resreader/tresresourcereader.destroy.html
+ reswriter reswriter/index.html
+  TResResourceWriter reswriter/tresresourcewriter.html
+   GetExtensions resource/tabstractresourcewriter.getextensions.html
+   GetDescription resource/tabstractresourcewriter.getdescription.html
+   Write resource/tabstractresourcewriter.write.html
+   Create resource/tabstractresourcewriter.create.html
+ stringtableresource stringtableresource/index.html
+  SNameNotAllowed stringtableresource/index-1.html#snamenotallowed
+  SIndexOutOfBounds stringtableresource/index-1.html#sindexoutofbounds
+  EStringTableResourceException stringtableresource/estringtableresourceexception.html
+  EStringTableNameNotAllowedException stringtableresource/estringtablenamenotallowedexception.html
+  EStringTableIndexOutOfBoundsException stringtableresource/estringtableindexoutofboundsexception.html
+  TStringTableResource stringtableresource/tstringtableresource.html
+   GetType resource/tabstractresource.gettype.html
+   GetName resource/tabstractresource.getname.html
+   ChangeDescTypeAllowed resource/tabstractresource.changedesctypeallowed.html
+   ChangeDescValueAllowed resource/tabstractresource.changedescvalueallowed.html
+   NotifyResourcesLoaded resource/tabstractresource.notifyresourcesloaded.html
+   Create stringtableresource/tstringtableresource.create.html
+   Destroy resource/tabstractresource.destroy.html
+   UpdateRawData resource/tabstractresource.updaterawdata.html
+   FirstID stringtableresource/tstringtableresource.firstid.html
+   LastID stringtableresource/tstringtableresource.lastid.html
+   Count stringtableresource/tstringtableresource.count.html
+   Strings stringtableresource/tstringtableresource.strings.html
+ versionconsts versionconsts/index.html
+  VS_FF_DEBUG versionconsts/vs_ff_debug.html
+  VS_FF_PRERELEASE versionconsts/vs_ff_prerelease.html
+  VS_FF_PATCHED versionconsts/vs_ff_patched.html
+  VS_FF_PRIVATEBUILD versionconsts/vs_ff_privatebuild.html
+  VS_FF_INFOINFERRED versionconsts/vs_ff_infoinferred.html
+  VS_FF_SPECIALBUILD versionconsts/vs_ff_specialbuild.html
+  VS_FFI_FILEFLAGSMASK versionconsts/vs_ffi_fileflagsmask.html
+  VOS_UNKNOWN versionconsts/vos_unknown.html
+  VOS_DOS versionconsts/vos_dos.html
+  VOS_OS216 versionconsts/vos_os216.html
+  VOS_OS232 versionconsts/vos_os232.html
+  VOS_NT versionconsts/vos_nt.html
+  VOS__BASE versionconsts/vos__base.html
+  VOS__WINDOWS16 versionconsts/vos__windows16.html
+  VOS__PM16 versionconsts/vos__pm16.html
+  VOS__PM32 versionconsts/vos__pm32.html
+  VOS__WINDOWS32 versionconsts/vos__windows32.html
+  VOS_DOS_WINDOWS16 versionconsts/vos_dos_windows16.html
+  VOS_DOS_WINDOWS32 versionconsts/vos_dos_windows32.html
+  VOS_OS216_PM16 versionconsts/vos_os216_pm16.html
+  VOS_OS232_PM32 versionconsts/vos_os232_pm32.html
+  VOS_NT_WINDOWS32 versionconsts/vos_nt_windows32.html
+  VFT_UNKNOWN versionconsts/vft_unknown.html
+  VFT_APP versionconsts/vft_app.html
+  VFT_DLL versionconsts/vft_dll.html
+  VFT_DRV versionconsts/vft_drv.html
+  VFT_FONT versionconsts/vft_font.html
+  VFT_VXD versionconsts/vft_vxd.html
+  VFT_STATIC_LIB versionconsts/vft_static_lib.html
+  VFT2_UNKNOWN versionconsts/vft2_unknown.html
+  VFT2_DRV_PRINTER versionconsts/vft2_drv_printer.html
+  VFT2_DRV_KEYBOARD versionconsts/vft2_drv_keyboard.html
+  VFT2_DRV_LANGUAGE versionconsts/vft2_drv_language.html
+  VFT2_DRV_DISPLAY versionconsts/vft2_drv_display.html
+  VFT2_DRV_MOUSE versionconsts/vft2_drv_mouse.html
+  VFT2_DRV_NETWORK versionconsts/vft2_drv_network.html
+  VFT2_DRV_SYSTEM versionconsts/vft2_drv_system.html
+  VFT2_DRV_INSTALLABLE versionconsts/vft2_drv_installable.html
+  VFT2_DRV_SOUND versionconsts/vft2_drv_sound.html
+  VFT2_DRV_COMM versionconsts/vft2_drv_comm.html
+  VFT2_FONT_RASTER versionconsts/vft2_font_raster.html
+  VFT2_FONT_VECTOR versionconsts/vft2_font_vector.html
+  VFT2_FONT_TRUETYPE versionconsts/vft2_font_truetype.html
+ versionresource versionresource/index.html
+  TVerBlockHeader versionresource/tverblockheader.html
+  TVersionResource versionresource/tversionresource.html
+   GetType resource/tabstractresource.gettype.html
+   GetName resource/tabstractresource.getname.html
+   ChangeDescTypeAllowed resource/tabstractresource.changedesctypeallowed.html
+   ChangeDescValueAllowed resource/tabstractresource.changedescvalueallowed.html
+   NotifyResourcesLoaded resource/tabstractresource.notifyresourcesloaded.html
+   Create versionresource/tversionresource.create.html
+   Destroy resource/tabstractresource.destroy.html
+   UpdateRawData resource/tabstractresource.updaterawdata.html
+   FixedInfo versionresource/tversionresource.fixedinfo.html
+   StringFileInfo versionresource/tversionresource.stringfileinfo.html
+   VarFileInfo versionresource/tversionresource.varfileinfo.html
+ versiontypes versiontypes/index.html
+  SVerStrTableNameNotAllowed versiontypes/index-1.html#sverstrtablenamenotallowed
+  SVerStrTableKeyNotFound versiontypes/index-1.html#sverstrtablekeynotfound
+  SVerStrTableDuplicateKey versiontypes/index-1.html#sverstrtableduplicatekey
+  TFileProductVersion versiontypes/tfileproductversion.html
+  TVerTranslationInfo versiontypes/tvertranslationinfo.html
+  PVerTranslationInfo versiontypes/pvertranslationinfo.html
+  EVersionStringTableException versiontypes/eversionstringtableexception.html
+  ENameNotAllowedException versiontypes/enamenotallowedexception.html
+  EKeyNotFoundException versiontypes/ekeynotfoundexception.html
+  EDuplicateKeyException versiontypes/eduplicatekeyexception.html
+  TVersionFixedInfo versiontypes/tversionfixedinfo.html
+   Create versiontypes/tversionfixedinfo.create.html
+   FileVersion versiontypes/tversionfixedinfo.fileversion.html
+   ProductVersion versiontypes/tversionfixedinfo.productversion.html
+   FileFlagsMask versiontypes/tversionfixedinfo.fileflagsmask.html
+   FileFlags versiontypes/tversionfixedinfo.fileflags.html
+   FileOS versiontypes/tversionfixedinfo.fileos.html
+   FileType versiontypes/tversionfixedinfo.filetype.html
+   FileSubType versiontypes/tversionfixedinfo.filesubtype.html
+   FileDate versiontypes/tversionfixedinfo.filedate.html
+  TVersionStringTable versiontypes/tversionstringtable.html
+   Create versiontypes/tversionstringtable.create.html
+   Destroy versiontypes/tversionstringtable.destroy.html
+   Add versiontypes/tversionstringtable.add.html
+   Clear versiontypes/tversionstringtable.clear.html
+   Delete versiontypes/tversionstringtable.delete.html
+   Name versiontypes/tversionstringtable.name.html
+   Count versiontypes/tversionstringtable.count.html
+   Keys versiontypes/tversionstringtable.keys.html
+   ValuesByIndex versiontypes/tversionstringtable.valuesbyindex.html
+   Values versiontypes/tversionstringtable.values.html
+  TVersionStringFileInfo versiontypes/tversionstringfileinfo.html
+   GetCount versiontypes/tversionstringfileinfo.getcount.html
+   GetItem versiontypes/tversionstringfileinfo.getitem.html
+   SetItem versiontypes/tversionstringfileinfo.setitem.html
+   Create versiontypes/tversionstringfileinfo.create.html
+   Destroy versiontypes/tversionstringfileinfo.destroy.html
+   Add versiontypes/tversionstringfileinfo.add.html
+   Clear versiontypes/tversionstringfileinfo.clear.html
+   Delete versiontypes/tversionstringfileinfo.delete.html
+   Count versiontypes/tversionstringfileinfo.count.html
+   Items versiontypes/tversionstringfileinfo.items.html
+  TVersionVarFileInfo versiontypes/tversionvarfileinfo.html
+   GetCount versiontypes/tversionvarfileinfo.getcount.html
+   GetItem versiontypes/tversionvarfileinfo.getitem.html
+   SetItem versiontypes/tversionvarfileinfo.setitem.html
+   Create versiontypes/tversionvarfileinfo.create.html
+   Destroy versiontypes/tversionvarfileinfo.destroy.html
+   Add versiontypes/tversionvarfileinfo.add.html
+   Clear versiontypes/tversionvarfileinfo.clear.html
+   Delete versiontypes/tversionvarfileinfo.delete.html
+   Count versiontypes/tversionvarfileinfo.count.html
+   Items versiontypes/tversionvarfileinfo.items.html
+ winpeimagereader winpeimagereader/index.html
+  TWinPEImageResourceReader winpeimagereader/twinpeimageresourcereader.html
+   CheckDosStub winpeimagereader/twinpeimageresourcereader.checkdosstub.html
+   CheckPESignature winpeimagereader/twinpeimageresourcereader.checkpesignature.html
+   GetExtensions resource/tabstractresourcereader.getextensions.html
+   GetDescription resource/tabstractresourcereader.getdescription.html
+   Load resource/tabstractresourcereader.load.html
+   CheckMagic resource/tabstractresourcereader.checkmagic.html
+   Create resource/tabstractresourcereader.create.html
+   Destroy winpeimagereader/twinpeimageresourcereader.destroy.html
+
+:classes
+#fcl-res.resource.EResourceException #rtl.sysutils.Exception
+#fcl-res.resource.EResourceDescTypeException #fcl-res.resource.EResourceException
+#fcl-res.resource.EResourceDescChangeNotAllowedException #fcl-res.resource.EResourceException
+#fcl-res.resource.EResourceLangIDChangeNotAllowedException #fcl-res.resource.EResourceException
+#fcl-res.resource.EResourceDuplicateException #fcl-res.resource.EResourceException
+#fcl-res.resource.EResourceNotFoundException #fcl-res.resource.EResourceException
+#fcl-res.resource.ENoMoreFreeIDsException #fcl-res.resource.EResourceException
+#fcl-res.resource.EResourceReaderException #fcl-res.resource.EResourceException
+#fcl-res.resource.EResourceReaderNotFoundException #fcl-res.resource.EResourceReaderException
+#fcl-res.resource.EResourceReaderWrongFormatException #fcl-res.resource.EResourceReaderException
+#fcl-res.resource.EResourceReaderUnexpectedEndOfStreamException #fcl-res.resource.EResourceReaderException
+#fcl-res.resource.EResourceWriterException #fcl-res.resource.EResourceException
+#fcl-res.resource.EResourceWriterNotFoundException #fcl-res.resource.EResourceWriterException
+#fcl-res.resource.TResourceDesc #rtl.System.TObject
+1VfName
+1VfID
+1VfDescType
+1VfOwner
+1MGetID
+1MGetName
+1MSetID
+1MSetName
+1MCanChangeType
+1MCanChangeValue
+2MSetOwner
+3MCreate
+3MAssign
+3MEquals
+3PName rw
+3PID rw
+3PDescType r
+#fcl-res.resource.TAbstractResource #rtl.System.TObject
+1VfLangId
+1VfDataSize
+1VfHeaderSize
+1VfDataVersion
+1VfMemoryFlags
+1VfVersion
+1VfCharacteristics
+1VfDataOffset
+1VfCodePage
+1VfRawData
+1VfOwnerList
+1VfOwner
+1MGetRawData
+1MGetCacheData
+1MSetCacheData
+1MGetDataSize
+1MSetLangID
+2MSetDescOwner
+2MSetOwnerList
+2MSetChildOwner
+2MGetType
+2MGetName
+2MChangeDescTypeAllowed
+2MChangeDescValueAllowed
+2MNotifyResourcesLoaded
+2MCreate
+3MDestroy
+3MCompareContents
+3MUpdateRawData
+3MSetCustomRawDataStream
+3P_Type r
+3PName r
+3PLangID rw
+3PDataSize r
+3PHeaderSize r
+3PDataVersion rw
+3PMemoryFlags rw
+3PVersion rw
+3PCharacteristics rw
+3PDataOffset r
+3PCodePage rw
+3PRawData r
+3PCacheData rw
+3POwnerList r
+3POwner r
+#fcl-res.resource.TGenericResource #fcl-res.resource.TAbstractResource
+1VfType
+1VfName
+2MGetType
+2MGetName
+2MChangeDescTypeAllowed
+2MChangeDescValueAllowed
+2MNotifyResourcesLoaded
+3MCreate
+3MDestroy
+3MUpdateRawData
+#fcl-res.resource.TResources #rtl.System.TObject
+1VfList
+1VfTree
+1VdummyType
+1VdummyName
+1VfCacheData
+1VfMoveFromCount
+1VfRemovedCount
+1MGetItem
+1MGetCount
+1MSetCacheData
+1MNotifyLoaded
+1VfTempRStream
+1MInitReaderList
+1MInitWriterList
+1MDisposeStreamerList
+1MDisposeReaderList
+1MDisposeWriterList
+1MFindWriterClass
+1MRegisterStreamer
+1MSendUpdateRawData
+1MInternalRemove
+1MQuietRemove
+1MInternalClear
+1MInternalAdd
+1MAddNoTree
+1MInternalFind
+1MBeginMoveFrom
+1MEndMoveFrom
+3MCreate
+3MDestroy
+3MAdd
+3MAddAutoID
+3MClear
+3MFind
+3MFindReader
+3MMoveFrom
+3MRemove
+3MLoadFromStream
+3MLoadFromFile
+3MRegisterReader
+3MRegisterWriter
+3MWriteToStream
+3MWriteToFile
+3PCount r
+3PItems r
+3PCacheData rw
+#fcl-res.resource.TAbstractResourceReader #rtl.System.TObject
+2MSetDataSize
+2MSetHeaderSize
+2MSetDataOffset
+2MSetRawData
+2MCallSubReaderLoad
+2MAddNoTree
+2MGetTree
+2MGetExtensions
+2MGetDescription
+2MLoad
+2MCheckMagic
+3MCreate
+3PExtensions r
+3PDescription r
+#fcl-res.resource.TAbstractResourceWriter #rtl.System.TObject
+2MGetTree
+2MGetExtensions
+2MGetDescription
+2MWrite
+3MCreate
+3PExtensions r
+3PDescription r
+#fcl-res.resourcetree.TResourceTreeNode #rtl.System.TObject
+2VfParent
+2VfNamedEntries
+2VfIDEntries
+2VfSubDirRVA
+2VfDataRVA
+2VfNameRva
+2VfDesc
+2MGetNamedCount
+2MGetNamedEntry
+2MGetIDCount
+2MGetIDEntry
+2MGetData
+2MInternalFind
+2MCreate
+2PParent r
+3MDestroy
+3MAdd
+3MCreateSubNode
+3MCreateResource
+3MClear
+3MRemove
+3MFind
+3MFindFreeID
+3MIsLeaf
+3PDesc r
+3PNamedCount r
+3PNamedEntries r
+3PIDCount r
+3PIDEntries r
+3PNameRVA rw
+3PSubDirRVA rw
+3PDataRVA rw
+3PData r
+#fcl-res.resourcetree.TRootResTreeNode #fcl-res.resourcetree.TResourceTreeNode
+2MInternalFind
+3MCreate
+3MCreateSubNode
+3MAdd
+3MFindFreeID
+#fcl-res.resdatastream.TCachedDataStream #rtl.Classes.TStream
+2VfStream
+2VfSize
+2VfPosition
+2MGetPosition
+2MSetPosition
+2MGetSize
+2MSetSize64
+3MCreate
+3MWrite
+3MSeek
+#fcl-res.resdatastream.TCachedResourceDataStream #fcl-res.resdatastream.TCachedDataStream
+1VfOffset
+3MCreate
+3MRead
+#fcl-res.resdatastream.TResourceDataStream #rtl.Classes.TStream
+1VfStream
+1VfStreamType
+1VfResource
+1MCheckChangeStream
+1MGetCached
+1MSetCached
+2MGetPosition
+2MSetPosition
+2MGetSize
+2MSetSize64
+3MCreate
+3MDestroy
+3MCompare
+3MSetCustomStream
+3MRead
+3MWrite
+3MSeek
+3PCached rw
+#fcl-res.resfactory.EResourceFactoryException #fcl-res.resource.EResourceException
+#fcl-res.resfactory.EResourceClassAlreadyRegisteredException #fcl-res.resfactory.EResourceFactoryException
+#fcl-res.resfactory.TResourceFactory #rtl.System.TObject
+1MInitResTypeList
+1MDisposeResTypeList
+1MFindResourceClass
+3MRegisterResourceClass
+3MCreateResource
+#fcl-res.resreader.TResResourceReader #fcl-res.resource.TAbstractResourceReader
+1VfExtensions
+1VfDescription
+1VdummyType
+1VdummyName
+1MAlignDword
+1MReadResourceHeader
+1MReadUnicodeString
+1MReadNameID
+2MGetExtensions
+2MGetDescription
+2MLoad
+2MCheckMagic
+3MCreate
+3MDestroy
+#fcl-res.reswriter.TResResourceWriter #fcl-res.resource.TAbstractResourceWriter
+1VfExtensions
+1VfDescription
+1MAlignDword
+1MWriteFileHeader
+1MWriteResource
+1MWriteNameId
+1MWriteUnicodeString
+2MGetExtensions
+2MGetDescription
+2MWrite
+3MCreate
+#fcl-res.bitmapresource.TBitmapResource #fcl-res.resource.TAbstractResource
+1VfType
+1VfName
+1VfBitmapData
+1MGetBitmapData
+2MGetType
+2MGetName
+2MChangeDescTypeAllowed
+2MChangeDescValueAllowed
+2MNotifyResourcesLoaded
+3MCreate
+3MDestroy
+3MUpdateRawData
+3MSetCustomBitmapDataStream
+3PBitmapData r
+#fcl-res.acceleratorsresource.TAcceleratorsResource #fcl-res.resource.TAbstractResource
+1VfType
+1VfName
+1VfList
+1MCheckDataLoaded
+1MGetCount
+1MGetItem
+1MSetItem
+2MGetType
+2MGetName
+2MChangeDescTypeAllowed
+2MChangeDescValueAllowed
+2MNotifyResourcesLoaded
+3MCreate
+3MDestroy
+3MUpdateRawData
+3MAdd
+3MClear
+3MDelete
+3PCount r
+3PItems rw
+#fcl-res.groupresource.TGroupResource #fcl-res.resource.TAbstractResource
+2VfType
+2VfName
+2VfItemData
+2VfItemList
+2VdummyType
+2VdummyName
+2MFindSubResources
+2MReadResourceItemHeader
+2MCheckBuildItemStream
+2MGetItemData
+2MWriteHeader
+2MWriteResHeader
+2MCreateSubItems
+2MCreateSubItem
+2MUpdateItemOwner
+2MClearItemList
+2MDeleteSubItems
+2MGetSubStreamCount
+2MGetSubStream
+2MSetOwnerList
+2MNotifyResourcesLoaded
+3MDestroy
+3MCompareContents
+3MSetCustomItemDataStream
+3MUpdateRawData
+3PItemData r
+#fcl-res.groupresource.TGroupCachedDataStream #fcl-res.resdatastream.TCachedDataStream
+1VfHeader
+1VfStreams
+1MReadFromSubStream
+3MCreate
+3MDestroy
+3MRead
+#fcl-res.groupiconresource.TGroupIconResource #fcl-res.groupresource.TGroupResource
+1MWriteIcoIconHeader
+2MReadResourceItemHeader
+2MWriteHeader
+2MCreateSubItem
+2MUpdateItemOwner
+2MClearItemList
+2MDeleteSubItems
+2MGetSubStream
+2MGetType
+2MGetName
+2MChangeDescTypeAllowed
+2MChangeDescValueAllowed
+3MCreate
+#fcl-res.groupcursorresource.TGroupCursorResource #fcl-res.groupresource.TGroupResource
+1MWriteCurCursorHeader
+2MReadResourceItemHeader
+2MWriteHeader
+2MCreateSubItem
+2MUpdateItemOwner
+2MClearItemList
+2MDeleteSubItems
+2MGetSubStream
+2MGetType
+2MGetName
+2MChangeDescTypeAllowed
+2MChangeDescValueAllowed
+3MCreate
+#fcl-res.stringtableresource.EStringTableResourceException #fcl-res.resource.EResourceException
+#fcl-res.stringtableresource.EStringTableNameNotAllowedException #fcl-res.stringtableresource.EStringTableResourceException
+#fcl-res.stringtableresource.EStringTableIndexOutOfBoundsException #fcl-res.stringtableresource.EStringTableResourceException
+#fcl-res.stringtableresource.TStringTableResource #fcl-res.resource.TAbstractResource
+1VfType
+1VfName
+1VfFirstID
+1VfCount
+1VfList
+1VfCanChangeDesc
+1MIDtoIndex
+1MCheckListLoaded
+1MReadWideString
+1MWriteWideString
+1MGetLastID
+1MSetFirstID
+1MGetString
+1MSetString
+1MCheckIndex
+2MGetType
+2MGetName
+2MChangeDescTypeAllowed
+2MChangeDescValueAllowed
+2MNotifyResourcesLoaded
+3MCreate
+3MDestroy
+3MUpdateRawData
+3PFirstID rw
+3PLastID r
+3PCount r
+3PStrings rw
+#fcl-res.versiontypes.EVersionStringTableException #rtl.sysutils.Exception
+#fcl-res.versiontypes.ENameNotAllowedException #fcl-res.versiontypes.EVersionStringTableException
+#fcl-res.versiontypes.EKeyNotFoundException #fcl-res.versiontypes.EVersionStringTableException
+#fcl-res.versiontypes.EDuplicateKeyException #fcl-res.versiontypes.EVersionStringTableException
+#fcl-res.versiontypes.TVersionFixedInfo #rtl.System.TObject
+1VfFileVersion
+1VfProductVersion
+1VfFileFlagsMask
+1VfFileFlags
+1VfFileOS
+1VfFileType
+1VfFileSubType
+1VfFileDate
+3MCreate
+3PFileVersion rw
+3PProductVersion rw
+3PFileFlagsMask rw
+3PFileFlags rw
+3PFileOS rw
+3PFileType rw
+3PFileSubType rw
+3PFileDate rw
+#fcl-res.versiontypes.TVersionStringTable #rtl.System.TObject
+1VfName
+1VfKeys
+1VfValues
+1MGetCount
+1MGetKey
+1MGetValue
+1MCheckName
+1MKeyToIndex
+1MSetValue
+3MCreate
+3MDestroy
+3MAdd
+3MClear
+3MDelete
+3PName r
+3PCount r
+3PKeys r
+3PValuesByIndex rw
+3PValues rw
+#fcl-res.versiontypes.TVersionStringFileInfo #rtl.System.TObject
+1VfList
+2MGetCount
+2MGetItem
+2MSetItem
+3MCreate
+3MDestroy
+3MAdd
+3MClear
+3MDelete
+3PCount r
+3PItems rw
+#fcl-res.versiontypes.TVersionVarFileInfo #rtl.System.TObject
+1VfList
+2MGetCount
+2MGetItem
+2MSetItem
+3MCreate
+3MDestroy
+3MAdd
+3MClear
+3MDelete
+3PCount r
+3PItems rw
+#fcl-res.versionresource.TVersionResource #fcl-res.resource.TAbstractResource
+1VfType
+1VfName
+1VfFixedInfo
+1VfStringFileInfo
+1VfVarFileInfo
+1MSwapVersion
+1MAlignDWordReading
+1MAlignDWordWriting
+1MGetFileInfo
+1MGetFixedInfo
+1MGetVarInfo
+1MCheckDataLoaded
+1MLoadData
+1MLoadFixedInfos
+1MReadBlockHeader
+1MReadStringFileInfo
+1MReadVarFileInfo
+1MReadStringTable
+1MReadWideString
+1MWriteFixedBlockLength
+1MWriteData
+1MWriteFixedInfos
+1MWriteStringFileInfo
+1MWriteStringTable
+1MWriteStringEntry
+1MWriteVarFileInfo
+1MWriteVarEntry
+1MWriteWideString
+2MGetType
+2MGetName
+2MChangeDescTypeAllowed
+2MChangeDescValueAllowed
+2MNotifyResourcesLoaded
+3MCreate
+3MDestroy
+3MUpdateRawData
+3PFixedInfo r
+3PStringFileInfo r
+3PVarFileInfo r
+#fcl-res.coffreader.TCoffResourceReader #fcl-res.resource.TAbstractResourceReader
+1VfOppositeEndianess
+1VfDescription
+1VfExtensions
+1VfCoffHeader
+1VfResSectHeader
+1VfResSectStart
+1VfRoot
+1VfMachineType
+1MCheckRsrcName
+1MReadCoffHeader
+1MFindResSectionHeader
+1MReadResourceTree
+1MReadNodeTable
+1MReadNodeDirEntry
+1MReadResString
+1MReadResDataEntry
+2MGetExtensions
+2MGetDescription
+2MLoad
+2MCheckMagic
+3MCreate
+3MDestroy
+3PMachineType r
+#fcl-res.coffwriter.TCoffStringTable #rtl.Classes.TStringList
+1VfSize
+3MCreate
+3MAdd
+3MDelete
+3PSize r
+#fcl-res.coffwriter.TResourceStringTable #rtl.System.TObject
+1VfList
+1VfStartRVA
+1VfCurrRVA
+1VfEndRVA
+1MGetString
+1MGetCount
+1MSetStartRVA
+3MCreate
+3MDestroy
+3MAdd
+3MClear
+3PCount r
+3PItems r
+3PStartRVA rw
+3PCurrRVA r
+3PEndRVA r
+#fcl-res.coffwriter.TCoffRelocations #rtl.System.TObject
+1VfMachineType
+1VfList
+1VfStartAddress
+2MGetCount
+2MGetRelocation
+3MCreate
+3MDestroy
+3MAdd
+3MAddRelativeToSection
+3MClear
+3PCount r
+3PItems r
+3PStartAddress rw
+3PMachineType rw
+#fcl-res.coffwriter.TCoffResourceWriter #fcl-res.resource.TAbstractResourceWriter
+1VfExtensions
+1VfDescription
+1VfResStringTable
+1VfMachineType
+1MSetDefaultTarget
+1MAlignDword
+1MNextAlignedDword
+1MSetNodeStringRVA
+1MWriteResDirTables
+1MWriteNodeTables
+1MWriteNodeDirEntry
+1MWriteResString
+1MWriteResDataEntries
+1MWriteResDataEntry
+1MWriteNodeRawData
+1MWriteRelocation
+1MSetMachineType
+2VfRoot
+2VfRelocations
+2VfResDataSectionSymIdx
+2VfResHandlesSectionSymIdx
+2VfResDataEntryCurrentRVA
+2VfSymTablePtr
+2VfStringTable
+2VfNumSymtableEntries
+2VfSymStorageClass
+2VfOppositeEndianess
+2MWriteEmptyCoffHeader
+2MWriteEmptySectionHeader
+2MWriteResStringTable
+2MWriteRawData
+2MWriteRelocations
+2MWriteCoffStringTable
+2MGetFixedCoffHeader
+2MFixCoffHeader
+2MFixSectionHeader
+2MGetExtensions
+2MGetDescription
+2MPrescanNode
+2MPrescanResourceTree
+2MWrite
+2MWriteSymbolTable
+3MCreate
+3MDestroy
+3PMachineType rw
+3POppositeEndianess rw
+#fcl-res.winpeimagereader.TWinPEImageResourceReader #fcl-res.resource.TAbstractResourceReader
+1VfDescription
+1VfExtensions
+1VfCoffReader
+2MCheckDosStub
+2MCheckPESignature
+2MGetExtensions
+2MGetDescription
+2MLoad
+2MCheckMagic
+3MCreate
+3MDestroy
+#fcl-res.elfreader.EElfResourceReaderException #fcl-res.resource.EResourceReaderException
+#fcl-res.elfreader.EElfResourceReaderUnknownClassException #fcl-res.elfreader.EElfResourceReaderException
+#fcl-res.elfreader.EElfResourceReaderUnknownVersionException #fcl-res.elfreader.EElfResourceReaderException
+#fcl-res.elfreader.EElfResourceReaderNoSectionsException #fcl-res.elfreader.EElfResourceReaderException
+#fcl-res.elfreader.EElfResourceReaderNoStringTableException #fcl-res.elfreader.EElfResourceReaderException
+#fcl-res.elfreader.TElfResourceReader #fcl-res.resource.TAbstractResourceReader
+1VfDescription
+1VfExtensions
+1VfMachineType
+1VfOrder
+1VfBits
+1VfNativeOrder
+1VfOppositeEndianess
+1MSetDefaultTarget
+1MReadElfIdent
+2MGetExtensions
+2MGetDescription
+2MLoad
+2MCheckMagic
+3MCreate
+3MDestroy
+3PMachineType r
+#fcl-res.elfwriter.EElfResourceWriterException #fcl-res.resource.EResourceWriterException
+#fcl-res.elfwriter.EElfResourceWriterUnknownMachineException #fcl-res.elfwriter.EElfResourceWriterException
+#fcl-res.elfwriter.EElfResourceWriterUnknownClassException #fcl-res.elfwriter.EElfResourceWriterException
+#fcl-res.elfwriter.EElfResourceWriterUnknownSectionException #fcl-res.elfwriter.EElfResourceWriterException
+#fcl-res.elfwriter.TElfResourceWriter #fcl-res.resource.TAbstractResourceWriter
+1VfExtensions
+1VfDescription
+1VfMachineTypeInt
+1VfMachineType
+1VfOrder
+1VfBits
+1VfNativeOrder
+1VfOppositeEndianess
+1MSetDefaultTarget
+1MSetMachineType
+1MWriteElfIdent
+2MGetExtensions
+2MGetDescription
+2MWrite
+3MCreate
+3MDestroy
+3PMachineType rw
+#fcl-res.machoreader.TMachOResourceReader #fcl-res.resource.TAbstractResourceReader
+1VfDescription
+1VfExtensions
+1VfNativeEndianess
+1VfEndianess
+1VfOppositeEndianess
+1VfMachineType
+1VfBits
+1VfHeader
+1MSetDefaultTarget
+1MReadMachOHeader
+2MGetExtensions
+2MGetDescription
+2MLoad
+2MCheckMagic
+3MCreate
+3MDestroy
+3PMachineType r
+#fcl-res.machowriter.EMachOResourceWriterException #fcl-res.resource.EResourceWriterException
+#fcl-res.machowriter.EMachOResourceWriterUnknownBitSizeException #fcl-res.machowriter.EMachOResourceWriterException
+#fcl-res.machowriter.EMachOResourceWriterSymbolTableWrongOrderException #fcl-res.machowriter.EMachOResourceWriterException
+#fcl-res.machowriter.TMachOResourceWriter #fcl-res.resource.TAbstractResourceWriter
+1VfExtensions
+1VfDescription
+1VfNativeEndianess
+1VfEndianess
+1VfOppositeEndianess
+1VfMachineType
+1VfSubMachineType
+1VfBits
+1MSetDefaultTarget
+1MSetMachineType
+1MSetSubMachineType
+2MGetExtensions
+2MGetDescription
+2MWrite
+3MCreate
+3MDestroy
+3PMachineType rw
+3PSubMachineType rw
+#fcl-res.externalreader.TExternalResourceReader #fcl-res.resource.TAbstractResourceReader
+1VfExtensions
+1VfDescription
+1VfNativeEndianess
+1VfEndianess
+1VfOppositeEndianess
+1VfFileHeader
+1VfRoot
+1MReadString
+1MReadFileHeader
+1MReadResourceTree
+1MReadNode
+1MReadResData
+2MGetExtensions
+2MGetDescription
+2MLoad
+2MCheckMagic
+3MCreate
+3MDestroy
+3PEndianess r
+#fcl-res.externalwriter.EExternalResourceWriterException #fcl-res.resource.EResourceWriterException
+#fcl-res.externalwriter.EExternalResInvalidEndianessException #fcl-res.externalwriter.EExternalResourceWriterException
+#fcl-res.externalwriter.TExternalResourceWriter #fcl-res.resource.TAbstractResourceWriter
+1VfExtensions
+1VfDescription
+1VfFileHeader
+1VfRoot
+1VfEndianess
+1VfOppositeEndianess
+1VfStrTable
+1VfDataCurOfs
+1MNextAlignedQword
+1MAlignQword
+1MPrescanResourceTree
+1MPrescanNode
+1MWriteEmptyFileHeader
+1MWriteNodeInfos
+1MWriteNodeInfo
+1MWriteSubNodes
+1MWriteStringTable
+1MWriteRawData
+1MWriteResData
+1MFixHeader
+1MSetEndianess
+2MGetExtensions
+2MGetDescription
+2MWrite
+3MCreate
+3MDestroy
+3PEndianess rw
+#fcl-res.dfmreader.TDfmResourceReader #fcl-res.resource.TAbstractResourceReader
+1VfExtensions
+1VfDescription
+1VfLine
+1VfLinePos
+1VfObjectName
+1VdummyType
+1VdummyName
+1VfIsBinary
+1MIsAlpha
+1MIsNum
+1MIsAlphaNum
+1MIsSpace
+1MSkipSpaces
+1MGetIdent
+1MReadLine
+1MCheckTextDfm
+1MCheckBinDfm
+2MGetExtensions
+2MGetDescription
+2MLoad
+2MCheckMagic
+3MCreate
+3MDestroy
