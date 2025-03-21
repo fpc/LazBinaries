@@ -3300,14 +3300,14 @@
    TabStop comctrls/tcustomtreeview.tabstop.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    BeginAutoDrag controls/tcontrol.beginautodrag.html
-   DoDragMsg 
+   DoDragMsg controls/twincontrol.dodragmsg.html
    GetChildAccessibleObjectAtPos controls/tcontrol.getchildaccessibleobjectatpos.html
   TTreeView comctrls/ttreeview.html
    ParentColor comctrls/ttreeview.parentcolor.html
    TabStop comctrls/ttreeview.tabstop.html
-   PathDelimiter 
-   ScrolledLeft 
-   ScrolledTop 
+   PathDelimiter comctrls/tcustomtreeview.pathdelimiter.html
+   ScrolledLeft comctrls/tcustomtreeview.scrolledleft.html
+   ScrolledTop comctrls/tcustomtreeview.scrolledtop.html
    Align controls/tcontrol.align.html
    Anchors controls/tcontrol.anchors.html
    AutoExpand comctrls/tcustomtreeview.autoexpand.html
@@ -9677,6 +9677,7 @@
    AutoScrollEnabled forms/tscrollingwincontrol.autoscrollenabled.html
    CalculateAutoRanges forms/tscrollingwincontrol.calculateautoranges.html
    CreateWnd forms/tscrollingwincontrol.createwnd.html
+   DestroyWnd forms/tscrollingwincontrol.destroywnd.html
    GetClientScrollOffset forms/tscrollingwincontrol.getclientscrolloffset.html
    GetLogicalClientRect forms/tscrollingwincontrol.getlogicalclientrect.html
    DoOnResize forms/tscrollingwincontrol.doonresize.html
@@ -18723,7 +18724,7 @@
    Path shellctrls/tcustomshelltreeview.path.html
    OnAddItem shellctrls/tcustomshelltreeview.onadditem.html
    OnSortCompare shellctrls/tcustomshelltreeview.onsortcompare.html
-   Items comctrls/tcustomtreeview.items.html
+   Items shellctrls/tcustomshelltreeview.items.html
   TShellTreeView shellctrls/tshelltreeview.html
    ExpandCollapseMode shellctrls/tcustomshelltreeview.expandcollapsemode.html
    ParentColor shellctrls/tshelltreeview.parentcolor.html
@@ -27064,6 +27065,7 @@
 1MShowEmulatedTextHintIfYouCan
 1MShowEmulatedTextHint
 1MHideEmulatedTextHint
+1MUpdateItemIndex
 1MUpdateSorted
 1MLMDrawListItem
 1MLMMeasureItem
@@ -28277,6 +28279,7 @@
 2MAutoScrollEnabled
 2MCalculateAutoRanges
 2MCreateWnd
+2MDestroyWnd
 2MGetClientScrollOffset
 2MGetLogicalClientRect
 2MDoOnResize
@@ -34640,6 +34643,7 @@
 1VFMouseDownOnFoldingSign
 1VFMultiSelectStyle
 1VFHotTrackColor
+1VFHotTrackedPrevNodeIdx
 1VFDisabledFontColor
 1VFOnAddition
 1VFOnAdvancedCustomDraw
@@ -39101,6 +39105,7 @@
 1VFUseBuiltinIcons
 1VFOnAddItem
 1VFOnSortCompare
+1MCreateRootNode
 1MGetPath
 1MSetFileSortType
 1MSetObjectTypes

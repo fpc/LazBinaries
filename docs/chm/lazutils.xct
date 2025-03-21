@@ -889,7 +889,7 @@
    Item laz2_dom/tdomnamednodemap.item.html
    SortedItem laz2_dom/tdomnamednodemap.sorteditem.html
    Length laz2_dom/tdomnamednodemap.length.html
-   setNamedItemNS 
+   setNamedItemNS laz2_dom/tdomnamednodemap.setnameditem.html
   TDOMCharacterData laz2_dom/tdomcharacterdata.html
    GetLength laz2_dom/tdomcharacterdata.getlength.html
    GetNodeValue laz2_dom/tdomcharacterdata.getnodevalue.html
