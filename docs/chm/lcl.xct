@@ -22222,6 +22222,7 @@
    Keys valedit/tvaluelisteditor.keys.html
    Values valedit/tvaluelisteditor.values.html
    ItemProps valedit/tvaluelisteditor.itemprops.html
+   FixedCols valedit/tvaluelisteditor.fixedcols.html
    ParentColor valedit/tvaluelisteditor.parentcolor.html
    RowCount valedit/tvaluelisteditor.rowcount.html
    OnEditButtonClick valedit/tvaluelisteditor.oneditbuttonclick.html
@@ -22254,7 +22255,6 @@
    Enabled controls/tcontrol.enabled.html
    ExtendedSelect grids/tcustomgrid.extendedselect.html
    FixedColor grids/tcustomgrid.fixedcolor.html
-   FixedCols grids/tcustomgrid.fixedcols.html
    Flat grids/tcustomgrid.flat.html
    Font controls/tcontrol.font.html
    GridLineWidth grids/tcustomgrid.gridlinewidth.html
