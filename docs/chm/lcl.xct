@@ -1916,10 +1916,10 @@
    EndUpdate comctrls/ttabcontrol.endupdate.html
    IsUpdating comctrls/ttabcontrol.isupdating.html
    DisplayRect comctrls/ttabcontrol.displayrect.html
+   Images comctrls/ttabcontrol.images.html
    CreateWnd comctrls/tcustomtabcontrol.createwnd.html
    DestroyHandle controls/twincontrol.destroyhandle.html
    HotTrack comctrls/tcustomtabcontrol.hottrack.html
-   Images comctrls/tcustomtabcontrol.images.html
    ImagesWidth comctrls/tcustomtabcontrol.imageswidth.html
    MultiLine comctrls/tcustomtabcontrol.multiline.html
    MultiSelect comctrls/tcustomtabcontrol.multiselect.html
@@ -3300,14 +3300,14 @@
    TabStop comctrls/tcustomtreeview.tabstop.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    BeginAutoDrag controls/tcontrol.beginautodrag.html
-   DoDragMsg controls/twincontrol.dodragmsg.html
+   DoDragMsg 
    GetChildAccessibleObjectAtPos controls/tcontrol.getchildaccessibleobjectatpos.html
   TTreeView comctrls/ttreeview.html
    ParentColor comctrls/ttreeview.parentcolor.html
    TabStop comctrls/ttreeview.tabstop.html
-   PathDelimiter comctrls/tcustomtreeview.pathdelimiter.html
-   ScrolledLeft comctrls/tcustomtreeview.scrolledleft.html
-   ScrolledTop comctrls/tcustomtreeview.scrolledtop.html
+   PathDelimiter 
+   ScrolledLeft 
+   ScrolledTop 
    Align controls/tcontrol.align.html
    Anchors controls/tcontrol.anchors.html
    AutoExpand comctrls/tcustomtreeview.autoexpand.html
@@ -9274,6 +9274,7 @@
   Frame3D extctrls/frame3d.html
   Register extctrls/register.html
  ExtDlgs extdlgs/index.html
+  DefaultOpenDialogPictureOptions extdlgs/defaultopendialogpictureoptions.html
   TPreviewFileControl extdlgs/tpreviewfilecontrol.html
    SetPreviewFileDialog extdlgs/tpreviewfilecontrol.setpreviewfiledialog.html
    CreateParams extdlgs/tpreviewfilecontrol.createparams.html
@@ -9302,6 +9303,7 @@
    GetFilterExt extdlgs/topenpicturedialog.getfilterext.html
    DefaultFilter extdlgs/topenpicturedialog.defaultfilter.html
    Filter extdlgs/topenpicturedialog.filter.html
+   Options extdlgs/topenpicturedialog.options.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
   TSavePictureDialog extdlgs/tsavepicturedialog.html
    DefaultTitle extdlgs/tsavepicturedialog.defaulttitle.html
@@ -11386,6 +11388,7 @@
    SetHandles graphics/tcustomicon.sethandles.html
    Sort graphics/tcustomicon.sort.html
    GetBestIndexForSize graphics/tcustomicon.getbestindexforsize.html
+   ExportImage graphics/tcustomicon.exportimage.html
    Current graphics/tcustomicon.current.html
    Count graphics/tcustomicon.count.html
    GetRawImageDescriptionPtr graphics/trasterimage.getrawimagedescriptionptr.html
@@ -15383,6 +15386,7 @@
   TranslateUnitResourceStringsEx lcltranslator/translateunitresourcestringsex.html
   SetDefaultLang lcltranslator/setdefaultlang.html
  LCLType lcltype/index.html
+  INVALID_HANDLE_VALUE lcltype/invalid_handle_value.html
   MAXBYTE lcltype/maxbyte.html
   MAXWORD lcltype/maxword.html
   MAXDWORD lcltype/maxdword.html
@@ -24184,6 +24188,7 @@
 3MSetHandles
 3MSort
 3MGetBestIndexForSize
+3MExportImage
 3PCurrent rw
 3PCount r
 #lcl.Graphics.TIcon #lcl.Graphics.TCustomIcon
@@ -38747,6 +38752,7 @@
 3MGetFilterExt
 3PDefaultFilter r
 4PFilter s
+4POptions
 #lcl.ExtDlgs.TSavePictureDialog #lcl.ExtDlgs.TOpenPictureDialog
 2MWSRegisterClass
 2MDefaultTitle
