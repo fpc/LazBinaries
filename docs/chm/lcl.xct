@@ -2195,6 +2195,7 @@
    GetItemAt comctrls/tcustomlistview.getitemat.html
    GetNearestItem comctrls/tcustomlistview.getnearestitem.html
    GetNextItem comctrls/tcustomlistview.getnextitem.html
+   GetNextSelected comctrls/tcustomlistview.getnextselected.html
    ClearSelection comctrls/tcustomlistview.clearselection.html
    SelectAll comctrls/tcustomlistview.selectall.html
    IsEditing comctrls/tcustomlistview.isediting.html
@@ -3300,14 +3301,14 @@
    TabStop comctrls/tcustomtreeview.tabstop.html
    WSRegisterClass lclclasses/tlclcomponent.wsregisterclass.html
    BeginAutoDrag controls/tcontrol.beginautodrag.html
-   DoDragMsg 
+   DoDragMsg controls/twincontrol.dodragmsg.html
    GetChildAccessibleObjectAtPos controls/tcontrol.getchildaccessibleobjectatpos.html
   TTreeView comctrls/ttreeview.html
    ParentColor comctrls/ttreeview.parentcolor.html
    TabStop comctrls/ttreeview.tabstop.html
-   PathDelimiter 
-   ScrolledLeft 
-   ScrolledTop 
+   PathDelimiter comctrls/tcustomtreeview.pathdelimiter.html
+   ScrolledLeft comctrls/tcustomtreeview.scrolledleft.html
+   ScrolledTop comctrls/tcustomtreeview.scrolledtop.html
    Align controls/tcontrol.align.html
    Anchors controls/tcontrol.anchors.html
    AutoExpand comctrls/tcustomtreeview.autoexpand.html
@@ -7546,7 +7547,7 @@
    Spacing editbtn/tcustomeditbutton.spacing.html
    OnButtonClick editbtn/tcustomeditbutton.onbuttonclick.html
    Create editbtn/tcustomeditbutton.create.html
-   Destroy editbtn/tcustomeditbutton.destroy.html
+   Destroy 
    CalculatePreferredSize groupededit/tcustomabstractgroupededit.calculatepreferredsize.html
   TEditButton editbtn/teditbutton.html
    AutoSize editbtn/teditbutton.autosize.html
@@ -7996,8 +7997,11 @@
    OnUTF8KeyPress controls/twincontrol.onutf8keypress.html
   TTimeEdit editbtn/ttimeedit.html
    GetDefaultGlyphName editbtn/ttimeedit.getdefaultglyphname.html
+   Is12HourMode editbtn/ttimeedit.is12hourmode.html
    UsedFormatSettings editbtn/ttimeedit.usedformatsettings.html
+   UsedTimeAMString editbtn/ttimeedit.usedtimeamstring.html
    UsedTimeFormat editbtn/ttimeedit.usedtimeformat.html
+   UsedTimePMString editbtn/ttimeedit.usedtimepmstring.html
    UsedTimeSeparator editbtn/ttimeedit.usedtimeseparator.html
    ButtonClick editbtn/ttimeedit.buttonclick.html
    EditDblClick editbtn/ttimeedit.editdblclick.html
@@ -11357,6 +11361,7 @@
    GetStreamSignature graphics/tcustomicon.getstreamsignature.html
    GetTypeID graphics/tcustomicon.gettypeid.html
    HandleNeeded graphics/tcustomicon.handleneeded.html
+   IsStreamFormatSupported graphics/tcustomicon.isstreamformatsupported.html
    ReadData graphics/tcustomicon.readdata.html
    ReadStream graphics/tcustomicon.readstream.html
    SetMasked graphics/tcustomicon.setmasked.html
@@ -15340,37 +15345,6 @@
   rsTPanelAccessibilityDescription lclstrconsts/index-1.html#rstpanelaccessibilitydescription
   rsTSplitterAccessibilityDescription lclstrconsts/index-1.html#rstsplitteraccessibilitydescription
   rsTCustomTabControlAccessibilityDescription lclstrconsts/index-1.html#rstcustomtabcontrolaccessibilitydescription
- LCLTaskDialog lcltaskdialog/index.html
-  TCommonButton lcltaskdialog/tcommonbutton.html
-  TCommonButtons lcltaskdialog/tcommonbuttons.html
-  TTaskDialogIcon lcltaskdialog/ttaskdialogicon.html
-  TTaskDialogFooterIcon lcltaskdialog/ttaskdialogfootericon.html
-  TTaskDialogFlag lcltaskdialog/ttaskdialogflag.html
-  TTaskDialogFlags lcltaskdialog/ttaskdialogflags.html
-  PTaskDialog lcltaskdialog/ptaskdialog.html
-  TTaskDialogButtonClickedEvent lcltaskdialog/ttaskdialogbuttonclickedevent.html
-  TTaskDialogElement lcltaskdialog/ttaskdialogelement.html
-  TTaskDialogImplementation lcltaskdialog/ttaskdialogimplementation.html
-  TTaskDialog lcltaskdialog/ttaskdialog.html
-   Execute lcltaskdialog/ttaskdialog.execute.html
-   SetElementText lcltaskdialog/ttaskdialog.setelementtext.html
-  TTaskDialogEx lcltaskdialog/ttaskdialogex.html
-   Init lcltaskdialog/ttaskdialogex.init.html
-   Execute lcltaskdialog/ttaskdialogex.execute.html
-  TTaskDialogTranslate lcltaskdialog/ttaskdialogtranslate.html
-  TEmulatedTaskDialog lcltaskdialog/temulatedtaskdialog.html
-   HandleEmulatedButtonClicked lcltaskdialog/temulatedtaskdialog.handleemulatedbuttonclicked.html
-   KeyDown lcltaskdialog/temulatedtaskdialog.keydown.html
-   CreateNew lcltaskdialog/temulatedtaskdialog.createnew.html
-   Owner lcltaskdialog/temulatedtaskdialog.owner.html
-   Element lcltaskdialog/temulatedtaskdialog.element.html
-   Combo lcltaskdialog/temulatedtaskdialog.combo.html
-   Edit lcltaskdialog/temulatedtaskdialog.edit.html
-   Verif lcltaskdialog/temulatedtaskdialog.verif.html
-  UnAmp lcltaskdialog/unamp.html
-  DefaultFont lcltaskdialog/defaultfont.html
-  DefaultTaskDialog lcltaskdialog/defaulttaskdialog.html
-  TaskDialog_Translate lcltaskdialog/taskdialog_translate.html
  LCLTranslator lcltranslator/index.html
   TUpdateTranslator lcltranslator/tupdatetranslator.html
    UpdateTranslation lcltranslator/tupdatetranslator.updatetranslation.html
@@ -20532,14 +20506,18 @@
   TReturnTimeEvent timepopup/treturntimeevent.html
   TTimePopupForm timepopup/ttimepopupform.html
    Bevel1 timepopup/ttimepopupform.bevel1.html
+   ButtonPanel1 timepopup/ttimepopupform.buttonpanel1.html
    MainPanel timepopup/ttimepopupform.mainpanel.html
    HoursGrid timepopup/ttimepopupform.hoursgrid.html
    MinutesGrid timepopup/ttimepopupform.minutesgrid.html
    MoreLessBtn timepopup/ttimepopupform.morelessbtn.html
+   CancelButtonClick timepopup/ttimepopupform.cancelbuttonclick.html
    GridsDblClick timepopup/ttimepopupform.gridsdblclick.html
    GridsKeyDown timepopup/ttimepopupform.gridskeydown.html
    GridPrepareCanvas timepopup/ttimepopupform.gridpreparecanvas.html
+   HoursGridSelectCell timepopup/ttimepopupform.hoursgridselectcell.html
    MoreLessBtnClick timepopup/ttimepopupform.morelessbtnclick.html
+   OKButtonClick timepopup/ttimepopupform.okbuttonclick.html
    FormClose timepopup/ttimepopupform.formclose.html
    FormCreate timepopup/ttimepopupform.formcreate.html
    FormDeactivate timepopup/ttimepopupform.formdeactivate.html
@@ -24157,6 +24135,7 @@
 2MInternalReleaseBitmapHandle
 2MInternalReleaseMaskHandle
 2MInternalReleasePalette
+2MIsStreamFormatSupported
 2MReadData
 2MReadStream
 2MSetMasked
@@ -33349,6 +33328,7 @@
 3MGetItemAt
 3MGetNearestItem
 3MGetNextItem
+3MGetNextSelected
 3MClearSelection
 3MSelectAll
 3MIsEditing
@@ -40702,19 +40682,25 @@
 3MSaveToStream
 #lcl.TimePopup.TTimePopupForm #lcl.Forms.TForm
 0VBevel1
+0VButtonPanel1
 0VMainPanel
 0VHoursGrid
 0VMinutesGrid
 0VMoreLessBtn
+0MCancelButtonClick
 0MGridsDblClick
 0MGridsKeyDown
 0MGridPrepareCanvas
+0MHoursGridSelectCell
 0MMoreLessBtnClick
+0MOKButtonClick
 1VFClosed
 1VFOnReturnTime
 1VFSimpleLayout
 1VFPopupOrigin
 1VFCaller
+1VFAMPM
+1VFAMPMString
 1MActivateDoubleBuffered
 1MCalcGridHeights
 1MGetTime
@@ -41474,8 +41460,11 @@
 1MParseInput
 1MTryParseInput
 2MGetDefaultGlyphName
+2MIs12HourMode
 2MUsedFormatSettings
+2MUsedTimeAMString
 2MUsedTimeFormat
+2MUsedTimePMString
 2MUsedTimeSeparator
 2MButtonClick
 2MEditDblClick
@@ -43594,15 +43583,6 @@
 3MGetMeasures
 3MDrawButton
 3MDrawToolBarItem
-#lcl.LCLTaskDialog.TEmulatedTaskDialog #lcl.Forms.TForm
-2MHandleEmulatedButtonClicked
-3MKeyDown
-3MCreateNew
-3VOwner
-3VElement
-3VCombo
-3VEdit
-3VVerif
 #lcl.TaskDlgEmulation.TLCLTaskDialog #lcl.Forms.TForm
 1MRadioIndent
 1MComboBoxHeight
