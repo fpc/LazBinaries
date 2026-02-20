@@ -1891,6 +1891,7 @@
    CanChange comctrls/ttabcontrol.canchange.html
    CanShowTab comctrls/ttabcontrol.canshowtab.html
    Change comctrls/ttabcontrol.change.html
+   DestroyWnd comctrls/ttabcontrol.destroywnd.html
    Notification comctrls/ttabcontrol.notification.html
    SetDragMode comctrls/ttabcontrol.setdragmode.html
    SetTabIndex comctrls/ttabcontrol.settabindex.html
@@ -7752,6 +7753,7 @@
    DialogKind editbtn/tfilenameedit.dialogkind.html
    DialogTitle editbtn/tfilenameedit.dialogtitle.html
    DialogOptions editbtn/tfilenameedit.dialogoptions.html
+   DialogOptionsEx editbtn/tfilenameedit.dialogoptionsex.html
    Filter editbtn/tfilenameedit.filter.html
    FilterIndex editbtn/tfilenameedit.filterindex.html
    DefaultExt editbtn/tfilenameedit.defaultext.html
@@ -7835,6 +7837,7 @@
    OnAcceptDirectory editbtn/tdirectoryedit.onacceptdirectory.html
    DialogTitle editbtn/tdirectoryedit.dialogtitle.html
    DialogOptions editbtn/tdirectoryedit.dialogoptions.html
+   DialogOptionsEx editbtn/tdirectoryedit.dialogoptionsex.html
    ShowHidden editbtn/tdirectoryedit.showhidden.html
    ButtonCaption editbtn/tdirectoryedit.buttoncaption.html
    ButtonCursor editbtn/tdirectoryedit.buttoncursor.html
@@ -9780,6 +9783,7 @@
    PixelsPerInch forms/tcustomdesigncontrol.pixelsperinch.html
    Scaled forms/tcustomdesigncontrol.scaled.html
   TCustomFrame forms/tcustomframe.html
+   Loaded forms/tcustomframe.loaded.html
    Notification forms/tcustomframe.notification.html
    SetColor forms/tcustomframe.setcolor.html
    SetParent forms/tcustomframe.setparent.html
@@ -9788,6 +9792,7 @@
    DefineProperties forms/tcustomframe.defineproperties.html
    CalculatePreferredSize forms/tcustomframe.calculatepreferredsize.html
    UpdateOpaque forms/tcustomframe.updateopaque.html
+   FixFrameFontsPPI forms/tcustomframe.fixframefontsppi.html
    Create forms/tcustomframe.create.html
    GetChildren forms/tcustomframe.getchildren.html
    GetControlClassDefaultSize forms/tcustomframe.getcontrolclassdefaultsize.html
@@ -12056,6 +12061,7 @@
    PickListItemSelected grids/tcustomgrid.picklistitemselected.html
    PrepareCanvas grids/tcustomgrid.preparecanvas.html
    PrepareCellHints grids/tcustomgrid.preparecellhints.html
+   RangeContains grids/tcustomgrid.rangecontains.html
    ResetDefaultColWidths grids/tcustomgrid.resetdefaultcolwidths.html
    ResetEditor grids/tcustomgrid.reseteditor.html
    ResetLastMove grids/tcustomgrid.resetlastmove.html
@@ -14041,10 +14047,6 @@
    ShellListView lazdialogs/tlazarusfiledialogform.shelllistview.html
    SaveEdit lazdialogs/tlazarusfiledialogform.saveedit.html
    FilterComboBox lazdialogs/tlazarusfiledialogform.filtercombobox.html
-   FileName lazdialogs/tlazarusfiledialogform.filename.html
-   Filter lazdialogs/tlazarusfiledialogform.filter.html
-   InitialDir lazdialogs/tlazarusfiledialogform.initialdir.html
-   Title lazdialogs/tlazarusfiledialogform.title.html
    CreateNew lazdialogs/tlazarusfiledialogform.createnew.html
    Initialize lazdialogs/tlazarusfiledialogform.initialize.html
    HandleOkClick lazdialogs/tlazarusfiledialogform.handleokclick.html
@@ -14055,10 +14057,10 @@
    HandleTreeViewSelectionChanged lazdialogs/tlazarusfiledialogform.handletreeviewselectionchanged.html
   TLazOpenDialog lazdialogs/tlazopendialog.html
    FForm lazdialogs/tlazopendialog.fform.html
-   WSRegisterClass lazdialogs/tlazopendialog.wsregisterclass.html
    DoExecute lazdialogs/tlazopendialog.doexecute.html
    DoInitialize lazdialogs/tlazopendialog.doinitialize.html
    Create lazdialogs/tlazopendialog.create.html
+   InitialDir lazdialogs/tlazopendialog.initialdir.html
   TLazSaveDialog lazdialogs/tlazsavedialog.html
    DoInitialize lazdialogs/tlazsavedialog.doinitialize.html
   TLazSelectDirectoryDialog lazdialogs/tlazselectdirectorydialog.html
@@ -15067,6 +15069,10 @@
   rsMacOSEditMenuCopy lclstrconsts/index-1.html#rsmacoseditmenucopy
   rsMacOSEditMenuPaste lclstrconsts/index-1.html#rsmacoseditmenupaste
   rsMacOSEditMenuSelectAll lclstrconsts/index-1.html#rsmacoseditmenuselectall
+  rsMacOSFileDialogPackageSwitchTitle lclstrconsts/index-1.html#rsmacosfiledialogpackageswitchtitle
+  rsMacOSFileDialogPackageSwitchTips lclstrconsts/index-1.html#rsmacosfiledialogpackageswitchtips
+  rsMacOSColorDialogMbPick lclstrconsts/index-1.html#rsmacoscolordialogmbpick
+  rsMacOSFontDialogMbSelect lclstrconsts/index-1.html#rsmacosfontdialogmbselect
   rsMacOSFileFormat lclstrconsts/index-1.html#rsmacosfileformat
   rsWarningUnremovedPaintMessages lclstrconsts/index-1.html#rswarningunremovedpaintmessages
   rsWarningUnreleasedDCsDump lclstrconsts/index-1.html#rswarningunreleaseddcsdump
@@ -28371,6 +28377,7 @@
 1MWriteDesignLeft
 1MWriteDesignTop
 2MWSRegisterClass
+2MLoaded
 2MNotification
 2MSetColor
 2MSetParent
@@ -28379,6 +28386,7 @@
 2MDefineProperties
 2MCalculatePreferredSize
 2MUpdateOpaque
+2MFixFrameFontsPPI
 3MCreate
 3MGetChildren
 3MGetControlClassDefaultSize
@@ -32811,6 +32819,7 @@
 2MChange
 2MCreateWnd
 2MDestroyHandle
+2MDestroyWnd
 2MNotification
 2MSetDragMode
 2MSetTabIndex
@@ -37981,6 +37990,7 @@
 2MPickListItemSelected
 2MPrepareCanvas
 2MPrepareCellHints
+2MRangeContains
 2MResetDefaultColWidths
 2MResetEditor
 2MResetLastMove
@@ -41126,6 +41136,7 @@
 4POnUTF8KeyPress
 #lcl.EditBtn.TFileNameEdit #lcl.EditBtn.TCustomEditButton
 1VFDialogOptions
+1VFDialogOptionsEx
 1VFFileName
 1VFDialogFiles
 1VFDialogKind
@@ -41157,6 +41168,7 @@
 4PDialogKind rw
 4PDialogTitle rw
 4PDialogOptions rw
+4PDialogOptionsEx rw
 4PFilter rw
 4PFilterIndex rw
 4PDefaultExt rw
@@ -41233,6 +41245,7 @@
 1VFOnAcceptDir
 1VFShowHidden
 1VFDialogOptions
+1VFDialogOptionsEx
 1MGetDirectory
 1MSetDirectory
 2MGetDefaultGlyphName
@@ -41247,6 +41260,7 @@
 4POnAcceptDirectory rw
 4PDialogTitle rw
 4PDialogOptions rw
+4PDialogOptionsEx rw
 4PShowHidden rw
 4PButtonCaption
 4PButtonCursor
@@ -42614,16 +42628,15 @@
 3MIsPointInRegion
 #lcl.LazDialogs.TLazarusFileDialogForm #lcl.Forms.TForm
 1VFKind
+1VFFileName
+1VFFilter
+1VFTitle
 1MSetFilter
 3VButtonPanel
 3VShellTreeView
 3VShellListView
 3VSaveEdit
 3VFilterComboBox
-3VFileName
-3VFilter
-3VInitialDir
-3VTitle
 3MCreateNew
 3MInitialize
 3MHandleOkClick
@@ -42633,11 +42646,13 @@
 3MHandleSelectItem
 3MHandleTreeViewSelectionChanged
 #lcl.LazDialogs.TLazOpenDialog #lcl.Dialogs.TOpenDialog
+1MGetInitialDir
+1MSetInitialDir
 2VFForm
-2MWSRegisterClass
 2MDoExecute
 2MDoInitialize
 3MCreate
+3PInitialDir rw
 #lcl.LazDialogs.TLazSaveDialog #lcl.LazDialogs.TLazOpenDialog
 2MDoInitialize
 #lcl.LazDialogs.TLazSelectDirectoryDialog #lcl.LazDialogs.TLazOpenDialog

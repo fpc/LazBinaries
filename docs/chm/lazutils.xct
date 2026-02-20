@@ -499,9 +499,11 @@
   GraphMathOperators graphmath/graphmathoperators.html
   TFloatPoint graphmath/tfloatpoint.html
   TBezier graphmath/tbezier.html
+  TBezierPointArray graphmath/tbezierpointarray.html
   PPoint graphmath/ppoint.html
   Angles2Coords graphmath/angles2coords.html
   Arc2Bezier graphmath/arc2bezier.html
+  Arc2PolyBezier graphmath/arc2polybezier.html
   Bezier graphmath/bezier.html
   Bezier2Polyline graphmath/bezier2polyline.html
   BezierArcPoints graphmath/bezierarcpoints.html
@@ -1712,6 +1714,7 @@
   MinimizeSearchPath lazfileutils/minimizesearchpath.html
   FindPathInSearchPath lazfileutils/findpathinsearchpath.html
   FileExistsUTF8 lazfileutils/fileexistsutf8.html
+  FileExistsTreatPackageAsFile lazfileutils/fileexiststreatpackageasfile.html
   FileAgeUTF8 lazfileutils/fileageutf8.html
   DirectoryExistsUTF8 lazfileutils/directoryexistsutf8.html
   ExpandFileNameUTF8 lazfileutils/expandfilenameutf8.html
